@@ -1,40 +1,56 @@
-"""Coarse India-relevance heuristic for KEV entries.
+"""India-relevance heuristic for KEV entries.
 
-This is deliberately simple and transparent: it tags a CVE by the vendor/
-product string, using a keyword list of technologies with a heavy footprint in
-Indian enterprise, government and consumer environments. It is a *starting
-filter*, not ground truth -- real exposure needs scan data (Shodan/Censys) and
-sector context, which can be layered on later. Tags are meant to be overridable
-by hand in the data file.
+"high" is meant to be a real filter, not a catch-all: the internet-facing edge,
+VPN, identity and enterprise-server products that make up the attack surface
+Indian orgs actually expose and that attackers actually hit. Ubiquitous desktop
+and consumer software (Windows client, Chrome, Adobe, Android...) is real risk
+but not an India-specific signal, so it lands in "medium". Everything else is
+"global". It's a transparent heuristic over the vendor/product string, meant to
+be overridden by hand where needed (set india_relevance + "_manual_relevance").
 """
 
-# Products/vendors with notably heavy India deployment. Lowercase substrings.
+# India-critical attack surface: edge / VPN / identity / enterprise-server, and
+# vendors with a heavy India footprint. Matched as lowercase substrings of
+# "<vendor> <product>".
 HIGH = [
-    "zoho", "manageengine",            # Zoho is Indian; ManageEngine is everywhere here
-    "fortinet", "fortios", "fortigate",
-    "palo alto", "pan-os", "globalprotect",
-    "citrix", "netscaler",
-    "ivanti", "pulse",
-    "sonicwall",
-    "cisco",
-    "vmware",
-    "microsoft", "windows", "exchange", "sharepoint", "outlook",
-    "apache", "tomcat", "struts",
-    "wordpress",
-    "adobe",
-    "google chrome", "chromium", "android",
-    "atlassian", "confluence", "jira",
-    "progress", "moveit",
-    "zimbra",
-    "oracle", "weblogic",
-    "php",
+    # edge / VPN / firewall
+    "fortinet", "fortios", "fortigate", "fortimail", "fortiweb", "forticlient",
+    "pan-os", "globalprotect", "palo alto",
+    "netscaler", "citrix",
+    "ivanti", "pulse connect", "connect secure", "policy secure", "pulse secure",
+    "sonicwall", "sonic wall",
+    "f5 ", "big-ip",
+    "sophos", "watchguard", "zyxel usg", "draytek vigor",
+    # Cisco: network / security / edge products only (not every Cisco CVE)
+    "cisco asa", "adaptive security", "firepower", "ios xe", "ios xr",
+    "cisco secure", "cisco small business", "cisco rv", "cisco vpn", "cisco ise",
+    "catalyst", "cisco nexus",
+    # identity / mail / collaboration servers
+    "zimbra", "synacor", "exchange server", "microsoft exchange",
+    "sharepoint", "confluence", "atlassian", "bitbucket", "jira",
+    # file transfer / enterprise apps heavily run in India
+    "moveit", "progress", "manageengine", "zoho",
+    "weblogic", "sap ", "netweaver",
+    # virtualization
+    "vmware", "vcenter", "esxi", "vrealize", "vmware aria",
+    # web / app servers commonly exposed
+    "struts", "apache tomcat", "jboss", "wildfly",
+    # devops / CI commonly self-hosted
+    "gitlab", "jenkins", "jetbrains teamcity",
 ]
 
-# Broadly present but less India-specific -> "medium"
+# Ubiquitous but not India-specific.
 MEDIUM = [
-    "linux", "openssl", "gitlab", "jenkins", "elastic", "mongodb",
-    "f5", "big-ip", "juniper", "sophos", "qnap", "dlink", "d-link",
-    "tp-link", "netgear", "mikrotik",
+    "microsoft windows", "windows", "microsoft office", "office", "outlook",
+    "internet explorer", "edge",
+    "chrome", "chromium", "google", "android",
+    "adobe", "acrobat", "reader",
+    "apple", "macos", "ios", "safari", "webkit",
+    "mozilla", "firefox",
+    "oracle", "mysql", "java",
+    "wordpress", "php", "drupal", "joomla",
+    "apache http", "apache httpd", "openssl", "linux kernel", "samba",
+    "qnap", "d-link", "dlink", "netgear", "tp-link", "mikrotik",
 ]
 
 

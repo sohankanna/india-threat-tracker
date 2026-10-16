@@ -1,7 +1,7 @@
 {
   "feed": "smishing-apk",
-  "generated_at": "2026-10-15",
-  "count": 5,
+  "generated_at": "2026-10-16",
+  "count": 7,
   "items": [
     {
       "id": "sm-2025-001",
@@ -222,6 +222,91 @@
         {
           "title": "Free Press Journal - 6 arrested as Mumbai cyber police bust Rs 43 crore fake APK fraud network (26 Jun 2026)",
           "url": "https://www.freepressjournal.in/mumbai/6-arrested-as-mumbai-cyber-police-bust-43-crore-fake-apk-based-cyber-fraud-network-linked-to-3200-cases-video"
+        }
+      ]
+    },
+    {
+      "id": "sm-2026-004",
+      "title": "APK lure themes in rotation (2026)",
+      "summary": "Reference entry for the social-engineering lures driving APK fraud in India. The same malware is repackaged behind whatever pretext is topical: RTO/traffic e-challan, bank KYC and reward points (SBI and others), gas and electricity bill updates (e.g. Mahanagar Gas), PM-Kisan and PM-Awas Yojana benefit checks, credit-card offers, 'digital arrest' intimidation, and WhatsApp wedding-invite APKs. All lead to an installed APK that reads SMS/OTPs and drains accounts. Police advice is consistent: never install an app from an SMS/WhatsApp link; use only official channels.",
+      "first_seen": "2026",
+      "date_added": "2026-10-16",
+      "last_updated": "2026-10-16",
+      "status": "active",
+      "lure_themes": [
+        "rto-challan",
+        "bank-kyc",
+        "bank-rewards",
+        "gas-bill",
+        "electricity-bill",
+        "pm-kisan",
+        "pm-awas-yojana",
+        "credit-card",
+        "digital-arrest",
+        "wedding-invite"
+      ],
+      "impersonates": [
+        "RTO",
+        "SBI and other banks",
+        "gas/electricity utilities",
+        "government benefit schemes",
+        "police"
+      ],
+      "capabilities": [
+        "sms-theft",
+        "otp-interception",
+        "social-engineering"
+      ],
+      "iocs": {},
+      "india_relevance": "high",
+      "tags": [
+        "android",
+        "smishing",
+        "lures",
+        "reference"
+      ],
+      "sources": [
+        {
+          "title": "Moneylife - From e-challan and gas-bill updates to APK traps",
+          "url": "https://moneylife.in/article/fraud-alert-from-echallan-gas-bill-updates-to-apk-traps-how-malware-scams-are-draining-bank-accounts/79996.html"
+        },
+        {
+          "title": "Tribune India - Challan scam alert: fraudsters use WhatsApp APK links",
+          "url": "https://www.tribuneindia.com/news/himachal/challan-scam-alert-fraudsters-use-whatsapp-apk-links-to-loot-money"
+        }
+      ]
+    },
+    {
+      "id": "sm-2025-003",
+      "title": "Android banking trojan - MITM + anti-analysis (case study)",
+      "summary": "Hands-on analysis of a sophisticated Android banking trojan spread from a compromised WhatsApp group, using a man-in-the-middle VPN technique and advanced anti-analysis to steal banking credentials. Representative of the higher end of the Android threat targeting Indian users.",
+      "first_seen": "2025-10",
+      "date_added": "2026-10-16",
+      "last_updated": "2026-10-16",
+      "status": "historical",
+      "lure_themes": [
+        "whatsapp-group"
+      ],
+      "impersonates": [
+        "banking app"
+      ],
+      "capabilities": [
+        "credential-theft",
+        "mitm-vpn",
+        "anti-analysis"
+      ],
+      "iocs": {},
+      "india_relevance": "high",
+      "tags": [
+        "android",
+        "banking",
+        "malware-analysis"
+      ],
+      "references_blog": "deconstructing-a-stealthy-android-trojan-a-case-study-in-phishing-and-evasion",
+      "sources": [
+        {
+          "title": "sohankanna.com - Deconstructing a Stealthy Android Trojan",
+          "url": "https://www.sohankanna.com/research/deconstructing-a-stealthy-android-trojan-a-case-study-in-phishing-and-evasion"
         }
       ]
     }

@@ -1,7 +1,7 @@
 {
   "feed": "apt-campaign",
-  "generated_at": "2026-10-15",
-  "count": 2,
+  "generated_at": "2026-10-16",
+  "count": 4,
   "items": [
     {
       "id": "apt-transparent-tribe",
@@ -98,6 +98,99 @@
         {
           "title": "BankInfoSecurity - SideCopy APT targets India's premier defense research agency",
           "url": "https://www.bankinfosecurity.com/sidecopy-apt-targets-indias-premier-defense-research-agency-a-21512"
+        }
+      ]
+    },
+    {
+      "id": "apt-redecho",
+      "actor": "RedEcho / TAG-38 (China-nexus)",
+      "aliases": [
+        "RedEcho",
+        "TAG-38"
+      ],
+      "suspected_origin": "China-nexus",
+      "summary": "China-nexus intrusion sets that have repeatedly targeted India's power sector and critical infrastructure. Recorded Future documented RedEcho targeting Indian electricity load-dispatch centres, and later TAG-38 activity against grid infrastructure in Ladakh using the ShadowPad backdoor and compromised internet-facing DVR/IoT devices for C2. A reminder that the threat to India isn't only fraud and Pakistan-nexus espionage.",
+      "status": "active",
+      "date_added": "2026-10-16",
+      "last_updated": "2026-10-16",
+      "targets": [
+        "indian-power-sector",
+        "critical-infrastructure",
+        "load-dispatch-centres"
+      ],
+      "known_tools": [
+        "ShadowPad",
+        "PlugX"
+      ],
+      "typical_vectors": [
+        "internet-facing-device-compromise",
+        "supply-chain",
+        "spear-phishing"
+      ],
+      "india_relevance": "high",
+      "tags": [
+        "apt",
+        "china-nexus",
+        "critical-infrastructure",
+        "ics"
+      ],
+      "sources": [
+        {
+          "title": "Recorded Future - RedEcho: China-linked group targets Indian power sector",
+          "url": "https://www.recordedfuture.com/redecho-targeting-indian-power-sector"
+        },
+        {
+          "title": "Recorded Future - Continued targeting of Indian power grid (TAG-38)",
+          "url": "https://www.recordedfuture.com/continued-targeting-of-indian-power-grid-assets"
+        }
+      ]
+    },
+    {
+      "id": "apt-sidewinder",
+      "actor": "SideWinder (India-nexus)",
+      "aliases": [
+        "SideWinder",
+        "Rattlesnake",
+        "APT-C-17"
+      ],
+      "suspected_origin": "India-nexus (attributed)",
+      "summary": "Regional context: one of South Asia's most active APTs, assessed as India-nexus, historically targeting Pakistan, Nepal, China and Afghanistan and more recently expanding to maritime, nuclear and IT sectors across Asia, the Middle East and Africa. Primarily spear-phishing with weaponised documents exploiting known Office flaws. Included here for regional awareness; its targets are largely outside India.",
+      "status": "active",
+      "date_added": "2026-10-16",
+      "last_updated": "2026-10-16",
+      "targets": [
+        "pakistan",
+        "nepal",
+        "china",
+        "maritime",
+        "nuclear",
+        "government"
+      ],
+      "known_tools": [
+        "WarHawk",
+        "Backdoor loaders",
+        "StealerBot"
+      ],
+      "typical_vectors": [
+        "spear-phishing",
+        "malicious-office-documents",
+        "lnk-files"
+      ],
+      "india_relevance": "medium",
+      "tags": [
+        "apt",
+        "india-nexus",
+        "regional",
+        "espionage"
+      ],
+      "sources": [
+        {
+          "title": "The Hacker News - SideWinder APT targets maritime, nuclear and IT sectors",
+          "url": "https://thehackernews.com/search/label/SideWinder"
+        },
+        {
+          "title": "Cyber Security News - SideWinder APT actor profile",
+          "url": "https://cybersecuritynews.com/apt-sidewinder-actor-profile/"
         }
       ]
     }
