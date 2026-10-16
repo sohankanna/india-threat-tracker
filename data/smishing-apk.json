@@ -53,7 +53,8 @@
           "title": "Cyble - GhostBat RAT: inside the resurgence of RTO-themed Android malware",
           "url": "https://cyble.com/blog/ghostbat-rat-inside-the-resurgence-of-rto-themed-android-malware/"
         }
-      ]
+      ],
+      "references_blog": "ghostbat-rat-how-rto-themed-android-malware-steals-your-upi-pin"
     },
     {
       "id": "sm-2025-002",
@@ -103,7 +104,8 @@
           "title": "CYFIRMA - RTO Challan Fraud: a technical report on APK-based financial and identity theft",
           "url": "https://www.cyfirma.com/research/rto-challan-fraud-a-technical-report-on-apk-based-financial-and-identity-theft/"
         }
-      ]
+      ],
+      "references_blog": "inside-the-rto-challan-dropper-anatomy-of-a-two-stage-android-bank-stealer"
     },
     {
       "id": "sm-2026-001",
@@ -223,7 +225,8 @@
           "title": "Free Press Journal - 6 arrested as Mumbai cyber police bust Rs 43 crore fake APK fraud network (26 Jun 2026)",
           "url": "https://www.freepressjournal.in/mumbai/6-arrested-as-mumbai-cyber-police-bust-43-crore-fake-apk-based-cyber-fraud-network-linked-to-3200-cases-video"
         }
-      ]
+      ],
+      "references_blog": "the-apk-is-the-exploit-how-india-s-fake-challan-scam-became-an-industry"
     },
     {
       "id": "sm-2026-004",
@@ -274,7 +277,8 @@
           "title": "Tribune India - Challan scam alert: fraudsters use WhatsApp APK links",
           "url": "https://www.tribuneindia.com/news/himachal/challan-scam-alert-fraudsters-use-whatsapp-apk-links-to-loot-money"
         }
-      ]
+      ],
+      "references_blog": "the-apk-is-the-exploit-how-india-s-fake-challan-scam-became-an-industry"
     },
     {
       "id": "sm-2025-003",
