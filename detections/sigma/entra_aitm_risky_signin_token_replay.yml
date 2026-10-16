@@ -1,0 +1,35 @@
+title: Entra ID High-Risk Sign-In - Possible AiTM Token Replay
+id: 62e7aec0-cf86-418a-9635-bd6cb8fc1893
+status: experimental
+description: >
+  Detects high-risk Entra ID (Azure AD) sign-ins that succeeded or were only
+  interrupted by an MFA prompt, consistent with adversary-in-the-middle token
+  theft such as the APT28 FrostArmada campaign (DNS hijack to an AiTM proxy
+  in front of Outlook on the web).
+references:
+  - https://www.sohankanna.com/research/frostarmada-how-apt28-turned-old-home-routers-into-a-microsoft-365-interception-network
+  - https://www.microsoft.com/en-us/security/blog/2026/04/07/soho-router-compromise-leads-to-dns-hijacking-and-adversary-in-the-middle-attacks
+author: Sohan Kanna (@sohankanna)
+date: 2026-10-16
+tags:
+  - attack.credential_access
+  - attack.t1557
+  - attack.t1550.001
+logsource:
+  product: azure
+  service: signinlogs
+detection:
+  selection:
+    RiskLevelAggregated: high
+    ResultType:
+      - 0       # success
+      - 50140   # interrupted by MFA / keep-me-signed-in
+  condition: selection
+fields:
+  - UserPrincipalName
+  - IPAddress
+  - UserAgent
+  - AppDisplayName
+falsepositives:
+  - Legitimate sign-ins flagged high-risk by travel or new device; verify IP, UA and location
+level: high

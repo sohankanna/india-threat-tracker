@@ -22,6 +22,17 @@ you can actually pull into tooling**, with human explainers on
 Each file is a JSON object: `{ feed, generated_at, count, items: [...] }`.
 Schemas live in [`schema/`](schema/) and are enforced in CI.
 
+## Detections
+
+Open, tunable detections for what's tracked here, in [`detections/`](detections/):
+
+- **[`detections/sigma/`](detections/sigma/)** — Sigma rules for the CVEs, APT TTPs and
+  malware (PAN-OS auth abuse, FrostArmada AiTM/DNS, SideCopy/APT36 LNK and macro execution).
+- **[`detections/fraud/`](detections/fraud/)** — schema-agnostic payments-fraud detection
+  logic for the UPI / fake-APK kill chain.
+
+Each rule links back to the write-up that explains the threat it covers.
+
 ## Pull the data
 
 ```bash

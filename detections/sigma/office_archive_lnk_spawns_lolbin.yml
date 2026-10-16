@@ -1,0 +1,40 @@
+title: Archive/LNK Spawning a LOLBin - SideCopy / APT36 Delivery
+id: c8b896ee-107a-4dc2-985c-b96cf33f6228
+status: experimental
+description: >
+  Detects the ZIP-then-LNK delivery pattern used by SideCopy and Transparent
+  Tribe (APT36), where an LNK file extracted from an archive launches a
+  living-off-the-land binary (mshta, powershell, rundll32, cmd) to pull the
+  next stage.
+references:
+  - https://www.sohankanna.com/research/sidecopy-the-apt36-aligned-group-that-copies-sidewinder
+  - https://www.sohankanna.com/research/transparent-tribe-apt36-the-persistent-threat-to-indian-government-and-defence
+author: Sohan Kanna (@sohankanna)
+date: 2026-10-16
+tags:
+  - attack.execution
+  - attack.t1204.002
+  - attack.t1218.005
+logsource:
+  product: windows
+  category: process_creation
+detection:
+  selection_parent:
+    ParentImage|endswith:
+      - '\explorer.exe'
+      - '\7zFM.exe'
+      - '\WinRAR.exe'
+      - '\Winzip.exe'
+  selection_child:
+    Image|endswith:
+      - '\mshta.exe'
+      - '\powershell.exe'
+      - '\pwsh.exe'
+      - '\rundll32.exe'
+      - '\cmd.exe'
+  selection_lnk:
+    CommandLine|contains: '.lnk'
+  condition: selection_parent and (selection_child or selection_lnk)
+falsepositives:
+  - Legitimate shortcuts launching scripts; tune to your environment
+level: high

@@ -1,0 +1,33 @@
+title: Suspicious DNS Server Change on Windows Endpoint
+id: 3b9318cc-5b56-4f08-8f7b-fb3c8c8425e9
+status: experimental
+description: >
+  Detects a change to an interface DNS server to a value outside the approved
+  corporate resolver set. Used to catch client fallout from SOHO-router DNS
+  hijacking (APT28 FrostArmada), where devices inherit an attacker-controlled
+  resolver via DHCP.
+references:
+  - https://www.sohankanna.com/research/frostarmada-how-apt28-turned-old-home-routers-into-a-microsoft-365-interception-network
+author: Sohan Kanna (@sohankanna)
+date: 2026-10-16
+tags:
+  - attack.command_and_control
+  - attack.t1565.001
+  - attack.t1071.004
+logsource:
+  product: windows
+  category: registry_set
+detection:
+  selection:
+    TargetObject|contains: '\Services\Tcpip\Parameters\Interfaces\'
+    TargetObject|endswith:
+      - 'NameServer'
+      - 'DhcpNameServer'
+  filter_corp_resolvers:
+    # TUNE: your trusted internal / ISP resolver IPs
+    Details|contains:
+      - '10.'
+  condition: selection and not filter_corp_resolvers
+falsepositives:
+  - VPN clients or legitimate network changes setting a public resolver
+level: medium

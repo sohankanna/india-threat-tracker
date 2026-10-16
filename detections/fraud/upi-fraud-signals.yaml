@@ -1,0 +1,88 @@
+# UPI / APK fraud detection signals
+#
+# Schema-agnostic detection logic for a payments / risk engine, mapped to the
+# kill chain in: https://www.sohankanna.com/research/the-upi-fraud-kill-chain-how-fake-apk-scams-defeat-indias-payment-controls
+#
+# These are NOT log-source Sigma rules -- they depend on your own transaction,
+# device and auth telemetry. Treat each as a condition to implement and tune.
+# Defensive use only.
+
+meta:
+  author: Sohan Kanna (@sohankanna)
+  date: 2026-10-16
+  scope: India UPI / mobile-banking fraud (fake-APK ecosystem)
+
+signals:
+  - id: fraud-otp-read-then-transfer
+    name: OTP read programmatically then transfer within seconds
+    kill_chain_step: 3-intercept-otp
+    description: >
+      An OTP SMS is consumed by an app (not shown to the user) and a funds
+      movement completes within a short window on the same account.
+    logic: >
+      transfer.completed
+      AND exists(otp.issued within 120s before transfer)
+      AND otp.consumed_by_app == true
+    action: hold_and_step_up
+    severity: high
+
+  - id: fraud-new-device-binding-highvalue
+    name: New-device UPI binding followed by high-value activity
+    kill_chain_step: 5-hijack-device-binding
+    description: >
+      A mobile number binds to a new device, then initiates high-value or
+      rapid transfers before the device has any trust history.
+    logic: >
+      device.binding.is_new == true
+      AND (time_since(device.binding) < 24h)
+      AND transfer.amount >= high_value_threshold
+    action: step_up_or_cooloff
+    severity: high
+
+  - id: fraud-recent-sim-swap
+    name: Recent SIM swap / port before binding or transfer
+    kill_chain_step: 5-hijack-device-binding
+    description: >
+      Account activity shortly after a SIM swap or number port is a classic
+      account-takeover precondition.
+    logic: >
+      exists(sim.swap_or_port within 72h)
+      AND (device.binding.is_new == true OR transfer.amount >= high_value_threshold)
+    action: step_up
+    severity: high
+
+  - id: fraud-first-payee-velocity
+    name: First-time payee drained at machine speed
+    kill_chain_step: 6-cash-out
+    description: >
+      A never-seen beneficiary receives a large share of the balance in a
+      short burst, consistent with account draining to a mule.
+    logic: >
+      payee.is_first_time == true
+      AND sum(transfers_to_payee within 10m) >= drain_threshold
+    action: hold_and_review
+    severity: high
+
+  - id: fraud-mule-fanout
+    name: Mule fan-out pattern on beneficiary
+    kill_chain_step: 6-cash-out
+    description: >
+      A beneficiary account receives from many unrelated senders and rapidly
+      moves funds out (including ATM withdrawal), a mule fingerprint.
+    logic: >
+      beneficiary.distinct_senders_24h >= mule_sender_threshold
+      AND beneficiary.outflow_ratio_24h >= 0.8
+    action: freeze_and_investigate
+    severity: critical
+
+  - id: fraud-upi-pin-context-anomaly
+    name: UPI PIN entry in an abnormal context
+    kill_chain_step: 4-capture-upi-pin
+    description: >
+      Signals (from an app SDK, where available) that a UPI PIN was solicited
+      outside the NPCI common library -- e.g. inside a webview -- which a
+      legitimate flow never does.
+    logic: >
+      upi_pin.prompt_source != 'npci_common_library'
+    action: block
+    severity: high
