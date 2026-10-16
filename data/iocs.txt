@@ -1,0 +1,19 @@
+# India Threat Tracker - aggregated indicators
+# Defensive and research use only. No malware samples are hosted.
+# Indicators are defanged (example[.]com); re-fang at your own risk.
+# Generated 2026-10-16 - https://github.com/sohankanna/india-threat-tracker
+
+## domains
+jsonserv[.]xyz
+jsonserv[.]biz
+
+## sha256
+9209fc088cdcd7da0161cabf5b9384c2ca790214413ffb437452bcc865c58452
+22cf70a0dd866a4f5addd5d339fad3894a4ebb3e97d597fd7dac9b08899052fb
+
+## telegram_bots
+GhostBatRat_bot
+
+## hosting
+raw.githubusercontent.com
+github.com (releases)

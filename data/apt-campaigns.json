@@ -51,7 +51,8 @@
           "title": "CYFIRMA - Transparent Tribe LNK campaign analysis",
           "url": "https://www.cyfirma.com/research/"
         }
-      ]
+      ],
+      "references_blog": "transparent-tribe-apt36-the-persistent-threat-to-indian-government-and-defence"
     },
     {
       "id": "apt-sidecopy",
@@ -99,7 +100,8 @@
           "title": "BankInfoSecurity - SideCopy APT targets India's premier defense research agency",
           "url": "https://www.bankinfosecurity.com/sidecopy-apt-targets-indias-premier-defense-research-agency-a-21512"
         }
-      ]
+      ],
+      "references_blog": "sidecopy-the-apt36-aligned-group-that-copies-sidewinder"
     },
     {
       "id": "apt-redecho",
@@ -143,7 +145,8 @@
           "title": "Recorded Future - Continued targeting of Indian power grid (TAG-38)",
           "url": "https://www.recordedfuture.com/continued-targeting-of-indian-power-grid-assets"
         }
-      ]
+      ],
+      "references_blog": "redecho-and-the-china-nexus-targeting-of-india-s-power-grid"
     },
     {
       "id": "apt-sidewinder",
@@ -192,7 +195,8 @@
           "title": "Cyber Security News - SideWinder APT actor profile",
           "url": "https://cybersecuritynews.com/apt-sidewinder-actor-profile/"
         }
-      ]
+      ],
+      "reference_url": "https://attack.mitre.org/groups/G0121/"
     }
   ]
 }
