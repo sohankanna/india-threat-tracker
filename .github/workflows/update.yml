@@ -1,0 +1,49 @@
+name: Update exploited-cve feed
+
+on:
+  schedule:
+    - cron: "33 2 * * *"   # daily 02:33 UTC (~08:03 IST)
+  workflow_dispatch: {}      # lets you run it manually from the Actions tab
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-feed
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install deps
+        run: pip install -r requirements.txt
+
+      - name: Fetch KEV + EPSS
+        working-directory: scripts
+        run: python fetch_exploited.py
+
+      - name: Validate against schema
+        run: python scripts/validate.py
+
+      - name: Generate tweet draft
+        working-directory: scripts
+        run: python make_tweet_draft.py
+
+      - name: Commit changes
+        run: |
+          git config user.name "india-threat-tracker-bot"
+          git config user.email "actions@github.com"
+          git add data/ drafts/
+          if git diff --cached --quiet; then
+            echo "No changes."
+          else
+            git commit -m "chore: daily feed update ($(date -u +%Y-%m-%d))"
+            git push
+          fi

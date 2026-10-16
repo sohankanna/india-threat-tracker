@@ -1,0 +1,41 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "apt-campaign feed",
+  "type": "object",
+  "required": ["feed", "generated_at", "count", "items"],
+  "properties": {
+    "feed": { "const": "apt-campaign" },
+    "generated_at": { "type": ["string", "null"] },
+    "count": { "type": "integer" },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "actor", "date_added", "sources"],
+        "properties": {
+          "id": { "type": "string" },
+          "actor": { "type": "string" },
+          "aliases": { "type": "array", "items": { "type": "string" } },
+          "suspected_origin": { "type": "string" },
+          "summary": { "type": "string" },
+          "status": { "enum": ["active", "dormant", "historical"] },
+          "date_added": { "type": "string" },
+          "last_updated": { "type": "string" },
+          "targets": { "type": "array", "items": { "type": "string" } },
+          "known_tools": { "type": "array", "items": { "type": "string" } },
+          "typical_vectors": { "type": "array", "items": { "type": "string" } },
+          "india_relevance": { "enum": ["high", "medium", "global"] },
+          "tags": { "type": "array", "items": { "type": "string" } },
+          "sources": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["title", "url"],
+              "properties": { "title": { "type": "string" }, "url": { "type": "string" } }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,229 @@
+{
+  "feed": "smishing-apk",
+  "generated_at": "2026-10-15",
+  "count": 5,
+  "items": [
+    {
+      "id": "sm-2025-001",
+      "title": "GhostBat RAT - RTO/mParivahan-themed Android campaign",
+      "summary": "Multi-stage Android malware impersonating the mParivahan RTO app, spread via WhatsApp and SMS smishing with shortened URLs. Droppers use ZIP manipulation and native packers; a fake UPI payment flow harvests the UPI PIN, and banking SMS is exfiltrated. Some variants also bundle a cryptominer. 40+ distinct samples observed.",
+      "first_seen": "2025-09",
+      "date_added": "2026-10-15",
+      "last_updated": "2026-10-15",
+      "status": "active",
+      "lure_themes": [
+        "rto-challan",
+        "mparivahan",
+        "vehicle-fine"
+      ],
+      "impersonates": [
+        "mParivahan / RTO"
+      ],
+      "capabilities": [
+        "sms-theft",
+        "otp-interception",
+        "upi-pin-phishing",
+        "firebase-c2",
+        "telegram-c2",
+        "cryptomining",
+        "anti-emulation"
+      ],
+      "iocs": {
+        "telegram_bots": [
+          "GhostBatRat_bot"
+        ],
+        "hosting": [
+          "raw.githubusercontent.com",
+          "github.com (releases)"
+        ],
+        "c2_type": [
+          "firebase-fcm",
+          "telegram-bot-api"
+        ]
+      },
+      "india_relevance": "high",
+      "tags": [
+        "android",
+        "smishing",
+        "rto",
+        "upi"
+      ],
+      "sources": [
+        {
+          "title": "Cyble - GhostBat RAT: inside the resurgence of RTO-themed Android malware",
+          "url": "https://cyble.com/blog/ghostbat-rat-inside-the-resurgence-of-rto-themed-android-malware/"
+        }
+      ]
+    },
+    {
+      "id": "sm-2025-002",
+      "title": "RTO Challan fraud - two-stage dropper (jsonserv C2)",
+      "summary": "e-Challan / RTO-themed two-stage dropper. A fake 'update' prompt installs a second APK that hides its icon (INFO category), collects Aadhaar/PAN and full card/UPI details via fake payment screens, and intercepts incoming SMS for OTP harvesting. C2 over HTTP POST to jsonserv domains.",
+      "first_seen": "2025-10",
+      "date_added": "2026-10-15",
+      "last_updated": "2026-10-15",
+      "status": "active",
+      "lure_themes": [
+        "rto-challan",
+        "e-challan",
+        "traffic-fine"
+      ],
+      "impersonates": [
+        "RTO / e-Challan"
+      ],
+      "capabilities": [
+        "sms-theft",
+        "otp-interception",
+        "card-phishing",
+        "upi-pin-phishing",
+        "identity-theft",
+        "icon-hiding",
+        "vpn-service"
+      ],
+      "iocs": {
+        "domains": [
+          "jsonserv[.]xyz",
+          "jsonserv[.]biz"
+        ],
+        "sha256": [
+          "9209fc088cdcd7da0161cabf5b9384c2ca790214413ffb437452bcc865c58452",
+          "22cf70a0dd866a4f5addd5d339fad3894a4ebb3e97d597fd7dac9b08899052fb"
+        ]
+      },
+      "india_relevance": "high",
+      "tags": [
+        "android",
+        "smishing",
+        "rto",
+        "aadhaar",
+        "upi"
+      ],
+      "sources": [
+        {
+          "title": "CYFIRMA - RTO Challan Fraud: a technical report on APK-based financial and identity theft",
+          "url": "https://www.cyfirma.com/research/rto-challan-fraud-a-technical-report-on-apk-based-financial-and-identity-theft/"
+        }
+      ]
+    },
+    {
+      "id": "sm-2026-001",
+      "title": "Ahmedabad APK fraud network (Telegram storefront)",
+      "summary": "Ahmedabad Cyber Crime Branch dismantled a network running a Telegram bot that sold, swapped and renewed fraud APKs impersonating SBI KYC/rewards, other banks, RTO services and utilities. One distributor allegedly supplied ~400 fraudsters; linked losses ~Rs 54 lakh. Cash-out via ATM withdrawals left no direct bank trail. No technical IOCs published.",
+      "first_seen": "2026-06",
+      "date_added": "2026-10-15",
+      "last_updated": "2026-10-15",
+      "status": "law-enforcement",
+      "lure_themes": [
+        "sbi-kyc",
+        "bank-rewards",
+        "rto-challan",
+        "electricity-bill",
+        "gas-bill"
+      ],
+      "impersonates": [
+        "SBI",
+        "RTO",
+        "electricity/gas utilities"
+      ],
+      "capabilities": [
+        "sms-theft",
+        "otp-interception",
+        "self-propagation",
+        "malware-as-a-service"
+      ],
+      "iocs": {},
+      "india_relevance": "high",
+      "tags": [
+        "android",
+        "smishing",
+        "maas",
+        "arrest"
+      ],
+      "references_blog": "the-apk-is-the-exploit-how-india-s-fake-challan-scam-became-an-industry",
+      "sources": [
+        {
+          "title": "ETV Bharat - Gujarat Police bust pan-India APK fraud racket",
+          "url": "https://www.etvbharat.com/en/state/gujarat-police-bust-pan-india-apk-fraud-racket-several-held-enn26062506841"
+        }
+      ]
+    },
+    {
+      "id": "sm-2026-002",
+      "title": "Pune fake RTO e-challan APK scam",
+      "summary": "Two Pune residents lost a combined Rs 14+ lakh after installing APK files attached to fake RTO e-challan notices. Pune police advised checking challans only on official government platforms and never installing APKs from SMS/WhatsApp links.",
+      "first_seen": "2026-06",
+      "date_added": "2026-10-15",
+      "last_updated": "2026-10-15",
+      "status": "active",
+      "lure_themes": [
+        "rto-challan",
+        "e-challan"
+      ],
+      "impersonates": [
+        "RTO / e-Challan"
+      ],
+      "capabilities": [
+        "banking-theft"
+      ],
+      "iocs": {},
+      "india_relevance": "high",
+      "tags": [
+        "android",
+        "smishing",
+        "rto",
+        "pune"
+      ],
+      "references_blog": "the-apk-is-the-exploit-how-india-s-fake-challan-scam-became-an-industry",
+      "sources": [
+        {
+          "title": "The Bridge Chronicle - Two Punekars lost over Rs 14 lakh in fake RTO e-challan APK scam",
+          "url": "https://www.thebridgechronicle.com/pune/cyber-fraud-pune-fake-rto-e-challan-apk-scam-rs14-lakh-loss-agn97"
+        }
+      ]
+    },
+    {
+      "id": "sm-2026-003",
+      "title": "Mumbai interstate APK fraud network (~Rs 43 crore, 3,206 cases)",
+      "summary": "Mumbai Cyber Police arrested six members of an interstate syndicate linked to 3,206 complaints on the national portal (~Rs 43 crore). APKs impersonated banks, Mahanagar Gas (MGL) and the RTO; a typical lure warned of a gas disconnection and asked the victim to install an app and pay Rs 10. The apps intercepted OTPs and banking SMS. Forensics found 111 distinct fake APKs; ~8,609 people installed them, and ~1.24 crore SMS were exfiltrated via servers on Google Firebase and Hostinger.",
+      "first_seen": "2026-06",
+      "date_added": "2026-10-15",
+      "last_updated": "2026-10-15",
+      "status": "law-enforcement",
+      "lure_themes": [
+        "gas-bill",
+        "bank-update",
+        "rto-challan"
+      ],
+      "impersonates": [
+        "Mahanagar Gas (MGL)",
+        "banks",
+        "RTO"
+      ],
+      "capabilities": [
+        "sms-theft",
+        "otp-interception",
+        "device-control"
+      ],
+      "iocs": {
+        "c2_type": [
+          "firebase",
+          "hostinger-hosted"
+        ]
+      },
+      "india_relevance": "high",
+      "tags": [
+        "android",
+        "smishing",
+        "maas",
+        "arrest",
+        "mumbai"
+      ],
+      "sources": [
+        {
+          "title": "Free Press Journal - 6 arrested as Mumbai cyber police bust Rs 43 crore fake APK fraud network (26 Jun 2026)",
+          "url": "https://www.freepressjournal.in/mumbai/6-arrested-as-mumbai-cyber-police-bust-43-crore-fake-apk-based-cyber-fraud-network-linked-to-3200-cases-video"
+        }
+      ]
+    }
+  ]
+}

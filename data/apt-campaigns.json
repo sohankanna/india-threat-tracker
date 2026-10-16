@@ -1,0 +1,105 @@
+{
+  "feed": "apt-campaign",
+  "generated_at": "2026-10-15",
+  "count": 2,
+  "items": [
+    {
+      "id": "apt-transparent-tribe",
+      "actor": "Transparent Tribe",
+      "aliases": [
+        "APT36",
+        "Mythic Leopard",
+        "ProjectM",
+        "C-Major"
+      ],
+      "suspected_origin": "Pakistan-nexus",
+      "summary": "A long-running espionage actor that primarily targets Indian government, defence and education sectors. Typical tradecraft is spear-phishing with weaponised documents and LNK files, and fake or trojanised apps, delivering RATs such as Crimson RAT, CapraRAT (Android) and Poseidon. 2026 reporting describes new RAT activity, LNK-based delivery chains, and expansion toward India's startup ecosystem.",
+      "status": "active",
+      "date_added": "2026-10-15",
+      "last_updated": "2026-10-15",
+      "targets": [
+        "indian-government",
+        "defence",
+        "education",
+        "startups"
+      ],
+      "known_tools": [
+        "Crimson RAT",
+        "CapraRAT",
+        "Poseidon",
+        "ElizaRAT"
+      ],
+      "typical_vectors": [
+        "spear-phishing",
+        "malicious-documents",
+        "lnk-files",
+        "fake-apps"
+      ],
+      "india_relevance": "high",
+      "tags": [
+        "apt",
+        "espionage",
+        "india",
+        "rat"
+      ],
+      "sources": [
+        {
+          "title": "The Hacker News - Transparent Tribe / APT36 new RAT attacks (Jan 2026)",
+          "url": "https://thehackernews.com/search/label/APT36"
+        },
+        {
+          "title": "CYFIRMA - Transparent Tribe LNK campaign analysis",
+          "url": "https://www.cyfirma.com/research/"
+        }
+      ]
+    },
+    {
+      "id": "apt-sidecopy",
+      "actor": "SideCopy",
+      "aliases": [
+        "APT-C-?",
+        "SideCopy (linked to Transparent Tribe)"
+      ],
+      "suspected_origin": "Pakistan-nexus",
+      "summary": "A Pakistan-nexus espionage actor that mimics the SideWinder group's TTPs (hence the name) and is widely assessed to overlap with Transparent Tribe/APT36 infrastructure. It targets Indian government, defence and increasingly academic and research institutions. Typical delivery is a ZIP archive embedding an LNK or decoy document that leads to RATs such as ActionRAT, AllaKore and AuTo Stealer, hosted on compromised domains.",
+      "status": "active",
+      "date_added": "2026-10-15",
+      "last_updated": "2026-10-15",
+      "targets": [
+        "indian-government",
+        "defence",
+        "research",
+        "academia"
+      ],
+      "known_tools": [
+        "ActionRAT",
+        "AllaKore RAT",
+        "AuTo Stealer",
+        "ReverseRAT"
+      ],
+      "typical_vectors": [
+        "spear-phishing",
+        "zip-archives",
+        "lnk-files",
+        "decoy-documents"
+      ],
+      "india_relevance": "high",
+      "tags": [
+        "apt",
+        "espionage",
+        "india",
+        "rat"
+      ],
+      "sources": [
+        {
+          "title": "The Hacker News - SideCopy coverage",
+          "url": "https://thehackernews.com/search/label/SideCopy"
+        },
+        {
+          "title": "BankInfoSecurity - SideCopy APT targets India's premier defense research agency",
+          "url": "https://www.bankinfosecurity.com/sidecopy-apt-targets-indias-premier-defense-research-agency-a-21512"
+        }
+      ]
+    }
+  ]
+}

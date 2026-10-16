@@ -1,0 +1,12 @@
+{
+  "project": "India Threat Tracker",
+  "maintainer": "Sohan Kanna (@sohankanna)",
+  "site": "https://www.sohankanna.com",
+  "license": "MIT (code) / CC-BY-4.0 (data)",
+  "updated_at": "2026-10-15",
+  "feeds": {
+    "exploited-cve": { "file": "data/exploited-cve.json", "updated_by": "automation", "cadence": "daily" },
+    "smishing-apk":  { "file": "data/smishing-apk.json",  "updated_by": "curated",    "cadence": "as-observed" },
+    "apt-campaign":  { "file": "data/apt-campaigns.json", "updated_by": "curated",    "cadence": "as-observed" }
+  }
+}
