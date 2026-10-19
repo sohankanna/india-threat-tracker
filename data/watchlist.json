@@ -1,6 +1,6 @@
 {
   "feed": "exploited-cve-watchlist",
-  "generated_at": "2026-10-18T07:23:16Z",
+  "generated_at": "2026-10-19T08:02:27Z",
   "source": "CISA KEV + FIRST EPSS",
   "count": 407,
   "items": [
@@ -17,8 +17,8 @@
       "cwes": [
         "CWE-22"
       ],
-      "epss": 0.0058,
-      "epss_percentile": 0.46551,
+      "epss": 0.01081,
+      "epss_percentile": 0.64559,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -46,8 +46,8 @@
       "cwes": [
         "CWE-552"
       ],
-      "epss": 0.12711,
-      "epss_percentile": 0.96225,
+      "epss": null,
+      "epss_percentile": null,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -76,7 +76,7 @@
         "CWE-23"
       ],
       "epss": 0.01573,
-      "epss_percentile": 0.74982,
+      "epss_percentile": 0.75007,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -105,7 +105,7 @@
         "CWE-94"
       ],
       "epss": 0.01215,
-      "epss_percentile": 0.68064,
+      "epss_percentile": 0.6809,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -134,7 +134,7 @@
         "CWE-290"
       ],
       "epss": 0.25982,
-      "epss_percentile": 0.97965,
+      "epss_percentile": 0.97967,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -192,7 +192,7 @@
         "CWE-119"
       ],
       "epss": 0.00592,
-      "epss_percentile": 0.47163,
+      "epss_percentile": 0.47198,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -222,7 +222,7 @@
         "CWE-158"
       ],
       "epss": 0.02201,
-      "epss_percentile": 0.82209,
+      "epss_percentile": 0.82224,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -251,7 +251,7 @@
         "CWE-177"
       ],
       "epss": 0.01819,
-      "epss_percentile": 0.78371,
+      "epss_percentile": 0.78389,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -280,7 +280,7 @@
         "CWE-119"
       ],
       "epss": 0.01301,
-      "epss_percentile": 0.69971,
+      "epss_percentile": 0.69993,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -309,7 +309,7 @@
         "CWE-119"
       ],
       "epss": 0.01083,
-      "epss_percentile": 0.64616,
+      "epss_percentile": 0.64637,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -338,7 +338,7 @@
         "CWE-94"
       ],
       "epss": 0.02101,
-      "epss_percentile": 0.81386,
+      "epss_percentile": 0.81404,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -367,7 +367,7 @@
         "CWE-122"
       ],
       "epss": 0.02226,
-      "epss_percentile": 0.82418,
+      "epss_percentile": 0.82435,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -396,7 +396,7 @@
         "CWE-89"
       ],
       "epss": 0.29543,
-      "epss_percentile": 0.98174,
+      "epss_percentile": 0.98175,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -454,7 +454,7 @@
         "CWE-288"
       ],
       "epss": 0.23158,
-      "epss_percentile": 0.97747,
+      "epss_percentile": 0.97748,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -484,7 +484,7 @@
         "CWE-787"
       ],
       "epss": 0.03802,
-      "epss_percentile": 0.89872,
+      "epss_percentile": 0.89881,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -543,7 +543,7 @@
         "CWE-441"
       ],
       "epss": 0.08043,
-      "epss_percentile": 0.94729,
+      "epss_percentile": 0.94734,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -572,7 +572,7 @@
         "CWE-78"
       ],
       "epss": 0.09889,
-      "epss_percentile": 0.95528,
+      "epss_percentile": 0.95533,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -601,7 +601,7 @@
         "CWE-119"
       ],
       "epss": 0.01011,
-      "epss_percentile": 0.62524,
+      "epss_percentile": 0.62542,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -659,7 +659,7 @@
         "CWE-78"
       ],
       "epss": 0.71663,
-      "epss_percentile": 0.99416,
+      "epss_percentile": 0.99417,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -688,7 +688,7 @@
         "CWE-22"
       ],
       "epss": 0.02565,
-      "epss_percentile": 0.84864,
+      "epss_percentile": 0.84879,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -746,7 +746,7 @@
         "CWE-244"
       ],
       "epss": 0.0101,
-      "epss_percentile": 0.62496,
+      "epss_percentile": 0.62514,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -833,7 +833,7 @@
         "CWE-311"
       ],
       "epss": 0.06561,
-      "epss_percentile": 0.93736,
+      "epss_percentile": 0.93742,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -862,7 +862,7 @@
         "CWE-259"
       ],
       "epss": 0.35096,
-      "epss_percentile": 0.98425,
+      "epss_percentile": 0.98426,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -891,7 +891,7 @@
         "CWE-200"
       ],
       "epss": 0.29499,
-      "epss_percentile": 0.98171,
+      "epss_percentile": 0.98172,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -920,7 +920,7 @@
         "CWE-502"
       ],
       "epss": 0.03042,
-      "epss_percentile": 0.87305,
+      "epss_percentile": 0.87317,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -949,7 +949,7 @@
         "CWE-502"
       ],
       "epss": 0.15873,
-      "epss_percentile": 0.9685,
+      "epss_percentile": 0.96855,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -978,7 +978,7 @@
         "CWE-78"
       ],
       "epss": 0.76112,
-      "epss_percentile": 0.99529,
+      "epss_percentile": 0.9953,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -1007,7 +1007,7 @@
         "CWE-78"
       ],
       "epss": 0.47362,
-      "epss_percentile": 0.98826,
+      "epss_percentile": 0.98828,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -1036,7 +1036,7 @@
         "CWE-306"
       ],
       "epss": 0.01011,
-      "epss_percentile": 0.62519,
+      "epss_percentile": 0.62538,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -1065,7 +1065,7 @@
         "CWE-918"
       ],
       "epss": 0.06795,
-      "epss_percentile": 0.93922,
+      "epss_percentile": 0.93929,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -1094,7 +1094,7 @@
         "CWE-94"
       ],
       "epss": 0.11791,
-      "epss_percentile": 0.96039,
+      "epss_percentile": 0.96043,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -1123,7 +1123,7 @@
         "CWE-502"
       ],
       "epss": 0.02704,
-      "epss_percentile": 0.85705,
+      "epss_percentile": 0.85719,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -1152,7 +1152,7 @@
         "CWE-22"
       ],
       "epss": 0.28171,
-      "epss_percentile": 0.98094,
+      "epss_percentile": 0.98096,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -1210,7 +1210,7 @@
         "CWE-116"
       ],
       "epss": 0.25323,
-      "epss_percentile": 0.97923,
+      "epss_percentile": 0.97925,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -1324,7 +1324,7 @@
         "CWE-20"
       ],
       "epss": 0.02537,
-      "epss_percentile": 0.84681,
+      "epss_percentile": 0.84696,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -1353,7 +1353,7 @@
         "CWE-787"
       ],
       "epss": 0.31725,
-      "epss_percentile": 0.98282,
+      "epss_percentile": 0.98284,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -1382,7 +1382,7 @@
         "CWE-648"
       ],
       "epss": 0.25476,
-      "epss_percentile": 0.97932,
+      "epss_percentile": 0.97934,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -1411,7 +1411,7 @@
         "CWE-200"
       ],
       "epss": 0.32432,
-      "epss_percentile": 0.9832,
+      "epss_percentile": 0.98322,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -1440,7 +1440,7 @@
         "CWE-79"
       ],
       "epss": 0.01713,
-      "epss_percentile": 0.76981,
+      "epss_percentile": 0.77,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -1469,7 +1469,7 @@
         "CWE-257"
       ],
       "epss": 0.07217,
-      "epss_percentile": 0.94247,
+      "epss_percentile": 0.94253,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -1527,7 +1527,7 @@
         "CWE-20"
       ],
       "epss": 0.43378,
-      "epss_percentile": 0.98718,
+      "epss_percentile": 0.9872,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -1556,7 +1556,7 @@
         "CWE-502"
       ],
       "epss": 0.59294,
-      "epss_percentile": 0.99111,
+      "epss_percentile": 0.99112,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -1643,7 +1643,7 @@
         "CWE-284"
       ],
       "epss": 0.09098,
-      "epss_percentile": 0.95252,
+      "epss_percentile": 0.95257,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -1672,7 +1672,7 @@
         "CWE-125"
       ],
       "epss": 0.04042,
-      "epss_percentile": 0.90489,
+      "epss_percentile": 0.90497,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -1701,7 +1701,7 @@
         "CWE-121"
       ],
       "epss": 0.02295,
-      "epss_percentile": 0.82965,
+      "epss_percentile": 0.82981,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -1730,7 +1730,7 @@
         "CWE-502"
       ],
       "epss": 0.43166,
-      "epss_percentile": 0.9871,
+      "epss_percentile": 0.98712,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -1759,7 +1759,7 @@
         "CWE-79"
       ],
       "epss": 0.20227,
-      "epss_percentile": 0.9744,
+      "epss_percentile": 0.97441,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -1788,7 +1788,7 @@
         "CWE-502"
       ],
       "epss": 0.29201,
-      "epss_percentile": 0.98156,
+      "epss_percentile": 0.98158,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -1846,7 +1846,7 @@
         "CWE-77"
       ],
       "epss": 0.18081,
-      "epss_percentile": 0.97168,
+      "epss_percentile": 0.97171,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -1904,7 +1904,7 @@
         "CWE-918"
       ],
       "epss": 0.53372,
-      "epss_percentile": 0.98978,
+      "epss_percentile": 0.98979,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -1962,7 +1962,7 @@
         "CWE-918"
       ],
       "epss": 0.3614,
-      "epss_percentile": 0.98463,
+      "epss_percentile": 0.98465,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -2020,7 +2020,7 @@
         "CWE-288"
       ],
       "epss": 0.85796,
-      "epss_percentile": 0.99727,
+      "epss_percentile": 0.99728,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -2049,7 +2049,7 @@
         "CWE-787"
       ],
       "epss": 0.22377,
-      "epss_percentile": 0.9767,
+      "epss_percentile": 0.97672,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -2078,7 +2078,7 @@
         "CWE-98"
       ],
       "epss": 0.48873,
-      "epss_percentile": 0.98865,
+      "epss_percentile": 0.98866,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -2107,7 +2107,7 @@
         "CWE-787"
       ],
       "epss": 0.2651,
-      "epss_percentile": 0.97994,
+      "epss_percentile": 0.97996,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -2137,7 +2137,7 @@
         "CWE-250"
       ],
       "epss": 0.02756,
-      "epss_percentile": 0.86011,
+      "epss_percentile": 0.86025,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -2195,7 +2195,7 @@
         "CWE-78"
       ],
       "epss": 0.5558,
-      "epss_percentile": 0.9903,
+      "epss_percentile": 0.99031,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -2282,7 +2282,7 @@
         "CWE-267"
       ],
       "epss": 0.08438,
-      "epss_percentile": 0.94942,
+      "epss_percentile": 0.94948,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -2311,7 +2311,7 @@
         "CWE-79"
       ],
       "epss": 0.04064,
-      "epss_percentile": 0.90531,
+      "epss_percentile": 0.9054,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -2366,8 +2366,8 @@
       "cwes": [
         "CWE-121"
       ],
-      "epss": 0.40169,
-      "epss_percentile": 0.98623,
+      "epss": 0.41502,
+      "epss_percentile": 0.98665,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -2454,7 +2454,7 @@
         "CWE-119"
       ],
       "epss": 0.20284,
-      "epss_percentile": 0.97447,
+      "epss_percentile": 0.97448,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -2483,7 +2483,7 @@
         "CWE-269"
       ],
       "epss": 0.03481,
-      "epss_percentile": 0.88937,
+      "epss_percentile": 0.88947,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -2512,7 +2512,7 @@
         "CWE-502"
       ],
       "epss": 0.14643,
-      "epss_percentile": 0.96627,
+      "epss_percentile": 0.9663,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -2627,8 +2627,8 @@
       "cwes": [
         "CWE-89"
       ],
-      "epss": 0.99806,
-      "epss_percentile": 0.99958,
+      "epss": 0.99921,
+      "epss_percentile": 0.99969,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -2716,7 +2716,7 @@
         "CWE-119"
       ],
       "epss": 0.10562,
-      "epss_percentile": 0.95733,
+      "epss_percentile": 0.95736,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -2745,7 +2745,7 @@
         "CWE-798"
       ],
       "epss": 0.0664,
-      "epss_percentile": 0.93788,
+      "epss_percentile": 0.93795,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -2774,7 +2774,7 @@
         "CWE-79"
       ],
       "epss": 0.24606,
-      "epss_percentile": 0.97862,
+      "epss_percentile": 0.97866,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -2861,7 +2861,7 @@
         "CWE-502"
       ],
       "epss": 0.12743,
-      "epss_percentile": 0.96232,
+      "epss_percentile": 0.96234,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -2919,7 +2919,7 @@
         "CWE-124"
       ],
       "epss": 0.30703,
-      "epss_percentile": 0.98232,
+      "epss_percentile": 0.98234,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -2948,7 +2948,7 @@
         "CWE-78"
       ],
       "epss": 0.7625,
-      "epss_percentile": 0.99533,
+      "epss_percentile": 0.99534,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -3006,7 +3006,7 @@
         "CWE-78"
       ],
       "epss": 0.04181,
-      "epss_percentile": 0.90787,
+      "epss_percentile": 0.90795,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -3123,7 +3123,7 @@
         "CWE-288"
       ],
       "epss": 0.07235,
-      "epss_percentile": 0.94258,
+      "epss_percentile": 0.94264,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -3152,7 +3152,7 @@
         "CWE-36"
       ],
       "epss": 0.90081,
-      "epss_percentile": 0.99797,
+      "epss_percentile": 0.99796,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -3181,7 +3181,7 @@
         "CWE-36"
       ],
       "epss": 0.91247,
-      "epss_percentile": 0.99811,
+      "epss_percentile": 0.9981,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -3239,7 +3239,7 @@
         "CWE-125"
       ],
       "epss": 0.01769,
-      "epss_percentile": 0.77745,
+      "epss_percentile": 0.77766,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -3268,7 +3268,7 @@
         "CWE-123"
       ],
       "epss": 0.01016,
-      "epss_percentile": 0.62666,
+      "epss_percentile": 0.62684,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -3297,7 +3297,7 @@
         "CWE-367"
       ],
       "epss": 0.01561,
-      "epss_percentile": 0.7481,
+      "epss_percentile": 0.74834,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -3355,7 +3355,7 @@
         "CWE-77"
       ],
       "epss": 0.54107,
-      "epss_percentile": 0.98997,
+      "epss_percentile": 0.98999,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -3413,7 +3413,7 @@
         "CWE-73"
       ],
       "epss": 0.01999,
-      "epss_percentile": 0.804,
+      "epss_percentile": 0.80419,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -3500,7 +3500,7 @@
         "CWE-120"
       ],
       "epss": 0.10674,
-      "epss_percentile": 0.95762,
+      "epss_percentile": 0.95766,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -3529,7 +3529,7 @@
         "CWE-89"
       ],
       "epss": 0.04696,
-      "epss_percentile": 0.91678,
+      "epss_percentile": 0.91686,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -3558,7 +3558,7 @@
         "CWE-502"
       ],
       "epss": 0.23432,
-      "epss_percentile": 0.9777,
+      "epss_percentile": 0.97771,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -3643,7 +3643,7 @@
       "known_ransomware": false,
       "cwes": [],
       "epss": 0.94582,
-      "epss_percentile": 0.99856,
+      "epss_percentile": 0.99855,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -3672,7 +3672,7 @@
         "CWE-754"
       ],
       "epss": 0.2912,
-      "epss_percentile": 0.98152,
+      "epss_percentile": 0.98154,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -3702,7 +3702,7 @@
         "CWE-273"
       ],
       "epss": 0.17355,
-      "epss_percentile": 0.97085,
+      "epss_percentile": 0.97088,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -3731,7 +3731,7 @@
         "CWE-122"
       ],
       "epss": 0.54571,
-      "epss_percentile": 0.99009,
+      "epss_percentile": 0.9901,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -3934,7 +3934,7 @@
         "CWE-79"
       ],
       "epss": 0.22558,
-      "epss_percentile": 0.97692,
+      "epss_percentile": 0.97694,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -3963,7 +3963,7 @@
         "CWE-306"
       ],
       "epss": 0.91684,
-      "epss_percentile": 0.99816,
+      "epss_percentile": 0.99815,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -3992,7 +3992,7 @@
         "CWE-772"
       ],
       "epss": 0.15874,
-      "epss_percentile": 0.9685,
+      "epss_percentile": 0.96855,
       "india_relevance": "high",
       "watchlist": false,
       "tags": [],
@@ -4050,7 +4050,7 @@
         "CWE-502"
       ],
       "epss": 0.50892,
-      "epss_percentile": 0.98916,
+      "epss_percentile": 0.98918,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -4079,7 +4079,7 @@
         "CWE-77"
       ],
       "epss": 0.59651,
-      "epss_percentile": 0.9912,
+      "epss_percentile": 0.99121,
       "india_relevance": "high",
       "watchlist": false,
       "tags": [],
@@ -4108,7 +4108,7 @@
         "CWE-89"
       ],
       "epss": 0.43782,
-      "epss_percentile": 0.98732,
+      "epss_percentile": 0.98733,
       "india_relevance": "high",
       "watchlist": false,
       "tags": [],
@@ -4137,7 +4137,7 @@
         "CWE-134"
       ],
       "epss": 0.61725,
-      "epss_percentile": 0.99163,
+      "epss_percentile": 0.99165,
       "india_relevance": "high",
       "watchlist": false,
       "tags": [],
@@ -4224,7 +4224,7 @@
         "CWE-502"
       ],
       "epss": 0.07079,
-      "epss_percentile": 0.94144,
+      "epss_percentile": 0.9415,
       "india_relevance": "high",
       "watchlist": false,
       "tags": [],
@@ -4397,7 +4397,7 @@
         "CWE-284"
       ],
       "epss": 0.18379,
-      "epss_percentile": 0.972,
+      "epss_percentile": 0.97203,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -4426,7 +4426,7 @@
         "CWE-22"
       ],
       "epss": 0.96308,
-      "epss_percentile": 0.9988,
+      "epss_percentile": 0.99881,
       "india_relevance": "high",
       "watchlist": false,
       "tags": [],
@@ -4482,7 +4482,7 @@
       "known_ransomware": false,
       "cwes": [],
       "epss": 0.54056,
-      "epss_percentile": 0.98996,
+      "epss_percentile": 0.98997,
       "india_relevance": "high",
       "watchlist": false,
       "tags": [],
@@ -4540,7 +4540,7 @@
         "CWE-305"
       ],
       "epss": 0.2677,
-      "epss_percentile": 0.98011,
+      "epss_percentile": 0.98013,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -4569,7 +4569,7 @@
         "CWE-276"
       ],
       "epss": 0.13282,
-      "epss_percentile": 0.9635,
+      "epss_percentile": 0.96352,
       "india_relevance": "high",
       "watchlist": false,
       "tags": [],
@@ -4655,8 +4655,8 @@
       "cwes": [
         "CWE-284"
       ],
-      "epss": 0.94647,
-      "epss_percentile": 0.99857,
+      "epss": 0.94458,
+      "epss_percentile": 0.99853,
       "india_relevance": "high",
       "watchlist": false,
       "tags": [],
@@ -4685,7 +4685,7 @@
         "CWE-94"
       ],
       "epss": 0.19434,
-      "epss_percentile": 0.97336,
+      "epss_percentile": 0.97339,
       "india_relevance": "high",
       "watchlist": false,
       "tags": [],
@@ -4714,7 +4714,7 @@
         "CWE-835"
       ],
       "epss": 0.70686,
-      "epss_percentile": 0.9939,
+      "epss_percentile": 0.99391,
       "india_relevance": "high",
       "watchlist": false,
       "tags": [],
@@ -4918,7 +4918,7 @@
         "CWE-287"
       ],
       "epss": 0.12561,
-      "epss_percentile": 0.96195,
+      "epss_percentile": 0.96198,
       "india_relevance": "high",
       "watchlist": false,
       "tags": [],
@@ -5092,7 +5092,7 @@
         "CWE-119"
       ],
       "epss": 0.57633,
-      "epss_percentile": 0.99076,
+      "epss_percentile": 0.99077,
       "india_relevance": "high",
       "watchlist": false,
       "tags": [],
@@ -5121,7 +5121,7 @@
         "CWE-94"
       ],
       "epss": 0.03191,
-      "epss_percentile": 0.87889,
+      "epss_percentile": 0.87902,
       "india_relevance": "high",
       "watchlist": false,
       "tags": [],
@@ -5295,7 +5295,7 @@
         "CWE-89"
       ],
       "epss": 0.04468,
-      "epss_percentile": 0.91321,
+      "epss_percentile": 0.9133,
       "india_relevance": "high",
       "watchlist": false,
       "tags": [],
@@ -5324,7 +5324,7 @@
         "CWE-288"
       ],
       "epss": 0.96515,
-      "epss_percentile": 0.99882,
+      "epss_percentile": 0.99883,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -5352,8 +5352,8 @@
       "cwes": [
         "CWE-78"
       ],
-      "epss": 0.89634,
-      "epss_percentile": 0.99789,
+      "epss": 0.92992,
+      "epss_percentile": 0.99833,
       "india_relevance": "high",
       "watchlist": false,
       "tags": [],
@@ -5410,8 +5410,8 @@
       "cwes": [
         "CWE-420"
       ],
-      "epss": 0.99571,
-      "epss_percentile": 0.99947,
+      "epss": 0.99609,
+      "epss_percentile": 0.99948,
       "india_relevance": "high",
       "watchlist": false,
       "tags": [],
@@ -5440,7 +5440,7 @@
         "CWE-787"
       ],
       "epss": 0.02484,
-      "epss_percentile": 0.84322,
+      "epss_percentile": 0.84338,
       "india_relevance": "high",
       "watchlist": false,
       "tags": [],
@@ -5554,7 +5554,7 @@
         "CWE-94"
       ],
       "epss": 0.74202,
-      "epss_percentile": 0.99486,
+      "epss_percentile": 0.99485,
       "india_relevance": "high",
       "watchlist": false,
       "tags": [],
@@ -5583,7 +5583,7 @@
         "CWE-288"
       ],
       "epss": 0.25453,
-      "epss_percentile": 0.9793,
+      "epss_percentile": 0.97932,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -5670,7 +5670,7 @@
         "CWE-22"
       ],
       "epss": 0.63577,
-      "epss_percentile": 0.99208,
+      "epss_percentile": 0.99209,
       "india_relevance": "high",
       "watchlist": false,
       "tags": [],
@@ -5699,7 +5699,7 @@
         "CWE-79"
       ],
       "epss": 0.49083,
-      "epss_percentile": 0.98871,
+      "epss_percentile": 0.98872,
       "india_relevance": "high",
       "watchlist": false,
       "tags": [],
@@ -5786,7 +5786,7 @@
         "CWE-287"
       ],
       "epss": 0.1353,
-      "epss_percentile": 0.96413,
+      "epss_percentile": 0.96416,
       "india_relevance": "high",
       "watchlist": false,
       "tags": [],
@@ -5931,7 +5931,7 @@
         "CWE-200"
       ],
       "epss": 0.23003,
-      "epss_percentile": 0.97731,
+      "epss_percentile": 0.97732,
       "india_relevance": "high",
       "watchlist": false,
       "tags": [],
@@ -5960,7 +5960,7 @@
         "CWE-284"
       ],
       "epss": 0.90338,
-      "epss_percentile": 0.998,
+      "epss_percentile": 0.99799,
       "india_relevance": "high",
       "watchlist": false,
       "tags": [],
@@ -6016,7 +6016,7 @@
         "CWE-119"
       ],
       "epss": 0.21424,
-      "epss_percentile": 0.97585,
+      "epss_percentile": 0.97586,
       "india_relevance": "high",
       "watchlist": false,
       "tags": [],
@@ -6046,7 +6046,7 @@
         "CWE-138"
       ],
       "epss": 0.17634,
-      "epss_percentile": 0.97119,
+      "epss_percentile": 0.97122,
       "india_relevance": "high",
       "watchlist": false,
       "tags": [],
@@ -6075,7 +6075,7 @@
         "CWE-22"
       ],
       "epss": 0.10682,
-      "epss_percentile": 0.95766,
+      "epss_percentile": 0.95769,
       "india_relevance": "high",
       "watchlist": false,
       "tags": [],
@@ -6105,7 +6105,7 @@
         "CWE-259"
       ],
       "epss": 0.70966,
-      "epss_percentile": 0.99398,
+      "epss_percentile": 0.99399,
       "india_relevance": "high",
       "watchlist": false,
       "tags": [],
@@ -6217,7 +6217,7 @@
         "CWE-664"
       ],
       "epss": 0.06858,
-      "epss_percentile": 0.93969,
+      "epss_percentile": 0.93975,
       "india_relevance": "high",
       "watchlist": false,
       "tags": [],
@@ -6246,7 +6246,7 @@
         "CWE-427"
       ],
       "epss": 0.10049,
-      "epss_percentile": 0.95577,
+      "epss_percentile": 0.95581,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -6275,7 +6275,7 @@
         "CWE-427"
       ],
       "epss": 0.28307,
-      "epss_percentile": 0.98102,
+      "epss_percentile": 0.98104,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -6304,7 +6304,7 @@
         "CWE-22"
       ],
       "epss": 0.95478,
-      "epss_percentile": 0.9987,
+      "epss_percentile": 0.99871,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -6538,7 +6538,7 @@
         "CWE-732"
       ],
       "epss": 0.38088,
-      "epss_percentile": 0.98544,
+      "epss_percentile": 0.98546,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -6596,7 +6596,7 @@
         "CWE-940"
       ],
       "epss": 0.02542,
-      "epss_percentile": 0.84723,
+      "epss_percentile": 0.84738,
       "india_relevance": "high",
       "watchlist": false,
       "tags": [],
@@ -6710,7 +6710,7 @@
         "CWE-23"
       ],
       "epss": 0.91893,
-      "epss_percentile": 0.99819,
+      "epss_percentile": 0.99818,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -6797,7 +6797,7 @@
         "CWE-23"
       ],
       "epss": 0.36898,
-      "epss_percentile": 0.98495,
+      "epss_percentile": 0.98497,
       "india_relevance": "high",
       "watchlist": false,
       "tags": [],
@@ -6826,7 +6826,7 @@
         "CWE-89"
       ],
       "epss": 0.71522,
-      "epss_percentile": 0.99412,
+      "epss_percentile": 0.99413,
       "india_relevance": "high",
       "watchlist": false,
       "tags": [],
@@ -6855,7 +6855,7 @@
         "CWE-200"
       ],
       "epss": 0.52206,
-      "epss_percentile": 0.98949,
+      "epss_percentile": 0.9895,
       "india_relevance": "high",
       "watchlist": false,
       "tags": [],
@@ -6884,7 +6884,7 @@
         "CWE-502"
       ],
       "epss": 0.05488,
-      "epss_percentile": 0.92675,
+      "epss_percentile": 0.92683,
       "india_relevance": "high",
       "watchlist": false,
       "tags": [],
@@ -6942,7 +6942,7 @@
         "CWE-264"
       ],
       "epss": 0.61487,
-      "epss_percentile": 0.99159,
+      "epss_percentile": 0.9916,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -6971,7 +6971,7 @@
         "CWE-264"
       ],
       "epss": 0.74722,
-      "epss_percentile": 0.995,
+      "epss_percentile": 0.99501,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -7029,7 +7029,7 @@
         "CWE-77"
       ],
       "epss": 0.22583,
-      "epss_percentile": 0.97694,
+      "epss_percentile": 0.97695,
       "india_relevance": "high",
       "watchlist": false,
       "tags": [],
@@ -7058,7 +7058,7 @@
         "CWE-923"
       ],
       "epss": 0.11471,
-      "epss_percentile": 0.95973,
+      "epss_percentile": 0.95977,
       "india_relevance": "high",
       "watchlist": false,
       "tags": [],
@@ -7143,7 +7143,7 @@
       "known_ransomware": false,
       "cwes": [],
       "epss": 0.7444,
-      "epss_percentile": 0.99491,
+      "epss_percentile": 0.9949,
       "india_relevance": "high",
       "watchlist": false,
       "tags": [],
@@ -7172,7 +7172,7 @@
         "CWE-79"
       ],
       "epss": 0.29761,
-      "epss_percentile": 0.98185,
+      "epss_percentile": 0.98187,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -7257,7 +7257,7 @@
       "known_ransomware": false,
       "cwes": [],
       "epss": 0.10805,
-      "epss_percentile": 0.95802,
+      "epss_percentile": 0.95806,
       "india_relevance": "high",
       "watchlist": false,
       "tags": [],
@@ -7373,7 +7373,7 @@
         "CWE-89"
       ],
       "epss": 0.30084,
-      "epss_percentile": 0.98201,
+      "epss_percentile": 0.98202,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -7402,7 +7402,7 @@
         "CWE-22"
       ],
       "epss": 0.0401,
-      "epss_percentile": 0.90424,
+      "epss_percentile": 0.90432,
       "india_relevance": "high",
       "watchlist": false,
       "tags": [],
@@ -7460,7 +7460,7 @@
         "CWE-284"
       ],
       "epss": 0.53585,
-      "epss_percentile": 0.98984,
+      "epss_percentile": 0.98985,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -7547,7 +7547,7 @@
         "CWE-347"
       ],
       "epss": 0.04362,
-      "epss_percentile": 0.91118,
+      "epss_percentile": 0.91126,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -7575,8 +7575,8 @@
       "cwes": [
         "CWE-78"
       ],
-      "epss": 0.74052,
-      "epss_percentile": 0.99482,
+      "epss": 0.7446,
+      "epss_percentile": 0.99491,
       "india_relevance": "high",
       "watchlist": false,
       "tags": [],
@@ -7604,8 +7604,8 @@
       "cwes": [
         "CWE-89"
       ],
-      "epss": 0.94957,
-      "epss_percentile": 0.99862,
+      "epss": 0.94879,
+      "epss_percentile": 0.99861,
       "india_relevance": "high",
       "watchlist": false,
       "tags": [],
@@ -7632,7 +7632,7 @@
       "known_ransomware": false,
       "cwes": [],
       "epss": 0.97058,
-      "epss_percentile": 0.99892,
+      "epss_percentile": 0.99893,
       "india_relevance": "high",
       "watchlist": false,
       "tags": [],
@@ -7660,8 +7660,8 @@
       "cwes": [
         "CWE-78"
       ],
-      "epss": 0.86252,
-      "epss_percentile": 0.99733,
+      "epss": 0.85342,
+      "epss_percentile": 0.99717,
       "india_relevance": "high",
       "watchlist": false,
       "tags": [],
@@ -7719,7 +7719,7 @@
         "CWE-20"
       ],
       "epss": 0.18212,
-      "epss_percentile": 0.97181,
+      "epss_percentile": 0.97184,
       "india_relevance": "high",
       "watchlist": false,
       "tags": [],
@@ -7748,7 +7748,7 @@
         "CWE-20"
       ],
       "epss": 0.55186,
-      "epss_percentile": 0.99021,
+      "epss_percentile": 0.99022,
       "india_relevance": "high",
       "watchlist": false,
       "tags": [],
@@ -7922,7 +7922,7 @@
         "CWE-20"
       ],
       "epss": 0.05668,
-      "epss_percentile": 0.92883,
+      "epss_percentile": 0.92891,
       "india_relevance": "high",
       "watchlist": false,
       "tags": [],
@@ -7951,7 +7951,7 @@
         "CWE-20"
       ],
       "epss": 0.03314,
-      "epss_percentile": 0.88392,
+      "epss_percentile": 0.88401,
       "india_relevance": "high",
       "watchlist": false,
       "tags": [],
@@ -7980,7 +7980,7 @@
         "CWE-120"
       ],
       "epss": 0.26869,
-      "epss_percentile": 0.98017,
+      "epss_percentile": 0.98019,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -8039,7 +8039,7 @@
         "CWE-94"
       ],
       "epss": 0.3225,
-      "epss_percentile": 0.98311,
+      "epss_percentile": 0.98312,
       "india_relevance": "high",
       "watchlist": false,
       "tags": [],
@@ -8097,7 +8097,7 @@
         "CWE-121"
       ],
       "epss": 0.14863,
-      "epss_percentile": 0.96665,
+      "epss_percentile": 0.96668,
       "india_relevance": "high",
       "watchlist": false,
       "tags": [],
@@ -8126,7 +8126,7 @@
         "CWE-347"
       ],
       "epss": 0.09203,
-      "epss_percentile": 0.95286,
+      "epss_percentile": 0.95291,
       "india_relevance": "high",
       "watchlist": false,
       "tags": [],
@@ -8155,7 +8155,7 @@
         "CWE-121"
       ],
       "epss": 0.09747,
-      "epss_percentile": 0.95478,
+      "epss_percentile": 0.95482,
       "india_relevance": "high",
       "watchlist": false,
       "tags": [],
@@ -8184,7 +8184,7 @@
         "CWE-121"
       ],
       "epss": 0.05655,
-      "epss_percentile": 0.9287,
+      "epss_percentile": 0.92878,
       "india_relevance": "high",
       "watchlist": false,
       "tags": [],
@@ -8213,7 +8213,7 @@
         "CWE-785"
       ],
       "epss": 0.72458,
-      "epss_percentile": 0.99436,
+      "epss_percentile": 0.99437,
       "india_relevance": "high",
       "watchlist": false,
       "tags": [],
@@ -8240,7 +8240,7 @@
       "known_ransomware": false,
       "cwes": [],
       "epss": 0.9927,
-      "epss_percentile": 0.99937,
+      "epss_percentile": 0.99938,
       "india_relevance": "high",
       "watchlist": false,
       "tags": [],
@@ -8296,7 +8296,7 @@
       "known_ransomware": true,
       "cwes": [],
       "epss": 0.27355,
-      "epss_percentile": 0.98043,
+      "epss_percentile": 0.98045,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -8325,7 +8325,7 @@
         "CWE-20"
       ],
       "epss": 0.07608,
-      "epss_percentile": 0.94486,
+      "epss_percentile": 0.94492,
       "india_relevance": "high",
       "watchlist": false,
       "tags": [],
@@ -8354,7 +8354,7 @@
         "CWE-20"
       ],
       "epss": 0.07608,
-      "epss_percentile": 0.94486,
+      "epss_percentile": 0.94492,
       "india_relevance": "high",
       "watchlist": false,
       "tags": [],
@@ -8383,7 +8383,7 @@
         "CWE-20"
       ],
       "epss": 0.0782,
-      "epss_percentile": 0.94609,
+      "epss_percentile": 0.94614,
       "india_relevance": "high",
       "watchlist": false,
       "tags": [],
@@ -8412,7 +8412,7 @@
         "CWE-20"
       ],
       "epss": 0.0687,
-      "epss_percentile": 0.93977,
+      "epss_percentile": 0.93984,
       "india_relevance": "high",
       "watchlist": false,
       "tags": [],
@@ -8441,7 +8441,7 @@
         "CWE-20"
       ],
       "epss": 0.0719,
-      "epss_percentile": 0.94231,
+      "epss_percentile": 0.94237,
       "india_relevance": "high",
       "watchlist": false,
       "tags": [],
@@ -8470,7 +8470,7 @@
         "CWE-399"
       ],
       "epss": 0.0936,
-      "epss_percentile": 0.95342,
+      "epss_percentile": 0.95347,
       "india_relevance": "high",
       "watchlist": false,
       "tags": [],
@@ -8499,7 +8499,7 @@
         "CWE-388"
       ],
       "epss": 0.07742,
-      "epss_percentile": 0.94566,
+      "epss_percentile": 0.94572,
       "india_relevance": "high",
       "watchlist": false,
       "tags": [],
@@ -8528,7 +8528,7 @@
         "CWE-119"
       ],
       "epss": 0.14197,
-      "epss_percentile": 0.96548,
+      "epss_percentile": 0.96551,
       "india_relevance": "high",
       "watchlist": false,
       "tags": [],
@@ -8557,7 +8557,7 @@
         "CWE-119"
       ],
       "epss": 0.10855,
-      "epss_percentile": 0.95816,
+      "epss_percentile": 0.9582,
       "india_relevance": "high",
       "watchlist": false,
       "tags": [],
@@ -8586,7 +8586,7 @@
         "CWE-119"
       ],
       "epss": 0.111,
-      "epss_percentile": 0.95885,
+      "epss_percentile": 0.95889,
       "india_relevance": "high",
       "watchlist": false,
       "tags": [],
@@ -8615,7 +8615,7 @@
         "CWE-119"
       ],
       "epss": 0.10855,
-      "epss_percentile": 0.95816,
+      "epss_percentile": 0.9582,
       "india_relevance": "high",
       "watchlist": false,
       "tags": [],
@@ -8644,7 +8644,7 @@
         "CWE-119"
       ],
       "epss": 0.10855,
-      "epss_percentile": 0.95817,
+      "epss_percentile": 0.9582,
       "india_relevance": "high",
       "watchlist": false,
       "tags": [],
@@ -8702,7 +8702,7 @@
         "CWE-119"
       ],
       "epss": 0.70354,
-      "epss_percentile": 0.99381,
+      "epss_percentile": 0.99382,
       "india_relevance": "high",
       "watchlist": false,
       "tags": [],
@@ -8729,7 +8729,7 @@
       "known_ransomware": false,
       "cwes": [],
       "epss": 0.02117,
-      "epss_percentile": 0.81514,
+      "epss_percentile": 0.81531,
       "india_relevance": "high",
       "watchlist": false,
       "tags": [],
@@ -8758,7 +8758,7 @@
         "CWE-399"
       ],
       "epss": 0.06158,
-      "epss_percentile": 0.93388,
+      "epss_percentile": 0.93396,
       "india_relevance": "high",
       "watchlist": false,
       "tags": [],
@@ -8787,7 +8787,7 @@
         "CWE-20"
       ],
       "epss": 0.05243,
-      "epss_percentile": 0.92426,
+      "epss_percentile": 0.92434,
       "india_relevance": "high",
       "watchlist": false,
       "tags": [],
@@ -8816,7 +8816,7 @@
         "CWE-20"
       ],
       "epss": 0.13773,
-      "epss_percentile": 0.96474,
+      "epss_percentile": 0.96478,
       "india_relevance": "high",
       "watchlist": false,
       "tags": [],
@@ -8845,7 +8845,7 @@
         "CWE-399"
       ],
       "epss": 0.02017,
-      "epss_percentile": 0.80578,
+      "epss_percentile": 0.80595,
       "india_relevance": "high",
       "watchlist": false,
       "tags": [],
@@ -8874,7 +8874,7 @@
         "CWE-399"
       ],
       "epss": 0.0707,
-      "epss_percentile": 0.94138,
+      "epss_percentile": 0.94143,
       "india_relevance": "high",
       "watchlist": false,
       "tags": [],
@@ -8904,7 +8904,7 @@
         "CWE-116"
       ],
       "epss": 0.30931,
-      "epss_percentile": 0.98244,
+      "epss_percentile": 0.98246,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -9018,7 +9018,7 @@
         "CWE-121"
       ],
       "epss": 0.99912,
-      "epss_percentile": 0.99968,
+      "epss_percentile": 0.99967,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -9045,7 +9045,7 @@
       "known_ransomware": false,
       "cwes": [],
       "epss": 0.54635,
-      "epss_percentile": 0.99011,
+      "epss_percentile": 0.99012,
       "india_relevance": "high",
       "watchlist": false,
       "tags": [],
@@ -9103,7 +9103,7 @@
         "CWE-287"
       ],
       "epss": 0.98176,
-      "epss_percentile": 0.99914,
+      "epss_percentile": 0.99915,
       "india_relevance": "high",
       "watchlist": false,
       "tags": [],
@@ -9132,7 +9132,7 @@
         "CWE-918"
       ],
       "epss": 0.78001,
-      "epss_percentile": 0.99571,
+      "epss_percentile": 0.99572,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -9161,7 +9161,7 @@
         "CWE-119"
       ],
       "epss": 0.61064,
-      "epss_percentile": 0.9915,
+      "epss_percentile": 0.99151,
       "india_relevance": "high",
       "watchlist": false,
       "tags": [],
@@ -9190,7 +9190,7 @@
         "CWE-23"
       ],
       "epss": 0.49177,
-      "epss_percentile": 0.98872,
+      "epss_percentile": 0.98873,
       "india_relevance": "high",
       "watchlist": false,
       "tags": [],
@@ -9219,7 +9219,7 @@
         "CWE-74"
       ],
       "epss": 0.99977,
-      "epss_percentile": 0.99979,
+      "epss_percentile": 0.9998,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -9306,7 +9306,7 @@
         "CWE-787"
       ],
       "epss": 0.33647,
-      "epss_percentile": 0.98372,
+      "epss_percentile": 0.98374,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -9335,7 +9335,7 @@
         "CWE-134"
       ],
       "epss": 0.46239,
-      "epss_percentile": 0.988,
+      "epss_percentile": 0.98801,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -9391,7 +9391,7 @@
         "CWE-494"
       ],
       "epss": 0.00865,
-      "epss_percentile": 0.57887,
+      "epss_percentile": 0.57911,
       "india_relevance": "high",
       "watchlist": false,
       "tags": [],
@@ -9420,7 +9420,7 @@
         "CWE-502"
       ],
       "epss": 0.90713,
-      "epss_percentile": 0.99805,
+      "epss_percentile": 0.99804,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -9566,7 +9566,7 @@
         "CWE-502"
       ],
       "epss": 0.99396,
-      "epss_percentile": 0.99941,
+      "epss_percentile": 0.99942,
       "india_relevance": "high",
       "watchlist": false,
       "tags": [],
@@ -9883,7 +9883,7 @@
         "CWE-134"
       ],
       "epss": 0.11685,
-      "epss_percentile": 0.96018,
+      "epss_percentile": 0.96023,
       "india_relevance": "high",
       "watchlist": false,
       "tags": [],
@@ -9912,7 +9912,7 @@
         "CWE-400"
       ],
       "epss": 0.03702,
-      "epss_percentile": 0.89588,
+      "epss_percentile": 0.89597,
       "india_relevance": "high",
       "watchlist": false,
       "tags": [],
@@ -9941,7 +9941,7 @@
         "CWE-400"
       ],
       "epss": 0.0332,
-      "epss_percentile": 0.88409,
+      "epss_percentile": 0.88418,
       "india_relevance": "high",
       "watchlist": false,
       "tags": [],
@@ -10028,7 +10028,7 @@
         "CWE-611"
       ],
       "epss": 0.30041,
-      "epss_percentile": 0.98196,
+      "epss_percentile": 0.98198,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -10056,8 +10056,8 @@
       "cwes": [
         "CWE-284"
       ],
-      "epss": 0.88411,
-      "epss_percentile": 0.99772,
+      "epss": 0.88269,
+      "epss_percentile": 0.99771,
       "india_relevance": "high",
       "watchlist": false,
       "tags": [],
@@ -10086,7 +10086,7 @@
         "CWE-20"
       ],
       "epss": 0.33029,
-      "epss_percentile": 0.98348,
+      "epss_percentile": 0.98349,
       "india_relevance": "high",
       "watchlist": false,
       "tags": [],
@@ -10115,7 +10115,7 @@
         "CWE-284"
       ],
       "epss": 0.26333,
-      "epss_percentile": 0.97986,
+      "epss_percentile": 0.97988,
       "india_relevance": "high",
       "watchlist": false,
       "tags": [],
@@ -10171,7 +10171,7 @@
       "known_ransomware": true,
       "cwes": [],
       "epss": 0.08091,
-      "epss_percentile": 0.94758,
+      "epss_percentile": 0.94764,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -10259,7 +10259,7 @@
         "CWE-863"
       ],
       "epss": 0.99898,
-      "epss_percentile": 0.99966,
+      "epss_percentile": 0.99965,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -10288,7 +10288,7 @@
         "CWE-306"
       ],
       "epss": 0.18566,
-      "epss_percentile": 0.97224,
+      "epss_percentile": 0.97228,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -10405,7 +10405,7 @@
         "CWE-502"
       ],
       "epss": 0.36514,
-      "epss_percentile": 0.9848,
+      "epss_percentile": 0.98482,
       "india_relevance": "high",
       "watchlist": false,
       "tags": [],
@@ -10802,7 +10802,7 @@
       "known_ransomware": false,
       "cwes": [],
       "epss": 0.97734,
-      "epss_percentile": 0.99905,
+      "epss_percentile": 0.99906,
       "india_relevance": "high",
       "watchlist": false,
       "tags": [],
@@ -10860,7 +10860,7 @@
         "CWE-287"
       ],
       "epss": 0.47172,
-      "epss_percentile": 0.98822,
+      "epss_percentile": 0.98824,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -10918,7 +10918,7 @@
         "CWE-94"
       ],
       "epss": 0.14146,
-      "epss_percentile": 0.9654,
+      "epss_percentile": 0.96543,
       "india_relevance": "high",
       "watchlist": false,
       "tags": [],
@@ -10947,7 +10947,7 @@
         "CWE-94"
       ],
       "epss": 0.41284,
-      "epss_percentile": 0.98655,
+      "epss_percentile": 0.98657,
       "india_relevance": "high",
       "watchlist": false,
       "tags": [],
@@ -10976,7 +10976,7 @@
         "CWE-434"
       ],
       "epss": 0.9648,
-      "epss_percentile": 0.99882,
+      "epss_percentile": 0.99883,
       "india_relevance": "high",
       "watchlist": false,
       "tags": [],
@@ -11005,7 +11005,7 @@
         "CWE-77"
       ],
       "epss": 0.22915,
-      "epss_percentile": 0.97724,
+      "epss_percentile": 0.97725,
       "india_relevance": "high",
       "watchlist": false,
       "tags": [],
@@ -11092,7 +11092,7 @@
         "CWE-22"
       ],
       "epss": 0.28934,
-      "epss_percentile": 0.98139,
+      "epss_percentile": 0.98141,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -11119,7 +11119,7 @@
       "known_ransomware": false,
       "cwes": [],
       "epss": 0.1777,
-      "epss_percentile": 0.97133,
+      "epss_percentile": 0.97136,
       "india_relevance": "high",
       "watchlist": false,
       "tags": [],
@@ -11148,7 +11148,7 @@
         "CWE-611"
       ],
       "epss": 0.24226,
-      "epss_percentile": 0.97836,
+      "epss_percentile": 0.97839,
       "india_relevance": "high",
       "watchlist": false,
       "tags": [],
@@ -11177,7 +11177,7 @@
         "CWE-306"
       ],
       "epss": 0.94719,
-      "epss_percentile": 0.99859,
+      "epss_percentile": 0.99858,
       "india_relevance": "high",
       "watchlist": false,
       "tags": [],
@@ -11206,7 +11206,7 @@
         "CWE-306"
       ],
       "epss": 0.98135,
-      "epss_percentile": 0.99913,
+      "epss_percentile": 0.99914,
       "india_relevance": "high",
       "watchlist": false,
       "tags": [],
@@ -11235,7 +11235,7 @@
         "CWE-22"
       ],
       "epss": 0.47252,
-      "epss_percentile": 0.98825,
+      "epss_percentile": 0.98826,
       "india_relevance": "high",
       "watchlist": false,
       "tags": [],
@@ -11293,7 +11293,7 @@
         "CWE-89"
       ],
       "epss": 0.99906,
-      "epss_percentile": 0.99967,
+      "epss_percentile": 0.99966,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -11322,7 +11322,7 @@
         "CWE-434"
       ],
       "epss": 0.16639,
-      "epss_percentile": 0.96989,
+      "epss_percentile": 0.96992,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -11351,7 +11351,7 @@
         "CWE-22"
       ],
       "epss": 0.51689,
-      "epss_percentile": 0.98936,
+      "epss_percentile": 0.98938,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -11409,7 +11409,7 @@
         "CWE-89"
       ],
       "epss": 0.42434,
-      "epss_percentile": 0.9869,
+      "epss_percentile": 0.98691,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -11467,7 +11467,7 @@
         "CWE-787"
       ],
       "epss": 0.97258,
-      "epss_percentile": 0.99897,
+      "epss_percentile": 0.99898,
       "india_relevance": "high",
       "watchlist": true,
       "tags": [],
@@ -11525,7 +11525,7 @@
         "CWE-269"
       ],
       "epss": 0.07254,
-      "epss_percentile": 0.94272,
+      "epss_percentile": 0.94278,
       "india_relevance": "high",
       "watchlist": false,
       "tags": [],
@@ -11583,7 +11583,7 @@
         "CWE-306"
       ],
       "epss": 0.90384,
-      "epss_percentile": 0.99801,
+      "epss_percentile": 0.998,
       "india_relevance": "high",
       "watchlist": false,
       "tags": [],
@@ -11672,7 +11672,7 @@
         "CWE-78"
       ],
       "epss": 0.17302,
-      "epss_percentile": 0.97077,
+      "epss_percentile": 0.97081,
       "india_relevance": "high",
       "watchlist": false,
       "tags": [],
@@ -11759,7 +11759,7 @@
         "CWE-434"
       ],
       "epss": 0.63336,
-      "epss_percentile": 0.99201,
+      "epss_percentile": 0.99202,
       "india_relevance": "high",
       "watchlist": false,
       "tags": [],
