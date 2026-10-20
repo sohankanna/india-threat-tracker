@@ -106,11 +106,20 @@ def _lower_first(name):
 
 
 def decode_winevt(raw):
-    """The parts of analysisd's DecodeWinevt these rules depend on: System
-    elements and EventData <Data Name=...> become win.system.* / win.eventdata.*
-    with the first letter lower-cased; severityValue comes from Level and is only
-    set when Keywords is present too."""
-    event = ET.fromstring(json.loads(raw)["Event"])
+    """The parts of analysisd's DecodeWinevt these rules depend on.
+
+    DecodeWinevt does not parse the Event string directly: it JSON-prints it
+    (cJSON_PrintUnformatted) and parses that as XML. So backslashes in values
+    arrive doubled, and a double-quoted attribute becomes \" and breaks the
+    parse, leaving no provider or fields. System elements and <Data Name=...>
+    become win.system.* / win.eventdata.* with the first letter lower-cased;
+    severityValue comes from Level and is only set when Keywords is present."""
+    received = json.loads(raw)
+    printed = json.dumps(received["Event"], ensure_ascii=False)[1:-1]
+    try:
+        event = ET.fromstring(printed)
+    except ET.ParseError:
+        return {"win.system.message": str(received.get("Message", ""))}
     ns = {"e": "http://schemas.microsoft.com/win/2004/08/events/event"}
     ev, system = {}, event.find("e:System", ns)
     level = keywords = None

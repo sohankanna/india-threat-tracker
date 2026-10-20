@@ -22,7 +22,7 @@ at the fidelity these need.
 | **Config** | A maintained config such as [SwiftOnSecurity](https://github.com/SwiftOnSecurity/sysmon-config) or [Olaf Hartong's modular](https://github.com/olafhartong/sysmon-modular) one. Confirm `ProcessCreate` and `RegistryEvent (Set)` for `...\Tcpip\Parameters\Interfaces` are **not** excluded |
 | **Ship to Splunk** | Splunk Add-on for Microsoft Sysmon → `sourcetype=XmlWinEventLog:Microsoft-Windows-Sysmon/Operational` |
 | **Ship to Elastic** | **ECS / Elastic Defend (Elastic Agent)** → `logs-endpoint.events.*`. The queries use ECS fields (`process.name`, `process.parent.name`, `registry.path`, `registry.value`, `registry.data.strings`). The DNS rule is ES\|QL and needs Elastic **8.14 or later**. **Raw Winlogbeat Sysmon is not covered** — its fields live under `winlog.event_data.*` and would need separate mapping, which isn't provided here. |
-| **Ship to Wazuh** | wazuh-agent on the host + Sysmon channel in `ossec.conf` `<localfile>`. In the Wazuh 4.14 ruleset, Sysmon Event 1 is rule `61603` and Event 13 is `61615`, with fields under `win.eventdata.*` (`parentImage`, `image`, `targetObject`, `details`). |
+| **Ship to Wazuh** | wazuh-agent on the host + Sysmon channel in `ossec.conf` `<localfile>`. In the Wazuh 4.14 ruleset, Sysmon Event 1 is rule `61603` and Event 13 is `61615`, with fields under `win.eventdata.*` (`parentImage`, `image`, `targetObject`, `details`). Backslashes in these values arrive doubled (`C:\\Windows\\...`), so custom path patterns must allow `\\+`. |
 
 **Rule → fields → validation**
 

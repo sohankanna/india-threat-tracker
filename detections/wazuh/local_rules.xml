@@ -43,10 +43,13 @@
        the pattern matches an IPv4 address at the start or after a separator that
        does not begin with an RFC1918 prefix, so "10.0.0.53,9.9.9.9" and
        "9.9.9.9,10.0.0.53" both alert. TUNE: approve a public resolver by adding
-       it inside the (?!...) group, e.g. |1\.1\.1\.1(?!\d) -->
+       it inside the (?!...) group, e.g. |1\.1\.1\.1(?!\d)
+       Path separators are matched as \\+ because the manager's eventchannel
+       decoder doubles backslashes in values (HKLM\\System\\...); a pattern with
+       single separators never matches on a real manager. -->
   <rule id="100212" level="10">
     <if_sid>61615</if_sid>
-    <field name="win.eventdata.targetObject" type="pcre2">(?i)\\Services\\Tcpip\\Parameters\\Interfaces\\.*(NameServer|DhcpNameServer)$</field>
+    <field name="win.eventdata.targetObject" type="pcre2">(?i)\\+Services\\+Tcpip\\+Parameters\\+Interfaces\\+.*(NameServer|DhcpNameServer)$</field>
     <field name="win.eventdata.details" type="pcre2">(?:^|[,; ])(?!(?:10\.|172\.(?:1[6-9]|2[0-9]|3[01])\.|192\.168\.))\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}</field>
     <description>FrostArmada: endpoint DNS includes a resolver outside policy: $(win.eventdata.details)</description>
     <mitre><id>T1565.001</id><id>T1071.004</id></mitre>

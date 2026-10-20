@@ -35,6 +35,16 @@ and no Windows rule (60000 and below) can fire. The integration job therefore
 sends Sysmon events through the agent queue instead; tests that "pass" a Windows
 rule in logtest prove nothing.
 
+Replaying Sysmon through the real manager found two more things the earlier
+emulation could not see. The eventchannel decoder JSON-prints the event XML
+before parsing it, so (1) a test event with double-quoted XML attributes fails
+to parse and produces no fields at all (Windows itself renders single quotes),
+and (2) every backslash in a value arrives doubled: `HKLM\\System\\...`.
+Rule 100212 matched `\\Services\\Tcpip\\...` with single separators, so it
+could never fire on a real manager; it now accepts one or more backslashes. The
+emulator now reproduces that print-then-parse step, and both defects fail the
+offline suite when re-introduced.
+
 Decoding raw logs found a real defect the earlier emulation (which started from
 pre-decoded fields) could not: Wazuh's Palo Alto decoder captures every field as
 `[^,]*`, so an `auth-success` description, which PAN-OS quotes because it

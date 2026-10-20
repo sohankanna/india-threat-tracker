@@ -13,6 +13,11 @@ Formats:
            Event is the raw event XML. The manager's eventchannel decoder
            (analysisd DecodeWinevt) turns it into win.system.* and
            win.eventdata.*, lower-casing the first letter of each name.
+           Attributes are single-quoted, as Windows renders them: the
+           decoder JSON-prints the XML before parsing it, so a double
+           quote becomes \" and the whole event fails to parse. The same
+           step doubles every backslash in values, so on a real manager
+           C:\Windows\cmd.exe arrives as C:\\Windows\\cmd.exe.
            It only runs for events on the analysisd queue with type 'f';
            wazuh-logtest never calls it, so the integration job sends
            Sysmon events through the queue socket, like an agent.
@@ -22,16 +27,20 @@ Formats:
            it, tagged azure_tag=azure-ad-graph.
 """
 import json
-from xml.sax.saxutils import escape, quoteattr
+from xml.sax.saxutils import escape
 
 SYSMON_PROVIDER = "Microsoft-Windows-Sysmon"
 SYSMON_CHANNEL = "Microsoft-Windows-Sysmon/Operational"
 PAN_STAMP = "2026/10/20 10:00:00"
 
 
+def _attr(value):
+    return escape(str(value), {"'": "&apos;"})
+
+
 def sysmon(fixture, computer="WS-TEST-01"):
     data = "".join(
-        f"<Data Name={quoteattr(k)}>{escape(str(v))}</Data>"
+        f"<Data Name='{_attr(k)}'>{escape(str(v))}</Data>"
         for k, v in fixture.items() if not k.startswith("_") and k != "EventID")
     xml = (
         "<Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'><System>"
