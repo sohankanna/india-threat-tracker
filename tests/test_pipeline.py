@@ -160,3 +160,65 @@ class WatchlistRules(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class WatchlistWindow(unittest.TestCase):
+    """The documented rule is 24 calendar months, not 720 days."""
+
+    def test_months_before(self):
+        self.assertEqual(fe.months_before(dt.date(2026, 10, 20), 24), dt.date(2024, 10, 20))
+        self.assertEqual(fe.months_before(dt.date(2026, 3, 31), 1), dt.date(2026, 2, 28))
+        self.assertEqual(fe.months_before(dt.date(2028, 2, 29), 24), dt.date(2026, 2, 28))
+        self.assertEqual(fe.months_before(dt.date(2026, 1, 15), 13), dt.date(2024, 12, 15))
+
+    def _watch(self, added):
+        items, _ = fe.transform([kev("CVE-2024-9999", "Fortinet", "FortiOS", added)], {}, {}, TODAY)
+        return items[0]["watchlist"]
+
+    def test_boundary_is_inclusive_and_calendar_based(self):
+        self.assertTrue(self._watch("2024-10-20"))   # exactly 24 months
+        self.assertFalse(self._watch("2024-10-19"))  # one day older
+        # 720 days before 2026-10-20 is 2024-10-30: these were wrongly excluded before.
+        self.assertTrue(self._watch("2024-10-25"))
+
+
+class EnrichmentHealth(unittest.TestCase):
+    def test_counts_and_coverage(self):
+        ws = Workspace(self)
+        full, slim = ws.run()
+        en = full["enrichment"]
+        self.assertEqual((en["epss_available"], en["epss_missing"]), (1, 2))
+        self.assertAlmostEqual(en["epss_coverage"], 0.3333)
+        self.assertEqual(slim["enrichment"], en)
+        # Missing scores stay null; they are never counted as zero.
+        self.assertIsNone(ws.item(full, "CVE-2020-0002")["epss"])
+
+    def test_failed_requests_mark_run_degraded(self):
+        ws = Workspace(self)
+        full, _ = fe.run(KEV, EPSS, TODAY, STAMP, out=ws.out, watch_out=ws.watch,
+                         overrides_path=ws.ovr, failed_requests=2)
+        self.assertEqual(full["enrichment"]["status"], "degraded")
+        self.assertIn("2 EPSS request(s) failed", full["enrichment"]["reasons"])
+
+    def test_sharp_drop_against_previous_run_is_degraded(self):
+        ws = Workspace(self)
+        all_scored = {c["cveID"]: (0.1, 0.5, "2026-10-19") for c in KEV}
+        fe.run(KEV, all_scored, TODAY, STAMP, out=ws.out, watch_out=ws.watch, overrides_path=ws.ovr)
+        full, _ = ws.run()  # only one of three scored now
+        en = full["enrichment"]
+        self.assertEqual(en["previous_epss_coverage"], 1.0)
+        self.assertEqual(en["status"], "degraded")
+
+    def test_stable_partial_coverage_is_ok(self):
+        """A few CVEs FIRST hasn't scored is normal, not a broken run."""
+        ws = Workspace(self)
+        ws.run()
+        full, _ = ws.run()
+        self.assertEqual(full["enrichment"]["status"], "ok")
+        self.assertEqual(full["enrichment"]["reasons"], [])
+
+    def test_cache_round_trip(self):
+        ws = Workspace(self)
+        fe.save_cache(ws.dir.name, KEV, EPSS, 1)
+        kev_c, epss_c, failed = fe.load_cache(ws.dir.name)
+        self.assertEqual((kev_c, epss_c, failed), (KEV, EPSS, 1))

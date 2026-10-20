@@ -17,9 +17,11 @@ source and telemetry each rule needs to actually fire, and a benign validation
 step for each. A rule you can't feed is a rule that silently never alerts.
 
 **→ [`TESTING.md`](TESTING.md)** explains exactly what CI runs: every fixture is
-executed against the Sigma rules and, by emulation, the Wazuh rules; the Splunk
-and Elastic queries are emulated from their text where it matters and checked
-for agreement with Sigma everywhere else. No test claims a detection rate.
+executed against the Sigma rules and, by emulation from raw logs, the Wazuh
+rules; a separate CI job replays the same raw logs through a real Wazuh 4.14.9
+manager. The Splunk and Elastic queries are emulated from their text where it
+matters and checked for agreement with Sigma everywhere else; they are not run
+against a live instance. No test claims a detection rate.
 
 Every rule links back to the write-up on [sohankanna.com](https://www.sohankanna.com) that explains the threat it covers.
 

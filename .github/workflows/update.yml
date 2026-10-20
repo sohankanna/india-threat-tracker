@@ -29,40 +29,10 @@ jobs:
       - name: Install deps
         run: pip install -r requirements.txt
 
-      - name: Fetch KEV + EPSS, rebuild exploited-cve.json and watchlist.json
-        working-directory: scripts
-        run: python fetch_exploited.py
-
-      - name: Rebuild IOC exports
-        run: python scripts/build_iocs.py
-
-      - name: Validate feeds against schemas
-        run: python scripts/validate.py
-
-      - name: Pipeline and IOC export tests
-        run: python -m unittest tests.test_pipeline tests.test_iocs
-
-      - name: Generate tweet draft
-        working-directory: scripts
-        run: python make_tweet_draft.py
-
-      - name: Commit and push
+      - name: Regenerate, validate, test and push
+        # See scripts/publish_update.sh: if someone pushes while this runs, the
+        # job resets to their commit and rebuilds; it never resolves a conflict.
         run: |
           git config user.name "india-threat-tracker-bot"
           git config user.email "actions@github.com"
-          git add data/ drafts/
-          if git diff --cached --quiet; then
-            echo "No changes."
-            exit 0
-          fi
-          git commit -m "chore: feed update ($(date -u +%Y-%m-%dT%H:%MZ))"
-          # Someone may have pushed while this ran. Rebase onto it and retry,
-          # so a concurrent push never costs a day's update.
-          for attempt in 1 2 3; do
-            if git pull --rebase -X theirs origin main && git push; then
-              exit 0
-            fi
-            sleep $((attempt * 15))
-          done
-          echo "::error::Could not push the feed update after 3 attempts"
-          exit 1
+          bash scripts/publish_update.sh

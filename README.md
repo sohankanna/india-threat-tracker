@@ -30,7 +30,7 @@ actors behind targeted intrusions, and detection rules for all of it.
 | [`data/iocs.txt`](data/iocs.txt) · [`data/iocs.csv`](data/iocs.csv) | Defanged campaign indicators; the CSV adds campaign, source, confidence and status per row | Rebuilt with every update |
 | [`data/assessment.json`](data/assessment.json) | The monthly ranked analyst assessment | Monthly |
 | [`data/relevance-overrides.json`](data/relevance-overrides.json) | Hand-reviewed India-relevance decisions; the pipeline reads them and never overwrites them | When reviewed |
-| [`data/meta.json`](data/meta.json) | Machine-readable index of the feeds above | — |
+| [`data/meta.json`](data/meta.json) | Manifest of every data file, with its schema and cadence | When files change |
 
 Every JSON feed is validated against a schema in [`schema/`](schema/) on every
 change.

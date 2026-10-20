@@ -2,40 +2,152 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "India Threat Assessment",
   "type": "object",
-  "required": ["feed", "period", "updated", "analyst", "summary", "items"],
+  "required": [
+    "feed",
+    "period",
+    "updated",
+    "analyst",
+    "summary",
+    "items"
+  ],
   "properties": {
-    "feed": { "const": "india-threat-assessment" },
-    "period": { "type": "string" },
-    "updated": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
-    "analyst": { "type": "string" },
-    "summary": { "type": "string", "minLength": 20 },
+    "feed": {
+      "const": "india-threat-assessment"
+    },
+    "period": {
+      "type": "string"
+    },
+    "updated": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "analyst": {
+      "type": "string"
+    },
+    "summary": {
+      "type": "string",
+      "minLength": 20
+    },
     "items": {
       "type": "array",
       "minItems": 1,
       "items": {
         "type": "object",
-        "required": ["rank", "title", "category", "severity", "why"],
+        "required": [
+          "rank",
+          "title",
+          "category",
+          "severity",
+          "why",
+          "evidence"
+        ],
         "properties": {
-          "rank": { "type": "integer", "minimum": 1 },
-          "title": { "type": "string" },
+          "rank": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "title": {
+            "type": "string"
+          },
           "category": {
             "type": "string",
-            "enum": ["payments-fraud", "exploited-vulns", "apt", "malware", "other"]
+            "enum": [
+              "payments-fraud",
+              "exploited-vulns",
+              "apt",
+              "malware",
+              "other"
+            ]
           },
           "severity": {
             "type": "string",
-            "enum": ["critical", "high", "medium-high", "medium", "low"]
+            "enum": [
+              "critical",
+              "high",
+              "medium-high",
+              "medium",
+              "low"
+            ]
           },
-          "why": { "type": "string", "minLength": 20 },
+          "why": {
+            "type": "string",
+            "minLength": 20
+          },
           "links": {
             "type": "array",
             "items": {
               "type": "object",
-              "required": ["title", "url"],
+              "required": [
+                "title",
+                "url"
+              ],
               "properties": {
-                "title": { "type": "string" },
-                "url": { "type": "string", "format": "uri" }
+                "title": {
+                  "type": "string"
+                },
+                "url": {
+                  "type": "string",
+                  "format": "uri"
+                }
               }
+            }
+          },
+          "evidence": {
+            "type": "array",
+            "minItems": 1,
+            "description": "What each claim rests on: tracker records (campaign, actor, cve, detection) and primary sources. Every item cites at least one primary source or tracker record.",
+            "items": {
+              "oneOf": [
+                {
+                  "type": "object",
+                  "required": [
+                    "type",
+                    "id"
+                  ],
+                  "additionalProperties": false,
+                  "properties": {
+                    "type": {
+                      "enum": [
+                        "campaign",
+                        "actor",
+                        "cve",
+                        "detection"
+                      ]
+                    },
+                    "id": {
+                      "type": "string",
+                      "minLength": 3
+                    },
+                    "supports": {
+                      "type": "string"
+                    }
+                  }
+                },
+                {
+                  "type": "object",
+                  "required": [
+                    "type",
+                    "title",
+                    "url"
+                  ],
+                  "additionalProperties": false,
+                  "properties": {
+                    "type": {
+                      "const": "source"
+                    },
+                    "title": {
+                      "type": "string"
+                    },
+                    "url": {
+                      "type": "string",
+                      "format": "uri"
+                    },
+                    "supports": {
+                      "type": "string"
+                    }
+                  }
+                }
+              ]
             }
           }
         }

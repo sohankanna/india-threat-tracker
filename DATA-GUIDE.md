@@ -19,14 +19,18 @@ https://raw.githubusercontent.com/sohankanna/india-threat-tracker/main/data/
 | `exploited-cve.json` | Every CISA KEV entry, with EPSS and an India-relevance tier | Twice daily, automated | [`exploited-cve.schema.json`](schema/exploited-cve.schema.json) |
 | `smishing-apk.json` | Fake-APK and smishing campaigns | When new reporting appears | [`smishing-apk.schema.json`](schema/smishing-apk.schema.json) |
 | `apt-campaigns.json` | State-nexus actors targeting India | When new reporting appears | [`apt-campaign.schema.json`](schema/apt-campaign.schema.json) |
-| `iocs.csv` / `iocs.txt` | Defanged campaign indicators (CSV adds provenance per row) | Rebuilt whenever campaign data changes | — |
+| `iocs.csv` / `iocs.txt` | Defanged campaign indicators (CSV adds provenance per row) | Rebuilt by every automated update (twice daily); CI rejects a change that leaves them stale | — |
 | `assessment.json` | The monthly ranked analyst assessment | Monthly | [`assessment.schema.json`](schema/assessment.schema.json) |
 | `relevance-overrides.json` | Hand-reviewed India-relevance decisions the pipeline applies | When an entry is reviewed | [`relevance-overrides.schema.json`](schema/relevance-overrides.schema.json) |
-| `meta.json` | Machine-readable index of the feeds | With feed changes | — |
+| `meta.json` | Manifest of every data file: kind, format, schema, who updates it and how often | When a file is added or its cadence changes | [`meta.schema.json`](schema/meta.schema.json) |
 
-Every JSON feed is an object with `feed`, `generated_at` and `items` (or
-`overrides`), and is validated against its schema on every change. New fields
-are only ever added; existing fields keep their meaning.
+Each JSON file has its **own** schema; there is no single envelope shared by
+all of them. The four data feeds are objects with `feed`, `generated_at` and an
+`items` array. `assessment.json` uses `period`, `updated` and ranked `items`;
+`relevance-overrides.json` holds an `overrides` map; `meta.json` is a manifest
+with a `resources` map. Read `meta.json` to discover files and their schemas
+programmatically. Every JSON file is validated against its schema on every
+change; new fields are only ever added, and existing fields keep their meaning.
 
 ## Field reference
 
@@ -47,6 +51,14 @@ are only ever added; existing fields keep their meaning.
 | `_manual_relevance`, `relevance_reason` | Present when the tier was set by an editorial override |
 | `watchlist` | Whether the entry meets the watchlist rule |
 | `sources` | CISA KEV and NVD links |
+
+Both feeds carry `enrichment`, the health of the EPSS lookup for that run:
+`epss_available`, `epss_missing`, `epss_coverage` (0–1), `epss_failed_requests`,
+`previous_epss_coverage`, and `status`. `status` is `degraded` when EPSS
+requests failed or coverage fell by more than two percentage points against the
+previous run, with the `reasons`. A fresh feed with degraded enrichment is
+current for KEV but has incomplete EPSS scores; FIRST not scoring a few new CVEs
+is normal and stays `ok`.
 
 `exploited-cve.json` also carries `manual_overrides`: how many overrides were
 applied, and any **orphaned** ones whose CVE is no longer in KEV.
@@ -91,7 +103,8 @@ India-specific signal; `global` for everything else. It is triage, not proof
 that you are exposed.
 
 **Watchlist** = relevance `high` or `medium`, **and** added to KEV in the last
-24 months **or** ransomware-linked.
+24 calendar months (on 20 October 2026, from 20 October 2024 inclusive) **or**
+ransomware-linked.
 
 **Status** describes the public reporting, never whether infrastructure is live:
 `active` = still being reported; `law-enforcement` = known from a police action

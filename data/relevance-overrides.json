@@ -1,5 +1,5 @@
 {
   "feed": "relevance-overrides",
-  "description": "Hand-reviewed India-relevance tiers. The daily pipeline reads this file on every run and never writes to it. Each entry: tier (high|medium|global), reason, reviewed (YYYY-MM-DD), and optionally watchlist (true|false) to force the watchlist outcome. See METHODOLOGY.md.",
+  "description": "Hand-reviewed India-relevance tiers. The automated KEV pipeline (twice daily) reads this file on every run and never writes to it. Each entry: tier (high|medium|global), reason, reviewed (YYYY-MM-DD), and optionally watchlist (true|false) to force the watchlist outcome. See METHODOLOGY.md.",
   "overrides": {}
 }

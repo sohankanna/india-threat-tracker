@@ -14,6 +14,7 @@ PAIRS = [
     ("data/watchlist.json", "schema/watchlist.schema.json"),
     ("data/assessment.json", "schema/assessment.schema.json"),
     ("data/relevance-overrides.json", "schema/relevance-overrides.schema.json"),
+    ("data/meta.json", "schema/meta.schema.json"),
 ]
 
 
@@ -37,6 +38,8 @@ def main():
                 n = len(data["items"])
             if n is None and isinstance(data.get("overrides"), dict):
                 n = len(data["overrides"])
+            if n is None and isinstance(data.get("resources"), dict):
+                n = len(data["resources"])
             print(f"OK   {data_path} ({n} items)")
     sys.exit(0 if ok else 1)
 

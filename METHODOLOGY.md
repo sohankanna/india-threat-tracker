@@ -89,8 +89,12 @@ explicit and covered by regression tests (`tests/test_pipeline.py`):
 the watchlist when:
 
 ```
-india_relevance ∈ {high, medium}  AND  (added to KEV within 24 months  OR  known ransomware use)
+india_relevance ∈ {high, medium}  AND  (added to KEV within 24 calendar months  OR  known ransomware use)
 ```
+
+"24 calendar months" is exact calendar arithmetic, inclusive: on 20 October 2026
+the window starts on 20 October 2024. A day that doesn't exist in the earlier
+month is clamped to the month's last day (29 February 2028 → 28 February 2026).
 
 In words: India-relevant, and either **recent** or **ransomware-linked**. This
 keeps the watchlist focused on what's current and what's financially dangerous,
@@ -106,6 +110,13 @@ Every entry also records:
 - **`epss_date`** — the FIRST model date the EPSS score was taken from. A
   missing EPSS score is shown as *unavailable*, never as zero: no score is not a
   low score.
+
+EPSS enrichment is best-effort: a failed EPSS request never stops the KEV feed.
+So that a broken run is still visible, both feeds carry an `enrichment` block
+(scores available and missing, coverage, failed requests) and are marked
+`degraded` when requests failed or coverage dropped more than two percentage
+points against the previous run. The job log raises a warning and the site
+shows a notice. FIRST simply not having scored a few new CVEs yet is normal.
 
 > **Honest caveat on the "past CISA due date" filter:** most KEV remediation
 > deadlines (set for US federal agencies) are already in the past, so that

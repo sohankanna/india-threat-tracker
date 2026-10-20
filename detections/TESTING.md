@@ -12,7 +12,7 @@ catches real attacks in your environment. It means the following:
 | Backend | How the fixtures are run | What a pass shows |
 |---------|--------------------------|-------------------|
 | **Sigma** (canonical) | **Executed.** [`tests/sigma_eval.py`](../tests/sigma_eval.py) evaluates each rule against every fixture, following the Sigma specification for the features these rules use (and refusing anything else). | The canonical logic produces the expected result for every fixture. |
-| **Wazuh** | **Executed by emulation.** [`tests/wazuh_eval.py`](../tests/wazuh_eval.py) applies each rule's parent rule and `<field>` conditions (PCRE semantics) to fixtures decoded into Wazuh's field names, verified against the Wazuh 4.14 ruleset. | The rule logic matches the fixtures. It is not `wazuh-logtest` on a real manager, so log decoding itself is not exercised. |
+| **Wazuh** | **Emulated on every run, and on a real manager in a separate CI job.** Every fixture is turned into the raw log a manager receives ([`tests/wazuh_logs.py`](../tests/wazuh_logs.py): eventchannel JSON, PAN-OS syslog CSV, Graph JSON). [`tests/wazuh_eval.py`](../tests/wazuh_eval.py) decodes it as Wazuh 4.14.9 does (the PAN-OS decoder regexes are copied from the ruleset) and applies the rules. The [Wazuh integration workflow](../.github/workflows/wazuh-integration.yml) installs `wazuh-manager` 4.14.9, loads `local_rules.xml` and replays the same raw logs through the real logtest socket ([`tests/wazuh_logtest.py`](tests/wazuh_logtest.py)), publishing expected versus observed per event. | Emulation: rule logic and the decoding steps modelled. The integration job: what a real 4.14.9 manager decodes and fires. Check its latest run in the Actions tab; until it has passed, the Wazuh rules are validated by emulation only. |
 | **Splunk** | **Not executed.** The DNS and PAN-OS searches are emulated from their own query text (split pattern, extraction regex and CIDR ranges are read out of the `.spl` file and applied to the fixtures). The rest are checked statically. | The parts that previously went wrong behave as intended. SPL is not run against a Splunk instance. |
 | **Elastic** | **Not executed.** Same approach for the ES\|QL DNS and PAN-OS queries; the EQL/KQL rules are checked statically. | As for Splunk. Queries are not run against Elasticsearch. |
 
@@ -28,10 +28,23 @@ On top of the fixtures, CI checks that the backends agree with each other:
 - **The archive rule** has no `.lnk` command-line shortcut in any backend, and
   **the Entra primary rule** never matches error 50140.
 
+Decoding raw logs found a real defect the earlier emulation (which started from
+pre-decoded fields) could not: Wazuh's Palo Alto decoder captures every field as
+`[^,]*`, so an `auth-success` description, which PAN-OS quotes because it
+contains commas, is cut at the first comma and never contains `From:`. A rule on
+the decoded `description` field can therefore never fire. Rule 100220 now
+matches the full log with `<regex>`, and a regression test proves the
+field-based version fails.
+
 The suite has been checked against the bugs it is meant to prevent: each one
 was re-introduced deliberately (prefix-only DNS check, string-compared CIDR,
 `.lnk` alternative, 50140 in the primary rule, Wazuh rules on non-existent
-fields, allowlist drift, process-list drift) and every one fails the build.
+fields, the field-based PAN-OS Wazuh rule, allowlist drift, process-list drift)
+and every one fails the build.
+
+**Validation level, in one line:** Sigma executed; Wazuh emulated plus a
+real-manager CI job; Splunk and Elastic not run against a live instance. All
+rules stay `experimental`.
 
 **No test here produces a detection rate.** For that, run the rules on your
 own telemetry, in your own SIEM, against a real baseline.
@@ -60,7 +73,7 @@ own telemetry, in your own SIEM, against a real baseline.
 - **Not covered:** IPv6 resolvers (they live under `Tcpip6`)
 
 ### `pan_os_mgmt_auth_from_unexpected_source`
-- **Fields:** PAN-OS SYSTEM log, subtype `auth`, event `auth-success`; the source address is taken from the description's `From: <address>.`
+- **Fields:** PAN-OS SYSTEM log, subtype `auth`, event `auth-success`; the source address is taken from the description's `From: <address>.` (In Wazuh, from the full log, because the decoder truncates the description at its first comma.)
 - **Alerts:** a login from `203.0.113.9`; from `11.0.0.5` (outside `10.0.0.0/8` despite the leading 1)
 - **Silent:** a login from `10.0.0.5` (allowlisted); an `auth-fail` event
 - **Meaning:** unexpected management-plane authentication, **not** proof of CVE-2026-0322
@@ -76,4 +89,12 @@ own telemetry, in your own SIEM, against a real baseline.
 ```bash
 pip install -r requirements.txt -r requirements-ci.txt
 python -m unittest discover -s tests -v
+```
+
+Against a real Wazuh manager (Linux host or VM with `wazuh-manager` installed):
+
+```bash
+sudo cp detections/wazuh/local_rules.xml /var/ossec/etc/rules/local_rules.xml
+sudo /var/ossec/bin/wazuh-control restart
+sudo python3 detections/tests/wazuh_logtest.py --out wazuh-logtest-results
 ```

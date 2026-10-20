@@ -1,0 +1,78 @@
+name: Wazuh integration
+
+# Installs a real Wazuh manager, loads detections/wazuh/local_rules.xml and
+# replays every detection fixture through logtest as the raw log the manager
+# would receive. The expected-versus-observed table is shown in the run summary
+# and kept as an artifact.
+
+on:
+  workflow_dispatch: {}
+  pull_request:
+    paths:
+      - "detections/**"
+      - "tests/wazuh_logs.py"
+      - ".github/workflows/wazuh-integration.yml"
+  push:
+    branches: [main]
+    paths:
+      - "detections/**"
+      - "tests/wazuh_logs.py"
+      - ".github/workflows/wazuh-integration.yml"
+
+permissions:
+  contents: read
+
+env:
+  WAZUH_VERSION: "4.14.9-1"   # the ruleset the rules and decoders were checked against
+
+jobs:
+  logtest:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Wazuh manager ${{ env.WAZUH_VERSION }}
+        run: |
+          curl -fsSL https://packages.wazuh.com/key/GPG-KEY-WAZUH \
+            | sudo gpg --no-default-keyring --keyring gnupg-ring:/usr/share/keyrings/wazuh.gpg --import
+          sudo chmod 644 /usr/share/keyrings/wazuh.gpg
+          echo "deb [signed-by=/usr/share/keyrings/wazuh.gpg] https://packages.wazuh.com/4.x/apt/ stable main" \
+            | sudo tee /etc/apt/sources.list.d/wazuh.list
+          sudo apt-get update -q
+          sudo apt-get install -y -q "wazuh-manager=${WAZUH_VERSION}"
+
+      - name: Load the tracker rules
+        run: |
+          sudo cp detections/wazuh/local_rules.xml /var/ossec/etc/rules/local_rules.xml
+          sudo chown wazuh:wazuh /var/ossec/etc/rules/local_rules.xml
+          sudo /var/ossec/bin/wazuh-analysisd -t
+
+      - name: Start the manager
+        run: |
+          sudo /var/ossec/bin/wazuh-control start
+          for i in $(seq 1 60); do
+            sudo test -S /var/ossec/queue/sockets/logtest && exit 0
+            sleep 2
+          done
+          echo "::error::logtest socket did not appear"
+          sudo tail -n 100 /var/ossec/logs/ossec.log
+          exit 1
+
+      - name: Replay fixtures through logtest
+        run: |
+          sudo python3 detections/tests/wazuh_logtest.py --out wazuh-logtest-results
+          cat wazuh-logtest-results.md >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Summary on failure
+        if: failure()
+        run: |
+          [ -f wazuh-logtest-results.md ] && cat wazuh-logtest-results.md >> "$GITHUB_STEP_SUMMARY" || true
+          sudo tail -n 100 /var/ossec/logs/ossec.log || true
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: wazuh-logtest-results
+          path: wazuh-logtest-results.*
+          if-no-files-found: ignore

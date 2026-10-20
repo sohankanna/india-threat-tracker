@@ -98,6 +98,18 @@ class WazuhFixtures(unittest.TestCase):
         self.assertFalse(wazuh_eval.fires(self.rules["100230"], parent, decoded))
         self.assertTrue(wazuh_eval.fires(self.rules["100231"], parent, decoded))
 
+    def test_pan_decoder_truncates_quoted_description(self):
+        """Why 100220 matches the full log: Wazuh's own decoder loses 'From:'."""
+        event = fixtures("pan_os_mgmt_auth_from_unexpected_source")[0][0]
+        parent, decoded = wazuh_eval.decode("paloalto", event)
+        self.assertEqual((parent, decoded["type"], decoded["event_id"]), ("64500", "SYSTEM", "auth-success"))
+        self.assertNotIn("From:", decoded["description"])
+        self.assertIn("From: 203.0.113.9", decoded["full_log"])
+        field_rule = {"if_sid": "64500", "regex": [], "fields": [
+            ("description", wazuh_eval.regex.compile(r"From:\s*(?!10\.)\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}"))]}
+        self.assertFalse(wazuh_eval.fires(field_rule, parent, decoded), "a description-field rule can never fire")
+        self.assertTrue(wazuh_eval.fires(self.rules["100220"], parent, decoded))
+
 
 # ── 3a. Splunk / Elastic: emulated from the query text ────────────────────
 def splunk_dns_alerts(spl, event):
@@ -268,7 +280,7 @@ class Equivalence(unittest.TestCase):
                     self.assertEqual(re.search(rx, value) is not None, expected, f"{name}: {value!r}")
 
     def test_admin_allowlist_is_identical(self):
-        wazuh_re = dict(wazuh_eval.load_rules(os.path.join(ROOT, "wazuh", "local_rules.xml"))["100220"]["fields"])["description"].pattern
+        wazuh_re = wazuh_eval.load_rules(os.path.join(ROOT, "wazuh", "local_rules.xml"))["100220"]["regex"][0].pattern
         spl = read("splunk", "pan_os_mgmt_auth_from_unexpected_source.spl")
         esql = code(read("elastic", "pan_os_mgmt_auth_from_unexpected_source.esql"), "//")
         sigma = sigma_eval.load_rule(os.path.join(ROOT, "sigma", "pan_os_mgmt_auth_from_unexpected_source.yml"))

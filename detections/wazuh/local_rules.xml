@@ -56,8 +56,11 @@
 
 <!-- PAN-OS management auth from an unexpected source (CVE-2026-0322).
      Wazuh's Palo Alto decoder extracts no source IP from SYSTEM logs; the admin's
-     address appears only in the description as "... From: <address>." The rule
-     matches that text and excludes the allowlist with a pattern. Default
+     address appears only in the description as "... From: <address>." The
+     decoder also captures each field as [^,]*, so a description that contains
+     commas (auth-success descriptions do) is cut at the first comma and the
+     decoded `description` field never contains "From:". The rule therefore
+     matches the full log with <regex>, and excludes the allowlist with a pattern. Default
      allowlist: 10.0.0.0/8. TUNE: add approved prefixes inside the (?!...) group,
      e.g. |192\.168\.50\. for 192.168.50.0/24. A pattern can only express
      octet-aligned networks (/8, /16, /24); for other prefix lengths, extend the
@@ -68,7 +71,7 @@
     <field name="type">^SYSTEM$</field>
     <field name="content_threat_type">^auth$</field>
     <field name="event_id">^auth-success$</field>
-    <field name="description" type="pcre2">From:\s*(?!10\.)\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}</field>
+    <regex type="pcre2">From:\s*(?!10\.)\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}</regex>
     <description>PAN-OS: admin auth success from outside the allowlist - verify the source (not proof of CVE-2026-0322)</description>
     <mitre><id>T1133</id></mitre>
   </rule>
