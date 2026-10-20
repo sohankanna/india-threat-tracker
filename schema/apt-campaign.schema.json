@@ -117,6 +117,16 @@
           },
           "reference_url": {
             "type": "string"
+          },
+          "confidence": {
+            "enum": [
+              "high",
+              "medium",
+              "low"
+            ]
+          },
+          "last_verified": {
+            "type": "string"
           }
         }
       }

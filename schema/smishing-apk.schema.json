@@ -2,49 +2,170 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "smishing-apk feed",
   "type": "object",
-  "required": ["feed", "generated_at", "count", "items"],
+  "required": [
+    "feed",
+    "generated_at",
+    "count",
+    "items"
+  ],
   "properties": {
-    "feed": { "const": "smishing-apk" },
-    "generated_at": { "type": ["string", "null"] },
-    "count": { "type": "integer" },
+    "feed": {
+      "const": "smishing-apk"
+    },
+    "generated_at": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "count": {
+      "type": "integer"
+    },
     "items": {
       "type": "array",
       "items": {
         "type": "object",
-        "required": ["id", "title", "date_added", "india_relevance", "sources"],
+        "required": [
+          "id",
+          "title",
+          "date_added",
+          "india_relevance",
+          "sources"
+        ],
         "properties": {
-          "id": { "type": "string" },
-          "title": { "type": "string" },
-          "summary": { "type": "string" },
-          "first_seen": { "type": "string" },
-          "date_added": { "type": "string" },
-          "last_updated": { "type": "string" },
-          "status": { "enum": ["active", "historical", "law-enforcement"] },
-          "lure_themes": { "type": "array", "items": { "type": "string" } },
-          "impersonates": { "type": "array", "items": { "type": "string" } },
-          "capabilities": { "type": "array", "items": { "type": "string" } },
+          "id": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "summary": {
+            "type": "string"
+          },
+          "first_seen": {
+            "type": "string"
+          },
+          "date_added": {
+            "type": "string"
+          },
+          "last_updated": {
+            "type": "string"
+          },
+          "status": {
+            "enum": [
+              "active",
+              "historical",
+              "law-enforcement"
+            ]
+          },
+          "lure_themes": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "impersonates": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "capabilities": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
           "iocs": {
             "type": "object",
             "properties": {
-              "domains": { "type": "array", "items": { "type": "string" } },
-              "urls": { "type": "array", "items": { "type": "string" } },
-              "sha256": { "type": "array", "items": { "type": "string" } },
-              "package_names": { "type": "array", "items": { "type": "string" } },
-              "telegram_bots": { "type": "array", "items": { "type": "string" } },
-              "c2_type": { "type": "array", "items": { "type": "string" } },
-              "hosting": { "type": "array", "items": { "type": "string" } }
+              "domains": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "urls": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "sha256": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "package_names": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "telegram_bots": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "c2_type": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "hosting": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
             }
           },
-          "india_relevance": { "enum": ["high", "medium", "global"] },
-          "tags": { "type": "array", "items": { "type": "string" } },
-          "references_blog": { "type": "string" },
+          "india_relevance": {
+            "enum": [
+              "high",
+              "medium",
+              "global"
+            ]
+          },
+          "tags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "references_blog": {
+            "type": "string"
+          },
           "sources": {
             "type": "array",
             "items": {
               "type": "object",
-              "required": ["title", "url"],
-              "properties": { "title": { "type": "string" }, "url": { "type": "string" } }
+              "required": [
+                "title",
+                "url"
+              ],
+              "properties": {
+                "title": {
+                  "type": "string"
+                },
+                "url": {
+                  "type": "string"
+                }
+              }
             }
+          },
+          "confidence": {
+            "enum": [
+              "high",
+              "medium",
+              "low"
+            ]
+          },
+          "last_verified": {
+            "type": "string"
           }
         }
       }

@@ -1,6 +1,6 @@
 {
   "feed": "smishing-apk",
-  "generated_at": "2026-10-16",
+  "generated_at": "2026-10-20",
   "count": 7,
   "items": [
     {
@@ -54,7 +54,9 @@
           "url": "https://cyble.com/blog/ghostbat-rat-inside-the-resurgence-of-rto-themed-android-malware/"
         }
       ],
-      "references_blog": "ghostbat-rat-how-rto-themed-android-malware-steals-your-upi-pin"
+      "references_blog": "ghostbat-rat-how-rto-themed-android-malware-steals-your-upi-pin",
+      "confidence": "high",
+      "last_verified": "2026-10-20"
     },
     {
       "id": "sm-2025-002",
@@ -105,7 +107,9 @@
           "url": "https://www.cyfirma.com/research/rto-challan-fraud-a-technical-report-on-apk-based-financial-and-identity-theft/"
         }
       ],
-      "references_blog": "inside-the-rto-challan-dropper-anatomy-of-a-two-stage-android-bank-stealer"
+      "references_blog": "inside-the-rto-challan-dropper-anatomy-of-a-two-stage-android-bank-stealer",
+      "confidence": "high",
+      "last_verified": "2026-10-20"
     },
     {
       "id": "sm-2026-001",
@@ -147,7 +151,9 @@
           "title": "ETV Bharat - Gujarat Police bust pan-India APK fraud racket",
           "url": "https://www.etvbharat.com/en/state/gujarat-police-bust-pan-india-apk-fraud-racket-several-held-enn26062506841"
         }
-      ]
+      ],
+      "confidence": "medium",
+      "last_verified": "2026-10-20"
     },
     {
       "id": "sm-2026-002",
@@ -181,7 +187,9 @@
           "title": "The Bridge Chronicle - Two Punekars lost over Rs 14 lakh in fake RTO e-challan APK scam",
           "url": "https://www.thebridgechronicle.com/pune/cyber-fraud-pune-fake-rto-e-challan-apk-scam-rs14-lakh-loss-agn97"
         }
-      ]
+      ],
+      "confidence": "medium",
+      "last_verified": "2026-10-20"
     },
     {
       "id": "sm-2026-003",
@@ -226,7 +234,9 @@
           "url": "https://www.freepressjournal.in/mumbai/6-arrested-as-mumbai-cyber-police-bust-43-crore-fake-apk-based-cyber-fraud-network-linked-to-3200-cases-video"
         }
       ],
-      "references_blog": "the-apk-is-the-exploit-how-india-s-fake-challan-scam-became-an-industry"
+      "references_blog": "the-apk-is-the-exploit-how-india-s-fake-challan-scam-became-an-industry",
+      "confidence": "medium",
+      "last_verified": "2026-10-20"
     },
     {
       "id": "sm-2026-004",
@@ -278,7 +288,9 @@
           "url": "https://www.tribuneindia.com/news/himachal/challan-scam-alert-fraudsters-use-whatsapp-apk-links-to-loot-money"
         }
       ],
-      "references_blog": "the-apk-is-the-exploit-how-india-s-fake-challan-scam-became-an-industry"
+      "references_blog": "the-apk-is-the-exploit-how-india-s-fake-challan-scam-became-an-industry",
+      "confidence": "high",
+      "last_verified": "2026-10-20"
     },
     {
       "id": "sm-2025-003",
@@ -312,7 +324,9 @@
           "title": "sohankanna.com - Deconstructing a Stealthy Android Trojan",
           "url": "https://www.sohankanna.com/research/deconstructing-a-stealthy-android-trojan-a-case-study-in-phishing-and-evasion"
         }
-      ]
+      ],
+      "confidence": "high",
+      "last_verified": "2026-10-20"
     }
   ]
 }

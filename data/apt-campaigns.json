@@ -1,6 +1,6 @@
 {
   "feed": "apt-campaign",
-  "generated_at": "2026-10-16",
+  "generated_at": "2026-10-20",
   "count": 4,
   "items": [
     {
@@ -52,7 +52,9 @@
           "url": "https://www.cyfirma.com/research/"
         }
       ],
-      "references_blog": "transparent-tribe-apt36-the-persistent-threat-to-indian-government-and-defence"
+      "references_blog": "transparent-tribe-apt36-the-persistent-threat-to-indian-government-and-defence",
+      "confidence": "high",
+      "last_verified": "2026-10-20"
     },
     {
       "id": "apt-sidecopy",
@@ -101,7 +103,9 @@
           "url": "https://www.bankinfosecurity.com/sidecopy-apt-targets-indias-premier-defense-research-agency-a-21512"
         }
       ],
-      "references_blog": "sidecopy-the-apt36-aligned-group-that-copies-sidewinder"
+      "references_blog": "sidecopy-the-apt36-aligned-group-that-copies-sidewinder",
+      "confidence": "high",
+      "last_verified": "2026-10-20"
     },
     {
       "id": "apt-redecho",
@@ -146,7 +150,9 @@
           "url": "https://www.recordedfuture.com/continued-targeting-of-indian-power-grid-assets"
         }
       ],
-      "references_blog": "redecho-and-the-china-nexus-targeting-of-india-s-power-grid"
+      "references_blog": "redecho-and-the-china-nexus-targeting-of-india-s-power-grid",
+      "confidence": "medium",
+      "last_verified": "2026-10-20"
     },
     {
       "id": "apt-sidewinder",
@@ -196,7 +202,9 @@
           "url": "https://cybersecuritynews.com/apt-sidewinder-actor-profile/"
         }
       ],
-      "reference_url": "https://attack.mitre.org/groups/G0121/"
+      "reference_url": "https://attack.mitre.org/groups/G0121/",
+      "confidence": "high",
+      "last_verified": "2026-10-20"
     }
   ]
 }
