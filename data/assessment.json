@@ -1,0 +1,62 @@
+{
+  "feed": "india-threat-assessment",
+  "period": "October 2026",
+  "updated": "2026-10-20",
+  "analyst": "Sohan Kanna",
+  "summary": "The Indian threat picture this month is pulled in two directions at once: high-volume, financially-motivated mobile fraud hitting citizens at scale, and patient, state-aligned intrusion aimed at government, defence and critical infrastructure. The common seam is the edge — VPNs, firewalls and cloud identity — which is where ransomware crews and espionage actors alike still get their first foothold.",
+  "items": [
+    {
+      "rank": 1,
+      "title": "Fake-APK UPI fraud has gone industrial",
+      "category": "payments-fraud",
+      "severity": "critical",
+      "why": "This is no longer lone scammers. Organised mule networks are running fake RTO / e-challan APKs end to end — a single Mumbai bust traced roughly ₹43 crore, with parallel networks in Pune and Ahmedabad. The money moves through first-time payees and mule fan-out faster than most risk controls react, and the malware (GhostBat RAT and kin) reads the OTP and captures the UPI PIN on-device. For any payments operator, this is the live, high-volume threat — not a future one.",
+      "links": [
+        { "title": "The UPI fraud kill chain", "url": "https://www.sohankanna.com/research/the-upi-fraud-kill-chain-how-fake-apk-scams-defeat-indias-payment-controls" },
+        { "title": "GhostBat RAT breakdown", "url": "https://www.sohankanna.com/research/ghostbat-rat-how-rto-themed-android-malware-steals-your-upi-pin" }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "The edge is still the way in",
+      "category": "exploited-vulns",
+      "severity": "high",
+      "why": "The India-relevant watchlist is dominated by internet-facing edge: Ivanti Connect Secure, Citrix NetScaler, PAN-OS, Fortinet, plus SharePoint (CVE-2025-53770, EPSS ~100%, ransomware-linked). These are precisely the products Indian enterprises expose to the internet and precisely the ones ransomware crews mass-exploit within days of a PoC. If you do one thing this month, make it edge patch cadence — it is the single highest-leverage control on this list.",
+      "links": [
+        { "title": "PAN-OS management-interface zero-day", "url": "https://www.sohankanna.com/research/cve-2026-0322-pan-os-management-interface-zero-day-from-admin-login-to-root" },
+        { "title": "Live watchlist", "url": "https://www.sohankanna.com/tracker" }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "Pakistan-nexus espionage is persistent, not episodic",
+      "category": "apt",
+      "severity": "high",
+      "why": "Transparent Tribe (APT36) and SideCopy continue to target Indian government, defence, education and research with Crimson RAT and the ZIP→LNK→LOLBin delivery pattern. These are not one-off campaigns; they are a standing collection effort that re-tools faster than it disappears. If you sit in gov, defence or academia, assume you are in scope and detect for the delivery chain, not just the final implant.",
+      "links": [
+        { "title": "Transparent Tribe (APT36)", "url": "https://www.sohankanna.com/research/transparent-tribe-apt36-the-persistent-threat-to-indian-government-and-defence" },
+        { "title": "SideCopy", "url": "https://www.sohankanna.com/research/sidecopy-the-apt36-aligned-group-that-copies-sidewinder" }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "Identity is the new perimeter — watch M365 sign-ins",
+      "category": "apt",
+      "severity": "medium-high",
+      "why": "FrostArmada (APT28) demonstrated adversary-in-the-middle token theft fronting Outlook on the web via SOHO-router DNS hijack. As Indian orgs move onto M365 / Entra, a high-risk sign-in that survives MFA is worth more to an attacker than any single endpoint. The signals to wire up now are Entra sign-in risk and unexpected endpoint DNS changes — together they catch this chain.",
+      "links": [
+        { "title": "FrostArmada / APT28 M365 interception", "url": "https://www.sohankanna.com/research/frostarmada-how-apt28-turned-old-home-routers-into-a-microsoft-365-interception-network" }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "China-nexus pre-positioning in the power sector",
+      "category": "apt",
+      "severity": "medium",
+      "why": "RedEcho's targeting of load dispatch centres is about access held for later, not immediate disruption — lower tempo, higher stakes. This is the kind of intrusion that matters in a crisis rather than a quarterly report, and it belongs on the radar of anyone defending Indian critical infrastructure even when nothing is visibly happening.",
+      "links": [
+        { "title": "RedEcho and the China-nexus grid targeting", "url": "https://www.sohankanna.com/research/redecho-and-the-china-nexus-targeting-of-india-s-power-grid" }
+      ]
+    }
+  ]
+}
