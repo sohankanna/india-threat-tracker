@@ -2,13 +2,20 @@
 # Source rule: ../sigma/windows_suspicious_dns_server_change.yml
 # Write-up:    https://www.sohankanna.com/research/frostarmada-how-apt28-turned-old-home-routers-into-a-microsoft-365-interception-network
 #
-# Requires: Sysmon + Splunk Add-on for Sysmon. Registry value-set = Event ID 13.
+# Requires: Sysmon + Splunk Add-on for Sysmon. Registry value set = Event ID 13.
 #   Sysmon config must include RegistryEvent (Set) for Tcpip\Parameters\Interfaces.
-# TUNE: the regex in `where` keeps only changes to a non-corporate resolver.
+# Logic: the value can list several resolvers ("10.0.0.53,9.9.9.9"). Each one is
+#   checked on its own, and the event alerts if ANY resolver is outside the
+#   trusted-resolver policy, whatever order they appear in.
+# Policy: RFC1918 (10/8, 172.16/12, 192.168/16), identical in every backend.
+#   RFC1918 is private space, not automatically trusted.
+# TUNE: approve a public resolver by adding  OR resolver="1.1.1.1"  inside the NOT ( ... ).
 
 sourcetype="XmlWinEventLog:Microsoft-Windows-Sysmon/Operational" EventCode=13
     TargetObject="*\\Services\\Tcpip\\Parameters\\Interfaces\\*"
     (TargetObject="*NameServer" OR TargetObject="*DhcpNameServer")
-| where NOT match(Details, "^(10\.|172\.(1[6-9]|2[0-9]|3[01])\.|192\.168\.)")   ``` TUNE: add your ISP/corp resolver IPs ```
-| table _time, host, user, Image, TargetObject, Details
+| eval resolver=split(trim(replace(Details, "[,; ]+", ","), ","), ",")
+| mvexpand resolver
+| where resolver!="" AND NOT (cidrmatch("10.0.0.0/8", resolver) OR cidrmatch("172.16.0.0/12", resolver) OR cidrmatch("192.168.0.0/16", resolver))
+| stats values(resolver) as untrusted_resolvers by _time, host, user, Image, TargetObject, Details
 | sort - _time

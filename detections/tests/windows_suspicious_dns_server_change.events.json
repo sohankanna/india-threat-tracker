@@ -1,11 +1,79 @@
 {
-  "_note": "Synthetic Sysmon EID13 (registry set) samples. Not real telemetry. Details = new resolver value.",
+  "_note": "Synthetic Sysmon Event 13 (registry value set) samples. Not real telemetry. Details = the new NameServer value, which may hold several resolvers separated by commas or spaces.",
   "should_match": [
-    { "EventID": 13, "TargetObject": "HKLM\\System\\CurrentControlSet\\Services\\Tcpip\\Parameters\\Interfaces\\{abc}\\NameServer", "Details": "9.9.9.9", "_case": "unapproved public resolver" },
-    { "EventID": 13, "TargetObject": "HKLM\\System\\CurrentControlSet\\Services\\Tcpip\\Parameters\\Interfaces\\{abc}\\NameServer", "Details": "10.0.0.53,9.9.9.9", "_case": "multiple resolvers incl. attacker" }
+    {
+      "EventID": 13,
+      "TargetObject": "HKLM\\System\\CurrentControlSet\\Services\\Tcpip\\Parameters\\Interfaces\\{abc}\\NameServer",
+      "Details": "9.9.9.9",
+      "_case": "single unapproved public resolver"
+    },
+    {
+      "EventID": 13,
+      "TargetObject": "HKLM\\System\\CurrentControlSet\\Services\\Tcpip\\Parameters\\Interfaces\\{abc}\\NameServer",
+      "Details": "10.0.0.53,9.9.9.9",
+      "_case": "mixed: trusted first, unapproved second"
+    },
+    {
+      "EventID": 13,
+      "TargetObject": "HKLM\\System\\CurrentControlSet\\Services\\Tcpip\\Parameters\\Interfaces\\{abc}\\NameServer",
+      "Details": "9.9.9.9,10.0.0.53",
+      "_case": "mixed: unapproved first, trusted second"
+    },
+    {
+      "EventID": 13,
+      "TargetObject": "HKLM\\System\\CurrentControlSet\\Services\\Tcpip\\Parameters\\Interfaces\\{abc}\\NameServer",
+      "Details": "10.0.0.53 9.9.9.9",
+      "_case": "mixed, space-separated"
+    },
+    {
+      "EventID": 13,
+      "TargetObject": "HKLM\\System\\CurrentControlSet\\Services\\Tcpip\\Parameters\\Interfaces\\{abc}\\NameServer",
+      "Details": "192.168.1.1,172.32.0.1",
+      "_case": "172.32.0.1 is outside 172.16/12, so it is not private"
+    },
+    {
+      "EventID": 13,
+      "TargetObject": "HKLM\\System\\CurrentControlSet\\Services\\Tcpip\\Parameters\\Interfaces\\{abc}\\NameServer",
+      "Details": "1.1.1.1",
+      "_case": "public resolver that has not been allowlisted alerts by default"
+    },
+    {
+      "EventID": 13,
+      "TargetObject": "HKLM\\System\\CurrentControlSet\\Services\\Tcpip\\Parameters\\Interfaces\\{abc}\\DhcpNameServer",
+      "Details": "10.0.0.53,8.8.8.8",
+      "_case": "DhcpNameServer value with an unapproved resolver"
+    }
   ],
   "should_not_match": [
-    { "EventID": 13, "TargetObject": "HKLM\\System\\CurrentControlSet\\Services\\Tcpip\\Parameters\\Interfaces\\{abc}\\NameServer", "Details": "10.0.0.53", "_case": "trusted internal DNS" },
-    { "EventID": 13, "TargetObject": "HKLM\\System\\CurrentControlSet\\Services\\Tcpip\\Parameters\\Interfaces\\{abc}\\NameServer", "Details": "1.1.1.1", "_case": "approved public DNS — only after you allowlist it" }
+    {
+      "EventID": 13,
+      "TargetObject": "HKLM\\System\\CurrentControlSet\\Services\\Tcpip\\Parameters\\Interfaces\\{abc}\\NameServer",
+      "Details": "10.0.0.53",
+      "_case": "single trusted resolver"
+    },
+    {
+      "EventID": 13,
+      "TargetObject": "HKLM\\System\\CurrentControlSet\\Services\\Tcpip\\Parameters\\Interfaces\\{abc}\\NameServer",
+      "Details": "10.0.0.53,10.0.0.54",
+      "_case": "several trusted resolvers"
+    },
+    {
+      "EventID": 13,
+      "TargetObject": "HKLM\\System\\CurrentControlSet\\Services\\Tcpip\\Parameters\\Interfaces\\{abc}\\NameServer",
+      "Details": "192.168.1.1 172.16.0.10",
+      "_case": "trusted resolvers from different RFC1918 ranges, space-separated"
+    },
+    {
+      "EventID": 13,
+      "TargetObject": "HKLM\\System\\CurrentControlSet\\Services\\Tcpip\\Parameters\\Interfaces\\{abc}\\NameServer",
+      "Details": "",
+      "_case": "empty value (resolver cleared)"
+    },
+    {
+      "EventID": 13,
+      "TargetObject": "HKLM\\System\\CurrentControlSet\\Services\\Tcpip\\Parameters\\Interfaces\\{abc}\\Domain",
+      "Details": "9.9.9.9",
+      "_case": "different registry value, not a resolver setting"
+    }
   ]
 }

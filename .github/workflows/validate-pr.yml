@@ -1,5 +1,3 @@
-# Copy this to .github/workflows/validate-pr.yml in the repo root.
-# (The file-bridge can't write under .github/, so it's staged here.)
 name: Validate data + detections
 
 on:
@@ -14,6 +12,7 @@ permissions:
 jobs:
   validate:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
 
@@ -22,15 +21,19 @@ jobs:
           python-version: "3.12"
 
       - name: Install deps
-        run: |
-          pip install -r requirements.txt
-          pip install -r requirements-ci.txt
+        run: pip install -r requirements.txt -r requirements-ci.txt
 
       - name: Validate data feeds against schemas
         run: python scripts/validate.py
 
+      - name: IOC exports match the campaign data
+        run: python scripts/build_iocs.py --check
+
       - name: Detection inventory + YAML/XML parse
         run: python scripts/check_inventory.py
+
+      - name: Tests (pipeline, IOC exports, detection fixtures)
+        run: python -m unittest discover -s tests -v
 
       - name: Validate Sigma rules
         run: sigma check detections/sigma/*.yml

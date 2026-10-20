@@ -14,7 +14,7 @@ parts, plus a monthly analyst assessment on top:
 
 | Feed | Source of truth | Cadence |
 |------|-----------------|---------|
-| `data/exploited-cve.json` / `watchlist.json` | CISA KEV + FIRST EPSS, auto-enriched | Daily (GitHub Action) |
+| `data/exploited-cve.json` / `watchlist.json` | CISA KEV + FIRST EPSS, auto-enriched | Twice daily (GitHub Action) |
 | `data/smishing-apk.json` | Hand-curated from public reporting & busts | On new, credible reporting |
 | `data/apt-campaigns.json` | Hand-curated from vendor/CERT reporting | On new, credible reporting |
 | `data/assessment.json` | Analyst judgement over the above | Monthly |
@@ -32,7 +32,7 @@ The assessment is the opinionated layer: a dated, ranked read of what matters
 - **CISA KEV** — the vulnerability is **known exploited in the wild**. Fact, not
   forecast. Pulled from the [CISA Known Exploited Vulnerabilities catalog](https://www.cisa.gov/known-exploited-vulnerabilities-catalog).
 - **EPSS** — the **probability** a CVE is exploited in the next 30 days, 0–100%,
-  from [FIRST](https://www.first.org/epss/). A forecast, re-pulled daily.
+  from [FIRST](https://www.first.org/epss/). A forecast, re-pulled on every feed update.
 - **India relevance** — a transparent heuristic (below) for whether the affected
   product is part of the attack surface Indian orgs actually expose. A starting
   filter, **not** proof your org is exposed.
@@ -57,9 +57,27 @@ The source of truth is [`scripts/india_relevance.py`](scripts/india_relevance.py
   gear). Real risk, but not an India-*specific* signal.
 - **global** — everything else.
 
-It is deliberately a blunt, legible rule rather than a black box. It can be
-**overridden by hand** per-CVE (`_manual_relevance`), and those overrides win
-over the heuristic.
+It is deliberately a blunt, legible rule rather than a black box, and it can
+be **overridden by hand** per CVE.
+
+### Editorial overrides
+
+Hand-reviewed tiers live in [`data/relevance-overrides.json`](data/relevance-overrides.json),
+each with a `reason` and a `reviewed` date. The pipeline only ever **reads** that
+file, so automation can never overwrite an editorial decision. The behaviour is
+explicit and covered by regression tests (`tests/test_pipeline.py`):
+
+- An override sets the tier, marks the record `_manual_relevance: true` and
+  `relevance_match: "manual review"`, and carries its `reason`. It survives every
+  regeneration.
+- The watchlist rule then runs as normal with the overridden tier, so an old,
+  non-ransomware CVE raised to `high` stays off the watchlist. An override can
+  force the outcome with `"watchlist": true` or `false`.
+- If an overridden CVE leaves the KEV catalog, nothing is emitted for it, the
+  override is **kept**, and it is reported as orphaned in the feed's
+  `manual_overrides` block and in the job log. It is never deleted automatically.
+- Older feeds stored overrides as `_manual_relevance` flags on generated records.
+  Those are still honoured; the overrides file wins where both exist.
 
 > **Known limitation:** this scores the *product*, not *your* exposure. "high"
 > means "this is the kind of thing Indian orgs run on the edge," not "you are

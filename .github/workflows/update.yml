@@ -1,9 +1,12 @@
-name: Update exploited-cve feed
+name: Update feeds
 
 on:
   schedule:
-    - cron: "33 2 * * *"   # daily 02:33 UTC (~08:03 IST)
-  workflow_dispatch: {}      # lets you run it manually from the Actions tab
+    # Twice a day. GitHub often starts scheduled runs hours late; the second run
+    # keeps the feed fresh if the first is delayed or fails.
+    - cron: "33 2 * * *"    # ~08:03 IST
+    - cron: "33 14 * * *"   # ~20:03 IST
+  workflow_dispatch: {}      # run it by hand from the Actions tab
 
 permissions:
   contents: write
@@ -15,6 +18,7 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
 
@@ -25,25 +29,40 @@ jobs:
       - name: Install deps
         run: pip install -r requirements.txt
 
-      - name: Fetch KEV + EPSS
+      - name: Fetch KEV + EPSS, rebuild exploited-cve.json and watchlist.json
         working-directory: scripts
         run: python fetch_exploited.py
 
-      - name: Validate against schema
+      - name: Rebuild IOC exports
+        run: python scripts/build_iocs.py
+
+      - name: Validate feeds against schemas
         run: python scripts/validate.py
+
+      - name: Pipeline and IOC export tests
+        run: python -m unittest tests.test_pipeline tests.test_iocs
 
       - name: Generate tweet draft
         working-directory: scripts
         run: python make_tweet_draft.py
 
-      - name: Commit changes
+      - name: Commit and push
         run: |
           git config user.name "india-threat-tracker-bot"
           git config user.email "actions@github.com"
           git add data/ drafts/
           if git diff --cached --quiet; then
             echo "No changes."
-          else
-            git commit -m "chore: daily feed update ($(date -u +%Y-%m-%d))"
-            git push
+            exit 0
           fi
+          git commit -m "chore: feed update ($(date -u +%Y-%m-%dT%H:%MZ))"
+          # Someone may have pushed while this ran. Rebase onto it and retry,
+          # so a concurrent push never costs a day's update.
+          for attempt in 1 2 3; do
+            if git pull --rebase -X theirs origin main && git push; then
+              exit 0
+            fi
+            sleep $((attempt * 15))
+          done
+          echo "::error::Could not push the feed update after 3 attempts"
+          exit 1

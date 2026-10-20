@@ -3,7 +3,8 @@ id: 3b9318cc-5b56-4f08-8f7b-fb3c8c8425e9
 status: experimental
 description: >
   Detects a change to an interface DNS server (the NameServer / DhcpNameServer
-  registry value) to an address outside the trusted-resolver set. Used to catch
+  registry value) where at least one resolver in the value is outside the
+  trusted-resolver set. Every address in a multi-resolver value is checked. Used to catch
   client fallout from SOHO-router DNS hijacking (APT28 FrostArmada), where
   devices inherit an attacker-controlled resolver via DHCP. The default
   trusted-resolver policy here is "any RFC1918 address" — see the note below,
@@ -27,13 +28,17 @@ detection:
     TargetObject|endswith:
       - 'NameServer'
       - 'DhcpNameServer'
-  # Trusted-resolver policy: the new value begins with an RFC1918 range
-  # (10/8, 172.16/12, 192.168/16). TUNE: this is the SINGLE source of truth for
-  # "trusted" — keep it identical across Splunk/Elastic/Wazuh, and add your
-  # approved PUBLIC resolver IPs here, because RFC1918 alone is not "trusted".
-  filter_trusted_resolvers:
-    Details|re: '^(10\.|172\.(1[6-9]|2[0-9]|3[01])\.|192\.168\.)'
-  condition: selection and not filter_trusted_resolvers
+  # Alert if ANY resolver in the value falls outside the trusted-resolver
+  # policy. The value can hold several resolvers ("10.0.0.53,9.9.9.9" or
+  # space-separated), so the pattern checks every address, not just the first:
+  # it matches an IPv4 address at the start or after a separator that does NOT
+  # begin with a trusted prefix.
+  # Trusted-resolver policy = RFC1918 (10/8, 172.16/12, 192.168/16), identical in
+  # every backend. RFC1918 is private space, not automatically trusted. TUNE: to
+  # approve a public resolver, add it inside the (?!...) group, e.g. |1\.1\.1\.1(?!\d)
+  untrusted_resolver:
+    Details|re: '(?:^|[,; ])(?!(?:10\.|172\.(?:1[6-9]|2[0-9]|3[01])\.|192\.168\.))\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}'
+  condition: selection and untrusted_resolver
 falsepositives:
   - Approved public resolver not yet allowlisted (e.g. an ISP or corporate DNS)
   - VPN clients or legitimate network changes setting a public resolver

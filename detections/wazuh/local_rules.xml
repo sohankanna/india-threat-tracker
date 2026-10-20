@@ -3,11 +3,17 @@
   Source Sigma rules: ../sigma/   |   Write-ups: https://www.sohankanna.com/research/
   Drop into /var/ossec/etc/rules/local_rules.xml (or a file alongside it) and restart wazuh-manager.
 
+  Field names and parent rule IDs are taken from the Wazuh 4.14 ruleset:
+    61603 / 61615  Sysmon Event 1 / Event 13   (0595-win-sysmon_rules.xml, fields win.eventdata.*)
+    64500          Palo Alto base rule          (0700-paloalto_rules.xml; SYSTEM decoder fields:
+                                                 type, content_threat_type, event_id, description)
+    87802          Microsoft Graph via azure-logs, azure_tag azure-ad-graph (0555-azure_rules.xml);
+                   sign-ins pulled with <query>auditLogs/signIns</query> keep Graph's field names
+
   Requirements by rule:
-    100210-100212  Windows + Sysmon (wazuh-agent, Sysmon ruleset enabled). EID 1 = process, EID 13 = registry.
-    100220         PAN-OS syslog forwarded to Wazuh (Palo Alto decoder). TUNE with CDB allowlist (see note).
-    100230/100231  Entra ID sign-in logs via the Azure integration (wodle azure-logs). Field paths may vary by schema.
-                   100230 = high-risk SUCCESS (primary); 100231 = KMSI-interrupted (context).
+    100210-100212  Windows + Sysmon (wazuh-agent, Sysmon channel collected).
+    100220         PAN-OS SYSTEM logs forwarded to Wazuh (built-in Palo Alto decoder).
+    100230/100231  Entra ID sign-ins via the azure-logs Graph integration.
 
   All rules are experimental. Expect to tune. Defensive use only.
 -->
@@ -22,7 +28,8 @@
     <mitre><id>T1059</id><id>T1204.002</id></mitre>
   </rule>
 
-  <!-- Archive/LNK spawning a LOLBin - SideCopy / APT36 delivery -->
+  <!-- Archive utility or Explorer spawning a LOLBin - SideCopy / APT36 delivery.
+       Parent-child only; does not prove the full ZIP -> LNK -> payload chain. -->
   <rule id="100211" level="12">
     <if_sid>61603</if_sid>
     <field name="win.eventdata.parentImage" type="pcre2">(?i)\\(explorer|7zFM|WinRAR|Winzip)\.exe$</field>
@@ -31,54 +38,61 @@
     <mitre><id>T1204.002</id><id>T1218.005</id></mitre>
   </rule>
 
-  <!-- Suspicious DNS server change on endpoint (FrostArmada / APT28) -->
-  <!-- Sysmon registry-set (EID 13). TUNE: set negate match to your corp/ISP resolvers. -->
+  <!-- Suspicious DNS server change on endpoint (FrostArmada / APT28).
+       Fires if ANY resolver in the value is outside the trusted-resolver policy:
+       the pattern matches an IPv4 address at the start or after a separator that
+       does not begin with an RFC1918 prefix, so "10.0.0.53,9.9.9.9" and
+       "9.9.9.9,10.0.0.53" both alert. TUNE: approve a public resolver by adding
+       it inside the (?!...) group, e.g. |1\.1\.1\.1(?!\d) -->
   <rule id="100212" level="10">
     <if_sid>61615</if_sid>
     <field name="win.eventdata.targetObject" type="pcre2">(?i)\\Services\\Tcpip\\Parameters\\Interfaces\\.*(NameServer|DhcpNameServer)$</field>
-    <field name="win.eventdata.details" negate="yes" type="pcre2">^(10\.|172\.(1[6-9]|2[0-9]|3[01])\.|192\.168\.)</field>
-    <description>FrostArmada: endpoint DNS set to non-corporate resolver $(win.eventdata.details)</description>
+    <field name="win.eventdata.details" type="pcre2">(?:^|[,; ])(?!(?:10\.|172\.(?:1[6-9]|2[0-9]|3[01])\.|192\.168\.))\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}</field>
+    <description>FrostArmada: endpoint DNS includes a resolver outside policy: $(win.eventdata.details)</description>
     <mitre><id>T1565.001</id><id>T1071.004</id></mitre>
   </rule>
 
 </group>
 
-<!-- PAN-OS management auth from unexpected source (CVE-2026-0322).
-     Requires PAN-OS syslog -> Wazuh (Palo Alto decoder). Best effort match on a
-     successful admin auth; source allowlisting is best done with a CDB list:
-       1) create /var/ossec/etc/lists/pan_admin_allowlist with lines like  10.0.0.5:admin
-       2) add  <list>etc/lists/pan_admin_allowlist</list>  and a lookup field, then negate.
-     The rule below fires on every PAN admin auth success - pair it with the CDB negate to cut noise. -->
+<!-- PAN-OS management auth from an unexpected source (CVE-2026-0322).
+     Wazuh's Palo Alto decoder extracts no source IP from SYSTEM logs; the admin's
+     address appears only in the description as "... From: <address>." The rule
+     matches that text and excludes the allowlist with a pattern. Default
+     allowlist: 10.0.0.0/8. TUNE: add approved prefixes inside the (?!...) group,
+     e.g. |192\.168\.50\. for 192.168.50.0/24. A pattern can only express
+     octet-aligned networks (/8, /16, /24); for other prefix lengths, extend the
+     pattern per range. Not proof that CVE-2026-0322 was exploited. -->
 <group name="india_threat_tracker,paloalto,">
   <rule id="100220" level="8">
-    <decoded_as>paloalto</decoded_as>
-    <field name="type">SYSTEM</field>
-    <field name="action" type="pcre2">(?i)auth.*success|authenticated</field>
-    <description>PAN-OS: unexpected management auth success - verify source is an approved admin host (not proof of CVE-2026-0322)</description>
+    <if_sid>64500</if_sid>
+    <field name="type">^SYSTEM$</field>
+    <field name="content_threat_type">^auth$</field>
+    <field name="event_id">^auth-success$</field>
+    <field name="description" type="pcre2">From:\s*(?!10\.)\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}</field>
+    <description>PAN-OS: admin auth success from outside the allowlist - verify the source (not proof of CVE-2026-0322)</description>
     <mitre><id>T1133</id></mitre>
   </rule>
 </group>
 
-<!-- Entra ID high-risk sign-in / AiTM token replay (FrostArmada / APT28).
-     Requires the Azure integration (wodle name="azure-logs" pulling signinLogs).
-     Field paths depend on how your pipeline flattens the JSON; adjust to match. -->
+<!-- Entra ID high-risk sign-in (FrostArmada / APT28 AiTM). Requires the
+     azure-logs Graph integration pulling auditLogs/signIns; events keep Graph's
+     field names (riskLevelAggregated, status.errorCode). -->
 <group name="india_threat_tracker,azure,entra,">
   <!-- PRIMARY: high-risk sign-in that SUCCEEDED (errorCode 0). A lead for
-       investigation, not confirmation of AiTM. errorCode 50140 is KmsiInterrupt
-       ("Keep me signed in"), NOT a success - it is the separate lower-level
-       rule 100231 below, not this one. -->
+       investigation, not confirmation of AiTM. -->
   <rule id="100230" level="12">
-    <decoded_as>json</decoded_as>
-    <field name="azure.properties.riskLevelAggregated" type="pcre2">(?i)^high$</field>
-    <field name="azure.properties.status.errorCode" type="pcre2">^0$</field>
+    <if_sid>87802</if_sid>
+    <field name="riskLevelAggregated" type="pcre2">(?i)^high$</field>
+    <field name="status.errorCode" type="pcre2">^0$</field>
     <description>FrostArmada: high-risk Entra sign-in SUCCEEDED - possible AiTM, investigate IP/UA/geo</description>
     <mitre><id>T1557</id><id>T1550.001</id></mitre>
   </rule>
-  <!-- Lower-confidence context: high-risk sign-in interrupted at KMSI. -->
+  <!-- Lower-confidence context: errorCode 50140 is KmsiInterrupt ("Keep me
+       signed in"), not a successful authentication. -->
   <rule id="100231" level="6">
-    <decoded_as>json</decoded_as>
-    <field name="azure.properties.riskLevelAggregated" type="pcre2">(?i)^high$</field>
-    <field name="azure.properties.status.errorCode" type="pcre2">^50140$</field>
+    <if_sid>87802</if_sid>
+    <field name="riskLevelAggregated" type="pcre2">(?i)^high$</field>
+    <field name="status.errorCode" type="pcre2">^50140$</field>
     <description>Context: high-risk Entra sign-in interrupted at "Keep me signed in" (KmsiInterrupt)</description>
     <mitre><id>T1557</id></mitre>
   </rule>

@@ -1,0 +1,20 @@
+// Suspicious DNS Server Change on Windows Endpoint  (FrostArmada / APT28)
+// Source rule: ../sigma/windows_suspicious_dns_server_change.yml
+// SCHEMA: ECS / Elastic Defend (Elastic Agent) registry events. The raw
+//   Winlogbeat Sysmon path (winlog.event_data.*) is NOT covered.
+// Rule type: ES|QL (Elastic 8.14+) | Index: logs-endpoint.events.registry-*
+// Logic: split the value into individual resolvers and alert if ANY of them is
+//   outside the trusted-resolver policy, whatever order they appear in.
+// Policy: RFC1918 (10/8, 172.16/12, 192.168/16), identical in every backend.
+//   RFC1918 is private space, not automatically trusted.
+// TUNE: approve a public resolver with  AND resolver != "1.1.1.1"  in the last WHERE.
+
+FROM logs-endpoint.events.registry-*
+| WHERE registry.value IN ("NameServer", "DhcpNameServer")
+    AND registry.path RLIKE ".*Tcpip.Parameters.Interfaces.*"
+| EVAL raw = MV_CONCAT(registry.data.strings, ",")
+| EVAL resolver = SPLIT(REPLACE(raw, "[,; ]+", ","), ",")
+| MV_EXPAND resolver
+| WHERE resolver != ""
+    AND NOT CIDR_MATCH(TO_IP(resolver), "10.0.0.0/8", "172.16.0.0/12", "192.168.0.0/16")
+| KEEP @timestamp, host.name, user.name, process.executable, registry.path, raw, resolver

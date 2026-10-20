@@ -13,6 +13,7 @@ PAIRS = [
     ("data/apt-campaigns.json", "schema/apt-campaign.schema.json"),
     ("data/watchlist.json", "schema/watchlist.schema.json"),
     ("data/assessment.json", "schema/assessment.schema.json"),
+    ("data/relevance-overrides.json", "schema/relevance-overrides.schema.json"),
 ]
 
 
@@ -34,6 +35,8 @@ def main():
             n = data.get("count")
             if n is None and isinstance(data.get("items"), list):
                 n = len(data["items"])
+            if n is None and isinstance(data.get("overrides"), dict):
+                n = len(data["overrides"])
             print(f"OK   {data_path} ({n} items)")
     sys.exit(0 if ok else 1)
 

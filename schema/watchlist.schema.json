@@ -135,6 +135,14 @@
               "null"
             ],
             "description": "Keyword that set india_relevance, or 'manual review' for a hand override"
+          },
+          "_manual_relevance": {
+            "type": "boolean",
+            "description": "True when india_relevance was set by an editorial override"
+          },
+          "relevance_reason": {
+            "type": "string",
+            "description": "Why the editorial override was made"
           }
         }
       }

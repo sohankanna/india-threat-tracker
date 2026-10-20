@@ -1,7 +1,7 @@
 # India Threat Tracker
 
 [![Validate data + detections](https://github.com/sohankanna/india-threat-tracker/actions/workflows/validate-pr.yml/badge.svg)](https://github.com/sohankanna/india-threat-tracker/actions/workflows/validate-pr.yml)
-[![Daily feed update](https://github.com/sohankanna/india-threat-tracker/actions/workflows/update.yml/badge.svg)](https://github.com/sohankanna/india-threat-tracker/actions/workflows/update.yml)
+[![Feed update](https://github.com/sohankanna/india-threat-tracker/actions/workflows/update.yml/badge.svg)](https://github.com/sohankanna/india-threat-tracker/actions/workflows/update.yml)
 [![Data: CC BY 4.0](https://img.shields.io/badge/data-CC%20BY%204.0-blue)](https://creativecommons.org/licenses/by/4.0/)
 [![Code: MIT](https://img.shields.io/badge/code-MIT-green)](LICENSE)
 
@@ -11,6 +11,7 @@ the fake-APK and UPI fraud campaigns hitting Indian users, the state-nexus
 actors behind targeted intrusions, and detection rules for all of it.
 
 **Browse it:** [sohankanna.com/tracker](https://www.sohankanna.com/tracker) ·
+**Use the data:** [DATA-GUIDE.md](DATA-GUIDE.md) ·
 **How it's scored:** [METHODOLOGY.md](METHODOLOGY.md)
 
 > Defensive and research use only. Indicators only — no malware samples are
@@ -22,12 +23,13 @@ actors behind targeted intrusions, and detection rules for all of it.
 
 | File | Contents | Updated |
 |------|----------|---------|
-| [`data/watchlist.json`](data/watchlist.json) | KEV entries that are India-relevant and recent or ransomware-linked, with EPSS and the reason for each relevance tag | Daily, automated |
-| [`data/exploited-cve.json`](data/exploited-cve.json) | Every CISA KEV entry, enriched with FIRST EPSS and an India-relevance tag | Daily, automated |
+| [`data/watchlist.json`](data/watchlist.json) | KEV entries that are India-relevant and recent or ransomware-linked, with EPSS and the reason for each relevance tag | Twice daily, automated |
+| [`data/exploited-cve.json`](data/exploited-cve.json) | Every CISA KEV entry, enriched with FIRST EPSS and an India-relevance tag | Twice daily, automated |
 | [`data/smishing-apk.json`](data/smishing-apk.json) | Fake-APK / smishing campaigns: sources, confidence, ATT&CK mapping, key findings, defensive actions, indicators and separate infrastructure context | Curated |
 | [`data/apt-campaigns.json`](data/apt-campaigns.json) | State-nexus actors targeting India, with reported attribution kept apart from the tracker's confidence | Curated |
 | [`data/iocs.txt`](data/iocs.txt) · [`data/iocs.csv`](data/iocs.csv) | Defanged campaign indicators; the CSV adds campaign, source, confidence and status per row | Rebuilt with every update |
 | [`data/assessment.json`](data/assessment.json) | The monthly ranked analyst assessment | Monthly |
+| [`data/relevance-overrides.json`](data/relevance-overrides.json) | Hand-reviewed India-relevance decisions; the pipeline reads them and never overwrites them | When reviewed |
 | [`data/meta.json`](data/meta.json) | Machine-readable index of the feeds above | — |
 
 Every JSON feed is validated against a schema in [`schema/`](schema/) on every
@@ -94,17 +96,26 @@ scripts/check_inventory.py   detection pack        -> every rule has all formats
 scripts/make_tweet_draft.py  today's KEV adds      -> drafts/<date>.md (a draft, not post-ready)
 ```
 
-Two GitHub Actions run it: [`update.yml`](.github/workflows/update.yml)
-regenerates the feeds daily, and [`validate-pr.yml`](.github/workflows/validate-pr.yml)
-checks every push and pull request (schemas, rule inventory, Sigma validation,
-a Sigma→Splunk conversion test).
+Two GitHub Actions run it. [`update.yml`](.github/workflows/update.yml)
+regenerates the feeds **twice a day**, rebuilds the IOC exports, runs the
+pipeline tests, and retries its push if someone pushed during the run.
+[`validate-pr.yml`](.github/workflows/validate-pr.yml) checks every push and pull
+request: schemas, that the IOC exports match the campaign data, the detection
+inventory, the test suite, Sigma validation and a Sigma→Splunk conversion.
+
+The test suite (`tests/`) covers the pipeline (including that hand-set
+relevance tiers survive repeated regeneration), the IOC exports (infrastructure
+context can never leak in), the example client, and every detection rule
+against its fixtures. [TESTING.md](detections/TESTING.md) says exactly which
+backends are executed and which are only checked.
 
 ```bash
 pip install -r requirements.txt -r requirements-ci.txt
-python scripts/fetch_exploited.py                    # needs open internet
-python scripts/fetch_exploited.py --rebuild-watchlist  # offline: re-derive watchlist.json
-python scripts/build_iocs.py
+python scripts/fetch_exploited.py                      # needs open internet
+python scripts/fetch_exploited.py --rebuild-watchlist  # offline: re-derive both feeds
+python scripts/build_iocs.py                           # --check to verify without writing
 python scripts/validate.py && python scripts/check_inventory.py
+python -m unittest discover -s tests -v
 ```
 
 ## Contributing

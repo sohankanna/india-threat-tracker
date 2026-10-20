@@ -3,12 +3,13 @@
 # Indicators are defanged (example[.]com); re-fang at your own risk.
 # Every non-comment line is one bare indicator (safe for grep -v '^#').
 # Campaign ids map to data/smishing-apk.json for source, confidence and the
-# date the source was last checked.
+# date the source was last checked. data/iocs.csv has the same rows with that
+# provenance inline.
 # Excluded on purpose: infrastructure context (abused legitimate platforms,
 # hosting providers, C2 technology). Do not block shared services.
 # Listing is not proof an indicator is still active - last-seen dates are
 # not tracked.
-# Generated 2026-10-20 - 7 indicators - https://github.com/sohankanna/india-threat-tracker
+# Data as of 2026-10-20 - 7 indicators - https://github.com/sohankanna/india-threat-tracker
 
 ## Domains
 # sm-2025-002: RTO Challan fraud - two-stage dropper (jsonserv C2)

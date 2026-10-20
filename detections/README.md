@@ -8,7 +8,7 @@ Splunk, Elastic and Wazuh so you can drop them straight into your SIEM.
 |--------|------|--------|
 | [`sigma/`](sigma/) | Canonical endpoint / cloud / network detections | [Sigma](https://sigmahq.io) YAML |
 | [`splunk/`](splunk/) | Same 5 rules as Splunk searches | SPL |
-| [`elastic/`](elastic/) | Same 5 rules for Elastic | EQL (endpoint) / KQL (logs) |
+| [`elastic/`](elastic/) | Same 5 rules for Elastic (ECS) | EQL, KQL and ES\|QL |
 | [`wazuh/`](wazuh/) | Same 5 rules as Wazuh local rules | `local_rules.xml` |
 | [`fraud/`](fraud/) | Payments-fraud detection logic for the UPI / fake-APK kill chain | schema-agnostic YAML |
 
@@ -16,10 +16,10 @@ Splunk, Elastic and Wazuh so you can drop them straight into your SIEM.
 source and telemetry each rule needs to actually fire, and a benign validation
 step for each. A rule you can't feed is a rule that silently never alerts.
 
-**→ [`TESTING.md`](TESTING.md)** gives every rule a reproducible test — a
-matching event, a benign event, and the expected outcome — with synthetic
-sample events in [`tests/`](tests/). These prove the *logic*, not production
-detection rates.
+**→ [`TESTING.md`](TESTING.md)** explains exactly what CI runs: every fixture is
+executed against the Sigma rules and, by emulation, the Wazuh rules; the Splunk
+and Elastic queries are emulated from their text where it matters and checked
+for agreement with Sigma everywhere else. No test claims a detection rate.
 
 Every rule links back to the write-up on [sohankanna.com](https://www.sohankanna.com) that explains the threat it covers.
 

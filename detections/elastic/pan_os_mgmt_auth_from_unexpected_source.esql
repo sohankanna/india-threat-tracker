@@ -1,0 +1,20 @@
+// PAN-OS Management Auth From Unexpected Source  (CVE-2026-0322)
+// Source rule: ../sigma/pan_os_mgmt_auth_from_unexpected_source.yml
+// SCHEMA: Elastic Palo Alto Networks integration (panw.panos data stream).
+//   Its SYSTEM-log pipeline sets panw.panos.type, panw.panos.sub_type,
+//   panw.panos.event.id and panw.panos.description, but no source.ip: PAN-OS puts
+//   the admin's address only in the description, as "... From: <address>."
+//   This query extracts it with GROK.
+// Rule type: ES|QL (Elastic 8.14+) | Index: logs-panw.panos-*
+// NOTE: detects UNEXPECTED management-plane auth. It is NOT proof that
+//   CVE-2026-0322 was exploited.
+// TUNE: add each approved admin network as another CIDR in CIDR_MATCH(...).
+
+FROM logs-panw.panos-*
+| WHERE panw.panos.type == "SYSTEM"
+    AND panw.panos.sub_type == "auth"
+    AND panw.panos.event.id == "auth-success"
+| GROK panw.panos.description "From: %{IP:admin_source}"
+| WHERE admin_source IS NOT NULL
+    AND NOT CIDR_MATCH(TO_IP(admin_source), "10.0.0.0/8")
+| KEEP @timestamp, observer.hostname, panw.panos.description, admin_source

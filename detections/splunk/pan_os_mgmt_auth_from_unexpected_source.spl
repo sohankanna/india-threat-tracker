@@ -2,17 +2,18 @@
 # Source rule: ../sigma/pan_os_mgmt_auth_from_unexpected_source.yml
 # Write-up:    https://www.sohankanna.com/research/cve-2026-0322-pan-os-management-interface-zero-day-from-admin-login-to-root
 #
-# Requires: Splunk Add-on for Palo Alto Networks (Splunk_TA_paloalto).
-#   PAN-OS SYSTEM log forwarded as sourcetype pan:system (admin auth events).
-#   Field names below follow the add-on's CIM mapping; adjust if you use raw syslog.
-# NOTE: this detects UNEXPECTED management-plane auth - it is NOT proof that
-#   CVE-2026-0322 was exploited. It uses cidrmatch() for real CIDR matching
-#   (the generic `sigma convert -t splunk` renders |cidr as a literal string
-#   equality, which is wrong - use this file, or a CIDR-aware Splunk pipeline).
-# TUNE: src_allowlist = your jump-box / admin CIDRs.
+# Requires: PAN-OS SYSTEM logs forwarded to Splunk (sourcetype pan:system via the
+#   Palo Alto Networks add-on). PAN-OS records an admin login as event id
+#   auth-success, and the source address appears only inside the description,
+#   as "... From: <address>." This search extracts it from the raw event, so it
+#   does not depend on add-on field names.
+# NOTE: detects UNEXPECTED management-plane auth. It is NOT proof that
+#   CVE-2026-0322 was exploited. cidrmatch() does real CIDR matching.
+# TUNE: the allowlist. Add each approved admin network as another
+#   OR cidrmatch("<cidr>", admin_source) inside the NOT ( ... ).
 
-sourcetype=pan:system subtype=auth (action=success OR event_desc="*authenticated*" OR result="success")
-| where NOT (cidrmatch("10.0.0.0/8", src_ip))      ``` TUNE: add each approved admin CIDR as another cidrmatch() OR clause ```
-| stats count min(_time) as firstTime max(_time) as lastTime by admin, src_ip, event_desc, vsys, host
-| `security_content_ctime(firstTime)` | `security_content_ctime(lastTime)`
-| sort - count
+sourcetype=pan:system "auth-success" "From:"
+| rex field=_raw "From:\s*(?<admin_source>\d{1,3}(?:\.\d{1,3}){3})"
+| where isnotnull(admin_source) AND NOT (cidrmatch("10.0.0.0/8", admin_source))
+| table _time, host, admin_source, _raw
+| sort - _time

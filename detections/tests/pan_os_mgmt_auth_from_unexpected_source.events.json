@@ -1,10 +1,39 @@
 {
-  "_note": "Synthetic PAN-OS SYSTEM auth samples. Not real telemetry.",
+  "_note": "Synthetic PAN-OS SYSTEM log samples, shaped like the documented auth-success description. Not real telemetry. src_ip is what a pipeline extracts from the 'From:' text; the shipped backends extract it themselves.",
   "should_match": [
-    { "subtype": "auth", "event": "auth-success", "admin": "paloadmin", "src_ip": "203.0.113.9", "_why": "admin login from outside the allowlist" }
+    {
+      "type": "SYSTEM",
+      "subtype": "auth",
+      "event": "auth-success",
+      "src_ip": "203.0.113.9",
+      "description": "authenticated for user 'admin'.   auth profile 'local', vsys 'shared', server profile '', server address '', admin role 'superuser', access domain '', reply message '' From: 203.0.113.9.",
+      "_why": "admin login from outside the allowlist"
+    },
+    {
+      "type": "SYSTEM",
+      "subtype": "auth",
+      "event": "auth-success",
+      "src_ip": "11.0.0.5",
+      "description": "authenticated for user 'admin'.   auth profile 'local', vsys 'shared', server profile '', server address '', admin role 'superuser', access domain '', reply message '' From: 11.0.0.5.",
+      "_why": "11.0.0.5 is outside 10.0.0.0/8, despite starting with 1"
+    }
   ],
   "should_not_match": [
-    { "subtype": "auth", "event": "auth-success", "admin": "paloadmin", "src_ip": "10.0.0.5", "_why": "login from an allowlisted jump box (10.0.0.0/8)" },
-    { "subtype": "auth", "event": "auth-fail", "admin": "paloadmin", "src_ip": "203.0.113.9", "_why": "not a successful auth" }
+    {
+      "type": "SYSTEM",
+      "subtype": "auth",
+      "event": "auth-success",
+      "src_ip": "10.0.0.5",
+      "description": "authenticated for user 'admin'.   auth profile 'local', vsys 'shared', server profile '', server address '', admin role 'superuser', access domain '', reply message '' From: 10.0.0.5.",
+      "_why": "login from an allowlisted jump box (10.0.0.0/8)"
+    },
+    {
+      "type": "SYSTEM",
+      "subtype": "auth",
+      "event": "auth-fail",
+      "src_ip": "203.0.113.9",
+      "description": "failed authentication for user 'admin'. Reason: Invalid username or password. From: 203.0.113.9.",
+      "_why": "not a successful auth"
+    }
   ]
 }

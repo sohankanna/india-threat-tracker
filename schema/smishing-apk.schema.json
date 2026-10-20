@@ -84,19 +84,24 @@
               "domains": {
                 "type": "array",
                 "items": {
-                  "type": "string"
+                  "type": "string",
+                  "pattern": "\\[\\.\\]",
+                  "description": "Defanged, e.g. example[.]com"
                 }
               },
               "urls": {
                 "type": "array",
                 "items": {
-                  "type": "string"
+                  "type": "string",
+                  "pattern": "^hxxps?://|\\[\\.\\]",
+                  "description": "Defanged, e.g. hxxps://example[.]com/a"
                 }
               },
               "sha256": {
                 "type": "array",
                 "items": {
-                  "type": "string"
+                  "type": "string",
+                  "pattern": "^[a-f0-9]{64}$"
                 }
               },
               "package_names": {

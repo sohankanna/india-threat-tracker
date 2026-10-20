@@ -27,6 +27,10 @@ detection:
   filter_admin_sources:
     # TUNE: replace with your jump-box / admin allowlist. Uses proper CIDR
     # matching — add each approved network as its own list entry.
+    # Field note: PAN-OS SYSTEM auth-success logs carry the source address only
+    # inside the description text, as "... From: <address>." Your pipeline must
+    # extract it into src_ip; the shipped Splunk, Elastic and Wazuh versions do
+    # this extraction themselves (see DATA-SOURCES.md).
     src_ip|cidr:
       - '10.0.0.0/8'
   condition: selection and not filter_admin_sources
