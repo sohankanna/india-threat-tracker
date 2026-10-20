@@ -127,6 +127,79 @@
           },
           "last_verified": {
             "type": "string"
+          },
+          "attribution_note": {
+            "type": "string",
+            "description": "Basis for the reported attribution, kept separate from the tracker's confidence rating"
+          },
+          "mitre_group": {
+            "type": "object",
+            "required": [
+              "id",
+              "url"
+            ],
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^G[0-9]{4}$"
+              },
+              "url": {
+                "type": "string"
+              }
+            }
+          },
+          "software": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id",
+                "name"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "url": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "attack": {
+            "type": "array",
+            "description": "MITRE ATT&CK techniques mapped by the tracker from behaviour described in the cited sources",
+            "items": {
+              "type": "object",
+              "required": [
+                "id",
+                "name"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "pattern": "^T[0-9]{4}(\\.[0-9]{3})?$"
+                },
+                "name": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "key_findings": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "recommended_actions": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           }
         }
       }

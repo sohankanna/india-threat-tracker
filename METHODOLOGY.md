@@ -18,6 +18,7 @@ parts, plus a monthly analyst assessment on top:
 | `data/smishing-apk.json` | Hand-curated from public reporting & busts | On new, credible reporting |
 | `data/apt-campaigns.json` | Hand-curated from vendor/CERT reporting | On new, credible reporting |
 | `data/assessment.json` | Analyst judgement over the above | Monthly |
+| `data/iocs.txt` / `iocs.csv` | Derived from the campaign feed | Rebuilt with every update |
 
 The assessment is the opinionated layer: a dated, ranked read of what matters
 *this month*. The feeds are the evidence under it.
@@ -76,12 +77,23 @@ india_relevance ∈ {high, medium}  AND  (added to KEV within 24 months  OR  kno
 In words: India-relevant, and either **recent** or **ransomware-linked**. This
 keeps the watchlist focused on what's current and what's financially dangerous,
 while the full KEV set stays available in `exploited-cve.json` for anyone who
-wants it.
+wants it. The site opens on the high-relevance part of the watchlist; medium is
+one click away.
 
-> **Honest caveat on the "overdue" filter:** most KEV remediation deadlines are
-> already in the past, so an "overdue" toggle marks almost everything. The
-> selective tools are the **EPSS threshold** and the **due-date sort**, not
-> overdue-vs-not.
+Every entry also records:
+
+- **`relevance_match`** — the keyword that set its relevance tier (for example
+  `fortinet`), or `manual review` for a hand override. The tag is never a
+  black box.
+- **`epss_date`** — the FIRST model date the EPSS score was taken from. A
+  missing EPSS score is shown as *unavailable*, never as zero: no score is not a
+  low score.
+
+> **Honest caveat on the "past CISA due date" filter:** most KEV remediation
+> deadlines (set for US federal agencies) are already in the past, so that
+> toggle marks almost everything. The selective tools are the **EPSS
+> threshold**, **ransomware-linked**, **added in the last 30 days**, and the
+> **due-date sort**.
 
 ---
 
@@ -97,17 +109,79 @@ malware analysis. Each entry carries its own audit trail:
   - `medium`: credible single-source reporting, or an event reported but not
     independently corroborated here.
   - `low`: plausible but thin; included for tracking, flagged as such.
-- **`last_verified`** — the date the entry was last checked against its sources.
+- **`last_verified`** — the date the entry was last checked against its sources
+  (shown on the site as *Source checked*).
 - **`first_seen`** — when the activity was first observed/reported, where known.
-- **`references_blog` / `reference_url` / `sources`** — where the claim comes
-  from. Every entry links to something you can check.
+- **`references_blog` / `sources`** — where the claim comes from. Every entry
+  links to something you can check, and sources are specific reports, not tag
+  or index pages.
+- **`key_findings` / `recommended_actions`** — taken from the cited reporting
+  and the linked write-up. Nothing in them goes beyond what a source supports.
+- **`attack`** — MITRE ATT&CK techniques **mapped by the tracker** from the
+  behaviour the sources describe. Every ID is checked against MITRE's published
+  ATT&CK data; revoked or deprecated IDs are not used. Entries with no
+  described technical behaviour (a police case, a lure reference) carry no
+  mapping rather than a guessed one.
+
+### Status
+
+Status describes the state of the **public reporting** about an entry. It never
+claims that a domain, server or app is operational right now.
+
+| Value | Shown as | Meaning |
+|-------|----------|---------|
+| `active` | Ongoing | Still appearing in recent public reporting. |
+| `law-enforcement` | Police action | Known mainly from an arrest or seizure. That network was disrupted; allegations are not yet proven in court, and the wider ecosystem continues. |
+| `historical` | Historical | No new reporting in the last 12 months. Kept for reference and detection engineering. |
+
+### Indicators versus infrastructure context
+
+Each campaign separates two things that look alike and must never be confused:
+
+- **`iocs`** — specific, campaign-associated indicators suitable for
+  investigation: domains, URLs, SHA-256 hashes, Android package names, bot
+  handles. Defanged. These are what `iocs.txt`, `iocs.csv` and the site's copy
+  and export actions contain.
+- **`infrastructure`** — context only: legitimate platforms the campaign abused
+  (GitHub, Firebase), hosting providers, C2 technology. These are shared
+  services that also serve legitimate users, so they are **excluded from every
+  copy and export** and must not become blocklist entries.
+
+Indicators are published *as reported* by the cited source. They are not
+re-validated, and a last-seen date is not tracked.
 
 ### On attribution
 
 APT attribution here is **assessed, not proven**. `suspected_origin` reflects the
 consensus of public reporting (e.g. "Pakistan-nexus"), and groups don't map
-cleanly onto governments. The global actor map is context for *who operates and
+cleanly onto governments. Two things are kept deliberately separate:
+
+- **Reported attribution** — what vendors, MITRE ATT&CK (`mitre_group`) or the
+  police claim, with the basis in `attribution_note`. For fraud campaigns this
+  is the `attribution` field, e.g. "Arrests by Mumbai Cyber Police
+  (allegations, not yet proven in court)".
+- **Tracker confidence** — the tracker's own rating of the evidence for the
+  activity described. A high-confidence entry can still carry contested
+  attribution.
+
+The global actor map is context for *who operates and
 who they target* — it is not a live attack map, and it is not a courtroom claim.
+
+---
+
+## Timestamps
+
+Three timestamps mean three different things, and the site labels each one:
+
+| Label | Field | Meaning |
+|-------|-------|---------|
+| **Feed updated** | `generated_at` | When automation regenerated a dataset. Shown in IST. A rebuilt dataset does not mean every item in it is still current. |
+| **Source checked** | `last_verified` | When a person last checked the cited report behind a campaign or actor entry. |
+| **Indicator last seen** | — | When evidence shows an indicator was observed in use. **Not tracked yet**, so the tracker never implies an indicator is active. |
+
+The site reads every timestamp from the feed file itself rather than keeping a
+separate copy, so the page and the JSON cannot disagree. If the live feed can't
+be reached, the page falls back to a bundled copy and says so.
 
 ---
 

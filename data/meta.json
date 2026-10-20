@@ -1,12 +1,17 @@
 {
   "project": "India Threat Tracker",
   "maintainer": "Sohan Kanna (@sohankanna)",
-  "site": "https://www.sohankanna.com",
+  "site": "https://www.sohankanna.com/tracker",
+  "repository": "https://github.com/sohankanna/india-threat-tracker",
   "license": "MIT (code) / CC-BY-4.0 (data)",
-  "updated_at": "2026-10-15",
+  "updated_at": "2026-10-20",
+  "methodology": "https://github.com/sohankanna/india-threat-tracker/blob/main/METHODOLOGY.md",
   "feeds": {
-    "exploited-cve": { "file": "data/exploited-cve.json", "updated_by": "automation", "cadence": "daily" },
-    "smishing-apk":  { "file": "data/smishing-apk.json",  "updated_by": "curated",    "cadence": "as-observed" },
-    "apt-campaign":  { "file": "data/apt-campaigns.json", "updated_by": "curated",    "cadence": "as-observed" }
+    "exploited-cve": { "file": "data/exploited-cve.json", "updated_by": "automation", "cadence": "daily", "description": "Every CISA KEV entry, enriched with FIRST EPSS and an India-relevance tag" },
+    "watchlist": { "file": "data/watchlist.json", "updated_by": "automation", "cadence": "daily", "description": "KEV entries that are India-relevant (high or medium) and added in the last 24 months or ransomware-linked" },
+    "smishing-apk": { "file": "data/smishing-apk.json", "updated_by": "curated", "cadence": "as-observed", "description": "Fake-APK and smishing campaigns affecting Indian users" },
+    "apt-campaign": { "file": "data/apt-campaigns.json", "updated_by": "curated", "cadence": "as-observed", "description": "State-nexus actors targeting India, plus regional context" },
+    "assessment": { "file": "data/assessment.json", "updated_by": "analyst", "cadence": "monthly", "description": "Ranked analyst assessment of what matters this month" },
+    "iocs": { "file": "data/iocs.txt", "csv": "data/iocs.csv", "updated_by": "automation", "cadence": "daily", "description": "Defanged campaign indicators; excludes infrastructure context" }
   }
 }

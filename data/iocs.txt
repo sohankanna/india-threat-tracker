@@ -1,19 +1,31 @@
-# India Threat Tracker - aggregated indicators
+# India Threat Tracker - campaign indicators
 # Defensive and research use only. No malware samples are hosted.
 # Indicators are defanged (example[.]com); re-fang at your own risk.
-# Generated 2026-10-16 - https://github.com/sohankanna/india-threat-tracker
+# Every non-comment line is one bare indicator (safe for grep -v '^#').
+# Campaign ids map to data/smishing-apk.json for source, confidence and the
+# date the source was last checked.
+# Excluded on purpose: infrastructure context (abused legitimate platforms,
+# hosting providers, C2 technology). Do not block shared services.
+# Listing is not proof an indicator is still active - last-seen dates are
+# not tracked.
+# Generated 2026-10-20 - 7 indicators - https://github.com/sohankanna/india-threat-tracker
 
-## domains
+## Domains
+# sm-2025-002: RTO Challan fraud - two-stage dropper (jsonserv C2)
 jsonserv[.]xyz
 jsonserv[.]biz
 
-## sha256
+## SHA-256 file hashes
+# sm-2025-002: RTO Challan fraud - two-stage dropper (jsonserv C2)
 9209fc088cdcd7da0161cabf5b9384c2ca790214413ffb437452bcc865c58452
 22cf70a0dd866a4f5addd5d339fad3894a4ebb3e97d597fd7dac9b08899052fb
+# sm-2025-003: Android banking trojan - MITM + anti-analysis (case study)
+27051a225ea950c7d62ddbac6c7c4754bf86be94fddf0d3c10e2827d6eedffd5
 
-## telegram_bots
+## Android package names
+# sm-2025-003: Android banking trojan - MITM + anti-analysis (case study)
+com.iudxmm.android
+
+## Telegram bot handles
+# sm-2025-001: GhostBat RAT - RTO/mParivahan-themed Android campaign
 GhostBatRat_bot
-
-## hosting
-raw.githubusercontent.com
-github.com (releases)

@@ -54,12 +54,17 @@ MEDIUM = [
 ]
 
 
-def relevance(vendor: str, product: str) -> str:
+def relevance_detail(vendor: str, product: str):
+    """Return (tier, matched_keyword). matched_keyword is None for "global"."""
     blob = f"{vendor} {product}".lower()
     for kw in HIGH:
         if kw in blob:
-            return "high"
+            return "high", kw.strip()
     for kw in MEDIUM:
         if kw in blob:
-            return "medium"
-    return "global"
+            return "medium", kw.strip()
+    return "global", None
+
+
+def relevance(vendor: str, product: str) -> str:
+    return relevance_detail(vendor, product)[0]

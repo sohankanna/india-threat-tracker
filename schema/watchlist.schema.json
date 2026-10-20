@@ -1,0 +1,147 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "exploited-cve watchlist feed",
+  "type": "object",
+  "required": [
+    "feed",
+    "generated_at",
+    "source",
+    "count",
+    "items"
+  ],
+  "properties": {
+    "feed": {
+      "const": "exploited-cve-watchlist"
+    },
+    "generated_at": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "source": {
+      "type": "string"
+    },
+    "count": {
+      "type": "integer"
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "cve",
+          "vendor",
+          "product",
+          "name",
+          "date_added",
+          "india_relevance",
+          "sources"
+        ],
+        "properties": {
+          "cve": {
+            "type": "string",
+            "pattern": "^CVE-[0-9]{4}-[0-9]{4,}$"
+          },
+          "vendor": {
+            "type": "string"
+          },
+          "product": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "date_added": {
+            "type": "string"
+          },
+          "due_date": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "required_action": {
+            "type": "string"
+          },
+          "known_ransomware": {
+            "type": "boolean"
+          },
+          "cwes": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "epss": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "epss_percentile": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "india_relevance": {
+            "enum": [
+              "high",
+              "medium",
+              "global"
+            ]
+          },
+          "watchlist": {
+            "type": "boolean"
+          },
+          "tags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "sources": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "title",
+                "url"
+              ],
+              "properties": {
+                "title": {
+                  "type": "string"
+                },
+                "url": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "epss_date": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "FIRST EPSS model date the score was taken from"
+          },
+          "relevance_match": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "Keyword that set india_relevance, or 'manual review' for a hand override"
+          }
+        }
+      }
+    },
+    "total_kev": {
+      "type": "integer",
+      "description": "Entries in the full KEV feed this watchlist was drawn from"
+    }
+  }
+}

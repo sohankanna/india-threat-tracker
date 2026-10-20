@@ -11,6 +11,7 @@ PAIRS = [
     ("data/exploited-cve.json", "schema/exploited-cve.schema.json"),
     ("data/smishing-apk.json", "schema/smishing-apk.schema.json"),
     ("data/apt-campaigns.json", "schema/apt-campaign.schema.json"),
+    ("data/watchlist.json", "schema/watchlist.schema.json"),
     ("data/assessment.json", "schema/assessment.schema.json"),
 ]
 

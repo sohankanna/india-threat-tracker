@@ -78,6 +78,8 @@
           },
           "iocs": {
             "type": "object",
+            "description": "Specific, campaign-associated indicators suitable for investigation. Defanged. Never shared/legitimate services.",
+            "additionalProperties": false,
             "properties": {
               "domains": {
                 "type": "array",
@@ -104,18 +106,6 @@
                 }
               },
               "telegram_bots": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "c2_type": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "hosting": {
                 "type": "array",
                 "items": {
                   "type": "string"
@@ -166,6 +156,77 @@
           },
           "last_verified": {
             "type": "string"
+          },
+          "infrastructure": {
+            "type": "object",
+            "description": "Context only, NOT indicators: legitimate platforms abused, hosting providers, C2 technology. Never use as blocklist entries.",
+            "additionalProperties": false,
+            "properties": {
+              "abused_platforms": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "hosting_providers": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "c2_technology": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "category": {
+            "type": "string",
+            "description": "Short threat category shown on the site, e.g. 'Android banking malware', 'Fraud network, police action', 'Reference: lure themes'"
+          },
+          "attribution": {
+            "type": "string",
+            "description": "Who the source attributes the activity to, as reported. Not the tracker's own assessment."
+          },
+          "targets": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "attack": {
+            "type": "array",
+            "description": "MITRE ATT&CK techniques mapped by the tracker from behaviour described in the cited sources",
+            "items": {
+              "type": "object",
+              "required": [
+                "id",
+                "name"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "pattern": "^T[0-9]{4}(\\.[0-9]{3})?$"
+                },
+                "name": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "key_findings": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "recommended_actions": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           }
         }
       }

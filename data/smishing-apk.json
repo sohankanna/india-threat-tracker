@@ -6,11 +6,19 @@
     {
       "id": "sm-2025-001",
       "title": "GhostBat RAT - RTO/mParivahan-themed Android campaign",
+      "category": "Android banking malware",
       "summary": "Multi-stage Android malware impersonating the mParivahan RTO app, spread via WhatsApp and SMS smishing with shortened URLs. Droppers use ZIP manipulation and native packers; a fake UPI payment flow harvests the UPI PIN, and banking SMS is exfiltrated. Some variants also bundle a cryptominer. 40+ distinct samples observed.",
+      "status": "active",
+      "attribution": "Unattributed, financially motivated (Cyble)",
       "first_seen": "2025-09",
       "date_added": "2026-10-15",
       "last_updated": "2026-10-15",
-      "status": "active",
+      "last_verified": "2026-10-20",
+      "confidence": "high",
+      "targets": [
+        "Indian Android users",
+        "UPI and mobile-banking customers"
+      ],
       "lure_themes": [
         "rto-challan",
         "mparivahan",
@@ -28,17 +36,68 @@
         "cryptomining",
         "anti-emulation"
       ],
+      "attack": [
+        {
+          "id": "T1660",
+          "name": "Phishing"
+        },
+        {
+          "id": "T1655.001",
+          "name": "Masquerading: Match Legitimate Name or Location"
+        },
+        {
+          "id": "T1407",
+          "name": "Download New Code at Runtime"
+        },
+        {
+          "id": "T1633.001",
+          "name": "Virtualization/Sandbox Evasion: System Checks"
+        },
+        {
+          "id": "T1417.002",
+          "name": "Input Capture: GUI Input Capture"
+        },
+        {
+          "id": "T1636.004",
+          "name": "Protected User Data: SMS Messages"
+        },
+        {
+          "id": "T1582",
+          "name": "SMS Control"
+        },
+        {
+          "id": "T1481",
+          "name": "Web Service"
+        },
+        {
+          "id": "T1496",
+          "name": "Resource Hijacking"
+        }
+      ],
+      "key_findings": [
+        "A fake ₹1 \"ownership verification\" UPI screen captures the UPI PIN and sends it to a Firebase endpoint.",
+        "Banking SMS is exfiltrated and incoming SMS can be forwarded to an attacker number, which hands the operators OTPs and UPI device binding.",
+        "Payloads are pulled from GitHub; droppers use ZIP-header manipulation and native packers, and terminate on x86 emulators.",
+        "Device registration runs through a Telegram bot; some variants also run a cryptominer."
+      ],
+      "recommended_actions": [
+        "Banks and fintechs: reduce reliance on SMS OTP and risk-score first-time payees; flag an OTP read and a transfer seconds apart on a newly enrolled device.",
+        "Defenders: treat any mParivahan or RTO app delivered outside the Play Store as malicious, and keep Play Protect's sideloading restrictions on.",
+        "Users: a UPI PIN is only ever entered to send money, never to receive a refund."
+      ],
       "iocs": {
         "telegram_bots": [
           "GhostBatRat_bot"
-        ],
-        "hosting": [
+        ]
+      },
+      "infrastructure": {
+        "abused_platforms": [
           "raw.githubusercontent.com",
           "github.com (releases)"
         ],
-        "c2_type": [
-          "firebase-fcm",
-          "telegram-bot-api"
+        "c2_technology": [
+          "Firebase Cloud Messaging (FCM)",
+          "Telegram Bot API"
         ]
       },
       "india_relevance": "high",
@@ -54,18 +113,24 @@
           "url": "https://cyble.com/blog/ghostbat-rat-inside-the-resurgence-of-rto-themed-android-malware/"
         }
       ],
-      "references_blog": "ghostbat-rat-how-rto-themed-android-malware-steals-your-upi-pin",
-      "confidence": "high",
-      "last_verified": "2026-10-20"
+      "references_blog": "ghostbat-rat-how-rto-themed-android-malware-steals-your-upi-pin"
     },
     {
       "id": "sm-2025-002",
       "title": "RTO Challan fraud - two-stage dropper (jsonserv C2)",
+      "category": "Android banking malware",
       "summary": "e-Challan / RTO-themed two-stage dropper. A fake 'update' prompt installs a second APK that hides its icon (INFO category), collects Aadhaar/PAN and full card/UPI details via fake payment screens, and intercepts incoming SMS for OTP harvesting. C2 over HTTP POST to jsonserv domains.",
+      "status": "active",
+      "attribution": "Unattributed, financially motivated (CYFIRMA)",
       "first_seen": "2025-10",
       "date_added": "2026-10-15",
       "last_updated": "2026-10-15",
-      "status": "active",
+      "last_verified": "2026-10-20",
+      "confidence": "high",
+      "targets": [
+        "Indian Android users",
+        "Bank, card and UPI customers"
+      ],
       "lure_themes": [
         "rto-challan",
         "e-challan",
@@ -83,6 +148,59 @@
         "icon-hiding",
         "vpn-service"
       ],
+      "attack": [
+        {
+          "id": "T1660",
+          "name": "Phishing"
+        },
+        {
+          "id": "T1655.001",
+          "name": "Masquerading: Match Legitimate Name or Location"
+        },
+        {
+          "id": "T1407",
+          "name": "Download New Code at Runtime"
+        },
+        {
+          "id": "T1628.001",
+          "name": "Hide Artifacts: Suppress Application Icon"
+        },
+        {
+          "id": "T1417.002",
+          "name": "Input Capture: GUI Input Capture"
+        },
+        {
+          "id": "T1636.004",
+          "name": "Protected User Data: SMS Messages"
+        },
+        {
+          "id": "T1582",
+          "name": "SMS Control"
+        },
+        {
+          "id": "T1426",
+          "name": "System Information Discovery"
+        },
+        {
+          "id": "T1406",
+          "name": "Obfuscated Files or Information"
+        },
+        {
+          "id": "T1437.001",
+          "name": "Application Layer Protocol: Web Protocols"
+        }
+      ],
+      "key_findings": [
+        "A loader shows a fake \"App Update Available\" prompt and installs a second APK with the same name and icon.",
+        "The payload's activity is categorised as INFO rather than LAUNCHER, so it never appears in the app drawer.",
+        "Fake e-Challan and ₹1 \"verification\" screens collect Aadhaar, PAN, full card data, ATM PIN, net-banking credentials and UPI PIN; the UPI payment is rigged to fail.",
+        "Incoming SMS is rebuilt at PDU level and forwarded for OTP theft; C2 is HTTP POST to jsonserv domains with base64-chunked URLs."
+      ],
+      "recommended_actions": [
+        "Alert on an app requesting REQUEST_INSTALL_PACKAGES together with SMS permissions, or a new app that immediately binds a VPN service.",
+        "Hunt for apps whose main activity is exported as INFO instead of LAUNCHER.",
+        "Block the jsonserv C2 domains and alert on the app-registration pattern."
+      ],
       "iocs": {
         "domains": [
           "jsonserv[.]xyz",
@@ -93,6 +211,7 @@
           "22cf70a0dd866a4f5addd5d339fad3894a4ebb3e97d597fd7dac9b08899052fb"
         ]
       },
+      "infrastructure": {},
       "india_relevance": "high",
       "tags": [
         "android",
@@ -107,18 +226,24 @@
           "url": "https://www.cyfirma.com/research/rto-challan-fraud-a-technical-report-on-apk-based-financial-and-identity-theft/"
         }
       ],
-      "references_blog": "inside-the-rto-challan-dropper-anatomy-of-a-two-stage-android-bank-stealer",
-      "confidence": "high",
-      "last_verified": "2026-10-20"
+      "references_blog": "inside-the-rto-challan-dropper-anatomy-of-a-two-stage-android-bank-stealer"
     },
     {
       "id": "sm-2026-001",
       "title": "Ahmedabad APK fraud network (Telegram storefront)",
+      "category": "Fraud network, police action",
       "summary": "Ahmedabad Cyber Crime Branch dismantled a network running a Telegram bot that sold, swapped and renewed fraud APKs impersonating SBI KYC/rewards, other banks, RTO services and utilities. One distributor allegedly supplied ~400 fraudsters; linked losses ~Rs 54 lakh. Cash-out via ATM withdrawals left no direct bank trail. No technical IOCs published.",
+      "status": "law-enforcement",
+      "attribution": "Arrests by Ahmedabad Cyber Crime Branch (allegations, not yet proven in court)",
       "first_seen": "2026-06",
       "date_added": "2026-10-15",
       "last_updated": "2026-10-15",
-      "status": "law-enforcement",
+      "last_verified": "2026-10-20",
+      "confidence": "medium",
+      "targets": [
+        "SBI and other bank customers",
+        "Electricity and gas utility customers"
+      ],
       "lure_themes": [
         "sbi-kyc",
         "bank-rewards",
@@ -137,7 +262,17 @@
         "self-propagation",
         "malware-as-a-service"
       ],
+      "key_findings": [
+        "A Telegram bot let buyers purchase, download, swap and renew fraud APKs from impersonation templates.",
+        "One distributor allegedly supplied the apps to around 400 other fraudsters.",
+        "Cash-out ran through ATM withdrawals handed over in person, leaving no direct bank trail between buyer and seller."
+      ],
+      "recommended_actions": [
+        "Treat this as malware-as-a-service: disrupting one node rarely stops the lure campaigns.",
+        "Banks: watch for new device bindings followed immediately by beneficiary additions."
+      ],
       "iocs": {},
+      "infrastructure": {},
       "india_relevance": "high",
       "tags": [
         "android",
@@ -145,24 +280,29 @@
         "maas",
         "arrest"
       ],
-      "references_blog": "the-apk-is-the-exploit-how-india-s-fake-challan-scam-became-an-industry",
       "sources": [
         {
           "title": "ETV Bharat - Gujarat Police bust pan-India APK fraud racket",
           "url": "https://www.etvbharat.com/en/state/gujarat-police-bust-pan-india-apk-fraud-racket-several-held-enn26062506841"
         }
       ],
-      "confidence": "medium",
-      "last_verified": "2026-10-20"
+      "references_blog": "the-apk-is-the-exploit-how-india-s-fake-challan-scam-became-an-industry"
     },
     {
       "id": "sm-2026-002",
       "title": "Pune fake RTO e-challan APK scam",
+      "category": "Victim reports",
       "summary": "Two Pune residents lost a combined Rs 14+ lakh after installing APK files attached to fake RTO e-challan notices. Pune police advised checking challans only on official government platforms and never installing APKs from SMS/WhatsApp links.",
+      "status": "active",
+      "attribution": "Unknown operators",
       "first_seen": "2026-06",
       "date_added": "2026-10-15",
       "last_updated": "2026-10-15",
-      "status": "active",
+      "last_verified": "2026-10-20",
+      "confidence": "medium",
+      "targets": [
+        "Android users in Pune receiving fake e-challan notices"
+      ],
       "lure_themes": [
         "rto-challan",
         "e-challan"
@@ -173,7 +313,15 @@
       "capabilities": [
         "banking-theft"
       ],
+      "key_findings": [
+        "Two residents lost a combined Rs 14+ lakh after installing APK files attached to fake RTO e-challan notices."
+      ],
+      "recommended_actions": [
+        "Check challans only on official government platforms you navigate to yourself.",
+        "Never install an APK sent over SMS or WhatsApp."
+      ],
       "iocs": {},
+      "infrastructure": {},
       "india_relevance": "high",
       "tags": [
         "android",
@@ -181,24 +329,30 @@
         "rto",
         "pune"
       ],
-      "references_blog": "the-apk-is-the-exploit-how-india-s-fake-challan-scam-became-an-industry",
       "sources": [
         {
           "title": "The Bridge Chronicle - Two Punekars lost over Rs 14 lakh in fake RTO e-challan APK scam",
           "url": "https://www.thebridgechronicle.com/pune/cyber-fraud-pune-fake-rto-e-challan-apk-scam-rs14-lakh-loss-agn97"
         }
       ],
-      "confidence": "medium",
-      "last_verified": "2026-10-20"
+      "references_blog": "the-apk-is-the-exploit-how-india-s-fake-challan-scam-became-an-industry"
     },
     {
       "id": "sm-2026-003",
       "title": "Mumbai interstate APK fraud network (~Rs 43 crore, 3,206 cases)",
+      "category": "Fraud network, police action",
       "summary": "Mumbai Cyber Police arrested six members of an interstate syndicate linked to 3,206 complaints on the national portal (~Rs 43 crore). APKs impersonated banks, Mahanagar Gas (MGL) and the RTO; a typical lure warned of a gas disconnection and asked the victim to install an app and pay Rs 10. The apps intercepted OTPs and banking SMS. Forensics found 111 distinct fake APKs; ~8,609 people installed them, and ~1.24 crore SMS were exfiltrated via servers on Google Firebase and Hostinger.",
+      "status": "law-enforcement",
+      "attribution": "Arrests by Mumbai Cyber Police (allegations, not yet proven in court)",
       "first_seen": "2026-06",
       "date_added": "2026-10-15",
       "last_updated": "2026-10-15",
-      "status": "law-enforcement",
+      "last_verified": "2026-10-20",
+      "confidence": "medium",
+      "targets": [
+        "Bank customers",
+        "Mahanagar Gas (MGL) customers"
+      ],
       "lure_themes": [
         "gas-bill",
         "bank-update",
@@ -214,10 +368,23 @@
         "otp-interception",
         "device-control"
       ],
-      "iocs": {
-        "c2_type": [
-          "firebase",
-          "hostinger-hosted"
+      "key_findings": [
+        "Linked to 3,206 complaints on the national cyber-crime portal and about Rs 43 crore in losses.",
+        "Forensics found 111 distinct fake APKs installed by about 8,609 people.",
+        "About 1.24 crore SMS were exfiltrated to servers on Google Firebase and Hostinger.",
+        "A typical lure warned of a gas disconnection and asked the victim to install an app and pay Rs 10."
+      ],
+      "recommended_actions": [
+        "Utilities and banks: publish that you never send apps by SMS or WhatsApp.",
+        "Banks: risk-score transfers that follow an OTP read on a recently bound device."
+      ],
+      "iocs": {},
+      "infrastructure": {
+        "c2_technology": [
+          "Firebase"
+        ],
+        "hosting_providers": [
+          "Hostinger (web hosting)"
         ]
       },
       "india_relevance": "high",
@@ -234,18 +401,22 @@
           "url": "https://www.freepressjournal.in/mumbai/6-arrested-as-mumbai-cyber-police-bust-43-crore-fake-apk-based-cyber-fraud-network-linked-to-3200-cases-video"
         }
       ],
-      "references_blog": "the-apk-is-the-exploit-how-india-s-fake-challan-scam-became-an-industry",
-      "confidence": "medium",
-      "last_verified": "2026-10-20"
+      "references_blog": "the-apk-is-the-exploit-how-india-s-fake-challan-scam-became-an-industry"
     },
     {
       "id": "sm-2026-004",
       "title": "APK lure themes in rotation (2026)",
+      "category": "Reference: lure themes",
       "summary": "Reference entry for the social-engineering lures driving APK fraud in India. The same malware is repackaged behind whatever pretext is topical: RTO/traffic e-challan, bank KYC and reward points (SBI and others), gas and electricity bill updates (e.g. Mahanagar Gas), PM-Kisan and PM-Awas Yojana benefit checks, credit-card offers, 'digital arrest' intimidation, and WhatsApp wedding-invite APKs. All lead to an installed APK that reads SMS/OTPs and drains accounts. Police advice is consistent: never install an app from an SMS/WhatsApp link; use only official channels.",
+      "status": "active",
       "first_seen": "2026",
       "date_added": "2026-10-16",
       "last_updated": "2026-10-16",
-      "status": "active",
+      "last_verified": "2026-10-20",
+      "confidence": "high",
+      "targets": [
+        "Indian Android users"
+      ],
       "lure_themes": [
         "rto-challan",
         "bank-kyc",
@@ -270,7 +441,16 @@
         "otp-interception",
         "social-engineering"
       ],
+      "key_findings": [
+        "The same SMS-stealing malware is repackaged behind whatever pretext is topical: challans, KYC, utility bills, benefit schemes, 'digital arrest' and wedding invites.",
+        "Every lure ends in an installed APK that reads SMS/OTPs."
+      ],
+      "recommended_actions": [
+        "Teach one rule: a government department or a bank will never send you an app to install.",
+        "Report incidents on the national helpline 1930 or cybercrime.gov.in."
+      ],
       "iocs": {},
+      "infrastructure": {},
       "india_relevance": "high",
       "tags": [
         "android",
@@ -288,18 +468,24 @@
           "url": "https://www.tribuneindia.com/news/himachal/challan-scam-alert-fraudsters-use-whatsapp-apk-links-to-loot-money"
         }
       ],
-      "references_blog": "the-apk-is-the-exploit-how-india-s-fake-challan-scam-became-an-industry",
-      "confidence": "high",
-      "last_verified": "2026-10-20"
+      "references_blog": "the-apk-is-the-exploit-how-india-s-fake-challan-scam-became-an-industry"
     },
     {
       "id": "sm-2025-003",
       "title": "Android banking trojan - MITM + anti-analysis (case study)",
+      "category": "Android banking malware",
       "summary": "Hands-on analysis of a sophisticated Android banking trojan spread from a compromised WhatsApp group, using a man-in-the-middle VPN technique and advanced anti-analysis to steal banking credentials. Representative of the higher end of the Android threat targeting Indian users.",
+      "status": "historical",
+      "attribution": "Unattributed",
       "first_seen": "2025-10",
       "date_added": "2026-10-16",
       "last_updated": "2026-10-16",
-      "status": "historical",
+      "last_verified": "2026-10-20",
+      "confidence": "high",
+      "targets": [
+        "Members of a compromised WhatsApp group",
+        "SBI customers"
+      ],
       "lure_themes": [
         "whatsapp-group"
       ],
@@ -311,22 +497,64 @@
         "mitm-vpn",
         "anti-analysis"
       ],
-      "iocs": {},
+      "attack": [
+        {
+          "id": "T1660",
+          "name": "Phishing"
+        },
+        {
+          "id": "T1655.001",
+          "name": "Masquerading: Match Legitimate Name or Location"
+        },
+        {
+          "id": "T1417.002",
+          "name": "Input Capture: GUI Input Capture"
+        },
+        {
+          "id": "T1638",
+          "name": "Adversary-in-the-Middle"
+        },
+        {
+          "id": "T1406",
+          "name": "Obfuscated Files or Information"
+        },
+        {
+          "id": "T1633",
+          "name": "Virtualization/Sandbox Evasion"
+        }
+      ],
+      "key_findings": [
+        "Distributed as 'SBI AADHAR UPDATE.APK' through a WhatsApp group the attacker had taken over and renamed to look official.",
+        "Shows a fake SBI login page to harvest usernames, passwords and mobile numbers.",
+        "Routes all device traffic through a malicious VpnService (addRoute 0.0.0.0/0) for man-in-the-middle interception.",
+        "A malformed ZIP header breaks apktool; no C2 was observed in a sandbox, consistent with anti-sandbox behaviour."
+      ],
+      "recommended_actions": [
+        "Alert on apps requesting BIND_VPN_SERVICE together with REQUEST_INSTALL_PACKAGES.",
+        "Treat APKs shared in WhatsApp groups as hostile, even when the group looks official."
+      ],
+      "iocs": {
+        "sha256": [
+          "27051a225ea950c7d62ddbac6c7c4754bf86be94fddf0d3c10e2827d6eedffd5"
+        ],
+        "package_names": [
+          "com.iudxmm.android"
+        ]
+      },
+      "infrastructure": {},
       "india_relevance": "high",
       "tags": [
         "android",
         "banking",
         "malware-analysis"
       ],
-      "references_blog": "deconstructing-a-stealthy-android-trojan-a-case-study-in-phishing-and-evasion",
       "sources": [
         {
           "title": "sohankanna.com - Deconstructing a Stealthy Android Trojan",
           "url": "https://www.sohankanna.com/research/deconstructing-a-stealthy-android-trojan-a-case-study-in-phishing-and-evasion"
         }
       ],
-      "confidence": "high",
-      "last_verified": "2026-10-20"
+      "references_blog": "deconstructing-a-stealthy-android-trojan-a-case-study-in-phishing-and-evasion"
     }
   ]
 }

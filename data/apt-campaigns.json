@@ -13,10 +13,17 @@
         "C-Major"
       ],
       "suspected_origin": "Pakistan-nexus",
+      "attribution_note": "Pakistan-nexus is the consensus of vendor reporting and MITRE ATT&CK. The tracker's confidence rates the evidence for the activity described here, not the attribution.",
+      "mitre_group": {
+        "id": "G0134",
+        "url": "https://attack.mitre.org/groups/G0134/"
+      },
       "summary": "A long-running espionage actor that primarily targets Indian government, defence and education sectors. Typical tradecraft is spear-phishing with weaponised documents and LNK files, and fake or trojanised apps, delivering RATs such as Crimson RAT, CapraRAT (Android) and Poseidon. 2026 reporting describes new RAT activity, LNK-based delivery chains, and expansion toward India's startup ecosystem.",
       "status": "active",
       "date_added": "2026-10-15",
       "last_updated": "2026-10-15",
+      "last_verified": "2026-10-20",
+      "confidence": "high",
       "targets": [
         "indian-government",
         "defence",
@@ -35,6 +42,45 @@
         "lnk-files",
         "fake-apps"
       ],
+      "attack": [
+        {
+          "id": "T1566.001",
+          "name": "Phishing: Spearphishing Attachment"
+        },
+        {
+          "id": "T1204.002",
+          "name": "User Execution: Malicious File"
+        },
+        {
+          "id": "T1059.005",
+          "name": "Command and Scripting Interpreter: Visual Basic"
+        },
+        {
+          "id": "T1218.005",
+          "name": "System Binary Proxy Execution: Mshta"
+        },
+        {
+          "id": "T1547.001",
+          "name": "Boot or Logon Autostart Execution: Registry Run Keys / Startup Folder"
+        },
+        {
+          "id": "T1053.005",
+          "name": "Scheduled Task/Job: Scheduled Task"
+        }
+      ],
+      "key_findings": [
+        "January 2026 campaigns sent a ZIP with an LNK disguised as a PDF; the LNK runs a remote HTA through mshta, which loads the RAT in memory and opens a decoy PDF.",
+        "February 2026: Acronis TRU attributed, with high confidence, a Crimson RAT campaign against Indian startups, particularly OSINT and cybersecurity firms, delivered as an ISO containing an LNK disguised as an Excel file.",
+        "Crimson RAT, a .NET RAT delivered through macro documents, remains the workhorse: file theft, screenshots, keylogging and command execution.",
+        "CapraRAT extends operations to Android through trojanised or fake apps.",
+        "Delivery has moved from macro documents to OLE and LNK-based chains, with repeated experiments targeting Linux desktops used in Indian government."
+      ],
+      "recommended_actions": [
+        "Disable Office macros by policy and treat .lnk files arriving by email or in archives as hostile.",
+        "Allow Play Store installs only on managed devices used by government and defence staff.",
+        "Hunt for Office spawning script interpreters or unknown .NET binaries, and new Run keys or scheduled tasks tied to document opens.",
+        "Use phishing-resistant MFA on government and defence mailboxes."
+      ],
       "india_relevance": "high",
       "tags": [
         "apt",
@@ -44,30 +90,40 @@
       ],
       "sources": [
         {
-          "title": "The Hacker News - Transparent Tribe / APT36 new RAT attacks (Jan 2026)",
-          "url": "https://thehackernews.com/search/label/APT36"
+          "title": "The Hacker News - Transparent Tribe launches new RAT attacks against Indian government and academia (2 Jan 2026)",
+          "url": "https://thehackernews.com/2026/01/transparent-tribe-launches-new-rat.html"
         },
         {
-          "title": "CYFIRMA - Transparent Tribe LNK campaign analysis",
-          "url": "https://www.cyfirma.com/research/"
+          "title": "PolySwarm - Transparent Tribe evolves tradecraft with multi-stage LNK malware (12 Jan 2026)",
+          "url": "https://blog.polyswarm.io/transparent-tribe-evolves-tradecraft-with-multi-stage-lnk-malware"
+        },
+        {
+          "title": "Acronis TRU - New year, new sector: Transparent Tribe targets India's startup ecosystem (4 Feb 2026)",
+          "url": "https://www.acronis.com/en/tru/posts/new-year-new-sector-transparent-tribe-targets-indias-startup-ecosystem/"
+        },
+        {
+          "title": "MITRE ATT&CK - Transparent Tribe (G0134)",
+          "url": "https://attack.mitre.org/groups/G0134/"
         }
       ],
-      "references_blog": "transparent-tribe-apt36-the-persistent-threat-to-indian-government-and-defence",
-      "confidence": "high",
-      "last_verified": "2026-10-20"
+      "references_blog": "transparent-tribe-apt36-the-persistent-threat-to-indian-government-and-defence"
     },
     {
       "id": "apt-sidecopy",
       "actor": "SideCopy",
-      "aliases": [
-        "APT-C-?",
-        "SideCopy (linked to Transparent Tribe)"
-      ],
+      "aliases": [],
       "suspected_origin": "Pakistan-nexus",
+      "attribution_note": "Linked to the Pakistan-nexus cluster through infrastructure and tooling overlap with Transparent Tribe; the group deliberately mimics SideWinder's TTPs to mislead attribution.",
+      "mitre_group": {
+        "id": "G1008",
+        "url": "https://attack.mitre.org/groups/G1008/"
+      },
       "summary": "A Pakistan-nexus espionage actor that mimics the SideWinder group's TTPs (hence the name) and is widely assessed to overlap with Transparent Tribe/APT36 infrastructure. It targets Indian government, defence and increasingly academic and research institutions. Typical delivery is a ZIP archive embedding an LNK or decoy document that leads to RATs such as ActionRAT, AllaKore and AuTo Stealer, hosted on compromised domains.",
       "status": "active",
       "date_added": "2026-10-15",
       "last_updated": "2026-10-15",
+      "last_verified": "2026-10-20",
+      "confidence": "high",
       "targets": [
         "indian-government",
         "defence",
@@ -86,6 +142,40 @@
         "lnk-files",
         "decoy-documents"
       ],
+      "attack": [
+        {
+          "id": "T1566.001",
+          "name": "Phishing: Spearphishing Attachment"
+        },
+        {
+          "id": "T1204.002",
+          "name": "User Execution: Malicious File"
+        },
+        {
+          "id": "T1218.005",
+          "name": "System Binary Proxy Execution: Mshta"
+        },
+        {
+          "id": "T1584",
+          "name": "Compromise Infrastructure"
+        },
+        {
+          "id": "T1005",
+          "name": "Data from Local System"
+        }
+      ],
+      "key_findings": [
+        "The signature chain is a ZIP archive containing an LNK or decoy document that starts a multi-stage infection.",
+        "Next stages are usually pulled from compromised legitimate websites rather than attacker-registered infrastructure.",
+        "Payloads rotate between ActionRAT, AllaKore RAT, ReverseRAT and AuTo Stealer, which collects Office files, PDFs, databases and images.",
+        "Has exploited the WinRAR flaw CVE-2023-38831, where opening a decoy file inside a crafted archive runs the payload, and fielded a Linux variant of Ares RAT (Seqrite, Nov 2023)."
+      ],
+      "recommended_actions": [
+        "Block or quarantine .lnk files inside archives and alert on LNKs that spawn mshta, powershell or rundll32.",
+        "Keep WinRAR and other archive tools patched; SideCopy has exploited CVE-2023-38831.",
+        "Flag outbound connections from Office or Explorer to unusual websites right after a document opens.",
+        "Extend monitoring to research and academic units, which are now in scope."
+      ],
       "india_relevance": "high",
       "tags": [
         "apt",
@@ -95,17 +185,19 @@
       ],
       "sources": [
         {
-          "title": "The Hacker News - SideCopy coverage",
-          "url": "https://thehackernews.com/search/label/SideCopy"
+          "title": "Seqrite - SideCopy's multi-platform onslaught: WinRAR zero-day and a Linux variant of Ares RAT (6 Nov 2023)",
+          "url": "https://www.seqrite.com/blog/sidecopys-multi-platform-onslaught-leveraging-winrar-zero-day-and-linux-variant-of-ares-rat"
         },
         {
           "title": "BankInfoSecurity - SideCopy APT targets India's premier defense research agency",
           "url": "https://www.bankinfosecurity.com/sidecopy-apt-targets-indias-premier-defense-research-agency-a-21512"
+        },
+        {
+          "title": "MITRE ATT&CK - SideCopy (G1008)",
+          "url": "https://attack.mitre.org/groups/G1008/"
         }
       ],
-      "references_blog": "sidecopy-the-apt36-aligned-group-that-copies-sidewinder",
-      "confidence": "high",
-      "last_verified": "2026-10-20"
+      "references_blog": "sidecopy-the-apt36-aligned-group-that-copies-sidewinder"
     },
     {
       "id": "apt-redecho",
@@ -115,10 +207,20 @@
         "TAG-38"
       ],
       "suspected_origin": "China-nexus",
+      "attribution_note": "China-nexus per Recorded Future's RedEcho and TAG-38 reporting. Confidence is medium because the public record rests largely on one vendor's analysis.",
+      "software": [
+        {
+          "id": "S0596",
+          "name": "ShadowPad",
+          "url": "https://attack.mitre.org/software/S0596/"
+        }
+      ],
       "summary": "China-nexus intrusion sets that have repeatedly targeted India's power sector and critical infrastructure. Recorded Future documented RedEcho targeting Indian electricity load-dispatch centres, and later TAG-38 activity against grid infrastructure in Ladakh using the ShadowPad backdoor and compromised internet-facing DVR/IoT devices for C2. A reminder that the threat to India isn't only fraud and Pakistan-nexus espionage.",
       "status": "active",
       "date_added": "2026-10-16",
       "last_updated": "2026-10-16",
+      "last_verified": "2026-10-20",
+      "confidence": "medium",
       "targets": [
         "indian-power-sector",
         "critical-infrastructure",
@@ -132,6 +234,22 @@
         "internet-facing-device-compromise",
         "supply-chain",
         "spear-phishing"
+      ],
+      "attack": [
+        {
+          "id": "T1584",
+          "name": "Compromise Infrastructure"
+        }
+      ],
+      "key_findings": [
+        "RedEcho (disclosed February 2021) targeted Indian power-sector organisations, including regional load-dispatch centres, using the ShadowPad backdoor.",
+        "TAG-38 (disclosed April 2022) targeted grid infrastructure in Ladakh, using compromised internet-facing DVR/IoT devices in its command-and-control path.",
+        "Activity has coincided with periods of India-China border tension, consistent with collection and pre-positioning."
+      ],
+      "recommended_actions": [
+        "Take edge and IoT devices off the open internet, patch or replace them, and change default credentials.",
+        "Segment IT from OT and monitor every path between them.",
+        "Hunt for ShadowPad/PlugX indicators, long-dwell beaconing, and IoT or DVR devices talking to the internet."
       ],
       "india_relevance": "high",
       "tags": [
@@ -150,9 +268,7 @@
           "url": "https://www.recordedfuture.com/continued-targeting-of-indian-power-grid-assets"
         }
       ],
-      "references_blog": "redecho-and-the-china-nexus-targeting-of-india-s-power-grid",
-      "confidence": "medium",
-      "last_verified": "2026-10-20"
+      "references_blog": "redecho-and-the-china-nexus-targeting-of-india-s-power-grid"
     },
     {
       "id": "apt-sidewinder",
@@ -163,10 +279,17 @@
         "APT-C-17"
       ],
       "suspected_origin": "India-nexus (attributed)",
+      "attribution_note": "Assessed as India-nexus in vendor reporting. Included for regional awareness only; its targets are largely outside India.",
+      "mitre_group": {
+        "id": "G0121",
+        "url": "https://attack.mitre.org/groups/G0121/"
+      },
       "summary": "Regional context: one of South Asia's most active APTs, assessed as India-nexus, historically targeting Pakistan, Nepal, China and Afghanistan and more recently expanding to maritime, nuclear and IT sectors across Asia, the Middle East and Africa. Primarily spear-phishing with weaponised documents exploiting known Office flaws. Included here for regional awareness; its targets are largely outside India.",
       "status": "active",
       "date_added": "2026-10-16",
       "last_updated": "2026-10-16",
+      "last_verified": "2026-10-20",
+      "confidence": "high",
       "targets": [
         "pakistan",
         "nepal",
@@ -185,6 +308,32 @@
         "malicious-office-documents",
         "lnk-files"
       ],
+      "attack": [
+        {
+          "id": "T1566.001",
+          "name": "Phishing: Spearphishing Attachment"
+        },
+        {
+          "id": "T1221",
+          "name": "Template Injection"
+        },
+        {
+          "id": "T1203",
+          "name": "Exploitation for Client Execution"
+        },
+        {
+          "id": "T1204.002",
+          "name": "User Execution: Malicious File"
+        }
+      ],
+      "key_findings": [
+        "Kaspersky's March 2025 research: a DOCX uses remote template injection to fetch an RTF that exploits CVE-2017-11882 and delivers Backdoor Loader and StealerBot.",
+        "Primarily spear-phishing with weaponised documents that exploit known Office flaws.",
+        "Has expanded from Pakistan, Nepal, China and Afghanistan to maritime, nuclear and IT sectors across Asia, the Middle East and Africa."
+      ],
+      "recommended_actions": [
+        "Patch Office promptly; SideWinder relies on known, already-fixed document exploits."
+      ],
       "india_relevance": "medium",
       "tags": [
         "apt",
@@ -194,17 +343,14 @@
       ],
       "sources": [
         {
-          "title": "The Hacker News - SideWinder APT targets maritime, nuclear and IT sectors",
-          "url": "https://thehackernews.com/search/label/SideWinder"
+          "title": "The Register - SideWinder shifts tactics to target maritime and nuclear sectors, citing Kaspersky research (10 Mar 2025)",
+          "url": "https://www.theregister.com/2025/03/10/sidewinder_tactics_shift/"
         },
         {
-          "title": "Cyber Security News - SideWinder APT actor profile",
-          "url": "https://cybersecuritynews.com/apt-sidewinder-actor-profile/"
+          "title": "MITRE ATT&CK - Sidewinder (G0121)",
+          "url": "https://attack.mitre.org/groups/G0121/"
         }
-      ],
-      "reference_url": "https://attack.mitre.org/groups/G0121/",
-      "confidence": "high",
-      "last_verified": "2026-10-20"
+      ]
     }
   ]
 }
