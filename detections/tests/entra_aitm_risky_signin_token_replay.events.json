@@ -1,0 +1,10 @@
+{
+  "_note": "Synthetic Entra sign-in samples. Not real telemetry.",
+  "should_match": [
+    { "RiskLevelAggregated": "high", "ResultType": 0, "UserPrincipalName": "user@contoso.com", "IPAddress": "203.0.113.9", "_why": "high-risk AND successful" }
+  ],
+  "should_not_match": [
+    { "RiskLevelAggregated": "high", "ResultType": 50140, "UserPrincipalName": "user@contoso.com", "_why": "KmsiInterrupt, not a success — belongs to the lower-confidence hunt" },
+    { "RiskLevelAggregated": "low", "ResultType": 0, "UserPrincipalName": "user@contoso.com", "_why": "successful but not high-risk" }
+  ]
+}

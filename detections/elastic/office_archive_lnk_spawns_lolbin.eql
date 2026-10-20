@@ -1,10 +1,13 @@
-// Archive/LNK Spawning a LOLBin - SideCopy / APT36 Delivery
+// Archive Utility or Explorer Spawning a LOLBin - SideCopy / APT36 Delivery
 // Source rule: ../sigma/office_archive_lnk_spawns_lolbin.yml
-// Elastic rule type: EQL | Index: logs-endpoint.events.process-* or winlogbeat-* (Sysmon EID 1)
+// SCHEMA: ECS / Elastic Defend (Elastic Agent endpoint integration). Fields are
+//   ECS (process.name, process.parent.name). The raw Winlogbeat Sysmon path
+//   (winlog.event_data.*) is NOT covered by these queries - it needs its own
+//   field mapping, which is not provided here.
+// Rule type: EQL | Index: logs-endpoint.events.process-*
+// SCOPE: parent-child (archive/Explorer -> LOLBin) from a single event. Does not
+//   prove the full ZIP->LNK->payload chain; ".lnk" is investigation context.
 
 process where event.type == "start"
   and process.parent.name : ("explorer.exe", "7zFM.exe", "WinRAR.exe", "Winzip.exe")
-  and (
-    process.name : ("mshta.exe", "powershell.exe", "pwsh.exe", "rundll32.exe", "cmd.exe")
-    or process.command_line : "*.lnk*"
-  )
+  and process.name : ("mshta.exe", "powershell.exe", "pwsh.exe", "rundll32.exe", "cmd.exe")

@@ -2,14 +2,18 @@ title: Suspicious DNS Server Change on Windows Endpoint
 id: 3b9318cc-5b56-4f08-8f7b-fb3c8c8425e9
 status: experimental
 description: >
-  Detects a change to an interface DNS server to a value outside the approved
-  corporate resolver set. Used to catch client fallout from SOHO-router DNS
-  hijacking (APT28 FrostArmada), where devices inherit an attacker-controlled
-  resolver via DHCP.
+  Detects a change to an interface DNS server (the NameServer / DhcpNameServer
+  registry value) to an address outside the trusted-resolver set. Used to catch
+  client fallout from SOHO-router DNS hijacking (APT28 FrostArmada), where
+  devices inherit an attacker-controlled resolver via DHCP. The default
+  trusted-resolver policy here is "any RFC1918 address" — see the note below,
+  because an RFC1918 address is NOT automatically a trusted resolver, and
+  legitimate public ISP/corporate resolvers may need to be allowlisted.
 references:
   - https://www.sohankanna.com/research/frostarmada-how-apt28-turned-old-home-routers-into-a-microsoft-365-interception-network
 author: Sohan Kanna (@sohankanna)
 date: 2026-10-16
+modified: 2026-10-20
 tags:
   - attack.command_and_control
   - attack.t1565.001
@@ -23,11 +27,14 @@ detection:
     TargetObject|endswith:
       - 'NameServer'
       - 'DhcpNameServer'
-  filter_corp_resolvers:
-    # TUNE: your trusted internal / ISP resolver IPs
-    Details|contains:
-      - '10.'
-  condition: selection and not filter_corp_resolvers
+  # Trusted-resolver policy: the new value begins with an RFC1918 range
+  # (10/8, 172.16/12, 192.168/16). TUNE: this is the SINGLE source of truth for
+  # "trusted" — keep it identical across Splunk/Elastic/Wazuh, and add your
+  # approved PUBLIC resolver IPs here, because RFC1918 alone is not "trusted".
+  filter_trusted_resolvers:
+    Details|re: '^(10\.|172\.(1[6-9]|2[0-9]|3[01])\.|192\.168\.)'
+  condition: selection and not filter_trusted_resolvers
 falsepositives:
+  - Approved public resolver not yet allowlisted (e.g. an ISP or corporate DNS)
   - VPN clients or legitimate network changes setting a public resolver
 level: medium

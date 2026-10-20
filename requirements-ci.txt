@@ -1,0 +1,5 @@
+# CI-only deps for validating the data feeds and detection pack.
+jsonschema>=4.0
+PyYAML>=6.0
+sigma-cli>=1.0
+pysigma-backend-splunk>=1.0

@@ -16,6 +16,11 @@ Splunk, Elastic and Wazuh so you can drop them straight into your SIEM.
 source and telemetry each rule needs to actually fire, and a benign validation
 step for each. A rule you can't feed is a rule that silently never alerts.
 
+**→ [`TESTING.md`](TESTING.md)** gives every rule a reproducible test — a
+matching event, a benign event, and the expected outcome — with synthetic
+sample events in [`tests/`](tests/). These prove the *logic*, not production
+detection rates.
+
 Every rule links back to the write-up on [sohankanna.com](https://www.sohankanna.com) that explains the threat it covers.
 
 ## Sigma rules

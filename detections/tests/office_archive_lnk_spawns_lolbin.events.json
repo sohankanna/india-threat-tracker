@@ -1,0 +1,10 @@
+{
+  "_note": "Synthetic sample events. Not real telemetry.",
+  "should_match": [
+    { "EventID": 1, "ParentImage": "C:\\Program Files\\7-Zip\\7zFM.exe", "Image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe", "CommandLine": "powershell -c exit" }
+  ],
+  "should_not_match": [
+    { "EventID": 1, "ParentImage": "C:\\Program Files\\7-Zip\\7zFM.exe", "Image": "C:\\Windows\\System32\\notepad.exe", "CommandLine": "notepad readme.txt", "_why": "child is not a LOLBin" },
+    { "EventID": 1, "ParentImage": "C:\\Windows\\System32\\services.exe", "Image": "C:\\Windows\\System32\\cmd.exe", "CommandLine": "cmd /c task", "_why": "parent is not an archive utility or Explorer" }
+  ]
+}

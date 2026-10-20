@@ -30,7 +30,10 @@ def main():
                 loc = "/".join(str(p) for p in e.path)
                 print(f"  - {loc}: {e.message}")
         else:
-            print(f"OK   {data_path} ({data.get('count')} items)")
+            n = data.get("count")
+            if n is None and isinstance(data.get("items"), list):
+                n = len(data["items"])
+            print(f"OK   {data_path} ({n} items)")
     sys.exit(0 if ok else 1)
 
 

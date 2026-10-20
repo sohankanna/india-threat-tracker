@@ -5,6 +5,10 @@
 # Requires: Splunk Add-on for Palo Alto Networks (Splunk_TA_paloalto).
 #   PAN-OS SYSTEM log forwarded as sourcetype pan:system (admin auth events).
 #   Field names below follow the add-on's CIM mapping; adjust if you use raw syslog.
+# NOTE: this detects UNEXPECTED management-plane auth - it is NOT proof that
+#   CVE-2026-0322 was exploited. It uses cidrmatch() for real CIDR matching
+#   (the generic `sigma convert -t splunk` renders |cidr as a literal string
+#   equality, which is wrong - use this file, or a CIDR-aware Splunk pipeline).
 # TUNE: src_allowlist = your jump-box / admin CIDRs.
 
 sourcetype=pan:system subtype=auth (action=success OR event_desc="*authenticated*" OR result="success")

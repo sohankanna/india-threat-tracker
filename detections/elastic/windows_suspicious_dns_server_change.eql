@@ -1,10 +1,16 @@
 // Suspicious DNS Server Change on Windows Endpoint  (FrostArmada / APT28)
 // Source rule: ../sigma/windows_suspicious_dns_server_change.yml
-// Elastic rule type: EQL | Index: logs-endpoint.events.registry-* or winlogbeat-* (Sysmon EID 13)
-// TUNE: the "not registry.data.strings" clause keeps only non-corporate resolvers.
+// SCHEMA: ECS / Elastic Defend (Elastic Agent). Fields are ECS (registry.path,
+//   registry.value, registry.data.strings). The raw Winlogbeat Sysmon path
+//   (winlog.event_data.*) is NOT covered - it needs its own mapping.
+// Rule type: EQL | Index: logs-endpoint.events.registry-*
+// Trusted-resolver policy = RFC1918 (10/8, 172.16/12, 192.168/16). Keep this
+//   IDENTICAL to the Sigma/Splunk/Wazuh versions. RFC1918 is not automatically
+//   "trusted" - TUNE: add your approved PUBLIC ISP/corporate resolver IPs.
 
 registry where registry.path : "*\\Services\\Tcpip\\Parameters\\Interfaces\\*"
   and (registry.value : "NameServer" or registry.value : "DhcpNameServer")
   and registry.data.strings != null
   and not registry.data.strings : ("10.*", "172.16.*", "172.17.*", "172.18.*", "172.19.*",
-      "172.2*", "172.30.*", "172.31.*", "192.168.*")   /* TUNE: add your ISP/corp resolvers */
+      "172.20.*", "172.21.*", "172.22.*", "172.23.*", "172.24.*", "172.25.*", "172.26.*",
+      "172.27.*", "172.28.*", "172.29.*", "172.30.*", "172.31.*", "192.168.*")

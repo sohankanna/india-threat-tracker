@@ -17,6 +17,18 @@ Thanks for helping keep this accurate.
    pip install -r requirements.txt
    python scripts/validate.py
    ```
+   CI re-runs this on every PR (schema validation, the detection inventory
+   check, Sigma validation and a conversion smoke test), so a PR that breaks a
+   feed or a rule fails automatically before review.
+
+## Adding or changing a detection
+
+- Edit the canonical rule in `detections/sigma/`, then keep the
+  `splunk/`, `elastic/` and `wazuh/` counterparts in sync — the inventory check
+  fails a PR that adds a Sigma rule without them.
+- Add a test fixture in `detections/tests/<rule>.events.json` (one match, one
+  non-match) and document it in `detections/TESTING.md`.
+- Read `detections/DATA-SOURCES.md` for the telemetry each rule needs.
 
 ## Ground rules
 

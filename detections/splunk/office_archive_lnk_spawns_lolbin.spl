@@ -1,13 +1,17 @@
-# Archive/LNK Spawning a LOLBin - SideCopy / APT36 Delivery
+# Archive Utility or Explorer Spawning a LOLBin - SideCopy / APT36 Delivery
 # Source rule: ../sigma/office_archive_lnk_spawns_lolbin.yml
 # Write-ups:   https://www.sohankanna.com/research/sidecopy-the-apt36-aligned-group-that-copies-sidewinder
 #              https://www.sohankanna.com/research/transparent-tribe-apt36-the-persistent-threat-to-indian-government-and-defence
 #
 # Requires: Sysmon + Splunk Add-on for Sysmon. Process create = Event ID 1.
+# SCOPE: core logic is the archive/Explorer -> LOLBin parent-child relationship
+# from a single event. It does NOT prove the full ZIP->LNK->payload chain (that
+# needs correlation). The ".lnk" in the command line is investigation context,
+# not a match condition - see the optional hunt line at the bottom.
 
 sourcetype="XmlWinEventLog:Microsoft-Windows-Sysmon/Operational" EventCode=1
     (ParentImage="*\\explorer.exe" OR ParentImage="*\\7zFM.exe" OR ParentImage="*\\WinRAR.exe" OR ParentImage="*\\Winzip.exe")
-    ((Image="*\\mshta.exe" OR Image="*\\powershell.exe" OR Image="*\\pwsh.exe" OR Image="*\\rundll32.exe" OR Image="*\\cmd.exe")
-     OR CommandLine="*.lnk*")
-| table _time, host, user, ParentImage, Image, CommandLine
+    (Image="*\\mshta.exe" OR Image="*\\powershell.exe" OR Image="*\\pwsh.exe" OR Image="*\\rundll32.exe" OR Image="*\\cmd.exe")
+| eval lnk_context=if(match(CommandLine, "(?i)\.lnk"), "yes", "no")   ``` investigation lead, not a filter ```
+| table _time, host, user, ParentImage, Image, CommandLine, lnk_context
 | sort - _time

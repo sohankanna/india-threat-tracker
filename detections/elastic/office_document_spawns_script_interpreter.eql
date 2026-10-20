@@ -1,6 +1,9 @@
 // Office Document Spawning a Script Interpreter - Crimson RAT Macro  (APT36)
 // Source rule: ../sigma/office_document_spawns_script_interpreter.yml
-// Elastic rule type: EQL | Index: logs-endpoint.events.process-* or winlogbeat-* (Sysmon EID 1)
+// SCHEMA: ECS / Elastic Defend (Elastic Agent). Fields are ECS (process.name,
+//   process.parent.name). The raw Winlogbeat Sysmon path (winlog.event_data.*)
+//   is NOT covered - it needs its own field mapping.
+// Rule type: EQL | Index: logs-endpoint.events.process-*
 
 process where event.type == "start"
   and process.parent.name : ("winword.exe", "excel.exe", "powerpnt.exe")

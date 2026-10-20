@@ -1,16 +1,24 @@
-title: Archive/LNK Spawning a LOLBin - SideCopy / APT36 Delivery
+title: Archive Utility or Explorer Spawning a LOLBin
 id: c8b896ee-107a-4dc2-985c-b96cf33f6228
 status: experimental
 description: >
-  Detects the ZIP-then-LNK delivery pattern used by SideCopy and Transparent
-  Tribe (APT36), where an LNK file extracted from an archive launches a
-  living-off-the-land binary (mshta, powershell, rundll32, cmd) to pull the
-  next stage.
+  Detects an archive utility (7-Zip, WinRAR, WinZip) or Explorer spawning a
+  living-off-the-land binary (mshta, powershell, rundll32, cmd). This is the
+  execution step seen in SideCopy and Transparent Tribe (APT36) delivery, where
+  a user opens an archive and an extracted LNK launches the next stage.
+
+  Scope, stated honestly: this rule's core logic is the archive/Explorer →
+  LOLBin parent-child relationship from a SINGLE process-creation event. It does
+  NOT, on its own, prove the full ZIP → LNK → payload chain — establishing that
+  sequence needs correlation across the archive-extraction, LNK-execution and
+  payload events. Treat a hit as "an archive/Explorer launched a LOLBin — go
+  look," and use the LNK-in-command-line context as an investigation lead.
 references:
   - https://www.sohankanna.com/research/sidecopy-the-apt36-aligned-group-that-copies-sidewinder
   - https://www.sohankanna.com/research/transparent-tribe-apt36-the-persistent-threat-to-indian-government-and-defence
 author: Sohan Kanna (@sohankanna)
 date: 2026-10-16
+modified: 2026-10-20
 tags:
   - attack.execution
   - attack.t1204.002
@@ -32,9 +40,8 @@ detection:
       - '\pwsh.exe'
       - '\rundll32.exe'
       - '\cmd.exe'
-  selection_lnk:
-    CommandLine|contains: '.lnk'
-  condition: selection_parent and (selection_child or selection_lnk)
+  condition: selection_parent and selection_child
 falsepositives:
-  - Legitimate shortcuts launching scripts; tune to your environment
+  - Legitimate shortcuts or archives launching scripts; tune to your environment
+  - Admin/scripted workflows that extract archives and run tooling
 level: high

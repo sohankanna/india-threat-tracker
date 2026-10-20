@@ -6,7 +6,8 @@
   Requirements by rule:
     100210-100212  Windows + Sysmon (wazuh-agent, Sysmon ruleset enabled). EID 1 = process, EID 13 = registry.
     100220         PAN-OS syslog forwarded to Wazuh (Palo Alto decoder). TUNE with CDB allowlist (see note).
-    100230         Entra ID sign-in logs via the Azure integration (wodle azure-logs). Field paths may vary by schema.
+    100230/100231  Entra ID sign-in logs via the Azure integration (wodle azure-logs). Field paths may vary by schema.
+                   100230 = high-risk SUCCESS (primary); 100231 = KMSI-interrupted (context).
 
   All rules are experimental. Expect to tune. Defensive use only.
 -->
@@ -53,7 +54,7 @@
     <decoded_as>paloalto</decoded_as>
     <field name="type">SYSTEM</field>
     <field name="action" type="pcre2">(?i)auth.*success|authenticated</field>
-    <description>PAN-OS: management auth success - verify source is an approved admin host (CVE-2026-0322)</description>
+    <description>PAN-OS: unexpected management auth success - verify source is an approved admin host (not proof of CVE-2026-0322)</description>
     <mitre><id>T1133</id></mitre>
   </rule>
 </group>
@@ -62,11 +63,23 @@
      Requires the Azure integration (wodle name="azure-logs" pulling signinLogs).
      Field paths depend on how your pipeline flattens the JSON; adjust to match. -->
 <group name="india_threat_tracker,azure,entra,">
+  <!-- PRIMARY: high-risk sign-in that SUCCEEDED (errorCode 0). A lead for
+       investigation, not confirmation of AiTM. errorCode 50140 is KmsiInterrupt
+       ("Keep me signed in"), NOT a success - it is the separate lower-level
+       rule 100231 below, not this one. -->
   <rule id="100230" level="12">
     <decoded_as>json</decoded_as>
     <field name="azure.properties.riskLevelAggregated" type="pcre2">(?i)^high$</field>
-    <field name="azure.properties.status.errorCode" type="pcre2">^(0|50140)$</field>
-    <description>FrostArmada: high-risk Entra sign-in succeeded/MFA-interrupted - possible AiTM token replay</description>
+    <field name="azure.properties.status.errorCode" type="pcre2">^0$</field>
+    <description>FrostArmada: high-risk Entra sign-in SUCCEEDED - possible AiTM, investigate IP/UA/geo</description>
     <mitre><id>T1557</id><id>T1550.001</id></mitre>
+  </rule>
+  <!-- Lower-confidence context: high-risk sign-in interrupted at KMSI. -->
+  <rule id="100231" level="6">
+    <decoded_as>json</decoded_as>
+    <field name="azure.properties.riskLevelAggregated" type="pcre2">(?i)^high$</field>
+    <field name="azure.properties.status.errorCode" type="pcre2">^50140$</field>
+    <description>Context: high-risk Entra sign-in interrupted at "Keep me signed in" (KmsiInterrupt)</description>
+    <mitre><id>T1557</id></mitre>
   </rule>
 </group>

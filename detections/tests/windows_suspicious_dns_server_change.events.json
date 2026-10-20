@@ -1,0 +1,11 @@
+{
+  "_note": "Synthetic Sysmon EID13 (registry set) samples. Not real telemetry. Details = new resolver value.",
+  "should_match": [
+    { "EventID": 13, "TargetObject": "HKLM\\System\\CurrentControlSet\\Services\\Tcpip\\Parameters\\Interfaces\\{abc}\\NameServer", "Details": "9.9.9.9", "_case": "unapproved public resolver" },
+    { "EventID": 13, "TargetObject": "HKLM\\System\\CurrentControlSet\\Services\\Tcpip\\Parameters\\Interfaces\\{abc}\\NameServer", "Details": "10.0.0.53,9.9.9.9", "_case": "multiple resolvers incl. attacker" }
+  ],
+  "should_not_match": [
+    { "EventID": 13, "TargetObject": "HKLM\\System\\CurrentControlSet\\Services\\Tcpip\\Parameters\\Interfaces\\{abc}\\NameServer", "Details": "10.0.0.53", "_case": "trusted internal DNS" },
+    { "EventID": 13, "TargetObject": "HKLM\\System\\CurrentControlSet\\Services\\Tcpip\\Parameters\\Interfaces\\{abc}\\NameServer", "Details": "1.1.1.1", "_case": "approved public DNS — only after you allowlist it" }
+  ]
+}

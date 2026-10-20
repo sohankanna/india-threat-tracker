@@ -1,16 +1,25 @@
-title: Entra ID High-Risk Sign-In - Possible AiTM Token Replay
+title: Entra ID High-Risk Successful Sign-In - Possible AiTM
 id: 62e7aec0-cf86-418a-9635-bd6cb8fc1893
 status: experimental
 description: >
-  Detects high-risk Entra ID (Azure AD) sign-ins that succeeded or were only
-  interrupted by an MFA prompt, consistent with adversary-in-the-middle token
-  theft such as the APT28 FrostArmada campaign (DNS hijack to an AiTM proxy
-  in front of Outlook on the web).
+  Detects a high-risk Entra ID (Azure AD) sign-in that SUCCEEDED (ResultType 0),
+  consistent with adversary-in-the-middle token theft such as the APT28
+  FrostArmada campaign (DNS hijack to an AiTM proxy in front of Outlook on the
+  web).
+
+  This is a LEAD for investigation, not confirmation of AiTM. A high-risk
+  successful sign-in means "Entra's risk engine flagged this and it still
+  worked" — verify the IP, user agent, location and token/session before
+  concluding anything. ResultType 50140 is a *different* event: KmsiInterrupt,
+  an interruption at the "Keep me signed in" prompt — it is not a successful
+  authentication and is handled separately as lower-confidence context (see the
+  hunt note in detections/DATA-SOURCES.md), not by this rule.
 references:
   - https://www.sohankanna.com/research/frostarmada-how-apt28-turned-old-home-routers-into-a-microsoft-365-interception-network
   - https://www.microsoft.com/en-us/security/blog/2026/04/07/soho-router-compromise-leads-to-dns-hijacking-and-adversary-in-the-middle-attacks
 author: Sohan Kanna (@sohankanna)
 date: 2026-10-16
+modified: 2026-10-20
 tags:
   - attack.credential_access
   - attack.t1557
@@ -19,17 +28,17 @@ logsource:
   product: azure
   service: signinlogs
 detection:
-  selection:
+  high_risk:
     RiskLevelAggregated: high
-    ResultType:
-      - 0       # success
-      - 50140   # interrupted by MFA / keep-me-signed-in
-  condition: selection
+  success:
+    ResultType: 0
+  condition: high_risk and success
 fields:
   - UserPrincipalName
   - IPAddress
   - UserAgent
   - AppDisplayName
+  - RiskLevelAggregated
 falsepositives:
-  - Legitimate sign-ins flagged high-risk by travel or new device; verify IP, UA and location
+  - Legitimate sign-ins flagged high-risk by travel or a new device; verify IP, UA and location before actioning
 level: high

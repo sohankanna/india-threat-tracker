@@ -1,3 +1,18 @@
+# Repo integration files
+
+## CI workflow (do this once)
+
+`github-workflow-validate-pr.yml` → copy to **`.github/workflows/validate-pr.yml`**
+in the repo root (the file-bridge can't write under `.github/`, so it's staged
+here). It runs on every push and PR: schema validation, the detection inventory
+check, Sigma validation, and a Sigma→Splunk conversion smoke test. On Windows:
+
+```cmd
+copy /Y site-integration\github-workflow-validate-pr.yml .github\workflows\validate-pr.yml
+```
+
+---
+
 # Adding the tracker page to the blog
 
 Two files, then (optionally) a nav link. Do this **after** the repo is pushed,

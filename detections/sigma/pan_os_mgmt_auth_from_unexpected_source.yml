@@ -3,15 +3,17 @@ id: b7262907-f6fe-420f-b098-ae8904c8f5fd
 status: experimental
 description: >
   Detects a successful administrator authentication to the PAN-OS management
-  plane from a source that is not an approved jump box / admin allowlist.
-  Relevant to CVE-2026-0322 and the broader pattern of PAN-OS management-
-  interface abuse, where an authenticated admin session is the precondition
-  for exploitation.
+  plane from a source outside the approved jump-box / admin allowlist. This is a
+  detector for *unexpected management-plane authentication* — it is NOT proof
+  that CVE-2026-0322 (or any other vulnerability) was exploited. An authenticated
+  admin session is a precondition for that exploitation, so an admin login from
+  somewhere it should never come from is worth investigating on its own.
 references:
   - https://www.sohankanna.com/research/cve-2026-0322-pan-os-management-interface-zero-day-from-admin-login-to-root
   - https://security.paloaltonetworks.com/CVE-2026-0322
 author: Sohan Kanna (@sohankanna)
 date: 2026-10-16
+modified: 2026-10-20
 tags:
   - attack.initial_access
   - attack.t1133
@@ -23,8 +25,9 @@ detection:
     subtype: auth
     event: 'auth-success'
   filter_admin_sources:
-    # TUNE: replace with your jump-box / admin allowlist
-    src_ip:
+    # TUNE: replace with your jump-box / admin allowlist. Uses proper CIDR
+    # matching — add each approved network as its own list entry.
+    src_ip|cidr:
       - '10.0.0.0/8'
   condition: selection and not filter_admin_sources
 falsepositives:

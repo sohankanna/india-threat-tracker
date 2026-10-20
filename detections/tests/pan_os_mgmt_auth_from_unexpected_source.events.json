@@ -1,0 +1,10 @@
+{
+  "_note": "Synthetic PAN-OS SYSTEM auth samples. Not real telemetry.",
+  "should_match": [
+    { "subtype": "auth", "event": "auth-success", "admin": "paloadmin", "src_ip": "203.0.113.9", "_why": "admin login from outside the allowlist" }
+  ],
+  "should_not_match": [
+    { "subtype": "auth", "event": "auth-success", "admin": "paloadmin", "src_ip": "10.0.0.5", "_why": "login from an allowlisted jump box (10.0.0.0/8)" },
+    { "subtype": "auth", "event": "auth-fail", "admin": "paloadmin", "src_ip": "203.0.113.9", "_why": "not a successful auth" }
+  ]
+}
