@@ -114,6 +114,10 @@ class UpdateJobRace(unittest.TestCase):
         # ...and the derived files were rebuilt against it.
         self.assertIn(HUMAN_DOMAIN, self.read_main("data/iocs.csv"))
         self.assertIn(HUMAN_DOMAIN, self.read_main("data/iocs.txt"))
+        stix = json.loads(self.read_main("data/india-threat-tracker-stix.json"))
+        patterns = [o["pattern"] for o in stix["objects"] if o["type"] == "indicator"]
+        self.assertIn(f"[domain-name:value = '{HUMAN_DOMAIN.replace('[.]', '.')}']", patterns)
+        self.assertIn("human-edit-check.example", self.read_main("stix/id-registry.json"))
         feed = json.loads(self.read_main("data/exploited-cve.json"))
         b = next(i for i in feed["items"] if i["cve"] == "CVE-2020-2222")
         self.assertEqual((b["india_relevance"], b.get("_manual_relevance")), ("high", True))

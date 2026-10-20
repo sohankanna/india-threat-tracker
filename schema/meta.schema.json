@@ -3,36 +3,125 @@
   "title": "India Threat Tracker manifest",
   "description": "Index of every data file. A manifest, not a feed: it has no items.",
   "type": "object",
-  "required": ["feed", "project", "repository", "license", "updated_at", "resources"],
+  "required": [
+    "feed",
+    "project",
+    "repository",
+    "license",
+    "updated_at",
+    "resources"
+  ],
   "properties": {
-    "feed": { "const": "meta" },
-    "description": { "type": "string" },
-    "project": { "type": "string" },
-    "maintainer": { "type": "string" },
-    "site": { "type": "string", "format": "uri" },
-    "repository": { "type": "string", "format": "uri" },
-    "data_guide": { "type": "string", "format": "uri" },
-    "methodology": { "type": "string", "format": "uri" },
-    "license": { "type": "string" },
-    "updated_at": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+    "feed": {
+      "const": "meta"
+    },
+    "description": {
+      "type": "string"
+    },
+    "project": {
+      "type": "string"
+    },
+    "maintainer": {
+      "type": "string"
+    },
+    "site": {
+      "type": "string",
+      "format": "uri"
+    },
+    "repository": {
+      "type": "string",
+      "format": "uri"
+    },
+    "data_guide": {
+      "type": "string",
+      "format": "uri"
+    },
+    "methodology": {
+      "type": "string",
+      "format": "uri"
+    },
+    "license": {
+      "type": "string"
+    },
+    "updated_at": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
     "resources": {
       "type": "object",
       "minProperties": 1,
       "additionalProperties": {
         "type": "object",
-        "required": ["file", "kind", "format", "updated_by", "cadence", "description"],
+        "required": [
+          "file",
+          "kind",
+          "format",
+          "updated_by",
+          "cadence",
+          "description"
+        ],
         "properties": {
-          "file": { "type": "string", "pattern": "^data/[a-z0-9-]+\\.(json|csv|txt)$" },
-          "kind": { "enum": ["feed", "assessment", "editorial", "export", "manifest"] },
-          "format": { "enum": ["json", "csv", "text"] },
-          "schema": { "type": "string", "pattern": "^schema/[a-z0-9-]+\\.schema\\.json$" },
-          "derived_from": { "type": "string" },
-          "updated_by": { "enum": ["automation", "curated", "analyst"] },
-          "cadence": { "enum": ["twice-daily", "as-observed", "monthly", "on-review", "on-change"] },
-          "description": { "type": "string", "minLength": 10 }
+          "file": {
+            "type": "string",
+            "pattern": "^data/[a-z0-9-]+\\.(json|csv|txt)$"
+          },
+          "kind": {
+            "enum": [
+              "feed",
+              "assessment",
+              "editorial",
+              "export",
+              "manifest"
+            ]
+          },
+          "format": {
+            "enum": [
+              "json",
+              "csv",
+              "text",
+              "stix"
+            ]
+          },
+          "schema": {
+            "type": "string",
+            "pattern": "^schema/[a-z0-9-]+\\.schema\\.json$"
+          },
+          "derived_from": {
+            "type": "string"
+          },
+          "updated_by": {
+            "enum": [
+              "automation",
+              "curated",
+              "analyst"
+            ]
+          },
+          "cadence": {
+            "enum": [
+              "twice-daily",
+              "as-observed",
+              "monthly",
+              "on-review",
+              "on-change"
+            ]
+          },
+          "description": {
+            "type": "string",
+            "minLength": 10
+          }
         },
-        "if": { "properties": { "format": { "const": "json" } } },
-        "then": { "required": ["schema"] },
+        "if": {
+          "properties": {
+            "format": {
+              "const": "json"
+            }
+          }
+        },
+        "then": {
+          "required": [
+            "schema"
+          ]
+        },
         "additionalProperties": false
       }
     }

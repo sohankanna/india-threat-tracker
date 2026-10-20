@@ -22,6 +22,7 @@ https://raw.githubusercontent.com/sohankanna/india-threat-tracker/main/data/
 | `iocs.csv` / `iocs.txt` | Defanged campaign indicators (CSV adds provenance per row) | Rebuilt by every automated update (twice daily); CI rejects a change that leaves them stale | — |
 | `assessment.json` | The monthly ranked analyst assessment | Monthly | [`assessment.schema.json`](schema/assessment.schema.json) |
 | `relevance-overrides.json` | Hand-reviewed India-relevance decisions the pipeline applies | When an entry is reviewed | [`relevance-overrides.schema.json`](schema/relevance-overrides.schema.json) |
+| `india-threat-tracker-stix.json` | STIX 2.1 Bundle for CTI platforms; mapping, validation and limitations in [STIX-GUIDE.md](STIX-GUIDE.md) | Rebuilt by every automated update; CI rejects a stale bundle | OASIS STIX 2.1 |
 | `meta.json` | Manifest of every data file: kind, format, schema, who updates it and how often | When a file is added or its cadence changes | [`meta.schema.json`](schema/meta.schema.json) |
 
 Each JSON file has its **own** schema; there is no single envelope shared by

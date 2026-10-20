@@ -1,0 +1,2219 @@
+{
+  "id": "bundle--07fbb433-e943-4425-83aa-379d14297939",
+  "objects": [
+    {
+      "created": "2026-10-16T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "external_references": [
+        {
+          "external_id": "T1638",
+          "source_name": "mitre-attack",
+          "url": "https://attack.mitre.org/techniques/T1638/"
+        }
+      ],
+      "id": "attack-pattern--0913d310-67ad-4e4b-b722-fda118039cc0",
+      "modified": "2026-10-16T00:00:00.001Z",
+      "name": "Adversary-in-the-Middle",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "attack-pattern"
+    },
+    {
+      "created": "2026-10-15T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "external_references": [
+        {
+          "external_id": "T1655.001",
+          "source_name": "mitre-attack",
+          "url": "https://attack.mitre.org/techniques/T1655/001/"
+        }
+      ],
+      "id": "attack-pattern--0f7d0fc3-cf8a-40ca-b077-6898bffcc9e6",
+      "modified": "2026-10-16T00:00:00.001Z",
+      "name": "Masquerading: Match Legitimate Name or Location",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "attack-pattern"
+    },
+    {
+      "created": "2026-10-15T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "external_references": [
+        {
+          "external_id": "T1660",
+          "source_name": "mitre-attack",
+          "url": "https://attack.mitre.org/techniques/T1660/"
+        }
+      ],
+      "id": "attack-pattern--21db97fd-c814-4fd7-bf0d-5286044b79bf",
+      "modified": "2026-10-16T00:00:00.001Z",
+      "name": "Phishing",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "attack-pattern"
+    },
+    {
+      "created": "2026-10-15T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "external_references": [
+        {
+          "external_id": "T1059.005",
+          "source_name": "mitre-attack",
+          "url": "https://attack.mitre.org/techniques/T1059/005/"
+        }
+      ],
+      "id": "attack-pattern--29a1901f-4a85-4dec-b2da-3229d81128ea",
+      "modified": "2026-10-15T00:00:00.000Z",
+      "name": "Command and Scripting Interpreter: Visual Basic",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "attack-pattern"
+    },
+    {
+      "created": "2026-10-15T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "external_references": [
+        {
+          "external_id": "T1628.001",
+          "source_name": "mitre-attack",
+          "url": "https://attack.mitre.org/techniques/T1628/001/"
+        }
+      ],
+      "id": "attack-pattern--3488806d-5f2e-4859-a3ee-5d0f34b6f775",
+      "modified": "2026-10-15T00:00:00.001Z",
+      "name": "Hide Artifacts: Suppress Application Icon",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "attack-pattern"
+    },
+    {
+      "created": "2026-10-15T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "external_references": [
+        {
+          "external_id": "T1417.002",
+          "source_name": "mitre-attack",
+          "url": "https://attack.mitre.org/techniques/T1417/002/"
+        }
+      ],
+      "id": "attack-pattern--3be4e47c-c823-4d63-bc5a-7e23121e969e",
+      "modified": "2026-10-16T00:00:00.001Z",
+      "name": "Input Capture: GUI Input Capture",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "attack-pattern"
+    },
+    {
+      "created": "2026-10-15T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "external_references": [
+        {
+          "external_id": "T1437.001",
+          "source_name": "mitre-attack",
+          "url": "https://attack.mitre.org/techniques/T1437/001/"
+        }
+      ],
+      "id": "attack-pattern--3fed70b8-126e-40d6-a959-13507eb5f787",
+      "modified": "2026-10-15T00:00:00.001Z",
+      "name": "Application Layer Protocol: Web Protocols",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "attack-pattern"
+    },
+    {
+      "created": "2026-10-15T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "external_references": [
+        {
+          "external_id": "T1582",
+          "source_name": "mitre-attack",
+          "url": "https://attack.mitre.org/techniques/T1582/"
+        }
+      ],
+      "id": "attack-pattern--51e02f3d-0d0e-476e-94e9-c1cda18c2df1",
+      "modified": "2026-10-15T00:00:00.001Z",
+      "name": "SMS Control",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "attack-pattern"
+    },
+    {
+      "created": "2026-10-15T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "external_references": [
+        {
+          "external_id": "T1005",
+          "source_name": "mitre-attack",
+          "url": "https://attack.mitre.org/techniques/T1005/"
+        }
+      ],
+      "id": "attack-pattern--63410064-783d-4ff4-9f42-97e10cde30a9",
+      "modified": "2026-10-15T00:00:00.000Z",
+      "name": "Data from Local System",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "attack-pattern"
+    },
+    {
+      "created": "2026-10-15T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "external_references": [
+        {
+          "external_id": "T1584",
+          "source_name": "mitre-attack",
+          "url": "https://attack.mitre.org/techniques/T1584/"
+        }
+      ],
+      "id": "attack-pattern--7795b806-d5f0-4db1-9883-c464ffd5bfb6",
+      "modified": "2026-10-16T00:00:00.001Z",
+      "name": "Compromise Infrastructure",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "attack-pattern"
+    },
+    {
+      "created": "2026-10-16T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "external_references": [
+        {
+          "external_id": "T1203",
+          "source_name": "mitre-attack",
+          "url": "https://attack.mitre.org/techniques/T1203/"
+        }
+      ],
+      "id": "attack-pattern--79cf3a57-29b8-4dc1-9f6b-a00934f5c04b",
+      "modified": "2026-10-16T00:00:00.000Z",
+      "name": "Exploitation for Client Execution",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "attack-pattern"
+    },
+    {
+      "created": "2026-10-15T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "external_references": [
+        {
+          "external_id": "T1407",
+          "source_name": "mitre-attack",
+          "url": "https://attack.mitre.org/techniques/T1407/"
+        }
+      ],
+      "id": "attack-pattern--7b35c62f-9c84-4602-9400-627e0fa84c46",
+      "modified": "2026-10-15T00:00:00.001Z",
+      "name": "Download New Code at Runtime",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "attack-pattern"
+    },
+    {
+      "created": "2026-10-15T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "external_references": [
+        {
+          "external_id": "T1053.005",
+          "source_name": "mitre-attack",
+          "url": "https://attack.mitre.org/techniques/T1053/005/"
+        }
+      ],
+      "id": "attack-pattern--7b7f9d69-d261-47ad-94dd-f53979b18200",
+      "modified": "2026-10-15T00:00:00.000Z",
+      "name": "Scheduled Task/Job: Scheduled Task",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "attack-pattern"
+    },
+    {
+      "created": "2026-10-15T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "external_references": [
+        {
+          "external_id": "T1218.005",
+          "source_name": "mitre-attack",
+          "url": "https://attack.mitre.org/techniques/T1218/005/"
+        }
+      ],
+      "id": "attack-pattern--823e5d8a-70b2-48e9-b283-1a01dd0127bd",
+      "modified": "2026-10-15T00:00:00.000Z",
+      "name": "System Binary Proxy Execution: Mshta",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "attack-pattern"
+    },
+    {
+      "created": "2026-10-15T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "external_references": [
+        {
+          "external_id": "T1204.002",
+          "source_name": "mitre-attack",
+          "url": "https://attack.mitre.org/techniques/T1204/002/"
+        }
+      ],
+      "id": "attack-pattern--8cffba75-bffa-492c-96b9-125fe8651397",
+      "modified": "2026-10-16T00:00:00.000Z",
+      "name": "User Execution: Malicious File",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "attack-pattern"
+    },
+    {
+      "created": "2026-10-15T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "external_references": [
+        {
+          "external_id": "T1406",
+          "source_name": "mitre-attack",
+          "url": "https://attack.mitre.org/techniques/T1406/"
+        }
+      ],
+      "id": "attack-pattern--97799548-37cf-4cbe-8d69-e54dd08d043f",
+      "modified": "2026-10-16T00:00:00.001Z",
+      "name": "Obfuscated Files or Information",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "attack-pattern"
+    },
+    {
+      "created": "2026-10-15T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "external_references": [
+        {
+          "external_id": "T1633.001",
+          "source_name": "mitre-attack",
+          "url": "https://attack.mitre.org/techniques/T1633/001/"
+        }
+      ],
+      "id": "attack-pattern--99a57e4f-b90a-4ae6-9fd5-5202e0ef5d81",
+      "modified": "2026-10-15T00:00:00.001Z",
+      "name": "Virtualization/Sandbox Evasion: System Checks",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "attack-pattern"
+    },
+    {
+      "created": "2026-10-15T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "external_references": [
+        {
+          "external_id": "T1496",
+          "source_name": "mitre-attack",
+          "url": "https://attack.mitre.org/techniques/T1496/"
+        }
+      ],
+      "id": "attack-pattern--9e62159e-d86d-40ed-83ad-0a5c4b513a6f",
+      "modified": "2026-10-15T00:00:00.001Z",
+      "name": "Resource Hijacking",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "attack-pattern"
+    },
+    {
+      "created": "2026-10-16T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "external_references": [
+        {
+          "external_id": "T1633",
+          "source_name": "mitre-attack",
+          "url": "https://attack.mitre.org/techniques/T1633/"
+        }
+      ],
+      "id": "attack-pattern--a4bed644-351f-4d7f-9dcf-69934351619c",
+      "modified": "2026-10-16T00:00:00.001Z",
+      "name": "Virtualization/Sandbox Evasion",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "attack-pattern"
+    },
+    {
+      "created": "2026-10-15T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "external_references": [
+        {
+          "external_id": "T1426",
+          "source_name": "mitre-attack",
+          "url": "https://attack.mitre.org/techniques/T1426/"
+        }
+      ],
+      "id": "attack-pattern--b12128a0-d897-44b2-8a84-df4ea8bab5e2",
+      "modified": "2026-10-15T00:00:00.001Z",
+      "name": "System Information Discovery",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "attack-pattern"
+    },
+    {
+      "created": "2026-10-15T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "external_references": [
+        {
+          "external_id": "T1547.001",
+          "source_name": "mitre-attack",
+          "url": "https://attack.mitre.org/techniques/T1547/001/"
+        }
+      ],
+      "id": "attack-pattern--b14be129-ef4b-49f3-b08b-adc429d19aa8",
+      "modified": "2026-10-15T00:00:00.001Z",
+      "name": "Boot or Logon Autostart Execution: Registry Run Keys / Startup Folder",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "attack-pattern"
+    },
+    {
+      "created": "2026-10-15T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "external_references": [
+        {
+          "external_id": "T1636.004",
+          "source_name": "mitre-attack",
+          "url": "https://attack.mitre.org/techniques/T1636/004/"
+        }
+      ],
+      "id": "attack-pattern--b3b37337-457e-49d3-88fe-c3153a2cf3dd",
+      "modified": "2026-10-15T00:00:00.001Z",
+      "name": "Protected User Data: SMS Messages",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "attack-pattern"
+    },
+    {
+      "created": "2026-10-15T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "external_references": [
+        {
+          "external_id": "T1566.001",
+          "source_name": "mitre-attack",
+          "url": "https://attack.mitre.org/techniques/T1566/001/"
+        }
+      ],
+      "id": "attack-pattern--c153fa2c-9988-46a6-8a35-3d1c432ad3a0",
+      "modified": "2026-10-16T00:00:00.001Z",
+      "name": "Phishing: Spearphishing Attachment",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "attack-pattern"
+    },
+    {
+      "created": "2026-10-16T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "external_references": [
+        {
+          "external_id": "T1221",
+          "source_name": "mitre-attack",
+          "url": "https://attack.mitre.org/techniques/T1221/"
+        }
+      ],
+      "id": "attack-pattern--f1ac4987-8331-4df3-a1d8-8b707ccef87a",
+      "modified": "2026-10-16T00:00:00.000Z",
+      "name": "Template Injection",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "attack-pattern"
+    },
+    {
+      "created": "2026-10-15T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "external_references": [
+        {
+          "external_id": "T1481",
+          "source_name": "mitre-attack",
+          "url": "https://attack.mitre.org/techniques/T1481/"
+        }
+      ],
+      "id": "attack-pattern--f8a165c5-a41d-4575-84a0-0b95fbd92605",
+      "modified": "2026-10-15T00:00:00.001Z",
+      "name": "Web Service",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "attack-pattern"
+    },
+    {
+      "confidence": 85,
+      "created": "2026-10-15T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "description": "Multi-stage Android malware impersonating the mParivahan RTO app, spread via WhatsApp and SMS smishing with shortened URLs. Droppers use ZIP manipulation and native packers; a fake UPI payment flow harvests the UPI PIN, and banking SMS is exfiltrated. Some variants also bundle a cryptominer. 40+ distinct samples observed.\n\nStatus in the tracker: active (describes the reporting, not whether infrastructure is live).\n\nFirst reported: 2025-09 (precision as given by the source).\n\nAttribution as reported: Unattributed, financially motivated (Cyble).\n\nAlso reported, not expressed as STIX patterns: Telegram bot GhostBatRat_bot.\n\nInfrastructure context, not indicators (legitimate or shared services the campaign abused; do not block): raw.githubusercontent.com; github.com (releases); Firebase Cloud Messaging (FCM); Telegram Bot API.\n\nKey findings: A fake ₹1 \"ownership verification\" UPI screen captures the UPI PIN and sends it to a Firebase endpoint. Banking SMS is exfiltrated and incoming SMS can be forwarded to an attacker number, which hands the operators OTPs and UPI device binding. Payloads are pulled from GitHub; droppers use ZIP-header manipulation and native packers, and terminate on x86 emulators. Device registration runs through a Telegram bot; some variants also run a cryptominer.",
+      "external_references": [
+        {
+          "external_id": "sm-2025-001",
+          "source_name": "india-threat-tracker",
+          "url": "https://www.sohankanna.com/tracker#campaign-sm-2025-001"
+        },
+        {
+          "source_name": "Cyble - GhostBat RAT: inside the resurgence of RTO-themed Android malware",
+          "url": "https://cyble.com/blog/ghostbat-rat-inside-the-resurgence-of-rto-themed-android-malware/"
+        }
+      ],
+      "id": "campaign--45f641b4-6869-4d37-bfc8-bd80f6140eac",
+      "modified": "2026-10-15T00:00:00.000Z",
+      "name": "GhostBat RAT - RTO/mParivahan-themed Android campaign",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "campaign"
+    },
+    {
+      "confidence": 50,
+      "created": "2026-10-15T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "description": "Ahmedabad Cyber Crime Branch dismantled a network running a Telegram bot that sold, swapped and renewed fraud APKs impersonating SBI KYC/rewards, other banks, RTO services and utilities. One distributor allegedly supplied ~400 fraudsters; linked losses ~Rs 54 lakh. Cash-out via ATM withdrawals left no direct bank trail. No technical IOCs published.\n\nStatus in the tracker: law-enforcement (describes the reporting, not whether infrastructure is live).\n\nFirst reported: 2026-06 (precision as given by the source).\n\nAttribution as reported: Arrests by Ahmedabad Cyber Crime Branch (allegations, not yet proven in court).\n\nKey findings: A Telegram bot let buyers purchase, download, swap and renew fraud APKs from impersonation templates. One distributor allegedly supplied the apps to around 400 other fraudsters. Cash-out ran through ATM withdrawals handed over in person, leaving no direct bank trail between buyer and seller.",
+      "external_references": [
+        {
+          "external_id": "sm-2026-001",
+          "source_name": "india-threat-tracker",
+          "url": "https://www.sohankanna.com/tracker#campaign-sm-2026-001"
+        },
+        {
+          "source_name": "ETV Bharat - Gujarat Police bust pan-India APK fraud racket",
+          "url": "https://www.etvbharat.com/en/state/gujarat-police-bust-pan-india-apk-fraud-racket-several-held-enn26062506841"
+        }
+      ],
+      "id": "campaign--6f698b73-0327-4f3c-a262-9fdfcaadc0da",
+      "modified": "2026-10-15T00:00:00.000Z",
+      "name": "Ahmedabad APK fraud network (Telegram storefront)",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "campaign"
+    },
+    {
+      "confidence": 85,
+      "created": "2026-10-16T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "description": "Hands-on analysis of a sophisticated Android banking trojan spread from a compromised WhatsApp group, using a man-in-the-middle VPN technique and advanced anti-analysis to steal banking credentials. Representative of the higher end of the Android threat targeting Indian users.\n\nStatus in the tracker: historical (describes the reporting, not whether infrastructure is live).\n\nFirst reported: 2025-10 (precision as given by the source).\n\nAttribution as reported: Unattributed.\n\nAlso reported, not expressed as STIX patterns: Android package com.iudxmm.android.\n\nKey findings: Distributed as 'SBI AADHAR UPDATE.APK' through a WhatsApp group the attacker had taken over and renamed to look official. Shows a fake SBI login page to harvest usernames, passwords and mobile numbers. Routes all device traffic through a malicious VpnService (addRoute 0.0.0.0/0) for man-in-the-middle interception. A malformed ZIP header breaks apktool; no C2 was observed in a sandbox, consistent with anti-sandbox behaviour.",
+      "external_references": [
+        {
+          "external_id": "sm-2025-003",
+          "source_name": "india-threat-tracker",
+          "url": "https://www.sohankanna.com/tracker#campaign-sm-2025-003"
+        },
+        {
+          "source_name": "sohankanna.com - Deconstructing a Stealthy Android Trojan",
+          "url": "https://www.sohankanna.com/research/deconstructing-a-stealthy-android-trojan-a-case-study-in-phishing-and-evasion"
+        }
+      ],
+      "id": "campaign--b668f0b2-ce34-4be1-93f0-2f743dabb861",
+      "modified": "2026-10-16T00:00:00.000Z",
+      "name": "Android banking trojan - MITM + anti-analysis (case study)",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "campaign"
+    },
+    {
+      "confidence": 85,
+      "created": "2026-10-15T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "description": "e-Challan / RTO-themed two-stage dropper. A fake 'update' prompt installs a second APK that hides its icon (INFO category), collects Aadhaar/PAN and full card/UPI details via fake payment screens, and intercepts incoming SMS for OTP harvesting. C2 over HTTP POST to jsonserv domains.\n\nStatus in the tracker: active (describes the reporting, not whether infrastructure is live).\n\nFirst reported: 2025-10 (precision as given by the source).\n\nAttribution as reported: Unattributed, financially motivated (CYFIRMA).\n\nKey findings: A loader shows a fake \"App Update Available\" prompt and installs a second APK with the same name and icon. The payload's activity is categorised as INFO rather than LAUNCHER, so it never appears in the app drawer. Fake e-Challan and ₹1 \"verification\" screens collect Aadhaar, PAN, full card data, ATM PIN, net-banking credentials and UPI PIN; the UPI payment is rigged to fail. Incoming SMS is rebuilt at PDU level and forwarded for OTP theft; C2 is HTTP POST to jsonserv domains with base64-chunked URLs.",
+      "external_references": [
+        {
+          "external_id": "sm-2025-002",
+          "source_name": "india-threat-tracker",
+          "url": "https://www.sohankanna.com/tracker#campaign-sm-2025-002"
+        },
+        {
+          "source_name": "CYFIRMA - RTO Challan Fraud: a technical report on APK-based financial and identity theft",
+          "url": "https://www.cyfirma.com/research/rto-challan-fraud-a-technical-report-on-apk-based-financial-and-identity-theft/"
+        }
+      ],
+      "id": "campaign--c154e3ce-bced-4cda-8dc5-6ea753025e9f",
+      "modified": "2026-10-15T00:00:00.000Z",
+      "name": "RTO Challan fraud - two-stage dropper (jsonserv C2)",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "campaign"
+    },
+    {
+      "confidence": 50,
+      "created": "2026-10-15T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "description": "Two Pune residents lost a combined Rs 14+ lakh after installing APK files attached to fake RTO e-challan notices. Pune police advised checking challans only on official government platforms and never installing APKs from SMS/WhatsApp links.\n\nStatus in the tracker: active (describes the reporting, not whether infrastructure is live).\n\nFirst reported: 2026-06 (precision as given by the source).\n\nAttribution as reported: Unknown operators.\n\nKey findings: Two residents lost a combined Rs 14+ lakh after installing APK files attached to fake RTO e-challan notices.",
+      "external_references": [
+        {
+          "external_id": "sm-2026-002",
+          "source_name": "india-threat-tracker",
+          "url": "https://www.sohankanna.com/tracker#campaign-sm-2026-002"
+        },
+        {
+          "source_name": "The Bridge Chronicle - Two Punekars lost over Rs 14 lakh in fake RTO e-challan APK scam",
+          "url": "https://www.thebridgechronicle.com/pune/cyber-fraud-pune-fake-rto-e-challan-apk-scam-rs14-lakh-loss-agn97"
+        }
+      ],
+      "id": "campaign--d563f634-ffd2-4229-a82d-b06ae927989b",
+      "modified": "2026-10-15T00:00:00.000Z",
+      "name": "Pune fake RTO e-challan APK scam",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "campaign"
+    },
+    {
+      "confidence": 50,
+      "created": "2026-10-15T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "description": "Mumbai Cyber Police arrested six members of an interstate syndicate linked to 3,206 complaints on the national portal (~Rs 43 crore). APKs impersonated banks, Mahanagar Gas (MGL) and the RTO; a typical lure warned of a gas disconnection and asked the victim to install an app and pay Rs 10. The apps intercepted OTPs and banking SMS. Forensics found 111 distinct fake APKs; ~8,609 people installed them, and ~1.24 crore SMS were exfiltrated via servers on Google Firebase and Hostinger.\n\nStatus in the tracker: law-enforcement (describes the reporting, not whether infrastructure is live).\n\nFirst reported: 2026-06 (precision as given by the source).\n\nAttribution as reported: Arrests by Mumbai Cyber Police (allegations, not yet proven in court).\n\nInfrastructure context, not indicators (legitimate or shared services the campaign abused; do not block): Firebase; Hostinger (web hosting).\n\nKey findings: Linked to 3,206 complaints on the national cyber-crime portal and about Rs 43 crore in losses. Forensics found 111 distinct fake APKs installed by about 8,609 people. About 1.24 crore SMS were exfiltrated to servers on Google Firebase and Hostinger. A typical lure warned of a gas disconnection and asked the victim to install an app and pay Rs 10.",
+      "external_references": [
+        {
+          "external_id": "sm-2026-003",
+          "source_name": "india-threat-tracker",
+          "url": "https://www.sohankanna.com/tracker#campaign-sm-2026-003"
+        },
+        {
+          "source_name": "Free Press Journal - 6 arrested as Mumbai cyber police bust Rs 43 crore fake APK fraud network (26 Jun 2026)",
+          "url": "https://www.freepressjournal.in/mumbai/6-arrested-as-mumbai-cyber-police-bust-43-crore-fake-apk-based-cyber-fraud-network-linked-to-3200-cases-video"
+        }
+      ],
+      "id": "campaign--e359e282-92dc-4c27-b4d6-328d8cd04a74",
+      "modified": "2026-10-15T00:00:00.000Z",
+      "name": "Mumbai interstate APK fraud network (~Rs 43 crore, 3,206 cases)",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "campaign"
+    },
+    {
+      "contact_information": "https://github.com/sohankanna/india-threat-tracker",
+      "created": "2026-10-15T00:00:00.000Z",
+      "description": "Open threat intelligence on threats to India, maintained by Sohan Kanna. Data licensed CC BY 4.0. https://www.sohankanna.com/tracker",
+      "id": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "identity_class": "system",
+      "modified": "2026-10-15T00:00:00.000Z",
+      "name": "India Threat Tracker",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "identity"
+    },
+    {
+      "confidence": 85,
+      "created": "2026-10-15T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "description": "Reported by CYFIRMA - RTO Challan Fraud: a technical report on APK-based financial and identity theft for the campaign 'RTO Challan fraud - two-stage dropper (jsonserv C2)'. As reported; not re-validated. valid_from is the date the tracker began publishing it, not an observation date.",
+      "external_references": [
+        {
+          "source_name": "CYFIRMA - RTO Challan Fraud: a technical report on APK-based financial and identity theft",
+          "url": "https://www.cyfirma.com/research/rto-challan-fraud-a-technical-report-on-apk-based-financial-and-identity-theft/"
+        }
+      ],
+      "id": "indicator--5e49141d-969e-4614-a4b7-7c0f5ec3dca0",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "modified": "2026-10-15T00:00:00.000Z",
+      "name": "SHA-256 22cf70a0dd866a4f5addd5d339fad3894a4ebb3e97d597fd7dac9b08899052fb",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "pattern": "[file:hashes.'SHA-256' = '22cf70a0dd866a4f5addd5d339fad3894a4ebb3e97d597fd7dac9b08899052fb']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-10-15T00:00:00.000Z"
+    },
+    {
+      "confidence": 85,
+      "created": "2026-10-16T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "description": "Reported by sohankanna.com - Deconstructing a Stealthy Android Trojan for the campaign 'Android banking trojan - MITM + anti-analysis (case study)'. As reported; not re-validated. valid_from is the date the tracker began publishing it, not an observation date.",
+      "external_references": [
+        {
+          "source_name": "sohankanna.com - Deconstructing a Stealthy Android Trojan",
+          "url": "https://www.sohankanna.com/research/deconstructing-a-stealthy-android-trojan-a-case-study-in-phishing-and-evasion"
+        }
+      ],
+      "id": "indicator--7eda07e4-47f3-4b97-af94-c53606547d0a",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "modified": "2026-10-16T00:00:00.000Z",
+      "name": "SHA-256 27051a225ea950c7d62ddbac6c7c4754bf86be94fddf0d3c10e2827d6eedffd5",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "pattern": "[file:hashes.'SHA-256' = '27051a225ea950c7d62ddbac6c7c4754bf86be94fddf0d3c10e2827d6eedffd5']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-10-16T00:00:00.000Z"
+    },
+    {
+      "confidence": 85,
+      "created": "2026-10-15T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "description": "Reported by CYFIRMA - RTO Challan Fraud: a technical report on APK-based financial and identity theft for the campaign 'RTO Challan fraud - two-stage dropper (jsonserv C2)'. As reported; not re-validated. valid_from is the date the tracker began publishing it, not an observation date.",
+      "external_references": [
+        {
+          "source_name": "CYFIRMA - RTO Challan Fraud: a technical report on APK-based financial and identity theft",
+          "url": "https://www.cyfirma.com/research/rto-challan-fraud-a-technical-report-on-apk-based-financial-and-identity-theft/"
+        }
+      ],
+      "id": "indicator--89c07ae1-6516-4011-9fba-98e6f0ed62f3",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "modified": "2026-10-15T00:00:00.000Z",
+      "name": "Domain jsonserv[.]xyz",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "pattern": "[domain-name:value = 'jsonserv.xyz']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-10-15T00:00:00.000Z"
+    },
+    {
+      "confidence": 85,
+      "created": "2026-10-15T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "description": "Reported by CYFIRMA - RTO Challan Fraud: a technical report on APK-based financial and identity theft for the campaign 'RTO Challan fraud - two-stage dropper (jsonserv C2)'. As reported; not re-validated. valid_from is the date the tracker began publishing it, not an observation date.",
+      "external_references": [
+        {
+          "source_name": "CYFIRMA - RTO Challan Fraud: a technical report on APK-based financial and identity theft",
+          "url": "https://www.cyfirma.com/research/rto-challan-fraud-a-technical-report-on-apk-based-financial-and-identity-theft/"
+        }
+      ],
+      "id": "indicator--d6ed9463-34e3-4ed7-87d5-5846400c9627",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "modified": "2026-10-15T00:00:00.000Z",
+      "name": "SHA-256 9209fc088cdcd7da0161cabf5b9384c2ca790214413ffb437452bcc865c58452",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "pattern": "[file:hashes.'SHA-256' = '9209fc088cdcd7da0161cabf5b9384c2ca790214413ffb437452bcc865c58452']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-10-15T00:00:00.000Z"
+    },
+    {
+      "confidence": 85,
+      "created": "2026-10-15T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "description": "Reported by CYFIRMA - RTO Challan Fraud: a technical report on APK-based financial and identity theft for the campaign 'RTO Challan fraud - two-stage dropper (jsonserv C2)'. As reported; not re-validated. valid_from is the date the tracker began publishing it, not an observation date.",
+      "external_references": [
+        {
+          "source_name": "CYFIRMA - RTO Challan Fraud: a technical report on APK-based financial and identity theft",
+          "url": "https://www.cyfirma.com/research/rto-challan-fraud-a-technical-report-on-apk-based-financial-and-identity-theft/"
+        }
+      ],
+      "id": "indicator--f9940f67-f19b-4388-8d09-e26bd25d8e6b",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "modified": "2026-10-15T00:00:00.000Z",
+      "name": "Domain jsonserv[.]biz",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "pattern": "[domain-name:value = 'jsonserv.biz']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-10-15T00:00:00.000Z"
+    },
+    {
+      "aliases": [
+        "SideWinder",
+        "Rattlesnake",
+        "APT-C-17"
+      ],
+      "confidence": 85,
+      "created": "2026-10-16T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "description": "Regional context: one of South Asia's most active APTs, assessed as India-nexus, historically targeting Pakistan, Nepal, China and Afghanistan and more recently expanding to maritime, nuclear and IT sectors across Asia, the Middle East and Africa. Primarily spear-phishing with weaponised documents exploiting known Office flaws. Included here for regional awareness; its targets are largely outside India.\n\nReported attribution: India-nexus (attributed). Assessed as India-nexus in vendor reporting. Included for regional awareness only; its targets are largely outside India.\n\nKey findings: Kaspersky's March 2025 research: a DOCX uses remote template injection to fetch an RTF that exploits CVE-2017-11882 and delivers Backdoor Loader and StealerBot. Primarily spear-phishing with weaponised documents that exploit known Office flaws. Has expanded from Pakistan, Nepal, China and Afghanistan to maritime, nuclear and IT sectors across Asia, the Middle East and Africa.",
+      "external_references": [
+        {
+          "external_id": "apt-sidewinder",
+          "source_name": "india-threat-tracker",
+          "url": "https://www.sohankanna.com/tracker#actor-apt-sidewinder"
+        },
+        {
+          "external_id": "G0121",
+          "source_name": "mitre-attack",
+          "url": "https://attack.mitre.org/groups/G0121/"
+        },
+        {
+          "source_name": "The Register - SideWinder shifts tactics to target maritime and nuclear sectors, citing Kaspersky research (10 Mar 2025)",
+          "url": "https://www.theregister.com/2025/03/10/sidewinder_tactics_shift/"
+        },
+        {
+          "source_name": "MITRE ATT&CK - Sidewinder (G0121)",
+          "url": "https://attack.mitre.org/groups/G0121/"
+        }
+      ],
+      "id": "intrusion-set--07c01184-bc4d-4db1-b040-84b422c5b5f7",
+      "modified": "2026-10-16T00:00:00.000Z",
+      "name": "SideWinder (India-nexus)",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "intrusion-set"
+    },
+    {
+      "confidence": 85,
+      "created": "2026-10-15T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "description": "A Pakistan-nexus espionage actor that mimics the SideWinder group's TTPs (hence the name) and is widely assessed to overlap with Transparent Tribe/APT36 infrastructure. It targets Indian government, defence and increasingly academic and research institutions. Typical delivery is a ZIP archive embedding an LNK or decoy document that leads to RATs such as ActionRAT, AllaKore and AuTo Stealer, hosted on compromised domains.\n\nReported attribution: Pakistan-nexus. Linked to the Pakistan-nexus cluster through infrastructure and tooling overlap with Transparent Tribe; the group deliberately mimics SideWinder's TTPs to mislead attribution.\n\nKey findings: The signature chain is a ZIP archive containing an LNK or decoy document that starts a multi-stage infection. Next stages are usually pulled from compromised legitimate websites rather than attacker-registered infrastructure. Payloads rotate between ActionRAT, AllaKore RAT, ReverseRAT and AuTo Stealer, which collects Office files, PDFs, databases and images. Has exploited the WinRAR flaw CVE-2023-38831, where opening a decoy file inside a crafted archive runs the payload, and fielded a Linux variant of Ares RAT (Seqrite, Nov 2023).",
+      "external_references": [
+        {
+          "external_id": "apt-sidecopy",
+          "source_name": "india-threat-tracker",
+          "url": "https://www.sohankanna.com/tracker#actor-apt-sidecopy"
+        },
+        {
+          "external_id": "G1008",
+          "source_name": "mitre-attack",
+          "url": "https://attack.mitre.org/groups/G1008/"
+        },
+        {
+          "source_name": "Seqrite - SideCopy's multi-platform onslaught: WinRAR zero-day and a Linux variant of Ares RAT (6 Nov 2023)",
+          "url": "https://www.seqrite.com/blog/sidecopys-multi-platform-onslaught-leveraging-winrar-zero-day-and-linux-variant-of-ares-rat"
+        },
+        {
+          "source_name": "BankInfoSecurity - SideCopy APT targets India's premier defense research agency",
+          "url": "https://www.bankinfosecurity.com/sidecopy-apt-targets-indias-premier-defense-research-agency-a-21512"
+        },
+        {
+          "source_name": "MITRE ATT&CK - SideCopy (G1008)",
+          "url": "https://attack.mitre.org/groups/G1008/"
+        }
+      ],
+      "id": "intrusion-set--47ce2ecf-959f-4774-ad62-968712e65fe3",
+      "modified": "2026-10-15T00:00:00.000Z",
+      "name": "SideCopy",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "intrusion-set"
+    },
+    {
+      "aliases": [
+        "APT36",
+        "Mythic Leopard",
+        "ProjectM",
+        "C-Major"
+      ],
+      "confidence": 85,
+      "created": "2026-10-15T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "description": "A long-running espionage actor that primarily targets Indian government, defence and education sectors. Typical tradecraft is spear-phishing with weaponised documents and LNK files, and fake or trojanised apps, delivering RATs such as Crimson RAT, CapraRAT (Android) and Poseidon. 2026 reporting describes new RAT activity, LNK-based delivery chains, and expansion toward India's startup ecosystem.\n\nReported attribution: Pakistan-nexus. Pakistan-nexus is the consensus of vendor reporting and MITRE ATT&CK. The tracker's confidence rates the evidence for the activity described here, not the attribution.\n\nKey findings: January 2026 campaigns sent a ZIP with an LNK disguised as a PDF; the LNK runs a remote HTA through mshta, which loads the RAT in memory and opens a decoy PDF. February 2026: Acronis TRU attributed, with high confidence, a Crimson RAT campaign against Indian startups, particularly OSINT and cybersecurity firms, delivered as an ISO containing an LNK disguised as an Excel file. Crimson RAT, a .NET RAT delivered through macro documents, remains the workhorse: file theft, screenshots, keylogging and command execution. CapraRAT extends operations to Android through trojanised or fake apps. Delivery has moved from macro documents to OLE and LNK-based chains, with repeated experiments targeting Linux desktops used in Indian government.",
+      "external_references": [
+        {
+          "external_id": "apt-transparent-tribe",
+          "source_name": "india-threat-tracker",
+          "url": "https://www.sohankanna.com/tracker#actor-apt-transparent-tribe"
+        },
+        {
+          "external_id": "G0134",
+          "source_name": "mitre-attack",
+          "url": "https://attack.mitre.org/groups/G0134/"
+        },
+        {
+          "source_name": "The Hacker News - Transparent Tribe launches new RAT attacks against Indian government and academia (2 Jan 2026)",
+          "url": "https://thehackernews.com/2026/01/transparent-tribe-launches-new-rat.html"
+        },
+        {
+          "source_name": "PolySwarm - Transparent Tribe evolves tradecraft with multi-stage LNK malware (12 Jan 2026)",
+          "url": "https://blog.polyswarm.io/transparent-tribe-evolves-tradecraft-with-multi-stage-lnk-malware"
+        },
+        {
+          "source_name": "Acronis TRU - New year, new sector: Transparent Tribe targets India's startup ecosystem (4 Feb 2026)",
+          "url": "https://www.acronis.com/en/tru/posts/new-year-new-sector-transparent-tribe-targets-indias-startup-ecosystem/"
+        },
+        {
+          "source_name": "MITRE ATT&CK - Transparent Tribe (G0134)",
+          "url": "https://attack.mitre.org/groups/G0134/"
+        }
+      ],
+      "id": "intrusion-set--49e9134d-1c01-4851-a9db-000725c7d845",
+      "modified": "2026-10-15T00:00:00.000Z",
+      "name": "Transparent Tribe",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "intrusion-set"
+    },
+    {
+      "aliases": [
+        "RedEcho",
+        "TAG-38"
+      ],
+      "confidence": 50,
+      "created": "2026-10-16T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "description": "China-nexus intrusion sets that have repeatedly targeted India's power sector and critical infrastructure. Recorded Future documented RedEcho targeting Indian electricity load-dispatch centres, and later TAG-38 activity against grid infrastructure in Ladakh using the ShadowPad backdoor and compromised internet-facing DVR/IoT devices for C2. A reminder that the threat to India isn't only fraud and Pakistan-nexus espionage.\n\nReported attribution: China-nexus. China-nexus per Recorded Future's RedEcho and TAG-38 reporting. Confidence is medium because the public record rests largely on one vendor's analysis.\n\nKey findings: RedEcho (disclosed February 2021) targeted Indian power-sector organisations, including regional load-dispatch centres, using the ShadowPad backdoor. TAG-38 (disclosed April 2022) targeted grid infrastructure in Ladakh, using compromised internet-facing DVR/IoT devices in its command-and-control path. Activity has coincided with periods of India-China border tension, consistent with collection and pre-positioning.",
+      "external_references": [
+        {
+          "external_id": "apt-redecho",
+          "source_name": "india-threat-tracker",
+          "url": "https://www.sohankanna.com/tracker#actor-apt-redecho"
+        },
+        {
+          "source_name": "Recorded Future - RedEcho: China-linked group targets Indian power sector",
+          "url": "https://www.recordedfuture.com/redecho-targeting-indian-power-sector"
+        },
+        {
+          "source_name": "Recorded Future - Continued targeting of Indian power grid (TAG-38)",
+          "url": "https://www.recordedfuture.com/continued-targeting-of-indian-power-grid-assets"
+        }
+      ],
+      "id": "intrusion-set--6f442db0-d02d-412d-bd34-ae81cd300f7a",
+      "modified": "2026-10-16T00:00:00.000Z",
+      "name": "RedEcho / TAG-38 (China-nexus)",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "intrusion-set"
+    },
+    {
+      "created": "2026-10-15T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "malware--16de636b-3a33-4139-9363-71831a989ec1",
+      "is_family": true,
+      "modified": "2026-10-15T00:00:00.000Z",
+      "name": "Crimson RAT",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "malware"
+    },
+    {
+      "created": "2026-10-16T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "malware--3379378c-46da-4b0e-b708-d49dbd6e3003",
+      "is_family": true,
+      "modified": "2026-10-16T00:00:00.000Z",
+      "name": "WarHawk",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "malware"
+    },
+    {
+      "created": "2026-10-16T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "malware--414541f3-8ebd-4b01-a824-83b60c6cdbbe",
+      "is_family": true,
+      "modified": "2026-10-16T00:00:00.000Z",
+      "name": "PlugX",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "malware"
+    },
+    {
+      "created": "2026-10-15T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "malware--4b6569a7-9581-48af-816f-f60dcacbf530",
+      "is_family": true,
+      "modified": "2026-10-15T00:00:00.000Z",
+      "name": "CapraRAT",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "malware"
+    },
+    {
+      "created": "2026-10-15T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "malware--78e1e348-a0d2-4466-acea-87fc62424c7f",
+      "is_family": true,
+      "modified": "2026-10-15T00:00:00.000Z",
+      "name": "ActionRAT",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "malware"
+    },
+    {
+      "created": "2026-10-15T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "malware--94f8a132-9887-4eba-9c43-ed446e4e3c6b",
+      "is_family": true,
+      "modified": "2026-10-15T00:00:00.000Z",
+      "name": "AuTo Stealer",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "malware"
+    },
+    {
+      "created": "2026-10-15T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "malware--96db75f6-51ab-4a9e-8d90-0c689d0ac617",
+      "is_family": true,
+      "modified": "2026-10-15T00:00:00.000Z",
+      "name": "AllaKore RAT",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "malware"
+    },
+    {
+      "created": "2026-10-15T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "malware--bc298867-d8cf-482f-8c3b-f9f3348fabe0",
+      "is_family": true,
+      "modified": "2026-10-15T00:00:00.000Z",
+      "name": "GhostBat RAT",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "malware"
+    },
+    {
+      "created": "2026-10-15T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "malware--bf664cc5-6ce7-428c-8cc8-97433c40bb66",
+      "is_family": true,
+      "modified": "2026-10-15T00:00:00.000Z",
+      "name": "ElizaRAT",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "malware"
+    },
+    {
+      "created": "2026-10-16T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "external_references": [
+        {
+          "external_id": "S0596",
+          "source_name": "mitre-attack",
+          "url": "https://attack.mitre.org/software/S0596/"
+        }
+      ],
+      "id": "malware--ed09119b-5426-41b9-92c1-452a64abeddf",
+      "is_family": true,
+      "modified": "2026-10-16T00:00:00.000Z",
+      "name": "ShadowPad",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "malware"
+    },
+    {
+      "created": "2026-10-16T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "malware--ed5961ec-4009-4466-b7ad-eb3a01191a52",
+      "is_family": true,
+      "modified": "2026-10-16T00:00:00.000Z",
+      "name": "StealerBot",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "malware"
+    },
+    {
+      "created": "2026-10-15T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "malware--fd1f4bc0-c4ba-44df-a04e-9512376f149a",
+      "is_family": true,
+      "modified": "2026-10-15T00:00:00.000Z",
+      "name": "ReverseRAT",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "malware"
+    },
+    {
+      "created": "2026-10-15T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "malware--fdaa4c8b-89ec-495e-9aa2-e7ab6c2b2ee1",
+      "is_family": true,
+      "modified": "2026-10-15T00:00:00.000Z",
+      "name": "Poseidon",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "malware"
+    },
+    {
+      "created": "2017-01-20T00:00:00.000Z",
+      "definition": {
+        "tlp": "white"
+      },
+      "definition_type": "tlp",
+      "id": "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9",
+      "name": "TLP:WHITE",
+      "spec_version": "2.1",
+      "type": "marking-definition"
+    },
+    {
+      "created": "2026-10-15T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--057bcfbc-06be-4c14-bd58-8abd3375240f",
+      "modified": "2026-10-15T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "campaign--c154e3ce-bced-4cda-8dc5-6ea753025e9f",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--0f7d0fc3-cf8a-40ca-b077-6898bffcc9e6",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-10-15T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--09efbab8-33b0-4dde-a196-660f487b8d90",
+      "modified": "2026-10-15T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "campaign--c154e3ce-bced-4cda-8dc5-6ea753025e9f",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--3be4e47c-c823-4d63-bc5a-7e23121e969e",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-10-15T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--0c50ba4d-8cad-4589-b7f9-ad4c84844f52",
+      "modified": "2026-10-15T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "campaign--45f641b4-6869-4d37-bfc8-bd80f6140eac",
+      "spec_version": "2.1",
+      "target_ref": "malware--bc298867-d8cf-482f-8c3b-f9f3348fabe0",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-10-15T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--0c94f4ee-a778-4492-9e67-65005dd27f59",
+      "modified": "2026-10-15T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "indicates",
+      "source_ref": "indicator--f9940f67-f19b-4388-8d09-e26bd25d8e6b",
+      "spec_version": "2.1",
+      "target_ref": "campaign--c154e3ce-bced-4cda-8dc5-6ea753025e9f",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-10-15T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--0d358578-b89b-4314-92f2-96576f34923b",
+      "modified": "2026-10-15T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "campaign--45f641b4-6869-4d37-bfc8-bd80f6140eac",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--0f7d0fc3-cf8a-40ca-b077-6898bffcc9e6",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-10-16T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--1753dfc7-ad24-420a-a3ef-c0ff3152f71d",
+      "modified": "2026-10-16T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "campaign--b668f0b2-ce34-4be1-93f0-2f743dabb861",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--97799548-37cf-4cbe-8d69-e54dd08d043f",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-10-15T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--18c4c91d-bd6f-4899-84e8-347e584d9acb",
+      "modified": "2026-10-15T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--49e9134d-1c01-4851-a9db-000725c7d845",
+      "spec_version": "2.1",
+      "target_ref": "malware--16de636b-3a33-4139-9363-71831a989ec1",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-10-15T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--1a27746b-a87f-47e1-b16e-cdb75b2d06b3",
+      "modified": "2026-10-15T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--47ce2ecf-959f-4774-ad62-968712e65fe3",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--c153fa2c-9988-46a6-8a35-3d1c432ad3a0",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-10-15T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--1fafd2ce-ec53-4f84-803f-7922467c276a",
+      "modified": "2026-10-15T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "campaign--c154e3ce-bced-4cda-8dc5-6ea753025e9f",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--21db97fd-c814-4fd7-bf0d-5286044b79bf",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-10-15T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--20389d58-0763-46dc-a497-a58bde6edaf9",
+      "modified": "2026-10-15T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--49e9134d-1c01-4851-a9db-000725c7d845",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--c153fa2c-9988-46a6-8a35-3d1c432ad3a0",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-10-15T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--218a569c-b209-42ca-8fed-5317a739cee5",
+      "modified": "2026-10-15T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--47ce2ecf-959f-4774-ad62-968712e65fe3",
+      "spec_version": "2.1",
+      "target_ref": "malware--fd1f4bc0-c4ba-44df-a04e-9512376f149a",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-10-15T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--26750c8e-ce30-4635-882a-a38d65bb0d4f",
+      "modified": "2026-10-15T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "campaign--c154e3ce-bced-4cda-8dc5-6ea753025e9f",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--3fed70b8-126e-40d6-a959-13507eb5f787",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-10-15T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--37dbf255-2b42-4ff1-9950-2ef7d5e29a72",
+      "modified": "2026-10-15T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "indicates",
+      "source_ref": "indicator--d6ed9463-34e3-4ed7-87d5-5846400c9627",
+      "spec_version": "2.1",
+      "target_ref": "campaign--c154e3ce-bced-4cda-8dc5-6ea753025e9f",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-10-15T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--3965696c-0ccd-45cf-b015-8b0f569a36bc",
+      "modified": "2026-10-15T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--49e9134d-1c01-4851-a9db-000725c7d845",
+      "spec_version": "2.1",
+      "target_ref": "malware--4b6569a7-9581-48af-816f-f60dcacbf530",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-10-15T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--3a72b4bb-b548-4026-87a4-6ad27e215935",
+      "modified": "2026-10-15T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "campaign--45f641b4-6869-4d37-bfc8-bd80f6140eac",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--b3b37337-457e-49d3-88fe-c3153a2cf3dd",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-10-15T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--3eb8ee26-3e92-485a-8e16-7d3e2a25fef0",
+      "modified": "2026-10-15T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "campaign--c154e3ce-bced-4cda-8dc5-6ea753025e9f",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--51e02f3d-0d0e-476e-94e9-c1cda18c2df1",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-10-16T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--456e4937-335d-4b6b-82ef-4de0c3018684",
+      "modified": "2026-10-16T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "campaign--b668f0b2-ce34-4be1-93f0-2f743dabb861",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--3be4e47c-c823-4d63-bc5a-7e23121e969e",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-10-16T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--4711d4c7-1c87-4e57-86eb-fbdb39640324",
+      "modified": "2026-10-16T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--07c01184-bc4d-4db1-b040-84b422c5b5f7",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--79cf3a57-29b8-4dc1-9f6b-a00934f5c04b",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-10-16T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--472e4eff-cb5a-4942-9994-c14319d2dade",
+      "modified": "2026-10-16T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--07c01184-bc4d-4db1-b040-84b422c5b5f7",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--c153fa2c-9988-46a6-8a35-3d1c432ad3a0",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-10-15T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--47c3d0a0-a6dd-4d0e-89f9-7a0c4fc41dd3",
+      "modified": "2026-10-15T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "indicates",
+      "source_ref": "indicator--89c07ae1-6516-4011-9fba-98e6f0ed62f3",
+      "spec_version": "2.1",
+      "target_ref": "campaign--c154e3ce-bced-4cda-8dc5-6ea753025e9f",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-10-15T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--4a6ecfce-773d-4397-9eb9-da6580cf80b1",
+      "modified": "2026-10-15T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "campaign--45f641b4-6869-4d37-bfc8-bd80f6140eac",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--f8a165c5-a41d-4575-84a0-0b95fbd92605",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-10-15T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--5a5ed385-f5b6-49c1-a3e2-45ed106493e6",
+      "modified": "2026-10-15T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--49e9134d-1c01-4851-a9db-000725c7d845",
+      "spec_version": "2.1",
+      "target_ref": "malware--bf664cc5-6ce7-428c-8cc8-97433c40bb66",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-10-16T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--5cccb2e5-88df-457d-973c-71eeb17164f3",
+      "modified": "2026-10-16T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "campaign--b668f0b2-ce34-4be1-93f0-2f743dabb861",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--0913d310-67ad-4e4b-b722-fda118039cc0",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-10-15T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--60eb06d0-1f93-497d-810b-d84b1b0d6ec7",
+      "modified": "2026-10-15T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "campaign--c154e3ce-bced-4cda-8dc5-6ea753025e9f",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--b12128a0-d897-44b2-8a84-df4ea8bab5e2",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-10-15T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--62a25caf-3527-4ba2-b17d-62011561551b",
+      "modified": "2026-10-15T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--49e9134d-1c01-4851-a9db-000725c7d845",
+      "spec_version": "2.1",
+      "target_ref": "malware--fdaa4c8b-89ec-495e-9aa2-e7ab6c2b2ee1",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-10-15T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--649c01f5-9c52-4932-805a-e539d5fb5a88",
+      "modified": "2026-10-15T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "campaign--45f641b4-6869-4d37-bfc8-bd80f6140eac",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--21db97fd-c814-4fd7-bf0d-5286044b79bf",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-10-15T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--651d369b-6407-4ab9-85aa-81232e7353de",
+      "modified": "2026-10-15T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--47ce2ecf-959f-4774-ad62-968712e65fe3",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--823e5d8a-70b2-48e9-b283-1a01dd0127bd",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-10-16T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--66a0599e-5cd6-40b2-ab75-8cd327bc6c73",
+      "modified": "2026-10-16T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--6f442db0-d02d-412d-bd34-ae81cd300f7a",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--7795b806-d5f0-4db1-9883-c464ffd5bfb6",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-10-16T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--6ae29fd4-3a60-4103-9f43-138254e0ff49",
+      "modified": "2026-10-16T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--07c01184-bc4d-4db1-b040-84b422c5b5f7",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--f1ac4987-8331-4df3-a1d8-8b707ccef87a",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-10-15T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--6e3fe8e2-bdf0-44f5-80b2-47fb586179c4",
+      "modified": "2026-10-15T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "campaign--45f641b4-6869-4d37-bfc8-bd80f6140eac",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--51e02f3d-0d0e-476e-94e9-c1cda18c2df1",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-10-16T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--6e8fc7b7-fa8b-4f17-8367-1504f8822258",
+      "modified": "2026-10-16T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--07c01184-bc4d-4db1-b040-84b422c5b5f7",
+      "spec_version": "2.1",
+      "target_ref": "malware--ed5961ec-4009-4466-b7ad-eb3a01191a52",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-10-15T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--6eb7eca5-bb1b-4905-9d9c-23ac38420607",
+      "modified": "2026-10-15T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--49e9134d-1c01-4851-a9db-000725c7d845",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--29a1901f-4a85-4dec-b2da-3229d81128ea",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-10-16T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--726b8e47-0284-4451-9487-dc7f578f747d",
+      "modified": "2026-10-16T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "campaign--b668f0b2-ce34-4be1-93f0-2f743dabb861",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--0f7d0fc3-cf8a-40ca-b077-6898bffcc9e6",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-10-15T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--7e2edd0d-5a03-4d88-9245-8690643fa1a1",
+      "modified": "2026-10-15T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "campaign--c154e3ce-bced-4cda-8dc5-6ea753025e9f",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--3488806d-5f2e-4859-a3ee-5d0f34b6f775",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-10-15T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--8426b4b3-af48-45b1-ae0f-9811560681cd",
+      "modified": "2026-10-15T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "campaign--c154e3ce-bced-4cda-8dc5-6ea753025e9f",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--97799548-37cf-4cbe-8d69-e54dd08d043f",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-10-15T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--84857b10-940d-4fee-9089-eaa96a247145",
+      "modified": "2026-10-15T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--47ce2ecf-959f-4774-ad62-968712e65fe3",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--7795b806-d5f0-4db1-9883-c464ffd5bfb6",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-10-16T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--93ed77a8-54d3-4532-a533-ab6e14f64823",
+      "modified": "2026-10-16T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--07c01184-bc4d-4db1-b040-84b422c5b5f7",
+      "spec_version": "2.1",
+      "target_ref": "malware--3379378c-46da-4b0e-b708-d49dbd6e3003",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-10-16T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--97ab2673-207a-4dd4-b4e5-d7b0f53b9e69",
+      "modified": "2026-10-16T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "campaign--b668f0b2-ce34-4be1-93f0-2f743dabb861",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--a4bed644-351f-4d7f-9dcf-69934351619c",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-10-15T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--9ba7abf7-86d9-4f23-b385-2269a9cc3359",
+      "modified": "2026-10-15T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--47ce2ecf-959f-4774-ad62-968712e65fe3",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--8cffba75-bffa-492c-96b9-125fe8651397",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-10-15T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--9e9b0abf-9cae-4543-b3c1-f40daa016945",
+      "modified": "2026-10-15T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--47ce2ecf-959f-4774-ad62-968712e65fe3",
+      "spec_version": "2.1",
+      "target_ref": "malware--94f8a132-9887-4eba-9c43-ed446e4e3c6b",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-10-16T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--9fb2ad4e-808d-4b9e-89c8-3e7316c4d91f",
+      "modified": "2026-10-16T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--07c01184-bc4d-4db1-b040-84b422c5b5f7",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--8cffba75-bffa-492c-96b9-125fe8651397",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-10-15T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--a5f3db65-6b49-46bb-ad8c-ed8b2495634e",
+      "modified": "2026-10-15T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "campaign--45f641b4-6869-4d37-bfc8-bd80f6140eac",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--7b35c62f-9c84-4602-9400-627e0fa84c46",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-10-15T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--a805eb8e-8ffb-4c66-bdd1-f1c97dd6edfb",
+      "modified": "2026-10-15T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--49e9134d-1c01-4851-a9db-000725c7d845",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--823e5d8a-70b2-48e9-b283-1a01dd0127bd",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-10-16T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--aee273d7-ac75-404c-96cb-e2b29c9a20da",
+      "modified": "2026-10-16T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "campaign--b668f0b2-ce34-4be1-93f0-2f743dabb861",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--21db97fd-c814-4fd7-bf0d-5286044b79bf",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-10-16T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--b49c7b29-760c-4a35-a2d5-bbd692c7f49c",
+      "modified": "2026-10-16T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "indicates",
+      "source_ref": "indicator--7eda07e4-47f3-4b97-af94-c53606547d0a",
+      "spec_version": "2.1",
+      "target_ref": "campaign--b668f0b2-ce34-4be1-93f0-2f743dabb861",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-10-15T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--b4e446a4-945c-4077-ac26-a8fa85febb81",
+      "modified": "2026-10-15T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--49e9134d-1c01-4851-a9db-000725c7d845",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--8cffba75-bffa-492c-96b9-125fe8651397",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-10-15T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--b8c4c67a-2ba8-40e3-ad95-6514485d7266",
+      "modified": "2026-10-15T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--47ce2ecf-959f-4774-ad62-968712e65fe3",
+      "spec_version": "2.1",
+      "target_ref": "malware--78e1e348-a0d2-4466-acea-87fc62424c7f",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-10-15T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--bc7b7484-ee31-45bc-a43a-2012e4e6a95b",
+      "modified": "2026-10-15T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--49e9134d-1c01-4851-a9db-000725c7d845",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--7b7f9d69-d261-47ad-94dd-f53979b18200",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-10-15T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--c04672d9-150a-45d5-92d9-d02911eb0ccb",
+      "modified": "2026-10-15T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "campaign--45f641b4-6869-4d37-bfc8-bd80f6140eac",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--99a57e4f-b90a-4ae6-9fd5-5202e0ef5d81",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-10-15T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--c97d4ffc-5d88-4d14-a144-3a5976e31c6e",
+      "modified": "2026-10-15T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--47ce2ecf-959f-4774-ad62-968712e65fe3",
+      "spec_version": "2.1",
+      "target_ref": "malware--96db75f6-51ab-4a9e-8d90-0c689d0ac617",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-10-15T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--d0621389-3ea5-4166-885e-6af590c09704",
+      "modified": "2026-10-15T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "campaign--c154e3ce-bced-4cda-8dc5-6ea753025e9f",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--7b35c62f-9c84-4602-9400-627e0fa84c46",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-10-16T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--d34402d3-22b7-4a39-aae2-bd5d1fe20e58",
+      "modified": "2026-10-16T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--6f442db0-d02d-412d-bd34-ae81cd300f7a",
+      "spec_version": "2.1",
+      "target_ref": "malware--414541f3-8ebd-4b01-a824-83b60c6cdbbe",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-10-16T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--d7433702-171a-4f4a-850e-75f5c0d9c492",
+      "modified": "2026-10-16T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--6f442db0-d02d-412d-bd34-ae81cd300f7a",
+      "spec_version": "2.1",
+      "target_ref": "malware--ed09119b-5426-41b9-92c1-452a64abeddf",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-10-15T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--de47c098-565f-46f8-bf77-fd96d6ba15c5",
+      "modified": "2026-10-15T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "indicates",
+      "source_ref": "indicator--5e49141d-969e-4614-a4b7-7c0f5ec3dca0",
+      "spec_version": "2.1",
+      "target_ref": "campaign--c154e3ce-bced-4cda-8dc5-6ea753025e9f",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-10-15T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--e321ee8d-84ee-492c-8c9c-1b1b9993dd4b",
+      "modified": "2026-10-15T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--47ce2ecf-959f-4774-ad62-968712e65fe3",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--63410064-783d-4ff4-9f42-97e10cde30a9",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-10-15T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--ef0cfad7-1f12-4c18-ae9b-90d188ff4179",
+      "modified": "2026-10-15T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "campaign--45f641b4-6869-4d37-bfc8-bd80f6140eac",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--3be4e47c-c823-4d63-bc5a-7e23121e969e",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-10-15T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--ef3dc6d5-c9aa-4382-999f-e4eeaa8bcc27",
+      "modified": "2026-10-15T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "campaign--c154e3ce-bced-4cda-8dc5-6ea753025e9f",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--b3b37337-457e-49d3-88fe-c3153a2cf3dd",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-10-15T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--efccf4e0-ea1b-4c35-ae44-245df217c47a",
+      "modified": "2026-10-15T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "campaign--45f641b4-6869-4d37-bfc8-bd80f6140eac",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--9e62159e-d86d-40ed-83ad-0a5c4b513a6f",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-10-15T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--fcac2d5c-f96a-46c6-808a-96f1e7ddd715",
+      "modified": "2026-10-15T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--49e9134d-1c01-4851-a9db-000725c7d845",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--b14be129-ef4b-49f3-b08b-adc429d19aa8",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-10-20T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "description": "Analyst assessment by Sohan Kanna: judgement over the tracker's feeds, not source-reported fact.\n\nThe Indian threat picture this month is pulled in two directions at once: high-volume, financially-motivated mobile fraud hitting citizens at scale, and patient, state-aligned intrusion aimed at government, defence and critical infrastructure. The common seam is the edge — VPNs, firewalls and cloud identity — which is where ransomware crews and espionage actors alike still get their first foothold.\n\n1. Fake-APK UPI fraud has gone industrial (critical): This is no longer lone scammers. Organised networks now run fake RTO / e-challan, bank and utility APKs end to end: a single Mumbai bust was linked to 3,206 complaints and roughly ₹43 crore, and Ahmedabad police separately broke up a Telegram storefront that sold the apps to about 400 fraudsters. Individual losses keep surfacing too, such as two Pune residents who lost over ₹14 lakh to the same e-challan lure. Cash-out is fast and hard to trace (ATM withdrawals in the Ahmedabad case), and the malware (GhostBat RAT and kin) intercepts OTPs and banking SMS and captures the UPI PIN through a fake payment screen. For any payments operator, this is the live, high-volume threat, not a future one.\n\n2. The edge is still the way in (high): The India-relevant watchlist is dominated by internet-facing edge: Ivanti Connect Secure, Citrix NetScaler, PAN-OS and Fortinet, plus SharePoint (CVE-2025-53770, EPSS ~100%, ransomware-linked). These are the products Indian enterprises expose to the internet, and CISA lists known ransomware use for several of them, from Ivanti (CVE-2025-22457) and NetScaler (CVE-2025-5777) to PAN-OS (CVE-2026-0257) and FortiOS (CVE-2024-55591). If you do one thing this month, make it edge patch cadence: it is the single highest-leverage control on this list.\n\n3. Pakistan-nexus espionage is persistent, not episodic (high): Transparent Tribe (APT36) and SideCopy continue to target Indian government, defence, education and research with Crimson RAT and the ZIP→LNK→LOLBin delivery pattern. These are not one-off campaigns; they are a standing collection effort that re-tools faster than it disappears. If you sit in gov, defence or academia, assume you are in scope and detect for the delivery chain, not just the final implant.\n\n4. Identity is the new perimeter: watch M365 sign-ins (medium-high): Microsoft and the UK NCSC reported in April 2026 that Forest Blizzard (APT28) changed DNS settings on compromised home and small-office routers to put adversary-in-the-middle servers in front of Outlook on the web, where passwords and login tokens can be intercepted. As Indian organisations move onto M365 / Entra, staff home routers become part of the attack surface. Entra sign-in risk is the signal to wire up first; Microsoft's guidance points to its risky sign-in detections. The tracker's Entra rule (high-risk successful sign-in) and its endpoint DNS rule are complementary investigation leads, not a detection of this chain: they fire separately and are not correlated, the Entra rule does not verify the MFA sequence, and a hijacked router hands out its resolver through DHCP, which the endpoint DNS rule deliberately ignores. Phishing-resistant MFA (passkeys / FIDO2) is the control that breaks the relay.\n\n5. China-nexus pre-positioning in the power sector (medium): RedEcho's targeting of load dispatch centres is about access held for later, not immediate disruption — lower tempo, higher stakes. This is the kind of intrusion that matters in a crisis rather than a quarterly report, and it belongs on the radar of anyone defending Indian critical infrastructure even when nothing is visibly happening.",
+      "external_references": [
+        {
+          "source_name": "Free Press Journal: Mumbai cyber police bust ₹43 crore fake APK fraud network",
+          "url": "https://www.freepressjournal.in/mumbai/6-arrested-as-mumbai-cyber-police-bust-43-crore-fake-apk-based-cyber-fraud-network-linked-to-3200-cases-video"
+        },
+        {
+          "source_name": "Cyble: GhostBat RAT, inside the resurgence of RTO-themed Android malware",
+          "url": "https://cyble.com/blog/ghostbat-rat-inside-the-resurgence-of-rto-themed-android-malware/"
+        },
+        {
+          "source_name": "The UPI fraud kill chain",
+          "url": "https://www.sohankanna.com/research/the-upi-fraud-kill-chain-how-fake-apk-scams-defeat-indias-payment-controls"
+        },
+        {
+          "source_name": "GhostBat RAT breakdown",
+          "url": "https://www.sohankanna.com/research/ghostbat-rat-how-rto-themed-android-malware-steals-your-upi-pin"
+        },
+        {
+          "source_name": "India Threat Tracker detection pan_os_mgmt_auth_from_unexpected_source",
+          "url": "https://github.com/sohankanna/india-threat-tracker/blob/main/detections/sigma/pan_os_mgmt_auth_from_unexpected_source.yml"
+        },
+        {
+          "source_name": "PAN-OS management-interface zero-day",
+          "url": "https://www.sohankanna.com/research/cve-2026-0322-pan-os-management-interface-zero-day-from-admin-login-to-root"
+        },
+        {
+          "source_name": "Live watchlist",
+          "url": "https://www.sohankanna.com/tracker"
+        },
+        {
+          "source_name": "India Threat Tracker detection office_archive_lnk_spawns_lolbin",
+          "url": "https://github.com/sohankanna/india-threat-tracker/blob/main/detections/sigma/office_archive_lnk_spawns_lolbin.yml"
+        },
+        {
+          "source_name": "India Threat Tracker detection office_document_spawns_script_interpreter",
+          "url": "https://github.com/sohankanna/india-threat-tracker/blob/main/detections/sigma/office_document_spawns_script_interpreter.yml"
+        },
+        {
+          "source_name": "Transparent Tribe (APT36)",
+          "url": "https://www.sohankanna.com/research/transparent-tribe-apt36-the-persistent-threat-to-indian-government-and-defence"
+        },
+        {
+          "source_name": "SideCopy",
+          "url": "https://www.sohankanna.com/research/sidecopy-the-apt36-aligned-group-that-copies-sidewinder"
+        },
+        {
+          "source_name": "Microsoft Threat Intelligence: SOHO router compromise leads to DNS hijacking and adversary-in-the-middle attacks (7 Apr 2026)",
+          "url": "https://www.microsoft.com/en-us/security/blog/2026/04/07/soho-router-compromise-leads-to-dns-hijacking-and-adversary-in-the-middle-attacks/"
+        },
+        {
+          "source_name": "NCSC: APT28 exploit routers to enable DNS hijacking operations (7 Apr 2026)",
+          "url": "https://www.ncsc.gov.uk/news/apt28-exploit-routers-to-enable-DNS-hijacking-operations"
+        },
+        {
+          "source_name": "India Threat Tracker detection entra_aitm_risky_signin_token_replay",
+          "url": "https://github.com/sohankanna/india-threat-tracker/blob/main/detections/sigma/entra_aitm_risky_signin_token_replay.yml"
+        },
+        {
+          "source_name": "India Threat Tracker detection windows_suspicious_dns_server_change",
+          "url": "https://github.com/sohankanna/india-threat-tracker/blob/main/detections/sigma/windows_suspicious_dns_server_change.yml"
+        },
+        {
+          "source_name": "FrostArmada / APT28 M365 interception",
+          "url": "https://www.sohankanna.com/research/frostarmada-how-apt28-turned-old-home-routers-into-a-microsoft-365-interception-network"
+        },
+        {
+          "source_name": "Recorded Future: RedEcho targeting the Indian power sector",
+          "url": "https://www.recordedfuture.com/redecho-targeting-indian-power-sector"
+        },
+        {
+          "source_name": "RedEcho and the China-nexus grid targeting",
+          "url": "https://www.sohankanna.com/research/redecho-and-the-china-nexus-targeting-of-india-s-power-grid"
+        }
+      ],
+      "id": "report--c9fbe5bd-8e5c-4c73-9cc0-99ae5dafcba9",
+      "modified": "2026-10-20T00:00:00.000Z",
+      "name": "India threat assessment, October 2026",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "object_refs": [
+        "campaign--45f641b4-6869-4d37-bfc8-bd80f6140eac",
+        "campaign--6f698b73-0327-4f3c-a262-9fdfcaadc0da",
+        "campaign--d563f634-ffd2-4229-a82d-b06ae927989b",
+        "campaign--e359e282-92dc-4c27-b4d6-328d8cd04a74",
+        "intrusion-set--47ce2ecf-959f-4774-ad62-968712e65fe3",
+        "intrusion-set--49e9134d-1c01-4851-a9db-000725c7d845",
+        "intrusion-set--6f442db0-d02d-412d-bd34-ae81cd300f7a",
+        "vulnerability--15479d64-2f4a-46b0-b38c-63fa17897953",
+        "vulnerability--9b938d96-c356-419c-bd26-9cd6813a4d01",
+        "vulnerability--c4f27000-a0ec-407b-a25a-f97b3896fc5a",
+        "vulnerability--cc940f92-a3e8-49b8-a14d-0e8bc85d74f5",
+        "vulnerability--ccf445d7-c589-4083-a921-d13a258666ad",
+        "vulnerability--de9c42bc-5428-48bb-9d11-2ac184edc565"
+      ],
+      "published": "2026-10-20T00:00:00.000Z",
+      "report_types": [
+        "threat-report"
+      ],
+      "spec_version": "2.1",
+      "type": "report"
+    },
+    {
+      "created": "2026-10-20T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "description": "Ivanti Connect Secure, Policy Secure, and ZTA Gateways Stack-Based Buffer Overflow Vulnerability. Ivanti Connect Secure, Policy Secure, and ZTA Gateways contains a stack-based buffer overflow vulnerability that allows a remote unauthenticated attacker to achieve remote code execution.  In CISA KEV since 2025-04-04, with known ransomware use.",
+      "external_references": [
+        {
+          "external_id": "CVE-2025-22457",
+          "source_name": "cve"
+        },
+        {
+          "source_name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-22457"
+        },
+        {
+          "source_name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        }
+      ],
+      "id": "vulnerability--15479d64-2f4a-46b0-b38c-63fa17897953",
+      "modified": "2026-10-20T00:00:00.000Z",
+      "name": "CVE-2025-22457",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "vulnerability"
+    },
+    {
+      "created": "2026-10-20T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "description": "Citrix NetScaler ADC and Gateway Out-of-Bounds Read Vulnerability. Citrix NetScaler ADC and Gateway contain an out-of-bounds read vulnerability due to insufficient input validation. This vulnerability can lead to memory overread when the NetScaler is configured as a Gateway (VPN virtual server, ICA Proxy, CVPN, RDP Proxy) OR AAA virtual server. In CISA KEV since 2025-07-10, with known ransomware use.",
+      "external_references": [
+        {
+          "external_id": "CVE-2025-5777",
+          "source_name": "cve"
+        },
+        {
+          "source_name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-5777"
+        },
+        {
+          "source_name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        }
+      ],
+      "id": "vulnerability--9b938d96-c356-419c-bd26-9cd6813a4d01",
+      "modified": "2026-10-20T00:00:00.000Z",
+      "name": "CVE-2025-5777",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "vulnerability"
+    },
+    {
+      "created": "2026-10-20T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "description": "Palo Alto Networks PAN-OS Authentication Bypass Vulnerability. Palo Alto Networks PAN-OS contains an authentication bypass vulnerability that allows attackers to bypass security restrictions and establish an unauthorized VPN connection. In CISA KEV since 2026-05-29, with known ransomware use.",
+      "external_references": [
+        {
+          "external_id": "CVE-2026-0257",
+          "source_name": "cve"
+        },
+        {
+          "source_name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-0257"
+        },
+        {
+          "source_name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        }
+      ],
+      "id": "vulnerability--c4f27000-a0ec-407b-a25a-f97b3896fc5a",
+      "modified": "2026-10-20T00:00:00.000Z",
+      "name": "CVE-2026-0257",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "vulnerability"
+    },
+    {
+      "created": "2026-10-20T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "description": "Palo Alto Networks PAN-OS Code Injection Vulnerability. Palo Alto Networks PAN-OS contains a code injection vulnerability that could allow an authenticated attacker with network access to execute arbitrary code with root privileges on the firewall. In CISA KEV since 2026-10-14.",
+      "external_references": [
+        {
+          "external_id": "CVE-2026-0322",
+          "source_name": "cve"
+        },
+        {
+          "source_name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-0322"
+        },
+        {
+          "source_name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        }
+      ],
+      "id": "vulnerability--cc940f92-a3e8-49b8-a14d-0e8bc85d74f5",
+      "modified": "2026-10-20T00:00:00.000Z",
+      "name": "CVE-2026-0322",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "vulnerability"
+    },
+    {
+      "created": "2026-10-20T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "description": "Fortinet FortiOS and FortiProxy Authentication Bypass Vulnerability. Fortinet FortiOS and FortiProxy contain an authentication bypass vulnerability that may allow an unauthenticated, remote attacker to gain super-admin privileges via crafted requests to Node.js websocket module. In CISA KEV since 2025-01-14, with known ransomware use.",
+      "external_references": [
+        {
+          "external_id": "CVE-2024-55591",
+          "source_name": "cve"
+        },
+        {
+          "source_name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-55591"
+        },
+        {
+          "source_name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        }
+      ],
+      "id": "vulnerability--ccf445d7-c589-4083-a921-d13a258666ad",
+      "modified": "2026-10-20T00:00:00.000Z",
+      "name": "CVE-2024-55591",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "vulnerability"
+    },
+    {
+      "created": "2026-10-20T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "description": "Microsoft SharePoint Deserialization of Untrusted Data Vulnerability. Microsoft SharePoint Server on-premises contains a deserialization of untrusted data vulnerability that could allow an unauthorized attacker to execute code over a network. This vulnerability could be chained with CVE-2025-53771. CVE-2025-53770 is a patch bypass for CVE-2025-49704, and the updates for CVE-2025-53770 include more robust protection than those for CVE-2025-49704. In CISA KEV since 2025-07-20, with known ransomware use.",
+      "external_references": [
+        {
+          "external_id": "CVE-2025-53770",
+          "source_name": "cve"
+        },
+        {
+          "source_name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-53770"
+        },
+        {
+          "source_name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        }
+      ],
+      "id": "vulnerability--de9c42bc-5428-48bb-9d11-2ac184edc565",
+      "modified": "2026-10-20T00:00:00.000Z",
+      "name": "CVE-2025-53770",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "vulnerability"
+    }
+  ],
+  "type": "bundle"
+}

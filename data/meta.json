@@ -90,6 +90,15 @@
       "updated_by": "analyst",
       "cadence": "on-change",
       "description": "This manifest"
+    },
+    "stix": {
+      "file": "data/india-threat-tracker-stix.json",
+      "kind": "export",
+      "format": "stix",
+      "derived_from": "data/smishing-apk.json, data/apt-campaigns.json, data/assessment.json, data/exploited-cve.json",
+      "updated_by": "automation",
+      "cadence": "twice-daily",
+      "description": "STIX 2.1 Bundle of campaigns, intrusion sets, indicators, malware, ATT&CK techniques, referenced CVEs and the monthly assessment; see STIX-GUIDE.md"
     }
   }
 }

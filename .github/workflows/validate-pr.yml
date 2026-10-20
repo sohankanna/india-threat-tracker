@@ -29,10 +29,16 @@ jobs:
       - name: IOC exports match the campaign data
         run: python scripts/build_iocs.py --check
 
+      - name: STIX bundle matches the canonical feeds
+        run: python scripts/build_stix.py --check
+
+      - name: STIX 2.1 validation (OASIS validator)
+        run: stix2_validator data/india-threat-tracker-stix.json
+
       - name: Detection inventory + YAML/XML parse
         run: python scripts/check_inventory.py
 
-      - name: Tests (pipeline, IOC exports, detection fixtures)
+      - name: Tests (pipeline, IOC and STIX exports, detection fixtures)
         run: python -m unittest discover -s tests -v
 
       - name: Validate Sigma rules

@@ -1,2 +1,8 @@
 requests>=2.31
 jsonschema>=4.21
+# STIX 2.1 export (scripts/build_stix.py) and its validation.
+stix2>=3.0,<4
+stix2-patterns>=2.0,<3
+# Pinned: 3.3.x wheels ship without the OASIS JSON schemas, so the validator
+# cannot run. 3.2.0 bundles them.
+stix2-validator==3.2.0

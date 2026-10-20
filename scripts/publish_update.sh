@@ -35,8 +35,9 @@ generate() {
     "$PY" scripts/fetch_exploited.py --cache "$CACHE"
   fi
   "$PY" scripts/build_iocs.py
+  "$PY" scripts/build_stix.py
   "$PY" scripts/validate.py
-  "$PY" -m unittest tests.test_pipeline tests.test_iocs
+  "$PY" -m unittest tests.test_pipeline tests.test_iocs tests.test_stix
   (cd scripts && "$PY" make_tweet_draft.py)
 }
 
@@ -45,12 +46,12 @@ for attempt in $(seq 1 "$ATTEMPTS"); do
     echo "::notice::$BRANCH moved while the update ran. Rebuilding on top of it (attempt $attempt)."
     git fetch --quiet "$REMOTE" "$BRANCH"
     git reset --quiet --hard "$REMOTE/$BRANCH"
-    git clean --quiet -fd -- data drafts
+    git clean --quiet -fd -- data drafts stix
   fi
 
   generate "$attempt"
 
-  git add data/ drafts/
+  git add data/ drafts/ stix/
   if git diff --cached --quiet; then
     echo "No changes."
     exit 0
