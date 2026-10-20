@@ -1,9 +1,11 @@
 name: Wazuh integration
 
 # Installs a real Wazuh manager, loads detections/wazuh/local_rules.xml and
-# replays every detection fixture through logtest as the raw log the manager
-# would receive. The expected-versus-observed table is shown in the run summary
-# and kept as an artifact.
+# replays every detection fixture as the raw log the manager would receive:
+# PAN-OS and Azure Graph through logtest, Sysmon through the analysisd queue as
+# a Windows agent sends it (logtest cannot decode Windows eventchannel events).
+# The expected-versus-observed table is shown in the run summary and kept as an
+# artifact.
 
 on:
   workflow_dispatch: {}
@@ -52,14 +54,14 @@ jobs:
         run: |
           sudo /var/ossec/bin/wazuh-control start
           for i in $(seq 1 60); do
-            sudo test -S /var/ossec/queue/sockets/logtest && exit 0
+            sudo test -S /var/ossec/queue/sockets/logtest && sudo test -S /var/ossec/queue/sockets/queue && exit 0
             sleep 2
           done
-          echo "::error::logtest socket did not appear"
+          echo "::error::logtest or analysisd queue socket did not appear"
           sudo tail -n 100 /var/ossec/logs/ossec.log
           exit 1
 
-      - name: Replay fixtures through logtest
+      - name: Replay fixtures through the manager
         run: |
           sudo python3 detections/tests/wazuh_logtest.py --out wazuh-logtest-results
           cat wazuh-logtest-results.md >> "$GITHUB_STEP_SUMMARY"
@@ -69,6 +71,8 @@ jobs:
         run: |
           [ -f wazuh-logtest-results.md ] && cat wazuh-logtest-results.md >> "$GITHUB_STEP_SUMMARY" || true
           sudo tail -n 100 /var/ossec/logs/ossec.log || true
+          echo "--- last alerts ---"
+          sudo tail -n 20 /var/ossec/logs/alerts/alerts.json || true
 
       - uses: actions/upload-artifact@v4
         if: always()

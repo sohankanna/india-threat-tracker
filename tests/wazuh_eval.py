@@ -98,11 +98,46 @@ PAN_ORDER_2 = ["content_threat_type", "generated_time", "virtual_system", "event
 SYSLOG_HEADER = regex.compile(r"^[A-Z][a-z]{2} [ \d]\d \d\d:\d\d:\d\d \S+ ")
 
 
+SEVERITY = {"1": "CRITICAL", "2": "ERROR", "3": "WARNING", "4": "INFORMATION", "5": "VERBOSE"}
+
+
+def _lower_first(name):
+    return name[:1].lower() + name[1:]
+
+
+def decode_winevt(raw):
+    """The parts of analysisd's DecodeWinevt these rules depend on: System
+    elements and EventData <Data Name=...> become win.system.* / win.eventdata.*
+    with the first letter lower-cased; severityValue comes from Level and is only
+    set when Keywords is present too."""
+    event = ET.fromstring(json.loads(raw)["Event"])
+    ns = {"e": "http://schemas.microsoft.com/win/2004/08/events/event"}
+    ev, system = {}, event.find("e:System", ns)
+    level = keywords = None
+    for el in system:
+        tag = el.tag.split("}")[1]
+        if tag == "Provider":
+            ev["win.system.providerName"] = el.get("Name", "")
+        elif tag in ("TimeCreated", "Execution", "Security"):
+            continue
+        else:
+            ev[f"win.system.{_lower_first(tag)}"] = el.text or ""
+            level = el.text if tag == "Level" else level
+            keywords = el.text if tag == "Keywords" else keywords
+    if level and keywords:
+        ev["win.system.severityValue"] = SEVERITY.get(level, "UNKNOWN")
+    for d in event.findall("e:EventData/e:Data", ns):
+        if d.text:
+            ev[f"win.eventdata.{_lower_first(d.get('Name'))}"] = d.text
+    return ev
+
+
 def decode_raw(kind, raw):
     """Return (parent_sid, decoded_fields) for a raw log, as the manager would."""
     if kind == "sysmon":
-        ev = flatten(json.loads(raw))
-        if ev.get("win.system.channel") != wazuh_logs.SYSMON_CHANNEL:
+        ev = decode_winevt(raw)
+        if (ev.get("win.system.channel") != wazuh_logs.SYSMON_CHANNEL
+                or ev.get("win.system.severityValue") != "INFORMATION"):
             return None, ev
         return {"1": "61603", "13": "61615"}.get(ev.get("win.system.eventID")), ev
     if kind == "graph":

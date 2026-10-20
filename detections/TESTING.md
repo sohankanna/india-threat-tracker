@@ -12,7 +12,7 @@ catches real attacks in your environment. It means the following:
 | Backend | How the fixtures are run | What a pass shows |
 |---------|--------------------------|-------------------|
 | **Sigma** (canonical) | **Executed.** [`tests/sigma_eval.py`](../tests/sigma_eval.py) evaluates each rule against every fixture, following the Sigma specification for the features these rules use (and refusing anything else). | The canonical logic produces the expected result for every fixture. |
-| **Wazuh** | **Emulated on every run, and on a real manager in a separate CI job.** Every fixture is turned into the raw log a manager receives ([`tests/wazuh_logs.py`](../tests/wazuh_logs.py): eventchannel JSON, PAN-OS syslog CSV, Graph JSON). [`tests/wazuh_eval.py`](../tests/wazuh_eval.py) decodes it as Wazuh 4.14.9 does (the PAN-OS decoder regexes are copied from the ruleset) and applies the rules. The [Wazuh integration workflow](../.github/workflows/wazuh-integration.yml) installs `wazuh-manager` 4.14.9, loads `local_rules.xml` and replays the same raw logs through the real logtest socket ([`tests/wazuh_logtest.py`](tests/wazuh_logtest.py)), publishing expected versus observed per event. | Emulation: rule logic and the decoding steps modelled. The integration job: what a real 4.14.9 manager decodes and fires. Check its latest run in the Actions tab; until it has passed, the Wazuh rules are validated by emulation only. |
+| **Wazuh** | **Emulated on every run, and on a real manager in a separate CI job.** Every fixture is turned into the raw log a manager receives ([`tests/wazuh_logs.py`](../tests/wazuh_logs.py): eventchannel JSON, PAN-OS syslog CSV, Graph JSON). [`tests/wazuh_eval.py`](../tests/wazuh_eval.py) decodes it as Wazuh 4.14.9 does (the PAN-OS decoder regexes are copied from the ruleset) and applies the rules. The [Wazuh integration workflow](../.github/workflows/wazuh-integration.yml) installs `wazuh-manager` 4.14.9, loads `local_rules.xml` and replays the same raw logs on the real manager ([`tests/wazuh_logtest.py`](tests/wazuh_logtest.py)): PAN-OS and Graph through the logtest socket, Sysmon through the analysisd queue exactly as a Windows agent sends it, read back from `alerts.json`. It publishes expected versus observed per event. | Emulation: rule logic and the decoding steps modelled. The integration job: what a real 4.14.9 manager decodes and fires. Check its latest run in the Actions tab; until it has passed, the Wazuh rules are validated by emulation only. |
 | **Splunk** | **Not executed.** The DNS and PAN-OS searches are emulated from their own query text (split pattern, extraction regex and CIDR ranges are read out of the `.spl` file and applied to the fixtures). The rest are checked statically. | The parts that previously went wrong behave as intended. SPL is not run against a Splunk instance. |
 | **Elastic** | **Not executed.** Same approach for the ES\|QL DNS and PAN-OS queries; the EQL/KQL rules are checked statically. | As for Splunk. Queries are not run against Elasticsearch. |
 
@@ -27,6 +27,13 @@ On top of the fixtures, CI checks that the backends agree with each other:
 - **The PAN-OS admin allowlist** is the same CIDR set in all four backends.
 - **The archive rule** has no `.lnk` command-line shortcut in any backend, and
   **the Entra primary rule** never matches error 50140.
+
+The real manager also showed why Sysmon cannot be checked with `wazuh-logtest`:
+logtest always takes the generic decoder path and never calls the Windows
+eventchannel decoder, so a Sysmon event replayed there is decoded as plain JSON
+and no Windows rule (60000 and below) can fire. The integration job therefore
+sends Sysmon events through the agent queue instead; tests that "pass" a Windows
+rule in logtest prove nothing.
 
 Decoding raw logs found a real defect the earlier emulation (which started from
 pre-decoded fields) could not: Wazuh's Palo Alto decoder captures every field as
