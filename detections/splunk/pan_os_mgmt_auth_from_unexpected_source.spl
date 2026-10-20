@@ -1,0 +1,14 @@
+# PAN-OS Management Auth From Unexpected Source  (CVE-2026-0322)
+# Source rule: ../sigma/pan_os_mgmt_auth_from_unexpected_source.yml
+# Write-up:    https://www.sohankanna.com/research/cve-2026-0322-pan-os-management-interface-zero-day-from-admin-login-to-root
+#
+# Requires: Splunk Add-on for Palo Alto Networks (Splunk_TA_paloalto).
+#   PAN-OS SYSTEM log forwarded as sourcetype pan:system (admin auth events).
+#   Field names below follow the add-on's CIM mapping; adjust if you use raw syslog.
+# TUNE: src_allowlist = your jump-box / admin CIDRs.
+
+sourcetype=pan:system subtype=auth (action=success OR event_desc="*authenticated*" OR result="success")
+| where NOT (cidrmatch("10.0.0.0/8", src_ip))      ``` TUNE: add each approved admin CIDR as another cidrmatch() OR clause ```
+| stats count min(_time) as firstTime max(_time) as lastTime by admin, src_ip, event_desc, vsys, host
+| `security_content_ctime(firstTime)` | `security_content_ctime(lastTime)`
+| sort - count

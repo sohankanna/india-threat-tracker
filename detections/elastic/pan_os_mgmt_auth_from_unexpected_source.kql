@@ -1,0 +1,9 @@
+// PAN-OS Management Auth From Unexpected Source  (CVE-2026-0322)
+// Source rule: ../sigma/pan_os_mgmt_auth_from_unexpected_source.yml
+// Elastic rule type: Query (KQL) | Index: logs-panw.panos-* (Elastic PAN-OS integration / Filebeat panw module)
+// TUNE: replace the source.ip allowlist subnet(s) with your admin jump-box CIDRs.
+
+event.module:"panw" and event.dataset:"panw.panos"
+  and panw.panos.sub_type:"auth"
+  and event.outcome:"success"
+  and not source.ip:"10.0.0.0/8"

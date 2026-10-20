@@ -1,0 +1,7 @@
+// Office Document Spawning a Script Interpreter - Crimson RAT Macro  (APT36)
+// Source rule: ../sigma/office_document_spawns_script_interpreter.yml
+// Elastic rule type: EQL | Index: logs-endpoint.events.process-* or winlogbeat-* (Sysmon EID 1)
+
+process where event.type == "start"
+  and process.parent.name : ("winword.exe", "excel.exe", "powerpnt.exe")
+  and process.name : ("wscript.exe", "cscript.exe", "powershell.exe", "mshta.exe", "cmd.exe")

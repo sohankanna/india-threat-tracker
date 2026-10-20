@@ -1,0 +1,8 @@
+// Entra ID High-Risk Sign-In - Possible AiTM Token Replay  (FrostArmada / APT28)
+// Source rule: ../sigma/entra_aitm_risky_signin_token_replay.yml
+// Elastic rule type: Query (KQL) | Index: filebeat-* / logs-azure.signinlogs-* (Elastic Azure integration)
+// error_code 0 = success, 50140 = interrupted by MFA / keep-me-signed-in.
+
+event.dataset:"azure.signinlogs"
+  and azure.signinlogs.properties.risk_level_aggregated:"high"
+  and azure.signinlogs.properties.status.error_code:(0 or 50140)

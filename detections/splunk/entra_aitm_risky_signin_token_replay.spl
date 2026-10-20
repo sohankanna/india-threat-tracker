@@ -1,0 +1,16 @@
+# Entra ID High-Risk Sign-In - Possible AiTM Token Replay  (FrostArmada / APT28)
+# Source rule: ../sigma/entra_aitm_risky_signin_token_replay.yml
+# Write-up:    https://www.sohankanna.com/research/frostarmada-how-apt28-turned-old-home-routers-into-a-microsoft-365-interception-network
+#
+# Requires: Splunk Add-on for Microsoft Azure / Entra ID sign-in logs.
+#   sourcetype azure:aad:signin (a.k.a. azuread:signin depending on TA version).
+# ResultType 0 = success, 50140 = interrupted by "keep me signed in" / MFA.
+
+sourcetype=azure:aad:signin (riskLevelAggregated=high OR properties.riskLevelAggregated=high)
+    (status.errorCode=0 OR status.errorCode=50140 OR properties.status.errorCode=0 OR properties.status.errorCode=50140)
+| eval user=coalesce(userPrincipalName,'properties.userPrincipalName'),
+       ip=coalesce(ipAddress,'properties.ipAddress'),
+       ua=coalesce(userAgent,'properties.userAgent'),
+       app=coalesce(appDisplayName,'properties.appDisplayName')
+| table _time, user, ip, ua, app, riskLevelAggregated
+| sort - _time

@@ -1,0 +1,11 @@
+# Office Document Spawning a Script Interpreter - Crimson RAT Macro  (APT36)
+# Source rule: ../sigma/office_document_spawns_script_interpreter.yml
+# Write-up:    https://www.sohankanna.com/research/transparent-tribe-apt36-the-persistent-threat-to-indian-government-and-defence
+#
+# Requires: Sysmon + Splunk Add-on for Sysmon. Process create = Event ID 1.
+
+sourcetype="XmlWinEventLog:Microsoft-Windows-Sysmon/Operational" EventCode=1
+    (ParentImage="*\\winword.exe" OR ParentImage="*\\excel.exe" OR ParentImage="*\\powerpnt.exe")
+    (Image="*\\wscript.exe" OR Image="*\\cscript.exe" OR Image="*\\powershell.exe" OR Image="*\\mshta.exe" OR Image="*\\cmd.exe")
+| table _time, host, user, ParentImage, Image, CommandLine
+| sort - _time

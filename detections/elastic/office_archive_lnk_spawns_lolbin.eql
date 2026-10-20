@@ -1,0 +1,10 @@
+// Archive/LNK Spawning a LOLBin - SideCopy / APT36 Delivery
+// Source rule: ../sigma/office_archive_lnk_spawns_lolbin.yml
+// Elastic rule type: EQL | Index: logs-endpoint.events.process-* or winlogbeat-* (Sysmon EID 1)
+
+process where event.type == "start"
+  and process.parent.name : ("explorer.exe", "7zFM.exe", "WinRAR.exe", "Winzip.exe")
+  and (
+    process.name : ("mshta.exe", "powershell.exe", "pwsh.exe", "rundll32.exe", "cmd.exe")
+    or process.command_line : "*.lnk*"
+  )

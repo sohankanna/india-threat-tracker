@@ -1,0 +1,10 @@
+// Suspicious DNS Server Change on Windows Endpoint  (FrostArmada / APT28)
+// Source rule: ../sigma/windows_suspicious_dns_server_change.yml
+// Elastic rule type: EQL | Index: logs-endpoint.events.registry-* or winlogbeat-* (Sysmon EID 13)
+// TUNE: the "not registry.data.strings" clause keeps only non-corporate resolvers.
+
+registry where registry.path : "*\\Services\\Tcpip\\Parameters\\Interfaces\\*"
+  and (registry.value : "NameServer" or registry.value : "DhcpNameServer")
+  and registry.data.strings != null
+  and not registry.data.strings : ("10.*", "172.16.*", "172.17.*", "172.18.*", "172.19.*",
+      "172.2*", "172.30.*", "172.31.*", "192.168.*")   /* TUNE: add your ISP/corp resolvers */

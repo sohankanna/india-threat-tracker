@@ -1,11 +1,20 @@
 # Detection pack
 
-Open, tunable detections for the threats tracked in this repo. Two parts:
+Open, tunable detections for the threats tracked in this repo. The Sigma rules
+are the canonical logic; the same five rules are also shipped pre-converted for
+Splunk, Elastic and Wazuh so you can drop them straight into your SIEM.
 
 | Folder | What | Format |
 |--------|------|--------|
-| [`sigma/`](sigma/) | Endpoint / cloud / network detections for the CVEs, APT TTPs and malware in the tracker | [Sigma](https://sigmahq.io) YAML |
+| [`sigma/`](sigma/) | Canonical endpoint / cloud / network detections | [Sigma](https://sigmahq.io) YAML |
+| [`splunk/`](splunk/) | Same 5 rules as Splunk searches | SPL |
+| [`elastic/`](elastic/) | Same 5 rules for Elastic | EQL (endpoint) / KQL (logs) |
+| [`wazuh/`](wazuh/) | Same 5 rules as Wazuh local rules | `local_rules.xml` |
 | [`fraud/`](fraud/) | Payments-fraud detection logic for the UPI / fake-APK kill chain | schema-agnostic YAML |
+
+**→ [`DATA-SOURCES.md`](DATA-SOURCES.md)** is the first thing to read: what log
+source and telemetry each rule needs to actually fire, and a benign validation
+step for each. A rule you can't feed is a rule that silently never alerts.
 
 Every rule links back to the write-up on [sohankanna.com](https://www.sohankanna.com) that explains the threat it covers.
 

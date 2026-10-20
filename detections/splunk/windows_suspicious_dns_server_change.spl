@@ -1,0 +1,14 @@
+# Suspicious DNS Server Change on Windows Endpoint  (FrostArmada / APT28)
+# Source rule: ../sigma/windows_suspicious_dns_server_change.yml
+# Write-up:    https://www.sohankanna.com/research/frostarmada-how-apt28-turned-old-home-routers-into-a-microsoft-365-interception-network
+#
+# Requires: Sysmon + Splunk Add-on for Sysmon. Registry value-set = Event ID 13.
+#   Sysmon config must include RegistryEvent (Set) for Tcpip\Parameters\Interfaces.
+# TUNE: the regex in `where` keeps only changes to a non-corporate resolver.
+
+sourcetype="XmlWinEventLog:Microsoft-Windows-Sysmon/Operational" EventCode=13
+    TargetObject="*\\Services\\Tcpip\\Parameters\\Interfaces\\*"
+    (TargetObject="*NameServer" OR TargetObject="*DhcpNameServer")
+| where NOT match(Details, "^(10\.|172\.(1[6-9]|2[0-9]|3[01])\.|192\.168\.)")   ``` TUNE: add your ISP/corp resolver IPs ```
+| table _time, host, user, Image, TargetObject, Details
+| sort - _time

@@ -1,0 +1,72 @@
+<!--
+  India Threat Tracker - Wazuh detection rules
+  Source Sigma rules: ../sigma/   |   Write-ups: https://www.sohankanna.com/research/
+  Drop into /var/ossec/etc/rules/local_rules.xml (or a file alongside it) and restart wazuh-manager.
+
+  Requirements by rule:
+    100210-100212  Windows + Sysmon (wazuh-agent, Sysmon ruleset enabled). EID 1 = process, EID 13 = registry.
+    100220         PAN-OS syslog forwarded to Wazuh (Palo Alto decoder). TUNE with CDB allowlist (see note).
+    100230         Entra ID sign-in logs via the Azure integration (wodle azure-logs). Field paths may vary by schema.
+
+  All rules are experimental. Expect to tune. Defensive use only.
+-->
+<group name="india_threat_tracker,sysmon,windows,">
+
+  <!-- Office doc spawning a script interpreter - Crimson RAT macro (APT36) -->
+  <rule id="100210" level="12">
+    <if_sid>61603</if_sid>
+    <field name="win.eventdata.parentImage" type="pcre2">(?i)\\(winword|excel|powerpnt)\.exe$</field>
+    <field name="win.eventdata.image" type="pcre2">(?i)\\(wscript|cscript|powershell|mshta|cmd)\.exe$</field>
+    <description>APT36: Office app $(win.eventdata.parentImage) spawned interpreter $(win.eventdata.image)</description>
+    <mitre><id>T1059</id><id>T1204.002</id></mitre>
+  </rule>
+
+  <!-- Archive/LNK spawning a LOLBin - SideCopy / APT36 delivery -->
+  <rule id="100211" level="12">
+    <if_sid>61603</if_sid>
+    <field name="win.eventdata.parentImage" type="pcre2">(?i)\\(explorer|7zFM|WinRAR|Winzip)\.exe$</field>
+    <field name="win.eventdata.image" type="pcre2">(?i)\\(mshta|powershell|pwsh|rundll32|cmd)\.exe$</field>
+    <description>SideCopy/APT36: $(win.eventdata.parentImage) spawned LOLBin $(win.eventdata.image)</description>
+    <mitre><id>T1204.002</id><id>T1218.005</id></mitre>
+  </rule>
+
+  <!-- Suspicious DNS server change on endpoint (FrostArmada / APT28) -->
+  <!-- Sysmon registry-set (EID 13). TUNE: set negate match to your corp/ISP resolvers. -->
+  <rule id="100212" level="10">
+    <if_sid>61615</if_sid>
+    <field name="win.eventdata.targetObject" type="pcre2">(?i)\\Services\\Tcpip\\Parameters\\Interfaces\\.*(NameServer|DhcpNameServer)$</field>
+    <field name="win.eventdata.details" negate="yes" type="pcre2">^(10\.|172\.(1[6-9]|2[0-9]|3[01])\.|192\.168\.)</field>
+    <description>FrostArmada: endpoint DNS set to non-corporate resolver $(win.eventdata.details)</description>
+    <mitre><id>T1565.001</id><id>T1071.004</id></mitre>
+  </rule>
+
+</group>
+
+<!-- PAN-OS management auth from unexpected source (CVE-2026-0322).
+     Requires PAN-OS syslog -> Wazuh (Palo Alto decoder). Best effort match on a
+     successful admin auth; source allowlisting is best done with a CDB list:
+       1) create /var/ossec/etc/lists/pan_admin_allowlist with lines like  10.0.0.5:admin
+       2) add  <list>etc/lists/pan_admin_allowlist</list>  and a lookup field, then negate.
+     The rule below fires on every PAN admin auth success - pair it with the CDB negate to cut noise. -->
+<group name="india_threat_tracker,paloalto,">
+  <rule id="100220" level="8">
+    <decoded_as>paloalto</decoded_as>
+    <field name="type">SYSTEM</field>
+    <field name="action" type="pcre2">(?i)auth.*success|authenticated</field>
+    <description>PAN-OS: management auth success - verify source is an approved admin host (CVE-2026-0322)</description>
+    <mitre><id>T1133</id></mitre>
+  </rule>
+</group>
+
+<!-- Entra ID high-risk sign-in / AiTM token replay (FrostArmada / APT28).
+     Requires the Azure integration (wodle name="azure-logs" pulling signinLogs).
+     Field paths depend on how your pipeline flattens the JSON; adjust to match. -->
+<group name="india_threat_tracker,azure,entra,">
+  <rule id="100230" level="12">
+    <decoded_as>json</decoded_as>
+    <field name="azure.properties.riskLevelAggregated" type="pcre2">(?i)^high$</field>
+    <field name="azure.properties.status.errorCode" type="pcre2">^(0|50140)$</field>
+    <description>FrostArmada: high-risk Entra sign-in succeeded/MFA-interrupted - possible AiTM token replay</description>
+    <mitre><id>T1557</id><id>T1550.001</id></mitre>
+  </rule>
+</group>
