@@ -31,6 +31,7 @@ actors behind targeted intrusions, and detection rules for all of it.
 | [`data/assessment.json`](data/assessment.json) | The monthly ranked analyst assessment | Monthly |
 | [`data/relevance-overrides.json`](data/relevance-overrides.json) | Hand-reviewed India-relevance decisions; the pipeline reads them and never overwrites them | When reviewed |
 | [`data/india-threat-tracker-stix.json`](data/india-threat-tracker-stix.json) | STIX 2.1 Bundle of the campaigns, actors, indicators, techniques and assessment: see [STIX-GUIDE.md](STIX-GUIDE.md) | Twice daily, automated |
+| [`data/kev-affected.json`](data/kev-affected.json) | Affected products and versions for every KEV CVE, from the official CVE records; feeds the [Exposure Matcher](EXPOSURE-MATCHER.md) | Twice daily, automated |
 | [`data/meta.json`](data/meta.json) | Manifest of every data file, with its schema and cadence | When files change |
 
 Every JSON feed is validated against a schema in [`schema/`](schema/) on every
@@ -51,6 +52,16 @@ curl -s $RAW/iocs.txt | grep -v '^#' | grep -v '^$'
 # Indicators with provenance, for a spreadsheet or SIEM lookup
 curl -s $RAW/iocs.csv
 ```
+
+## Exposure Matcher (research preview)
+
+Check an asset inventory against every KEV CVE, using the version data in the
+official CVE records: [in your browser](https://www.sohankanna.com/tracker/exposure)
+(the file never leaves it) or offline with `matcher/cli.ts`. Results are
+"affected version", "candidate" or "insufficient evidence", each with its
+evidence and a documented priority tier. About 40% of KEV CVEs carry version
+data that can be compared; the rest stay candidates. See
+[EXPOSURE-MATCHER.md](EXPOSURE-MATCHER.md).
 
 ## Detections
 

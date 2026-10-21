@@ -29,6 +29,18 @@ jobs:
       - name: IOC exports match the campaign data
         run: python scripts/build_iocs.py --check
 
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Exposure Matcher tests (TypeScript engine)
+        run: node --experimental-strip-types --no-warnings --test matcher/test/*.test.ts
+
+      - name: Affected-version data re-synced with the KEV feed (offline)
+        # New KEV CVEs are fetched by the update job; here any not fetched yet are
+        # added as "unavailable" so tests check the file against the current feed.
+        run: python scripts/build_affected.py --offline
+
       - name: STIX bundle matches the canonical feeds
         run: python scripts/build_stix.py --check
 

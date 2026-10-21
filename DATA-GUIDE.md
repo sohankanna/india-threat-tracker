@@ -23,6 +23,7 @@ https://raw.githubusercontent.com/sohankanna/india-threat-tracker/main/data/
 | `assessment.json` | The monthly ranked analyst assessment | Monthly | [`assessment.schema.json`](schema/assessment.schema.json) |
 | `relevance-overrides.json` | Hand-reviewed India-relevance decisions the pipeline applies | When an entry is reviewed | [`relevance-overrides.schema.json`](schema/relevance-overrides.schema.json) |
 | `india-threat-tracker-stix.json` | STIX 2.1 Bundle for CTI platforms; mapping, validation and limitations in [STIX-GUIDE.md](STIX-GUIDE.md) | Rebuilt by every automated update; CI rejects a stale bundle | OASIS STIX 2.1 |
+| `kev-affected.json` | Affected products and versions for every KEV CVE, from the official CVE records, not interpreted; used by the [Exposure Matcher](EXPOSURE-MATCHER.md) | Twice daily, automated | [`kev-affected.schema.json`](schema/kev-affected.schema.json) |
 | `meta.json` | Manifest of every data file: kind, format, schema, who updates it and how often | When a file is added or its cadence changes | [`meta.schema.json`](schema/meta.schema.json) |
 
 Each JSON file has its **own** schema; there is no single envelope shared by

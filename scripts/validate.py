@@ -15,6 +15,7 @@ PAIRS = [
     ("data/assessment.json", "schema/assessment.schema.json"),
     ("data/relevance-overrides.json", "schema/relevance-overrides.schema.json"),
     ("data/meta.json", "schema/meta.schema.json"),
+    ("data/kev-affected.json", "schema/kev-affected.schema.json"),
 ]
 
 

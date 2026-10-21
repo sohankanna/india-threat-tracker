@@ -99,6 +99,16 @@
       "updated_by": "automation",
       "cadence": "twice-daily",
       "description": "STIX 2.1 Bundle of campaigns, intrusion sets, indicators, malware, ATT&CK techniques, referenced CVEs and the monthly assessment; see STIX-GUIDE.md"
+    },
+    "kev-affected": {
+      "file": "data/kev-affected.json",
+      "kind": "export",
+      "format": "json",
+      "schema": "schema/kev-affected.schema.json",
+      "derived_from": "data/exploited-cve.json and the official CVE records (CVE Project cvelistV5)",
+      "updated_by": "automation",
+      "cadence": "twice-daily",
+      "description": "Affected products and versions for every KEV CVE, as the CVE record states them; the Exposure Matcher's vulnerability data"
     }
   }
 }

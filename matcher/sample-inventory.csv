@@ -1,0 +1,10 @@
+asset_id,vendor,product,version,cpe,internet_exposed,criticality,environment
+edge-fw-01,Palo Alto Networks,PAN-OS,12.1.4-h11,,yes,critical,production
+edge-fw-02,Palo Alto Networks,PAN-OS,12.1.7-h8,,yes,critical,production
+branch-fw-01,Fortinet,FortiGate,7.4.5,,yes,high,production
+remote-vpn-01,Ivanti,Connect Secure,22.7R2.3,,yes,high,production
+adc-01,Citrix,NetScaler ADC,14.1-60.10,,yes,high,production
+intranet-01,Microsoft,SharePoint Server 2019,16.0.10417.20000,,no,medium,production
+mail-gw-01,Cisco,Secure Email,,,yes,high,production
+build-01,Acme Example,Internal Builder,3.2.1,,no,low,development
+lab-vpn-01,Pulse Secure,Pulse Connect Secure,,,unknown,medium,lab

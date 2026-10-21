@@ -1,0 +1,188 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "KEV affected products and versions",
+  "description": "Affected products/versions per KEV CVE from the official CVE records, not interpreted. Built by scripts/build_affected.py.",
+  "type": "object",
+  "required": [
+    "feed",
+    "source",
+    "coverage",
+    "items"
+  ],
+  "properties": {
+    "feed": {
+      "const": "kev-affected"
+    },
+    "description": {
+      "type": "string"
+    },
+    "source": {
+      "type": "string"
+    },
+    "kev_generated_at": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "coverage": {
+      "type": "object",
+      "required": [
+        "kev_cves",
+        "records_published",
+        "with_version_entries",
+        "unavailable",
+        "fetch_failures_this_run"
+      ],
+      "properties": {
+        "kev_cves": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "records_published": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "with_version_entries": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "unavailable": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "fetch_failures_this_run": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "additionalProperties": false
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "cve",
+          "record_state",
+          "record_updated",
+          "products"
+        ],
+        "properties": {
+          "cve": {
+            "type": "string",
+            "pattern": "^CVE-\\d{4}-\\d{4,}$"
+          },
+          "record_state": {
+            "enum": [
+              "PUBLISHED",
+              "REJECTED",
+              "RESERVED",
+              "unavailable",
+              "UNKNOWN"
+            ]
+          },
+          "record_updated": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "products": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "source",
+                "vendor",
+                "product",
+                "default_status",
+                "versions"
+              ],
+              "properties": {
+                "source": {
+                  "type": "string"
+                },
+                "vendor": {
+                  "type": "string"
+                },
+                "product": {
+                  "type": "string"
+                },
+                "default_status": {
+                  "type": "string"
+                },
+                "versions": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "version": {
+                        "type": "string"
+                      },
+                      "status": {
+                        "type": "string"
+                      },
+                      "less_than": {
+                        "type": "string"
+                      },
+                      "less_than_or_equal": {
+                        "type": "string"
+                      },
+                      "version_type": {
+                        "type": "string"
+                      },
+                      "changes": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "required": [
+                            "at",
+                            "status"
+                          ],
+                          "properties": {
+                            "at": {
+                              "type": "string"
+                            },
+                            "status": {
+                              "type": [
+                                "string",
+                                "null"
+                              ]
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "additionalProperties": false
+                  }
+                },
+                "cpes": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "platforms": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "modules": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              },
+              "additionalProperties": false
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

@@ -34,10 +34,17 @@ generate() {
   else
     "$PY" scripts/fetch_exploited.py --cache "$CACHE"
   fi
+  # Affected versions for the Exposure Matcher. Best-effort network fetch on the
+  # first attempt; a retry (or a test run) re-syncs with the KEV feed offline.
+  if [[ -n "${UPDATE_FROM_CACHE:-}" || "$attempt" -gt 1 ]]; then
+    "$PY" scripts/build_affected.py --offline
+  else
+    "$PY" scripts/build_affected.py
+  fi
   "$PY" scripts/build_iocs.py
   "$PY" scripts/build_stix.py
   "$PY" scripts/validate.py
-  "$PY" -m unittest tests.test_pipeline tests.test_iocs tests.test_stix
+  "$PY" -m unittest tests.test_pipeline tests.test_iocs tests.test_stix tests.test_exposure
   (cd scripts && "$PY" make_tweet_draft.py)
 }
 

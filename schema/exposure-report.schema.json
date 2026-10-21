@@ -1,0 +1,272 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Exposure Matcher report (JSON export)",
+  "description": "Produced in the browser or by matcher/cli.ts. See EXPOSURE-MATCHER.md for field meanings and methodology.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "report",
+    "matcher_version",
+    "data",
+    "scope",
+    "summary",
+    "issues",
+    "findings"
+  ],
+  "properties": {
+    "report": {
+      "const": "india-threat-tracker-exposure"
+    },
+    "matcher_version": {
+      "type": "string"
+    },
+    "data": {
+      "type": "object",
+      "required": [
+        "kev_generated_at",
+        "affected_generated_from"
+      ],
+      "properties": {
+        "kev_generated_at": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "affected_generated_from": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "scope": {
+      "type": "string"
+    },
+    "summary": {
+      "type": "object",
+      "required": [
+        "assets",
+        "assets_with_findings",
+        "affected",
+        "candidate",
+        "insufficient",
+        "no-match"
+      ],
+      "properties": {
+        "assets": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "assets_with_findings": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "affected": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "candidate": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "insufficient": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "no-match": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "additionalProperties": false
+    },
+    "issues": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "row",
+          "level",
+          "message"
+        ],
+        "properties": {
+          "row": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "level": {
+            "enum": [
+              "error",
+              "warning"
+            ]
+          },
+          "message": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "findings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "asset_row",
+          "asset_id",
+          "vendor",
+          "product",
+          "version",
+          "cve",
+          "status",
+          "identity",
+          "evidence",
+          "record_product",
+          "record_source",
+          "affected_ranges",
+          "kev_date_added",
+          "kev_due_date",
+          "required_action",
+          "known_ransomware",
+          "epss",
+          "epss_date",
+          "india_relevance",
+          "internet_exposed",
+          "criticality",
+          "environment",
+          "tier",
+          "why",
+          "references"
+        ],
+        "properties": {
+          "asset_row": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "asset_id": {
+            "type": "string"
+          },
+          "vendor": {
+            "type": "string"
+          },
+          "product": {
+            "type": "string"
+          },
+          "version": {
+            "type": "string"
+          },
+          "cve": {
+            "type": "string",
+            "pattern": "^CVE-\\d{4}-\\d{4,}$"
+          },
+          "status": {
+            "enum": [
+              "affected",
+              "candidate",
+              "insufficient",
+              "no-match"
+            ]
+          },
+          "identity": {
+            "type": "string"
+          },
+          "evidence": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string"
+            }
+          },
+          "record_product": {
+            "type": "string"
+          },
+          "record_source": {
+            "type": "string"
+          },
+          "affected_ranges": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "kev_date_added": {
+            "type": "string"
+          },
+          "kev_due_date": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "required_action": {
+            "type": "string"
+          },
+          "known_ransomware": {
+            "type": "boolean"
+          },
+          "epss": {
+            "type": [
+              "number",
+              "null"
+            ],
+            "minimum": 0,
+            "maximum": 1
+          },
+          "epss_date": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "india_relevance": {
+            "type": "string"
+          },
+          "internet_exposed": {
+            "enum": [
+              "yes",
+              "no",
+              "unknown"
+            ]
+          },
+          "criticality": {
+            "enum": [
+              "low",
+              "medium",
+              "high",
+              "critical",
+              "unspecified"
+            ]
+          },
+          "environment": {
+            "type": "string"
+          },
+          "tier": {
+            "enum": [
+              "P1",
+              "P2",
+              "P3",
+              "P4"
+            ]
+          },
+          "why": {
+            "type": "string",
+            "minLength": 5
+          },
+          "references": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "format": "uri"
+            }
+          }
+        }
+      }
+    }
+  }
+}
