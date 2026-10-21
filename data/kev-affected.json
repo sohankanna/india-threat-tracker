@@ -234993,14 +234993,16 @@
      "vendor": "SolarWinds",
      "versions": [
       {
+       "less_than_or_equal": "15.5.4",
        "status": "affected",
-       "version": "15.5.4 and previous versions"
+       "version": "0",
+       "version_type": "custom"
       }
      ]
     }
    ],
    "record_state": "PUBLISHED",
-   "record_updated": "2026-06-06T03:55:57.072Z"
+   "record_updated": "2026-10-21T10:29:06.114Z"
   },
   {
    "cve": "CVE-2026-3055",
@@ -248882,6 +248884,6 @@
    "record_updated": "2026-10-20T22:21:14.479Z"
   }
  ],
- "kev_generated_at": "2026-10-21T07:56:37Z",
+ "kev_generated_at": "2026-10-21T18:48:51Z",
  "source": "CVE Project cvelistV5 (https://github.com/CVEProject/cvelistV5)"
 }
