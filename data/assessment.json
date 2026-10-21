@@ -154,7 +154,7 @@
       "title": "Identity is the new perimeter: watch M365 sign-ins",
       "category": "apt",
       "severity": "medium-high",
-      "why": "Microsoft and the UK NCSC reported in April 2026 that Forest Blizzard (APT28) changed DNS settings on compromised home and small-office routers to put adversary-in-the-middle servers in front of Outlook on the web, where passwords and login tokens can be intercepted. As Indian organisations move onto M365 / Entra, staff home routers become part of the attack surface. Entra sign-in risk is the signal to wire up first; Microsoft's guidance points to its risky sign-in detections. The tracker's Entra rule (high-risk successful sign-in) and its endpoint DNS rule are complementary investigation leads, not a detection of this chain: they fire separately and are not correlated, the Entra rule does not verify the MFA sequence, and a hijacked router hands out its resolver through DHCP, which the endpoint DNS rule deliberately ignores. Phishing-resistant MFA (passkeys / FIDO2) is the control that breaks the relay.",
+      "why": "Microsoft and the UK NCSC reported in April 2026 that Forest Blizzard (APT28) changed DNS settings on compromised home and small-office routers to put adversary-in-the-middle servers in front of Outlook on the web, where passwords and login tokens can be intercepted. As Indian organisations move onto M365 / Entra, staff home routers become part of the attack surface. Entra sign-in risk is the signal to wire up first; Microsoft's guidance points to its risky sign-in detections. The tracker's Entra rule (high-risk successful sign-in) and its endpoint DNS rule are complementary investigation leads, not a detection of this chain: they fire separately and are not correlated, the Entra rule does not verify the MFA sequence. The DNS rule can see this campaign's reported technique, a router handing devices the attacker's resolver through DHCP, because it checks the DHCP-assigned resolver too; it cannot see a router that keeps handing out its own private address and forwards queries to the attacker. Phishing-resistant MFA (passkeys / FIDO2) is the control that breaks the relay.",
       "links": [
         {
           "title": "FrostArmada / APT28 M365 interception",
@@ -182,7 +182,7 @@
         {
           "type": "detection",
           "id": "windows_suspicious_dns_server_change",
-          "supports": "Endpoint resolver tampering only; does not see a hijacked router's DHCP-assigned resolver"
+          "supports": "Fires when a device is given a resolver outside policy, including through DHCP (DhcpNameServer); cannot see a router that forwards queries upstream while handing out its own address"
         }
       ]
     },

@@ -12,7 +12,7 @@ catches real attacks in your environment. It means the following:
 | Backend | How the fixtures are run | What a pass shows |
 |---------|--------------------------|-------------------|
 | **Sigma** (canonical) | **Executed.** [`tests/sigma_eval.py`](../tests/sigma_eval.py) evaluates each rule against every fixture, following the Sigma specification for the features these rules use (and refusing anything else). | The canonical logic produces the expected result for every fixture. |
-| **Wazuh** | **Emulated on every run, and on a real manager in a separate CI job.** Every fixture is turned into the raw log a manager receives ([`tests/wazuh_logs.py`](../tests/wazuh_logs.py): eventchannel JSON, PAN-OS syslog CSV, Graph JSON). [`tests/wazuh_eval.py`](../tests/wazuh_eval.py) decodes it as Wazuh 4.14.9 does (the PAN-OS decoder regexes are copied from the ruleset) and applies the rules. The [Wazuh integration workflow](../.github/workflows/wazuh-integration.yml) installs `wazuh-manager` 4.14.9, loads `local_rules.xml` and replays the same raw logs on the real manager ([`tests/wazuh_logtest.py`](tests/wazuh_logtest.py)): PAN-OS and Graph through the logtest socket, Sysmon through the analysisd queue exactly as a Windows agent sends it, read back from `alerts.json`. It publishes expected versus observed per event. | Emulation: rule logic and the decoding steps modelled. The integration job: what a real 4.14.9 manager decodes and fires. Check its latest run in the Actions tab; until it has passed, the Wazuh rules are validated by emulation only. |
+| **Wazuh** | **Emulated on every run, and on a real manager in a separate CI job.** Every fixture is turned into the raw log a manager receives ([`tests/wazuh_logs.py`](../tests/wazuh_logs.py): eventchannel JSON, PAN-OS syslog CSV, Graph JSON). [`tests/wazuh_eval.py`](../tests/wazuh_eval.py) decodes it as Wazuh 4.14.9 does (the PAN-OS decoder regexes are copied from the ruleset) and applies the rules. The [Wazuh integration workflow](../.github/workflows/wazuh-integration.yml) installs `wazuh-manager` 4.14.9, loads `local_rules.xml` and replays the same raw logs on the real manager ([`tests/wazuh_logtest.py`](tests/wazuh_logtest.py)): PAN-OS and Graph through the logtest socket, Sysmon through the analysisd queue exactly as a Windows agent sends it, read back from `alerts.json`. It publishes expected versus observed per event. | Emulation: rule logic and the decoding steps modelled. The integration job: what a real 4.14.9 manager decodes and fires. **Passed 29/29 on 2026-10-20**; see the [validation report](validation/wazuh-4.14.9-2026-10-20.md). |
 | **Splunk** | **Not executed.** The DNS and PAN-OS searches are emulated from their own query text (split pattern, extraction regex and CIDR ranges are read out of the `.spl` file and applied to the fixtures). The rest are checked statically. | The parts that previously went wrong behave as intended. SPL is not run against a Splunk instance. |
 | **Elastic** | **Not executed.** Same approach for the ES\|QL DNS and PAN-OS queries; the EQL/KQL rules are checked statically. | As for Splunk. Queries are not run against Elasticsearch. |
 
@@ -59,9 +59,16 @@ was re-introduced deliberately (prefix-only DNS check, string-compared CIDR,
 fields, the field-based PAN-OS Wazuh rule, allowlist drift, process-list drift)
 and every one fails the build.
 
-**Validation level, in one line:** Sigma executed; Wazuh emulated plus a
-real-manager CI job; Splunk and Elastic not run against a live instance. All
-rules stay `experimental`.
+## Validation level per backend
+
+| Backend | State | Evidence |
+|---|---|---|
+| Sigma | Behaviour tested by unit fixtures; conversion check passed | `tests/sigma_eval.py`, `sigma check` and `sigma convert` in CI |
+| Wazuh | **Executed in the real target engine** (4.14.9) | [Validation report](validation/wazuh-4.14.9-2026-10-20.md); re-run on every change to `detections/` |
+| Splunk | Behaviour tested by unit fixtures from the query text (DNS, PAN-OS); structural check for the rest | Not run in Splunk |
+| Elastic | Behaviour tested by unit fixtures from the query text (ES\|QL DNS, PAN-OS); structural check for EQL/KQL | Not run in Elasticsearch |
+
+All rules stay `experimental`.
 
 **No test here produces a detection rate.** For that, run the rules on your
 own telemetry, in your own SIEM, against a real baseline.
