@@ -1,10 +1,10 @@
 {
  "coverage": {
   "fetch_failures_this_run": 0,
-  "kev_cves": 1748,
-  "records_published": 1748,
+  "kev_cves": 1754,
+  "records_published": 1754,
   "unavailable": 0,
-  "with_version_entries": 1748
+  "with_version_entries": 1754
  },
  "description": "Affected products and versions for every CISA KEV CVE, as written by the CVE Numbering Authority (and ADPs such as CISA vulnrichment) in the official CVE records. Not interpreted: see EXPOSURE-MATCHER.md for how versions are compared.",
  "feed": "kev-affected",
@@ -219599,6 +219599,114 @@
    "record_updated": "2026-10-07T17:59:50.001Z"
   },
   {
+   "cve": "CVE-2026-106931",
+   "products": [
+    {
+     "default_status": "unaffected",
+     "product": "SiteGuard Server Edition for Apache httpd",
+     "source": "cna",
+     "vendor": "EG Secure Solutions Inc.",
+     "versions": [
+      {
+       "less_than": "Ver8.00 Update 5",
+       "status": "affected",
+       "version": "Ver2.20",
+       "version_type": "semver"
+      }
+     ]
+    },
+    {
+     "default_status": "unaffected",
+     "product": "SiteGuard Server Edition for Nginx",
+     "source": "cna",
+     "vendor": "EG Secure Solutions Inc.",
+     "versions": [
+      {
+       "less_than": "Ver8.00 Update 5",
+       "status": "affected",
+       "version": "Ver2.20",
+       "version_type": "semver"
+      }
+     ]
+    },
+    {
+     "default_status": "unaffected",
+     "product": "SiteGuard Server Edition for IIS",
+     "source": "cna",
+     "vendor": "EG Secure Solutions Inc.",
+     "versions": [
+      {
+       "changes": [
+        {
+         "at": "Ver3.10",
+         "status": "unaffected"
+        },
+        {
+         "at": "Ver4.00 Update 5",
+         "status": "affected"
+        }
+       ],
+       "less_than": "Ver8.00 Update 5",
+       "status": "affected",
+       "version": "Ver2.20",
+       "version_type": "semver"
+      }
+     ]
+    },
+    {
+     "default_status": "unaffected",
+     "product": "SiteGuard Server Edition for Apache httpd on FreeBSD",
+     "source": "cna",
+     "vendor": "EG Secure Solutions Inc.",
+     "versions": [
+      {
+       "less_than": "Ver7.00 Update 6",
+       "status": "affected",
+       "version": "Ver2.20",
+       "version_type": "semver"
+      }
+     ]
+    },
+    {
+     "default_status": "unaffected",
+     "product": "SiteGuard Server Edition for Nginx on FreeBSD",
+     "source": "cna",
+     "vendor": "EG Secure Solutions Inc.",
+     "versions": [
+      {
+       "less_than": "Ver7.00 Update 6",
+       "status": "affected",
+       "version": "Ver2.20",
+       "version_type": "semver"
+      }
+     ]
+    }
+   ],
+   "record_state": "PUBLISHED",
+   "record_updated": "2026-10-21T03:56:27.300Z"
+  },
+  {
+   "cve": "CVE-2026-110936",
+   "products": [
+    {
+     "default_status": "unknown",
+     "product": "Siemens Software Center",
+     "source": "cna",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "V4.0.9.8",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    }
+   ],
+   "record_state": "PUBLISHED",
+   "record_updated": "2026-10-21T03:56:21.823Z"
+  },
+  {
    "cve": "CVE-2026-11645",
    "products": [
     {
@@ -248320,6 +248428,106 @@
    "record_updated": "2026-09-03T03:55:29.128Z"
   },
   {
+   "cve": "CVE-2026-96652",
+   "products": [
+    {
+     "default_status": "unknown",
+     "product": "Media Server",
+     "source": "cna",
+     "vendor": "Plex",
+     "versions": [
+      {
+       "less_than": "1.43.3.10861",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      },
+      {
+       "status": "unaffected",
+       "version": "1.43.3.10861"
+      }
+     ]
+    }
+   ],
+   "record_state": "PUBLISHED",
+   "record_updated": "2026-10-21T03:56:26.467Z"
+  },
+  {
+   "cve": "CVE-2026-96654",
+   "products": [
+    {
+     "default_status": "unknown",
+     "product": "Media Server",
+     "source": "cna",
+     "vendor": "Plex",
+     "versions": [
+      {
+       "less_than": "1.43.3.10861",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      },
+      {
+       "status": "unaffected",
+       "version": "1.43.3.10861"
+      }
+     ]
+    }
+   ],
+   "record_state": "PUBLISHED",
+   "record_updated": "2026-10-21T03:56:25.683Z"
+  },
+  {
+   "cve": "CVE-2026-96655",
+   "products": [
+    {
+     "default_status": "unknown",
+     "product": "Media Server",
+     "source": "cna",
+     "vendor": "Plex",
+     "versions": [
+      {
+       "less_than": "1.43.3.10861",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      },
+      {
+       "status": "unaffected",
+       "version": "1.43.3.10861"
+      }
+     ]
+    }
+   ],
+   "record_state": "PUBLISHED",
+   "record_updated": "2026-10-21T03:56:24.883Z"
+  },
+  {
+   "cve": "CVE-2026-96656",
+   "products": [
+    {
+     "default_status": "unknown",
+     "product": "Media Server",
+     "source": "cna",
+     "vendor": "Plex",
+     "versions": [
+      {
+       "less_than": "1.43.3.10861",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      },
+      {
+       "status": "unaffected",
+       "version": "1.43.3.10861"
+      }
+     ]
+    }
+   ],
+   "record_state": "PUBLISHED",
+   "record_updated": "2026-10-21T03:56:10.489Z"
+  },
+  {
    "cve": "CVE-2026-96951",
    "products": [
     {
@@ -248674,6 +248882,6 @@
    "record_updated": "2026-10-20T22:21:14.479Z"
   }
  ],
- "kev_generated_at": "2026-10-20T18:35:35Z",
+ "kev_generated_at": "2026-10-21T07:56:37Z",
  "source": "CVE Project cvelistV5 (https://github.com/CVEProject/cvelistV5)"
 }

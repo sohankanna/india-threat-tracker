@@ -1,11 +1,11 @@
 {
   "feed": "exploited-cve-watchlist",
-  "generated_at": "2026-10-20T18:35:35Z",
+  "generated_at": "2026-10-21T07:56:37Z",
   "source": "CISA KEV + FIRST EPSS",
-  "total_kev": 1748,
+  "total_kev": 1754,
   "count": 497,
   "enrichment": {
-    "epss_available": 1748,
+    "epss_available": 1754,
     "epss_missing": 0,
     "epss_coverage": 1.0,
     "epss_failed_requests": 0,
