@@ -63,6 +63,8 @@ evidence and a documented priority tier. About 40% of KEV CVEs carry version
 data that can be compared; the rest stay candidates. See
 [EXPOSURE-MATCHER.md](EXPOSURE-MATCHER.md).
 
+What changed in each release, with validation levels: [CHANGELOG.md](CHANGELOG.md).
+
 ## Detections
 
 [`detections/`](detections/) holds five rules, each shipped as **Sigma**,

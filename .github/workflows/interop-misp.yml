@@ -1,0 +1,79 @@
+name: MISP import test
+
+# Imports data/india-threat-tracker-stix.json into a disposable MISP started from
+# the official MISP/misp-docker images, then reads back what MISP stored and
+# compares it with the bundle. Run by hand from the Actions tab; results are in
+# the run summary and the "misp-import-results" artifact.
+
+on:
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+env:
+  MISP_DOCKER_COMMIT: 870ce68   # MISP/misp-docker, 2026-10-17
+  CORE_RUNNING_TAG: v2.5.50
+  MODULES_RUNNING_TAG: v3.0.12
+
+jobs:
+  misp:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Fetch misp-docker at a pinned commit
+        run: |
+          git clone --quiet https://github.com/MISP/misp-docker misp-docker
+          git -C misp-docker checkout --quiet "$MISP_DOCKER_COMMIT"
+
+      - name: Configure a disposable instance
+        working-directory: misp-docker
+        run: |
+          KEY=$(python -c "import secrets,string; print(''.join(secrets.choice(string.ascii_letters + string.digits) for _ in range(40)))")
+          echo "::add-mask::$KEY"
+          echo "MISP_KEY=$KEY" >> "$GITHUB_ENV"
+          cp template.env .env
+          {
+            echo "BASE_URL=https://localhost"
+            echo "ADMIN_EMAIL=admin@interop.test"
+            echo "ADMIN_ORG=InteropTest"
+            echo "ADMIN_KEY=$KEY"
+            echo "CORE_RUNNING_TAG=$CORE_RUNNING_TAG"
+            echo "MODULES_RUNNING_TAG=$MODULES_RUNNING_TAG"
+            echo "DISABLE_PRINTING_PLAINTEXT_CREDENTIALS=true"
+          } >> .env
+
+      - name: Start MISP
+        working-directory: misp-docker
+        run: |
+          docker compose pull --quiet
+          docker compose up -d
+          docker compose ps
+
+      - name: Import the bundle and compare
+        run: |
+          pip install --quiet "pymisp==2.5.34.4"
+          python interop/misp_import.py --url https://localhost --key "$MISP_KEY" \
+            --bundle data/india-threat-tracker-stix.json --out misp-import-results
+          cat misp-import-results.md >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Logs on failure
+        if: failure()
+        working-directory: misp-docker
+        run: |
+          [ -f ../misp-import-results.md ] && cat ../misp-import-results.md >> "$GITHUB_STEP_SUMMARY" || true
+          docker compose ps
+          docker compose logs --tail=150 misp-core || true
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: misp-import-results
+          path: misp-import-results.*
+          if-no-files-found: ignore

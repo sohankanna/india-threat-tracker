@@ -131,15 +131,40 @@ OASIS JSON schemas and cannot validate anything.
 
 ## Importing into a CTI platform
 
-**Interoperability status: untested.** Schema validation is not proof that
-another platform imports the bundle as intended. An import into a disposable
-OpenCTI or MISP instance has not been run yet. When it is, the platform version,
-object counts, errors and anything lost in the import will be recorded here.
+### MISP: tested with the import library; instance import pending
 
-* **OpenCTI:** upload the bundle through the data import screen, which uses the
-  STIX file import connector; or point a connector at the raw URL above.
-* **MISP:** the [misp-stix](https://github.com/MISP/misp-stix) library converts
-  STIX 2.1 bundles to MISP events.
+The bundle has been converted with **misp-stix 2026.10.12**, the library MISP
+itself uses to import STIX 2.1 (MISP's `/events/upload_stix/2` calls it). This
+runs in CI on every change (`tests/test_interop_misp.py`). Result:
+
+| In the bundle | In MISP |
+|---|---|
+| Report (monthly assessment) | 1 event, with the assessment text as an event report |
+| 5 indicators | 5 attributes (3 `sha256`, 2 `domain`), all `to_ids`, each with the source note and a confidence tag, each linked to its campaign |
+| 6 campaigns | campaign galaxy clusters (4 on the event, the 2 with only indicator links on their attributes) |
+| 4 intrusion sets, 13 malware, 25 techniques, 6 CVEs | galaxy clusters with descriptions, created/modified dates and references |
+| TLP:WHITE marking, producer identity | `tlp:white` and producer tags |
+| Infrastructure context | not an attribute (stays in descriptions) |
+
+**Lost in MISP, by design of the mapping:**
+* The 54 `uses` relationships (campaign or intrusion set → technique or
+  malware). MISP attaches every cluster to the event with no cluster relations,
+  so you can no longer see which technique belongs to which actor.
+* Intrusion-set aliases (APT36, Mythic Leopard…) survive only inside the
+  description, not as MISP synonyms.
+
+**Instance import:** [`.github/workflows/interop-misp.yml`](.github/workflows/interop-misp.yml)
+starts a disposable MISP 2.5.50 from the official
+[misp-docker](https://github.com/MISP/misp-docker) images, uploads the bundle
+through MISP's own STIX import and reads back what was stored
+([`interop/misp_import.py`](interop/misp_import.py)). Its recorded result goes
+here once it has run; until then, treat the instance import as **not yet
+confirmed**.
+
+### OpenCTI
+
+**Untested.** Upload the bundle through the data import screen (STIX file import
+connector), or point a connector at the raw URL above.
 
 ## Sample
 
@@ -163,4 +188,4 @@ report "India threat assessment, October 2026" ─ object_refs ─▶ campaigns,
 * No source publication dates, so none are exported.
 * Detection rules are not exported as STIX `indicator`s with
   `pattern_type: sigma`; they are linked from the report instead.
-* Interoperability with OpenCTI and MISP is untested (see above).
+* OpenCTI import is untested; MISP is tested at library level, instance import pending (see above).

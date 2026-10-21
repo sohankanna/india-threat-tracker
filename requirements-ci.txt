@@ -4,3 +4,4 @@ PyYAML>=6.0
 regex>=2024.4
 sigma-cli>=1.0
 pysigma-backend-splunk>=1.0
+misp-stix==2026.10.12  # tests/test_interop_misp.py: the library MISP uses for STIX 2.1 import
