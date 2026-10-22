@@ -171043,56 +171043,82 @@
    "cve": "CVE-2024-21762",
    "products": [
     {
-     "default_status": "unaffected",
-     "product": "FortiProxy",
-     "source": "cna",
-     "vendor": "Fortinet",
-     "versions": [
-      {
-       "less_than_or_equal": "7.4.2",
-       "status": "affected",
-       "version": "7.4.0",
-       "version_type": "semver"
-      },
-      {
-       "less_than_or_equal": "7.2.8",
-       "status": "affected",
-       "version": "7.2.0",
-       "version_type": "semver"
-      },
-      {
-       "less_than_or_equal": "7.0.14",
-       "status": "affected",
-       "version": "7.0.0",
-       "version_type": "semver"
-      },
-      {
-       "less_than_or_equal": "2.0.13",
-       "status": "affected",
-       "version": "2.0.0",
-       "version_type": "semver"
-      },
-      {
-       "less_than_or_equal": "1.2.13",
-       "status": "affected",
-       "version": "1.2.0",
-       "version_type": "semver"
-      },
-      {
-       "less_than_or_equal": "1.1.6",
-       "status": "affected",
-       "version": "1.1.0",
-       "version_type": "semver"
-      },
-      {
-       "less_than_or_equal": "1.0.7",
-       "status": "affected",
-       "version": "1.0.0",
-       "version_type": "semver"
-      }
-     ]
-    },
-    {
+     "cpes": [
+      "cpe:2.3:o:fortinet:fortios:6.0.0:*:*:*:*:*:*:*",
+      "cpe:2.3:o:fortinet:fortios:6.0.10:*:*:*:*:*:*:*",
+      "cpe:2.3:o:fortinet:fortios:6.0.11:*:*:*:*:*:*:*",
+      "cpe:2.3:o:fortinet:fortios:6.0.12:*:*:*:*:*:*:*",
+      "cpe:2.3:o:fortinet:fortios:6.0.13:*:*:*:*:*:*:*",
+      "cpe:2.3:o:fortinet:fortios:6.0.14:*:*:*:*:*:*:*",
+      "cpe:2.3:o:fortinet:fortios:6.0.15:*:*:*:*:*:*:*",
+      "cpe:2.3:o:fortinet:fortios:6.0.16:*:*:*:*:*:*:*",
+      "cpe:2.3:o:fortinet:fortios:6.0.17:*:*:*:*:*:*:*",
+      "cpe:2.3:o:fortinet:fortios:6.0.18:*:*:*:*:*:*:*",
+      "cpe:2.3:o:fortinet:fortios:6.0.1:*:*:*:*:*:*:*",
+      "cpe:2.3:o:fortinet:fortios:6.0.2:*:*:*:*:*:*:*",
+      "cpe:2.3:o:fortinet:fortios:6.0.3:*:*:*:*:*:*:*",
+      "cpe:2.3:o:fortinet:fortios:6.0.4:*:*:*:*:*:*:*",
+      "cpe:2.3:o:fortinet:fortios:6.0.5:*:*:*:*:*:*:*",
+      "cpe:2.3:o:fortinet:fortios:6.0.6:*:*:*:*:*:*:*",
+      "cpe:2.3:o:fortinet:fortios:6.0.7:*:*:*:*:*:*:*",
+      "cpe:2.3:o:fortinet:fortios:6.0.8:*:*:*:*:*:*:*",
+      "cpe:2.3:o:fortinet:fortios:6.0.9:*:*:*:*:*:*:*",
+      "cpe:2.3:o:fortinet:fortios:6.2.0:*:*:*:*:*:*:*",
+      "cpe:2.3:o:fortinet:fortios:6.2.10:*:*:*:*:*:*:*",
+      "cpe:2.3:o:fortinet:fortios:6.2.11:*:*:*:*:*:*:*",
+      "cpe:2.3:o:fortinet:fortios:6.2.12:*:*:*:*:*:*:*",
+      "cpe:2.3:o:fortinet:fortios:6.2.13:*:*:*:*:*:*:*",
+      "cpe:2.3:o:fortinet:fortios:6.2.14:*:*:*:*:*:*:*",
+      "cpe:2.3:o:fortinet:fortios:6.2.15:*:*:*:*:*:*:*",
+      "cpe:2.3:o:fortinet:fortios:6.2.1:*:*:*:*:*:*:*",
+      "cpe:2.3:o:fortinet:fortios:6.2.2:*:*:*:*:*:*:*",
+      "cpe:2.3:o:fortinet:fortios:6.2.3:*:*:*:*:*:*:*",
+      "cpe:2.3:o:fortinet:fortios:6.2.4:*:*:*:*:*:*:*",
+      "cpe:2.3:o:fortinet:fortios:6.2.5:*:*:*:*:*:*:*",
+      "cpe:2.3:o:fortinet:fortios:6.2.6:*:*:*:*:*:*:*",
+      "cpe:2.3:o:fortinet:fortios:6.2.7:*:*:*:*:*:*:*",
+      "cpe:2.3:o:fortinet:fortios:6.2.8:*:*:*:*:*:*:*",
+      "cpe:2.3:o:fortinet:fortios:6.2.9:*:*:*:*:*:*:*",
+      "cpe:2.3:o:fortinet:fortios:6.4.0:*:*:*:*:*:*:*",
+      "cpe:2.3:o:fortinet:fortios:6.4.10:*:*:*:*:*:*:*",
+      "cpe:2.3:o:fortinet:fortios:6.4.11:*:*:*:*:*:*:*",
+      "cpe:2.3:o:fortinet:fortios:6.4.12:*:*:*:*:*:*:*",
+      "cpe:2.3:o:fortinet:fortios:6.4.13:*:*:*:*:*:*:*",
+      "cpe:2.3:o:fortinet:fortios:6.4.14:*:*:*:*:*:*:*",
+      "cpe:2.3:o:fortinet:fortios:6.4.1:*:*:*:*:*:*:*",
+      "cpe:2.3:o:fortinet:fortios:6.4.2:*:*:*:*:*:*:*",
+      "cpe:2.3:o:fortinet:fortios:6.4.3:*:*:*:*:*:*:*",
+      "cpe:2.3:o:fortinet:fortios:6.4.4:*:*:*:*:*:*:*",
+      "cpe:2.3:o:fortinet:fortios:6.4.5:*:*:*:*:*:*:*",
+      "cpe:2.3:o:fortinet:fortios:6.4.6:*:*:*:*:*:*:*",
+      "cpe:2.3:o:fortinet:fortios:6.4.7:*:*:*:*:*:*:*",
+      "cpe:2.3:o:fortinet:fortios:6.4.8:*:*:*:*:*:*:*",
+      "cpe:2.3:o:fortinet:fortios:6.4.9:*:*:*:*:*:*:*",
+      "cpe:2.3:o:fortinet:fortios:7.0.0:*:*:*:*:*:*:*",
+      "cpe:2.3:o:fortinet:fortios:7.0.10:*:*:*:*:*:*:*",
+      "cpe:2.3:o:fortinet:fortios:7.0.11:*:*:*:*:*:*:*",
+      "cpe:2.3:o:fortinet:fortios:7.0.12:*:*:*:*:*:*:*",
+      "cpe:2.3:o:fortinet:fortios:7.0.13:*:*:*:*:*:*:*",
+      "cpe:2.3:o:fortinet:fortios:7.0.1:*:*:*:*:*:*:*",
+      "cpe:2.3:o:fortinet:fortios:7.0.2:*:*:*:*:*:*:*",
+      "cpe:2.3:o:fortinet:fortios:7.0.3:*:*:*:*:*:*:*",
+      "cpe:2.3:o:fortinet:fortios:7.0.4:*:*:*:*:*:*:*",
+      "cpe:2.3:o:fortinet:fortios:7.0.5:*:*:*:*:*:*:*",
+      "cpe:2.3:o:fortinet:fortios:7.0.6:*:*:*:*:*:*:*",
+      "cpe:2.3:o:fortinet:fortios:7.0.7:*:*:*:*:*:*:*",
+      "cpe:2.3:o:fortinet:fortios:7.0.8:*:*:*:*:*:*:*",
+      "cpe:2.3:o:fortinet:fortios:7.0.9:*:*:*:*:*:*:*",
+      "cpe:2.3:o:fortinet:fortios:7.2.0:*:*:*:*:*:*:*",
+      "cpe:2.3:o:fortinet:fortios:7.2.1:*:*:*:*:*:*:*",
+      "cpe:2.3:o:fortinet:fortios:7.2.2:*:*:*:*:*:*:*",
+      "cpe:2.3:o:fortinet:fortios:7.2.3:*:*:*:*:*:*:*",
+      "cpe:2.3:o:fortinet:fortios:7.2.4:*:*:*:*:*:*:*",
+      "cpe:2.3:o:fortinet:fortios:7.2.5:*:*:*:*:*:*:*",
+      "cpe:2.3:o:fortinet:fortios:7.2.6:*:*:*:*:*:*:*",
+      "cpe:2.3:o:fortinet:fortios:7.4.0:*:*:*:*:*:*:*",
+      "cpe:2.3:o:fortinet:fortios:7.4.1:*:*:*:*:*:*:*",
+      "cpe:2.3:o:fortinet:fortios:7.4.2:*:*:*:*:*:*:*"
+     ],
      "default_status": "unaffected",
      "product": "FortiOS",
      "source": "cna",
@@ -171129,9 +171155,141 @@
        "version_type": "semver"
       },
       {
-       "less_than_or_equal": "6.0.17",
+       "less_than_or_equal": "6.0.18",
        "status": "affected",
        "version": "6.0.0",
+       "version_type": "semver"
+      }
+     ]
+    },
+    {
+     "cpes": [
+      "cpe:2.3:a:fortinet:fortiproxy:01.00.00:*:*:*:*:*:*:*",
+      "cpe:2.3:a:fortinet:fortiproxy:01.00.01:*:*:*:*:*:*:*",
+      "cpe:2.3:a:fortinet:fortiproxy:01.00.02:*:*:*:*:*:*:*",
+      "cpe:2.3:a:fortinet:fortiproxy:01.00.03:*:*:*:*:*:*:*",
+      "cpe:2.3:a:fortinet:fortiproxy:01.00.04:*:*:*:*:*:*:*",
+      "cpe:2.3:a:fortinet:fortiproxy:01.00.05:*:*:*:*:*:*:*",
+      "cpe:2.3:a:fortinet:fortiproxy:01.00.06:*:*:*:*:*:*:*",
+      "cpe:2.3:a:fortinet:fortiproxy:01.00.07:*:*:*:*:*:*:*",
+      "cpe:2.3:a:fortinet:fortiproxy:01.01.00:*:*:*:*:*:*:*",
+      "cpe:2.3:a:fortinet:fortiproxy:01.01.01:*:*:*:*:*:*:*",
+      "cpe:2.3:a:fortinet:fortiproxy:01.01.02:*:*:*:*:*:*:*",
+      "cpe:2.3:a:fortinet:fortiproxy:01.01.03:*:*:*:*:*:*:*",
+      "cpe:2.3:a:fortinet:fortiproxy:01.02.00:*:*:*:*:*:*:*",
+      "cpe:2.3:a:fortinet:fortiproxy:1.1.4:*:*:*:*:*:*:*",
+      "cpe:2.3:a:fortinet:fortiproxy:1.1.5:*:*:*:*:*:*:*",
+      "cpe:2.3:a:fortinet:fortiproxy:1.1.6:*:*:*:*:*:*:*",
+      "cpe:2.3:a:fortinet:fortiproxy:1.2.10:*:*:*:*:*:*:*",
+      "cpe:2.3:a:fortinet:fortiproxy:1.2.11:*:*:*:*:*:*:*",
+      "cpe:2.3:a:fortinet:fortiproxy:1.2.12:*:*:*:*:*:*:*",
+      "cpe:2.3:a:fortinet:fortiproxy:1.2.13:*:*:*:*:*:*:*",
+      "cpe:2.3:a:fortinet:fortiproxy:1.2.1:*:*:*:*:*:*:*",
+      "cpe:2.3:a:fortinet:fortiproxy:1.2.2:*:*:*:*:*:*:*",
+      "cpe:2.3:a:fortinet:fortiproxy:1.2.3:*:*:*:*:*:*:*",
+      "cpe:2.3:a:fortinet:fortiproxy:1.2.4:*:*:*:*:*:*:*",
+      "cpe:2.3:a:fortinet:fortiproxy:1.2.5:*:*:*:*:*:*:*",
+      "cpe:2.3:a:fortinet:fortiproxy:1.2.6:*:*:*:*:*:*:*",
+      "cpe:2.3:a:fortinet:fortiproxy:1.2.7:*:*:*:*:*:*:*",
+      "cpe:2.3:a:fortinet:fortiproxy:1.2.8:*:*:*:*:*:*:*",
+      "cpe:2.3:a:fortinet:fortiproxy:1.2.9:*:*:*:*:*:*:*",
+      "cpe:2.3:a:fortinet:fortiproxy:2.0.0:*:*:*:*:*:*:*",
+      "cpe:2.3:a:fortinet:fortiproxy:2.0.10:*:*:*:*:*:*:*",
+      "cpe:2.3:a:fortinet:fortiproxy:2.0.11:*:*:*:*:*:*:*",
+      "cpe:2.3:a:fortinet:fortiproxy:2.0.12:*:*:*:*:*:*:*",
+      "cpe:2.3:a:fortinet:fortiproxy:2.0.13:*:*:*:*:*:*:*",
+      "cpe:2.3:a:fortinet:fortiproxy:2.0.1:*:*:*:*:*:*:*",
+      "cpe:2.3:a:fortinet:fortiproxy:2.0.2:*:*:*:*:*:*:*",
+      "cpe:2.3:a:fortinet:fortiproxy:2.0.3:*:*:*:*:*:*:*",
+      "cpe:2.3:a:fortinet:fortiproxy:2.0.4:*:*:*:*:*:*:*",
+      "cpe:2.3:a:fortinet:fortiproxy:2.0.5:*:*:*:*:*:*:*",
+      "cpe:2.3:a:fortinet:fortiproxy:2.0.6:*:*:*:*:*:*:*",
+      "cpe:2.3:a:fortinet:fortiproxy:2.0.7:*:*:*:*:*:*:*",
+      "cpe:2.3:a:fortinet:fortiproxy:2.0.8:*:*:*:*:*:*:*",
+      "cpe:2.3:a:fortinet:fortiproxy:2.0.9:*:*:*:*:*:*:*",
+      "cpe:2.3:a:fortinet:fortiproxy:7.0.0:*:*:*:*:*:*:*",
+      "cpe:2.3:a:fortinet:fortiproxy:7.0.10:*:*:*:*:*:*:*",
+      "cpe:2.3:a:fortinet:fortiproxy:7.0.11:*:*:*:*:*:*:*",
+      "cpe:2.3:a:fortinet:fortiproxy:7.0.12:*:*:*:*:*:*:*",
+      "cpe:2.3:a:fortinet:fortiproxy:7.0.13:*:*:*:*:*:*:*",
+      "cpe:2.3:a:fortinet:fortiproxy:7.0.14:*:*:*:*:*:*:*",
+      "cpe:2.3:a:fortinet:fortiproxy:7.0.1:*:*:*:*:*:*:*",
+      "cpe:2.3:a:fortinet:fortiproxy:7.0.2:*:*:*:*:*:*:*",
+      "cpe:2.3:a:fortinet:fortiproxy:7.0.3:*:*:*:*:*:*:*",
+      "cpe:2.3:a:fortinet:fortiproxy:7.0.4:*:*:*:*:*:*:*",
+      "cpe:2.3:a:fortinet:fortiproxy:7.0.5:*:*:*:*:*:*:*",
+      "cpe:2.3:a:fortinet:fortiproxy:7.0.6:*:*:*:*:*:*:*",
+      "cpe:2.3:a:fortinet:fortiproxy:7.0.7:*:*:*:*:*:*:*",
+      "cpe:2.3:a:fortinet:fortiproxy:7.0.8:*:*:*:*:*:*:*",
+      "cpe:2.3:a:fortinet:fortiproxy:7.0.9:*:*:*:*:*:*:*",
+      "cpe:2.3:a:fortinet:fortiproxy:7.2.0:*:*:*:*:*:*:*",
+      "cpe:2.3:a:fortinet:fortiproxy:7.2.1:*:*:*:*:*:*:*",
+      "cpe:2.3:a:fortinet:fortiproxy:7.2.2:*:*:*:*:*:*:*",
+      "cpe:2.3:a:fortinet:fortiproxy:7.2.3:*:*:*:*:*:*:*",
+      "cpe:2.3:a:fortinet:fortiproxy:7.2.4:*:*:*:*:*:*:*",
+      "cpe:2.3:a:fortinet:fortiproxy:7.2.5:*:*:*:*:*:*:*",
+      "cpe:2.3:a:fortinet:fortiproxy:7.2.6:*:*:*:*:*:*:*",
+      "cpe:2.3:a:fortinet:fortiproxy:7.2.7:*:*:*:*:*:*:*",
+      "cpe:2.3:a:fortinet:fortiproxy:7.2.8:*:*:*:*:*:*:*",
+      "cpe:2.3:a:fortinet:fortiproxy:7.4.0:*:*:*:*:*:*:*",
+      "cpe:2.3:a:fortinet:fortiproxy:7.4.1:*:*:*:*:*:*:*",
+      "cpe:2.3:a:fortinet:fortiproxy:7.4.2:*:*:*:*:*:*:*"
+     ],
+     "default_status": "unaffected",
+     "product": "FortiProxy",
+     "source": "cna",
+     "vendor": "Fortinet",
+     "versions": [
+      {
+       "less_than_or_equal": "7.4.2",
+       "status": "affected",
+       "version": "7.4.0",
+       "version_type": "semver"
+      },
+      {
+       "less_than_or_equal": "7.2.8",
+       "status": "affected",
+       "version": "7.2.0",
+       "version_type": "semver"
+      },
+      {
+       "less_than_or_equal": "7.0.14",
+       "status": "affected",
+       "version": "7.0.0",
+       "version_type": "semver"
+      },
+      {
+       "less_than_or_equal": "2.0.13",
+       "status": "affected",
+       "version": "2.0.0",
+       "version_type": "semver"
+      },
+      {
+       "less_than_or_equal": "1.2.13",
+       "status": "affected",
+       "version": "1.2.1",
+       "version_type": "semver"
+      },
+      {
+       "status": "affected",
+       "version": "01.02.00"
+      },
+      {
+       "less_than_or_equal": "1.1.6",
+       "status": "affected",
+       "version": "1.1.4",
+       "version_type": "semver"
+      },
+      {
+       "less_than_or_equal": "01.01.03",
+       "status": "affected",
+       "version": "01.01.00",
+       "version_type": "semver"
+      },
+      {
+       "less_than_or_equal": "01.00.07",
+       "status": "affected",
+       "version": "01.00.00",
        "version_type": "semver"
       }
      ]
@@ -171291,7 +171449,7 @@
     }
    ],
    "record_state": "PUBLISHED",
-   "record_updated": "2026-08-04T03:55:55.226Z"
+   "record_updated": "2026-10-22T13:48:34.670Z"
   },
   {
    "cve": "CVE-2024-21887",
@@ -248884,6 +249042,6 @@
    "record_updated": "2026-10-20T22:21:14.479Z"
   }
  ],
- "kev_generated_at": "2026-10-22T07:53:30Z",
+ "kev_generated_at": "2026-10-22T18:41:49Z",
  "source": "CVE Project cvelistV5 (https://github.com/CVEProject/cvelistV5)"
 }
