@@ -1,10 +1,10 @@
 {
  "coverage": {
   "fetch_failures_this_run": 0,
-  "kev_cves": 1755,
-  "records_published": 1755,
+  "kev_cves": 1756,
+  "records_published": 1756,
   "unavailable": 0,
-  "with_version_entries": 1755
+  "with_version_entries": 1756
  },
  "description": "Affected products and versions for every CISA KEV CVE, as written by the CVE Numbering Authority (and ADPs such as CISA vulnrichment) in the official CVE records. Not interpreted: see EXPOSURE-MATCHER.md for how versions are compared.",
  "feed": "kev-affected",
@@ -219844,6 +219844,27 @@
    "record_updated": "2026-10-21T03:56:27.300Z"
   },
   {
+   "cve": "CVE-2026-110447",
+   "products": [
+    {
+     "default_status": "affected",
+     "product": "Collabora Online - Built-in CODE Server",
+     "source": "cna",
+     "vendor": "Collabora",
+     "versions": [
+      {
+       "less_than": "26.4.303",
+       "status": "affected",
+       "version": "0",
+       "version_type": "semver"
+      }
+     ]
+    }
+   ],
+   "record_state": "PUBLISHED",
+   "record_updated": "2026-10-24T03:55:50.462Z"
+  },
+  {
    "cve": "CVE-2026-110936",
    "products": [
     {
@@ -244196,7 +244217,7 @@
     }
    ],
    "record_state": "PUBLISHED",
-   "record_updated": "2026-10-08T18:11:15.266Z"
+   "record_updated": "2026-10-21T20:52:28.070Z"
   },
   {
    "cve": "CVE-2026-66384",
@@ -244645,7 +244666,7 @@
     }
    ],
    "record_state": "PUBLISHED",
-   "record_updated": "2026-10-08T18:11:35.491Z"
+   "record_updated": "2026-10-21T20:52:47.921Z"
   },
   {
    "cve": "CVE-2026-6973",
@@ -249078,6 +249099,6 @@
    "record_updated": "2026-10-20T22:21:14.479Z"
   }
  ],
- "kev_generated_at": "2026-10-23T18:35:43Z",
+ "kev_generated_at": "2026-10-24T07:33:14Z",
  "source": "CVE Project cvelistV5 (https://github.com/CVEProject/cvelistV5)"
 }
