@@ -1,9 +1,9 @@
 {
   "feed": "exploited-cve-watchlist",
-  "generated_at": "2026-10-24T17:31:40Z",
+  "generated_at": "2026-10-25T07:46:25Z",
   "source": "CISA KEV + FIRST EPSS",
   "total_kev": 1756,
-  "count": 496,
+  "count": 495,
   "enrichment": {
     "epss_available": 1756,
     "epss_missing": 0,
@@ -9029,37 +9029,6 @@
         {
           "title": "NVD - CVE-2024-43093",
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-43093"
-        }
-      ]
-    },
-    {
-      "cve": "CVE-2024-20481",
-      "vendor": "Cisco",
-      "product": "Adaptive Security Appliance (ASA) and Firepower Threat Defense (FTD)",
-      "name": "Cisco ASA and FTD Denial-of-Service Vulnerability",
-      "description": "Cisco Adaptive Security Appliance (ASA) and Firepower Threat Defense (FTD) contain a missing release of resource after effective lifetime vulnerability that could allow an unauthenticated, remote attacker to cause a denial-of-service (DoS) of the RAVPN service.",
-      "date_added": "2024-10-24",
-      "due_date": "2024-11-14",
-      "required_action": "Apply mitigations per vendor instructions or discontinue use of the product if mitigations are unavailable.",
-      "known_ransomware": false,
-      "cwes": [
-        "CWE-772"
-      ],
-      "epss": 0.15874,
-      "epss_percentile": 0.96887,
-      "epss_date": "2026-10-24",
-      "india_relevance": "high",
-      "relevance_match": "adaptive security",
-      "watchlist": true,
-      "tags": [],
-      "sources": [
-        {
-          "title": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "title": "NVD - CVE-2024-20481",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-20481"
         }
       ]
     },
