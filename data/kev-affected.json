@@ -219672,25 +219672,477 @@
      "versions": [
       {
        "status": "affected",
-       "version": "10.3.0"
+       "version": "9.15.2.0"
       },
       {
        "status": "affected",
-       "version": "10.3.1"
+       "version": "9.15.2.1"
       },
       {
        "status": "affected",
-       "version": "10.3.2"
+       "version": "9.15.2.2"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.3"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.4"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.5"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.6"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.7"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.8"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.9"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.10"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.11"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.12"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.13"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.14"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.15"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.16"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.17"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.18"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.19"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.20"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.21"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.22"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.23"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.24"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.25"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.26"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.27"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.28"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.29"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.30"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.31"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.32"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.33"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.34"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.35"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.36"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.37"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.38"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.39"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.40"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.41"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.42"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.43"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.44"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.45"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.46"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.47"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.48"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.49"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.50"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.51"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.52"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.53"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.54"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.55"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.56"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.57"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.58"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.59"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.60"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.61"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.62"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.63"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.64"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.65"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.66"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.67"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.68"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.69"
+      },
+      {
+       "status": "affected",
+       "version": "10.3.4.0"
+      },
+      {
+       "status": "affected",
+       "version": "10.3.4.1"
+      },
+      {
+       "status": "affected",
+       "version": "10.3.4.2"
+      },
+      {
+       "status": "affected",
+       "version": "10.3.4.3"
+      },
+      {
+       "status": "affected",
+       "version": "10.3.4.4"
+      },
+      {
+       "status": "affected",
+       "version": "10.3.4.5"
+      },
+      {
+       "status": "affected",
+       "version": "10.3.4.6"
+      },
+      {
+       "status": "affected",
+       "version": "10.3.4.7"
+      },
+      {
+       "status": "affected",
+       "version": "10.3.4.8"
+      },
+      {
+       "status": "affected",
+       "version": "10.3.4.9"
+      },
+      {
+       "status": "affected",
+       "version": "10.3.4.10"
+      },
+      {
+       "status": "affected",
+       "version": "10.3.4.11"
+      },
+      {
+       "status": "affected",
+       "version": "10.3.4.12"
+      },
+      {
+       "status": "affected",
+       "version": "10.3.4.13"
+      },
+      {
+       "status": "affected",
+       "version": "10.3.4.14"
+      },
+      {
+       "status": "affected",
+       "version": "10.3.4.15"
+      },
+      {
+       "status": "affected",
+       "version": "10.3.4.16"
+      },
+      {
+       "status": "affected",
+       "version": "10.3.4.17"
+      },
+      {
+       "status": "affected",
+       "version": "10.3.4.18"
+      },
+      {
+       "status": "affected",
+       "version": "10.3.4.19"
+      },
+      {
+       "status": "affected",
+       "version": "10.3.4.20"
+      },
+      {
+       "status": "affected",
+       "version": "10.3.4.21"
+      },
+      {
+       "status": "affected",
+       "version": "10.3.4.22"
+      },
+      {
+       "status": "affected",
+       "version": "10.3.4.23"
+      },
+      {
+       "status": "affected",
+       "version": "10.3.4.24"
+      },
+      {
+       "status": "affected",
+       "version": "10.3.4.25"
+      },
+      {
+       "status": "affected",
+       "version": "10.3.4.26"
+      },
+      {
+       "status": "affected",
+       "version": "10.3.4.27"
+      },
+      {
+       "status": "affected",
+       "version": "10.3.4.28"
+      },
+      {
+       "status": "affected",
+       "version": "10.3.4.29"
+      },
+      {
+       "status": "affected",
+       "version": "10.3.4.30"
+      },
+      {
+       "status": "affected",
+       "version": "10.3.4.31"
+      },
+      {
+       "status": "affected",
+       "version": "10.3.4.32"
+      },
+      {
+       "status": "affected",
+       "version": "10.3.4.33"
+      },
+      {
+       "status": "affected",
+       "version": "10.3.4.34"
+      },
+      {
+       "status": "affected",
+       "version": "10.3.4.35"
+      },
+      {
+       "status": "affected",
+       "version": "10.3.4.36"
+      },
+      {
+       "status": "affected",
+       "version": "10.3.4.37"
+      },
+      {
+       "status": "affected",
+       "version": "10.3.4.38"
+      },
+      {
+       "status": "affected",
+       "version": "10.3.4.39"
+      },
+      {
+       "status": "affected",
+       "version": "10.3.4.40"
+      },
+      {
+       "status": "affected",
+       "version": "10.3.4.41"
+      },
+      {
+       "status": "affected",
+       "version": "10.3.4.42"
+      },
+      {
+       "status": "affected",
+       "version": "10.3.4.43"
+      },
+      {
+       "status": "affected",
+       "version": "10.3.4.44"
       },
       {
        "status": "unaffected",
-       "version": "10.3.4"
+       "version": "9.15.2.70"
+      },
+      {
+       "status": "unaffected",
+       "version": "10.3.4.45"
       }
      ]
     }
    ],
    "record_state": "PUBLISHED",
-   "record_updated": "2026-10-15T03:57:04.527Z"
+   "record_updated": "2026-10-26T14:31:10.237Z"
   },
   {
    "cve": "CVE-2026-105134",
@@ -219709,25 +220161,477 @@
      "versions": [
       {
        "status": "affected",
-       "version": "10.3.0"
+       "version": "9.15.2.0"
       },
       {
        "status": "affected",
-       "version": "10.3.1"
+       "version": "9.15.2.1"
       },
       {
        "status": "affected",
-       "version": "10.3.2"
+       "version": "9.15.2.2"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.3"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.4"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.5"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.6"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.7"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.8"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.9"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.10"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.11"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.12"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.13"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.14"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.15"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.16"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.17"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.18"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.19"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.20"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.21"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.22"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.23"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.24"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.25"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.26"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.27"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.28"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.29"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.30"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.31"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.32"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.33"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.34"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.35"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.36"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.37"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.38"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.39"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.40"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.41"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.42"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.43"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.44"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.45"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.46"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.47"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.48"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.49"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.50"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.51"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.52"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.53"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.54"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.55"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.56"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.57"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.58"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.59"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.60"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.61"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.62"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.63"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.64"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.65"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.66"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.67"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.68"
+      },
+      {
+       "status": "affected",
+       "version": "9.15.2.69"
+      },
+      {
+       "status": "affected",
+       "version": "10.3.4.0"
+      },
+      {
+       "status": "affected",
+       "version": "10.3.4.1"
+      },
+      {
+       "status": "affected",
+       "version": "10.3.4.2"
+      },
+      {
+       "status": "affected",
+       "version": "10.3.4.3"
+      },
+      {
+       "status": "affected",
+       "version": "10.3.4.4"
+      },
+      {
+       "status": "affected",
+       "version": "10.3.4.5"
+      },
+      {
+       "status": "affected",
+       "version": "10.3.4.6"
+      },
+      {
+       "status": "affected",
+       "version": "10.3.4.7"
+      },
+      {
+       "status": "affected",
+       "version": "10.3.4.8"
+      },
+      {
+       "status": "affected",
+       "version": "10.3.4.9"
+      },
+      {
+       "status": "affected",
+       "version": "10.3.4.10"
+      },
+      {
+       "status": "affected",
+       "version": "10.3.4.11"
+      },
+      {
+       "status": "affected",
+       "version": "10.3.4.12"
+      },
+      {
+       "status": "affected",
+       "version": "10.3.4.13"
+      },
+      {
+       "status": "affected",
+       "version": "10.3.4.14"
+      },
+      {
+       "status": "affected",
+       "version": "10.3.4.15"
+      },
+      {
+       "status": "affected",
+       "version": "10.3.4.16"
+      },
+      {
+       "status": "affected",
+       "version": "10.3.4.17"
+      },
+      {
+       "status": "affected",
+       "version": "10.3.4.18"
+      },
+      {
+       "status": "affected",
+       "version": "10.3.4.19"
+      },
+      {
+       "status": "affected",
+       "version": "10.3.4.20"
+      },
+      {
+       "status": "affected",
+       "version": "10.3.4.21"
+      },
+      {
+       "status": "affected",
+       "version": "10.3.4.22"
+      },
+      {
+       "status": "affected",
+       "version": "10.3.4.23"
+      },
+      {
+       "status": "affected",
+       "version": "10.3.4.24"
+      },
+      {
+       "status": "affected",
+       "version": "10.3.4.25"
+      },
+      {
+       "status": "affected",
+       "version": "10.3.4.26"
+      },
+      {
+       "status": "affected",
+       "version": "10.3.4.27"
+      },
+      {
+       "status": "affected",
+       "version": "10.3.4.28"
+      },
+      {
+       "status": "affected",
+       "version": "10.3.4.29"
+      },
+      {
+       "status": "affected",
+       "version": "10.3.4.30"
+      },
+      {
+       "status": "affected",
+       "version": "10.3.4.31"
+      },
+      {
+       "status": "affected",
+       "version": "10.3.4.32"
+      },
+      {
+       "status": "affected",
+       "version": "10.3.4.33"
+      },
+      {
+       "status": "affected",
+       "version": "10.3.4.34"
+      },
+      {
+       "status": "affected",
+       "version": "10.3.4.35"
+      },
+      {
+       "status": "affected",
+       "version": "10.3.4.36"
+      },
+      {
+       "status": "affected",
+       "version": "10.3.4.37"
+      },
+      {
+       "status": "affected",
+       "version": "10.3.4.38"
+      },
+      {
+       "status": "affected",
+       "version": "10.3.4.39"
+      },
+      {
+       "status": "affected",
+       "version": "10.3.4.40"
+      },
+      {
+       "status": "affected",
+       "version": "10.3.4.41"
+      },
+      {
+       "status": "affected",
+       "version": "10.3.4.42"
+      },
+      {
+       "status": "affected",
+       "version": "10.3.4.43"
+      },
+      {
+       "status": "affected",
+       "version": "10.3.4.44"
       },
       {
        "status": "unaffected",
-       "version": "10.3.4"
+       "version": "9.15.2.70"
+      },
+      {
+       "status": "unaffected",
+       "version": "10.3.4.45"
       }
      ]
     }
    ],
    "record_state": "PUBLISHED",
-   "record_updated": "2026-10-15T03:57:03.605Z"
+   "record_updated": "2026-10-26T14:31:13.988Z"
   },
   {
    "cve": "CVE-2026-10520",
@@ -249099,6 +250003,6 @@
    "record_updated": "2026-10-25T17:16:48.086Z"
   }
  ],
- "kev_generated_at": "2026-10-26T08:03:10Z",
+ "kev_generated_at": "2026-10-26T20:03:08Z",
  "source": "CVE Project cvelistV5 (https://github.com/CVEProject/cvelistV5)"
 }
