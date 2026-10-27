@@ -1,11 +1,11 @@
 {
   "feed": "exploited-cve-watchlist",
-  "generated_at": "2026-10-26T20:03:08Z",
+  "generated_at": "2026-10-27T08:17:26Z",
   "source": "CISA KEV + FIRST EPSS",
-  "total_kev": 1756,
-  "count": 495,
+  "total_kev": 1758,
+  "count": 497,
   "enrichment": {
-    "epss_available": 1756,
+    "epss_available": 1758,
     "epss_missing": 0,
     "epss_coverage": 1.0,
     "epss_failed_requests": 0,
@@ -14,6 +14,76 @@
     "reasons": []
   },
   "items": [
+    {
+      "cve": "CVE-2026-109619",
+      "vendor": "PHP Group",
+      "product": "PHP",
+      "name": "PHP Stale Internal Request-State Vulnerability",
+      "description": "PHP contains a stale internal request-state vulnerability that allows for unauthenticated remote code execution.",
+      "date_added": "2026-10-26",
+      "due_date": "2026-10-29",
+      "required_action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage Requirements\u201d (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+      "known_ransomware": false,
+      "cwes": [
+        "CWE-416",
+        "CWE-755",
+        "CWE-824",
+        "CWE-1325",
+        "CWE-1419"
+      ],
+      "epss": 0.99997,
+      "epss_percentile": 0.99989,
+      "epss_date": "2026-10-26",
+      "india_relevance": "medium",
+      "relevance_match": "php",
+      "watchlist": true,
+      "tags": [],
+      "sources": [
+        {
+          "title": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "title": "NVD - CVE-2026-109619",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109619"
+        }
+      ]
+    },
+    {
+      "cve": "CVE-2026-109618",
+      "vendor": "PHP Group",
+      "product": "PHP",
+      "name": "PHP Memory Corruption Vulnerability",
+      "description": "PHP contains an out-of-memory corruption vulnerability that allows for unauthenticated remote code execution.",
+      "date_added": "2026-10-26",
+      "due_date": "2026-10-29",
+      "required_action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage Requirements\u201d (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+      "known_ransomware": false,
+      "cwes": [
+        "CWE-416",
+        "CWE-755",
+        "CWE-824",
+        "CWE-1325",
+        "CWE-1419"
+      ],
+      "epss": 0.99981,
+      "epss_percentile": 0.99981,
+      "epss_date": "2026-10-26",
+      "india_relevance": "medium",
+      "relevance_match": "php",
+      "watchlist": true,
+      "tags": [],
+      "sources": [
+        {
+          "title": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "title": "NVD - CVE-2026-109618",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109618"
+        }
+      ]
+    },
     {
       "cve": "CVE-2025-61624",
       "vendor": "Fortinet",
