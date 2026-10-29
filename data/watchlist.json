@@ -1,11 +1,11 @@
 {
   "feed": "exploited-cve-watchlist",
-  "generated_at": "2026-10-28T19:43:47Z",
+  "generated_at": "2026-10-29T08:49:24Z",
   "source": "CISA KEV + FIRST EPSS",
-  "total_kev": 1760,
-  "count": 499,
+  "total_kev": 1762,
+  "count": 501,
   "enrichment": {
-    "epss_available": 1760,
+    "epss_available": 1762,
     "epss_missing": 0,
     "epss_coverage": 1.0,
     "epss_failed_requests": 0,
@@ -14,6 +14,68 @@
     "reasons": []
   },
   "items": [
+    {
+      "cve": "CVE-2026-46300",
+      "vendor": "Linux",
+      "product": "Kernel",
+      "name": "Linux Kernel Missing Initialization of a Variable Vulnerability",
+      "description": "Linux Kernel contains a missing initialization of a variable vulnerability that could allow for unintended modification of page-cache-backed data via failure to preserve the shared-fragment marker during socket buffer coalescing, causing ESP input processing to decrypt shared fragments in place. This vulnerability can be chained with CVE-2026-109618 and CVE-2026-109619 to implant PHP webshells and run commands as root.",
+      "date_added": "2026-10-28",
+      "due_date": "2026-10-31",
+      "required_action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage Requirements\u201d (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+      "known_ransomware": false,
+      "cwes": [
+        "CWE-456"
+      ],
+      "epss": 0.10192,
+      "epss_percentile": 0.95651,
+      "epss_date": "2026-10-28",
+      "india_relevance": "medium",
+      "relevance_match": "linux kernel",
+      "watchlist": true,
+      "tags": [],
+      "sources": [
+        {
+          "title": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "title": "NVD - CVE-2026-46300",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-46300"
+        }
+      ]
+    },
+    {
+      "cve": "CVE-2026-41709",
+      "vendor": "Broadcom",
+      "product": "VMware ESX",
+      "name": "Broadcom VMWare ESX Insufficient Logging Vulnerability",
+      "description": "Broadcom VMWare ESX contains an insufficient logging vulnerability that could allow a malicious actor with admin access to perform certain operations without being logged.",
+      "date_added": "2026-10-28",
+      "due_date": "2026-11-11",
+      "required_action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage Requirements\u201d (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+      "known_ransomware": false,
+      "cwes": [
+        "CWE-778"
+      ],
+      "epss": 0.00297,
+      "epss_percentile": 0.22291,
+      "epss_date": "2026-10-28",
+      "india_relevance": "high",
+      "relevance_match": "vmware",
+      "watchlist": true,
+      "tags": [],
+      "sources": [
+        {
+          "title": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "title": "NVD - CVE-2026-41709",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-41709"
+        }
+      ]
+    },
     {
       "cve": "CVE-2026-48356",
       "vendor": "Adobe",

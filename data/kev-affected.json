@@ -1,10 +1,10 @@
 {
  "coverage": {
   "fetch_failures_this_run": 0,
-  "kev_cves": 1760,
-  "records_published": 1760,
+  "kev_cves": 1762,
+  "records_published": 1762,
   "unavailable": 0,
-  "with_version_entries": 1760
+  "with_version_entries": 1762
  },
  "description": "Affected products and versions for every CISA KEV CVE, as written by the CVE Numbering Authority (and ADPs such as CISA vulnrichment) in the official CVE records. Not interpreted: see EXPOSURE-MATCHER.md for how versions are compared.",
  "feed": "kev-affected",
@@ -220962,7 +220962,7 @@
     }
    ],
    "record_state": "PUBLISHED",
-   "record_updated": "2026-10-23T17:58:51.876Z"
+   "record_updated": "2026-10-24T03:55:14.884Z"
   },
   {
    "cve": "CVE-2026-11645",
@@ -241166,6 +241166,93 @@
    "record_updated": "2026-08-10T15:13:49.938Z"
   },
   {
+   "cve": "CVE-2026-41709",
+   "products": [
+    {
+     "default_status": "unaffected",
+     "product": "Cloud Foundation",
+     "source": "cna",
+     "vendor": "VMware",
+     "versions": [
+      {
+       "status": "affected",
+       "version": "9.1.x.x"
+      },
+      {
+       "status": "affected",
+       "version": "9.0.x.x"
+      },
+      {
+       "less_than": "5.2.4",
+       "status": "affected",
+       "version": "5.x",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unaffected",
+     "product": "vSphere Foundation",
+     "source": "cna",
+     "vendor": "VMware",
+     "versions": [
+      {
+       "status": "affected",
+       "version": "9.1.x.x"
+      },
+      {
+       "status": "affected",
+       "version": "9.0.x.x"
+      }
+     ]
+    },
+    {
+     "default_status": "unaffected",
+     "product": "ESX",
+     "source": "cna",
+     "vendor": "VMware",
+     "versions": [
+      {
+       "less_than": "ESXi-9.1.0.0-25370933",
+       "status": "affected",
+       "version": "9.1.x.x",
+       "version_type": "custom"
+      },
+      {
+       "less_than": "ESXi-9.0.2.0100-25595025",
+       "status": "affected",
+       "version": "9.0.x.x",
+       "version_type": "custom"
+      },
+      {
+       "less_than": "ESXi80U3j-25429389",
+       "status": "affected",
+       "version": "8.0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unaffected",
+     "product": "Telco Cloud Platform",
+     "source": "cna",
+     "vendor": "VMware",
+     "versions": [
+      {
+       "status": "affected",
+       "version": "5.1.x"
+      },
+      {
+       "status": "affected",
+       "version": "5.0.x"
+      }
+     ]
+    }
+   ],
+   "record_state": "PUBLISHED",
+   "record_updated": "2026-10-29T03:56:50.795Z"
+  },
+  {
    "cve": "CVE-2026-41940",
    "products": [
     {
@@ -242422,6 +242509,895 @@
    ],
    "record_state": "PUBLISHED",
    "record_updated": "2026-08-11T03:55:31.769Z"
+  },
+  {
+   "cve": "CVE-2026-46300",
+   "products": [
+    {
+     "default_status": "unaffected",
+     "product": "Linux",
+     "source": "cna",
+     "vendor": "Linux",
+     "versions": [
+      {
+       "less_than": "3599e6b3cc1ada96883d496a50a210d3afbb6987",
+       "status": "affected",
+       "version": "cef401de7be8c4e155c6746bfccf721a4fa5fab9",
+       "version_type": "git"
+      },
+      {
+       "less_than": "2f2b16022a2e10ca7bccfb98db5ed2ec0f72641c",
+       "status": "affected",
+       "version": "cef401de7be8c4e155c6746bfccf721a4fa5fab9",
+       "version_type": "git"
+      },
+      {
+       "less_than": "9d3e5fd19fe1063bf607219e8562fbd567b8e8d5",
+       "status": "affected",
+       "version": "cef401de7be8c4e155c6746bfccf721a4fa5fab9",
+       "version_type": "git"
+      },
+      {
+       "less_than": "78bf6b6bb19541d19fbda6242e7cfe2c682763c0",
+       "status": "affected",
+       "version": "cef401de7be8c4e155c6746bfccf721a4fa5fab9",
+       "version_type": "git"
+      },
+      {
+       "less_than": "760e1addc27ba1a7beb4a0a7e8b3e9ec49e7a34e",
+       "status": "affected",
+       "version": "cef401de7be8c4e155c6746bfccf721a4fa5fab9",
+       "version_type": "git"
+      },
+      {
+       "less_than": "3bd9e113d50034db99d7ef69fd8e5242d15e414a",
+       "status": "affected",
+       "version": "cef401de7be8c4e155c6746bfccf721a4fa5fab9",
+       "version_type": "git"
+      },
+      {
+       "less_than": "3884358a9286b17f389a72b1426fc4547c23c111",
+       "status": "affected",
+       "version": "cef401de7be8c4e155c6746bfccf721a4fa5fab9",
+       "version_type": "git"
+      },
+      {
+       "less_than": "f84eca5817390257cef78013d0112481c503b4a3",
+       "status": "affected",
+       "version": "cef401de7be8c4e155c6746bfccf721a4fa5fab9",
+       "version_type": "git"
+      }
+     ]
+    },
+    {
+     "default_status": "affected",
+     "product": "Linux",
+     "source": "cna",
+     "vendor": "Linux",
+     "versions": [
+      {
+       "status": "affected",
+       "version": "3.9"
+      },
+      {
+       "less_than": "3.9",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "semver"
+      },
+      {
+       "less_than_or_equal": "5.10.*",
+       "status": "unaffected",
+       "version": "5.10.257",
+       "version_type": "semver"
+      },
+      {
+       "less_than_or_equal": "5.15.*",
+       "status": "unaffected",
+       "version": "5.15.208",
+       "version_type": "semver"
+      },
+      {
+       "less_than_or_equal": "6.1.*",
+       "status": "unaffected",
+       "version": "6.1.174",
+       "version_type": "semver"
+      },
+      {
+       "less_than_or_equal": "6.6.*",
+       "status": "unaffected",
+       "version": "6.6.141",
+       "version_type": "semver"
+      },
+      {
+       "less_than_or_equal": "6.12.*",
+       "status": "unaffected",
+       "version": "6.12.91",
+       "version_type": "semver"
+      },
+      {
+       "less_than_or_equal": "6.18.*",
+       "status": "unaffected",
+       "version": "6.18.33",
+       "version_type": "semver"
+      },
+      {
+       "less_than_or_equal": "7.0.*",
+       "status": "unaffected",
+       "version": "7.0.10",
+       "version_type": "semver"
+      },
+      {
+       "less_than_or_equal": "*",
+       "status": "unaffected",
+       "version": "7.1",
+       "version_type": "original_commit_for_fix"
+      }
+     ]
+    },
+    {
+     "cpes": [
+      "cpe:/a:redhat:enterprise_linux_nvidia:10::el10"
+     ],
+     "default_status": "affected",
+     "product": "NVIDIA for RHEL 10",
+     "source": "adp:redhat-SADP",
+     "vendor": "Red Hat",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0:6.12.0-211.8.el10nv",
+       "version_type": "rpm"
+      },
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0:6.12.0-231.12.el10nv",
+       "version_type": "rpm"
+      }
+     ]
+    },
+    {
+     "cpes": [
+      "cpe:/o:redhat:enterprise_linux:10.2"
+     ],
+     "default_status": "affected",
+     "product": "Red Hat Enterprise Linux 10",
+     "source": "adp:redhat-SADP",
+     "vendor": "Red Hat",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0:6.12.0-211.16.1.el10_2",
+       "version_type": "rpm"
+      }
+     ]
+    },
+    {
+     "cpes": [
+      "cpe:/o:redhat:enterprise_linux_eus:10.0"
+     ],
+     "default_status": "affected",
+     "product": "Red Hat Enterprise Linux 10.0 Extended Update Support",
+     "source": "adp:redhat-SADP",
+     "vendor": "Red Hat",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0:6.12.0-55.75.1.el10_0",
+       "version_type": "rpm"
+      }
+     ]
+    },
+    {
+     "cpes": [
+      "cpe:/a:redhat:enterprise_linux:8::nfv"
+     ],
+     "default_status": "affected",
+     "product": "Red Hat Enterprise Linux 8",
+     "source": "adp:redhat-SADP",
+     "vendor": "Red Hat",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0:4.18.0-553.125.1.rt7.466.el8_10",
+       "version_type": "rpm"
+      }
+     ]
+    },
+    {
+     "cpes": [
+      "cpe:/o:redhat:enterprise_linux:8"
+     ],
+     "default_status": "affected",
+     "product": "Red Hat Enterprise Linux 8",
+     "source": "adp:redhat-SADP",
+     "vendor": "Red Hat",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0:4.18.0-553.125.1.el8_10",
+       "version_type": "rpm"
+      }
+     ]
+    },
+    {
+     "cpes": [
+      "cpe:/o:redhat:enterprise_linux:8"
+     ],
+     "default_status": "unaffected",
+     "product": "Red Hat Enterprise Linux 8",
+     "source": "adp:redhat-SADP",
+     "vendor": "Red Hat",
+     "versions": []
+    },
+    {
+     "cpes": [
+      "cpe:/o:redhat:rhel_aus:8.4"
+     ],
+     "default_status": "affected",
+     "product": "Red Hat Enterprise Linux 8.4 Advanced Mission Critical Update Support",
+     "source": "adp:redhat-SADP",
+     "vendor": "Red Hat",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0:4.18.0-305.192.1.el8_4",
+       "version_type": "rpm"
+      }
+     ]
+    },
+    {
+     "cpes": [
+      "cpe:/o:redhat:rhel_eus_long_life:8.4"
+     ],
+     "default_status": "affected",
+     "product": "Red Hat Enterprise Linux 8.4 Extended Update Support Long-Life Add-On",
+     "source": "adp:redhat-SADP",
+     "vendor": "Red Hat",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0:4.18.0-305.192.1.el8_4",
+       "version_type": "rpm"
+      }
+     ]
+    },
+    {
+     "cpes": [
+      "cpe:/o:redhat:rhel_aus:8.6"
+     ],
+     "default_status": "affected",
+     "product": "Red Hat Enterprise Linux 8.6 Advanced Mission Critical Update Support",
+     "source": "adp:redhat-SADP",
+     "vendor": "Red Hat",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0:4.18.0-372.193.1.el8_6",
+       "version_type": "rpm"
+      }
+     ]
+    },
+    {
+     "cpes": [
+      "cpe:/o:redhat:rhel_tus:8.6"
+     ],
+     "default_status": "affected",
+     "product": "Red Hat Enterprise Linux 8.6 Telecommunications Update Service",
+     "source": "adp:redhat-SADP",
+     "vendor": "Red Hat",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0:4.18.0-372.193.1.el8_6",
+       "version_type": "rpm"
+      }
+     ]
+    },
+    {
+     "cpes": [
+      "cpe:/o:redhat:rhel_e4s:8.6"
+     ],
+     "default_status": "affected",
+     "product": "Red Hat Enterprise Linux 8.6 Update Services for SAP Solutions",
+     "source": "adp:redhat-SADP",
+     "vendor": "Red Hat",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0:4.18.0-372.193.1.el8_6",
+       "version_type": "rpm"
+      }
+     ]
+    },
+    {
+     "cpes": [
+      "cpe:/o:redhat:rhel_tus:8.8"
+     ],
+     "default_status": "affected",
+     "product": "Red Hat Enterprise Linux 8.8 Telecommunications Update Service",
+     "source": "adp:redhat-SADP",
+     "vendor": "Red Hat",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0:4.18.0-477.143.1.el8_8",
+       "version_type": "rpm"
+      }
+     ]
+    },
+    {
+     "cpes": [
+      "cpe:/o:redhat:rhel_e4s:8.8"
+     ],
+     "default_status": "affected",
+     "product": "Red Hat Enterprise Linux 8.8 Update Services for SAP Solutions",
+     "source": "adp:redhat-SADP",
+     "vendor": "Red Hat",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0:4.18.0-477.143.1.el8_8",
+       "version_type": "rpm"
+      }
+     ]
+    },
+    {
+     "cpes": [
+      "cpe:/o:redhat:rhel_e4s:8.8"
+     ],
+     "default_status": "unaffected",
+     "product": "Red Hat Enterprise Linux 8.8 Update Services for SAP Solutions",
+     "source": "adp:redhat-SADP",
+     "vendor": "Red Hat",
+     "versions": []
+    },
+    {
+     "cpes": [
+      "cpe:/a:redhat:enterprise_linux:9",
+      "cpe:/o:redhat:enterprise_linux:9"
+     ],
+     "default_status": "affected",
+     "product": "Red Hat Enterprise Linux 9",
+     "source": "adp:redhat-SADP",
+     "vendor": "Red Hat",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0:5.14.0-687.10.1.el9_8",
+       "version_type": "rpm"
+      }
+     ]
+    },
+    {
+     "cpes": [
+      "cpe:/a:redhat:rhel_e4s:9.0"
+     ],
+     "default_status": "affected",
+     "product": "Red Hat Enterprise Linux 9.0 Update Services for SAP Solutions",
+     "source": "adp:redhat-SADP",
+     "vendor": "Red Hat",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0:5.14.0-70.180.1.el9_0",
+       "version_type": "rpm"
+      }
+     ]
+    },
+    {
+     "cpes": [
+      "cpe:/a:redhat:rhel_e4s:9.0::nfv"
+     ],
+     "default_status": "affected",
+     "product": "Red Hat Enterprise Linux 9.0 Update Services for SAP Solutions",
+     "source": "adp:redhat-SADP",
+     "vendor": "Red Hat",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0:5.14.0-70.180.1.rt21.252.el9_0",
+       "version_type": "rpm"
+      }
+     ]
+    },
+    {
+     "cpes": [
+      "cpe:/a:redhat:rhel_e4s:9.2"
+     ],
+     "default_status": "affected",
+     "product": "Red Hat Enterprise Linux 9.2 Update Services for SAP Solutions",
+     "source": "adp:redhat-SADP",
+     "vendor": "Red Hat",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0:5.14.0-284.172.1.el9_2",
+       "version_type": "rpm"
+      }
+     ]
+    },
+    {
+     "cpes": [
+      "cpe:/a:redhat:rhel_e4s:9.2::nfv"
+     ],
+     "default_status": "affected",
+     "product": "Red Hat Enterprise Linux 9.2 Update Services for SAP Solutions",
+     "source": "adp:redhat-SADP",
+     "vendor": "Red Hat",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0:5.14.0-284.172.1.rt14.457.el9_2",
+       "version_type": "rpm"
+      }
+     ]
+    },
+    {
+     "cpes": [
+      "cpe:/o:redhat:rhel_e4s:9.2"
+     ],
+     "default_status": "unaffected",
+     "product": "Red Hat Enterprise Linux 9.2 Update Services for SAP Solutions",
+     "source": "adp:redhat-SADP",
+     "vendor": "Red Hat",
+     "versions": []
+    },
+    {
+     "cpes": [
+      "cpe:/a:redhat:rhel_eus:9.4"
+     ],
+     "default_status": "affected",
+     "product": "Red Hat Enterprise Linux 9.4 Extended Update Support",
+     "source": "adp:redhat-SADP",
+     "vendor": "Red Hat",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0:5.14.0-427.126.1.el9_4",
+       "version_type": "rpm"
+      }
+     ]
+    },
+    {
+     "cpes": [
+      "cpe:/o:redhat:rhel_e4s:9.4"
+     ],
+     "default_status": "unaffected",
+     "product": "Red Hat Enterprise Linux 9.4 Update Services for SAP Solutions",
+     "source": "adp:redhat-SADP",
+     "vendor": "Red Hat",
+     "versions": []
+    },
+    {
+     "cpes": [
+      "cpe:/a:redhat:rhel_eus:9.6"
+     ],
+     "default_status": "affected",
+     "product": "Red Hat Enterprise Linux 9.6 Extended Update Support",
+     "source": "adp:redhat-SADP",
+     "vendor": "Red Hat",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0:5.14.0-570.116.1.el9_6",
+       "version_type": "rpm"
+      }
+     ]
+    },
+    {
+     "cpes": [
+      "cpe:/o:redhat:rhel_eus:9.6"
+     ],
+     "default_status": "unaffected",
+     "product": "Red Hat Enterprise Linux 9.6 Extended Update Support",
+     "source": "adp:redhat-SADP",
+     "vendor": "Red Hat",
+     "versions": []
+    },
+    {
+     "cpes": [
+      "cpe:/a:redhat:openshift:4.12::el8"
+     ],
+     "default_status": "affected",
+     "product": "Red Hat OpenShift Container Platform 4.12",
+     "source": "adp:redhat-SADP",
+     "vendor": "Red Hat",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "412.86.202605271418-0",
+       "version_type": "rpm"
+      }
+     ]
+    },
+    {
+     "cpes": [
+      "cpe:/a:redhat:openshift:4.13::el9"
+     ],
+     "default_status": "affected",
+     "product": "Red Hat OpenShift Container Platform 4.13",
+     "source": "adp:redhat-SADP",
+     "vendor": "Red Hat",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "413.92.202605271328-0",
+       "version_type": "rpm"
+      }
+     ]
+    },
+    {
+     "cpes": [
+      "cpe:/a:redhat:openshift:4.14::el9"
+     ],
+     "default_status": "affected",
+     "product": "Red Hat OpenShift Container Platform 4.14",
+     "source": "adp:redhat-SADP",
+     "vendor": "Red Hat",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "414.92.202606231112-0",
+       "version_type": "rpm"
+      }
+     ]
+    },
+    {
+     "cpes": [
+      "cpe:/a:redhat:openshift:4.15::el9"
+     ],
+     "default_status": "affected",
+     "product": "Red Hat OpenShift Container Platform 4.15",
+     "source": "adp:redhat-SADP",
+     "vendor": "Red Hat",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "415.92.202606030318-0",
+       "version_type": "rpm"
+      }
+     ]
+    },
+    {
+     "cpes": [
+      "cpe:/a:redhat:openshift:4.16::el9"
+     ],
+     "default_status": "affected",
+     "product": "Red Hat OpenShift Container Platform 4.16",
+     "source": "adp:redhat-SADP",
+     "vendor": "Red Hat",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "416.94.202605200242-0",
+       "version_type": "rpm"
+      },
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "416.94.202606051757-0",
+       "version_type": "rpm"
+      }
+     ]
+    },
+    {
+     "cpes": [
+      "cpe:/a:redhat:openshift:4.17::el9"
+     ],
+     "default_status": "affected",
+     "product": "Red Hat OpenShift Container Platform 4.17",
+     "source": "adp:redhat-SADP",
+     "vendor": "Red Hat",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "417.94.202606250942-0",
+       "version_type": "rpm"
+      }
+     ]
+    },
+    {
+     "cpes": [
+      "cpe:/a:redhat:openshift:4.18::el9"
+     ],
+     "default_status": "affected",
+     "product": "Red Hat OpenShift Container Platform 4.18",
+     "source": "adp:redhat-SADP",
+     "vendor": "Red Hat",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "418.94.202605260517-0",
+       "version_type": "rpm"
+      }
+     ]
+    },
+    {
+     "cpes": [
+      "cpe:/a:redhat:openshift:4.19::el9"
+     ],
+     "default_status": "affected",
+     "product": "Red Hat OpenShift Container Platform 4.19",
+     "source": "adp:redhat-SADP",
+     "vendor": "Red Hat",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "4.19.9.6.202606031700-0",
+       "version_type": "rpm"
+      }
+     ]
+    },
+    {
+     "cpes": [
+      "cpe:/a:redhat:openshift:4.20::el9"
+     ],
+     "default_status": "affected",
+     "product": "Red Hat OpenShift Container Platform 4.20",
+     "source": "adp:redhat-SADP",
+     "vendor": "Red Hat",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "4.20.9.6.202605270908-0",
+       "version_type": "rpm"
+      }
+     ]
+    },
+    {
+     "cpes": [
+      "cpe:/a:redhat:openshift:4.21::el8"
+     ],
+     "default_status": "affected",
+     "product": "Red Hat OpenShift Container Platform 4.21",
+     "source": "adp:redhat-SADP",
+     "vendor": "Red Hat",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0:5.14.0-570.116.1.el9_6",
+       "version_type": "rpm"
+      }
+     ]
+    },
+    {
+     "cpes": [
+      "cpe:/a:redhat:openshift:4.21::el8"
+     ],
+     "default_status": "affected",
+     "product": "Red Hat OpenShift Container Platform 4.21",
+     "source": "adp:redhat-SADP",
+     "vendor": "Red Hat",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0:4.21.0-202605142021.p2.geab2218.assembly.stream.el10",
+       "version_type": "rpm"
+      }
+     ]
+    },
+    {
+     "cpes": [
+      "cpe:/a:redhat:openshift:4.21::el9"
+     ],
+     "default_status": "affected",
+     "product": "Red Hat OpenShift Container Platform 4.21",
+     "source": "adp:redhat-SADP",
+     "vendor": "Red Hat",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "4.21.9.6.202606030721-0",
+       "version_type": "rpm"
+      }
+     ]
+    },
+    {
+     "cpes": [
+      "cpe:/o:redhat:enterprise_linux:6"
+     ],
+     "default_status": "unaffected",
+     "product": "Red Hat Enterprise Linux 6",
+     "source": "adp:redhat-SADP",
+     "vendor": "Red Hat",
+     "versions": []
+    },
+    {
+     "cpes": [
+      "cpe:/o:redhat:enterprise_linux:7"
+     ],
+     "default_status": "unaffected",
+     "product": "Red Hat Enterprise Linux 7",
+     "source": "adp:redhat-SADP",
+     "vendor": "Red Hat",
+     "versions": []
+    },
+    {
+     "cpes": [
+      "cpe:/o:redhat:enterprise_linux:7"
+     ],
+     "default_status": "unaffected",
+     "product": "Red Hat Enterprise Linux 7",
+     "source": "adp:redhat-SADP",
+     "vendor": "Red Hat",
+     "versions": []
+    },
+    {
+     "default_status": "unknown",
+     "product": "SIMATIC S7-1500 CPU 1518-4 PN/DP MFP",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "V3.1.7",
+       "status": "affected",
+       "version": "V3.1.6",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "SIMATIC S7-1500 CPU 1518-4 PN/DP MFP",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "affected",
+       "version": "V3.1.5",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "SIMATIC S7-1500 CPU 1518-4 PN/DP MFP",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "V3.1.7",
+       "status": "affected",
+       "version": "V3.1.6",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "SIMATIC S7-1500 CPU 1518-4 PN/DP MFP",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "affected",
+       "version": "V3.1.5",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "SIMATIC S7-1500 CPU 1518F-4 PN/DP MFP",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "V3.1.7",
+       "status": "affected",
+       "version": "V3.1.6",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "SIMATIC S7-1500 CPU 1518F-4 PN/DP MFP",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "affected",
+       "version": "V3.1.5",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "SIMATIC S7-1500 CPU 1518F-4 PN/DP MFP",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "V3.1.7",
+       "status": "affected",
+       "version": "V3.1.6",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "SIMATIC S7-1500 CPU 1518F-4 PN/DP MFP",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "affected",
+       "version": "V3.1.5",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "SIPLUS S7-1500 CPU 1518-4 PN/DP MFP",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "V3.1.7",
+       "status": "affected",
+       "version": "V3.1.6",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "SIPLUS S7-1500 CPU 1518-4 PN/DP MFP",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "affected",
+       "version": "V3.1.5",
+       "version_type": "custom"
+      }
+     ]
+    }
+   ],
+   "record_state": "PUBLISHED",
+   "record_updated": "2026-10-29T03:55:37.330Z"
   },
   {
    "cve": "CVE-2026-46817",
@@ -250225,6 +251201,6 @@
    "record_updated": "2026-10-25T17:16:48.086Z"
   }
  ],
- "kev_generated_at": "2026-10-28T19:43:47Z",
+ "kev_generated_at": "2026-10-29T08:49:24Z",
  "source": "CVE Project cvelistV5 (https://github.com/CVEProject/cvelistV5)"
 }
