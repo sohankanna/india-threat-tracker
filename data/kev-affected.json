@@ -1,10 +1,10 @@
 {
  "coverage": {
-  "fetch_failures_this_run": 0,
-  "kev_cves": 1764,
-  "records_published": 1764,
-  "unavailable": 0,
-  "with_version_entries": 1764
+  "fetch_failures_this_run": 1,
+  "kev_cves": 1766,
+  "records_published": 1765,
+  "unavailable": 1,
+  "with_version_entries": 1765
  },
  "description": "Affected products and versions for every CISA KEV CVE, as written by the CVE Numbering Authority (and ADPs such as CISA vulnrichment) in the official CVE records. Not interpreted: see EXPOSURE-MATCHER.md for how versions are compared.",
  "feed": "kev-affected",
@@ -220896,6 +220896,26 @@
    "record_updated": "2026-10-21T03:56:21.823Z"
   },
   {
+   "cve": "CVE-2026-111357",
+   "products": [
+    {
+     "default_status": "unknown",
+     "product": "Connect Secure",
+     "source": "cna",
+     "vendor": "Ivanti",
+     "versions": [
+      {
+       "status": "affected",
+       "version": "22.8R2.4",
+       "version_type": "custom"
+      }
+     ]
+    }
+   ],
+   "record_state": "PUBLISHED",
+   "record_updated": "2026-10-30T17:28:35.977Z"
+  },
+  {
    "cve": "CVE-2026-111497",
    "products": [
     {
@@ -220984,6 +221004,12 @@
    ],
    "record_state": "PUBLISHED",
    "record_updated": "2026-06-10T03:58:04.682Z"
+  },
+  {
+   "cve": "CVE-2026-118527",
+   "products": [],
+   "record_state": "unavailable",
+   "record_updated": null
   },
   {
    "cve": "CVE-2026-12569",
@@ -252096,6 +252122,6 @@
    "record_updated": "2026-10-14T10:51:05.616Z"
   }
  ],
- "kev_generated_at": "2026-10-30T08:53:43Z",
+ "kev_generated_at": "2026-10-30T19:34:52Z",
  "source": "CVE Project cvelistV5 (https://github.com/CVEProject/cvelistV5)"
 }
