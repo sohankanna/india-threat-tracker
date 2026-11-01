@@ -219573,13 +219573,17 @@
       "cpe:2.3:a:fortinet:fortimail:7.4.4:*:*:*:*:*:*:*",
       "cpe:2.3:a:fortinet:fortimail:7.4.5:*:*:*:*:*:*:*",
       "cpe:2.3:a:fortinet:fortimail:7.4.6:*:*:*:*:*:*:*",
+      "cpe:2.3:a:fortinet:fortimail:7.4.7:*:*:*:*:*:*:*",
+      "cpe:2.3:a:fortinet:fortimail:7.4.8:*:*:*:*:*:*:*",
       "cpe:2.3:a:fortinet:fortimail:7.6.0:*:*:*:*:*:*:*",
       "cpe:2.3:a:fortinet:fortimail:7.6.1:*:*:*:*:*:*:*",
       "cpe:2.3:a:fortinet:fortimail:7.6.2:*:*:*:*:*:*:*",
       "cpe:2.3:a:fortinet:fortimail:7.6.3:*:*:*:*:*:*:*",
       "cpe:2.3:a:fortinet:fortimail:7.6.4:*:*:*:*:*:*:*",
       "cpe:2.3:a:fortinet:fortimail:7.6.5:*:*:*:*:*:*:*",
-      "cpe:2.3:a:fortinet:fortimail:8.0.0:*:*:*:*:*:*:*"
+      "cpe:2.3:a:fortinet:fortimail:7.6.6:*:*:*:*:*:*:*",
+      "cpe:2.3:a:fortinet:fortimail:8.0.0:*:*:*:*:*:*:*",
+      "cpe:2.3:a:fortinet:fortimail:8.0.1:*:*:*:*:*:*:*"
      ],
      "default_status": "unaffected",
      "product": "FortiMail",
@@ -219587,17 +219591,19 @@
      "vendor": "Fortinet",
      "versions": [
       {
+       "less_than_or_equal": "8.0.1",
        "status": "affected",
-       "version": "8.0.0"
+       "version": "8.0.0",
+       "version_type": "semver"
       },
       {
-       "less_than_or_equal": "7.6.5",
+       "less_than_or_equal": "7.6.6",
        "status": "affected",
        "version": "7.6.0",
        "version_type": "semver"
       },
       {
-       "less_than_or_equal": "7.4.6",
+       "less_than_or_equal": "7.4.8",
        "status": "affected",
        "version": "7.4.0",
        "version_type": "semver"
@@ -219618,7 +219624,7 @@
     }
    ],
    "record_state": "PUBLISHED",
-   "record_updated": "2026-10-07T17:59:34.842Z"
+   "record_updated": "2026-10-28T17:10:14.979Z"
   },
   {
    "cve": "CVE-2026-104935",
@@ -236218,7 +236224,7 @@
     }
    ],
    "record_state": "PUBLISHED",
-   "record_updated": "2026-10-19T18:26:40.891Z"
+   "record_updated": "2026-10-29T12:04:46.110Z"
   },
   {
    "cve": "CVE-2026-21643",
@@ -246331,7 +246337,7 @@
     }
    ],
    "record_state": "PUBLISHED",
-   "record_updated": "2026-10-08T18:16:58.104Z"
+   "record_updated": "2026-10-28T20:05:40.043Z"
   },
   {
    "cve": "CVE-2026-55255",
@@ -251211,7 +251217,7 @@
     }
    ],
    "record_state": "PUBLISHED",
-   "record_updated": "2026-10-14T23:14:33.668Z"
+   "record_updated": "2026-10-31T16:17:44.501Z"
   },
   {
    "cve": "CVE-2026-82078",
@@ -252498,6 +252504,20 @@
    "products": [
     {
      "default_status": "unknown",
+     "product": "Microsoft Edge (Chromium-based)",
+     "source": "cna",
+     "vendor": "Microsoft",
+     "versions": [
+      {
+       "less_than": "154.0.4258.62",
+       "status": "affected",
+       "version": "1.0.0.0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
      "product": "Outlook.com",
      "source": "cna",
      "vendor": "Microsoft",
@@ -252845,7 +252865,7 @@
     }
    ],
    "record_state": "PUBLISHED",
-   "record_updated": "2026-10-25T17:16:48.086Z"
+   "record_updated": "2026-10-31T18:11:44.034Z"
   },
   {
    "cve": "CVE-2026-97229",
@@ -252884,6 +252904,6 @@
    "record_updated": "2026-10-14T10:51:05.616Z"
   }
  ],
- "kev_generated_at": "2026-10-31T18:40:53Z",
+ "kev_generated_at": "2026-11-01T09:35:48Z",
  "source": "CVE Project cvelistV5 (https://github.com/CVEProject/cvelistV5)"
 }
