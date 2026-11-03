@@ -3,6 +3,20 @@
 Dates are when the change reached `main`. Data feeds update twice a day and are
 not listed here.
 
+## Unreleased
+
+### Threat actors
+
+* Added **MuddyWater** (Iran-nexus, MOIS), the tracker's first Iranian actor.
+  India appears in its documented target lists (Unit 42, 2017; HarfangLab,
+  2024), and DSCI's March 2026 advisory names it among Iranian actors posing
+  risk to Indian organisations. Confidence is medium: no India-specific
+  campaign has been publicly reported. Exported to STIX as an intrusion set.
+* Researched and **not added**: OilRig/APT34, Charming Kitten/APT35,
+  CyberAv3ngers and the pro-Iran hacktivist groups active in 2026. No public
+  reporting found names Indian targets for them; they will be added if that
+  changes.
+
 ## v0.2.0 — Phase 2 research preview (2026-10-21)
 
 Three new capabilities, each with its validation level stated plainly.

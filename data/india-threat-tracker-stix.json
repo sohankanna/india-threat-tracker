@@ -1,6 +1,25 @@
 {
-  "id": "bundle--1c163b9d-f092-4587-bc2d-8b13cfa0389e",
+  "id": "bundle--7cc9a3db-951b-495f-b833-3e2bec362571",
   "objects": [
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "external_references": [
+        {
+          "external_id": "T1555.003",
+          "source_name": "mitre-attack",
+          "url": "https://attack.mitre.org/techniques/T1555/003/"
+        }
+      ],
+      "id": "attack-pattern--01839fdb-0f8f-4025-82d2-acbc9311d7a1",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "name": "Credentials from Password Stores: Credentials from Web Browsers",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "attack-pattern"
+    },
     {
       "created": "2026-10-16T00:00:00.000Z",
       "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
@@ -33,6 +52,25 @@
       "id": "attack-pattern--0f7d0fc3-cf8a-40ca-b077-6898bffcc9e6",
       "modified": "2026-10-16T00:00:00.001Z",
       "name": "Masquerading: Match Legitimate Name or Location",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "attack-pattern"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "external_references": [
+        {
+          "external_id": "T1219",
+          "source_name": "mitre-attack",
+          "url": "https://attack.mitre.org/techniques/T1219/"
+        }
+      ],
+      "id": "attack-pattern--17953698-6fce-4ed7-bfaa-da02e227ecfe",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "name": "Remote Access Tools",
       "object_marking_refs": [
         "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
       ],
@@ -135,6 +173,44 @@
       "type": "attack-pattern"
     },
     {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "external_references": [
+        {
+          "external_id": "T1003.002",
+          "source_name": "mitre-attack",
+          "url": "https://attack.mitre.org/techniques/T1003/002/"
+        }
+      ],
+      "id": "attack-pattern--4170b60f-8572-495d-ba12-9e83542234e0",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "name": "OS Credential Dumping: Security Account Manager",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "attack-pattern"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "external_references": [
+        {
+          "external_id": "T1113",
+          "source_name": "mitre-attack",
+          "url": "https://attack.mitre.org/techniques/T1113/"
+        }
+      ],
+      "id": "attack-pattern--5127d76e-2c3e-40eb-bbec-fd2d21273c9b",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "name": "Screen Capture",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "attack-pattern"
+    },
+    {
       "created": "2026-10-15T00:00:00.000Z",
       "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
       "external_references": [
@@ -147,6 +223,63 @@
       "id": "attack-pattern--51e02f3d-0d0e-476e-94e9-c1cda18c2df1",
       "modified": "2026-10-15T00:00:00.001Z",
       "name": "SMS Control",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "attack-pattern"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "external_references": [
+        {
+          "external_id": "T1059.001",
+          "source_name": "mitre-attack",
+          "url": "https://attack.mitre.org/techniques/T1059/001/"
+        }
+      ],
+      "id": "attack-pattern--526ee8bc-29ed-480c-b303-c3e2608b9daf",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "name": "Command and Scripting Interpreter: PowerShell",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "attack-pattern"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "external_references": [
+        {
+          "external_id": "T1566.002",
+          "source_name": "mitre-attack",
+          "url": "https://attack.mitre.org/techniques/T1566/002/"
+        }
+      ],
+      "id": "attack-pattern--5745789a-00b4-4c9a-89cc-98e14f538705",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "name": "Phishing: Spearphishing Link",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "attack-pattern"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "external_references": [
+        {
+          "external_id": "T1574.001",
+          "source_name": "mitre-attack",
+          "url": "https://attack.mitre.org/techniques/T1574/001/"
+        }
+      ],
+      "id": "attack-pattern--5ebe841d-3756-46d0-8505-700bbb28981e",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "name": "Hijack Execution Flow: DLL",
       "object_marking_refs": [
         "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
       ],
@@ -185,6 +318,25 @@
       "id": "attack-pattern--7795b806-d5f0-4db1-9883-c464ffd5bfb6",
       "modified": "2026-10-16T00:00:00.001Z",
       "name": "Compromise Infrastructure",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "attack-pattern"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "external_references": [
+        {
+          "external_id": "T1567",
+          "source_name": "mitre-attack",
+          "url": "https://attack.mitre.org/techniques/T1567/"
+        }
+      ],
+      "id": "attack-pattern--79377512-fea8-4731-a28a-0c571d9ace45",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "name": "Exfiltration Over Web Service",
       "object_marking_refs": [
         "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
       ],
@@ -268,6 +420,25 @@
       "type": "attack-pattern"
     },
     {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "external_references": [
+        {
+          "external_id": "T1586.002",
+          "source_name": "mitre-attack",
+          "url": "https://attack.mitre.org/techniques/T1586/002/"
+        }
+      ],
+      "id": "attack-pattern--89c97501-4d62-41be-9840-4f043adb1ef7",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "name": "Compromise Accounts: Email Accounts",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "attack-pattern"
+    },
+    {
       "created": "2026-10-15T00:00:00.000Z",
       "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
       "external_references": [
@@ -280,6 +451,25 @@
       "id": "attack-pattern--8cffba75-bffa-492c-96b9-125fe8651397",
       "modified": "2026-10-16T00:00:00.000Z",
       "name": "User Execution: Malicious File",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "attack-pattern"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "external_references": [
+        {
+          "external_id": "T1090",
+          "source_name": "mitre-attack",
+          "url": "https://attack.mitre.org/techniques/T1090/"
+        }
+      ],
+      "id": "attack-pattern--8f5e6e3e-d642-46c6-a881-050a448e9a7c",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "name": "Proxy",
       "object_marking_refs": [
         "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
       ],
@@ -902,6 +1092,69 @@
     },
     {
       "aliases": [
+        "Seedworm",
+        "Static Kitten",
+        "Mango Sandstorm",
+        "TEMP.Zagros",
+        "TA450",
+        "MERCURY",
+        "Earth Vetala"
+      ],
+      "confidence": 50,
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "description": "A long-running Iranian espionage actor whose main focus is the Middle East, with India named repeatedly among its secondary targets: in its first documented campaigns in 2017, and in a 2023–2024 campaign that sent small businesses in India phishing links to legitimate remote-access software. It is still active in 2026, and DSCI's March 2026 advisory lists it among the Iranian state actors Indian organisations should watch after the Iran war began. No India-specific campaign has been publicly reported; India appears in multi-country target lists.\n\nReported attribution: Iran-nexus. US Cyber Command (January 2022) and a joint US/UK advisory (February 2022) describe MuddyWater as a subordinate element of Iran's Ministry of Intelligence and Security (MOIS); MITRE ATT&CK and vendor reporting agree. The tracker's confidence rates the evidence for activity against India, not the attribution.\n\nKey findings: Palo Alto Unit 42's first public report on the group (November 2017) lists India among the countries targeted or suspected to be targeted from February to October 2017, alongside Saudi Arabia, Iraq, Israel, the UAE, Georgia, Pakistan, Turkey and the US. Delivery was macro-enabled Word documents dropping the POWERSTATS PowerShell backdoor. HarfangLab (April 2024) documented an October 2023 to April 2024 campaign against small businesses in Israel, India, Algeria, Turkey, Italy and Egypt, across sectors including airlines, IT, telecommunications, pharmaceuticals, logistics and travel. Spear-phishing emails linked to free file-hosting services (Egnyte, Onehub, filetransfer.io) that served the legitimate Atera Agent remote-management tool. The Atera agents were registered with compromised business and personal email accounts, and in one case lures were sent from a victim's own compromised mailbox to its contacts. Using signed, legitimate remote-management software gives the group a foothold that most antivirus will not flag. In 2025, Group-IB reported a campaign against more than 100 government entities in the Middle East and North Africa using a compromised mailbox, macro documents and the Phoenix backdoor. India was not named. In 2026, Symantec and Carbon Black reported intrusions at nine organisations in nine countries using DLL side-loading through legitimately signed binaries, a Node.js implant chain, browser credential theft (ChromElevator), SAM hive theft and SOCKS5 tunnelling. The named victim was in South Korea; India was not named. DSCI's March 2026 advisory on the Middle East conflict lists MuddyWater, with APT33, APT34, Handala and CyberAv3ngers, among the Iranian actors posing risk to Indian organisations, especially IT/ITeS firms with Gulf, Israeli or Western clients. It does not report a specific MuddyWater intrusion in India.",
+      "external_references": [
+        {
+          "external_id": "apt-muddywater",
+          "source_name": "india-threat-tracker",
+          "url": "https://www.sohankanna.com/tracker#actor-apt-muddywater"
+        },
+        {
+          "external_id": "G0069",
+          "source_name": "mitre-attack",
+          "url": "https://attack.mitre.org/groups/G0069/"
+        },
+        {
+          "source_name": "Palo Alto Networks Unit 42 - Muddying the Water: Targeted attacks in the Middle East (14 Nov 2017)",
+          "url": "https://unit42.paloaltonetworks.com/unit42-muddying-the-water-targeted-attacks-in-the-middle-east/"
+        },
+        {
+          "source_name": "HarfangLab - MuddyWater campaign abusing Atera Agents (22 Apr 2024)",
+          "url": "https://harfanglab.io/insidethelab/muddywater-rmm-campaign/"
+        },
+        {
+          "source_name": "CYFIRMA - APT profile: MuddyWater (12 Nov 2024)",
+          "url": "https://www.cyfirma.com/research/apt-profile-muddywater/"
+        },
+        {
+          "source_name": "The Hacker News - Iran-linked MuddyWater targets 100+ organizations in global espionage campaign (22 Oct 2025)",
+          "url": "https://thehackernews.com/2025/10/iran-linked-muddywater-targets-100.html"
+        },
+        {
+          "source_name": "The Hacker News - MuddyWater uses DLL side-loading in espionage campaign targeting 9 countries (26 May 2026)",
+          "url": "https://thehackernews.com/2026/05/muddywater-uses-dll-side-loading-in.html"
+        },
+        {
+          "source_name": "DSCI - Cyber threat advisory: Middle East conflict, February 2026 escalation (Mar 2026)",
+          "url": "https://www.dsci.in/files/content/advisory/2026/cyber_threat_advisory-middle_east_conflict.pdf"
+        },
+        {
+          "source_name": "MITRE ATT&CK - MuddyWater (G0069)",
+          "url": "https://attack.mitre.org/groups/G0069/"
+        }
+      ],
+      "id": "intrusion-set--4eee7166-dd04-464d-a13f-e0121c5d24ba",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "name": "MuddyWater",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "intrusion-set"
+    },
+    {
+      "aliases": [
         "RedEcho",
         "TAG-38"
       ],
@@ -932,6 +1185,26 @@
       ],
       "spec_version": "2.1",
       "type": "intrusion-set"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "external_references": [
+        {
+          "external_id": "S0223",
+          "source_name": "mitre-attack",
+          "url": "https://attack.mitre.org/software/S0223/"
+        }
+      ],
+      "id": "malware--03a33a8a-9e6c-46cc-ad1a-3e0953f14bde",
+      "is_family": true,
+      "modified": "2026-11-04T00:00:00.000Z",
+      "name": "POWERSTATS",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "malware"
     },
     {
       "created": "2026-10-15T00:00:00.000Z",
@@ -973,6 +1246,19 @@
       "type": "malware"
     },
     {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "malware--4ad7c643-49ac-41b0-a264-4ec68a3e0abf",
+      "is_family": true,
+      "modified": "2026-11-04T00:00:00.000Z",
+      "name": "MuddyViper",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "malware"
+    },
+    {
       "created": "2026-10-15T00:00:00.000Z",
       "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
       "id": "malware--4b6569a7-9581-48af-816f-f60dcacbf530",
@@ -992,6 +1278,19 @@
       "is_family": true,
       "modified": "2026-10-15T00:00:00.000Z",
       "name": "ActionRAT",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "malware"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "malware--7e866960-aeec-4577-b6f3-91794126a735",
+      "is_family": true,
+      "modified": "2026-11-04T00:00:00.000Z",
+      "name": "Phoenix",
       "object_marking_refs": [
         "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
       ],
@@ -1025,6 +1324,26 @@
       "type": "malware"
     },
     {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "external_references": [
+        {
+          "external_id": "S1046",
+          "source_name": "mitre-attack",
+          "url": "https://attack.mitre.org/software/S1046/"
+        }
+      ],
+      "id": "malware--a8f13ad5-c675-4f7e-89f9-2a2c5db51ce3",
+      "is_family": true,
+      "modified": "2026-11-04T00:00:00.000Z",
+      "name": "PowGoop",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "malware"
+    },
+    {
       "created": "2026-10-15T00:00:00.000Z",
       "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
       "id": "malware--bc298867-d8cf-482f-8c3b-f9f3348fabe0",
@@ -1044,6 +1363,19 @@
       "is_family": true,
       "modified": "2026-10-15T00:00:00.000Z",
       "name": "ElizaRAT",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "malware"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "malware--bfe60294-72dc-41e4-8c45-6677d910b585",
+      "is_family": true,
+      "modified": "2026-11-04T00:00:00.000Z",
+      "name": "BugSleep",
       "object_marking_refs": [
         "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
       ],
@@ -1149,6 +1481,20 @@
       "type": "relationship"
     },
     {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--0b15ff40-d14f-4820-87f4-554f8c440ee2",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--4eee7166-dd04-464d-a13f-e0121c5d24ba",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--89c97501-4d62-41be-9840-4f043adb1ef7",
+      "type": "relationship"
+    },
+    {
       "created": "2026-10-15T00:00:00.000Z",
       "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
       "id": "relationship--0c50ba4d-8cad-4589-b7f9-ad4c84844f52",
@@ -1188,6 +1534,34 @@
       "source_ref": "campaign--45f641b4-6869-4d37-bfc8-bd80f6140eac",
       "spec_version": "2.1",
       "target_ref": "attack-pattern--0f7d0fc3-cf8a-40ca-b077-6898bffcc9e6",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--11cbbe81-2bff-4a99-8b7a-a2b2308148de",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--4eee7166-dd04-464d-a13f-e0121c5d24ba",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--526ee8bc-29ed-480c-b303-c3e2608b9daf",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--14c65a14-fea2-45bf-b0ec-6ad7945a29ce",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--4eee7166-dd04-464d-a13f-e0121c5d24ba",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--79377512-fea8-4731-a28a-0c571d9ace45",
       "type": "relationship"
     },
     {
@@ -1233,6 +1607,20 @@
       "type": "relationship"
     },
     {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--1d428285-6a0e-4082-98ca-62575c87348e",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--4eee7166-dd04-464d-a13f-e0121c5d24ba",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--5ebe841d-3756-46d0-8505-700bbb28981e",
+      "type": "relationship"
+    },
+    {
       "created": "2026-10-15T00:00:00.000Z",
       "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
       "id": "relationship--1fafd2ce-ec53-4f84-803f-7922467c276a",
@@ -1272,6 +1660,20 @@
       "source_ref": "intrusion-set--47ce2ecf-959f-4774-ad62-968712e65fe3",
       "spec_version": "2.1",
       "target_ref": "malware--fd1f4bc0-c4ba-44df-a04e-9512376f149a",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--22d1e7bf-7744-419c-bd4d-a5f48ea13d80",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--4eee7166-dd04-464d-a13f-e0121c5d24ba",
+      "spec_version": "2.1",
+      "target_ref": "malware--4ad7c643-49ac-41b0-a264-4ec68a3e0abf",
       "type": "relationship"
     },
     {
@@ -1412,6 +1814,20 @@
       "source_ref": "campaign--45f641b4-6869-4d37-bfc8-bd80f6140eac",
       "spec_version": "2.1",
       "target_ref": "attack-pattern--f8a165c5-a41d-4575-84a0-0b95fbd92605",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--4e93a8d3-42ba-43ce-9951-f24bac27ff09",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--4eee7166-dd04-464d-a13f-e0121c5d24ba",
+      "spec_version": "2.1",
+      "target_ref": "malware--a8f13ad5-c675-4f7e-89f9-2a2c5db51ce3",
       "type": "relationship"
     },
     {
@@ -1611,6 +2027,20 @@
       "type": "relationship"
     },
     {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--8457c10d-7965-467d-9baa-e91944cfe851",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--4eee7166-dd04-464d-a13f-e0121c5d24ba",
+      "spec_version": "2.1",
+      "target_ref": "malware--03a33a8a-9e6c-46cc-ad1a-3e0953f14bde",
+      "type": "relationship"
+    },
+    {
       "created": "2026-10-15T00:00:00.000Z",
       "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
       "id": "relationship--84857b10-940d-4fee-9089-eaa96a247145",
@@ -1625,6 +2055,20 @@
       "type": "relationship"
     },
     {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--9175d997-3b96-481c-9db7-8f46c11fd3d9",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--4eee7166-dd04-464d-a13f-e0121c5d24ba",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--5745789a-00b4-4c9a-89cc-98e14f538705",
+      "type": "relationship"
+    },
+    {
       "created": "2026-10-16T00:00:00.000Z",
       "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
       "id": "relationship--93ed77a8-54d3-4532-a533-ab6e14f64823",
@@ -1636,6 +2080,34 @@
       "source_ref": "intrusion-set--07c01184-bc4d-4db1-b040-84b422c5b5f7",
       "spec_version": "2.1",
       "target_ref": "malware--3379378c-46da-4b0e-b708-d49dbd6e3003",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--95a604d5-42c7-4b35-8c02-927ffec1790c",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--4eee7166-dd04-464d-a13f-e0121c5d24ba",
+      "spec_version": "2.1",
+      "target_ref": "malware--bfe60294-72dc-41e4-8c45-6677d910b585",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--972aaf00-358d-450c-ae93-f1d0fb053a1d",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--4eee7166-dd04-464d-a13f-e0121c5d24ba",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--8cffba75-bffa-492c-96b9-125fe8651397",
       "type": "relationship"
     },
     {
@@ -1695,6 +2167,20 @@
       "type": "relationship"
     },
     {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--a25a3730-0617-4559-a2e0-d016a541e680",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--4eee7166-dd04-464d-a13f-e0121c5d24ba",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--4170b60f-8572-495d-ba12-9e83542234e0",
+      "type": "relationship"
+    },
+    {
       "created": "2026-10-15T00:00:00.000Z",
       "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
       "id": "relationship--a5f3db65-6b49-46bb-ad8c-ed8b2495634e",
@@ -1720,6 +2206,34 @@
       "source_ref": "intrusion-set--49e9134d-1c01-4851-a9db-000725c7d845",
       "spec_version": "2.1",
       "target_ref": "attack-pattern--823e5d8a-70b2-48e9-b283-1a01dd0127bd",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--a81350d2-2ee7-4d17-bbff-d4e439fd8fcd",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--4eee7166-dd04-464d-a13f-e0121c5d24ba",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--5127d76e-2c3e-40eb-bbec-fd2d21273c9b",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--aa6ead8c-7e08-4447-8e97-c4caf2f57bd4",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--4eee7166-dd04-464d-a13f-e0121c5d24ba",
+      "spec_version": "2.1",
+      "target_ref": "malware--7e866960-aeec-4577-b6f3-91794126a735",
       "type": "relationship"
     },
     {
@@ -1765,6 +2279,20 @@
       "type": "relationship"
     },
     {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--b81dd36b-aae6-4cb3-aa70-2ea350ad7a7f",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--4eee7166-dd04-464d-a13f-e0121c5d24ba",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--17953698-6fce-4ed7-bfaa-da02e227ecfe",
+      "type": "relationship"
+    },
+    {
       "created": "2026-10-15T00:00:00.000Z",
       "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
       "id": "relationship--b8c4c67a-2ba8-40e3-ad95-6514485d7266",
@@ -1804,6 +2332,20 @@
       "source_ref": "campaign--45f641b4-6869-4d37-bfc8-bd80f6140eac",
       "spec_version": "2.1",
       "target_ref": "attack-pattern--99a57e4f-b90a-4ae6-9fd5-5202e0ef5d81",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--c90910ba-cd39-4478-a5bd-5f9026492845",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--4eee7166-dd04-464d-a13f-e0121c5d24ba",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--29a1901f-4a85-4dec-b2da-3229d81128ea",
       "type": "relationship"
     },
     {
@@ -1849,6 +2391,20 @@
       "type": "relationship"
     },
     {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--d4244337-2e61-443f-ae20-6b831ba687e0",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--4eee7166-dd04-464d-a13f-e0121c5d24ba",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--8f5e6e3e-d642-46c6-a881-050a448e9a7c",
+      "type": "relationship"
+    },
+    {
       "created": "2026-10-16T00:00:00.000Z",
       "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
       "id": "relationship--d7433702-171a-4f4a-850e-75f5c0d9c492",
@@ -1891,6 +2447,20 @@
       "type": "relationship"
     },
     {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--e6625d4b-03d1-4c03-a264-aefbd43a89ac",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--4eee7166-dd04-464d-a13f-e0121c5d24ba",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--c153fa2c-9988-46a6-8a35-3d1c432ad3a0",
+      "type": "relationship"
+    },
+    {
       "created": "2026-10-15T00:00:00.000Z",
       "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
       "id": "relationship--ef0cfad7-1f12-4c18-ae9b-90d188ff4179",
@@ -1930,6 +2500,20 @@
       "source_ref": "campaign--45f641b4-6869-4d37-bfc8-bd80f6140eac",
       "spec_version": "2.1",
       "target_ref": "attack-pattern--9e62159e-d86d-40ed-83ad-0a5c4b513a6f",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--f49fd339-24a7-492e-b006-412d8da75e5b",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--4eee7166-dd04-464d-a13f-e0121c5d24ba",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--01839fdb-0f8f-4025-82d2-acbc9311d7a1",
       "type": "relationship"
     },
     {

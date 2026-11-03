@@ -1,7 +1,7 @@
 {
   "feed": "apt-campaign",
   "generated_at": "2026-10-20",
-  "count": 4,
+  "count": 5,
   "items": [
     {
       "id": "apt-transparent-tribe",
@@ -349,6 +349,174 @@
         {
           "title": "MITRE ATT&CK - Sidewinder (G0121)",
           "url": "https://attack.mitre.org/groups/G0121/"
+        }
+      ]
+    },
+    {
+      "id": "apt-muddywater",
+      "actor": "MuddyWater",
+      "aliases": [
+        "Seedworm",
+        "Static Kitten",
+        "Mango Sandstorm",
+        "TEMP.Zagros",
+        "TA450",
+        "MERCURY",
+        "Earth Vetala"
+      ],
+      "suspected_origin": "Iran-nexus",
+      "attribution_note": "US Cyber Command (January 2022) and a joint US/UK advisory (February 2022) describe MuddyWater as a subordinate element of Iran's Ministry of Intelligence and Security (MOIS); MITRE ATT&CK and vendor reporting agree. The tracker's confidence rates the evidence for activity against India, not the attribution.",
+      "mitre_group": {
+        "id": "G0069",
+        "url": "https://attack.mitre.org/groups/G0069/"
+      },
+      "summary": "A long-running Iranian espionage actor whose main focus is the Middle East, with India named repeatedly among its secondary targets: in its first documented campaigns in 2017, and in a 2023–2024 campaign that sent small businesses in India phishing links to legitimate remote-access software. It is still active in 2026, and DSCI's March 2026 advisory lists it among the Iranian state actors Indian organisations should watch after the Iran war began. No India-specific campaign has been publicly reported; India appears in multi-country target lists.",
+      "status": "active",
+      "date_added": "2026-11-04",
+      "last_updated": "2026-11-04",
+      "last_verified": "2026-11-04",
+      "confidence": "medium",
+      "targets": [
+        "government",
+        "telecommunications",
+        "it-services",
+        "small-business"
+      ],
+      "known_tools": [
+        "POWERSTATS",
+        "PowGoop",
+        "Phoenix",
+        "BugSleep",
+        "MuddyViper"
+      ],
+      "software": [
+        {
+          "id": "S0223",
+          "name": "POWERSTATS",
+          "url": "https://attack.mitre.org/software/S0223/"
+        },
+        {
+          "id": "S1046",
+          "name": "PowGoop",
+          "url": "https://attack.mitre.org/software/S1046/"
+        },
+        {
+          "id": "S1047",
+          "name": "Mori",
+          "url": "https://attack.mitre.org/software/S1047/"
+        }
+      ],
+      "typical_vectors": [
+        "spear-phishing",
+        "malicious-documents",
+        "cloud-file-sharing-links",
+        "remote-access-tools",
+        "compromised-email-accounts"
+      ],
+      "attack": [
+        {
+          "id": "T1566.001",
+          "name": "Phishing: Spearphishing Attachment"
+        },
+        {
+          "id": "T1566.002",
+          "name": "Phishing: Spearphishing Link"
+        },
+        {
+          "id": "T1586.002",
+          "name": "Compromise Accounts: Email Accounts"
+        },
+        {
+          "id": "T1204.002",
+          "name": "User Execution: Malicious File"
+        },
+        {
+          "id": "T1059.005",
+          "name": "Command and Scripting Interpreter: Visual Basic"
+        },
+        {
+          "id": "T1059.001",
+          "name": "Command and Scripting Interpreter: PowerShell"
+        },
+        {
+          "id": "T1219",
+          "name": "Remote Access Tools"
+        },
+        {
+          "id": "T1574.001",
+          "name": "Hijack Execution Flow: DLL"
+        },
+        {
+          "id": "T1003.002",
+          "name": "OS Credential Dumping: Security Account Manager"
+        },
+        {
+          "id": "T1555.003",
+          "name": "Credentials from Password Stores: Credentials from Web Browsers"
+        },
+        {
+          "id": "T1113",
+          "name": "Screen Capture"
+        },
+        {
+          "id": "T1090",
+          "name": "Proxy"
+        },
+        {
+          "id": "T1567",
+          "name": "Exfiltration Over Web Service"
+        }
+      ],
+      "key_findings": [
+        "Palo Alto Unit 42's first public report on the group (November 2017) lists India among the countries targeted or suspected to be targeted from February to October 2017, alongside Saudi Arabia, Iraq, Israel, the UAE, Georgia, Pakistan, Turkey and the US. Delivery was macro-enabled Word documents dropping the POWERSTATS PowerShell backdoor.",
+        "HarfangLab (April 2024) documented an October 2023 to April 2024 campaign against small businesses in Israel, India, Algeria, Turkey, Italy and Egypt, across sectors including airlines, IT, telecommunications, pharmaceuticals, logistics and travel. Spear-phishing emails linked to free file-hosting services (Egnyte, Onehub, filetransfer.io) that served the legitimate Atera Agent remote-management tool.",
+        "The Atera agents were registered with compromised business and personal email accounts, and in one case lures were sent from a victim's own compromised mailbox to its contacts. Using signed, legitimate remote-management software gives the group a foothold that most antivirus will not flag.",
+        "In 2025, Group-IB reported a campaign against more than 100 government entities in the Middle East and North Africa using a compromised mailbox, macro documents and the Phoenix backdoor. India was not named.",
+        "In 2026, Symantec and Carbon Black reported intrusions at nine organisations in nine countries using DLL side-loading through legitimately signed binaries, a Node.js implant chain, browser credential theft (ChromElevator), SAM hive theft and SOCKS5 tunnelling. The named victim was in South Korea; India was not named.",
+        "DSCI's March 2026 advisory on the Middle East conflict lists MuddyWater, with APT33, APT34, Handala and CyberAv3ngers, among the Iranian actors posing risk to Indian organisations, especially IT/ITeS firms with Gulf, Israeli or Western clients. It does not report a specific MuddyWater intrusion in India."
+      ],
+      "recommended_actions": [
+        "Inventory and allowlist remote-management tools; alert on any unapproved Atera, ScreenConnect, SimpleHelp, Syncro or RemoteUtilities install.",
+        "Treat links to free file-hosting services in unsolicited email as high risk, including mail from known partners whose accounts may be compromised.",
+        "Block Office macros in files from the internet.",
+        "Hunt for signed executables loading DLLs from user-writable paths, node.exe or Office spawning PowerShell, and outbound SOCKS tunnels from workstations.",
+        "IT/ITeS providers with Middle Eastern clients: apply the same scrutiny to client-facing accounts and shared tooling, since supply-chain access is the main route DSCI expects."
+      ],
+      "india_relevance": "medium",
+      "tags": [
+        "apt",
+        "espionage",
+        "iran",
+        "rmm-abuse"
+      ],
+      "sources": [
+        {
+          "title": "Palo Alto Networks Unit 42 - Muddying the Water: Targeted attacks in the Middle East (14 Nov 2017)",
+          "url": "https://unit42.paloaltonetworks.com/unit42-muddying-the-water-targeted-attacks-in-the-middle-east/"
+        },
+        {
+          "title": "HarfangLab - MuddyWater campaign abusing Atera Agents (22 Apr 2024)",
+          "url": "https://harfanglab.io/insidethelab/muddywater-rmm-campaign/"
+        },
+        {
+          "title": "CYFIRMA - APT profile: MuddyWater (12 Nov 2024)",
+          "url": "https://www.cyfirma.com/research/apt-profile-muddywater/"
+        },
+        {
+          "title": "The Hacker News - Iran-linked MuddyWater targets 100+ organizations in global espionage campaign (22 Oct 2025)",
+          "url": "https://thehackernews.com/2025/10/iran-linked-muddywater-targets-100.html"
+        },
+        {
+          "title": "The Hacker News - MuddyWater uses DLL side-loading in espionage campaign targeting 9 countries (26 May 2026)",
+          "url": "https://thehackernews.com/2026/05/muddywater-uses-dll-side-loading-in.html"
+        },
+        {
+          "title": "DSCI - Cyber threat advisory: Middle East conflict, February 2026 escalation (Mar 2026)",
+          "url": "https://www.dsci.in/files/content/advisory/2026/cyber_threat_advisory-middle_east_conflict.pdf"
+        },
+        {
+          "title": "MITRE ATT&CK - MuddyWater (G0069)",
+          "url": "https://attack.mitre.org/groups/G0069/"
         }
       ]
     }
