@@ -248946,7 +248946,7 @@
     }
    ],
    "record_state": "PUBLISHED",
-   "record_updated": "2026-10-29T03:57:11.195Z"
+   "record_updated": "2026-10-30T03:55:57.976Z"
   },
   {
    "cve": "CVE-2026-76460",
@@ -252904,6 +252904,6 @@
    "record_updated": "2026-10-14T10:51:05.616Z"
   }
  ],
- "kev_generated_at": "2026-11-02T22:50:34Z",
+ "kev_generated_at": "2026-11-03T09:55:38Z",
  "source": "CVE Project cvelistV5 (https://github.com/CVEProject/cvelistV5)"
 }
