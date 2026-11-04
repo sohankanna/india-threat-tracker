@@ -20,6 +20,7 @@ https://raw.githubusercontent.com/sohankanna/india-threat-tracker/main/data/
 | `smishing-apk.json` | Fake-APK and smishing campaigns | When new reporting appears | [`smishing-apk.schema.json`](schema/smishing-apk.schema.json) |
 | `apt-campaigns.json` | State-nexus actors targeting India | When new reporting appears | [`apt-campaign.schema.json`](schema/apt-campaign.schema.json) |
 | `hacktivist.json` | Hacktivist groups, alliances and claim waves aimed at India | When new reporting appears | [`hacktivist.schema.json`](schema/hacktivist.schema.json) |
+| `ransomware.json` | Ransomware groups, disclosed Indian incidents and landscape figures | When new reporting appears | [`ransomware.schema.json`](schema/ransomware.schema.json) |
 | `iocs.csv` / `iocs.txt` | Defanged campaign indicators (CSV adds provenance per row) | Rebuilt by every automated update (twice daily); CI rejects a change that leaves them stale | — |
 | `assessment.json` | The monthly ranked analyst assessment | Monthly | [`assessment.schema.json`](schema/assessment.schema.json) |
 | `relevance-overrides.json` | Hand-reviewed India-relevance decisions the pipeline applies | When an entry is reviewed | [`relevance-overrides.schema.json`](schema/relevance-overrides.schema.json) |
@@ -117,6 +118,26 @@ have no `iocs`.
 `partly-true`, `overstated`, `recycled` (old data presented as new), `false`, or
 `unverified` when nobody has checked. Most hacktivist claims about India are not
 `confirmed`; treat the claim itself as propaganda until a source says otherwise.
+
+### `ransomware.json`
+
+Three parts:
+
+- `landscape`: headline figures (`label`, `value`, `period`, `note`, `source`).
+  Most count leak-site claims, which miss quiet payments and include false
+  claims; the `note` says what each one counts.
+- `incidents`: Indian ransomware incidents that were made public. `status` is
+  `confirmed` when the victim, a regulator or a payments body disclosed it, or
+  `claimed` when only a leak-site claim was reported in mainstream media and
+  the victim has not confirmed it. `group` links to an item when a group is
+  reported, with `attribution_basis` saying how.
+- `items`: groups. `india_evidence` is the strongest link to India
+  (`confirmed-victim`, `claimed-victims`, `regional-volume` or `advisory`).
+  `kev` lists CVEs in CISA KEV that the sources tie to the group's intrusions;
+  CI checks each one is in KEV with known ransomware use.
+
+Organisations named only on a leak site are counted in `landscape` and never
+named in `incidents`.
 
 ### `iocs.csv`
 

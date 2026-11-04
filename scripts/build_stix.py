@@ -32,6 +32,8 @@ What is deliberately not exported
 * Hacktivist claims: groups become threat-actor objects and claim waves become
   campaigns, but each claim stays in the description with the verification
   status its source reached. No claim becomes an indicator or a sighting.
+* Ransomware incidents: groups become threat-actor objects; the confirmed and
+  claimed Indian incidents stay in data/ransomware.json.
 """
 import hashlib
 import json
@@ -192,10 +194,11 @@ class Builder:
         }, created, updated)
 
 
-def build_objects(smishing, apt, assessment, kev, hacktivist=None):
+def build_objects(smishing, apt, assessment, kev, hacktivist=None, ransomware=None):
     b = Builder()
     first = min(day(i["date_added"]) for i in smishing["items"] + apt["items"])
     hacktivist = hacktivist or {"items": []}
+    ransomware = ransomware or {"items": []}
 
     identity = b.add({
         "type": "identity",
@@ -364,6 +367,34 @@ def build_objects(smishing, apt, assessment, kev, hacktivist=None):
         for t in h.get("attack") or []:
             b.relate(hid, "uses", attack_pattern(t, created, updated), created, updated)
 
+    # ── Ransomware groups as threat actors ──
+    # Confirmed and claimed Indian incidents stay in the feed, not in STIX: a
+    # leak-site claim is not something to assert as a relationship.
+    for g in ransomware["items"]:
+        created, updated = day(g["date_added"]), day(g.get("last_updated") or g["date_added"])
+        desc = [g.get("summary", "")]
+        desc.append(f"Evidence linking the group to India: {g['india_evidence']}.")
+        if g.get("kev"):
+            desc.append("CISA KEV vulnerabilities the cited sources tie to its intrusions: " + ", ".join(g["kev"]) + ".")
+        if g.get("key_findings"):
+            desc.append("Key findings: " + " ".join(g["key_findings"]))
+        refs = [{"source_name": "india-threat-tracker", "external_id": g["id"],
+                 "url": f"https://www.sohankanna.com/tracker#ransomware-{g['id']}"}]
+        if g.get("mitre_group"):
+            refs.append({"source_name": "mitre-attack", "external_id": g["mitre_group"]["id"], "url": g["mitre_group"]["url"]})
+        refs += [{"source_name": "cve", "external_id": c} for c in g.get("kev", [])]
+        obj = {"type": "threat-actor", "id": sid("threat-actor", g["id"]), "name": g["name"],
+               "threat_actor_types": ["crime-syndicate"],
+               "description": "\n\n".join(x for x in desc if x),
+               "confidence": CONFIDENCE[g["confidence"]],
+               "external_references": refs + sources_refs(g.get("sources"))}
+        if g.get("aliases"):
+            obj["aliases"] = list(g["aliases"])
+        gid = b.add(obj, created, updated)
+        record_ids[("ransomware", g["id"])] = gid
+        for t in g.get("attack") or []:
+            b.relate(gid, "uses", attack_pattern(t, created, updated), created, updated)
+
     # ── Vulnerabilities referenced by the assessment ──
     kev_by_id = {i["cve"]: i for i in kev["items"]}
     a_date = day(assessment["updated"])
@@ -472,8 +503,9 @@ def build(previous=None, registry=None, data=None):
     """Build the bundle. `data` overrides the feeds (tests); `registry` the ids."""
     global IDS
     IDS = registry if registry is not None else IdRegistry.load()
-    d = data or {n: load(f"{n}.json") for n in ("smishing-apk", "apt-campaigns", "hacktivist", "assessment", "exploited-cve")}
-    b = build_objects(d["smishing-apk"], d["apt-campaigns"], d["assessment"], d["exploited-cve"], d.get("hacktivist"))
+    d = data or {n: load(f"{n}.json") for n in ("smishing-apk", "apt-campaigns", "hacktivist", "ransomware", "assessment", "exploited-cve")}
+    b = build_objects(d["smishing-apk"], d["apt-campaigns"], d["assessment"], d["exploited-cve"], d.get("hacktivist"),
+                      d.get("ransomware"))
     return finalise(b, previous)
 
 

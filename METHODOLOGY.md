@@ -18,6 +18,7 @@ parts, plus a monthly analyst assessment on top:
 | `data/smishing-apk.json` | Hand-curated from public reporting & busts | On new, credible reporting |
 | `data/apt-campaigns.json` | Hand-curated from vendor/CERT reporting | On new, credible reporting |
 | `data/hacktivist.json` | Hand-curated from vendor, CERT and police reporting; claims recorded with their verification status | On new, credible reporting |
+| `data/ransomware.json` | Hand-curated from company filings, CERT advisories and vendor reporting | On new, credible reporting |
 | `data/assessment.json` | Analyst judgement over the above | Monthly |
 | `data/iocs.txt` / `iocs.csv` | Derived from the campaign feed | Rebuilt with every update |
 
@@ -209,6 +210,20 @@ CyberAv3ngers were left out because no reporting found names Indian targets.
 
 Each actor carries a `timeline` of dated milestones, each tied to a source. The
 date keeps the precision the source gives; a year stays a year.
+
+## Ransomware
+
+Leak sites are the only public record of most ransomware attacks, and they are
+written by criminals. `data/ransomware.json` therefore keeps three levels apart:
+
+- **Counts** (`landscape`) come from trackers that read leak sites, with the
+  source and what it counts.
+- **Named incidents** (`incidents`) are limited to ones a victim, regulator or
+  payments body disclosed (`confirmed`), plus leak-site claims that mainstream
+  media reported (`claimed`, with the victim's response). Organisations named
+  only on a leak site are never named here.
+- **Group profiles** (`items`) say how strong the link to India is, and tie the
+  group to KEV vulnerabilities only where a cited source does.
 
 ## Hacktivists
 

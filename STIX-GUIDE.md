@@ -20,6 +20,7 @@ CC BY 4.0; credit Sohan Kanna / India Threat Tracker.
 | `intrusion-set` | `apt-campaigns.json` records | Never `threat-actor`; reported attribution stays in the description (see below). The timeline is appended to the description |
 | `threat-actor` | `hacktivist.json` groups and alliances | `threat_actor_types: ["activist"]`; claims stay in the description with their verification status |
 | `campaign` | `hacktivist.json` claim waves (`kind: campaign`) | The period is stated in the description |
+| `threat-actor` | `ransomware.json` groups | `threat_actor_types: ["crime-syndicate"]`; KEV CVEs as `cve` external references. Incidents are not exported |
 | `indicator` | campaign `iocs.domains`, `iocs.urls`, `iocs.sha256` | Only types with an unambiguous standard pattern |
 | `malware` | named families: campaign records naming one, actor `known_tools` | Generic capability names (e.g. "Backdoor loaders") are excluded; `is_family: true` |
 | `attack-pattern` | ATT&CK techniques on campaigns and actors | `external_references` carries the technique id (`source_name: mitre-attack`) |

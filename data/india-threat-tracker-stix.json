@@ -1,5 +1,5 @@
 {
-  "id": "bundle--b1a45f44-1abe-405f-ba8a-f6e3d3f1bff0",
+  "id": "bundle--ff78e951-d1e6-4bfe-befa-b7a298de222d",
   "objects": [
     {
       "created": "2026-11-04T00:00:00.000Z",
@@ -306,6 +306,25 @@
       "type": "attack-pattern"
     },
     {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "external_references": [
+        {
+          "external_id": "T1133",
+          "source_name": "mitre-attack",
+          "url": "https://attack.mitre.org/techniques/T1133/"
+        }
+      ],
+      "id": "attack-pattern--35767579-489b-41ee-8e06-f4c8e6b8611a",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "name": "External Remote Services",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "attack-pattern"
+    },
+    {
       "created": "2026-10-15T00:00:00.000Z",
       "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
       "external_references": [
@@ -451,6 +470,25 @@
       "id": "attack-pattern--538bfcfe-819a-4564-9f49-4f747c5e5348",
       "modified": "2026-11-04T00:00:00.000Z",
       "name": "Application Layer Protocol: Web Protocols",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "attack-pattern"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "external_references": [
+        {
+          "external_id": "T1199",
+          "source_name": "mitre-attack",
+          "url": "https://attack.mitre.org/techniques/T1199/"
+        }
+      ],
+      "id": "attack-pattern--561196a4-6b27-4466-8373-d60d23988054",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "name": "Trusted Relationship",
       "object_marking_refs": [
         "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
       ],
@@ -1009,6 +1047,25 @@
       "type": "attack-pattern"
     },
     {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "external_references": [
+        {
+          "external_id": "T1021.001",
+          "source_name": "mitre-attack",
+          "url": "https://attack.mitre.org/techniques/T1021/001/"
+        }
+      ],
+      "id": "attack-pattern--b2fae8bc-6296-4958-84c3-72e3dab86ba4",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "name": "Remote Services: Remote Desktop Protocol",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "attack-pattern"
+    },
+    {
       "created": "2026-10-15T00:00:00.000Z",
       "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
       "external_references": [
@@ -1078,6 +1135,82 @@
       "id": "attack-pattern--c23af4a6-a163-41b3-8d6f-36d1d3698c4f",
       "modified": "2026-11-04T00:00:00.000Z",
       "name": "Exfiltration Over C2 Channel",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "attack-pattern"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "external_references": [
+        {
+          "external_id": "T1486",
+          "source_name": "mitre-attack",
+          "url": "https://attack.mitre.org/techniques/T1486/"
+        }
+      ],
+      "id": "attack-pattern--c51145c6-da62-49a7-8f8e-92edf40c8339",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "name": "Data Encrypted for Impact",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "attack-pattern"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "external_references": [
+        {
+          "external_id": "T1490",
+          "source_name": "mitre-attack",
+          "url": "https://attack.mitre.org/techniques/T1490/"
+        }
+      ],
+      "id": "attack-pattern--caf2ee6d-2b46-4024-af25-324fe504c8b5",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "name": "Inhibit System Recovery",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "attack-pattern"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "external_references": [
+        {
+          "external_id": "T1078",
+          "source_name": "mitre-attack",
+          "url": "https://attack.mitre.org/techniques/T1078/"
+        }
+      ],
+      "id": "attack-pattern--d547ef7c-c79d-4d9e-96ba-d32b3f6f9a88",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "name": "Valid Accounts",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "attack-pattern"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "external_references": [
+        {
+          "external_id": "T1484.001",
+          "source_name": "mitre-attack",
+          "url": "https://attack.mitre.org/techniques/T1484/001/"
+        }
+      ],
+      "id": "attack-pattern--e7b34f65-cc2e-467a-ba85-0d583c195e52",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "name": "Domain or Tenant Policy Modification: Group Policy Modification",
       "object_marking_refs": [
         "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
       ],
@@ -2851,6 +2984,20 @@
     {
       "created": "2026-11-04T00:00:00.000Z",
       "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--1ad4901d-bd0e-4a8a-ac98-ba3db41db04e",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "threat-actor--e8cbceaf-0e7a-46c9-a07c-a11f025e29a6",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--c51145c6-da62-49a7-8f8e-92edf40c8339",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
       "id": "relationship--1d428285-6a0e-4082-98ca-62575c87348e",
       "modified": "2026-11-04T00:00:00.000Z",
       "object_marking_refs": [
@@ -2977,6 +3124,20 @@
     {
       "created": "2026-11-04T00:00:00.000Z",
       "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--2714b1c6-2d00-4a0d-97d8-8ced1fb7c628",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "threat-actor--e8cbceaf-0e7a-46c9-a07c-a11f025e29a6",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--790e97d9-1949-4e63-8c5c-98664ece2d3c",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
       "id": "relationship--2960b022-dcfa-498c-8108-750290abe0e0",
       "modified": "2026-11-04T00:00:00.000Z",
       "object_marking_refs": [
@@ -3000,6 +3161,20 @@
       "source_ref": "intrusion-set--c94859f5-3593-4b09-94e4-93454f32f3db",
       "spec_version": "2.1",
       "target_ref": "malware--60f81756-635c-4d25-901f-d559996ae37f",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--32917c9f-ba23-4bf6-8956-43d0b2483979",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "threat-actor--a7ef29b5-ccb5-4a34-8f32-d3a017f991f2",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--790e97d9-1949-4e63-8c5c-98664ece2d3c",
       "type": "relationship"
     },
     {
@@ -3033,6 +3208,20 @@
     {
       "created": "2026-11-04T00:00:00.000Z",
       "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--346e8308-d449-454f-b007-741bc52bae76",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "threat-actor--7f68a3f9-5503-4315-bb15-8bdcc9754ba5",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--79377512-fea8-4731-a28a-0c571d9ace45",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
       "id": "relationship--359e70cf-ebcc-4349-acce-799058a8c072",
       "modified": "2026-11-04T00:00:00.000Z",
       "object_marking_refs": [
@@ -3042,6 +3231,20 @@
       "source_ref": "intrusion-set--c94859f5-3593-4b09-94e4-93454f32f3db",
       "spec_version": "2.1",
       "target_ref": "attack-pattern--5b1544f3-8efc-4572-9a68-1090b205ce3a",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--3603585e-2286-45e8-b078-c40cc1b351d2",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "threat-actor--6ab0f22b-37eb-4f4c-b124-c0ac55092713",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--79377512-fea8-4731-a28a-0c571d9ace45",
       "type": "relationship"
     },
     {
@@ -3257,6 +3460,20 @@
     {
       "created": "2026-11-04T00:00:00.000Z",
       "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--4b5b9d07-9583-4dd6-993d-8b42e9680748",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "threat-actor--6ab0f22b-37eb-4f4c-b124-c0ac55092713",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--c51145c6-da62-49a7-8f8e-92edf40c8339",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
       "id": "relationship--4b9ad818-92f1-4977-8570-ac8b075537ff",
       "modified": "2026-11-04T00:00:00.000Z",
       "object_marking_refs": [
@@ -3308,6 +3525,34 @@
       "source_ref": "intrusion-set--5ccbcba4-7c2e-4d07-ae86-178fc9f4ff97",
       "spec_version": "2.1",
       "target_ref": "attack-pattern--2eb9b9ee-5ffd-4837-95eb-141cd52b982b",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--513fb367-d9f4-4f50-8f2c-2446db93f488",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "threat-actor--64803964-1ceb-4117-8795-d9f5a818efb9",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--c51145c6-da62-49a7-8f8e-92edf40c8339",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--5534b932-b429-4d76-a2d0-6bab41d8bbaa",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "threat-actor--7f68a3f9-5503-4315-bb15-8bdcc9754ba5",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--c51145c6-da62-49a7-8f8e-92edf40c8339",
       "type": "relationship"
     },
     {
@@ -3462,6 +3707,20 @@
       "source_ref": "intrusion-set--c94859f5-3593-4b09-94e4-93454f32f3db",
       "spec_version": "2.1",
       "target_ref": "attack-pattern--538bfcfe-819a-4564-9f49-4f747c5e5348",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--690da73b-f1a2-4bf9-8b7c-c4a4b1302463",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "threat-actor--e8cbceaf-0e7a-46c9-a07c-a11f025e29a6",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--561196a4-6b27-4466-8373-d60d23988054",
       "type": "relationship"
     },
     {
@@ -3831,6 +4090,20 @@
     {
       "created": "2026-11-04T00:00:00.000Z",
       "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--98725f62-156e-4aa1-83b7-f53c927fb9a0",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "threat-actor--c9ce5e7e-e753-43eb-853a-69b636f6167f",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--35767579-489b-41ee-8e06-f4c8e6b8611a",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
       "id": "relationship--98986e2b-f5b5-4ab8-9d17-0249c2a496e9",
       "modified": "2026-11-04T00:00:00.000Z",
       "object_marking_refs": [
@@ -3999,6 +4272,20 @@
     {
       "created": "2026-11-04T00:00:00.000Z",
       "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--a2ab93e2-3f3a-4064-ae40-3136e9affd4a",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "threat-actor--c9ce5e7e-e753-43eb-853a-69b636f6167f",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--c51145c6-da62-49a7-8f8e-92edf40c8339",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
       "id": "relationship--a4c3a4b5-1ace-4f21-b52e-0898f5c6fa38",
       "modified": "2026-11-04T00:00:00.000Z",
       "object_marking_refs": [
@@ -4092,6 +4379,20 @@
       "source_ref": "intrusion-set--c94859f5-3593-4b09-94e4-93454f32f3db",
       "spec_version": "2.1",
       "target_ref": "attack-pattern--a167be87-2ebd-4e67-b07a-27e9065b3b24",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--a9121711-f126-4fea-8f70-a072b4bb9ad3",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "threat-actor--c9ce5e7e-e753-43eb-853a-69b636f6167f",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--d547ef7c-c79d-4d9e-96ba-d32b3f6f9a88",
       "type": "relationship"
     },
     {
@@ -4307,6 +4608,20 @@
     {
       "created": "2026-11-04T00:00:00.000Z",
       "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--c5cbc158-6585-44d1-987c-6c864faf9ad5",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "threat-actor--a7ef29b5-ccb5-4a34-8f32-d3a017f991f2",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--b2fae8bc-6296-4958-84c3-72e3dab86ba4",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
       "id": "relationship--c90910ba-cd39-4478-a5bd-5f9026492845",
       "modified": "2026-11-04T00:00:00.000Z",
       "object_marking_refs": [
@@ -4316,6 +4631,20 @@
       "source_ref": "intrusion-set--4eee7166-dd04-464d-a13f-e0121c5d24ba",
       "spec_version": "2.1",
       "target_ref": "attack-pattern--29a1901f-4a85-4dec-b2da-3229d81128ea",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--c9227c14-4802-49da-ad75-a70e6f7dafb5",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "threat-actor--c9ce5e7e-e753-43eb-853a-69b636f6167f",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--17953698-6fce-4ed7-bfaa-da02e227ecfe",
       "type": "relationship"
     },
     {
@@ -4347,6 +4676,20 @@
       "type": "relationship"
     },
     {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--cc6023ca-451f-4aca-879e-c30cc28144a9",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "threat-actor--a7ef29b5-ccb5-4a34-8f32-d3a017f991f2",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--c51145c6-da62-49a7-8f8e-92edf40c8339",
+      "type": "relationship"
+    },
+    {
       "created": "2026-10-15T00:00:00.000Z",
       "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
       "id": "relationship--d0621389-3ea5-4166-885e-6af590c09704",
@@ -4358,6 +4701,20 @@
       "source_ref": "campaign--c154e3ce-bced-4cda-8dc5-6ea753025e9f",
       "spec_version": "2.1",
       "target_ref": "attack-pattern--7b35c62f-9c84-4602-9400-627e0fa84c46",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--d0694863-0b27-48ca-9938-f272cb98f701",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "threat-actor--a7ef29b5-ccb5-4a34-8f32-d3a017f991f2",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--35767579-489b-41ee-8e06-f4c8e6b8611a",
       "type": "relationship"
     },
     {
@@ -4613,6 +4970,20 @@
       "type": "relationship"
     },
     {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--ef7d637c-0b27-4faa-aa95-01684a8ba08a",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "threat-actor--a7ef29b5-ccb5-4a34-8f32-d3a017f991f2",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--caf2ee6d-2b46-4024-af25-324fe504c8b5",
+      "type": "relationship"
+    },
+    {
       "created": "2026-10-15T00:00:00.000Z",
       "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
       "id": "relationship--efccf4e0-ea1b-4c35-ae44-245df217c47a",
@@ -4652,6 +5023,20 @@
       "source_ref": "intrusion-set--4eee7166-dd04-464d-a13f-e0121c5d24ba",
       "spec_version": "2.1",
       "target_ref": "attack-pattern--01839fdb-0f8f-4025-82d2-acbc9311d7a1",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--f8bbd157-68a5-418a-8d19-bca744d0f05f",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "threat-actor--c9ce5e7e-e753-43eb-853a-69b636f6167f",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--e7b34f65-cc2e-467a-ba85-0d583c195e52",
       "type": "relationship"
     },
     {
@@ -4944,6 +5329,88 @@
       "type": "threat-actor"
     },
     {
+      "aliases": [
+        "Agenda"
+      ],
+      "confidence": 15,
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "description": "The most prolific ransomware group in the world in August 2026 with 147 claims, and second in Asia-Pacific in H1 2026. No Indian victim has publicly confirmed a Qilin attack; its place here rests on its regional volume.\n\nEvidence linking the group to India: regional-volume.\n\nKey findings: Cyble: 64 Asia-Pacific victims in H1 2026, second to The Gentlemen; 147 claims worldwide in August 2026, the most of any group. Qilin is a Russian-speaking operation first seen in 2022 under the name Agenda; affiliates keep 80 to 85% of each ransom. LevelBlue links The Gentlemen to affiliates from the Qilin ecosystem.",
+      "external_references": [
+        {
+          "external_id": "rw-qilin",
+          "source_name": "india-threat-tracker",
+          "url": "https://www.sohankanna.com/tracker#ransomware-rw-qilin"
+        },
+        {
+          "source_name": "CXO Digital Pulse - India tops Asia-Pacific ransomware claims in August 2026, Cyble finds (30 Sep 2026)",
+          "url": "https://www.cxodigitalpulse.com/india-tops-asia-pacific-ransomware-claims-in-august-2026-cyble-report-finds/"
+        },
+        {
+          "source_name": "Entrepreneur India - India second most ransomware-targeted APAC nation in H1 2026 (Cyble, 24 Jul 2026)",
+          "url": "https://india.entrepreneur.com/technology/india-second-most-ransomware-targeted-apac-nation-in-h1-2026-report"
+        },
+        {
+          "source_name": "Wikipedia - Qilin (cybercrime group)",
+          "url": "https://en.wikipedia.org/wiki/Qilin_(cybercrime_group)"
+        },
+        {
+          "source_name": "LevelBlue SpiderLabs - A closer look at The Gentlemen's alleged leak (18 May 2026)",
+          "url": "https://www.levelblue.com/blogs/spiderlabs-blog/a-closer-look-at-the-gentlemens-alleged-leak"
+        }
+      ],
+      "id": "threat-actor--64803964-1ceb-4117-8795-d9f5a818efb9",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "name": "Qilin",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "threat_actor_types": [
+        "crime-syndicate"
+      ],
+      "type": "threat-actor"
+    },
+    {
+      "aliases": [
+        "LockBit 3.0"
+      ],
+      "confidence": 85,
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "description": "One of the most widely deployed ransomware operations since 2022, with Indian names on its leak site including the brokerage Motilal Oswal, Granules India and the National Aerospace Laboratories. It is still active: Cyble counted 38 LockBit victims in Asia-Pacific in the first half of 2026, and DSCI's 2026 advisory names LockBit 3.0 as a threat to Indian organisations.\n\nEvidence linking the group to India: claimed-victims.\n\nKey findings: In February 2024 LockBit listed Motilal Oswal, which serves about six million clients, claiming confidential data. The firm did not confirm or dispute an incident, and CERT-In said it was acting. TechCrunch lists earlier LockBit attacks on Granules India and India's National Aerospace Laboratories. Cyble's H1 2026 report places LockBit third in Asia-Pacific with 38 victims, behind The Gentlemen and Qilin.",
+      "external_references": [
+        {
+          "external_id": "rw-lockbit",
+          "source_name": "india-threat-tracker",
+          "url": "https://www.sohankanna.com/tracker#ransomware-rw-lockbit"
+        },
+        {
+          "source_name": "TechCrunch - LockBit claims cyberattack on Indian brokerage Motilal Oswal (15 Feb 2024)",
+          "url": "https://techcrunch.com/2024/02/15/lockbit-ransomware-cyberattack-india-brokerage-firm-motilal-oswal"
+        },
+        {
+          "source_name": "Entrepreneur India - India second most ransomware-targeted APAC nation in H1 2026 (Cyble, 24 Jul 2026)",
+          "url": "https://india.entrepreneur.com/technology/india-second-most-ransomware-targeted-apac-nation-in-h1-2026-report"
+        },
+        {
+          "source_name": "DSCI - Cyber threat advisory: Middle East conflict, February 2026 escalation (Mar 2026)",
+          "url": "https://www.dsci.in/files/content/advisory/2026/cyber_threat_advisory-middle_east_conflict.pdf"
+        }
+      ],
+      "id": "threat-actor--6ab0f22b-37eb-4f4c-b124-c0ac55092713",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "name": "LockBit",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "threat_actor_types": [
+        "crime-syndicate"
+      ],
+      "type": "threat-actor"
+    },
+    {
       "confidence": 50,
       "created": "2026-11-04T00:00:00.000Z",
       "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
@@ -4980,6 +5447,38 @@
       "spec_version": "2.1",
       "threat_actor_types": [
         "activist"
+      ],
+      "type": "threat-actor"
+    },
+    {
+      "confidence": 50,
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "description": "Claimed the ransomware attack that Tata Technologies disclosed to the NSE in January 2025, saying it took 1.4 TB in about 730,000 files. There has been no new India-related reporting on it since 2025.\n\nEvidence linking the group to India: confirmed-victim.\n\nKey findings: Tata Technologies told the NSE on 31 January 2025 that ransomware hit a few IT assets; services were briefly suspended and client delivery was unaffected. In March 2025 Hunters International listed the company and claimed 1.4 TB of data across about 730,000 files.",
+      "external_references": [
+        {
+          "external_id": "rw-hunters-international",
+          "source_name": "india-threat-tracker",
+          "url": "https://www.sohankanna.com/tracker#ransomware-rw-hunters-international"
+        },
+        {
+          "source_name": "The Record - Tata Technologies reports ransomware attack to Indian stock exchange (31 Jan 2025)",
+          "url": "https://therecord.media/tata-ransomware-attack-report-incident"
+        },
+        {
+          "source_name": "Security Affairs - Hunters International claims 1.4 TB stolen from Tata Technologies (5 Mar 2025)",
+          "url": "https://securityaffairs.com/174953/data-breach/ransomware-group-hunters-international-claims-to-have-hacked-tata-technologies.html"
+        }
+      ],
+      "id": "threat-actor--7f68a3f9-5503-4315-bb15-8bdcc9754ba5",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "name": "Hunters International",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "threat_actor_types": [
+        "crime-syndicate"
       ],
       "type": "threat-actor"
     },
@@ -5063,6 +5562,92 @@
       "type": "threat-actor"
     },
     {
+      "confidence": 50,
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "description": "CERT-In warned Indian organisations about Akira in 2023. It claimed the pharmaceutical company Cipla in December 2024, which Cipla has not confirmed, and in 2026 it is still getting in through an old SonicWall SSL VPN flaw.\n\nEvidence linking the group to India: advisory.\n\nCISA KEV vulnerabilities the cited sources tie to its intrusions: CVE-2024-40766.\n\nKey findings: CERT-In's 2023 advisory: Akira deletes Windows shadow copies, appends '.akira' to files and runs double extortion. It spreads through spear-phishing, drive-by downloads and insecure Remote Desktop. Cyble (August 2026) reports Akira still exploiting CVE-2024-40766 in SonicWall SSL VPN, a patched 2024 flaw. Akira claimed 70 GB from Cipla in December 2024, including medical, financial and contact data; Cipla has not confirmed it.",
+      "external_references": [
+        {
+          "external_id": "rw-akira",
+          "source_name": "india-threat-tracker",
+          "url": "https://www.sohankanna.com/tracker#ransomware-rw-akira"
+        },
+        {
+          "external_id": "G1024",
+          "source_name": "mitre-attack",
+          "url": "https://attack.mitre.org/groups/G1024/"
+        },
+        {
+          "external_id": "CVE-2024-40766",
+          "source_name": "cve"
+        },
+        {
+          "source_name": "Civilsdaily - CERT-In warns against Akira ransomware (Aug 2023)",
+          "url": "https://www.civilsdaily.com/news/cert-in-warns-against-akira-ransomware/"
+        },
+        {
+          "source_name": "CXO Digital Pulse - India tops Asia-Pacific ransomware claims in August 2026, Cyble finds (30 Sep 2026)",
+          "url": "https://www.cxodigitalpulse.com/india-tops-asia-pacific-ransomware-claims-in-august-2026-cyble-report-finds/"
+        },
+        {
+          "source_name": "Cyber Security News - Cipla allegedly hacked by Akira (9 Dec 2024)",
+          "url": "https://cybersecuritynews.com/cipla-allegedly-hacked/"
+        }
+      ],
+      "id": "threat-actor--a7ef29b5-ccb5-4a34-8f32-d3a017f991f2",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "name": "Akira",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "threat_actor_types": [
+        "crime-syndicate"
+      ],
+      "type": "threat-actor"
+    },
+    {
+      "confidence": 50,
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "description": "The most active ransomware group in Asia-Pacific in 2026. It emerged in the second half of 2025, probably from affiliates of the Qilin ecosystem, and LevelBlue counted 12 Indian victims among 352 on its leak site by May 2026. It favours exposed VPNs and firewalls and pushes ransomware across a domain through Group Policy.\n\nEvidence linking the group to India: claimed-victims.\n\nKey findings: Cyble: The Gentlemen led Asia-Pacific in H1 2026 with 114 victims, and again in August 2026 with 20. LevelBlue (May 2026): 352 leak-site victims from January to 10 May 2026, 12 of them in India. Asia-Pacific was its largest region at 28.7%. Access comes through exposed remote services, VPN or firewall abuse, stolen credentials and access brokers. Operators use AnyDesk, PsExec, Cobalt Strike and SystemBC, and stage payloads in NETLOGON to deploy them domain-wide through Group Policy. It encrypts Windows, Linux, NAS, BSD and VMware ESXi, and steals data before encrypting.",
+      "external_references": [
+        {
+          "external_id": "rw-the-gentlemen",
+          "source_name": "india-threat-tracker",
+          "url": "https://www.sohankanna.com/tracker#ransomware-rw-the-gentlemen"
+        },
+        {
+          "external_id": "G1058",
+          "source_name": "mitre-attack",
+          "url": "https://attack.mitre.org/groups/G1058/"
+        },
+        {
+          "source_name": "LevelBlue SpiderLabs - A closer look at The Gentlemen's alleged leak (18 May 2026)",
+          "url": "https://www.levelblue.com/blogs/spiderlabs-blog/a-closer-look-at-the-gentlemens-alleged-leak"
+        },
+        {
+          "source_name": "Entrepreneur India - India second most ransomware-targeted APAC nation in H1 2026 (Cyble, 24 Jul 2026)",
+          "url": "https://india.entrepreneur.com/technology/india-second-most-ransomware-targeted-apac-nation-in-h1-2026-report"
+        },
+        {
+          "source_name": "CXO Digital Pulse - India tops Asia-Pacific ransomware claims in August 2026, Cyble finds (30 Sep 2026)",
+          "url": "https://www.cxodigitalpulse.com/india-tops-asia-pacific-ransomware-claims-in-august-2026-cyble-report-finds/"
+        }
+      ],
+      "id": "threat-actor--c9ce5e7e-e753-43eb-853a-69b636f6167f",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "name": "The Gentlemen",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "threat_actor_types": [
+        "crime-syndicate"
+      ],
+      "type": "threat-actor"
+    },
+    {
       "confidence": 85,
       "created": "2026-11-04T00:00:00.000Z",
       "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
@@ -5095,6 +5680,45 @@
       "spec_version": "2.1",
       "threat_actor_types": [
         "activist"
+      ],
+      "type": "threat-actor"
+    },
+    {
+      "aliases": [
+        "RansomEXX v2.0"
+      ],
+      "confidence": 85,
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "description": "The group behind the July 2024 attack on C-Edge Technologies, which knocked nearly 300 Indian co-operative and regional rural banks off UPI and ATM networks. Entry came through a partner's misconfigured Jenkins server. DSCI's March 2026 advisory still lists RansomEXX among the ransomware threats to Indian organisations.\n\nEvidence linking the group to India: confirmed-victim.\n\nCISA KEV vulnerabilities the cited sources tie to its intrusions: CVE-2024-23897.\n\nKey findings: C-Edge, a joint venture of SBI and TCS, serves co-operative and regional rural banks. NPCI isolated it from retail payment systems to stop the spread, so customers of nearly 300 small banks lost UPI and ATM access. CloudSEK attributed the attack to RansomEXX v2.0 and traced the start to a misconfigured Jenkins server at Brontoo Technology Solutions, exploited through the Jenkins CLI file-read flaw CVE-2024-23897. The banks themselves were not the entry point: a technology partner's internet-facing build server was.",
+      "external_references": [
+        {
+          "external_id": "rw-ransomexx",
+          "source_name": "india-threat-tracker",
+          "url": "https://www.sohankanna.com/tracker#ransomware-rw-ransomexx"
+        },
+        {
+          "external_id": "CVE-2024-23897",
+          "source_name": "cve"
+        },
+        {
+          "source_name": "CSO Online - Over 300 Indian banks suffer payment disruption from ransomware attack (1 Aug 2024)",
+          "url": "https://www.csoonline.com/article/3480250/over-300-indian-banks-suffer-payment-disruption-from-ransomware-attack.html"
+        },
+        {
+          "source_name": "DSCI - Cyber threat advisory: Middle East conflict, February 2026 escalation (Mar 2026)",
+          "url": "https://www.dsci.in/files/content/advisory/2026/cyber_threat_advisory-middle_east_conflict.pdf"
+        }
+      ],
+      "id": "threat-actor--e8cbceaf-0e7a-46c9-a07c-a11f025e29a6",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "name": "RansomEXX",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "threat_actor_types": [
+        "crime-syndicate"
       ],
       "type": "threat-actor"
     },
