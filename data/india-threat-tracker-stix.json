@@ -1,5 +1,5 @@
 {
-  "id": "bundle--ff78e951-d1e6-4bfe-befa-b7a298de222d",
+  "id": "bundle--04314981-6c51-4326-83d1-8a8457cb02b0",
   "objects": [
     {
       "created": "2026-11-04T00:00:00.000Z",
@@ -926,25 +926,6 @@
       "id": "attack-pattern--9d1c39ad-c584-416e-b0db-3e8e33f4ca00",
       "modified": "2026-11-04T00:00:00.000Z",
       "name": "System Binary Proxy Execution: Compiled HTML File",
-      "object_marking_refs": [
-        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
-      ],
-      "spec_version": "2.1",
-      "type": "attack-pattern"
-    },
-    {
-      "created": "2026-10-15T00:00:00.000Z",
-      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
-      "external_references": [
-        {
-          "external_id": "T1496",
-          "source_name": "mitre-attack",
-          "url": "https://attack.mitre.org/techniques/T1496/"
-        }
-      ],
-      "id": "attack-pattern--9e62159e-d86d-40ed-83ad-0a5c4b513a6f",
-      "modified": "2026-10-15T00:00:00.001Z",
-      "name": "Resource Hijacking",
       "object_marking_refs": [
         "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
       ],
@@ -4981,20 +4962,6 @@
       "source_ref": "threat-actor--a7ef29b5-ccb5-4a34-8f32-d3a017f991f2",
       "spec_version": "2.1",
       "target_ref": "attack-pattern--caf2ee6d-2b46-4024-af25-324fe504c8b5",
-      "type": "relationship"
-    },
-    {
-      "created": "2026-10-15T00:00:00.000Z",
-      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
-      "id": "relationship--efccf4e0-ea1b-4c35-ae44-245df217c47a",
-      "modified": "2026-10-15T00:00:00.000Z",
-      "object_marking_refs": [
-        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
-      ],
-      "relationship_type": "uses",
-      "source_ref": "campaign--45f641b4-6869-4d37-bfc8-bd80f6140eac",
-      "spec_version": "2.1",
-      "target_ref": "attack-pattern--9e62159e-d86d-40ed-83ad-0a5c4b513a6f",
       "type": "relationship"
     },
     {

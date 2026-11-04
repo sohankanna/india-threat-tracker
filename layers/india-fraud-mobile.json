@@ -1,0 +1,184 @@
+{
+ "name": "India Threat Tracker: fake-APK and fraud campaigns (Mobile)",
+ "versions": {
+  "attack": "20",
+  "navigator": "5.1.0",
+  "layer": "4.5"
+ },
+ "domain": "mobile-attack",
+ "description": "Mobile ATT&CK techniques mapped for the fraud campaigns against Indian users. Score = number of campaigns using the technique.",
+ "sorting": 3,
+ "layout": {
+  "layout": "side",
+  "showName": true,
+  "showID": false
+ },
+ "hideDisabled": false,
+ "techniques": [
+  {
+   "techniqueID": "T1406",
+   "score": 2,
+   "enabled": true,
+   "showSubtechniques": false,
+   "comment": "Campaigns: Android banking trojan - MITM + anti-analysis (case study); RTO Challan fraud - two-stage dropper (jsonserv C2)"
+  },
+  {
+   "techniqueID": "T1407",
+   "score": 2,
+   "enabled": true,
+   "showSubtechniques": false,
+   "comment": "Campaigns: GhostBat RAT - RTO/mParivahan-themed Android campaign; RTO Challan fraud - two-stage dropper (jsonserv C2)"
+  },
+  {
+   "techniqueID": "T1414",
+   "score": 1,
+   "enabled": true,
+   "showSubtechniques": false,
+   "comment": "Campaigns: Wedding-invitation APK - SpyMax RAT on WhatsApp"
+  },
+  {
+   "techniqueID": "T1417.001",
+   "score": 1,
+   "enabled": true,
+   "showSubtechniques": true,
+   "comment": "Campaigns: Wedding-invitation APK - SpyMax RAT on WhatsApp"
+  },
+  {
+   "techniqueID": "T1417.002",
+   "score": 3,
+   "enabled": true,
+   "showSubtechniques": true,
+   "comment": "Campaigns: Android banking trojan - MITM + anti-analysis (case study); GhostBat RAT - RTO/mParivahan-themed Android campaign; RTO Challan fraud - two-stage dropper (jsonserv C2)"
+  },
+  {
+   "techniqueID": "T1418",
+   "score": 1,
+   "enabled": true,
+   "showSubtechniques": false,
+   "comment": "Campaigns: Wedding-invitation APK - SpyMax RAT on WhatsApp"
+  },
+  {
+   "techniqueID": "T1426",
+   "score": 1,
+   "enabled": true,
+   "showSubtechniques": false,
+   "comment": "Campaigns: RTO Challan fraud - two-stage dropper (jsonserv C2)"
+  },
+  {
+   "techniqueID": "T1437.001",
+   "score": 1,
+   "enabled": true,
+   "showSubtechniques": true,
+   "comment": "Campaigns: RTO Challan fraud - two-stage dropper (jsonserv C2)"
+  },
+  {
+   "techniqueID": "T1481",
+   "score": 1,
+   "enabled": true,
+   "showSubtechniques": false,
+   "comment": "Campaigns: GhostBat RAT - RTO/mParivahan-themed Android campaign"
+  },
+  {
+   "techniqueID": "T1517",
+   "score": 1,
+   "enabled": true,
+   "showSubtechniques": false,
+   "comment": "Campaigns: Wedding-invitation APK - SpyMax RAT on WhatsApp"
+  },
+  {
+   "techniqueID": "T1532",
+   "score": 1,
+   "enabled": true,
+   "showSubtechniques": false,
+   "comment": "Campaigns: Wedding-invitation APK - SpyMax RAT on WhatsApp"
+  },
+  {
+   "techniqueID": "T1582",
+   "score": 2,
+   "enabled": true,
+   "showSubtechniques": false,
+   "comment": "Campaigns: GhostBat RAT - RTO/mParivahan-themed Android campaign; RTO Challan fraud - two-stage dropper (jsonserv C2)"
+  },
+  {
+   "techniqueID": "T1628.001",
+   "score": 2,
+   "enabled": true,
+   "showSubtechniques": true,
+   "comment": "Campaigns: RTO Challan fraud - two-stage dropper (jsonserv C2); Wedding-invitation APK - SpyMax RAT on WhatsApp"
+  },
+  {
+   "techniqueID": "T1633",
+   "score": 1,
+   "enabled": true,
+   "showSubtechniques": false,
+   "comment": "Campaigns: Android banking trojan - MITM + anti-analysis (case study)"
+  },
+  {
+   "techniqueID": "T1633.001",
+   "score": 1,
+   "enabled": true,
+   "showSubtechniques": true,
+   "comment": "Campaigns: GhostBat RAT - RTO/mParivahan-themed Android campaign"
+  },
+  {
+   "techniqueID": "T1636.003",
+   "score": 1,
+   "enabled": true,
+   "showSubtechniques": true,
+   "comment": "Campaigns: Wedding-invitation APK - SpyMax RAT on WhatsApp"
+  },
+  {
+   "techniqueID": "T1636.004",
+   "score": 3,
+   "enabled": true,
+   "showSubtechniques": true,
+   "comment": "Campaigns: GhostBat RAT - RTO/mParivahan-themed Android campaign; RTO Challan fraud - two-stage dropper (jsonserv C2); Wedding-invitation APK - SpyMax RAT on WhatsApp"
+  },
+  {
+   "techniqueID": "T1638",
+   "score": 1,
+   "enabled": true,
+   "showSubtechniques": false,
+   "comment": "Campaigns: Android banking trojan - MITM + anti-analysis (case study)"
+  },
+  {
+   "techniqueID": "T1646",
+   "score": 1,
+   "enabled": true,
+   "showSubtechniques": false,
+   "comment": "Campaigns: Wedding-invitation APK - SpyMax RAT on WhatsApp"
+  },
+  {
+   "techniqueID": "T1655.001",
+   "score": 4,
+   "enabled": true,
+   "showSubtechniques": true,
+   "comment": "Campaigns: Android banking trojan - MITM + anti-analysis (case study); GhostBat RAT - RTO/mParivahan-themed Android campaign; RTO Challan fraud - two-stage dropper (jsonserv C2); Wedding-invitation APK - SpyMax RAT on WhatsApp"
+  },
+  {
+   "techniqueID": "T1660",
+   "score": 4,
+   "enabled": true,
+   "showSubtechniques": false,
+   "comment": "Campaigns: Android banking trojan - MITM + anti-analysis (case study); GhostBat RAT - RTO/mParivahan-themed Android campaign; RTO Challan fraud - two-stage dropper (jsonserv C2); Wedding-invitation APK - SpyMax RAT on WhatsApp"
+  }
+ ],
+ "legendItems": [],
+ "showTacticRowBackground": true,
+ "tacticRowBackground": "#1b2129",
+ "selectTechniquesAcrossTactics": true,
+ "metadata": [
+  {
+   "name": "source",
+   "value": "https://github.com/sohankanna/india-threat-tracker"
+  }
+ ],
+ "gradient": {
+  "colors": [
+   "#d8f3f6",
+   "#4fc6d6"
+  ],
+  "minValue": 1,
+  "maxValue": 4
+ }
+}

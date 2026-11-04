@@ -1,0 +1,380 @@
+{
+ "name": "India Threat Tracker: techniques of actors targeting India",
+ "versions": {
+  "attack": "20",
+  "navigator": "5.1.0",
+  "layer": "4.5"
+ },
+ "domain": "enterprise-attack",
+ "description": "Enterprise techniques mapped for the state-nexus, ransomware and hacktivist actors in the India Threat Tracker. Score = number of tracked actors using the technique.",
+ "sorting": 3,
+ "layout": {
+  "layout": "side",
+  "showName": true,
+  "showID": false
+ },
+ "hideDisabled": false,
+ "techniques": [
+  {
+   "techniqueID": "T1003.002",
+   "score": 1,
+   "enabled": true,
+   "showSubtechniques": true,
+   "comment": "Used by: MuddyWater (apt)"
+  },
+  {
+   "techniqueID": "T1005",
+   "score": 2,
+   "enabled": true,
+   "showSubtechniques": false,
+   "comment": "Used by: Lazarus Group (apt); SideCopy (apt)"
+  },
+  {
+   "techniqueID": "T1016",
+   "score": 1,
+   "enabled": true,
+   "showSubtechniques": false,
+   "comment": "Used by: Lazarus Group (apt)"
+  },
+  {
+   "techniqueID": "T1021.001",
+   "score": 1,
+   "enabled": true,
+   "showSubtechniques": true,
+   "comment": "Used by: Akira (ransomware)"
+  },
+  {
+   "techniqueID": "T1036",
+   "score": 1,
+   "enabled": true,
+   "showSubtechniques": false,
+   "comment": "Used by: Mustang Panda (apt)"
+  },
+  {
+   "techniqueID": "T1049",
+   "score": 1,
+   "enabled": true,
+   "showSubtechniques": false,
+   "comment": "Used by: Lazarus Group (apt)"
+  },
+  {
+   "techniqueID": "T1053.005",
+   "score": 2,
+   "enabled": true,
+   "showSubtechniques": true,
+   "comment": "Used by: Mustang Panda (apt); Transparent Tribe (apt)"
+  },
+  {
+   "techniqueID": "T1056.001",
+   "score": 1,
+   "enabled": true,
+   "showSubtechniques": true,
+   "comment": "Used by: Lazarus Group (apt)"
+  },
+  {
+   "techniqueID": "T1057",
+   "score": 1,
+   "enabled": true,
+   "showSubtechniques": false,
+   "comment": "Used by: Lazarus Group (apt)"
+  },
+  {
+   "techniqueID": "T1059.001",
+   "score": 2,
+   "enabled": true,
+   "showSubtechniques": true,
+   "comment": "Used by: APT41 (apt); MuddyWater (apt)"
+  },
+  {
+   "techniqueID": "T1059.005",
+   "score": 2,
+   "enabled": true,
+   "showSubtechniques": true,
+   "comment": "Used by: MuddyWater (apt); Transparent Tribe (apt)"
+  },
+  {
+   "techniqueID": "T1059.007",
+   "score": 1,
+   "enabled": true,
+   "showSubtechniques": true,
+   "comment": "Used by: Mustang Panda (apt)"
+  },
+  {
+   "techniqueID": "T1071.001",
+   "score": 3,
+   "enabled": true,
+   "showSubtechniques": true,
+   "comment": "Used by: APT41 (apt); Mustang Panda (apt); RedEcho / TAG-38 (China-nexus) (apt)"
+  },
+  {
+   "techniqueID": "T1078",
+   "score": 1,
+   "enabled": true,
+   "showSubtechniques": false,
+   "comment": "Used by: The Gentlemen (ransomware)"
+  },
+  {
+   "techniqueID": "T1090",
+   "score": 3,
+   "enabled": true,
+   "showSubtechniques": false,
+   "comment": "Used by: MuddyWater (apt); RedEcho / TAG-38 (China-nexus) (apt); RipperSec (hacktivist)"
+  },
+  {
+   "techniqueID": "T1102.002",
+   "score": 1,
+   "enabled": true,
+   "showSubtechniques": true,
+   "comment": "Used by: Mustang Panda (apt)"
+  },
+  {
+   "techniqueID": "T1105",
+   "score": 1,
+   "enabled": true,
+   "showSubtechniques": false,
+   "comment": "Used by: Lazarus Group (apt)"
+  },
+  {
+   "techniqueID": "T1113",
+   "score": 1,
+   "enabled": true,
+   "showSubtechniques": false,
+   "comment": "Used by: MuddyWater (apt)"
+  },
+  {
+   "techniqueID": "T1133",
+   "score": 2,
+   "enabled": true,
+   "showSubtechniques": false,
+   "comment": "Used by: Akira (ransomware); The Gentlemen (ransomware)"
+  },
+  {
+   "techniqueID": "T1190",
+   "score": 4,
+   "enabled": true,
+   "showSubtechniques": false,
+   "comment": "Used by: APT41 (apt); Mysterious Team Bangladesh (hacktivist); Akira (ransomware); RansomEXX (ransomware)"
+  },
+  {
+   "techniqueID": "T1199",
+   "score": 1,
+   "enabled": true,
+   "showSubtechniques": false,
+   "comment": "Used by: RansomEXX (ransomware)"
+  },
+  {
+   "techniqueID": "T1203",
+   "score": 2,
+   "enabled": true,
+   "showSubtechniques": false,
+   "comment": "Used by: RedFoxtrot (apt); SideWinder (India-nexus) (apt)"
+  },
+  {
+   "techniqueID": "T1204.002",
+   "score": 6,
+   "enabled": true,
+   "showSubtechniques": true,
+   "comment": "Used by: APT41 (apt); MuddyWater (apt); Mustang Panda (apt); SideCopy (apt); SideWinder (India-nexus) (apt); Transparent Tribe (apt)"
+  },
+  {
+   "techniqueID": "T1217",
+   "score": 1,
+   "enabled": true,
+   "showSubtechniques": false,
+   "comment": "Used by: Lazarus Group (apt)"
+  },
+  {
+   "techniqueID": "T1218.001",
+   "score": 1,
+   "enabled": true,
+   "showSubtechniques": true,
+   "comment": "Used by: Mustang Panda (apt)"
+  },
+  {
+   "techniqueID": "T1218.005",
+   "score": 2,
+   "enabled": true,
+   "showSubtechniques": true,
+   "comment": "Used by: SideCopy (apt); Transparent Tribe (apt)"
+  },
+  {
+   "techniqueID": "T1219",
+   "score": 2,
+   "enabled": true,
+   "showSubtechniques": false,
+   "comment": "Used by: MuddyWater (apt); The Gentlemen (ransomware)"
+  },
+  {
+   "techniqueID": "T1221",
+   "score": 1,
+   "enabled": true,
+   "showSubtechniques": false,
+   "comment": "Used by: SideWinder (India-nexus) (apt)"
+  },
+  {
+   "techniqueID": "T1484.001",
+   "score": 1,
+   "enabled": true,
+   "showSubtechniques": true,
+   "comment": "Used by: The Gentlemen (ransomware)"
+  },
+  {
+   "techniqueID": "T1486",
+   "score": 6,
+   "enabled": true,
+   "showSubtechniques": false,
+   "comment": "Used by: Akira (ransomware); Hunters International (ransomware); LockBit (ransomware); Qilin (ransomware); RansomEXX (ransomware); The Gentlemen (ransomware)"
+  },
+  {
+   "techniqueID": "T1490",
+   "score": 1,
+   "enabled": true,
+   "showSubtechniques": false,
+   "comment": "Used by: Akira (ransomware)"
+  },
+  {
+   "techniqueID": "T1491.002",
+   "score": 4,
+   "enabled": true,
+   "showSubtechniques": true,
+   "comment": "Used by: #OpIndia wave after Pahalgam and Operation Sindoor (hacktivist); Mysterious Team Bangladesh (hacktivist); Pakistan Cyber Force (hacktivist); Team Insane PK (hacktivist)"
+  },
+  {
+   "techniqueID": "T1498",
+   "score": 8,
+   "enabled": true,
+   "showSubtechniques": false,
+   "comment": "Used by: #OpIndia wave after Pahalgam and Operation Sindoor (hacktivist); AnonSec (hacktivist); Holy League (hacktivist); Keymous+ (hacktivist); Mysterious Team Bangladesh (hacktivist); RipperSec (hacktivist); SYLHET GANG-SG (hacktivist); Team Insane PK (hacktivist)"
+  },
+  {
+   "techniqueID": "T1499.002",
+   "score": 8,
+   "enabled": true,
+   "showSubtechniques": true,
+   "comment": "Used by: #OpIndia wave after Pahalgam and Operation Sindoor (hacktivist); AnonSec (hacktivist); Holy League (hacktivist); Keymous+ (hacktivist); Mysterious Team Bangladesh (hacktivist); RipperSec (hacktivist); SYLHET GANG-SG (hacktivist); Team Insane PK (hacktivist)"
+  },
+  {
+   "techniqueID": "T1547.001",
+   "score": 2,
+   "enabled": true,
+   "showSubtechniques": true,
+   "comment": "Used by: Mustang Panda (apt); Transparent Tribe (apt)"
+  },
+  {
+   "techniqueID": "T1555.003",
+   "score": 1,
+   "enabled": true,
+   "showSubtechniques": true,
+   "comment": "Used by: MuddyWater (apt)"
+  },
+  {
+   "techniqueID": "T1566.001",
+   "score": 6,
+   "enabled": true,
+   "showSubtechniques": true,
+   "comment": "Used by: APT41 (apt); MuddyWater (apt); Mustang Panda (apt); SideCopy (apt); SideWinder (India-nexus) (apt); Transparent Tribe (apt)"
+  },
+  {
+   "techniqueID": "T1566.002",
+   "score": 1,
+   "enabled": true,
+   "showSubtechniques": true,
+   "comment": "Used by: MuddyWater (apt)"
+  },
+  {
+   "techniqueID": "T1567",
+   "score": 3,
+   "enabled": true,
+   "showSubtechniques": false,
+   "comment": "Used by: MuddyWater (apt); Hunters International (ransomware); LockBit (ransomware)"
+  },
+  {
+   "techniqueID": "T1567.002",
+   "score": 1,
+   "enabled": true,
+   "showSubtechniques": true,
+   "comment": "Used by: Mustang Panda (apt)"
+  },
+  {
+   "techniqueID": "T1568",
+   "score": 1,
+   "enabled": true,
+   "showSubtechniques": false,
+   "comment": "Used by: Mustang Panda (apt)"
+  },
+  {
+   "techniqueID": "T1572",
+   "score": 1,
+   "enabled": true,
+   "showSubtechniques": false,
+   "comment": "Used by: RedEcho / TAG-38 (China-nexus) (apt)"
+  },
+  {
+   "techniqueID": "T1574.001",
+   "score": 2,
+   "enabled": true,
+   "showSubtechniques": true,
+   "comment": "Used by: MuddyWater (apt); Mustang Panda (apt)"
+  },
+  {
+   "techniqueID": "T1583.001",
+   "score": 1,
+   "enabled": true,
+   "showSubtechniques": true,
+   "comment": "Used by: APT41 (apt)"
+  },
+  {
+   "techniqueID": "T1584",
+   "score": 1,
+   "enabled": true,
+   "showSubtechniques": false,
+   "comment": "Used by: SideCopy (apt)"
+  },
+  {
+   "techniqueID": "T1584.005",
+   "score": 1,
+   "enabled": true,
+   "showSubtechniques": true,
+   "comment": "Used by: RedEcho / TAG-38 (China-nexus) (apt)"
+  },
+  {
+   "techniqueID": "T1586.002",
+   "score": 1,
+   "enabled": true,
+   "showSubtechniques": true,
+   "comment": "Used by: MuddyWater (apt)"
+  },
+  {
+   "techniqueID": "T1588.001",
+   "score": 1,
+   "enabled": true,
+   "showSubtechniques": true,
+   "comment": "Used by: RedFoxtrot (apt)"
+  },
+  {
+   "techniqueID": "T1657",
+   "score": 1,
+   "enabled": true,
+   "showSubtechniques": false,
+   "comment": "Used by: Lazarus Group (apt)"
+  }
+ ],
+ "legendItems": [],
+ "showTacticRowBackground": true,
+ "tacticRowBackground": "#1b2129",
+ "selectTechniquesAcrossTactics": true,
+ "metadata": [
+  {
+   "name": "source",
+   "value": "https://github.com/sohankanna/india-threat-tracker"
+  }
+ ],
+ "gradient": {
+  "colors": [
+   "#fde2d8",
+   "#ef7d62"
+  ],
+  "minValue": 1,
+  "maxValue": 8
+ }
+}

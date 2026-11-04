@@ -1,0 +1,1333 @@
+{
+ "feed": "attack-coverage",
+ "attack_version": {
+  "enterprise": "20.0",
+  "mobile": "20.0"
+ },
+ "method": "Technique ids from the tracker's actor mappings matched against the attack.* tags of its Sigma rules. exact: a rule is tagged with the technique. related: only with its parent or a sub-technique. A tag is the rule author's claim, not proof that every procedure is detected.",
+ "summary": {
+  "actor_techniques": 49,
+  "exact": 7,
+  "related": 4,
+  "none": 38,
+  "rules": 9,
+  "rule_techniques_not_used_by_actors": 8,
+  "mobile_fraud_techniques": 21
+ },
+ "top_gaps": [
+  {
+   "id": "T1498",
+   "name": "Network Denial of Service",
+   "actors": 8
+  },
+  {
+   "id": "T1499.002",
+   "name": "Service Exhaustion Flood",
+   "actors": 8
+  },
+  {
+   "id": "T1486",
+   "name": "Data Encrypted for Impact",
+   "actors": 6
+  },
+  {
+   "id": "T1566.001",
+   "name": "Spearphishing Attachment",
+   "actors": 6
+  },
+  {
+   "id": "T1190",
+   "name": "Exploit Public-Facing Application",
+   "actors": 4
+  },
+  {
+   "id": "T1491.002",
+   "name": "External Defacement",
+   "actors": 4
+  },
+  {
+   "id": "T1071.001",
+   "name": "Web Protocols",
+   "actors": 3
+  },
+  {
+   "id": "T1090",
+   "name": "Proxy",
+   "actors": 3
+  },
+  {
+   "id": "T1005",
+   "name": "Data from Local System",
+   "actors": 2
+  },
+  {
+   "id": "T1053.005",
+   "name": "Scheduled Task",
+   "actors": 2
+  },
+  {
+   "id": "T1203",
+   "name": "Exploitation for Client Execution",
+   "actors": 2
+  },
+  {
+   "id": "T1219",
+   "name": "Remote Access Tools",
+   "actors": 2
+  },
+  {
+   "id": "T1547.001",
+   "name": "Registry Run Keys / Startup Folder",
+   "actors": 2
+  },
+  {
+   "id": "T1574.001",
+   "name": "DLL",
+   "actors": 2
+  },
+  {
+   "id": "T1003.002",
+   "name": "Security Account Manager",
+   "actors": 1
+  }
+ ],
+ "count": 49,
+ "items": [
+  {
+   "id": "T1003.002",
+   "name": "Security Account Manager",
+   "tactics": [
+    "credential-access"
+   ],
+   "actors": [
+    {
+     "kind": "apt",
+     "id": "apt-muddywater",
+     "name": "MuddyWater"
+    }
+   ],
+   "coverage": "none",
+   "rules": []
+  },
+  {
+   "id": "T1005",
+   "name": "Data from Local System",
+   "tactics": [
+    "collection"
+   ],
+   "actors": [
+    {
+     "kind": "apt",
+     "id": "apt-lazarus",
+     "name": "Lazarus Group"
+    },
+    {
+     "kind": "apt",
+     "id": "apt-sidecopy",
+     "name": "SideCopy"
+    }
+   ],
+   "coverage": "none",
+   "rules": []
+  },
+  {
+   "id": "T1016",
+   "name": "System Network Configuration Discovery",
+   "tactics": [
+    "discovery"
+   ],
+   "actors": [
+    {
+     "kind": "apt",
+     "id": "apt-lazarus",
+     "name": "Lazarus Group"
+    }
+   ],
+   "coverage": "none",
+   "rules": []
+  },
+  {
+   "id": "T1021.001",
+   "name": "Remote Desktop Protocol",
+   "tactics": [
+    "lateral-movement"
+   ],
+   "actors": [
+    {
+     "kind": "ransomware",
+     "id": "rw-akira",
+     "name": "Akira"
+    }
+   ],
+   "coverage": "none",
+   "rules": []
+  },
+  {
+   "id": "T1036",
+   "name": "Masquerading",
+   "tactics": [
+    "stealth"
+   ],
+   "actors": [
+    {
+     "kind": "apt",
+     "id": "apt-mustang-panda",
+     "name": "Mustang Panda"
+    }
+   ],
+   "coverage": "none",
+   "rules": []
+  },
+  {
+   "id": "T1049",
+   "name": "System Network Connections Discovery",
+   "tactics": [
+    "discovery"
+   ],
+   "actors": [
+    {
+     "kind": "apt",
+     "id": "apt-lazarus",
+     "name": "Lazarus Group"
+    }
+   ],
+   "coverage": "none",
+   "rules": []
+  },
+  {
+   "id": "T1053.005",
+   "name": "Scheduled Task",
+   "tactics": [
+    "execution",
+    "persistence",
+    "privilege-escalation"
+   ],
+   "actors": [
+    {
+     "kind": "apt",
+     "id": "apt-mustang-panda",
+     "name": "Mustang Panda"
+    },
+    {
+     "kind": "apt",
+     "id": "apt-transparent-tribe",
+     "name": "Transparent Tribe"
+    }
+   ],
+   "coverage": "none",
+   "rules": []
+  },
+  {
+   "id": "T1056.001",
+   "name": "Keylogging",
+   "tactics": [
+    "collection",
+    "credential-access"
+   ],
+   "actors": [
+    {
+     "kind": "apt",
+     "id": "apt-lazarus",
+     "name": "Lazarus Group"
+    }
+   ],
+   "coverage": "none",
+   "rules": []
+  },
+  {
+   "id": "T1057",
+   "name": "Process Discovery",
+   "tactics": [
+    "discovery"
+   ],
+   "actors": [
+    {
+     "kind": "apt",
+     "id": "apt-lazarus",
+     "name": "Lazarus Group"
+    }
+   ],
+   "coverage": "none",
+   "rules": []
+  },
+  {
+   "id": "T1059.001",
+   "name": "PowerShell",
+   "tactics": [
+    "execution"
+   ],
+   "actors": [
+    {
+     "kind": "apt",
+     "id": "apt-apt41",
+     "name": "APT41"
+    },
+    {
+     "kind": "apt",
+     "id": "apt-muddywater",
+     "name": "MuddyWater"
+    }
+   ],
+   "coverage": "related",
+   "rules": [
+    "office_document_spawns_script_interpreter"
+   ]
+  },
+  {
+   "id": "T1059.005",
+   "name": "Visual Basic",
+   "tactics": [
+    "execution"
+   ],
+   "actors": [
+    {
+     "kind": "apt",
+     "id": "apt-muddywater",
+     "name": "MuddyWater"
+    },
+    {
+     "kind": "apt",
+     "id": "apt-transparent-tribe",
+     "name": "Transparent Tribe"
+    }
+   ],
+   "coverage": "related",
+   "rules": [
+    "office_document_spawns_script_interpreter"
+   ]
+  },
+  {
+   "id": "T1059.007",
+   "name": "JavaScript",
+   "tactics": [
+    "execution"
+   ],
+   "actors": [
+    {
+     "kind": "apt",
+     "id": "apt-mustang-panda",
+     "name": "Mustang Panda"
+    }
+   ],
+   "coverage": "related",
+   "rules": [
+    "office_document_spawns_script_interpreter"
+   ]
+  },
+  {
+   "id": "T1071.001",
+   "name": "Web Protocols",
+   "tactics": [
+    "command-and-control"
+   ],
+   "actors": [
+    {
+     "kind": "apt",
+     "id": "apt-apt41",
+     "name": "APT41"
+    },
+    {
+     "kind": "apt",
+     "id": "apt-mustang-panda",
+     "name": "Mustang Panda"
+    },
+    {
+     "kind": "apt",
+     "id": "apt-redecho",
+     "name": "RedEcho / TAG-38 (China-nexus)"
+    }
+   ],
+   "coverage": "none",
+   "rules": []
+  },
+  {
+   "id": "T1078",
+   "name": "Valid Accounts",
+   "tactics": [
+    "initial-access",
+    "persistence",
+    "privilege-escalation",
+    "stealth"
+   ],
+   "actors": [
+    {
+     "kind": "ransomware",
+     "id": "rw-the-gentlemen",
+     "name": "The Gentlemen"
+    }
+   ],
+   "coverage": "none",
+   "rules": []
+  },
+  {
+   "id": "T1090",
+   "name": "Proxy",
+   "tactics": [
+    "command-and-control"
+   ],
+   "actors": [
+    {
+     "kind": "apt",
+     "id": "apt-muddywater",
+     "name": "MuddyWater"
+    },
+    {
+     "kind": "apt",
+     "id": "apt-redecho",
+     "name": "RedEcho / TAG-38 (China-nexus)"
+    },
+    {
+     "kind": "hacktivist",
+     "id": "hk-rippersec",
+     "name": "RipperSec"
+    }
+   ],
+   "coverage": "none",
+   "rules": []
+  },
+  {
+   "id": "T1102.002",
+   "name": "Bidirectional Communication",
+   "tactics": [
+    "command-and-control"
+   ],
+   "actors": [
+    {
+     "kind": "apt",
+     "id": "apt-mustang-panda",
+     "name": "Mustang Panda"
+    }
+   ],
+   "coverage": "exact",
+   "rules": [
+    "zoho_workdrive_api_from_unexpected_process"
+   ]
+  },
+  {
+   "id": "T1105",
+   "name": "Ingress Tool Transfer",
+   "tactics": [
+    "command-and-control"
+   ],
+   "actors": [
+    {
+     "kind": "apt",
+     "id": "apt-lazarus",
+     "name": "Lazarus Group"
+    }
+   ],
+   "coverage": "none",
+   "rules": []
+  },
+  {
+   "id": "T1113",
+   "name": "Screen Capture",
+   "tactics": [
+    "collection"
+   ],
+   "actors": [
+    {
+     "kind": "apt",
+     "id": "apt-muddywater",
+     "name": "MuddyWater"
+    }
+   ],
+   "coverage": "none",
+   "rules": []
+  },
+  {
+   "id": "T1133",
+   "name": "External Remote Services",
+   "tactics": [
+    "initial-access",
+    "persistence"
+   ],
+   "actors": [
+    {
+     "kind": "ransomware",
+     "id": "rw-akira",
+     "name": "Akira"
+    },
+    {
+     "kind": "ransomware",
+     "id": "rw-the-gentlemen",
+     "name": "The Gentlemen"
+    }
+   ],
+   "coverage": "exact",
+   "rules": [
+    "pan_os_mgmt_auth_from_unexpected_source"
+   ]
+  },
+  {
+   "id": "T1190",
+   "name": "Exploit Public-Facing Application",
+   "tactics": [
+    "initial-access"
+   ],
+   "actors": [
+    {
+     "kind": "apt",
+     "id": "apt-apt41",
+     "name": "APT41"
+    },
+    {
+     "kind": "hacktivist",
+     "id": "hk-mysterious-team-bangladesh",
+     "name": "Mysterious Team Bangladesh"
+    },
+    {
+     "kind": "ransomware",
+     "id": "rw-akira",
+     "name": "Akira"
+    },
+    {
+     "kind": "ransomware",
+     "id": "rw-ransomexx",
+     "name": "RansomEXX"
+    }
+   ],
+   "coverage": "none",
+   "rules": []
+  },
+  {
+   "id": "T1199",
+   "name": "Trusted Relationship",
+   "tactics": [
+    "initial-access"
+   ],
+   "actors": [
+    {
+     "kind": "ransomware",
+     "id": "rw-ransomexx",
+     "name": "RansomEXX"
+    }
+   ],
+   "coverage": "none",
+   "rules": []
+  },
+  {
+   "id": "T1203",
+   "name": "Exploitation for Client Execution",
+   "tactics": [
+    "execution"
+   ],
+   "actors": [
+    {
+     "kind": "apt",
+     "id": "apt-redfoxtrot",
+     "name": "RedFoxtrot"
+    },
+    {
+     "kind": "apt",
+     "id": "apt-sidewinder",
+     "name": "SideWinder (India-nexus)"
+    }
+   ],
+   "coverage": "none",
+   "rules": []
+  },
+  {
+   "id": "T1204.002",
+   "name": "Malicious File",
+   "tactics": [
+    "execution"
+   ],
+   "actors": [
+    {
+     "kind": "apt",
+     "id": "apt-apt41",
+     "name": "APT41"
+    },
+    {
+     "kind": "apt",
+     "id": "apt-muddywater",
+     "name": "MuddyWater"
+    },
+    {
+     "kind": "apt",
+     "id": "apt-mustang-panda",
+     "name": "Mustang Panda"
+    },
+    {
+     "kind": "apt",
+     "id": "apt-sidecopy",
+     "name": "SideCopy"
+    },
+    {
+     "kind": "apt",
+     "id": "apt-sidewinder",
+     "name": "SideWinder (India-nexus)"
+    },
+    {
+     "kind": "apt",
+     "id": "apt-transparent-tribe",
+     "name": "Transparent Tribe"
+    }
+   ],
+   "coverage": "exact",
+   "rules": [
+    "chm_help_file_spawns_script_or_lolbin",
+    "office_archive_lnk_spawns_lolbin",
+    "office_document_spawns_script_interpreter"
+   ]
+  },
+  {
+   "id": "T1217",
+   "name": "Browser Information Discovery",
+   "tactics": [
+    "discovery"
+   ],
+   "actors": [
+    {
+     "kind": "apt",
+     "id": "apt-lazarus",
+     "name": "Lazarus Group"
+    }
+   ],
+   "coverage": "none",
+   "rules": []
+  },
+  {
+   "id": "T1218.001",
+   "name": "Compiled HTML File",
+   "tactics": [
+    "stealth"
+   ],
+   "actors": [
+    {
+     "kind": "apt",
+     "id": "apt-mustang-panda",
+     "name": "Mustang Panda"
+    }
+   ],
+   "coverage": "exact",
+   "rules": [
+    "chm_help_file_spawns_script_or_lolbin"
+   ]
+  },
+  {
+   "id": "T1218.005",
+   "name": "Mshta",
+   "tactics": [
+    "stealth"
+   ],
+   "actors": [
+    {
+     "kind": "apt",
+     "id": "apt-sidecopy",
+     "name": "SideCopy"
+    },
+    {
+     "kind": "apt",
+     "id": "apt-transparent-tribe",
+     "name": "Transparent Tribe"
+    }
+   ],
+   "coverage": "exact",
+   "rules": [
+    "office_archive_lnk_spawns_lolbin"
+   ]
+  },
+  {
+   "id": "T1219",
+   "name": "Remote Access Tools",
+   "tactics": [
+    "command-and-control"
+   ],
+   "actors": [
+    {
+     "kind": "apt",
+     "id": "apt-muddywater",
+     "name": "MuddyWater"
+    },
+    {
+     "kind": "ransomware",
+     "id": "rw-the-gentlemen",
+     "name": "The Gentlemen"
+    }
+   ],
+   "coverage": "none",
+   "rules": []
+  },
+  {
+   "id": "T1221",
+   "name": "Template Injection",
+   "tactics": [
+    "stealth"
+   ],
+   "actors": [
+    {
+     "kind": "apt",
+     "id": "apt-sidewinder",
+     "name": "SideWinder (India-nexus)"
+    }
+   ],
+   "coverage": "none",
+   "rules": []
+  },
+  {
+   "id": "T1484.001",
+   "name": "Group Policy Modification",
+   "tactics": [
+    "defense-impairment",
+    "privilege-escalation"
+   ],
+   "actors": [
+    {
+     "kind": "ransomware",
+     "id": "rw-the-gentlemen",
+     "name": "The Gentlemen"
+    }
+   ],
+   "coverage": "exact",
+   "rules": [
+    "sysvol_payload_or_gpo_scheduled_task_written"
+   ]
+  },
+  {
+   "id": "T1486",
+   "name": "Data Encrypted for Impact",
+   "tactics": [
+    "impact"
+   ],
+   "actors": [
+    {
+     "kind": "ransomware",
+     "id": "rw-akira",
+     "name": "Akira"
+    },
+    {
+     "kind": "ransomware",
+     "id": "rw-hunters-international",
+     "name": "Hunters International"
+    },
+    {
+     "kind": "ransomware",
+     "id": "rw-lockbit",
+     "name": "LockBit"
+    },
+    {
+     "kind": "ransomware",
+     "id": "rw-qilin",
+     "name": "Qilin"
+    },
+    {
+     "kind": "ransomware",
+     "id": "rw-ransomexx",
+     "name": "RansomEXX"
+    },
+    {
+     "kind": "ransomware",
+     "id": "rw-the-gentlemen",
+     "name": "The Gentlemen"
+    }
+   ],
+   "coverage": "none",
+   "rules": []
+  },
+  {
+   "id": "T1490",
+   "name": "Inhibit System Recovery",
+   "tactics": [
+    "impact"
+   ],
+   "actors": [
+    {
+     "kind": "ransomware",
+     "id": "rw-akira",
+     "name": "Akira"
+    }
+   ],
+   "coverage": "none",
+   "rules": []
+  },
+  {
+   "id": "T1491.002",
+   "name": "External Defacement",
+   "tactics": [
+    "impact"
+   ],
+   "actors": [
+    {
+     "kind": "hacktivist",
+     "id": "hk-opindia-2025",
+     "name": "#OpIndia wave after Pahalgam and Operation Sindoor"
+    },
+    {
+     "kind": "hacktivist",
+     "id": "hk-mysterious-team-bangladesh",
+     "name": "Mysterious Team Bangladesh"
+    },
+    {
+     "kind": "hacktivist",
+     "id": "hk-pakistan-cyber-force",
+     "name": "Pakistan Cyber Force"
+    },
+    {
+     "kind": "hacktivist",
+     "id": "hk-team-insane-pk",
+     "name": "Team Insane PK"
+    }
+   ],
+   "coverage": "none",
+   "rules": []
+  },
+  {
+   "id": "T1498",
+   "name": "Network Denial of Service",
+   "tactics": [
+    "impact"
+   ],
+   "actors": [
+    {
+     "kind": "hacktivist",
+     "id": "hk-opindia-2025",
+     "name": "#OpIndia wave after Pahalgam and Operation Sindoor"
+    },
+    {
+     "kind": "hacktivist",
+     "id": "hk-anonsec",
+     "name": "AnonSec"
+    },
+    {
+     "kind": "hacktivist",
+     "id": "hk-holy-league",
+     "name": "Holy League"
+    },
+    {
+     "kind": "hacktivist",
+     "id": "hk-keymous-plus",
+     "name": "Keymous+"
+    },
+    {
+     "kind": "hacktivist",
+     "id": "hk-mysterious-team-bangladesh",
+     "name": "Mysterious Team Bangladesh"
+    },
+    {
+     "kind": "hacktivist",
+     "id": "hk-rippersec",
+     "name": "RipperSec"
+    },
+    {
+     "kind": "hacktivist",
+     "id": "hk-sylhet-gang",
+     "name": "SYLHET GANG-SG"
+    },
+    {
+     "kind": "hacktivist",
+     "id": "hk-team-insane-pk",
+     "name": "Team Insane PK"
+    }
+   ],
+   "coverage": "none",
+   "rules": []
+  },
+  {
+   "id": "T1499.002",
+   "name": "Service Exhaustion Flood",
+   "tactics": [
+    "impact"
+   ],
+   "actors": [
+    {
+     "kind": "hacktivist",
+     "id": "hk-opindia-2025",
+     "name": "#OpIndia wave after Pahalgam and Operation Sindoor"
+    },
+    {
+     "kind": "hacktivist",
+     "id": "hk-anonsec",
+     "name": "AnonSec"
+    },
+    {
+     "kind": "hacktivist",
+     "id": "hk-holy-league",
+     "name": "Holy League"
+    },
+    {
+     "kind": "hacktivist",
+     "id": "hk-keymous-plus",
+     "name": "Keymous+"
+    },
+    {
+     "kind": "hacktivist",
+     "id": "hk-mysterious-team-bangladesh",
+     "name": "Mysterious Team Bangladesh"
+    },
+    {
+     "kind": "hacktivist",
+     "id": "hk-rippersec",
+     "name": "RipperSec"
+    },
+    {
+     "kind": "hacktivist",
+     "id": "hk-sylhet-gang",
+     "name": "SYLHET GANG-SG"
+    },
+    {
+     "kind": "hacktivist",
+     "id": "hk-team-insane-pk",
+     "name": "Team Insane PK"
+    }
+   ],
+   "coverage": "none",
+   "rules": []
+  },
+  {
+   "id": "T1547.001",
+   "name": "Registry Run Keys / Startup Folder",
+   "tactics": [
+    "persistence",
+    "privilege-escalation"
+   ],
+   "actors": [
+    {
+     "kind": "apt",
+     "id": "apt-mustang-panda",
+     "name": "Mustang Panda"
+    },
+    {
+     "kind": "apt",
+     "id": "apt-transparent-tribe",
+     "name": "Transparent Tribe"
+    }
+   ],
+   "coverage": "none",
+   "rules": []
+  },
+  {
+   "id": "T1555.003",
+   "name": "Credentials from Web Browsers",
+   "tactics": [
+    "credential-access"
+   ],
+   "actors": [
+    {
+     "kind": "apt",
+     "id": "apt-muddywater",
+     "name": "MuddyWater"
+    }
+   ],
+   "coverage": "none",
+   "rules": []
+  },
+  {
+   "id": "T1566.001",
+   "name": "Spearphishing Attachment",
+   "tactics": [
+    "initial-access"
+   ],
+   "actors": [
+    {
+     "kind": "apt",
+     "id": "apt-apt41",
+     "name": "APT41"
+    },
+    {
+     "kind": "apt",
+     "id": "apt-muddywater",
+     "name": "MuddyWater"
+    },
+    {
+     "kind": "apt",
+     "id": "apt-mustang-panda",
+     "name": "Mustang Panda"
+    },
+    {
+     "kind": "apt",
+     "id": "apt-sidecopy",
+     "name": "SideCopy"
+    },
+    {
+     "kind": "apt",
+     "id": "apt-sidewinder",
+     "name": "SideWinder (India-nexus)"
+    },
+    {
+     "kind": "apt",
+     "id": "apt-transparent-tribe",
+     "name": "Transparent Tribe"
+    }
+   ],
+   "coverage": "none",
+   "rules": []
+  },
+  {
+   "id": "T1566.002",
+   "name": "Spearphishing Link",
+   "tactics": [
+    "initial-access"
+   ],
+   "actors": [
+    {
+     "kind": "apt",
+     "id": "apt-muddywater",
+     "name": "MuddyWater"
+    }
+   ],
+   "coverage": "none",
+   "rules": []
+  },
+  {
+   "id": "T1567",
+   "name": "Exfiltration Over Web Service",
+   "tactics": [
+    "exfiltration"
+   ],
+   "actors": [
+    {
+     "kind": "apt",
+     "id": "apt-muddywater",
+     "name": "MuddyWater"
+    },
+    {
+     "kind": "ransomware",
+     "id": "rw-hunters-international",
+     "name": "Hunters International"
+    },
+    {
+     "kind": "ransomware",
+     "id": "rw-lockbit",
+     "name": "LockBit"
+    }
+   ],
+   "coverage": "related",
+   "rules": [
+    "zoho_workdrive_api_from_unexpected_process"
+   ]
+  },
+  {
+   "id": "T1567.002",
+   "name": "Exfiltration to Cloud Storage",
+   "tactics": [
+    "exfiltration"
+   ],
+   "actors": [
+    {
+     "kind": "apt",
+     "id": "apt-mustang-panda",
+     "name": "Mustang Panda"
+    }
+   ],
+   "coverage": "exact",
+   "rules": [
+    "zoho_workdrive_api_from_unexpected_process"
+   ]
+  },
+  {
+   "id": "T1568",
+   "name": "Dynamic Resolution",
+   "tactics": [
+    "command-and-control"
+   ],
+   "actors": [
+    {
+     "kind": "apt",
+     "id": "apt-mustang-panda",
+     "name": "Mustang Panda"
+    }
+   ],
+   "coverage": "none",
+   "rules": []
+  },
+  {
+   "id": "T1572",
+   "name": "Protocol Tunneling",
+   "tactics": [
+    "command-and-control"
+   ],
+   "actors": [
+    {
+     "kind": "apt",
+     "id": "apt-redecho",
+     "name": "RedEcho / TAG-38 (China-nexus)"
+    }
+   ],
+   "coverage": "none",
+   "rules": []
+  },
+  {
+   "id": "T1574.001",
+   "name": "DLL",
+   "tactics": [
+    "execution",
+    "stealth"
+   ],
+   "actors": [
+    {
+     "kind": "apt",
+     "id": "apt-muddywater",
+     "name": "MuddyWater"
+    },
+    {
+     "kind": "apt",
+     "id": "apt-mustang-panda",
+     "name": "Mustang Panda"
+    }
+   ],
+   "coverage": "none",
+   "rules": []
+  },
+  {
+   "id": "T1583.001",
+   "name": "Domains",
+   "tactics": [
+    "resource-development"
+   ],
+   "actors": [
+    {
+     "kind": "apt",
+     "id": "apt-apt41",
+     "name": "APT41"
+    }
+   ],
+   "coverage": "none",
+   "rules": []
+  },
+  {
+   "id": "T1584",
+   "name": "Compromise Infrastructure",
+   "tactics": [
+    "resource-development"
+   ],
+   "actors": [
+    {
+     "kind": "apt",
+     "id": "apt-sidecopy",
+     "name": "SideCopy"
+    }
+   ],
+   "coverage": "none",
+   "rules": []
+  },
+  {
+   "id": "T1584.005",
+   "name": "Botnet",
+   "tactics": [
+    "resource-development"
+   ],
+   "actors": [
+    {
+     "kind": "apt",
+     "id": "apt-redecho",
+     "name": "RedEcho / TAG-38 (China-nexus)"
+    }
+   ],
+   "coverage": "none",
+   "rules": []
+  },
+  {
+   "id": "T1586.002",
+   "name": "Email Accounts",
+   "tactics": [
+    "resource-development"
+   ],
+   "actors": [
+    {
+     "kind": "apt",
+     "id": "apt-muddywater",
+     "name": "MuddyWater"
+    }
+   ],
+   "coverage": "none",
+   "rules": []
+  },
+  {
+   "id": "T1588.001",
+   "name": "Malware",
+   "tactics": [
+    "resource-development"
+   ],
+   "actors": [
+    {
+     "kind": "apt",
+     "id": "apt-redfoxtrot",
+     "name": "RedFoxtrot"
+    }
+   ],
+   "coverage": "none",
+   "rules": []
+  },
+  {
+   "id": "T1657",
+   "name": "Financial Theft",
+   "tactics": [
+    "impact"
+   ],
+   "actors": [
+    {
+     "kind": "apt",
+     "id": "apt-lazarus",
+     "name": "Lazarus Group"
+    }
+   ],
+   "coverage": "none",
+   "rules": []
+  }
+ ],
+ "mobile": [
+  {
+   "id": "T1406",
+   "name": "Obfuscated Files or Information",
+   "campaigns": [
+    "Android banking trojan - MITM + anti-analysis (case study)",
+    "RTO Challan fraud - two-stage dropper (jsonserv C2)"
+   ]
+  },
+  {
+   "id": "T1407",
+   "name": "Download New Code at Runtime",
+   "campaigns": [
+    "GhostBat RAT - RTO/mParivahan-themed Android campaign",
+    "RTO Challan fraud - two-stage dropper (jsonserv C2)"
+   ]
+  },
+  {
+   "id": "T1414",
+   "name": "Clipboard Data",
+   "campaigns": [
+    "Wedding-invitation APK - SpyMax RAT on WhatsApp"
+   ]
+  },
+  {
+   "id": "T1417.001",
+   "name": "Keylogging",
+   "campaigns": [
+    "Wedding-invitation APK - SpyMax RAT on WhatsApp"
+   ]
+  },
+  {
+   "id": "T1417.002",
+   "name": "GUI Input Capture",
+   "campaigns": [
+    "Android banking trojan - MITM + anti-analysis (case study)",
+    "GhostBat RAT - RTO/mParivahan-themed Android campaign",
+    "RTO Challan fraud - two-stage dropper (jsonserv C2)"
+   ]
+  },
+  {
+   "id": "T1418",
+   "name": "Software Discovery",
+   "campaigns": [
+    "Wedding-invitation APK - SpyMax RAT on WhatsApp"
+   ]
+  },
+  {
+   "id": "T1426",
+   "name": "System Information Discovery",
+   "campaigns": [
+    "RTO Challan fraud - two-stage dropper (jsonserv C2)"
+   ]
+  },
+  {
+   "id": "T1437.001",
+   "name": "Web Protocols",
+   "campaigns": [
+    "RTO Challan fraud - two-stage dropper (jsonserv C2)"
+   ]
+  },
+  {
+   "id": "T1481",
+   "name": "Web Service",
+   "campaigns": [
+    "GhostBat RAT - RTO/mParivahan-themed Android campaign"
+   ]
+  },
+  {
+   "id": "T1517",
+   "name": "Access Notifications",
+   "campaigns": [
+    "Wedding-invitation APK - SpyMax RAT on WhatsApp"
+   ]
+  },
+  {
+   "id": "T1532",
+   "name": "Archive Collected Data",
+   "campaigns": [
+    "Wedding-invitation APK - SpyMax RAT on WhatsApp"
+   ]
+  },
+  {
+   "id": "T1582",
+   "name": "SMS Control",
+   "campaigns": [
+    "GhostBat RAT - RTO/mParivahan-themed Android campaign",
+    "RTO Challan fraud - two-stage dropper (jsonserv C2)"
+   ]
+  },
+  {
+   "id": "T1628.001",
+   "name": "Suppress Application Icon",
+   "campaigns": [
+    "RTO Challan fraud - two-stage dropper (jsonserv C2)",
+    "Wedding-invitation APK - SpyMax RAT on WhatsApp"
+   ]
+  },
+  {
+   "id": "T1633",
+   "name": "Virtualization/Sandbox Evasion",
+   "campaigns": [
+    "Android banking trojan - MITM + anti-analysis (case study)"
+   ]
+  },
+  {
+   "id": "T1633.001",
+   "name": "System Checks",
+   "campaigns": [
+    "GhostBat RAT - RTO/mParivahan-themed Android campaign"
+   ]
+  },
+  {
+   "id": "T1636.003",
+   "name": "Contact List",
+   "campaigns": [
+    "Wedding-invitation APK - SpyMax RAT on WhatsApp"
+   ]
+  },
+  {
+   "id": "T1636.004",
+   "name": "SMS Messages",
+   "campaigns": [
+    "GhostBat RAT - RTO/mParivahan-themed Android campaign",
+    "RTO Challan fraud - two-stage dropper (jsonserv C2)",
+    "Wedding-invitation APK - SpyMax RAT on WhatsApp"
+   ]
+  },
+  {
+   "id": "T1638",
+   "name": "Adversary-in-the-Middle",
+   "campaigns": [
+    "Android banking trojan - MITM + anti-analysis (case study)"
+   ]
+  },
+  {
+   "id": "T1646",
+   "name": "Exfiltration Over C2 Channel",
+   "campaigns": [
+    "Wedding-invitation APK - SpyMax RAT on WhatsApp"
+   ]
+  },
+  {
+   "id": "T1655.001",
+   "name": "Match Legitimate Name or Location",
+   "campaigns": [
+    "Android banking trojan - MITM + anti-analysis (case study)",
+    "GhostBat RAT - RTO/mParivahan-themed Android campaign",
+    "RTO Challan fraud - two-stage dropper (jsonserv C2)",
+    "Wedding-invitation APK - SpyMax RAT on WhatsApp"
+   ]
+  },
+  {
+   "id": "T1660",
+   "name": "Phishing",
+   "campaigns": [
+    "Android banking trojan - MITM + anti-analysis (case study)",
+    "GhostBat RAT - RTO/mParivahan-themed Android campaign",
+    "RTO Challan fraud - two-stage dropper (jsonserv C2)",
+    "Wedding-invitation APK - SpyMax RAT on WhatsApp"
+   ]
+  }
+ ]
+}

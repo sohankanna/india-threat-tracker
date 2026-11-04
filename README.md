@@ -37,6 +37,11 @@ organisations, and detection rules for all of it.
 | [`data/india-threat-tracker-stix.json`](data/india-threat-tracker-stix.json) | STIX 2.1 Bundle of the campaigns, actors, indicators, techniques and assessment: see [STIX-GUIDE.md](STIX-GUIDE.md) | Twice daily, automated |
 | [`data/kev-affected.json`](data/kev-affected.json) | Affected products and versions for every KEV CVE, from the official CVE records; feeds the [Exposure Matcher](EXPOSURE-MATCHER.md) | Twice daily, automated |
 | [`data/meta.json`](data/meta.json) | Manifest of every data file, with its schema and cadence | When files change |
+<<<<<<< ours
+=======
+| [`layers/`](layers/) · [`data/attack-coverage.json`](data/attack-coverage.json) | ATT&CK Navigator layers: techniques of the actors targeting India, detection coverage (green/amber/red) and the Mobile techniques of the fraud campaigns; the coverage also as data | Rebuilt with every update |
+| [`misp-feed/`](misp-feed/) | The campaigns' indicators and the high-relevance KEV CVEs as a native MISP feed: subscribe a MISP instance to the URL in [misp-feed/README.md](misp-feed/README.md) | Rebuilt with every update |
+>>>>>>> theirs
 
 Every JSON feed is validated against a schema in [`schema/`](schema/) on every
 change.
@@ -99,7 +104,7 @@ alert-only mode, validate, then tune.
 - **Indicators are separate from infrastructure.** Abused legitimate services
   (GitHub, Firebase, hosting) are context and never appear in `iocs.txt`,
   `iocs.csv` or any copy/export.
-- **ATT&CK mappings are checked** against MITRE's published data.
+- **ATT&CK mappings are checked**: every technique id and name, and every rule tag, against MITRE's ATT&CK v20.0 data in CI.
 - **Reported attribution is separate from tracker confidence.**
 - **India relevance is a transparent heuristic**, recorded with the keyword
   that triggered it. It is triage, not proof of exposure.
@@ -111,6 +116,14 @@ Full details: [METHODOLOGY.md](METHODOLOGY.md).
 ```
 scripts/fetch_exploited.py   CISA KEV + FIRST EPSS -> exploited-cve.json + watchlist.json
 scripts/build_iocs.py        campaign feed         -> iocs.txt + iocs.csv
+<<<<<<< ours
+=======
+scripts/fetch_certin.py      CERT-In notes         -> certin-notes.json (rate-limited batch per run)
+scripts/build_certin_gap.py  notes + KEV           -> certin-gap.json
+scripts/scan_lookalikes.py   brand list + DNS + CT -> lookalike-domains.json (daily, lookalikes.yml)
+scripts/build_misp_feed.py   campaigns + watchlist -> misp-feed/ (native MISP feed)
+scripts/build_layers.py      ATT&CK mappings + rules -> layers/ + attack-coverage.json (ids checked)
+>>>>>>> theirs
 scripts/validate.py          every JSON feed       -> checked against schema/
 scripts/check_inventory.py   detection pack        -> every rule has all formats + a test
 scripts/make_tweet_draft.py  today's KEV adds      -> drafts/<date>.md (a draft, not post-ready)

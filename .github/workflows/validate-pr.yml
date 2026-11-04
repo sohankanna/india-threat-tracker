@@ -44,6 +44,18 @@ jobs:
       - name: STIX bundle matches the canonical feeds
         run: python scripts/build_stix.py --check
 
+<<<<<<< ours
+=======
+      - name: CERT-In gap matches its inputs
+        run: python scripts/build_certin_gap.py --check
+
+      - name: ATT&CK ids valid; layers and coverage match the data
+        run: python scripts/build_layers.py --check
+
+      - name: MISP feed matches the data
+        run: python scripts/build_misp_feed.py --check
+
+>>>>>>> theirs
       - name: STIX 2.1 validation (OASIS validator)
         run: stix2_validator data/india-threat-tracker-stix.json
 

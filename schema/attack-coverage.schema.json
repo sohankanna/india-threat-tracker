@@ -1,0 +1,178 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ATT&CK coverage",
+  "description": "Enterprise techniques used by the actors in the tracker, and whether a tracker detection rule is tagged with each. Built by scripts/build_layers.py, which also writes the Navigator layers in layers/.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "feed",
+    "attack_version",
+    "method",
+    "summary",
+    "top_gaps",
+    "count",
+    "items",
+    "mobile"
+  ],
+  "properties": {
+    "feed": {
+      "const": "attack-coverage"
+    },
+    "attack_version": {
+      "type": "object",
+      "required": [
+        "enterprise",
+        "mobile"
+      ],
+      "properties": {
+        "enterprise": {
+          "type": "string"
+        },
+        "mobile": {
+          "type": "string"
+        }
+      }
+    },
+    "method": {
+      "type": "string"
+    },
+    "summary": {
+      "type": "object",
+      "required": [
+        "actor_techniques",
+        "exact",
+        "related",
+        "none",
+        "rules",
+        "rule_techniques_not_used_by_actors",
+        "mobile_fraud_techniques"
+      ],
+      "additionalProperties": {
+        "type": "integer",
+        "minimum": 0
+      }
+    },
+    "top_gaps": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "actors"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^T\\d{4}(\\.\\d{3})?$"
+          },
+          "name": {
+            "type": "string"
+          },
+          "actors": {
+            "type": "integer"
+          }
+        }
+      }
+    },
+    "count": {
+      "type": "integer"
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "name",
+          "tactics",
+          "actors",
+          "coverage",
+          "rules"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^T\\d{4}(\\.\\d{3})?$"
+          },
+          "name": {
+            "type": "string"
+          },
+          "tactics": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "actors": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "required": [
+                "kind",
+                "id",
+                "name"
+              ],
+              "properties": {
+                "kind": {
+                  "enum": [
+                    "apt",
+                    "ransomware",
+                    "hacktivist"
+                  ]
+                },
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "coverage": {
+            "enum": [
+              "exact",
+              "related",
+              "none"
+            ]
+          },
+          "rules": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "mobile": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "campaigns"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^T\\d{4}(\\.\\d{3})?$"
+          },
+          "name": {
+            "type": "string"
+          },
+          "campaigns": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}

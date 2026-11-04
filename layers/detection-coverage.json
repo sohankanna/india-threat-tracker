@@ -1,0 +1,437 @@
+{
+ "name": "India Threat Tracker: detection coverage",
+ "versions": {
+  "attack": "20",
+  "navigator": "5.1.0",
+  "layer": "4.5"
+ },
+ "domain": "enterprise-attack",
+ "description": "Techniques used by actors targeting India, coloured by whether a tracker detection rule is tagged with them. Green: a rule is tagged with this technique. Amber: only with its parent or a sub-technique. Red: no rule. Blue: covered by a rule but not mapped to any tracked actor.",
+ "sorting": 3,
+ "layout": {
+  "layout": "side",
+  "showName": true,
+  "showID": false
+ },
+ "hideDisabled": false,
+ "techniques": [
+  {
+   "techniqueID": "T1003.002",
+   "color": "#ef7d62",
+   "enabled": true,
+   "showSubtechniques": true,
+   "comment": "No rule. Used by: MuddyWater"
+  },
+  {
+   "techniqueID": "T1005",
+   "color": "#ef7d62",
+   "enabled": true,
+   "showSubtechniques": false,
+   "comment": "No rule. Used by: Lazarus Group; SideCopy"
+  },
+  {
+   "techniqueID": "T1016",
+   "color": "#ef7d62",
+   "enabled": true,
+   "showSubtechniques": false,
+   "comment": "No rule. Used by: Lazarus Group"
+  },
+  {
+   "techniqueID": "T1021.001",
+   "color": "#ef7d62",
+   "enabled": true,
+   "showSubtechniques": true,
+   "comment": "No rule. Used by: Akira"
+  },
+  {
+   "techniqueID": "T1036",
+   "color": "#ef7d62",
+   "enabled": true,
+   "showSubtechniques": false,
+   "comment": "No rule. Used by: Mustang Panda"
+  },
+  {
+   "techniqueID": "T1049",
+   "color": "#ef7d62",
+   "enabled": true,
+   "showSubtechniques": false,
+   "comment": "No rule. Used by: Lazarus Group"
+  },
+  {
+   "techniqueID": "T1053.005",
+   "color": "#ef7d62",
+   "enabled": true,
+   "showSubtechniques": true,
+   "comment": "No rule. Used by: Mustang Panda; Transparent Tribe"
+  },
+  {
+   "techniqueID": "T1056.001",
+   "color": "#ef7d62",
+   "enabled": true,
+   "showSubtechniques": true,
+   "comment": "No rule. Used by: Lazarus Group"
+  },
+  {
+   "techniqueID": "T1057",
+   "color": "#ef7d62",
+   "enabled": true,
+   "showSubtechniques": false,
+   "comment": "No rule. Used by: Lazarus Group"
+  },
+  {
+   "techniqueID": "T1059.001",
+   "color": "#e9b45e",
+   "enabled": true,
+   "showSubtechniques": true,
+   "comment": "Rules: office_document_spawns_script_interpreter. Used by: APT41; MuddyWater"
+  },
+  {
+   "techniqueID": "T1059.005",
+   "color": "#e9b45e",
+   "enabled": true,
+   "showSubtechniques": true,
+   "comment": "Rules: office_document_spawns_script_interpreter. Used by: MuddyWater; Transparent Tribe"
+  },
+  {
+   "techniqueID": "T1059.007",
+   "color": "#e9b45e",
+   "enabled": true,
+   "showSubtechniques": true,
+   "comment": "Rules: office_document_spawns_script_interpreter. Used by: Mustang Panda"
+  },
+  {
+   "techniqueID": "T1071.001",
+   "color": "#ef7d62",
+   "enabled": true,
+   "showSubtechniques": true,
+   "comment": "No rule. Used by: APT41; Mustang Panda; RedEcho / TAG-38 (China-nexus)"
+  },
+  {
+   "techniqueID": "T1078",
+   "color": "#ef7d62",
+   "enabled": true,
+   "showSubtechniques": false,
+   "comment": "No rule. Used by: The Gentlemen"
+  },
+  {
+   "techniqueID": "T1090",
+   "color": "#ef7d62",
+   "enabled": true,
+   "showSubtechniques": false,
+   "comment": "No rule. Used by: MuddyWater; RedEcho / TAG-38 (China-nexus); RipperSec"
+  },
+  {
+   "techniqueID": "T1102.002",
+   "color": "#3fb68b",
+   "enabled": true,
+   "showSubtechniques": true,
+   "comment": "Rules: zoho_workdrive_api_from_unexpected_process. Used by: Mustang Panda"
+  },
+  {
+   "techniqueID": "T1105",
+   "color": "#ef7d62",
+   "enabled": true,
+   "showSubtechniques": false,
+   "comment": "No rule. Used by: Lazarus Group"
+  },
+  {
+   "techniqueID": "T1113",
+   "color": "#ef7d62",
+   "enabled": true,
+   "showSubtechniques": false,
+   "comment": "No rule. Used by: MuddyWater"
+  },
+  {
+   "techniqueID": "T1133",
+   "color": "#3fb68b",
+   "enabled": true,
+   "showSubtechniques": false,
+   "comment": "Rules: pan_os_mgmt_auth_from_unexpected_source. Used by: Akira; The Gentlemen"
+  },
+  {
+   "techniqueID": "T1190",
+   "color": "#ef7d62",
+   "enabled": true,
+   "showSubtechniques": false,
+   "comment": "No rule. Used by: APT41; Mysterious Team Bangladesh; Akira; RansomEXX"
+  },
+  {
+   "techniqueID": "T1199",
+   "color": "#ef7d62",
+   "enabled": true,
+   "showSubtechniques": false,
+   "comment": "No rule. Used by: RansomEXX"
+  },
+  {
+   "techniqueID": "T1203",
+   "color": "#ef7d62",
+   "enabled": true,
+   "showSubtechniques": false,
+   "comment": "No rule. Used by: RedFoxtrot; SideWinder (India-nexus)"
+  },
+  {
+   "techniqueID": "T1204.002",
+   "color": "#3fb68b",
+   "enabled": true,
+   "showSubtechniques": true,
+   "comment": "Rules: chm_help_file_spawns_script_or_lolbin, office_archive_lnk_spawns_lolbin, office_document_spawns_script_interpreter. Used by: APT41; MuddyWater; Mustang Panda; SideCopy; SideWinder (India-nexus); Transparent Tribe"
+  },
+  {
+   "techniqueID": "T1217",
+   "color": "#ef7d62",
+   "enabled": true,
+   "showSubtechniques": false,
+   "comment": "No rule. Used by: Lazarus Group"
+  },
+  {
+   "techniqueID": "T1218.001",
+   "color": "#3fb68b",
+   "enabled": true,
+   "showSubtechniques": true,
+   "comment": "Rules: chm_help_file_spawns_script_or_lolbin. Used by: Mustang Panda"
+  },
+  {
+   "techniqueID": "T1218.005",
+   "color": "#3fb68b",
+   "enabled": true,
+   "showSubtechniques": true,
+   "comment": "Rules: office_archive_lnk_spawns_lolbin. Used by: SideCopy; Transparent Tribe"
+  },
+  {
+   "techniqueID": "T1219",
+   "color": "#ef7d62",
+   "enabled": true,
+   "showSubtechniques": false,
+   "comment": "No rule. Used by: MuddyWater; The Gentlemen"
+  },
+  {
+   "techniqueID": "T1221",
+   "color": "#ef7d62",
+   "enabled": true,
+   "showSubtechniques": false,
+   "comment": "No rule. Used by: SideWinder (India-nexus)"
+  },
+  {
+   "techniqueID": "T1484.001",
+   "color": "#3fb68b",
+   "enabled": true,
+   "showSubtechniques": true,
+   "comment": "Rules: sysvol_payload_or_gpo_scheduled_task_written. Used by: The Gentlemen"
+  },
+  {
+   "techniqueID": "T1486",
+   "color": "#ef7d62",
+   "enabled": true,
+   "showSubtechniques": false,
+   "comment": "No rule. Used by: Akira; Hunters International; LockBit; Qilin; RansomEXX; The Gentlemen"
+  },
+  {
+   "techniqueID": "T1490",
+   "color": "#ef7d62",
+   "enabled": true,
+   "showSubtechniques": false,
+   "comment": "No rule. Used by: Akira"
+  },
+  {
+   "techniqueID": "T1491.002",
+   "color": "#ef7d62",
+   "enabled": true,
+   "showSubtechniques": true,
+   "comment": "No rule. Used by: #OpIndia wave after Pahalgam and Operation Sindoor; Mysterious Team Bangladesh; Pakistan Cyber Force; Team Insane PK"
+  },
+  {
+   "techniqueID": "T1498",
+   "color": "#ef7d62",
+   "enabled": true,
+   "showSubtechniques": false,
+   "comment": "No rule. Used by: #OpIndia wave after Pahalgam and Operation Sindoor; AnonSec; Holy League; Keymous+; Mysterious Team Bangladesh; RipperSec; SYLHET GANG-SG; Team Insane PK"
+  },
+  {
+   "techniqueID": "T1499.002",
+   "color": "#ef7d62",
+   "enabled": true,
+   "showSubtechniques": true,
+   "comment": "No rule. Used by: #OpIndia wave after Pahalgam and Operation Sindoor; AnonSec; Holy League; Keymous+; Mysterious Team Bangladesh; RipperSec; SYLHET GANG-SG; Team Insane PK"
+  },
+  {
+   "techniqueID": "T1547.001",
+   "color": "#ef7d62",
+   "enabled": true,
+   "showSubtechniques": true,
+   "comment": "No rule. Used by: Mustang Panda; Transparent Tribe"
+  },
+  {
+   "techniqueID": "T1555.003",
+   "color": "#ef7d62",
+   "enabled": true,
+   "showSubtechniques": true,
+   "comment": "No rule. Used by: MuddyWater"
+  },
+  {
+   "techniqueID": "T1566.001",
+   "color": "#ef7d62",
+   "enabled": true,
+   "showSubtechniques": true,
+   "comment": "No rule. Used by: APT41; MuddyWater; Mustang Panda; SideCopy; SideWinder (India-nexus); Transparent Tribe"
+  },
+  {
+   "techniqueID": "T1566.002",
+   "color": "#ef7d62",
+   "enabled": true,
+   "showSubtechniques": true,
+   "comment": "No rule. Used by: MuddyWater"
+  },
+  {
+   "techniqueID": "T1567",
+   "color": "#e9b45e",
+   "enabled": true,
+   "showSubtechniques": false,
+   "comment": "Rules: zoho_workdrive_api_from_unexpected_process. Used by: MuddyWater; Hunters International; LockBit"
+  },
+  {
+   "techniqueID": "T1567.002",
+   "color": "#3fb68b",
+   "enabled": true,
+   "showSubtechniques": true,
+   "comment": "Rules: zoho_workdrive_api_from_unexpected_process. Used by: Mustang Panda"
+  },
+  {
+   "techniqueID": "T1568",
+   "color": "#ef7d62",
+   "enabled": true,
+   "showSubtechniques": false,
+   "comment": "No rule. Used by: Mustang Panda"
+  },
+  {
+   "techniqueID": "T1572",
+   "color": "#ef7d62",
+   "enabled": true,
+   "showSubtechniques": false,
+   "comment": "No rule. Used by: RedEcho / TAG-38 (China-nexus)"
+  },
+  {
+   "techniqueID": "T1574.001",
+   "color": "#ef7d62",
+   "enabled": true,
+   "showSubtechniques": true,
+   "comment": "No rule. Used by: MuddyWater; Mustang Panda"
+  },
+  {
+   "techniqueID": "T1583.001",
+   "color": "#ef7d62",
+   "enabled": true,
+   "showSubtechniques": true,
+   "comment": "No rule. Used by: APT41"
+  },
+  {
+   "techniqueID": "T1584",
+   "color": "#ef7d62",
+   "enabled": true,
+   "showSubtechniques": false,
+   "comment": "No rule. Used by: SideCopy"
+  },
+  {
+   "techniqueID": "T1584.005",
+   "color": "#ef7d62",
+   "enabled": true,
+   "showSubtechniques": true,
+   "comment": "No rule. Used by: RedEcho / TAG-38 (China-nexus)"
+  },
+  {
+   "techniqueID": "T1586.002",
+   "color": "#ef7d62",
+   "enabled": true,
+   "showSubtechniques": true,
+   "comment": "No rule. Used by: MuddyWater"
+  },
+  {
+   "techniqueID": "T1588.001",
+   "color": "#ef7d62",
+   "enabled": true,
+   "showSubtechniques": true,
+   "comment": "No rule. Used by: RedFoxtrot"
+  },
+  {
+   "techniqueID": "T1657",
+   "color": "#ef7d62",
+   "enabled": true,
+   "showSubtechniques": false,
+   "comment": "No rule. Used by: Lazarus Group"
+  },
+  {
+   "techniqueID": "T1059",
+   "color": "#4fc6d6",
+   "enabled": true,
+   "comment": "Rules: office_document_spawns_script_interpreter"
+  },
+  {
+   "techniqueID": "T1071.004",
+   "color": "#4fc6d6",
+   "enabled": true,
+   "comment": "Rules: windows_suspicious_dns_server_change"
+  },
+  {
+   "techniqueID": "T1087.002",
+   "color": "#4fc6d6",
+   "enabled": true,
+   "comment": "Rules: ad_bitlocker_recovery_information_read"
+  },
+  {
+   "techniqueID": "T1550.001",
+   "color": "#4fc6d6",
+   "enabled": true,
+   "comment": "Rules: entra_aitm_risky_signin_token_replay"
+  },
+  {
+   "techniqueID": "T1552",
+   "color": "#4fc6d6",
+   "enabled": true,
+   "comment": "Rules: ad_bitlocker_recovery_information_read"
+  },
+  {
+   "techniqueID": "T1557",
+   "color": "#4fc6d6",
+   "enabled": true,
+   "comment": "Rules: entra_aitm_risky_signin_token_replay"
+  },
+  {
+   "techniqueID": "T1565.001",
+   "color": "#4fc6d6",
+   "enabled": true,
+   "comment": "Rules: windows_suspicious_dns_server_change"
+  },
+  {
+   "techniqueID": "T1570",
+   "color": "#4fc6d6",
+   "enabled": true,
+   "comment": "Rules: sysvol_payload_or_gpo_scheduled_task_written"
+  }
+ ],
+ "legendItems": [
+  {
+   "label": "Rule tagged with the technique",
+   "color": "#3fb68b"
+  },
+  {
+   "label": "Rule tagged with parent or sub-technique only",
+   "color": "#e9b45e"
+  },
+  {
+   "label": "No rule",
+   "color": "#ef7d62"
+  },
+  {
+   "label": "Rule, but no tracked actor uses it",
+   "color": "#4fc6d6"
+  }
+ ],
+ "showTacticRowBackground": true,
+ "tacticRowBackground": "#1b2129",
+ "selectTechniquesAcrossTactics": true,
+ "metadata": [
+  {
+   "name": "source",
+   "value": "https://github.com/sohankanna/india-threat-tracker"
+  }
+ ]
+}
