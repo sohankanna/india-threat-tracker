@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Report a vulnerability in this project
+    url: https://github.com/sohankanna/india-threat-tracker/security/advisories/new
+    about: For a security issue in the tracker itself (scripts, workflows, site), please report privately.
+  - name: Data guide
+    url: https://github.com/sohankanna/india-threat-tracker/blob/main/DATA-GUIDE.md
+    about: What every field means before you suggest a change.
