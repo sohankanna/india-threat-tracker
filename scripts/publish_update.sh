@@ -3,8 +3,9 @@
 # human edit.
 #
 # Everything this job commits (exploited-cve.json, watchlist.json, iocs.*,
-# drafts/) is derived from upstream data plus the curated files in the repo. So
-# if someone pushes while the job runs, the push is rejected and the job:
+# misp-feed/, drafts/) is derived from upstream data plus the curated files in
+# the repo. So if someone pushes while the job runs, the push is rejected and
+# the job:
 #
 #   1. resets to the new main (their edit included, untouched),
 #   2. rebuilds every derived file from the upstream data it already fetched,
@@ -43,8 +44,9 @@ generate() {
   fi
   "$PY" scripts/build_iocs.py
   "$PY" scripts/build_stix.py
+  "$PY" scripts/build_misp_feed.py
   "$PY" scripts/validate.py
-  "$PY" -m unittest tests.test_pipeline tests.test_iocs tests.test_stix tests.test_exposure
+  "$PY" -m unittest tests.test_pipeline tests.test_iocs tests.test_stix tests.test_exposure tests.test_misp_feed
   (cd scripts && "$PY" make_tweet_draft.py)
 }
 
@@ -53,12 +55,12 @@ for attempt in $(seq 1 "$ATTEMPTS"); do
     echo "::notice::$BRANCH moved while the update ran. Rebuilding on top of it (attempt $attempt)."
     git fetch --quiet "$REMOTE" "$BRANCH"
     git reset --quiet --hard "$REMOTE/$BRANCH"
-    git clean --quiet -fd -- data drafts stix
+    git clean --quiet -fd -- data drafts stix misp-feed
   fi
 
   generate "$attempt"
 
-  git add data/ drafts/ stix/
+  git add data/ drafts/ stix/ misp-feed/
   if git diff --cached --quiet; then
     echo "No changes."
     exit 0

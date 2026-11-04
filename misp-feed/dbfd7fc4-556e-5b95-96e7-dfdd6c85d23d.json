@@ -1,0 +1,82 @@
+{
+ "Event": {
+  "uuid": "dbfd7fc4-556e-5b95-96e7-dfdd6c85d23d",
+  "info": "India Threat Tracker: Android banking trojan - MITM + anti-analysis (case study) (source: sohankanna.com)",
+  "date": "2025-10-01",
+  "threat_level_id": "2",
+  "analysis": "2",
+  "timestamp": "1792454400",
+  "publish_timestamp": "1792454400",
+  "published": true,
+  "Orgc": {
+   "name": "India Threat Tracker",
+   "uuid": "873cc557-a214-58ab-a27d-344165d68378"
+  },
+  "Tag": [
+   {
+    "name": "tlp:clear"
+   },
+   {
+    "name": "india-threat-tracker:id=\"sm-2025-003\""
+   },
+   {
+    "name": "india-threat-tracker:confidence=\"high\""
+   },
+   {
+    "name": "india-threat-tracker:tag=\"android\""
+   },
+   {
+    "name": "india-threat-tracker:tag=\"banking\""
+   },
+   {
+    "name": "india-threat-tracker:tag=\"malware-analysis\""
+   }
+  ],
+  "Attribute": [
+   {
+    "uuid": "2755f4c0-fdf4-50d6-9c7f-d4f231ec6025",
+    "type": "sha256",
+    "category": "Payload delivery",
+    "value": "27051a225ea950c7d62ddbac6c7c4754bf86be94fddf0d3c10e2827d6eedffd5",
+    "to_ids": true,
+    "comment": "Malicious APK",
+    "timestamp": "1792454400",
+    "distribution": "5",
+    "disable_correlation": false
+   },
+   {
+    "uuid": "fb28e09f-5b61-5403-bb91-2c59ba9c27e4",
+    "type": "text",
+    "category": "Payload delivery",
+    "value": "com.iudxmm.android",
+    "to_ids": false,
+    "comment": "Android package name",
+    "timestamp": "1792454400",
+    "distribution": "5",
+    "disable_correlation": false
+   },
+   {
+    "uuid": "e2d2a0dd-b823-5092-9381-ec6ac882353a",
+    "type": "link",
+    "category": "External analysis",
+    "value": "https://www.sohankanna.com/research/deconstructing-a-stealthy-android-trojan-a-case-study-in-phishing-and-evasion",
+    "to_ids": false,
+    "comment": "sohankanna.com - Deconstructing a Stealthy Android Trojan",
+    "timestamp": "1792454400",
+    "distribution": "5",
+    "disable_correlation": false
+   },
+   {
+    "uuid": "9e48983f-99a1-53eb-90f6-323092c21216",
+    "type": "link",
+    "category": "External analysis",
+    "value": "https://www.sohankanna.com/tracker#campaign-sm-2025-003",
+    "to_ids": false,
+    "comment": "India Threat Tracker entry",
+    "timestamp": "1792454400",
+    "distribution": "5",
+    "disable_correlation": false
+   }
+  ]
+ }
+}

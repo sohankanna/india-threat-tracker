@@ -1,0 +1,110 @@
+{
+ "Event": {
+  "uuid": "8c2cc098-eb1e-5fae-8b9c-a9bf6bc091a7",
+  "info": "India Threat Tracker: RTO Challan fraud - two-stage dropper (jsonserv C2) (source: CYFIRMA)",
+  "date": "2025-10-01",
+  "threat_level_id": "2",
+  "analysis": "2",
+  "timestamp": "1792454400",
+  "publish_timestamp": "1792454400",
+  "published": true,
+  "Orgc": {
+   "name": "India Threat Tracker",
+   "uuid": "873cc557-a214-58ab-a27d-344165d68378"
+  },
+  "Tag": [
+   {
+    "name": "tlp:clear"
+   },
+   {
+    "name": "india-threat-tracker:id=\"sm-2025-002\""
+   },
+   {
+    "name": "india-threat-tracker:confidence=\"high\""
+   },
+   {
+    "name": "india-threat-tracker:tag=\"android\""
+   },
+   {
+    "name": "india-threat-tracker:tag=\"smishing\""
+   },
+   {
+    "name": "india-threat-tracker:tag=\"rto\""
+   },
+   {
+    "name": "india-threat-tracker:tag=\"aadhaar\""
+   },
+   {
+    "name": "india-threat-tracker:tag=\"upi\""
+   }
+  ],
+  "Attribute": [
+   {
+    "uuid": "c875a0cc-796c-557d-bfed-1328de093f61",
+    "type": "domain",
+    "category": "Network activity",
+    "value": "jsonserv.xyz",
+    "to_ids": true,
+    "comment": "",
+    "timestamp": "1792454400",
+    "distribution": "5",
+    "disable_correlation": false
+   },
+   {
+    "uuid": "6cce6087-b672-584c-a48f-01bd6d57f70d",
+    "type": "domain",
+    "category": "Network activity",
+    "value": "jsonserv.biz",
+    "to_ids": true,
+    "comment": "",
+    "timestamp": "1792454400",
+    "distribution": "5",
+    "disable_correlation": false
+   },
+   {
+    "uuid": "aebf68ac-a221-5fa1-a1bd-45a74bd5d83f",
+    "type": "sha256",
+    "category": "Payload delivery",
+    "value": "9209fc088cdcd7da0161cabf5b9384c2ca790214413ffb437452bcc865c58452",
+    "to_ids": true,
+    "comment": "Malicious APK",
+    "timestamp": "1792454400",
+    "distribution": "5",
+    "disable_correlation": false
+   },
+   {
+    "uuid": "c4324b02-e389-5273-af56-27296c619342",
+    "type": "sha256",
+    "category": "Payload delivery",
+    "value": "22cf70a0dd866a4f5addd5d339fad3894a4ebb3e97d597fd7dac9b08899052fb",
+    "to_ids": true,
+    "comment": "Malicious APK",
+    "timestamp": "1792454400",
+    "distribution": "5",
+    "disable_correlation": false
+   },
+   {
+    "uuid": "3451a73c-0b8e-58f6-a0c6-f66c2b7c9fdf",
+    "type": "link",
+    "category": "External analysis",
+    "value": "https://www.cyfirma.com/research/rto-challan-fraud-a-technical-report-on-apk-based-financial-and-identity-theft/",
+    "to_ids": false,
+    "comment": "CYFIRMA - RTO Challan Fraud: a technical report on APK-based financial and identity theft",
+    "timestamp": "1792454400",
+    "distribution": "5",
+    "disable_correlation": false
+   },
+   {
+    "uuid": "f6df99b5-e41f-591d-97bd-316c3da83edd",
+    "type": "link",
+    "category": "External analysis",
+    "value": "https://www.sohankanna.com/tracker#campaign-sm-2025-002",
+    "to_ids": false,
+    "comment": "India Threat Tracker entry",
+    "timestamp": "1792454400",
+    "distribution": "5",
+    "disable_correlation": false
+   }
+  ]
+ }
+}

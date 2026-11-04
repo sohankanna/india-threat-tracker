@@ -2,7 +2,8 @@ name: MISP import test
 
 # Imports data/india-threat-tracker-stix.json into a disposable MISP started from
 # the official MISP/misp-docker images, then reads back what MISP stored and
-# compares it with the bundle. Run by hand from the Actions tab; results are in
+# compares it with the bundle, then subscribes the same instance to misp-feed/
+# and checks every event arrives. Run by hand from the Actions tab; results are in
 # the run summary and the "misp-import-results" artifact.
 
 on:
@@ -63,6 +64,17 @@ jobs:
             --bundle data/india-threat-tracker-stix.json --out misp-import-results
           cat misp-import-results.md >> "$GITHUB_STEP_SUMMARY"
 
+      - name: Subscribe to the MISP feed and compare
+        # misp-feed/ is copied into the container and added as a local feed, so
+        # MISP's own feed fetcher reads the manifest and events, as it would
+        # from the GitHub URL.
+        run: |
+          (cd misp-docker && docker compose cp ../misp-feed misp-core:/tmp/itt-feed \
+            && docker compose exec -T misp-core chmod -R a+rX /tmp/itt-feed)
+          python interop/misp_feed_import.py --url https://localhost --key "$MISP_KEY" \
+            --feed-dir misp-feed --container-path /tmp/itt-feed --out misp-feed-results
+          cat misp-feed-results.md >> "$GITHUB_STEP_SUMMARY"
+
       - name: Logs on failure
         if: failure()
         working-directory: misp-docker
@@ -75,5 +87,7 @@ jobs:
         if: always()
         with:
           name: misp-import-results
-          path: misp-import-results.*
+          path: |
+            misp-import-results.*
+            misp-feed-results.*
           if-no-files-found: ignore

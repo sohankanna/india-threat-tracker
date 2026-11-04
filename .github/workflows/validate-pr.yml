@@ -44,6 +44,9 @@ jobs:
       - name: STIX bundle matches the canonical feeds
         run: python scripts/build_stix.py --check
 
+      - name: MISP feed matches the data
+        run: python scripts/build_misp_feed.py --check
+
       - name: STIX 2.1 validation (OASIS validator)
         run: stix2_validator data/india-threat-tracker-stix.json
 

@@ -1,0 +1,165 @@
+{
+ "3c5d96d7-2155-5228-8b0d-6af6dbd2dbed": {
+  "Orgc": {
+   "name": "India Threat Tracker",
+   "uuid": "873cc557-a214-58ab-a27d-344165d68378"
+  },
+  "Tag": [
+   {
+    "name": "tlp:clear"
+   },
+   {
+    "name": "india-threat-tracker:id=\"sm-2025-001\""
+   },
+   {
+    "name": "india-threat-tracker:confidence=\"high\""
+   },
+   {
+    "name": "india-threat-tracker:tag=\"android\""
+   },
+   {
+    "name": "india-threat-tracker:tag=\"smishing\""
+   },
+   {
+    "name": "india-threat-tracker:tag=\"rto\""
+   },
+   {
+    "name": "india-threat-tracker:tag=\"upi\""
+   }
+  ],
+  "analysis": "2",
+  "date": "2025-09-01",
+  "info": "India Threat Tracker: GhostBat RAT - RTO/mParivahan-themed Android campaign (source: Cyble)",
+  "publish_timestamp": "1792454400",
+  "threat_level_id": "2",
+  "timestamp": "1792454400"
+ },
+ "8c2cc098-eb1e-5fae-8b9c-a9bf6bc091a7": {
+  "Orgc": {
+   "name": "India Threat Tracker",
+   "uuid": "873cc557-a214-58ab-a27d-344165d68378"
+  },
+  "Tag": [
+   {
+    "name": "tlp:clear"
+   },
+   {
+    "name": "india-threat-tracker:id=\"sm-2025-002\""
+   },
+   {
+    "name": "india-threat-tracker:confidence=\"high\""
+   },
+   {
+    "name": "india-threat-tracker:tag=\"android\""
+   },
+   {
+    "name": "india-threat-tracker:tag=\"smishing\""
+   },
+   {
+    "name": "india-threat-tracker:tag=\"rto\""
+   },
+   {
+    "name": "india-threat-tracker:tag=\"aadhaar\""
+   },
+   {
+    "name": "india-threat-tracker:tag=\"upi\""
+   }
+  ],
+  "analysis": "2",
+  "date": "2025-10-01",
+  "info": "India Threat Tracker: RTO Challan fraud - two-stage dropper (jsonserv C2) (source: CYFIRMA)",
+  "publish_timestamp": "1792454400",
+  "threat_level_id": "2",
+  "timestamp": "1792454400"
+ },
+ "baa23acd-df45-50b8-9efb-892caf909ef8": {
+  "Orgc": {
+   "name": "India Threat Tracker",
+   "uuid": "873cc557-a214-58ab-a27d-344165d68378"
+  },
+  "Tag": [
+   {
+    "name": "tlp:clear"
+   },
+   {
+    "name": "india-threat-tracker:id=\"watchlist-high\""
+   }
+  ],
+  "analysis": "2",
+  "date": "2026-10-30",
+  "info": "India Threat Tracker: actively exploited vulnerabilities, high India relevance (CISA KEV + EPSS)",
+  "publish_timestamp": "1793318400",
+  "threat_level_id": "2",
+  "timestamp": "1793318400"
+ },
+ "d9e350df-1df2-5469-ae64-d2b3e150f2b8": {
+  "Orgc": {
+   "name": "India Threat Tracker",
+   "uuid": "873cc557-a214-58ab-a27d-344165d68378"
+  },
+  "Tag": [
+   {
+    "name": "tlp:clear"
+   },
+   {
+    "name": "india-threat-tracker:id=\"sm-2025-004\""
+   },
+   {
+    "name": "india-threat-tracker:confidence=\"high\""
+   },
+   {
+    "name": "india-threat-tracker:tag=\"android\""
+   },
+   {
+    "name": "india-threat-tracker:tag=\"rat\""
+   },
+   {
+    "name": "india-threat-tracker:tag=\"whatsapp\""
+   },
+   {
+    "name": "india-threat-tracker:tag=\"otp\""
+   },
+   {
+    "name": "india-threat-tracker:tag=\"wedding-invite\""
+   }
+  ],
+  "analysis": "2",
+  "date": "2024-12-01",
+  "info": "India Threat Tracker: Wedding-invitation APK - SpyMax RAT on WhatsApp (source: K7 Labs)",
+  "publish_timestamp": "1793750400",
+  "threat_level_id": "2",
+  "timestamp": "1793750400"
+ },
+ "dbfd7fc4-556e-5b95-96e7-dfdd6c85d23d": {
+  "Orgc": {
+   "name": "India Threat Tracker",
+   "uuid": "873cc557-a214-58ab-a27d-344165d68378"
+  },
+  "Tag": [
+   {
+    "name": "tlp:clear"
+   },
+   {
+    "name": "india-threat-tracker:id=\"sm-2025-003\""
+   },
+   {
+    "name": "india-threat-tracker:confidence=\"high\""
+   },
+   {
+    "name": "india-threat-tracker:tag=\"android\""
+   },
+   {
+    "name": "india-threat-tracker:tag=\"banking\""
+   },
+   {
+    "name": "india-threat-tracker:tag=\"malware-analysis\""
+   }
+  ],
+  "analysis": "2",
+  "date": "2025-10-01",
+  "info": "India Threat Tracker: Android banking trojan - MITM + anti-analysis (case study) (source: sohankanna.com)",
+  "publish_timestamp": "1792454400",
+  "threat_level_id": "2",
+  "timestamp": "1792454400"
+ }
+}

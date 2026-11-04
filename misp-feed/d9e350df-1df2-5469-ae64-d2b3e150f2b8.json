@@ -1,0 +1,110 @@
+{
+ "Event": {
+  "uuid": "d9e350df-1df2-5469-ae64-d2b3e150f2b8",
+  "info": "India Threat Tracker: Wedding-invitation APK - SpyMax RAT on WhatsApp (source: K7 Labs)",
+  "date": "2024-12-01",
+  "threat_level_id": "2",
+  "analysis": "2",
+  "timestamp": "1793750400",
+  "publish_timestamp": "1793750400",
+  "published": true,
+  "Orgc": {
+   "name": "India Threat Tracker",
+   "uuid": "873cc557-a214-58ab-a27d-344165d68378"
+  },
+  "Tag": [
+   {
+    "name": "tlp:clear"
+   },
+   {
+    "name": "india-threat-tracker:id=\"sm-2025-004\""
+   },
+   {
+    "name": "india-threat-tracker:confidence=\"high\""
+   },
+   {
+    "name": "india-threat-tracker:tag=\"android\""
+   },
+   {
+    "name": "india-threat-tracker:tag=\"rat\""
+   },
+   {
+    "name": "india-threat-tracker:tag=\"whatsapp\""
+   },
+   {
+    "name": "india-threat-tracker:tag=\"otp\""
+   },
+   {
+    "name": "india-threat-tracker:tag=\"wedding-invite\""
+   }
+  ],
+  "Attribute": [
+   {
+    "uuid": "a16f030f-9f36-56d5-b992-ca0b52c808a8",
+    "type": "text",
+    "category": "Payload delivery",
+    "value": "com.cristal.bristral.tristal.mistral",
+    "to_ids": false,
+    "comment": "Android package name",
+    "timestamp": "1793750400",
+    "distribution": "5",
+    "disable_correlation": false
+   },
+   {
+    "uuid": "5870f9c1-449e-54de-ac8e-1d4615653f2c",
+    "type": "text",
+    "category": "Payload delivery",
+    "value": "com.android.pictach",
+    "to_ids": false,
+    "comment": "Android package name",
+    "timestamp": "1793750400",
+    "distribution": "5",
+    "disable_correlation": false
+   },
+   {
+    "uuid": "cb75e4ac-b9e1-52b8-8a78-ba5253d1b6e8",
+    "type": "link",
+    "category": "External analysis",
+    "value": "https://labs.k7computing.com/index.php/spymax-a-fake-wedding-invitation-app-targeting-indian-mobile-users/",
+    "to_ids": false,
+    "comment": "K7 Labs - SpyMax: a fake wedding invitation app targeting Indian mobile users (20 Jun 2025)",
+    "timestamp": "1793750400",
+    "distribution": "5",
+    "disable_correlation": false
+   },
+   {
+    "uuid": "0bd1b805-57c7-5ca9-b270-36d8b6a27a67",
+    "type": "link",
+    "category": "External analysis",
+    "value": "https://cybersecuritynews.com/beware-of-weaponized-wedding-invite-scams/",
+    "to_ids": false,
+    "comment": "Cyber Security News - Beware of weaponized wedding invite scams (Broadcom research, 25 Jun 2025)",
+    "timestamp": "1793750400",
+    "distribution": "5",
+    "disable_correlation": false
+   },
+   {
+    "uuid": "d99bc403-2cc7-5853-a207-8d0073d087f1",
+    "type": "link",
+    "category": "External analysis",
+    "value": "https://www.freepressjournal.in/mumbai/maharashtra-cyber-police-warn-citizens-of-wedding-invitation-scam-leading-to-malware-financial-losses-check-details",
+    "to_ids": false,
+    "comment": "Free Press Journal - Maharashtra Cyber Police warn citizens of wedding invitation scam (24 Dec 2024)",
+    "timestamp": "1793750400",
+    "distribution": "5",
+    "disable_correlation": false
+   },
+   {
+    "uuid": "69219c57-ba8f-5952-b10d-45e11fffe5f9",
+    "type": "link",
+    "category": "External analysis",
+    "value": "https://www.sohankanna.com/tracker#campaign-sm-2025-004",
+    "to_ids": false,
+    "comment": "India Threat Tracker entry",
+    "timestamp": "1793750400",
+    "distribution": "5",
+    "disable_correlation": false
+   }
+  ]
+ }
+}

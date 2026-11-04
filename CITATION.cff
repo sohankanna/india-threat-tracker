@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this data or these rules in research or a report, please cite it as below."
+title: "India Threat Tracker"
+abstract: >-
+  Open threat intelligence for India: actively exploited vulnerabilities
+  prioritised for Indian organisations, fraud campaigns with indicators,
+  state-nexus actors, ransomware and hacktivist activity, detection rules, and
+  machine-readable feeds (JSON, STIX 2.1, MISP).
+type: dataset
+authors:
+  - name: "Sohan Kanna"
+repository-code: "https://github.com/sohankanna/india-threat-tracker"
+url: "https://www.sohankanna.com/tracker"
+license: CC-BY-4.0
+keywords:
+  - threat intelligence
+  - India
+  - CISA KEV
+  - detection engineering
+  - STIX
+  - MISP
