@@ -1,72 +1,58 @@
 {
   "feed": "india-threat-assessment",
-  "period": "October 2026",
-  "updated": "2026-10-20",
+  "period": "November 2026",
+  "updated": "2026-11-04",
   "analyst": "Sohan Kanna",
-  "summary": "The Indian threat picture this month is pulled in two directions at once: high-volume, financially-motivated mobile fraud hitting citizens at scale, and patient, state-aligned intrusion aimed at government, defence and critical infrastructure. The common seam is the edge — VPNs, firewalls and cloud identity — which is where ransomware crews and espionage actors alike still get their first foothold.",
+  "summary": "Two things changed since October. China-nexus espionage moved from India's power grid onto its banks and government desks, with Mustang Panda reaching Indian government networks in June and banks before that. And the patching clock got shorter: an Ivanti Connect Secure chain was exploited as a zero-day in October, PHP2Shell went from leak to public exploit in days, and CERT-In now asks for exploited internet-facing flaws to be fixed within 12 hours where feasible. Underneath, fraud against citizens keeps running at industrial scale, now fed by leaked customer data as well as fake apps.",
   "items": [
     {
       "rank": 1,
-      "title": "Fake-APK UPI fraud has gone industrial",
+      "title": "Fraud runs on stolen trust: apps, impersonation and leaked data",
       "category": "payments-fraud",
       "severity": "critical",
-      "why": "This is no longer lone scammers. Organised networks now run fake RTO / e-challan, bank and utility APKs end to end: a single Mumbai bust was linked to 3,206 complaints and roughly ₹43 crore, and Ahmedabad police separately broke up a Telegram storefront that sold the apps to about 400 fraudsters. Individual losses keep surfacing too, such as two Pune residents who lost over ₹14 lakh to the same e-challan lure. Cash-out is fast and hard to trace (ATM withdrawals in the Ahmedabad case), and the malware (GhostBat RAT and kin) intercepts OTPs and banking SMS and captures the UPI PIN through a fake payment screen. For any payments operator, this is the live, high-volume threat, not a future one.",
+      "why": "Fraud against Indian citizens is the highest-volume threat on this page and the most organised. I4C counted more than 30,000 victims and over Rs 1,500 crore lost to fake stock-tip groups and trading apps in six months, and digital-arrest calls cost Rs 644 crore in 2025 even after falling sharply from 2024. Fake APKs still do the technical work: a 'wedding invitation' that installs the SpyMax RAT reads bank OTPs from notifications. In October, SBI confirmed that personal data of at least 3,897 customers (names, mobile numbers, dates of birth, addresses and internal IDs) turned up in a dark-web set of about 375,000 records. Data like that makes a fake bank or police call sound real. Banks should assume callers will know customers' details and design verification that does not rely on it.",
       "links": [
         {
           "title": "The UPI fraud kill chain",
           "url": "https://www.sohankanna.com/research/the-upi-fraud-kill-chain-how-fake-apk-scams-defeat-indias-payment-controls"
-        },
-        {
-          "title": "GhostBat RAT breakdown",
-          "url": "https://www.sohankanna.com/research/ghostbat-rat-how-rto-themed-android-malware-steals-your-upi-pin"
         }
       ],
       "evidence": [
         {
           "type": "campaign",
+          "id": "sm-2025-005",
+          "supports": "I4C: 30,000+ victims, Rs 1,500 crore+ lost to investment scams in six months"
+        },
+        {
+          "type": "campaign",
+          "id": "sm-2024-001",
+          "supports": "Digital arrest: 1,23,672 cases and Rs 1,918 crore in 2024; Rs 644 crore in 2025"
+        },
+        {
+          "type": "campaign",
+          "id": "sm-2025-004",
+          "supports": "SpyMax wedding-invitation APK reads OTPs from notifications"
+        },
+        {
+          "type": "campaign",
           "id": "sm-2026-003",
-          "supports": "Mumbai network: 3,206 complaints, ~₹43 crore, OTP and banking-SMS interception"
+          "supports": "Mumbai fake-APK network: 3,206 complaints, about Rs 43 crore"
         },
         {
           "type": "source",
-          "title": "Free Press Journal: Mumbai cyber police bust ₹43 crore fake APK fraud network",
-          "url": "https://www.freepressjournal.in/mumbai/6-arrested-as-mumbai-cyber-police-bust-43-crore-fake-apk-based-cyber-fraud-network-linked-to-3200-cases-video",
-          "supports": "Primary report of the Mumbai arrests and figures"
-        },
-        {
-          "type": "campaign",
-          "id": "sm-2026-001",
-          "supports": "Ahmedabad Telegram storefront supplying ~400 fraudsters; ATM cash-out"
-        },
-        {
-          "type": "campaign",
-          "id": "sm-2026-002",
-          "supports": "Pune victims lost ₹14+ lakh to fake e-challan APKs"
-        },
-        {
-          "type": "campaign",
-          "id": "sm-2025-001",
-          "supports": "GhostBat RAT: fake UPI screen captures the PIN; SMS and OTP exfiltration"
-        },
-        {
-          "type": "source",
-          "title": "Cyble: GhostBat RAT, inside the resurgence of RTO-themed Android malware",
-          "url": "https://cyble.com/blog/ghostbat-rat-inside-the-resurgence-of-rto-themed-android-malware/",
-          "supports": "Primary technical analysis of GhostBat"
+          "title": "The Hacker News: State Bank of India confirms data leak after 3,897 customer records found on dark web (Oct 2026)",
+          "url": "https://thehackernews.com/2026/10/state-bank-of-india-confirms-data-leak.html",
+          "supports": "SBI filing of 21 Oct 2026: 3,897 customer records in a set of about 375,000; the data fields exposed"
         }
       ]
     },
     {
       "rank": 2,
-      "title": "The edge is still the way in",
+      "title": "Ivanti again, and a 12-hour patch window",
       "category": "exploited-vulns",
-      "severity": "high",
-      "why": "The India-relevant watchlist is dominated by internet-facing edge: Ivanti Connect Secure, Citrix NetScaler, PAN-OS and Fortinet, plus SharePoint (CVE-2025-53770, EPSS ~100%, ransomware-linked). These are the products Indian enterprises expose to the internet, and CISA lists known ransomware use for several of them, from Ivanti (CVE-2025-22457) and NetScaler (CVE-2025-5777) to PAN-OS (CVE-2026-0257) and FortiOS (CVE-2024-55591). If you do one thing this month, make it edge patch cadence: it is the single highest-leverage control on this list.",
+      "severity": "critical",
+      "why": "Three Ivanti Connect Secure flaws entered CISA's KEV catalog in October: an authentication bypass on 13 October, then a privilege escalation and a file-upload flaw on 30 October. Volexity documented them chained into unauthenticated root on the VPN appliance, used by a new actor (UTA0576) to pull credentials, Active Directory data and BitLocker recovery keys. Since mid-October, Cisco ASA/FTD, Fortinet, GitLab and an Atlassian flaw with an EPSS near 99% have joined the list too. CERT-In's May 2026 guidance asks for exploited internet-facing flaws to be fixed within 12 hours where feasible. For an Ivanti box that was exposed before patching, assume credential theft: patch, check integrity, and rotate what the appliance could see.",
       "links": [
-        {
-          "title": "PAN-OS management-interface zero-day",
-          "url": "https://www.sohankanna.com/research/cve-2026-0322-pan-os-management-interface-zero-day-from-admin-login-to-root"
-        },
         {
           "title": "Live watchlist",
           "url": "https://www.sohankanna.com/tracker"
@@ -75,140 +61,165 @@
       "evidence": [
         {
           "type": "cve",
-          "id": "CVE-2025-53770",
-          "supports": "SharePoint: EPSS ~100%, CISA lists known ransomware use"
+          "id": "CVE-2026-104935",
+          "supports": "Ivanti Connect Secure authentication bypass, KEV 13 Oct 2026"
         },
         {
           "type": "cve",
-          "id": "CVE-2025-22457",
-          "supports": "Ivanti Connect Secure: CISA lists known ransomware use"
+          "id": "CVE-2026-111357",
+          "supports": "Ivanti Connect Secure privilege escalation, KEV 30 Oct 2026"
         },
         {
           "type": "cve",
-          "id": "CVE-2025-5777",
-          "supports": "Citrix NetScaler: CISA lists known ransomware use"
+          "id": "CVE-2026-118527",
+          "supports": "Ivanti Connect Secure file upload, KEV 30 Oct 2026"
+        },
+        {
+          "type": "source",
+          "title": "The Hacker News: Attackers chain three Ivanti Connect Secure flaws (31 Oct 2026)",
+          "url": "https://thehackernews.com/2026/10/attackers-chain-three-ivanti-connect.html",
+          "supports": "Volexity chain to unauthenticated root; UTA0576 stole credentials, AD data and BitLocker keys"
         },
         {
           "type": "cve",
-          "id": "CVE-2026-0257",
-          "supports": "PAN-OS: CISA lists known ransomware use"
+          "id": "CVE-2026-76418",
+          "supports": "Cisco Secure Firewall ASA / FTD, KEV 29 Oct 2026"
         },
         {
           "type": "cve",
-          "id": "CVE-2024-55591",
-          "supports": "FortiOS / FortiProxy: CISA lists known ransomware use"
+          "id": "CVE-2025-61624",
+          "supports": "Fortinet, KEV 16 Oct 2026"
         },
         {
           "type": "cve",
-          "id": "CVE-2026-0322",
-          "supports": "PAN-OS management-interface zero-day covered in the linked write-up"
+          "id": "CVE-2026-21589",
+          "supports": "Atlassian, KEV 15 Oct 2026, EPSS about 99%"
         },
         {
-          "type": "detection",
-          "id": "pan_os_mgmt_auth_from_unexpected_source",
-          "supports": "Detects successful PAN-OS admin logins from outside an allowlist"
+          "type": "cve",
+          "id": "CVE-2026-97229",
+          "supports": "GitLab, KEV 29 Oct 2026"
+        },
+        {
+          "type": "source",
+          "title": "The Hacker News: CERT-In sets 12-hour patching for exploited internet-facing flaws (26 May 2026)",
+          "url": "https://thehackernews.com/2026/05/cert-in-mandates-12-hour-patching-for.html",
+          "supports": "CERT-In timelines: 12 hours for exploited internet-facing flaws where applicable, 1 day for critical external"
         }
       ]
     },
     {
       "rank": 3,
-      "title": "Pakistan-nexus espionage is persistent, not episodic",
+      "title": "China-nexus espionage reached Indian banks and government",
       "category": "apt",
       "severity": "high",
-      "why": "Transparent Tribe (APT36) and SideCopy continue to target Indian government, defence, education and research with Crimson RAT and the ZIP→LNK→LOLBin delivery pattern. These are not one-off campaigns; they are a standing collection effort that re-tools faster than it disappears. If you sit in gov, defence or academia, assume you are in scope and detect for the delivery chain, not just the final implant.",
+      "why": "For years the China-nexus story in India was the power grid (RedEcho, TAG-38). In 2026 Mustang Panda widened it. From March it sent Indian banks help-file attachments dressed as HDFC Bank support tickets that installed the LOTUSLITE backdoor, and in June it was inside Indian government networks, including machines used by senior administrative staff, using hydropower and India-Taiwan lures and Zoho WorkDrive as a command channel. Acronis worked with CERT-In on clean-up. Expect the same playbook again: signed binaries side-loading DLLs, help files and ZIP archives with hidden DLLs, and command traffic that looks like a cloud service Indian offices already use.",
+      "links": [
+        {
+          "title": "Mustang Panda profile",
+          "url": "https://www.sohankanna.com/tracker#actor-apt-mustang-panda"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "actor",
+          "id": "apt-mustang-panda",
+          "supports": "LOTUSLITE against Indian banks (Apr 2026); government and hydropower campaign (Jun 2026)"
+        },
+        {
+          "type": "source",
+          "title": "The Hacker News: Mustang Panda uses Zoho WorkDrive as C2 against India's government and energy sectors (29 Jun 2026)",
+          "url": "https://thehackernews.com/2026/06/mustang-panda-uses-zoho-workdrive-as.html",
+          "supports": "Acronis findings, high-confidence attribution, coordination with CERT-In"
+        },
+        {
+          "type": "detection",
+          "id": "chm_help_file_spawns_script_or_lolbin",
+          "supports": "Detects help-file delivery running code through hh.exe"
+        },
+        {
+          "type": "actor",
+          "id": "apt-redecho",
+          "supports": "Earlier China-nexus targeting of the Indian power grid"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "PHP2Shell, Node.js and eMudhra: the web stack had a bad month",
+      "category": "exploited-vulns",
+      "severity": "high",
+      "why": "Two PHP flaws (PHP2Shell) leaked before the patch, gained a public exploit and entered KEV on 26 October with EPSS near 100%; PHP branches that are already out of support get no fix at all. A Brotli decoder flaw that Node.js says permits remote code execution was added on 27 October, and it is reached through what a server downloads, not just what it receives. Separately, browsers and Node.js stopped trusting eMudhra intermediate certificates after their private keys proved recoverable, and CERT-In issued an advisory. If you run PHP or Node.js, upgrade the runtime itself, and check any service that relied on the affected eMudhra intermediates.",
+      "links": [
+        {
+          "title": "PHP2Shell",
+          "url": "https://www.sohankanna.com/research/php2shell-leaked-php-rce-no-patch-for-old-php"
+        },
+        {
+          "title": "Node.js Brotli RCE",
+          "url": "https://www.sohankanna.com/research/nodejs-cve-2026-111497-brotli-fetch-rce"
+        },
+        {
+          "title": "eMudhra's weak CA keys",
+          "url": "https://www.sohankanna.com/research/emudhra-weak-ca-keys-what-the-statement-leaves-out"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "cve",
+          "id": "CVE-2026-109618",
+          "supports": "PHP2Shell memory corruption, KEV 26 Oct 2026, EPSS about 100%"
+        },
+        {
+          "type": "cve",
+          "id": "CVE-2026-109619",
+          "supports": "PHP2Shell stale request state, KEV 26 Oct 2026, EPSS about 100%"
+        },
+        {
+          "type": "cve",
+          "id": "CVE-2026-111497",
+          "supports": "Brotli decoder flaw behind the Node.js RCE, KEV 27 Oct 2026"
+        },
+        {
+          "type": "source",
+          "title": "CERT-In advisory CIAD-2026-0050: Compromise of eMudhra intermediate CA certificates",
+          "url": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0050",
+          "supports": "Official Indian advisory on the eMudhra intermediate CA compromise"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "Pakistan-nexus espionage continues; hacktivist claims mostly don't hold up",
+      "category": "apt",
+      "severity": "medium-high",
+      "why": "Transparent Tribe and SideCopy remain the most persistent actors against Indian government, defence and education, and they move fastest around crises: within days of the Pahalgam attack in 2025 they were sending Pahalgam-themed lures. The hacktivist noise around the same events is a different matter. Of the notable claims against India tracked here, one was confirmed in full; most were overstated, recycled or false, and DDoS outages typically lasted minutes. The practical lesson: during the next India-Pakistan flashpoint, verify leak claims before reacting, and put the effort into phishing defence for government and defence users.",
       "links": [
         {
           "title": "Transparent Tribe (APT36)",
           "url": "https://www.sohankanna.com/research/transparent-tribe-apt36-the-persistent-threat-to-indian-government-and-defence"
-        },
-        {
-          "title": "SideCopy",
-          "url": "https://www.sohankanna.com/research/sidecopy-the-apt36-aligned-group-that-copies-sidewinder"
         }
       ],
       "evidence": [
         {
           "type": "actor",
           "id": "apt-transparent-tribe",
-          "supports": "Targets Indian government, defence and education; Crimson RAT; LNK and document lures"
+          "supports": "Pahalgam-themed lures in 2025; startup targeting in 2026"
         },
         {
           "type": "actor",
           "id": "apt-sidecopy",
-          "supports": "ZIP archive with LNK delivery against Indian defence and research"
+          "supports": "ZIP and LNK delivery against Indian defence and research"
+        },
+        {
+          "type": "hacktivist",
+          "id": "hk-opindia-2025",
+          "supports": "Claim-by-claim checks from the #OpIndia wave"
         },
         {
           "type": "detection",
           "id": "office_archive_lnk_spawns_lolbin",
-          "supports": "Detects the ZIP to LNK to LOLBin step of the delivery chain"
-        },
-        {
-          "type": "detection",
-          "id": "office_document_spawns_script_interpreter",
-          "supports": "Detects weaponised documents launching script interpreters"
-        }
-      ]
-    },
-    {
-      "rank": 4,
-      "title": "Identity is the new perimeter: watch M365 sign-ins",
-      "category": "apt",
-      "severity": "medium-high",
-      "why": "Microsoft and the UK NCSC reported in April 2026 that Forest Blizzard (APT28) changed DNS settings on compromised home and small-office routers to put adversary-in-the-middle servers in front of Outlook on the web, where passwords and login tokens can be intercepted. As Indian organisations move onto M365 / Entra, staff home routers become part of the attack surface. Entra sign-in risk is the signal to wire up first; Microsoft's guidance points to its risky sign-in detections. The tracker's Entra rule (high-risk successful sign-in) and its endpoint DNS rule are complementary investigation leads, not a detection of this chain: they fire separately and are not correlated, the Entra rule does not verify the MFA sequence. The DNS rule can see this campaign's reported technique, a router handing devices the attacker's resolver through DHCP, because it checks the DHCP-assigned resolver too; it cannot see a router that keeps handing out its own private address and forwards queries to the attacker. Phishing-resistant MFA (passkeys / FIDO2) is the control that breaks the relay.",
-      "links": [
-        {
-          "title": "FrostArmada / APT28 M365 interception",
-          "url": "https://www.sohankanna.com/research/frostarmada-how-apt28-turned-old-home-routers-into-a-microsoft-365-interception-network"
-        }
-      ],
-      "evidence": [
-        {
-          "type": "source",
-          "title": "Microsoft Threat Intelligence: SOHO router compromise leads to DNS hijacking and adversary-in-the-middle attacks (7 Apr 2026)",
-          "url": "https://www.microsoft.com/en-us/security/blog/2026/04/07/soho-router-compromise-leads-to-dns-hijacking-and-adversary-in-the-middle-attacks/",
-          "supports": "Forest Blizzard router DNS hijacking, AiTM against Outlook on the web, Entra risk guidance"
-        },
-        {
-          "type": "source",
-          "title": "NCSC: APT28 exploit routers to enable DNS hijacking operations (7 Apr 2026)",
-          "url": "https://www.ncsc.gov.uk/news/apt28-exploit-routers-to-enable-DNS-hijacking-operations",
-          "supports": "Attribution to APT28; passwords and login tokens intercepted"
-        },
-        {
-          "type": "detection",
-          "id": "entra_aitm_risky_signin_token_replay",
-          "supports": "High-risk successful sign-in: an investigation lead, not confirmation of AiTM"
-        },
-        {
-          "type": "detection",
-          "id": "windows_suspicious_dns_server_change",
-          "supports": "Fires when a device is given a resolver outside policy, including through DHCP (DhcpNameServer); cannot see a router that forwards queries upstream while handing out its own address"
-        }
-      ]
-    },
-    {
-      "rank": 5,
-      "title": "China-nexus pre-positioning in the power sector",
-      "category": "apt",
-      "severity": "medium",
-      "why": "RedEcho's targeting of load dispatch centres is about access held for later, not immediate disruption — lower tempo, higher stakes. This is the kind of intrusion that matters in a crisis rather than a quarterly report, and it belongs on the radar of anyone defending Indian critical infrastructure even when nothing is visibly happening.",
-      "links": [
-        {
-          "title": "RedEcho and the China-nexus grid targeting",
-          "url": "https://www.sohankanna.com/research/redecho-and-the-china-nexus-targeting-of-india-s-power-grid"
-        }
-      ],
-      "evidence": [
-        {
-          "type": "actor",
-          "id": "apt-redecho",
-          "supports": "RedEcho / TAG-38 targeting of Indian load dispatch centres and grid assets"
-        },
-        {
-          "type": "source",
-          "title": "Recorded Future: RedEcho targeting the Indian power sector",
-          "url": "https://www.recordedfuture.com/redecho-targeting-indian-power-sector",
-          "supports": "Primary reporting on load dispatch centre targeting"
+          "supports": "Detects the archive to LNK to LOLBin step"
         }
       ]
     }

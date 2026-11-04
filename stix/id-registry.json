@@ -271,6 +271,7 @@
     "relationship:threat-actor--e63e5857-823d-4ada-ad70-a77692e28621|uses|attack-pattern--790e97d9-1949-4e63-8c5c-98664ece2d3c": "relationship--e999a530-68fe-45f5-b3b3-e813932f0a21",
     "relationship:threat-actor--e63e5857-823d-4ada-ad70-a77692e28621|uses|attack-pattern--7c12c4bd-73cc-49a1-90e1-c5c20effe1a5": "relationship--6ea70ed9-8970-4d92-8f1c-d58957f58036",
     "relationship:threat-actor--e63e5857-823d-4ada-ad70-a77692e28621|uses|attack-pattern--f3c94e1c-ffbe-4aa8-9861-738c3914abd1": "relationship--3934e3dc-0980-4e53-88bc-791fb22531b0",
+    "report:assessment:November 2026": "report--9855bde8-9226-4cc3-b06d-b6dfd04f8e25",
     "report:assessment:October 2026": "report--c9fbe5bd-8e5c-4c73-9cc0-99ae5dafcba9",
     "threat-actor:hk-anonsec": "threat-actor--470a4efe-00c9-4a01-b311-fb6befbdfc7d",
     "threat-actor:hk-holy-league": "threat-actor--7393348c-17a6-4d5c-a9ea-f775de3e3304",
@@ -284,7 +285,17 @@
     "vulnerability:CVE-2025-22457": "vulnerability--15479d64-2f4a-46b0-b38c-63fa17897953",
     "vulnerability:CVE-2025-53770": "vulnerability--de9c42bc-5428-48bb-9d11-2ac184edc565",
     "vulnerability:CVE-2025-5777": "vulnerability--9b938d96-c356-419c-bd26-9cd6813a4d01",
+    "vulnerability:CVE-2025-61624": "vulnerability--faf7edc4-b72d-4bf6-b9ee-f965f1159209",
     "vulnerability:CVE-2026-0257": "vulnerability--c4f27000-a0ec-407b-a25a-f97b3896fc5a",
-    "vulnerability:CVE-2026-0322": "vulnerability--cc940f92-a3e8-49b8-a14d-0e8bc85d74f5"
+    "vulnerability:CVE-2026-0322": "vulnerability--cc940f92-a3e8-49b8-a14d-0e8bc85d74f5",
+    "vulnerability:CVE-2026-104935": "vulnerability--bfce19fe-d19b-4ac6-b2dc-25aca615eaf1",
+    "vulnerability:CVE-2026-109618": "vulnerability--573b75ad-3d4e-47d9-b321-c70a2b044380",
+    "vulnerability:CVE-2026-109619": "vulnerability--7c90a3da-39a2-4be8-bc3d-38721b99fa27",
+    "vulnerability:CVE-2026-111357": "vulnerability--52f5f9bb-0c1b-494c-96ee-7d02397aec61",
+    "vulnerability:CVE-2026-111497": "vulnerability--4524400d-c9a1-4503-a95e-6cbdc7b8e3d7",
+    "vulnerability:CVE-2026-118527": "vulnerability--75350817-29cc-41ec-b8fd-f3a681c807c2",
+    "vulnerability:CVE-2026-21589": "vulnerability--af5d61ff-5535-4700-926f-96cf102cd3af",
+    "vulnerability:CVE-2026-76418": "vulnerability--cb14bb90-0696-47de-99c8-0f98dfd21db8",
+    "vulnerability:CVE-2026-97229": "vulnerability--7088be6c-0f08-47ce-a78e-725351b18028"
   }
 }

@@ -5,6 +5,16 @@ not listed here.
 
 ## Unreleased
 
+### Assessment
+
+* November 2026 assessment. Five items: fraud fed by fake apps, impersonation
+  and leaked customer data (SBI, October); the Ivanti Connect Secure zero-day
+  chain and CERT-In's 12-hour guidance for exploited internet-facing flaws;
+  Mustang Panda reaching Indian banks and government; PHP2Shell, the Node.js
+  Brotli flaw and the eMudhra CA distrust; Pakistan-nexus espionage alongside
+  hacktivist claims that mostly did not hold up.
+* Assessment evidence can now cite hacktivist records (`type: hacktivist`).
+
 ### Detections
 
 * New rule `chm_help_file_spawns_script_or_lolbin`: the HTML Help viewer
