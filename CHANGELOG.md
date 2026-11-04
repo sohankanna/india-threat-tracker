@@ -5,6 +5,20 @@ not listed here.
 
 ## Unreleased
 
+### Ransomware (new feed)
+
+* New `data/ransomware.json` and `schema/ransomware.schema.json`.
+  * Six groups: RansomEXX (C-Edge, 2024), LockBit, Akira, Hunters International
+    (Tata Technologies, 2025), The Gentlemen and Qilin, each with how strongly
+    it is linked to India and the KEV flaws the sources tie to it.
+  * Six disclosed incidents, marked confirmed or claimed: Motilal Oswal,
+    Polycab, C-Edge, Cipla, Tata Technologies and Bajaj Auto.
+  * Landscape figures from Cyble and Threat Atlas India, each with what it
+    counts.
+* Groups exported to STIX as `threat-actor` (crime-syndicate). New tests check
+  every linked CVE is in KEV with known ransomware use and that claimed
+  incidents never read as confirmed.
+
 ### Assessment
 
 * November 2026 assessment. Five items: fraud fed by fake apps, impersonation

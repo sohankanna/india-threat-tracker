@@ -12,6 +12,7 @@ PAIRS = [
     ("data/smishing-apk.json", "schema/smishing-apk.schema.json"),
     ("data/apt-campaigns.json", "schema/apt-campaign.schema.json"),
     ("data/hacktivist.json", "schema/hacktivist.schema.json"),
+    ("data/ransomware.json", "schema/ransomware.schema.json"),
     ("data/watchlist.json", "schema/watchlist.schema.json"),
     ("data/assessment.json", "schema/assessment.schema.json"),
     ("data/relevance-overrides.json", "schema/relevance-overrides.schema.json"),

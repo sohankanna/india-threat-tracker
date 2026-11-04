@@ -1,0 +1,121 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ransomware feed",
+  "description": "Ransomware against India: group profiles with the evidence tying each to Indian victims, publicly disclosed Indian incidents (confirmed or only claimed), and landscape figures with their sources. Victims named only on a leak site are counted in the landscape figures but never named.",
+  "type": "object",
+  "required": ["feed", "generated_at", "count", "items", "incidents", "landscape"],
+  "properties": {
+    "feed": {"const": "ransomware"},
+    "generated_at": {"type": ["string", "null"]},
+    "count": {"type": "integer"},
+    "landscape": {
+      "type": "array",
+      "description": "Headline figures, each with the source that produced it and a caveat on what it counts",
+      "items": {
+        "type": "object",
+        "required": ["label", "value", "period", "source"],
+        "additionalProperties": false,
+        "properties": {
+          "label": {"type": "string"},
+          "value": {"type": "string"},
+          "period": {"type": "string"},
+          "note": {"type": "string"},
+          "source": {"$ref": "#/definitions/source"}
+        }
+      }
+    },
+    "incidents": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["date", "organisation", "sector", "status", "summary", "sources"],
+        "additionalProperties": false,
+        "properties": {
+          "date": {"type": "string", "pattern": "^[0-9]{4}(-[0-9]{2}(-[0-9]{2})?)?$"},
+          "organisation": {"type": "string"},
+          "sector": {"type": "string"},
+          "status": {
+            "enum": ["confirmed", "claimed"],
+            "description": "confirmed: the victim, a regulator or a payments body disclosed a ransomware incident; claimed: only a leak-site claim reported in mainstream media, and the victim has not confirmed it"
+          },
+          "group": {"type": "string", "description": "Group id in items, when one is reported"},
+          "attribution_basis": {"type": "string", "description": "How the group was linked: leak-site claim, vendor analysis, or none"},
+          "summary": {"type": "string"},
+          "sources": {"type": "array", "minItems": 1, "items": {"$ref": "#/definitions/source"}}
+        }
+      }
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "date_added", "confidence", "india_evidence", "sources"],
+        "additionalProperties": false,
+        "properties": {
+          "id": {"type": "string", "pattern": "^rw-[a-z0-9-]+$"},
+          "name": {"type": "string"},
+          "aliases": {"type": "array", "items": {"type": "string"}},
+          "origin": {"type": "string"},
+          "model": {"type": "string"},
+          "active_since": {"type": "string", "pattern": "^[0-9]{4}(-[0-9]{2}(-[0-9]{2})?)?$"},
+          "status": {"enum": ["active", "historical"]},
+          "india_evidence": {
+            "enum": ["confirmed-victim", "claimed-victims", "regional-volume", "advisory"],
+            "description": "Strongest evidence linking the group to India: a confirmed Indian victim; Indian victims claimed on its leak site; Indian victims within regional counts; or a government advisory naming it"
+          },
+          "summary": {"type": "string"},
+          "initial_access": {"type": "array", "items": {"type": "string"}},
+          "kev": {
+            "type": "array",
+            "description": "CVE ids in CISA KEV that the cited sources tie to this group's intrusions",
+            "items": {"type": "string", "pattern": "^CVE-[0-9]{4}-[0-9]{4,}$"}
+          },
+          "mitre_group": {
+            "type": "object",
+            "required": ["id", "url"],
+            "additionalProperties": false,
+            "properties": {"id": {"type": "string", "pattern": "^G[0-9]{4}$"}, "url": {"type": "string"}}
+          },
+          "software": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["id", "name"],
+              "additionalProperties": false,
+              "properties": {"id": {"type": "string"}, "name": {"type": "string"}, "url": {"type": "string"}}
+            }
+          },
+          "attack": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["id", "name"],
+              "additionalProperties": false,
+              "properties": {"id": {"type": "string", "pattern": "^T[0-9]{4}(\\.[0-9]{3})?$"}, "name": {"type": "string"}}
+            }
+          },
+          "key_findings": {"type": "array", "items": {"type": "string"}},
+          "recommended_actions": {"type": "array", "items": {"type": "string"}},
+          "confidence": {
+            "enum": ["high", "medium", "low"],
+            "description": "The tracker's confidence in the evidence linking the group to Indian victims"
+          },
+          "india_relevance": {"enum": ["high", "medium", "global"]},
+          "date_added": {"type": "string"},
+          "last_updated": {"type": "string"},
+          "last_verified": {"type": "string"},
+          "tags": {"type": "array", "items": {"type": "string"}},
+          "sources": {"type": "array", "minItems": 1, "items": {"$ref": "#/definitions/source"}}
+        }
+      }
+    }
+  },
+  "definitions": {
+    "source": {
+      "type": "object",
+      "required": ["title", "url"],
+      "additionalProperties": false,
+      "properties": {"title": {"type": "string"}, "url": {"type": "string"}}
+    }
+  }
+}

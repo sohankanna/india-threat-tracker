@@ -55,6 +55,15 @@
       "cadence": "as-observed",
       "description": "Hacktivist groups, alliances and claim waves aimed at Indian targets, with each notable claim's verification status"
     },
+    "ransomware": {
+      "file": "data/ransomware.json",
+      "kind": "feed",
+      "format": "json",
+      "schema": "schema/ransomware.schema.json",
+      "updated_by": "curated",
+      "cadence": "as-observed",
+      "description": "Ransomware groups with evidence of Indian victims, disclosed Indian incidents (confirmed or only claimed) and sourced landscape figures"
+    },
     "assessment": {
       "file": "data/assessment.json",
       "kind": "assessment",
