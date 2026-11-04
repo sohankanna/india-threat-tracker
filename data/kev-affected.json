@@ -1,10 +1,10 @@
 {
  "coverage": {
   "fetch_failures_this_run": 0,
-  "kev_cves": 1767,
-  "records_published": 1767,
+  "kev_cves": 1768,
+  "records_published": 1768,
   "unavailable": 0,
-  "with_version_entries": 1767
+  "with_version_entries": 1768
  },
  "description": "Affected products and versions for every CISA KEV CVE, as written by the CVE Numbering Authority (and ADPs such as CISA vulnrichment) in the official CVE records. Not interpreted: see EXPOSURE-MATCHER.md for how versions are compared.",
  "feed": "kev-affected",
@@ -173766,6 +173766,89 @@
    "record_updated": "2025-10-21T22:55:48.688Z"
   },
   {
+   "cve": "CVE-2024-27834",
+   "products": [
+    {
+     "default_status": "unknown",
+     "product": "Safari",
+     "source": "cna",
+     "vendor": "Apple",
+     "versions": [
+      {
+       "less_than": "17.5",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "iOS and iPadOS",
+     "source": "cna",
+     "vendor": "Apple",
+     "versions": [
+      {
+       "less_than": "16.7.8",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      },
+      {
+       "less_than": "17.5",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "macOS",
+     "source": "cna",
+     "vendor": "Apple",
+     "versions": [
+      {
+       "less_than": "14.5",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "tvOS",
+     "source": "cna",
+     "vendor": "Apple",
+     "versions": [
+      {
+       "less_than": "17.5",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "watchOS",
+     "source": "cna",
+     "vendor": "Apple",
+     "versions": [
+      {
+       "less_than": "10.5",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    }
+   ],
+   "record_state": "PUBLISHED",
+   "record_updated": "2026-11-04T20:21:06.825Z"
+  },
+  {
    "cve": "CVE-2024-28986",
    "products": [
     {
@@ -221669,6 +221752,20 @@
     },
     {
      "default_status": "unknown",
+     "product": "Designcenter X Essentials",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
      "product": "DFMExpress",
      "source": "adp:siemens-SADP",
      "vendor": "Siemens",
@@ -221753,6 +221850,20 @@
     },
     {
      "default_status": "unknown",
+     "product": "Opcenter Execution Discrete",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
      "product": "Opcenter Execution Foundation",
      "source": "adp:siemens-SADP",
      "vendor": "Siemens",
@@ -221768,6 +221879,20 @@
     {
      "default_status": "unknown",
      "product": "Opcenter Execution Pharma",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Opcenter Execution Process",
      "source": "adp:siemens-SADP",
      "vendor": "Siemens",
      "versions": [
@@ -221935,6 +222060,20 @@
     },
     {
      "default_status": "unknown",
+     "product": "Pathway to Learning Engineering",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
      "product": "Polarion",
      "source": "adp:siemens-SADP",
      "vendor": "Siemens",
@@ -222076,6 +222215,20 @@
     {
      "default_status": "unknown",
      "product": "Teamcenter Product Cost Management",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Teamcenter Share",
      "source": "adp:siemens-SADP",
      "vendor": "Siemens",
      "versions": [
@@ -222383,7 +222536,7 @@
     }
    ],
    "record_state": "PUBLISHED",
-   "record_updated": "2026-10-30T18:31:36.959Z"
+   "record_updated": "2026-11-04T17:47:40.945Z"
   },
   {
    "cve": "CVE-2026-110447",
@@ -253856,6 +254009,6 @@
    "record_updated": "2026-10-30T23:18:16.598Z"
   }
  ],
- "kev_generated_at": "2026-11-04T09:44:28Z",
+ "kev_generated_at": "2026-11-04T20:53:34Z",
  "source": "CVE Project cvelistV5 (https://github.com/CVEProject/cvelistV5)"
 }

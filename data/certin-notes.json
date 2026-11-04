@@ -6,7 +6,13 @@
     "url": "https://www.cert-in.org.in/s2cMainServlet?pageid=VLNLIST"
   },
   "note": "Vulnerability notes (CIVN) only, not advisories (CIAD). A year is complete when every code up to the highest listed one has been checked; until then, a CVE missing here may still have a note.",
-  "scan": {},
+  "scan": {
+    "2026": {
+      "next": 1,
+      "highest_listed": 537,
+      "complete": false
+    }
+  },
   "count": 5,
   "items": [
     {

@@ -1765,7 +1765,7 @@
     "category": "External analysis",
     "value": "CVE-2024-8069",
     "to_ids": false,
-    "comment": "Citrix Session Recording; KEV 2025-08-25; EPSS 0.211",
+    "comment": "Citrix Session Recording; KEV 2025-08-25; EPSS 0.182",
     "timestamp": "1756080000",
     "distribution": "5",
     "disable_correlation": false
@@ -1996,7 +1996,7 @@
     "category": "External analysis",
     "value": "CVE-2026-20127",
     "to_ids": false,
-    "comment": "Cisco Catalyst SD-WAN Controller and Manager; KEV 2026-02-25; EPSS 0.893",
+    "comment": "Cisco Catalyst SD-WAN Controller and Manager; KEV 2026-02-25; EPSS 0.876",
     "timestamp": "1771977600",
     "distribution": "5",
     "disable_correlation": false
@@ -2172,7 +2172,7 @@
     "category": "External analysis",
     "value": "CVE-2026-20128",
     "to_ids": false,
-    "comment": "Cisco Catalyst SD-WAN Manager; KEV 2026-04-20; EPSS 0.073",
+    "comment": "Cisco Catalyst SD-WAN Manager; KEV 2026-04-20; EPSS 0.083",
     "timestamp": "1776643200",
     "distribution": "5",
     "disable_correlation": false
@@ -2183,7 +2183,7 @@
     "category": "External analysis",
     "value": "CVE-2026-20133",
     "to_ids": false,
-    "comment": "Cisco Catalyst SD-WAN Manager; KEV 2026-04-20; EPSS 0.315",
+    "comment": "Cisco Catalyst SD-WAN Manager; KEV 2026-04-20; EPSS 0.353",
     "timestamp": "1776643200",
     "distribution": "5",
     "disable_correlation": false
@@ -2403,7 +2403,7 @@
     "category": "External analysis",
     "value": "CVE-2026-63077",
     "to_ids": false,
-    "comment": "JetBrains TeamCity; KEV 2026-08-05; EPSS 0.936; known ransomware use",
+    "comment": "JetBrains TeamCity; KEV 2026-08-05; EPSS 0.949; known ransomware use",
     "timestamp": "1785888000",
     "distribution": "5",
     "disable_correlation": false
@@ -2590,7 +2590,7 @@
     "category": "External analysis",
     "value": "CVE-2026-88771",
     "to_ids": false,
-    "comment": "Citrix NetScaler; KEV 2026-09-27; EPSS 0.822",
+    "comment": "Citrix NetScaler; KEV 2026-09-27; EPSS 0.832",
     "timestamp": "1790467200",
     "distribution": "5",
     "disable_correlation": false
@@ -2689,7 +2689,7 @@
     "category": "External analysis",
     "value": "CVE-2026-21589",
     "to_ids": false,
-    "comment": "Atlassian Multiple Products; KEV 2026-10-15; EPSS 0.995",
+    "comment": "Atlassian Multiple Products; KEV 2026-10-15; EPSS 0.997",
     "timestamp": "1792022400",
     "distribution": "5",
     "disable_correlation": false
@@ -2733,7 +2733,7 @@
     "category": "External analysis",
     "value": "CVE-2026-97229",
     "to_ids": false,
-    "comment": "GitLab Community Edition and Enterprise Edition; KEV 2026-10-29; EPSS 0.277",
+    "comment": "GitLab Community Edition and Enterprise Edition; KEV 2026-10-29; EPSS 0.652",
     "timestamp": "1793232000",
     "distribution": "5",
     "disable_correlation": false
@@ -2755,7 +2755,7 @@
     "category": "External analysis",
     "value": "CVE-2026-118527",
     "to_ids": false,
-    "comment": "Ivanti Connect Secure; KEV 2026-10-30",
+    "comment": "Ivanti Connect Secure; KEV 2026-10-30; EPSS 0.008",
     "timestamp": "1793318400",
     "distribution": "5",
     "disable_correlation": false
