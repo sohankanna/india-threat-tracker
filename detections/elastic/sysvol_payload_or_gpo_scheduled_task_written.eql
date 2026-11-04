@@ -1,0 +1,9 @@
+// Executable or Scheduled-Task Policy Written to SYSVOL  (The Gentlemen: GPO / NETLOGON deployment)
+// Source rule: ../sigma/sysvol_payload_or_gpo_scheduled_task_written.yml
+// SCHEMA: ECS / Elastic Defend (Elastic Agent) on domain controllers. Fields are
+//   ECS (file.path, file.extension, file.name).
+// Rule type: EQL | Index: logs-endpoint.events.file-*
+
+file where event.type == "creation"
+  and file.path : "*\\SYSVOL\\*"
+  and (file.extension : ("exe", "dll", "bat", "cmd", "ps1", "vbs", "js", "hta", "msi") or file.name : "ScheduledTasks.xml")

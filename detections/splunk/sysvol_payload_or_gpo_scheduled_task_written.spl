@@ -1,0 +1,11 @@
+# Executable or Scheduled-Task Policy Written to SYSVOL  (The Gentlemen: GPO / NETLOGON deployment)
+# Source rule: ../sigma/sysvol_payload_or_gpo_scheduled_task_written.yml
+# Context:     https://www.sohankanna.com/tracker#ransomware-rw-the-gentlemen
+#
+# Requires: Sysmon on domain controllers + Splunk Add-on for Sysmon. File create = Event ID 11.
+
+sourcetype="XmlWinEventLog:Microsoft-Windows-Sysmon/Operational" EventCode=11
+    TargetFilename="*\\SYSVOL\\*"
+    (TargetFilename="*.exe" OR TargetFilename="*.dll" OR TargetFilename="*.bat" OR TargetFilename="*.cmd" OR TargetFilename="*.ps1" OR TargetFilename="*.vbs" OR TargetFilename="*.js" OR TargetFilename="*.hta" OR TargetFilename="*.msi" OR TargetFilename="*\\ScheduledTasks.xml")
+| table _time, host, user, Image, TargetFilename
+| sort - _time

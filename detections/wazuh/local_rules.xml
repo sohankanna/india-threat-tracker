@@ -4,14 +4,14 @@
   Drop into /var/ossec/etc/rules/local_rules.xml (or a file alongside it) and restart wazuh-manager.
 
   Field names and parent rule IDs are taken from the Wazuh 4.14 ruleset:
-    61603 / 61615  Sysmon Event 1 / Event 13   (0595-win-sysmon_rules.xml, fields win.eventdata.*)
+    61603 / 61613 / 61615  Sysmon Event 1 / 11 / 13   (0595-win-sysmon_rules.xml, fields win.eventdata.*)
     64500          Palo Alto base rule          (0700-paloalto_rules.xml; SYSTEM decoder fields:
                                                  type, content_threat_type, event_id, description)
     87802          Microsoft Graph via azure-logs, azure_tag azure-ad-graph (0555-azure_rules.xml);
                    sign-ins pulled with <query>auditLogs/signIns</query> keep Graph's field names
 
   Requirements by rule:
-    100210-100213  Windows + Sysmon (wazuh-agent, Sysmon channel collected).
+    100210-100214  Windows + Sysmon (wazuh-agent, Sysmon channel collected).
     100220         PAN-OS SYSTEM logs forwarded to Wazuh (built-in Palo Alto decoder).
     100230/100231  Entra ID sign-ins via the azure-logs Graph integration.
 
@@ -64,6 +64,17 @@
     <field name="win.eventdata.image" type="pcre2">(?i)\\(wscript|cscript|powershell|pwsh|mshta|cmd|rundll32|regsvr32|curl|certutil|bitsadmin)\.exe$</field>
     <description>Mustang Panda-style CHM delivery: $(win.eventdata.parentImage) spawned $(win.eventdata.image)</description>
     <mitre><id>T1218.001</id><id>T1204.002</id></mitre>
+  </rule>
+
+  <!-- Executable or scheduled-task policy written to SYSVOL on a domain controller.
+       The Gentlemen stage payloads in NETLOGON and deploy them through Group Policy.
+       Sysmon Event 11 (FileCreate) is rule 61613. Separators are matched as \\+
+       because the eventchannel decoder doubles backslashes. -->
+  <rule id="100214" level="10">
+    <if_sid>61613</if_sid>
+    <field name="win.eventdata.targetFilename" type="pcre2">(?i)\\+SYSVOL\\+.*(\.(exe|dll|bat|cmd|ps1|vbs|js|hta|msi)|\\+ScheduledTasks\.xml)$</field>
+    <description>Payload or GPO scheduled task written to SYSVOL: $(win.eventdata.targetFilename) - check for domain-wide deployment</description>
+    <mitre><id>T1484.001</id><id>T1570</id></mitre>
   </rule>
 
 </group>

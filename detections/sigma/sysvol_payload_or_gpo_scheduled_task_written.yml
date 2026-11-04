@@ -1,0 +1,44 @@
+title: Executable or Scheduled-Task Policy Written to SYSVOL
+id: 5c0a7d1e-3b9f-4f64-9d3c-2e7b1a6f8c41
+status: experimental
+description: >
+  Detects an executable, script or Group Policy scheduled-task file being
+  created under SYSVOL on a domain controller. SYSVOL is replicated to every
+  domain controller and read by every domain member, so a payload or a new
+  ScheduledTasks.xml there can run across the whole domain. LevelBlue reports
+  that The Gentlemen ransomware stages payloads in NETLOGON (which is part of
+  SYSVOL) and deploys them domain-wide through Group Policy. Legitimate logon
+  scripts and software deployment do the same thing, so expect to tune.
+references:
+  - https://www.sohankanna.com/tracker#ransomware-rw-the-gentlemen
+  - https://www.levelblue.com/blogs/spiderlabs-blog/a-closer-look-at-the-gentlemens-alleged-leak
+author: Sohan Kanna (@sohankanna)
+date: 2026-11-04
+tags:
+  - attack.defense-evasion
+  - attack.privilege-escalation
+  - attack.t1484.001
+  - attack.lateral-movement
+  - attack.t1570
+logsource:
+  product: windows
+  category: file_event
+detection:
+  selection:
+    TargetFilename|contains: '\SYSVOL\'
+    TargetFilename|endswith:
+      - '.exe'
+      - '.dll'
+      - '.bat'
+      - '.cmd'
+      - '.ps1'
+      - '.vbs'
+      - '.js'
+      - '.hta'
+      - '.msi'
+      - '\ScheduledTasks.xml'
+  condition: selection
+falsepositives:
+  - Administrators publishing logon or startup scripts and software through Group Policy
+  - Group Policy Preferences scheduled tasks created by administrators
+level: medium

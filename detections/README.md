@@ -35,6 +35,7 @@ Every rule links back to the write-up on [sohankanna.com](https://www.sohankanna
 | `office_archive_lnk_spawns_lolbin` | ZIP→LNK→LOLBin delivery (SideCopy / APT36) |
 | `office_document_spawns_script_interpreter` | Malicious-macro execution (Crimson RAT / APT36) |
 | `chm_help_file_spawns_script_or_lolbin` | Help-file (.chm) delivery running code through hh.exe (Mustang Panda / LOTUSLITE) |
+| `sysvol_payload_or_gpo_scheduled_task_written` | Payload or Group Policy scheduled task staged in SYSVOL/NETLOGON for domain-wide deployment (The Gentlemen) |
 
 Convert to your SIEM with [`sigma`](https://github.com/SigmaHQ/sigma-cli):
 
