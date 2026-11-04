@@ -31,10 +31,11 @@ class Manifest(unittest.TestCase):
                 self.assertEqual(validated.get(r["file"]), r["schema"], r["file"])
 
     def test_automated_cadence_matches_the_workflow_schedule(self):
-        crons = re.findall(r'cron:\s*"([^"]+)"', load(".github/workflows/update.yml"))
-        expected = {1: "daily", 2: "twice-daily"}[len(crons)]
         for name, r in self.meta.items():
             if r["updated_by"] == "automation":
+                workflow = r.get("workflow", "update.yml")
+                crons = re.findall(r'cron:\s*"([^"]+)"', load(f".github/workflows/{workflow}"))
+                expected = {1: "daily", 2: "twice-daily"}[len(crons)]
                 self.assertEqual(r["cadence"], expected, name)
 
 

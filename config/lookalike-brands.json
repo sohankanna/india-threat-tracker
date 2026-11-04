@@ -1,0 +1,26 @@
+{
+  "description": "Brands watched for lookalike domains by scripts/scan_lookalikes.py. 'labels' are the names permuted (each with every seed TLD); 'official' domains and their subdomains are never reported. Labels shorter than short_label_length only get the dictionary and hyphenation fuzzers, because typos of very short names are mostly unrelated real sites.",
+  "seed_tlds": ["com", "in"],
+  "short_label_length": 5,
+  "fuzzers": ["addition", "insertion", "omission", "replacement", "repetition", "transposition", "vowel-swap", "hyphenation", "plural", "dictionary", "tld-swap", "various"],
+  "short_fuzzers": ["dictionary", "hyphenation"],
+  "dictionary": ["kyc", "update", "reward", "rewards", "points", "redeem", "login", "netbanking", "secure", "verify", "verification", "support", "care", "helpdesk", "refund", "pay", "upi", "bonus", "card", "online", "apk", "app", "challan", "echallan", "fine", "pending", "alert", "blocked"],
+  "tlds": ["com", "in", "co.in", "net", "org", "info", "xyz", "top", "online", "site", "live", "shop", "app", "click", "icu", "cc", "vip", "life", "store"],
+  "brands": [
+    {"id": "sbi", "name": "State Bank of India", "sector": "banking", "labels": ["onlinesbi", "yonosbi", "sbi"], "official": ["sbi.co.in", "onlinesbi.sbi", "sbi.bank.in"]},
+    {"id": "hdfc-bank", "name": "HDFC Bank", "sector": "banking", "labels": ["hdfcbank"], "official": ["hdfcbank.com", "hdfc.bank.in"]},
+    {"id": "icici-bank", "name": "ICICI Bank", "sector": "banking", "labels": ["icicibank"], "official": ["icicibank.com", "icici.bank.in"]},
+    {"id": "axis-bank", "name": "Axis Bank", "sector": "banking", "labels": ["axisbank"], "official": ["axisbank.com", "axis.bank.in"]},
+    {"id": "kotak", "name": "Kotak Mahindra Bank", "sector": "banking", "labels": ["kotak", "kotakbank"], "official": ["kotak.com", "kotak.bank.in"]},
+    {"id": "pnb", "name": "Punjab National Bank", "sector": "banking", "labels": ["pnbindia"], "official": ["pnbindia.in", "pnb.bank.in"]},
+    {"id": "bank-of-baroda", "name": "Bank of Baroda", "sector": "banking", "labels": ["bankofbaroda"], "official": ["bankofbaroda.in", "bankofbaroda.bank.in"]},
+    {"id": "npci", "name": "NPCI / UPI / BHIM", "sector": "payments", "labels": ["npci", "bhimupi"], "official": ["npci.org.in", "bhimupi.org.in"]},
+    {"id": "paytm", "name": "Paytm", "sector": "payments", "labels": ["paytm"], "official": ["paytm.com", "paytmbank.com"]},
+    {"id": "phonepe", "name": "PhonePe", "sector": "payments", "labels": ["phonepe"], "official": ["phonepe.com"]},
+    {"id": "india-post", "name": "India Post", "sector": "government", "labels": ["indiapost"], "official": ["indiapost.gov.in"]},
+    {"id": "income-tax", "name": "Income Tax Department", "sector": "government", "labels": ["incometax", "incometaxindia"], "official": ["incometax.gov.in", "incometaxindia.gov.in"]},
+    {"id": "parivahan", "name": "Parivahan / e-Challan", "sector": "government", "labels": ["parivahan", "echallan"], "official": ["parivahan.gov.in"]},
+    {"id": "epfo", "name": "EPFO", "sector": "government", "labels": ["epfindia", "epfo"], "official": ["epfindia.gov.in"]},
+    {"id": "uidai", "name": "UIDAI / Aadhaar", "sector": "government", "labels": ["uidai", "myaadhaar"], "official": ["uidai.gov.in"]}
+  ]
+}

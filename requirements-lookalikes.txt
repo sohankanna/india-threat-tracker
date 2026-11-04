@@ -1,0 +1,5 @@
+# Only for the lookalike-domain watch (scripts/scan_lookalikes.py,
+# .github/workflows/lookalikes.yml). Pinned: the permutation set must not shift
+# silently, or every changed variant would show up as a "new" lead.
+dnstwist==20250130
+dnspython>=2.6,<3

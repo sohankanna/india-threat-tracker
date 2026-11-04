@@ -115,7 +115,23 @@ Import `data/india-threat-tracker-stix.json` (STIX 2.1, validated with the
 OASIS validator in CI). *OpenCTI is untested.* Object ids are stable across
 updates, so re-importing updates objects rather than duplicating them.
 
+<<<<<<< ours
 ## 7. Fraud and payments teams
+=======
+## 7. Brand-protection and fraud teams: lookalike domains
+
+New lookalikes of Indian banks, payment apps and government sites, newest first:
+
+```bash
+curl -s https://raw.githubusercontent.com/sohankanna/india-threat-tracker/main/data/lookalike-domains.json \
+  | jq -r '.items[] | select(.baseline == false and .active) | [.first_seen, .domain, .brand_name, (.first_cert // "-")] | @tsv'
+```
+
+Want your own brand watched? Add it to `config/lookalike-brands.json` in a pull
+request. *The scan runs daily in GitHub Actions.*
+
+## 8. Fraud and payments teams
+>>>>>>> theirs
 
 `detections/fraud/upi-fraud-signals.yaml` describes six risk-engine signals for
 the fake-APK and UPI fraud chain (OTP read then instant transfer, new-device
@@ -131,6 +147,13 @@ transaction, device and authentication data, not drop-in rules.
 * India relevance is a keyword heuristic. It tells you where to look first, not
   that you are exposed.
 
+<<<<<<< ours
+=======
+* Lookalike-domain leads (`data/lookalike-domains.json`, and the lookalike
+  event in the MISP feed) are leads, not confirmed phishing. They are never
+  marked for blocking. Check who registered one before acting.
+
+>>>>>>> theirs
 Found a false positive, a broken recipe or a missing indicator? Open an issue;
 the [issue forms](https://github.com/sohankanna/india-threat-tracker/issues/new/choose)
 ask for what is needed.

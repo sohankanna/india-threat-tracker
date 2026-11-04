@@ -18,6 +18,10 @@ PAIRS = [
     ("data/relevance-overrides.json", "schema/relevance-overrides.schema.json"),
     ("data/meta.json", "schema/meta.schema.json"),
     ("data/kev-affected.json", "schema/kev-affected.schema.json"),
+    ("data/certin-notes.json", "schema/certin-notes.schema.json"),
+    ("data/certin-gap.json", "schema/certin-gap.schema.json"),
+    ("data/lookalike-domains.json", "schema/lookalike-domains.schema.json"),
+    ("data/attack-coverage.json", "schema/attack-coverage.schema.json"),
 ]
 
 

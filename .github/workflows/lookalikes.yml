@@ -1,0 +1,52 @@
+name: Lookalike domains
+
+# Once a day: generate lookalike variants of Indian bank, payment and
+# government domains, resolve them, check new ones against certificate
+# transparency (crt.sh), and commit data/lookalike-domains.json. Shares the
+# update job's concurrency group so the two never push at the same time.
+
+on:
+  schedule:
+    - cron: "41 21 * * *"   # ~03:11 IST
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-feed
+  cancel-in-progress: false
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install deps
+        run: pip install -r requirements.txt -r requirements-lookalikes.txt
+
+      - name: Scan, validate and push
+        run: |
+          git config user.name "india-threat-tracker-bot"
+          git config user.email "actions@github.com"
+          bash scripts/publish_lookalikes.sh
+          python - <<'PY' >> "$GITHUB_STEP_SUMMARY"
+          import json
+          f = json.load(open("data/lookalike-domains.json"))
+          s = f["summary"]
+          print(f"## Lookalike scan {f['generated_at']}\n")
+          print(f"{f['candidates_checked']} variants checked, {s['registered']} registered, "
+                f"**{s['new_last_30_days']} new in the last 30 days** "
+                f"({s['new_with_certificate_last_30_days']} with a TLS certificate).\n")
+          new = [i for i in f["items"] if not i["baseline"]][:25]
+          if new:
+              print("| First seen | Domain | Brand | Certificate |\n|---|---|---|---|")
+              for i in new:
+                  print(f"| {i['first_seen']} | `{i['domain']}` | {i['brand_name']} | {i['first_cert'] or '-'} |")
+          PY

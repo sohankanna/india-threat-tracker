@@ -1,0 +1,13 @@
+# Zoho WorkDrive API Lookup From an Unexpected Process  (Mustang Panda / ZOHOMURK)
+# Source rule: ../sigma/zoho_workdrive_api_from_unexpected_process.yml
+# Context:     https://www.sohankanna.com/tracker#actor-apt-mustang-panda
+#
+# Requires: Sysmon with DNS query logging + Splunk Add-on for Sysmon. DNS query = Event ID 22.
+# TUNE: add approved Zoho clients and integrations to the NOT clauses.
+
+sourcetype="XmlWinEventLog:Microsoft-Windows-Sysmon/Operational" EventCode=22
+    (QueryName="*zohoapis.com" OR QueryName="*zohoapis.in" OR QueryName="*workdrive.zoho.com" OR QueryName="*workdrive.zoho.in")
+    NOT (Image="*\\chrome.exe" OR Image="*\\msedge.exe" OR Image="*\\firefox.exe" OR Image="*\\brave.exe" OR Image="*\\opera.exe" OR Image="*\\iexplore.exe")
+    NOT Image="*\\Zoho\\*"
+| table _time, host, user, Image, QueryName
+| sort - _time

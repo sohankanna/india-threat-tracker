@@ -1,0 +1,248 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "CERT-In vs KEV gap",
+  "description": "India-relevant CISA KEV entries matched against CERT-In vulnerability notes. Built offline by scripts/build_certin_gap.py.",
+  "type": "object",
+  "required": [
+    "feed",
+    "generated_at",
+    "window_start",
+    "scan_complete",
+    "scanned",
+    "method",
+    "summary",
+    "count",
+    "items"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "feed": {
+      "const": "certin-gap"
+    },
+    "generated_at": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "window_start": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "scan_complete": {
+      "type": "boolean"
+    },
+    "scanned": {
+      "type": "object",
+      "patternProperties": {
+        "^\\d{4}$": {
+          "type": "object",
+          "required": [
+            "checked_through",
+            "highest_listed"
+          ],
+          "properties": {
+            "checked_through": {
+              "type": "integer"
+            },
+            "highest_listed": {
+              "type": "integer"
+            },
+            "stalled": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "method": {
+      "type": "string"
+    },
+    "summary": {
+      "type": "object",
+      "required": [
+        "kev_considered",
+        "covered",
+        "no_note",
+        "pending",
+        "certin_first",
+        "same_day",
+        "kev_first",
+        "median_lag_days",
+        "high_relevance_without_note"
+      ],
+      "properties": {
+        "kev_considered": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "covered": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "no_note": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "pending": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "certin_first": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "same_day": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "kev_first": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "high_relevance_without_note": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "median_lag_days": {
+          "type": [
+            "number",
+            "null"
+          ]
+        }
+      }
+    },
+    "count": {
+      "type": "integer"
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "cve",
+          "vendor",
+          "product",
+          "india_relevance",
+          "kev_added",
+          "known_ransomware",
+          "epss",
+          "status",
+          "certin",
+          "lag_days"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "cve": {
+            "type": "string",
+            "pattern": "^CVE-\\d{4}-\\d{4,}$"
+          },
+          "vendor": {
+            "type": "string"
+          },
+          "product": {
+            "type": "string"
+          },
+          "india_relevance": {
+            "enum": [
+              "high",
+              "medium"
+            ]
+          },
+          "kev_added": {
+            "type": "string",
+            "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+          },
+          "known_ransomware": {
+            "type": "boolean"
+          },
+          "epss": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "status": {
+            "enum": [
+              "covered",
+              "no-note",
+              "pending"
+            ]
+          },
+          "certin": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "code",
+                "issued",
+                "severity",
+                "url"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "code": {
+                  "type": "string",
+                  "pattern": "^CIVN-\\d{4}-\\d{4}$"
+                },
+                "issued": {
+                  "type": "string",
+                  "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+                },
+                "severity": {
+                  "enum": [
+                    "CRITICAL",
+                    "HIGH",
+                    "MEDIUM",
+                    "LOW",
+                    "UNKNOWN"
+                  ]
+                },
+                "url": {
+                  "type": "string",
+                  "pattern": "^https://www\\.cert-in\\.org\\.in/"
+                }
+              }
+            }
+          },
+          "lag_days": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          }
+        },
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "status": {
+                  "const": "covered"
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "certin": {
+                  "minItems": 1
+                },
+                "lag_days": {
+                  "type": "integer"
+                }
+              }
+            },
+            "else": {
+              "properties": {
+                "certin": {
+                  "maxItems": 0
+                },
+                "lag_days": {
+                  "type": "null"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+title: Zoho WorkDrive API Lookup From an Unexpected Process
+id: 8e4b2c91-6d0a-4a57-b3f8-1c9e5d7a2f60
+status: experimental
+description: >
+  Detects a DNS lookup of the Zoho API or WorkDrive hosts by a process that is
+  not a web browser or an installed Zoho client. Mustang Panda's ZOHOMURK
+  implant, used against Indian government networks in June 2026, carries
+  hardcoded Zoho OAuth credentials and uses an attacker-owned WorkDrive account
+  as a dead drop for commands and stolen data. Zoho is widely used in India, so
+  baseline the processes that legitimately call its API before alerting.
+references:
+  - https://www.sohankanna.com/tracker#actor-apt-mustang-panda
+  - https://thehackernews.com/2026/06/mustang-panda-uses-zoho-workdrive-as.html
+author: Sohan Kanna (@sohankanna)
+date: 2026-11-04
+tags:
+  - attack.command-and-control
+  - attack.t1102.002
+  - attack.exfiltration
+  - attack.t1567.002
+logsource:
+  product: windows
+  category: dns_query
+detection:
+  selection:
+    QueryName|endswith:
+      - 'zohoapis.com'
+      - 'zohoapis.in'
+      - 'workdrive.zoho.com'
+      - 'workdrive.zoho.in'
+  filter_browsers:
+    Image|endswith:
+      - '\chrome.exe'
+      - '\msedge.exe'
+      - '\firefox.exe'
+      - '\brave.exe'
+      - '\opera.exe'
+      - '\iexplore.exe'
+  filter_zoho_clients:
+    # TUNE: add the install paths of approved Zoho desktop clients and any
+    # internal tools that call the Zoho API.
+    Image|contains: '\Zoho\'
+  condition: selection and not filter_browsers and not filter_zoho_clients
+falsepositives:
+  - Zoho desktop clients installed outside a folder named Zoho
+  - Internal scripts or integrations that call the Zoho API
+level: medium

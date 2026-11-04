@@ -26,6 +26,13 @@ https://raw.githubusercontent.com/sohankanna/india-threat-tracker/main/data/
 | `relevance-overrides.json` | Hand-reviewed India-relevance decisions the pipeline applies | When an entry is reviewed | [`relevance-overrides.schema.json`](schema/relevance-overrides.schema.json) |
 | `india-threat-tracker-stix.json` | STIX 2.1 Bundle for CTI platforms; mapping, validation and limitations in [STIX-GUIDE.md](STIX-GUIDE.md) | Rebuilt by every automated update; CI rejects a stale bundle | OASIS STIX 2.1 |
 | `misp-feed/` (repo root) | Native MISP feed (manifest, hashes, one file per event): campaign indicators re-fanged, high-relevance KEV CVEs; see [misp-feed/README.md](misp-feed/README.md) | Rebuilt by every automated update; CI rejects a stale feed | MISP feed format |
+<<<<<<< ours
+=======
+| `certin-notes.json` | CERT-In vulnerability notes (CIVN) and how much of each year has been checked | Twice daily, automated (a batch per run) | [`certin-notes.schema.json`](schema/certin-notes.schema.json) |
+| `certin-gap.json` | India-relevant KEV entries matched against CERT-In notes, with lag in days | Rebuilt by every automated update; CI rejects a stale file | [`certin-gap.schema.json`](schema/certin-gap.schema.json) |
+| `lookalike-domains.json` | Lookalike domains of Indian banks, payment apps and government sites. Leads, not verdicts | Daily, automated (`lookalikes.yml`) | [`lookalike-domains.schema.json`](schema/lookalike-domains.schema.json) |
+| `attack-coverage.json` | ATT&CK techniques of the tracked actors and whether a rule covers each (also as Navigator layers in `layers/`) | Rebuilt by every automated update; CI rejects a stale file or an unknown technique id | [`attack-coverage.schema.json`](schema/attack-coverage.schema.json) |
+>>>>>>> theirs
 | `kev-affected.json` | Affected products and versions for every KEV CVE, from the official CVE records, not interpreted; used by the [Exposure Matcher](EXPOSURE-MATCHER.md) | Twice daily, automated | [`kev-affected.schema.json`](schema/kev-affected.schema.json) |
 | `meta.json` | Manifest of every data file: kind, format, schema, who updates it and how often | When a file is added or its cadence changes | [`meta.schema.json`](schema/meta.schema.json) |
 
@@ -139,6 +146,37 @@ Three parts:
 
 Organisations named only on a leak site are counted in `landscape` and never
 named in `incidents`.
+
+### `certin-notes.json` and `certin-gap.json`
+
+| Field | Meaning |
+|---|---|
+| `scan.<year>.next` | The next CIVN code to check; every code below it has been checked |
+| `scan.<year>.highest_listed` | Highest code on CERT-In's listing for that year at the last run |
+| `scan.<year>.complete` | Every code up to `highest_listed` has been checked |
+| `scan.<year>.stalled` | Present only if a published note could not be read; the scan waits there |
+| `items[].cves` | Every CVE ID the note names, in order |
+| gap `status` | `covered`, `no-note` (only once the scan is complete; a note from before the window may still exist) or `pending` |
+| gap `lag_days` | First CERT-In note date minus KEV date. Negative: CERT-In published first |
+
+CERT-In notes list CVEs that a vendor fixed; KEV lists CVEs seen exploited. A
+note names everything in a release, so most CVEs in `certin-notes.json` are not
+in KEV. The gap file only looks at KEV entries.
+
+### `lookalike-domains.json`
+
+| Field | Meaning |
+|---|---|
+| `domain` | The lookalike, defanged (`sbi-kyc[.]com`) |
+| `brand`, `label`, `fuzzer` | Which brand and name it imitates, and how (`omission`, `dictionary`, `tld-swap`...) |
+| `baseline` | `true` if it already existed at the first scan (`baseline_date`). Only `false` entries are new registrations |
+| `first_seen` / `last_seen` | Dates the scan first and last found it registered |
+| `active` | Registered at the latest scan. Entries unseen for 90 days are dropped |
+| `a`, `ns`, `mx` | What it resolved to. Shared hosting is common: do not block an IP because a lookalike uses it |
+| `first_cert` | Earliest TLS certificate crt.sh knows for the exact name (looked up for new leads only) |
+
+Before acting on a lead, check who registered it: banks and government
+departments often register lookalikes of their own names defensively.
 
 ### `iocs.csv`
 

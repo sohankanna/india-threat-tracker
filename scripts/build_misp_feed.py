@@ -17,7 +17,13 @@ Events:
     only the campaign's own `iocs` are exported, never `infrastructure`
     context (same rule as data/iocs.txt);
   * one for the India-relevant KEV watchlist (high relevance): vulnerability
+<<<<<<< ours
     attributes, not for blocking (to_ids false).
+=======
+    attributes, not for blocking (to_ids false);
+  * one for new lookalike-domain leads (data/lookalike-domains.json, last 30
+    days): domain attributes with to_ids false, because they are unverified.
+>>>>>>> theirs
 
 Values are re-fanged, as in the STIX bundle: MISP has to correlate real
 values. The human-readable exports (data/iocs.txt, iocs.csv) stay defanged.
@@ -181,8 +187,39 @@ def watchlist_event(watchlist):
                        "(CISA KEV + EPSS)", latest, ts, "2", tags, attrs)]
 
 
+<<<<<<< ours
 def build():
     events = campaign_events(load("smishing-apk.json")) + watchlist_event(load("watchlist.json"))
+=======
+def lookalike_event(feed):
+    """New lookalike-domain leads (last 30 days, still registered). Context only: to_ids off."""
+    if not feed or not feed.get("items"):
+        return []
+    since = (dt.date.fromisoformat(feed["generated_at"]) - dt.timedelta(days=30)).isoformat()
+    leads = [i for i in feed["items"] if i["active"] and not i["baseline"] and i["first_seen"] >= since]
+    if not leads:
+        return []
+    key = "lookalikes/new"
+    latest = max(i["first_seen"] for i in leads)
+    attrs = []
+    for i in sorted(leads, key=lambda i: (i["first_seen"], i["domain"])):
+        note = f"Lookalike of {i['brand_name']} ({i['fuzzer']}), first seen {i['first_seen']}"
+        if i.get("first_cert"):
+            note += f", first TLS certificate {i['first_cert']}"
+        attrs.append(attribute(key, ("domain", "Network activity", False, ""), refang(i["domain"]),
+                               epoch(i["first_seen"]), note + ". Lead, not verified."))
+    tags = ["tlp:clear", 'india-threat-tracker:id="lookalike-leads"']
+    return [event(key, "India Threat Tracker: new lookalike domains of Indian banks, payment apps and "
+                       "government sites (leads, not verified)", latest, epoch(latest), "3", tags, attrs)]
+
+
+def build():
+    lookalikes = None
+    if os.path.exists(os.path.join(ROOT, "data", "lookalike-domains.json")):
+        lookalikes = load("lookalike-domains.json")
+    events = (campaign_events(load("smishing-apk.json")) + watchlist_event(load("watchlist.json"))
+              + lookalike_event(lookalikes))
+>>>>>>> theirs
     files = {}
     manifest = {}
     hashes = []

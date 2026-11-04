@@ -1,0 +1,38 @@
+title: BitLocker Recovery Information Read From Active Directory
+id: 2f9d6a3b-7c41-4e8a-a5b0-9d3e1f6c4b72
+status: experimental
+description: >
+  Detects a user account reading BitLocker recovery information
+  (msFVE-RecoveryInformation objects) from Active Directory. Recovery passwords
+  unlock encrypted disks, so reading them is a common step after an intruder
+  gets directory credentials: UTA0576, which exploited the October 2026 Ivanti
+  Connect Secure chain, searched for BitLocker recovery keys. Helpdesk staff
+  read these legitimately, so filter your approved accounts. Needs Directory
+  Service Access auditing and a SACL on the objects (see DATA-SOURCES.md).
+references:
+  - https://www.sohankanna.com/tracker
+  - https://thehackernews.com/2026/10/attackers-chain-three-ivanti-connect.html
+  - https://learn.microsoft.com/en-us/windows/win32/adschema/c-msfve-recoveryinformation
+author: Sohan Kanna (@sohankanna)
+date: 2026-11-04
+tags:
+  - attack.credential-access
+  - attack.t1552
+  - attack.discovery
+  - attack.t1087.002
+logsource:
+  product: windows
+  service: security
+detection:
+  selection:
+    EventID: 4662
+    ObjectType|contains: 'ea715d30-8f53-40d0-bd1e-6109186d782c'
+    AccessMask:
+      - '0x10'
+      - '0x100'
+  filter_machine_accounts:
+    SubjectUserName|endswith: '$'
+  condition: selection and not filter_machine_accounts
+falsepositives:
+  - Helpdesk or MBAM accounts retrieving recovery keys for users (add them as a filter)
+level: medium

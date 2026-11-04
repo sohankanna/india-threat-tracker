@@ -62,10 +62,32 @@ class MispFeed(unittest.TestCase):
                     if isinstance(v, str):
                         self.assertNotIn(feed.refang(v).lower(), values, (c["id"], v))
 
+<<<<<<< ours
     def test_only_blockable_types_are_marked_for_ids(self):
         for e in self.events.values():
             for a in e["Attribute"]:
                 self.assertEqual(a["to_ids"], a["type"] in ("domain", "url", "sha256"), a)
+=======
+    def test_only_blockable_campaign_indicators_are_marked_for_ids(self):
+        for e in self.events.values():
+            campaign = any(t["name"].startswith('india-threat-tracker:id="sm-') for t in e["Tag"])
+            for a in e["Attribute"]:
+                self.assertEqual(a["to_ids"], campaign and a["type"] in ("domain", "url", "sha256"), a)
+
+    def test_lookalike_leads_are_never_marked_for_ids(self):
+        feed_data = {"generated_at": "2026-11-04", "items": [
+            {"domain": "sbi-kyc[.]com", "brand_name": "State Bank of India", "fuzzer": "dictionary",
+             "first_seen": "2026-11-03", "active": True, "baseline": False, "first_cert": "2026-11-02"},
+            {"domain": "old-sbi[.]com", "brand_name": "State Bank of India", "fuzzer": "dictionary",
+             "first_seen": "2026-11-01", "active": True, "baseline": True, "first_cert": None},
+            {"domain": "gone-sbi[.]com", "brand_name": "State Bank of India", "fuzzer": "dictionary",
+             "first_seen": "2026-11-01", "active": False, "baseline": False, "first_cert": None}]}
+        events = feed.lookalike_event(feed_data)
+        self.assertEqual([a["value"] for a in events[0]["Attribute"]], ["sbi-kyc.com"])
+        self.assertFalse(events[0]["Attribute"][0]["to_ids"])
+        self.assertIn("first TLS certificate 2026-11-02", events[0]["Attribute"][0]["comment"])
+        self.assertEqual(feed.lookalike_event({"generated_at": "2026-11-04", "items": []}), [])
+>>>>>>> theirs
 
     def test_uuids_are_unique(self):
         uuids = [a["uuid"] for e in self.events.values() for a in e["Attribute"]] + list(self.events)

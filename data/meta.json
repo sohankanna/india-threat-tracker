@@ -127,6 +127,44 @@
       "updated_by": "automation",
       "cadence": "twice-daily",
       "description": "Affected products and versions for every KEV CVE, as the CVE record states them; the Exposure Matcher's vulnerability data"
+    },
+    "certin-notes": {
+      "file": "data/certin-notes.json",
+      "kind": "feed",
+      "format": "json",
+      "schema": "schema/certin-notes.schema.json",
+      "updated_by": "automation",
+      "cadence": "twice-daily",
+      "description": "CERT-In vulnerability notes (CIVN): code, date, severity, CVEs and affected software, with how much of each year has been checked"
+    },
+    "certin-gap": {
+      "file": "data/certin-gap.json",
+      "kind": "feed",
+      "format": "json",
+      "schema": "schema/certin-gap.schema.json",
+      "updated_by": "automation",
+      "cadence": "twice-daily",
+      "description": "India-relevant KEV entries matched against CERT-In notes: covered (with the lag in days), no note, or pending until the scan is complete"
+    },
+    "lookalike-domains": {
+      "file": "data/lookalike-domains.json",
+      "kind": "feed",
+      "format": "json",
+      "schema": "schema/lookalike-domains.schema.json",
+      "updated_by": "automation",
+      "cadence": "daily",
+      "workflow": "lookalikes.yml",
+      "description": "Registered lookalike domains of Indian banks, payment apps and government sites (typo, dictionary and TLD-swap variants), defanged. Leads, not verdicts"
+    },
+    "attack-coverage": {
+      "file": "data/attack-coverage.json",
+      "kind": "export",
+      "format": "json",
+      "schema": "schema/attack-coverage.schema.json",
+      "derived_from": "data/apt-campaigns.json, data/ransomware.json, data/hacktivist.json, data/smishing-apk.json, detections/sigma/",
+      "updated_by": "automation",
+      "cadence": "twice-daily",
+      "description": "ATT&CK techniques used by the tracked actors and whether a detection rule covers each; the same data as the Navigator layers in layers/"
     }
   }
 }

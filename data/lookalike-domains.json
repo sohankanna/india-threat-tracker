@@ -1,0 +1,16 @@
+{
+  "feed": "lookalike-domains",
+  "generated_at": "2026-11-04",
+  "warning": "Leads, not verdicts. A lookalike may be parked, unrelated or the brand's own defensive registration. Check before blocking or reporting.",
+  "baseline_date": null,
+  "scans": 0,
+  "candidates_checked": 0,
+  "summary": {
+    "registered": 0,
+    "new_last_30_days": 0,
+    "new_with_certificate_last_30_days": 0,
+    "by_brand_new_last_30_days": {}
+  },
+  "count": 0,
+  "items": []
+}

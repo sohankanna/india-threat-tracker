@@ -68,10 +68,6 @@
         {
           "id": "T1481",
           "name": "Web Service"
-        },
-        {
-          "id": "T1496",
-          "name": "Resource Hijacking"
         }
       ],
       "key_findings": [

@@ -1,0 +1,67 @@
+{
+ "_note": "Synthetic sample events for rule testing. Not real telemetry. Fields shown as in the Windows Security log.",
+ "should_match": [
+  {
+   "EventID": 4662,
+   "SubjectDomainName": "CORP",
+   "ObjectServer": "DS",
+   "ObjectName": "%{9a3b7f20-4c1d-4e2a-9b8f-6d5e4c3b2a10}",
+   "OperationType": "Object Access",
+   "SubjectUserName": "svc-vpnsync",
+   "ObjectType": "%{ea715d30-8f53-40d0-bd1e-6109186d782c}",
+   "AccessMask": "0x100",
+   "Properties": "%%7688 {43061ac1-c8ad-4ccc-b785-2bfac20fc60a} {ea715d30-8f53-40d0-bd1e-6109186d782c}",
+   "_case": "A service account reading a recovery password (control access)"
+  },
+  {
+   "EventID": 4662,
+   "SubjectDomainName": "CORP",
+   "ObjectServer": "DS",
+   "ObjectName": "%{9a3b7f20-4c1d-4e2a-9b8f-6d5e4c3b2a10}",
+   "OperationType": "Object Access",
+   "SubjectUserName": "a.kumar",
+   "ObjectType": "%{ea715d30-8f53-40d0-bd1e-6109186d782c}",
+   "AccessMask": "0x10",
+   "Properties": "%%7684 {ea715d30-8f53-40d0-bd1e-6109186d782c}",
+   "_why": "A user reading recovery object properties"
+  }
+ ],
+ "should_not_match": [
+  {
+   "EventID": 4662,
+   "SubjectDomainName": "CORP",
+   "ObjectServer": "DS",
+   "ObjectName": "%{9a3b7f20-4c1d-4e2a-9b8f-6d5e4c3b2a10}",
+   "OperationType": "Object Access",
+   "SubjectUserName": "WS-0142$",
+   "ObjectType": "%{ea715d30-8f53-40d0-bd1e-6109186d782c}",
+   "AccessMask": "0x20",
+   "Properties": "%%7685 {ea715d30-8f53-40d0-bd1e-6109186d782c}",
+   "_why": "the computer writing its own recovery information"
+  },
+  {
+   "EventID": 4662,
+   "SubjectDomainName": "CORP",
+   "ObjectServer": "DS",
+   "ObjectName": "%{9a3b7f20-4c1d-4e2a-9b8f-6d5e4c3b2a10}",
+   "OperationType": "Object Access",
+   "SubjectUserName": "WS-0142$",
+   "ObjectType": "%{ea715d30-8f53-40d0-bd1e-6109186d782c}",
+   "AccessMask": "0x100",
+   "Properties": "%%7688 {ea715d30-8f53-40d0-bd1e-6109186d782c}",
+   "_why": "a machine account, filtered"
+  },
+  {
+   "EventID": 4662,
+   "SubjectDomainName": "CORP",
+   "ObjectServer": "DS",
+   "ObjectName": "%{9a3b7f20-4c1d-4e2a-9b8f-6d5e4c3b2a10}",
+   "OperationType": "Object Access",
+   "SubjectUserName": "a.kumar",
+   "ObjectType": "%{bf967aba-0de6-11d0-a285-00aa003049e2}",
+   "AccessMask": "0x10",
+   "Properties": "%%7684 {bf967aba-0de6-11d0-a285-00aa003049e2}",
+   "_why": "reading an ordinary user object"
+  }
+ ]
+}

@@ -47,6 +47,8 @@ RULES = {
     "windows_suspicious_dns_server_change": ("sysmon", "100212"),
     "chm_help_file_spawns_script_or_lolbin": ("sysmon", "100213"),
     "sysvol_payload_or_gpo_scheduled_task_written": ("sysmon", "100214"),
+    "zoho_workdrive_api_from_unexpected_process": ("sysmon", "100215"),
+    "ad_bitlocker_recovery_information_read": ("security", "100240"),
     "pan_os_mgmt_auth_from_unexpected_source": ("paloalto", "100220"),
     "entra_aitm_risky_signin_token_replay": ("graph", "100230"),
 }
@@ -127,10 +129,10 @@ def main():
             row = {"rule": f"{stem} ({rule_id})", "rule_id": rule_id,
                    "case": event.get("_case") or event.get("_why") or "",
                    "expected": "fires" if expected else "does not fire", "_expected": expected,
-                   "path": "agent queue" if kind == "sysmon" else "logtest"}
-            if kind == "sysmon":
+                   "path": "agent queue" if kind in ("sysmon", "security") else "logtest"}
+            if kind in ("sysmon", "security"):
                 marker = f"itt-{rule_id}-{n:02d}"
-                raw = wazuh_logs.sysmon(event, computer=marker)
+                raw = wazuh_logs.RAW[kind](event, computer=marker)
                 row.update(marker=marker, raw=raw)
                 send_agent_event(raw)
                 pending.append(row)

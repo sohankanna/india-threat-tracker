@@ -244,6 +244,54 @@ claim as a claim:
 
 ---
 
+## CERT-In coverage
+
+`data/certin-gap.json` asks a simple question of every India-relevant KEV entry
+added since the start of last year: did CERT-In, India's national CERT, publish
+a vulnerability note naming this CVE, and when?
+
+* **Source.** CERT-In's public vulnerability notes (CIVN), read one by one from
+  `cert-in.org.in` by `scripts/fetch_certin.py`: a batch of at most 150 per run,
+  one request a second, identified by a plain User-Agent. Advisories (CIAD)
+  are not read yet.
+* **Matching.** By exact CVE ID only. A note that describes the same flaw
+  without naming the CVE does not count.
+* **Lag.** First note date minus KEV date, in days. CERT-In dates are the
+  note's *original issue date*; KEV dates are when CISA added the entry. A
+  negative lag means CERT-In warned before the flaw was listed as exploited.
+* **No overclaiming.** "No note" is only shown once every note in the window
+  has been checked. Until then the entry is `pending`. A CVE may still have a
+  note from before the window, so "no note" means none in the window.
+* **Failure.** If the site is unreachable or a note does not parse, the scan
+  stops at that note, records it, and tries again next run. It never skips a
+  published note it could not read.
+
+This measures coverage, not quality: CERT-In may warn about a flaw through an
+advisory, a sector-specific alert or direct notification instead of a public
+note.
+
+## Lookalike domains
+
+`data/lookalike-domains.json` is generated, not curated, so the rules are
+about what it does *not* claim.
+
+* **Candidates.** For each brand in `config/lookalike-brands.json`, dnstwist's
+  permutation engine (pinned version) generates typo, hyphenation, dictionary
+  (`kyc`, `reward`, `challan`...) and TLD-swap variants of each name in `.com`
+  and `.in`. IDN homographs are left out (they multiply the candidates for
+  little gain against Indian brands). Very short names (`sbi`, `npci`) only get
+  dictionary and hyphen variants, because their typos are mostly unrelated
+  real sites.
+* **Registered** means the name resolves or has name servers. Official domains
+  and their subdomains are never listed.
+* **New** means it was not registered at the previous scan. The first scan is
+  the baseline and nothing in it is presented as new.
+* **Certificates.** For new names only, crt.sh is asked for the earliest TLS
+  certificate. A recent certificate is a stronger signal than registration
+  alone, but it is still not proof of phishing.
+* **Not done:** no page fetching, screenshots or WHOIS, no verdict, and no
+  automatic reporting. A human checks before anything is called phishing.
+
 ## Timestamps
 
 Three timestamps mean three different things, and the site labels each one:

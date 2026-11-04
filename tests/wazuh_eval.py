@@ -134,7 +134,12 @@ def decode_winevt(raw):
             level = el.text if tag == "Level" else level
             keywords = el.text if tag == "Keywords" else keywords
     if level and keywords:
-        ev["win.system.severityValue"] = SEVERITY.get(level, "UNKNOWN")
+        if level == "0":  # AUDIT: analysisd reads the audit keywords (winevtchannel.c)
+            kw = int(keywords, 16)
+            ev["win.system.severityValue"] = ("AUDIT_FAILURE" if kw & 0x10000000000000
+                                              else "AUDIT_SUCCESS" if kw & 0x20000000000000 else "UNKNOWN")
+        else:
+            ev["win.system.severityValue"] = SEVERITY.get(level, "UNKNOWN")
     for d in event.findall("e:EventData/e:Data", ns):
         if d.text:
             ev[f"win.eventdata.{_lower_first(d.get('Name'))}"] = d.text
@@ -148,7 +153,13 @@ def decode_raw(kind, raw):
         if (ev.get("win.system.channel") != wazuh_logs.SYSMON_CHANNEL
                 or ev.get("win.system.severityValue") != "INFORMATION"):
             return None, ev
-        return {"1": "61603", "11": "61613", "13": "61615"}.get(ev.get("win.system.eventID")), ev
+        return {"1": "61603", "11": "61613", "13": "61615", "22": "61650"}.get(ev.get("win.system.eventID")), ev
+    if kind == "security":
+        ev = decode_winevt(raw)
+        if (ev.get("win.system.channel") != wazuh_logs.SECURITY_CHANNEL
+                or ev.get("win.system.severityValue") != "AUDIT_SUCCESS"):
+            return None, ev
+        return "60103", ev  # no built-in child of 60103 matches the event IDs used here
     if kind == "graph":
         ev = flatten(json.loads(raw))
         return ("87802" if ev.get("azure_tag") == "azure-ad-graph" else None), ev

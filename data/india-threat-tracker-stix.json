@@ -1,5 +1,5 @@
 {
-  "id": "bundle--ff78e951-d1e6-4bfe-befa-b7a298de222d",
+  "id": "bundle--75b19dfc-b304-44e0-bf62-b53249ca8f83",
   "objects": [
     {
       "created": "2026-11-04T00:00:00.000Z",
@@ -926,25 +926,6 @@
       "id": "attack-pattern--9d1c39ad-c584-416e-b0db-3e8e33f4ca00",
       "modified": "2026-11-04T00:00:00.000Z",
       "name": "System Binary Proxy Execution: Compiled HTML File",
-      "object_marking_refs": [
-        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
-      ],
-      "spec_version": "2.1",
-      "type": "attack-pattern"
-    },
-    {
-      "created": "2026-10-15T00:00:00.000Z",
-      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
-      "external_references": [
-        {
-          "external_id": "T1496",
-          "source_name": "mitre-attack",
-          "url": "https://attack.mitre.org/techniques/T1496/"
-        }
-      ],
-      "id": "attack-pattern--9e62159e-d86d-40ed-83ad-0a5c4b513a6f",
-      "modified": "2026-10-15T00:00:00.001Z",
-      "name": "Resource Hijacking",
       "object_marking_refs": [
         "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
       ],
@@ -4984,20 +4965,6 @@
       "type": "relationship"
     },
     {
-      "created": "2026-10-15T00:00:00.000Z",
-      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
-      "id": "relationship--efccf4e0-ea1b-4c35-ae44-245df217c47a",
-      "modified": "2026-10-15T00:00:00.000Z",
-      "object_marking_refs": [
-        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
-      ],
-      "relationship_type": "uses",
-      "source_ref": "campaign--45f641b4-6869-4d37-bfc8-bd80f6140eac",
-      "spec_version": "2.1",
-      "target_ref": "attack-pattern--9e62159e-d86d-40ed-83ad-0a5c4b513a6f",
-      "type": "relationship"
-    },
-    {
       "created": "2026-11-04T00:00:00.000Z",
       "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
       "id": "relationship--f1124107-58b0-442d-ac9d-49c9b269c4bd",
@@ -5084,7 +5051,7 @@
     {
       "created": "2026-11-04T00:00:00.000Z",
       "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
-      "description": "Analyst assessment by Sohan Kanna: judgement over the tracker's feeds, not source-reported fact.\n\nTwo things changed since October. China-nexus espionage moved from India's power grid onto its banks and government desks, with Mustang Panda reaching Indian government networks in June and banks before that. And the patching clock got shorter: an Ivanti Connect Secure chain was exploited as a zero-day in October, PHP2Shell went from leak to public exploit in days, and CERT-In now asks for exploited internet-facing flaws to be fixed within 12 hours where feasible. Underneath, fraud against citizens keeps running at industrial scale, now fed by leaked customer data as well as fake apps.\n\n1. Fraud runs on stolen trust: apps, impersonation and leaked data (critical): Fraud against Indian citizens is the highest-volume threat on this page and the most organised. I4C counted more than 30,000 victims and over Rs 1,500 crore lost to fake stock-tip groups and trading apps in six months, and digital-arrest calls cost Rs 644 crore in 2025 even after falling sharply from 2024. Fake APKs still do the technical work: a 'wedding invitation' that installs the SpyMax RAT reads bank OTPs from notifications. In October, SBI confirmed that personal data of at least 3,897 customers (names, mobile numbers, dates of birth, addresses and internal IDs) turned up in a dark-web set of about 375,000 records. Data like that makes a fake bank or police call sound real. Banks should assume callers will know customers' details and design verification that does not rely on it.\n\n2. Ivanti again, and a 12-hour patch window (critical): Three Ivanti Connect Secure flaws entered CISA's KEV catalog in October: an authentication bypass on 13 October, then a privilege escalation and a file-upload flaw on 30 October. Volexity documented them chained into unauthenticated root on the VPN appliance, used by a new actor (UTA0576) to pull credentials, Active Directory data and BitLocker recovery keys. Since mid-October, Cisco ASA/FTD, Fortinet, GitLab and an Atlassian flaw with an EPSS near 99% have joined the list too. CERT-In's May 2026 guidance asks for exploited internet-facing flaws to be fixed within 12 hours where feasible. For an Ivanti box that was exposed before patching, assume credential theft: patch, check integrity, and rotate what the appliance could see.\n\n3. China-nexus espionage reached Indian banks and government (high): For years the China-nexus story in India was the power grid (RedEcho, TAG-38). In 2026 Mustang Panda widened it. From March it sent Indian banks help-file attachments dressed as HDFC Bank support tickets that installed the LOTUSLITE backdoor, and in June it was inside Indian government networks, including machines used by senior administrative staff, using hydropower and India-Taiwan lures and Zoho WorkDrive as a command channel. Acronis worked with CERT-In on clean-up. Expect the same playbook again: signed binaries side-loading DLLs, help files and ZIP archives with hidden DLLs, and command traffic that looks like a cloud service Indian offices already use.\n\n4. PHP2Shell, Node.js and eMudhra: the web stack had a bad month (high): Two PHP flaws (PHP2Shell) leaked before the patch, gained a public exploit and entered KEV on 26 October with EPSS near 100%; PHP branches that are already out of support get no fix at all. A Brotli decoder flaw that Node.js says permits remote code execution was added on 27 October, and it is reached through what a server downloads, not just what it receives. Separately, browsers and Node.js stopped trusting eMudhra intermediate certificates after their private keys proved recoverable, and CERT-In issued an advisory. If you run PHP or Node.js, upgrade the runtime itself, and check any service that relied on the affected eMudhra intermediates.\n\n5. Pakistan-nexus espionage continues; hacktivist claims mostly don't hold up (medium-high): Transparent Tribe and SideCopy remain the most persistent actors against Indian government, defence and education, and they move fastest around crises: within days of the Pahalgam attack in 2025 they were sending Pahalgam-themed lures. The hacktivist noise around the same events is a different matter. Of the notable claims against India tracked here, one was confirmed in full; most were overstated, recycled or false, and DDoS outages typically lasted minutes. The practical lesson: during the next India-Pakistan flashpoint, verify leak claims before reacting, and put the effort into phishing defence for government and defence users.",
+      "description": "Analyst assessment by Sohan Kanna: judgement over the tracker's feeds, not source-reported fact.\n\nTwo things changed since October. China-nexus espionage moved from India's power grid onto its banks and government desks, with Mustang Panda reaching Indian government networks in June and banks before that. And the patching clock got shorter: an Ivanti Connect Secure chain was exploited as a zero-day in October, PHP2Shell went from leak to public exploit in days, and CERT-In now asks for exploited internet-facing flaws to be fixed within 12 hours where feasible. Underneath, fraud against citizens keeps running at industrial scale, now fed by leaked customer data as well as fake apps.\n\n1. Fraud runs on stolen trust: apps, impersonation and leaked data (critical): Fraud against Indian citizens is the highest-volume threat on this page and the most organised. I4C counted more than 30,000 victims and over Rs 1,500 crore lost to fake stock-tip groups and trading apps in six months, and digital-arrest calls cost Rs 644 crore in 2025 even after falling sharply from 2024. Fake APKs still do the technical work: a 'wedding invitation' that installs the SpyMax RAT reads bank OTPs from notifications. In October, SBI confirmed that personal data of at least 3,897 customers (names, mobile numbers, dates of birth, addresses and internal IDs) turned up in a dark-web set of about 375,000 records. Data like that makes a fake bank or police call sound real. Banks should assume callers will know customers' details and design verification that does not rely on it.\n\n2. Ivanti again, and a 12-hour patch window (critical): Three Ivanti Connect Secure flaws entered CISA's KEV catalog in October: an authentication bypass on 13 October, then a privilege escalation and a file-upload flaw on 30 October. Volexity documented them chained into unauthenticated root on the VPN appliance, used by a new actor (UTA0576) to take credentials and Active Directory data and to search for administrator passwords and BitLocker recovery keys. Since mid-October, Cisco ASA/FTD, Fortinet, GitLab and an Atlassian flaw with an EPSS near 99% have joined the list too. CERT-In's May 2026 guidance asks for exploited internet-facing flaws to be fixed within 12 hours where feasible. For an Ivanti box that was exposed before patching, assume credential theft: patch, check integrity, and rotate what the appliance could see.\n\n3. China-nexus espionage reached Indian banks and government (high): For years the China-nexus story in India was the power grid (RedEcho, TAG-38). In 2026 Mustang Panda widened it. From March it sent Indian banks help-file attachments dressed as HDFC Bank support tickets that installed the LOTUSLITE backdoor, and in June it was inside Indian government networks, including machines used by senior administrative staff, using hydropower and India-Taiwan lures and Zoho WorkDrive as a command channel. Acronis worked with CERT-In on clean-up. Expect the same playbook again: signed binaries side-loading DLLs, help files and ZIP archives with hidden DLLs, and command traffic that looks like a cloud service Indian offices already use.\n\n4. PHP2Shell, Node.js and eMudhra: the web stack had a bad month (high): Two PHP flaws (PHP2Shell) leaked before the patch, gained a public exploit and entered KEV on 26 October with EPSS near 100%; PHP branches that are already out of support get no fix at all. A Brotli decoder flaw that Node.js says permits remote code execution was added on 27 October, and it is reached through what a server downloads, not just what it receives. Separately, browsers and Node.js stopped trusting eMudhra intermediate certificates after their private keys proved recoverable, and CERT-In issued an advisory. If you run PHP or Node.js, upgrade the runtime itself, and check any service that relied on the affected eMudhra intermediates.\n\n5. Pakistan-nexus espionage continues; hacktivist claims mostly don't hold up (medium-high): Transparent Tribe and SideCopy remain the most persistent actors against Indian government, defence and education, and they move fastest around crises: within days of the Pahalgam attack in 2025 they were sending Pahalgam-themed lures. The hacktivist noise around the same events is a different matter. Of the notable claims against India tracked here, one was confirmed in full; most were overstated, recycled or false, and DDoS outages typically lasted minutes. The practical lesson: during the next India-Pakistan flashpoint, verify leak claims before reacting, and put the effort into phishing defence for government and defence users.",
       "external_references": [
         {
           "source_name": "The Hacker News: State Bank of India confirms data leak after 3,897 customer records found on dark web (Oct 2026)",
@@ -5144,7 +5111,7 @@
         }
       ],
       "id": "report--9855bde8-9226-4cc3-b06d-b6dfd04f8e25",
-      "modified": "2026-11-04T00:00:00.001Z",
+      "modified": "2026-11-04T00:00:00.002Z",
       "name": "India threat assessment, November 2026",
       "object_marking_refs": [
         "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"

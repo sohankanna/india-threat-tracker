@@ -23,6 +23,9 @@ Formats:
            Sysmon events through the queue socket, like an agent.
 * paloalto PAN-OS 10.x SYSTEM syslog CSV. The description is double-quoted
            because it contains commas, as PAN-OS sends it.
+* security Windows Security audit event, sent through the agent queue like
+           Sysmon. Level 0 plus the audit-success keyword decodes as
+           severityValue AUDIT_SUCCESS (rule 60103).
 * graph    Entra ID sign-in record as the azure-logs Graph integration ships
            it, tagged azure_tag=azure-ad-graph.
 """
@@ -31,6 +34,8 @@ from xml.sax.saxutils import escape
 
 SYSMON_PROVIDER = "Microsoft-Windows-Sysmon"
 SYSMON_CHANNEL = "Microsoft-Windows-Sysmon/Operational"
+SECURITY_PROVIDER = "Microsoft-Windows-Security-Auditing"
+SECURITY_CHANNEL = "Security"
 PAN_STAMP = "2026/10/20 10:00:00"
 
 
@@ -54,6 +59,27 @@ def sysmon(fixture, computer="WS-TEST-01"):
         f"<EventData>{data}</EventData></Event>"
     )
     return json.dumps({"Message": "Sysmon test event", "Event": xml}, separators=(",", ":"))
+
+
+def security(fixture, computer="DC-TEST-01"):
+    """A Windows Security audit-success event as the agent sends it. Level 0 with
+    the audit-success keyword is what makes the decoder set severityValue to
+    AUDIT_SUCCESS, which rule 60103 needs."""
+    data = "".join(
+        f"<Data Name='{_attr(k)}'>{escape(str(v))}</Data>"
+        for k, v in fixture.items() if not k.startswith("_") and k != "EventID")
+    xml = (
+        "<Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'><System>"
+        f"<Provider Name='{SECURITY_PROVIDER}' Guid='{{54849625-5478-4994-a5ba-3e3b0328c30d}}'/>"
+        f"<EventID>{fixture['EventID']}</EventID><Version>0</Version><Level>0</Level><Task>14080</Task>"
+        "<Opcode>0</Opcode><Keywords>0x8020000000000000</Keywords>"
+        "<TimeCreated SystemTime='2026-10-20T04:30:00.000000000Z'/><EventRecordID>1</EventRecordID>"
+        "<Execution ProcessID='700' ThreadID='800'/>"
+        f"<Channel>{SECURITY_CHANNEL}</Channel><Computer>{escape(computer)}</Computer>"
+        "<Security/></System>"
+        f"<EventData>{data}</EventData></Event>"
+    )
+    return json.dumps({"Message": "Security test event", "Event": xml}, separators=(",", ":"))
 
 
 def _csv(value):
@@ -83,9 +109,9 @@ def graph(fixture):
     }, separators=(",", ":"))
 
 
-RAW = {"sysmon": sysmon, "paloalto": paloalto, "graph": graph}
+RAW = {"sysmon": sysmon, "security": security, "paloalto": paloalto, "graph": graph}
 # What wazuh-logtest needs to treat the line like the real source.
-# Sysmon is absent on purpose: see the module docstring.
+# Sysmon and Security are absent on purpose: see the module docstring.
 LOGTEST = {
     "paloalto": {"log_format": "syslog", "location": "/var/log/paloalto.log"},
     "graph": {"log_format": "json", "location": "azure-logs"},

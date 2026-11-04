@@ -1,0 +1,37 @@
+name: Ransomware claim counts
+
+# Once a month, counts ransomware leak-site claims against India from the free
+# ransomware.live API and writes them to the run summary. Counts and group names
+# only: victim names are never read or stored. Nothing is committed; whether to
+# update the landscape figures in data/ransomware.json stays a human call. If the
+# API is down or changes shape, the job logs a warning and still passes.
+
+on:
+  schedule:
+    - cron: "17 5 2 * *"    # 2nd of each month, ~10:47 IST
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+jobs:
+  counts:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Count claims
+        run: python scripts/ransomware_counts.py --out ransomware-counts.md
+
+      - name: Keep the summary
+        if: hashFiles('ransomware-counts.md') != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: ransomware-counts
+          path: ransomware-counts.md
+          retention-days: 90

@@ -37,8 +37,15 @@ organisations, and detection rules for all of it.
 | [`data/assessment.json`](data/assessment.json) | The monthly ranked analyst assessment | Monthly |
 | [`data/relevance-overrides.json`](data/relevance-overrides.json) | Hand-reviewed India-relevance decisions; the pipeline reads them and never overwrites them | When reviewed |
 | [`data/india-threat-tracker-stix.json`](data/india-threat-tracker-stix.json) | STIX 2.1 Bundle of the campaigns, actors, indicators, techniques and assessment: see [STIX-GUIDE.md](STIX-GUIDE.md) | Twice daily, automated |
+| [`data/certin-notes.json`](data/certin-notes.json) | CERT-In vulnerability notes (code, date, severity, CVEs, affected software), collected a small batch at a time | Twice daily, automated |
+| [`data/certin-gap.json`](data/certin-gap.json) | Every India-relevant KEV entry since the start of last year matched against CERT-In's notes: covered (and how many days before or after KEV), no note, or pending until the scan is complete | Twice daily, automated |
+| [`data/lookalike-domains.json`](data/lookalike-domains.json) | Registered lookalike domains of Indian banks, payment apps and government sites (typos, `sbi-kyc`-style dictionary variants, TLD swaps), defanged, with the first TLS certificate for new ones. **Leads, not verdicts** | Daily, automated |
 | [`data/kev-affected.json`](data/kev-affected.json) | Affected products and versions for every KEV CVE, from the official CVE records; feeds the [Exposure Matcher](EXPOSURE-MATCHER.md) | Twice daily, automated |
 | [`data/meta.json`](data/meta.json) | Manifest of every data file, with its schema and cadence | When files change |
+<<<<<<< ours
+=======
+| [`layers/`](layers/) · [`data/attack-coverage.json`](data/attack-coverage.json) | ATT&CK Navigator layers: techniques of the actors targeting India, detection coverage (green/amber/red) and the Mobile techniques of the fraud campaigns; the coverage also as data | Rebuilt with every update |
+>>>>>>> theirs
 | [`misp-feed/`](misp-feed/) | The campaigns' indicators and the high-relevance KEV CVEs as a native MISP feed: subscribe a MISP instance to the URL in [misp-feed/README.md](misp-feed/README.md) | Rebuilt with every update |
 
 Every JSON feed is validated against a schema in [`schema/`](schema/) on every
@@ -74,7 +81,7 @@ What changed in each release, with validation levels: [CHANGELOG.md](CHANGELOG.m
 
 ## Detections
 
-[`detections/`](detections/) holds seven rules, each shipped as **Sigma**,
+[`detections/`](detections/) holds nine rules, each shipped as **Sigma**,
 **Splunk SPL**, **Elastic** (EQL/KQL, ECS) and **Wazuh**, plus payments-fraud
 logic for the UPI kill chain:
 
@@ -87,6 +94,8 @@ logic for the UPI kill chain:
 | `entra_aitm_risky_signin_token_replay` | High-risk Entra ID sign-in that succeeded | FrostArmada AiTM token theft |
 | `chm_help_file_spawns_script_or_lolbin` | HTML Help (hh.exe) spawning a script host or LOLBin | Mustang Panda CHM delivery to Indian banks (LOTUSLITE) |
 | `sysvol_payload_or_gpo_scheduled_task_written` | Executable, script or GPO scheduled task written to SYSVOL | The Gentlemen ransomware's Group Policy deployment |
+| `zoho_workdrive_api_from_unexpected_process` | Zoho API or WorkDrive lookup by a process that is not a browser or Zoho client | Mustang Panda's ZOHOMURK cloud dead drop |
+| `ad_bitlocker_recovery_information_read` | A user account reading BitLocker recovery keys from Active Directory | Credential theft after an edge compromise (UTA0576, Ivanti chain) |
 
 Read [**DATA-SOURCES.md**](detections/DATA-SOURCES.md) for the telemetry each
 rule needs and [**TESTING.md**](detections/TESTING.md) for a matching and a
@@ -102,7 +111,7 @@ alert-only mode, validate, then tune.
 - **Indicators are separate from infrastructure.** Abused legitimate services
   (GitHub, Firebase, hosting) are context and never appear in `iocs.txt`,
   `iocs.csv` or any copy/export.
-- **ATT&CK mappings are checked** against MITRE's published data.
+- **ATT&CK mappings are checked**: every technique id and name, and every rule tag, against MITRE's ATT&CK v20.0 data in CI.
 - **Reported attribution is separate from tracker confidence.**
 - **India relevance is a transparent heuristic**, recorded with the keyword
   that triggered it. It is triage, not proof of exposure.
@@ -114,15 +123,28 @@ Full details: [METHODOLOGY.md](METHODOLOGY.md).
 ```
 scripts/fetch_exploited.py   CISA KEV + FIRST EPSS -> exploited-cve.json + watchlist.json
 scripts/build_iocs.py        campaign feed         -> iocs.txt + iocs.csv
+<<<<<<< ours
 scripts/build_misp_feed.py   campaigns + watchlist -> misp-feed/ (native MISP feed)
+=======
+scripts/fetch_certin.py      CERT-In notes         -> certin-notes.json (rate-limited batch per run)
+scripts/build_certin_gap.py  notes + KEV           -> certin-gap.json
+scripts/scan_lookalikes.py   brand list + DNS + CT -> lookalike-domains.json (daily, lookalikes.yml)
+scripts/build_misp_feed.py   campaigns + watchlist -> misp-feed/ (native MISP feed)
+scripts/build_layers.py      ATT&CK mappings + rules -> layers/ + attack-coverage.json (ids checked)
+>>>>>>> theirs
 scripts/validate.py          every JSON feed       -> checked against schema/
 scripts/check_inventory.py   detection pack        -> every rule has all formats + a test
-scripts/make_tweet_draft.py  today's KEV adds      -> drafts/<date>.md (a draft, not post-ready)
+scripts/make_tweet_draft.py  new India-relevant KEV adds -> drafts/<date>.md, and drafts/week-*.md on Mondays
+                             (facts + a rough post under 280 characters; a draft, never posted)
+scripts/ransomware_counts.py leak-site claims vs India -> monthly counts in the run summary (no names)
 ```
 
-Two GitHub Actions run it. [`update.yml`](.github/workflows/update.yml)
+GitHub Actions run it. [`update.yml`](.github/workflows/update.yml)
 regenerates the feeds **twice a day**, rebuilds the IOC exports, runs the
 pipeline tests, and retries its push if someone pushed during the run.
+[`ransomware-counts.yml`](.github/workflows/ransomware-counts.yml) runs on the
+2nd of each month and posts India's leak-site claim counts to the run summary,
+as a prompt to refresh the ransomware landscape figures by hand.
 [`validate-pr.yml`](.github/workflows/validate-pr.yml) checks every push and pull
 request: schemas, that the IOC exports match the campaign data, the detection
 inventory, the test suite, Sigma validation and a Sigma→Splunk conversion.

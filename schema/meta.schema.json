@@ -99,6 +99,7 @@
           "cadence": {
             "enum": [
               "twice-daily",
+              "daily",
               "as-observed",
               "monthly",
               "on-review",
@@ -108,6 +109,11 @@
           "description": {
             "type": "string",
             "minLength": 10
+          },
+          "workflow": {
+            "type": "string",
+            "pattern": "^[a-z0-9-]+\\.yml$",
+            "description": "The workflow that updates an automated resource, when it is not update.yml"
           }
         },
         "if": {
