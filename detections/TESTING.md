@@ -96,6 +96,12 @@ own telemetry, in your own SIEM, against a real baseline.
 - **Scope:** the help-file execution step. Acronis did not publish LOTUSLITE's exact child process, so this is the generic CHM technique (T1218.001), not a LOTUSLITE signature
 - **Known false positives:** legacy internal help files built to open a shell or script
 
+### `sysvol_payload_or_gpo_scheduled_task_written`
+- **Fields:** `TargetFilename` (Sysmon Event 11 / ECS `file.path`, `file.extension`, `file.name`), on domain controllers
+- **Alerts:** an `.exe` in the SYSVOL scripts folder (the NETLOGON share); a new `Preferences\ScheduledTasks\ScheduledTasks.xml` in a GPO; a startup `.PS1` in a GPO (case-insensitive)
+- **Silent:** `GptTmpl.inf` in a GPO (ordinary settings); an `.exe` in a user's Downloads; `Groups.xml` (a different preferences file)
+- **Known false positives:** administrators publishing logon scripts, startup scripts, software or scheduled tasks through Group Policy
+
 ### `windows_suspicious_dns_server_change`
 - **Fields:** `TargetObject` (ends `NameServer` / `DhcpNameServer`), `Details` (the new value, which can hold several resolvers)
 - **Logic:** alert if **any** resolver in the value is outside the trusted-resolver policy (RFC1918 by default)

@@ -5,6 +5,12 @@ not listed here.
 
 ## Unreleased
 
+### Detections (Phase 5)
+
+* New rule `sysvol_payload_or_gpo_scheduled_task_written` (Wazuh 100214): an
+  executable, script or Group Policy scheduled-task file created under SYSVOL on a
+  domain controller, the staging step The Gentlemen use to deploy ransomware
+  across a domain.
 ### Ransomware (new feed)
 
 * New `data/ransomware.json` and `schema/ransomware.schema.json`.

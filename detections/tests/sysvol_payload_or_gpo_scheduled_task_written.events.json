@@ -1,0 +1,43 @@
+{
+ "_note": "Synthetic sample events for rule testing. Not real telemetry. Fields shown in Sysmon/ECS style.",
+ "should_match": [
+  {
+   "EventID": 11,
+   "Image": "System",
+   "TargetFilename": "C:\\Windows\\SYSVOL\\sysvol\\corp.local\\scripts\\update.exe",
+   "_case": "Executable dropped in the NETLOGON share (SYSVOL scripts folder)"
+  },
+  {
+   "EventID": 11,
+   "Image": "C:\\Windows\\System32\\dfsrs.exe",
+   "TargetFilename": "C:\\Windows\\SYSVOL\\domain\\Policies\\{31B2F340-016D-11D2-945F-00C04FB984F9}\\Machine\\Preferences\\ScheduledTasks\\ScheduledTasks.xml",
+   "_why": "New Group Policy Preferences scheduled task in a GPO"
+  },
+  {
+   "EventID": 11,
+   "Image": "System",
+   "TargetFilename": "C:\\Windows\\SYSVOL\\domain\\Policies\\{6AC1786C-016F-11D2-945F-00C04FB984F9}\\Machine\\Scripts\\Startup\\run.PS1",
+   "_why": "Startup script in a GPO (extension match is case-insensitive)"
+  }
+ ],
+ "should_not_match": [
+  {
+   "EventID": 11,
+   "Image": "C:\\Windows\\System32\\dfsrs.exe",
+   "TargetFilename": "C:\\Windows\\SYSVOL\\domain\\Policies\\{31B2F340-016D-11D2-945F-00C04FB984F9}\\Machine\\Microsoft\\Windows NT\\SecEdit\\GptTmpl.inf",
+   "_why": "an ordinary policy settings file, not a payload or scheduled task"
+  },
+  {
+   "EventID": 11,
+   "Image": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+   "TargetFilename": "C:\\Users\\a.kumar\\Downloads\\setup.exe",
+   "_why": "an executable outside SYSVOL"
+  },
+  {
+   "EventID": 11,
+   "Image": "C:\\Windows\\System32\\dfsrs.exe",
+   "TargetFilename": "C:\\Windows\\SYSVOL\\domain\\Policies\\{31B2F340-016D-11D2-945F-00C04FB984F9}\\Machine\\Preferences\\Groups\\Groups.xml",
+   "_why": "a different Group Policy Preferences file"
+  }
+ ]
+}

@@ -71,7 +71,7 @@ What changed in each release, with validation levels: [CHANGELOG.md](CHANGELOG.m
 
 ## Detections
 
-[`detections/`](detections/) holds six rules, each shipped as **Sigma**,
+[`detections/`](detections/) holds seven rules, each shipped as **Sigma**,
 **Splunk SPL**, **Elastic** (EQL/KQL, ECS) and **Wazuh**, plus payments-fraud
 logic for the UPI kill chain:
 
@@ -83,6 +83,7 @@ logic for the UPI kill chain:
 | `pan_os_mgmt_auth_from_unexpected_source` | PAN-OS admin login from outside the allowlist | CVE-2026-0322 precondition |
 | `entra_aitm_risky_signin_token_replay` | High-risk Entra ID sign-in that succeeded | FrostArmada AiTM token theft |
 | `chm_help_file_spawns_script_or_lolbin` | HTML Help (hh.exe) spawning a script host or LOLBin | Mustang Panda CHM delivery to Indian banks (LOTUSLITE) |
+| `sysvol_payload_or_gpo_scheduled_task_written` | Executable, script or GPO scheduled task written to SYSVOL | The Gentlemen ransomware's Group Policy deployment |
 
 Read [**DATA-SOURCES.md**](detections/DATA-SOURCES.md) for the telemetry each
 rule needs and [**TESTING.md**](detections/TESTING.md) for a matching and a
