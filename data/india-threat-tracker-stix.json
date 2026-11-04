@@ -1,5 +1,5 @@
 {
-  "id": "bundle--cb82b001-2e11-4949-8dc8-97fa8e1333fd",
+  "id": "bundle--b1a45f44-1abe-405f-ba8a-f6e3d3f1bff0",
   "objects": [
     {
       "created": "2026-11-04T00:00:00.000Z",
@@ -4697,105 +4697,95 @@
       "type": "relationship"
     },
     {
-      "created": "2026-10-20T00:00:00.000Z",
+      "created": "2026-11-04T00:00:00.000Z",
       "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
-      "description": "Analyst assessment by Sohan Kanna: judgement over the tracker's feeds, not source-reported fact.\n\nThe Indian threat picture this month is pulled in two directions at once: high-volume, financially-motivated mobile fraud hitting citizens at scale, and patient, state-aligned intrusion aimed at government, defence and critical infrastructure. The common seam is the edge — VPNs, firewalls and cloud identity — which is where ransomware crews and espionage actors alike still get their first foothold.\n\n1. Fake-APK UPI fraud has gone industrial (critical): This is no longer lone scammers. Organised networks now run fake RTO / e-challan, bank and utility APKs end to end: a single Mumbai bust was linked to 3,206 complaints and roughly ₹43 crore, and Ahmedabad police separately broke up a Telegram storefront that sold the apps to about 400 fraudsters. Individual losses keep surfacing too, such as two Pune residents who lost over ₹14 lakh to the same e-challan lure. Cash-out is fast and hard to trace (ATM withdrawals in the Ahmedabad case), and the malware (GhostBat RAT and kin) intercepts OTPs and banking SMS and captures the UPI PIN through a fake payment screen. For any payments operator, this is the live, high-volume threat, not a future one.\n\n2. The edge is still the way in (high): The India-relevant watchlist is dominated by internet-facing edge: Ivanti Connect Secure, Citrix NetScaler, PAN-OS and Fortinet, plus SharePoint (CVE-2025-53770, EPSS ~100%, ransomware-linked). These are the products Indian enterprises expose to the internet, and CISA lists known ransomware use for several of them, from Ivanti (CVE-2025-22457) and NetScaler (CVE-2025-5777) to PAN-OS (CVE-2026-0257) and FortiOS (CVE-2024-55591). If you do one thing this month, make it edge patch cadence: it is the single highest-leverage control on this list.\n\n3. Pakistan-nexus espionage is persistent, not episodic (high): Transparent Tribe (APT36) and SideCopy continue to target Indian government, defence, education and research with Crimson RAT and the ZIP→LNK→LOLBin delivery pattern. These are not one-off campaigns; they are a standing collection effort that re-tools faster than it disappears. If you sit in gov, defence or academia, assume you are in scope and detect for the delivery chain, not just the final implant.\n\n4. Identity is the new perimeter: watch M365 sign-ins (medium-high): Microsoft and the UK NCSC reported in April 2026 that Forest Blizzard (APT28) changed DNS settings on compromised home and small-office routers to put adversary-in-the-middle servers in front of Outlook on the web, where passwords and login tokens can be intercepted. As Indian organisations move onto M365 / Entra, staff home routers become part of the attack surface. Entra sign-in risk is the signal to wire up first; Microsoft's guidance points to its risky sign-in detections. The tracker's Entra rule (high-risk successful sign-in) and its endpoint DNS rule are complementary investigation leads, not a detection of this chain: they fire separately and are not correlated, the Entra rule does not verify the MFA sequence. The DNS rule can see this campaign's reported technique, a router handing devices the attacker's resolver through DHCP, because it checks the DHCP-assigned resolver too; it cannot see a router that keeps handing out its own private address and forwards queries to the attacker. Phishing-resistant MFA (passkeys / FIDO2) is the control that breaks the relay.\n\n5. China-nexus pre-positioning in the power sector (medium): RedEcho's targeting of load dispatch centres is about access held for later, not immediate disruption — lower tempo, higher stakes. This is the kind of intrusion that matters in a crisis rather than a quarterly report, and it belongs on the radar of anyone defending Indian critical infrastructure even when nothing is visibly happening.",
+      "description": "Analyst assessment by Sohan Kanna: judgement over the tracker's feeds, not source-reported fact.\n\nTwo things changed since October. China-nexus espionage moved from India's power grid onto its banks and government desks, with Mustang Panda reaching Indian government networks in June and banks before that. And the patching clock got shorter: an Ivanti Connect Secure chain was exploited as a zero-day in October, PHP2Shell went from leak to public exploit in days, and CERT-In now asks for exploited internet-facing flaws to be fixed within 12 hours where feasible. Underneath, fraud against citizens keeps running at industrial scale, now fed by leaked customer data as well as fake apps.\n\n1. Fraud runs on stolen trust: apps, impersonation and leaked data (critical): Fraud against Indian citizens is the highest-volume threat on this page and the most organised. I4C counted more than 30,000 victims and over Rs 1,500 crore lost to fake stock-tip groups and trading apps in six months, and digital-arrest calls cost Rs 644 crore in 2025 even after falling sharply from 2024. Fake APKs still do the technical work: a 'wedding invitation' that installs the SpyMax RAT reads bank OTPs from notifications. In October, SBI confirmed that personal data of at least 3,897 customers (names, mobile numbers, dates of birth, addresses and internal IDs) turned up in a dark-web set of about 375,000 records. Data like that makes a fake bank or police call sound real. Banks should assume callers will know customers' details and design verification that does not rely on it.\n\n2. Ivanti again, and a 12-hour patch window (critical): Three Ivanti Connect Secure flaws entered CISA's KEV catalog in October: an authentication bypass on 13 October, then a privilege escalation and a file-upload flaw on 30 October. Volexity documented them chained into unauthenticated root on the VPN appliance, used by a new actor (UTA0576) to pull credentials, Active Directory data and BitLocker recovery keys. Since mid-October, Cisco ASA/FTD, Fortinet, GitLab and an Atlassian flaw with an EPSS near 99% have joined the list too. CERT-In's May 2026 guidance asks for exploited internet-facing flaws to be fixed within 12 hours where feasible. For an Ivanti box that was exposed before patching, assume credential theft: patch, check integrity, and rotate what the appliance could see.\n\n3. China-nexus espionage reached Indian banks and government (high): For years the China-nexus story in India was the power grid (RedEcho, TAG-38). In 2026 Mustang Panda widened it. From March it sent Indian banks help-file attachments dressed as HDFC Bank support tickets that installed the LOTUSLITE backdoor, and in June it was inside Indian government networks, including machines used by senior administrative staff, using hydropower and India-Taiwan lures and Zoho WorkDrive as a command channel. Acronis worked with CERT-In on clean-up. Expect the same playbook again: signed binaries side-loading DLLs, help files and ZIP archives with hidden DLLs, and command traffic that looks like a cloud service Indian offices already use.\n\n4. PHP2Shell, Node.js and eMudhra: the web stack had a bad month (high): Two PHP flaws (PHP2Shell) leaked before the patch, gained a public exploit and entered KEV on 26 October with EPSS near 100%; PHP branches that are already out of support get no fix at all. A Brotli decoder flaw that Node.js says permits remote code execution was added on 27 October, and it is reached through what a server downloads, not just what it receives. Separately, browsers and Node.js stopped trusting eMudhra intermediate certificates after their private keys proved recoverable, and CERT-In issued an advisory. If you run PHP or Node.js, upgrade the runtime itself, and check any service that relied on the affected eMudhra intermediates.\n\n5. Pakistan-nexus espionage continues; hacktivist claims mostly don't hold up (medium-high): Transparent Tribe and SideCopy remain the most persistent actors against Indian government, defence and education, and they move fastest around crises: within days of the Pahalgam attack in 2025 they were sending Pahalgam-themed lures. The hacktivist noise around the same events is a different matter. Of the notable claims against India tracked here, one was confirmed in full; most were overstated, recycled or false, and DDoS outages typically lasted minutes. The practical lesson: during the next India-Pakistan flashpoint, verify leak claims before reacting, and put the effort into phishing defence for government and defence users.",
       "external_references": [
         {
-          "source_name": "Free Press Journal: Mumbai cyber police bust ₹43 crore fake APK fraud network",
-          "url": "https://www.freepressjournal.in/mumbai/6-arrested-as-mumbai-cyber-police-bust-43-crore-fake-apk-based-cyber-fraud-network-linked-to-3200-cases-video"
-        },
-        {
-          "source_name": "Cyble: GhostBat RAT, inside the resurgence of RTO-themed Android malware",
-          "url": "https://cyble.com/blog/ghostbat-rat-inside-the-resurgence-of-rto-themed-android-malware/"
+          "source_name": "The Hacker News: State Bank of India confirms data leak after 3,897 customer records found on dark web (Oct 2026)",
+          "url": "https://thehackernews.com/2026/10/state-bank-of-india-confirms-data-leak.html"
         },
         {
           "source_name": "The UPI fraud kill chain",
           "url": "https://www.sohankanna.com/research/the-upi-fraud-kill-chain-how-fake-apk-scams-defeat-indias-payment-controls"
         },
         {
-          "source_name": "GhostBat RAT breakdown",
-          "url": "https://www.sohankanna.com/research/ghostbat-rat-how-rto-themed-android-malware-steals-your-upi-pin"
+          "source_name": "The Hacker News: Attackers chain three Ivanti Connect Secure flaws (31 Oct 2026)",
+          "url": "https://thehackernews.com/2026/10/attackers-chain-three-ivanti-connect.html"
         },
         {
-          "source_name": "India Threat Tracker detection pan_os_mgmt_auth_from_unexpected_source",
-          "url": "https://github.com/sohankanna/india-threat-tracker/blob/main/detections/sigma/pan_os_mgmt_auth_from_unexpected_source.yml"
-        },
-        {
-          "source_name": "PAN-OS management-interface zero-day",
-          "url": "https://www.sohankanna.com/research/cve-2026-0322-pan-os-management-interface-zero-day-from-admin-login-to-root"
+          "source_name": "The Hacker News: CERT-In sets 12-hour patching for exploited internet-facing flaws (26 May 2026)",
+          "url": "https://thehackernews.com/2026/05/cert-in-mandates-12-hour-patching-for.html"
         },
         {
           "source_name": "Live watchlist",
           "url": "https://www.sohankanna.com/tracker"
         },
         {
+          "source_name": "The Hacker News: Mustang Panda uses Zoho WorkDrive as C2 against India's government and energy sectors (29 Jun 2026)",
+          "url": "https://thehackernews.com/2026/06/mustang-panda-uses-zoho-workdrive-as.html"
+        },
+        {
+          "source_name": "India Threat Tracker detection chm_help_file_spawns_script_or_lolbin",
+          "url": "https://github.com/sohankanna/india-threat-tracker/blob/main/detections/sigma/chm_help_file_spawns_script_or_lolbin.yml"
+        },
+        {
+          "source_name": "Mustang Panda profile",
+          "url": "https://www.sohankanna.com/tracker#actor-apt-mustang-panda"
+        },
+        {
+          "source_name": "CERT-In advisory CIAD-2026-0050: Compromise of eMudhra intermediate CA certificates",
+          "url": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0050"
+        },
+        {
+          "source_name": "PHP2Shell",
+          "url": "https://www.sohankanna.com/research/php2shell-leaked-php-rce-no-patch-for-old-php"
+        },
+        {
+          "source_name": "Node.js Brotli RCE",
+          "url": "https://www.sohankanna.com/research/nodejs-cve-2026-111497-brotli-fetch-rce"
+        },
+        {
+          "source_name": "eMudhra's weak CA keys",
+          "url": "https://www.sohankanna.com/research/emudhra-weak-ca-keys-what-the-statement-leaves-out"
+        },
+        {
           "source_name": "India Threat Tracker detection office_archive_lnk_spawns_lolbin",
           "url": "https://github.com/sohankanna/india-threat-tracker/blob/main/detections/sigma/office_archive_lnk_spawns_lolbin.yml"
         },
         {
-          "source_name": "India Threat Tracker detection office_document_spawns_script_interpreter",
-          "url": "https://github.com/sohankanna/india-threat-tracker/blob/main/detections/sigma/office_document_spawns_script_interpreter.yml"
-        },
-        {
           "source_name": "Transparent Tribe (APT36)",
           "url": "https://www.sohankanna.com/research/transparent-tribe-apt36-the-persistent-threat-to-indian-government-and-defence"
-        },
-        {
-          "source_name": "SideCopy",
-          "url": "https://www.sohankanna.com/research/sidecopy-the-apt36-aligned-group-that-copies-sidewinder"
-        },
-        {
-          "source_name": "Microsoft Threat Intelligence: SOHO router compromise leads to DNS hijacking and adversary-in-the-middle attacks (7 Apr 2026)",
-          "url": "https://www.microsoft.com/en-us/security/blog/2026/04/07/soho-router-compromise-leads-to-dns-hijacking-and-adversary-in-the-middle-attacks/"
-        },
-        {
-          "source_name": "NCSC: APT28 exploit routers to enable DNS hijacking operations (7 Apr 2026)",
-          "url": "https://www.ncsc.gov.uk/news/apt28-exploit-routers-to-enable-DNS-hijacking-operations"
-        },
-        {
-          "source_name": "India Threat Tracker detection entra_aitm_risky_signin_token_replay",
-          "url": "https://github.com/sohankanna/india-threat-tracker/blob/main/detections/sigma/entra_aitm_risky_signin_token_replay.yml"
-        },
-        {
-          "source_name": "India Threat Tracker detection windows_suspicious_dns_server_change",
-          "url": "https://github.com/sohankanna/india-threat-tracker/blob/main/detections/sigma/windows_suspicious_dns_server_change.yml"
-        },
-        {
-          "source_name": "FrostArmada / APT28 M365 interception",
-          "url": "https://www.sohankanna.com/research/frostarmada-how-apt28-turned-old-home-routers-into-a-microsoft-365-interception-network"
-        },
-        {
-          "source_name": "Recorded Future: RedEcho targeting the Indian power sector",
-          "url": "https://www.recordedfuture.com/redecho-targeting-indian-power-sector"
-        },
-        {
-          "source_name": "RedEcho and the China-nexus grid targeting",
-          "url": "https://www.sohankanna.com/research/redecho-and-the-china-nexus-targeting-of-india-s-power-grid"
         }
       ],
-      "id": "report--c9fbe5bd-8e5c-4c73-9cc0-99ae5dafcba9",
-      "modified": "2026-10-20T00:00:00.001Z",
-      "name": "India threat assessment, October 2026",
+      "id": "report--9855bde8-9226-4cc3-b06d-b6dfd04f8e25",
+      "modified": "2026-11-04T00:00:00.001Z",
+      "name": "India threat assessment, November 2026",
       "object_marking_refs": [
         "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
       ],
       "object_refs": [
-        "campaign--45f641b4-6869-4d37-bfc8-bd80f6140eac",
-        "campaign--6f698b73-0327-4f3c-a262-9fdfcaadc0da",
-        "campaign--d563f634-ffd2-4229-a82d-b06ae927989b",
+        "campaign--6598c258-eb1f-4aec-bb91-8b238cf9d93c",
+        "campaign--6d75dc3c-010f-4a31-80aa-08ccfca05786",
+        "campaign--6fd3dce2-dff4-4435-bfda-0e87325943cf",
+        "campaign--d8f10db9-1b72-414f-9906-5b05739fb62c",
         "campaign--e359e282-92dc-4c27-b4d6-328d8cd04a74",
         "intrusion-set--47ce2ecf-959f-4774-ad62-968712e65fe3",
         "intrusion-set--49e9134d-1c01-4851-a9db-000725c7d845",
         "intrusion-set--6f442db0-d02d-412d-bd34-ae81cd300f7a",
-        "vulnerability--15479d64-2f4a-46b0-b38c-63fa17897953",
-        "vulnerability--9b938d96-c356-419c-bd26-9cd6813a4d01",
-        "vulnerability--c4f27000-a0ec-407b-a25a-f97b3896fc5a",
-        "vulnerability--cc940f92-a3e8-49b8-a14d-0e8bc85d74f5",
-        "vulnerability--ccf445d7-c589-4083-a921-d13a258666ad",
-        "vulnerability--de9c42bc-5428-48bb-9d11-2ac184edc565"
+        "intrusion-set--c94859f5-3593-4b09-94e4-93454f32f3db",
+        "vulnerability--4524400d-c9a1-4503-a95e-6cbdc7b8e3d7",
+        "vulnerability--52f5f9bb-0c1b-494c-96ee-7d02397aec61",
+        "vulnerability--573b75ad-3d4e-47d9-b321-c70a2b044380",
+        "vulnerability--7088be6c-0f08-47ce-a78e-725351b18028",
+        "vulnerability--75350817-29cc-41ec-b8fd-f3a681c807c2",
+        "vulnerability--7c90a3da-39a2-4be8-bc3d-38721b99fa27",
+        "vulnerability--af5d61ff-5535-4700-926f-96cf102cd3af",
+        "vulnerability--bfce19fe-d19b-4ac6-b2dc-25aca615eaf1",
+        "vulnerability--cb14bb90-0696-47de-99c8-0f98dfd21db8",
+        "vulnerability--faf7edc4-b72d-4bf6-b9ee-f965f1159209"
       ],
-      "published": "2026-10-20T00:00:00.000Z",
+      "published": "2026-11-04T00:00:00.000Z",
       "report_types": [
         "threat-report"
       ],
@@ -5109,26 +5099,26 @@
       "type": "threat-actor"
     },
     {
-      "created": "2026-10-20T00:00:00.000Z",
+      "created": "2026-11-04T00:00:00.000Z",
       "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
-      "description": "Ivanti Connect Secure, Policy Secure, and ZTA Gateways Stack-Based Buffer Overflow Vulnerability. Ivanti Connect Secure, Policy Secure, and ZTA Gateways contains a stack-based buffer overflow vulnerability that allows a remote unauthenticated attacker to achieve remote code execution.  In CISA KEV since 2025-04-04, with known ransomware use.",
+      "description": "Google Brotli Unchecked Return Value Vulnerability. Google Brotli contains an unchecked return value vulnerability that allows a remote unauthenticated attacker to corrupt adjacent decoder state memory, disclose sensitive memory contents, cause a denial of service, or potentially execute arbitrary code using a crafted Brotli-compressed stream. In CISA KEV since 2026-10-27.",
       "external_references": [
         {
-          "external_id": "CVE-2025-22457",
+          "external_id": "CVE-2026-111497",
           "source_name": "cve"
         },
         {
           "source_name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-22457"
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111497"
         },
         {
           "source_name": "CISA KEV",
           "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
         }
       ],
-      "id": "vulnerability--15479d64-2f4a-46b0-b38c-63fa17897953",
-      "modified": "2026-10-20T00:00:00.000Z",
-      "name": "CVE-2025-22457",
+      "id": "vulnerability--4524400d-c9a1-4503-a95e-6cbdc7b8e3d7",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "name": "CVE-2026-111497",
       "object_marking_refs": [
         "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
       ],
@@ -5136,26 +5126,26 @@
       "type": "vulnerability"
     },
     {
-      "created": "2026-10-20T00:00:00.000Z",
+      "created": "2026-11-04T00:00:00.000Z",
       "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
-      "description": "Citrix NetScaler ADC and Gateway Out-of-Bounds Read Vulnerability. Citrix NetScaler ADC and Gateway contain an out-of-bounds read vulnerability due to insufficient input validation. This vulnerability can lead to memory overread when the NetScaler is configured as a Gateway (VPN virtual server, ICA Proxy, CVPN, RDP Proxy) OR AAA virtual server. In CISA KEV since 2025-07-10, with known ransomware use.",
+      "description": "Ivanti Connect Secure Missing Authentication for Critical Function Vulnerability. Ivanti Connect Secure contains a missing authentication for critical function vulnerability that could allow a local authenticated attacker to escalate their privileges. This vulnerability can be chained with CVE-2026-104935 and CVE-2026-118527. In CISA KEV since 2026-10-30.",
       "external_references": [
         {
-          "external_id": "CVE-2025-5777",
+          "external_id": "CVE-2026-111357",
           "source_name": "cve"
         },
         {
           "source_name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-5777"
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111357"
         },
         {
           "source_name": "CISA KEV",
           "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
         }
       ],
-      "id": "vulnerability--9b938d96-c356-419c-bd26-9cd6813a4d01",
-      "modified": "2026-10-20T00:00:00.000Z",
-      "name": "CVE-2025-5777",
+      "id": "vulnerability--52f5f9bb-0c1b-494c-96ee-7d02397aec61",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "name": "CVE-2026-111357",
       "object_marking_refs": [
         "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
       ],
@@ -5163,26 +5153,26 @@
       "type": "vulnerability"
     },
     {
-      "created": "2026-10-20T00:00:00.000Z",
+      "created": "2026-11-04T00:00:00.000Z",
       "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
-      "description": "Palo Alto Networks PAN-OS Authentication Bypass Vulnerability. Palo Alto Networks PAN-OS contains an authentication bypass vulnerability that allows attackers to bypass security restrictions and establish an unauthorized VPN connection. In CISA KEV since 2026-05-29, with known ransomware use.",
+      "description": "PHP Memory Corruption Vulnerability. PHP contains an out-of-memory corruption vulnerability that allows for unauthenticated remote code execution. In CISA KEV since 2026-10-26.",
       "external_references": [
         {
-          "external_id": "CVE-2026-0257",
+          "external_id": "CVE-2026-109618",
           "source_name": "cve"
         },
         {
           "source_name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-0257"
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109618"
         },
         {
           "source_name": "CISA KEV",
           "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
         }
       ],
-      "id": "vulnerability--c4f27000-a0ec-407b-a25a-f97b3896fc5a",
-      "modified": "2026-10-20T00:00:00.000Z",
-      "name": "CVE-2026-0257",
+      "id": "vulnerability--573b75ad-3d4e-47d9-b321-c70a2b044380",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "name": "CVE-2026-109618",
       "object_marking_refs": [
         "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
       ],
@@ -5190,26 +5180,26 @@
       "type": "vulnerability"
     },
     {
-      "created": "2026-10-20T00:00:00.000Z",
+      "created": "2026-11-04T00:00:00.000Z",
       "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
-      "description": "Palo Alto Networks PAN-OS Code Injection Vulnerability. Palo Alto Networks PAN-OS contains a code injection vulnerability that could allow an authenticated attacker with network access to execute arbitrary code with root privileges on the firewall. In CISA KEV since 2026-10-14.",
+      "description": "GitLab Community Edition and Enterprise Edition Integer Overflow or Wraparound Vulnerability. GitLab Community Edition and Enterprise Edition contain a integer overflow or wraparound vulnerability that could allow an unauthenticated user to execute arbitrary code on the GitLab server via a specially crafted regular expression in a CI/CD configuration, due to insufficient regular expression validation. In CISA KEV since 2026-10-29.",
       "external_references": [
         {
-          "external_id": "CVE-2026-0322",
+          "external_id": "CVE-2026-97229",
           "source_name": "cve"
         },
         {
           "source_name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-0322"
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97229"
         },
         {
           "source_name": "CISA KEV",
           "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
         }
       ],
-      "id": "vulnerability--cc940f92-a3e8-49b8-a14d-0e8bc85d74f5",
-      "modified": "2026-10-20T00:00:00.000Z",
-      "name": "CVE-2026-0322",
+      "id": "vulnerability--7088be6c-0f08-47ce-a78e-725351b18028",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "name": "CVE-2026-97229",
       "object_marking_refs": [
         "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
       ],
@@ -5217,26 +5207,26 @@
       "type": "vulnerability"
     },
     {
-      "created": "2026-10-20T00:00:00.000Z",
+      "created": "2026-11-04T00:00:00.000Z",
       "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
-      "description": "Fortinet FortiOS and FortiProxy Authentication Bypass Vulnerability. Fortinet FortiOS and FortiProxy contain an authentication bypass vulnerability that may allow an unauthenticated, remote attacker to gain super-admin privileges via crafted requests to Node.js websocket module. In CISA KEV since 2025-01-14, with known ransomware use.",
+      "description": "Ivanti Connect Secure Generation of Predictable Numbers or Identifiers Vulnerability. Ivanti Connect Secure contains a generation of predictable numbers or identifiers vulnerability that allows a remote authenticated attacker to upload files with attacker-controlled content to a known location on disk. This vulnerability can be chained with CVE-2026-104935 and CVE-2026-111357. In CISA KEV since 2026-10-30.",
       "external_references": [
         {
-          "external_id": "CVE-2024-55591",
+          "external_id": "CVE-2026-118527",
           "source_name": "cve"
         },
         {
           "source_name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-55591"
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118527"
         },
         {
           "source_name": "CISA KEV",
           "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
         }
       ],
-      "id": "vulnerability--ccf445d7-c589-4083-a921-d13a258666ad",
-      "modified": "2026-10-20T00:00:00.000Z",
-      "name": "CVE-2024-55591",
+      "id": "vulnerability--75350817-29cc-41ec-b8fd-f3a681c807c2",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "name": "CVE-2026-118527",
       "object_marking_refs": [
         "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
       ],
@@ -5244,26 +5234,134 @@
       "type": "vulnerability"
     },
     {
-      "created": "2026-10-20T00:00:00.000Z",
+      "created": "2026-11-04T00:00:00.000Z",
       "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
-      "description": "Microsoft SharePoint Deserialization of Untrusted Data Vulnerability. Microsoft SharePoint Server on-premises contains a deserialization of untrusted data vulnerability that could allow an unauthorized attacker to execute code over a network. This vulnerability could be chained with CVE-2025-53771. CVE-2025-53770 is a patch bypass for CVE-2025-49704, and the updates for CVE-2025-53770 include more robust protection than those for CVE-2025-49704. In CISA KEV since 2025-07-20, with known ransomware use.",
+      "description": "PHP Stale Internal Request-State Vulnerability. PHP contains a stale internal request-state vulnerability that allows for unauthenticated remote code execution. In CISA KEV since 2026-10-26.",
       "external_references": [
         {
-          "external_id": "CVE-2025-53770",
+          "external_id": "CVE-2026-109619",
           "source_name": "cve"
         },
         {
           "source_name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-53770"
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109619"
         },
         {
           "source_name": "CISA KEV",
           "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
         }
       ],
-      "id": "vulnerability--de9c42bc-5428-48bb-9d11-2ac184edc565",
-      "modified": "2026-10-20T00:00:00.000Z",
-      "name": "CVE-2025-53770",
+      "id": "vulnerability--7c90a3da-39a2-4be8-bc3d-38721b99fa27",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "name": "CVE-2026-109619",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "vulnerability"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "description": "Atlassian Multiple Products Files or Directories Accessible to External Parties Vulnerability. Multiple Atlassian products (Bitbucket Data Center ,Confluence Data Center, Jira Service Management Data Center, Jira Software Data Center, Bamboo Data Center, Crowd Data Center, Crucible and Fisheye) contain a files or directories accessible to external parties vulnerability which could allow an unauthenticated attacker to access specific files within the web application root directory in affected versions. In CISA KEV since 2026-10-15.",
+      "external_references": [
+        {
+          "external_id": "CVE-2026-21589",
+          "source_name": "cve"
+        },
+        {
+          "source_name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21589"
+        },
+        {
+          "source_name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        }
+      ],
+      "id": "vulnerability--af5d61ff-5535-4700-926f-96cf102cd3af",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "name": "CVE-2026-21589",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "vulnerability"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "description": "Ivanti Connect Secure Authentication Bypass by Spoofing Vulnerability. Ivanti Connect Secure contains an authentication bypass by spoofing vulnerability that allows a remote unauthenticated attacker to execute arbitrary commands. In CISA KEV since 2026-10-13.",
+      "external_references": [
+        {
+          "external_id": "CVE-2026-104935",
+          "source_name": "cve"
+        },
+        {
+          "source_name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-104935"
+        },
+        {
+          "source_name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        }
+      ],
+      "id": "vulnerability--bfce19fe-d19b-4ac6-b2dc-25aca615eaf1",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "name": "CVE-2026-104935",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "vulnerability"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "description": "Cisco Secure Firewall ASA Software and Cisco Secure FTD Software Unchecked Return Value to NULL Pointer Dereference Vulnerability. Cisco Secure Firewall ASA Software and Cisco Secure FTD Software contains an unchecked return value to NULL pointer dereference vulnerability that could allow an unauthenticated, remote attacker to cause the device to reload unexpectedly, resulting in a denial of service (DoS) condition. In CISA KEV since 2026-10-29.",
+      "external_references": [
+        {
+          "external_id": "CVE-2026-76418",
+          "source_name": "cve"
+        },
+        {
+          "source_name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76418"
+        },
+        {
+          "source_name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        }
+      ],
+      "id": "vulnerability--cb14bb90-0696-47de-99c8-0f98dfd21db8",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "name": "CVE-2026-76418",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "vulnerability"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "description": "Fortinet Multiple Products Path Traversal Vulnerability. FortiOS, FortiPAM, FortiProxy, and FortiSwitchManager contain a path traversal vulnerability that may allow an authenticated attacker with admin profile and at least read-write permissions to write or delete arbitrary files via specific CLI commands. In CISA KEV since 2026-10-16.",
+      "external_references": [
+        {
+          "external_id": "CVE-2025-61624",
+          "source_name": "cve"
+        },
+        {
+          "source_name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-61624"
+        },
+        {
+          "source_name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        }
+      ],
+      "id": "vulnerability--faf7edc4-b72d-4bf6-b9ee-f965f1159209",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "name": "CVE-2025-61624",
       "object_marking_refs": [
         "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
       ],

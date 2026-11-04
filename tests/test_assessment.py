@@ -19,6 +19,7 @@ class AssessmentEvidence(unittest.TestCase):
         cls.ids = {
             "campaign": {i["id"] for i in load("smishing-apk.json")["items"]},
             "actor": {i["id"] for i in load("apt-campaigns.json")["items"]},
+            "hacktivist": {i["id"] for i in load("hacktivist.json")["items"]},
             "detection": {f[:-4] for f in os.listdir(os.path.join(ROOT, "detections", "sigma")) if f.endswith(".yml")},
         }
 
@@ -44,7 +45,7 @@ class AssessmentEvidence(unittest.TestCase):
     def test_items_that_cite_feed_records_also_cite_a_primary_source_or_record(self):
         for it in self.items:
             kinds = {ev["type"] for ev in it["evidence"]}
-            self.assertTrue(kinds & {"source", "campaign", "actor", "cve"}, f"rank {it['rank']}")
+            self.assertTrue(kinds & {"source", "campaign", "actor", "hacktivist", "cve"}, f"rank {it['rank']}")
 
 
 if __name__ == "__main__":
