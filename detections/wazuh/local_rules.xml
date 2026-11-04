@@ -11,7 +11,7 @@
                    sign-ins pulled with <query>auditLogs/signIns</query> keep Graph's field names
 
   Requirements by rule:
-    100210-100212  Windows + Sysmon (wazuh-agent, Sysmon channel collected).
+    100210-100213  Windows + Sysmon (wazuh-agent, Sysmon channel collected).
     100220         PAN-OS SYSTEM logs forwarded to Wazuh (built-in Palo Alto decoder).
     100230/100231  Entra ID sign-ins via the azure-logs Graph integration.
 
@@ -53,6 +53,17 @@
     <field name="win.eventdata.details" type="pcre2">(?:^|[,; ])(?!(?:10\.|172\.(?:1[6-9]|2[0-9]|3[01])\.|192\.168\.))\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}</field>
     <description>FrostArmada: endpoint DNS includes a resolver outside policy: $(win.eventdata.details)</description>
     <mitre><id>T1565.001</id><id>T1071.004</id></mitre>
+  </rule>
+
+  <!-- Compiled HTML Help (hh.exe) spawning a script host or LOLBin.
+       Mustang Panda delivered LOTUSLITE to Indian banks in CHM attachments (2026).
+       Covers the common ways a help file runs code; not a LOTUSLITE signature. -->
+  <rule id="100213" level="12">
+    <if_sid>61603</if_sid>
+    <field name="win.eventdata.parentImage" type="pcre2">(?i)\\(hh)\.exe$</field>
+    <field name="win.eventdata.image" type="pcre2">(?i)\\(wscript|cscript|powershell|pwsh|mshta|cmd|rundll32|regsvr32|curl|certutil|bitsadmin)\.exe$</field>
+    <description>Mustang Panda-style CHM delivery: $(win.eventdata.parentImage) spawned $(win.eventdata.image)</description>
+    <mitre><id>T1218.001</id><id>T1204.002</id></mitre>
   </rule>
 
 </group>

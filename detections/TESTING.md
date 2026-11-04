@@ -89,6 +89,13 @@ own telemetry, in your own SIEM, against a real baseline.
 - **Silent:** 7-Zip → Notepad; WinRAR → Acrobat (ordinary applications); `services.exe` → `cmd.exe` (not an archive tool or Explorer)
 - **Scope:** the archive/Explorer → LOLBin step only, not the full ZIP → LNK → payload chain
 
+### `chm_help_file_spawns_script_or_lolbin`
+- **Fields:** `ParentImage` (`hh.exe`), `Image` (wscript/cscript/PowerShell/pwsh/mshta/cmd/rundll32/regsvr32/curl/certutil/bitsadmin)
+- **Alerts:** a help file opening `cmd.exe`; `hh.exe` → WScript running a `.js` file (case-insensitive); `hh.exe` → `curl.exe` fetching a second stage
+- **Silent:** Explorer opening `hh.exe` (opening a help file is normal); `hh.exe` → Internet Explorer (a link, not a script host); Word → `cmd.exe` (parent isn't `hh.exe`)
+- **Scope:** the help-file execution step. Acronis did not publish LOTUSLITE's exact child process, so this is the generic CHM technique (T1218.001), not a LOTUSLITE signature
+- **Known false positives:** legacy internal help files built to open a shell or script
+
 ### `windows_suspicious_dns_server_change`
 - **Fields:** `TargetObject` (ends `NameServer` / `DhcpNameServer`), `Details` (the new value, which can hold several resolvers)
 - **Logic:** alert if **any** resolver in the value is outside the trusted-resolver policy (RFC1918 by default)
