@@ -51,7 +51,7 @@
       "title": "Ivanti again, and a 12-hour patch window",
       "category": "exploited-vulns",
       "severity": "critical",
-      "why": "Three Ivanti Connect Secure flaws entered CISA's KEV catalog in October: an authentication bypass on 13 October, then a privilege escalation and a file-upload flaw on 30 October. Volexity documented them chained into unauthenticated root on the VPN appliance, used by a new actor (UTA0576) to pull credentials, Active Directory data and BitLocker recovery keys. Since mid-October, Cisco ASA/FTD, Fortinet, GitLab and an Atlassian flaw with an EPSS near 99% have joined the list too. CERT-In's May 2026 guidance asks for exploited internet-facing flaws to be fixed within 12 hours where feasible. For an Ivanti box that was exposed before patching, assume credential theft: patch, check integrity, and rotate what the appliance could see.",
+      "why": "Three Ivanti Connect Secure flaws entered CISA's KEV catalog in October: an authentication bypass on 13 October, then a privilege escalation and a file-upload flaw on 30 October. Volexity documented them chained into unauthenticated root on the VPN appliance, used by a new actor (UTA0576) to take credentials and Active Directory data and to search for administrator passwords and BitLocker recovery keys. Since mid-October, Cisco ASA/FTD, Fortinet, GitLab and an Atlassian flaw with an EPSS near 99% have joined the list too. CERT-In's May 2026 guidance asks for exploited internet-facing flaws to be fixed within 12 hours where feasible. For an Ivanti box that was exposed before patching, assume credential theft: patch, check integrity, and rotate what the appliance could see.",
       "links": [
         {
           "title": "Live watchlist",
@@ -78,7 +78,7 @@
           "type": "source",
           "title": "The Hacker News: Attackers chain three Ivanti Connect Secure flaws (31 Oct 2026)",
           "url": "https://thehackernews.com/2026/10/attackers-chain-three-ivanti-connect.html",
-          "supports": "Volexity chain to unauthenticated root; UTA0576 stole credentials, AD data and BitLocker keys"
+          "supports": "Volexity chain to unauthenticated root; UTA0576 took credentials and AD metadata and searched for admin passwords and BitLocker recovery keys"
         },
         {
           "type": "cve",

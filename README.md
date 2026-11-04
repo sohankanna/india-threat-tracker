@@ -113,12 +113,17 @@ scripts/fetch_exploited.py   CISA KEV + FIRST EPSS -> exploited-cve.json + watch
 scripts/build_iocs.py        campaign feed         -> iocs.txt + iocs.csv
 scripts/validate.py          every JSON feed       -> checked against schema/
 scripts/check_inventory.py   detection pack        -> every rule has all formats + a test
-scripts/make_tweet_draft.py  today's KEV adds      -> drafts/<date>.md (a draft, not post-ready)
+scripts/make_tweet_draft.py  new India-relevant KEV adds -> drafts/<date>.md, and drafts/week-*.md on Mondays
+                             (facts + a rough post under 280 characters; a draft, never posted)
+scripts/ransomware_counts.py leak-site claims vs India -> monthly counts in the run summary (no names)
 ```
 
-Two GitHub Actions run it. [`update.yml`](.github/workflows/update.yml)
+GitHub Actions run it. [`update.yml`](.github/workflows/update.yml)
 regenerates the feeds **twice a day**, rebuilds the IOC exports, runs the
 pipeline tests, and retries its push if someone pushed during the run.
+[`ransomware-counts.yml`](.github/workflows/ransomware-counts.yml) runs on the
+2nd of each month and posts India's leak-site claim counts to the run summary,
+as a prompt to refresh the ransomware landscape figures by hand.
 [`validate-pr.yml`](.github/workflows/validate-pr.yml) checks every push and pull
 request: schemas, that the IOC exports match the campaign data, the detection
 inventory, the test suite, Sigma validation and a Sigma→Splunk conversion.

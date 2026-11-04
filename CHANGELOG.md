@@ -5,12 +5,31 @@ not listed here.
 
 ## Unreleased
 
+### Automation
+
+* `scripts/make_tweet_draft.py` now drafts India-relevant KEV additions from
+  the last three days (high relevance, or medium with ransomware use or EPSS of
+  10% or more), never drafts the same CVE twice, notes where the tracker already
+  covers a CVE, and writes a rough post that fits 280 characters with a link to
+  the tracker. On Mondays it also writes a weekly draft. Drafts are never posted.
+* New `scripts/ransomware_counts.py` and monthly `ransomware-counts.yml`: counts
+  ransomware leak-site claims against India from ransomware.live, by month and
+  group, into the run summary. Victim names are never read or stored, nothing is
+  committed, and an API failure is a warning, not a failed run.
+
+### Corrections
+
+* November assessment, item 2: UTA0576 *searched for* BitLocker recovery keys
+  and administrator passwords; the source does not say keys were taken. The
+  earlier wording said they were stolen.
+
 ### Detections (Phase 5)
 
 * New rule `sysvol_payload_or_gpo_scheduled_task_written` (Wazuh 100214): an
   executable, script or Group Policy scheduled-task file created under SYSVOL on a
   domain controller, the staging step The Gentlemen use to deploy ransomware
   across a domain.
+
 ### Ransomware (new feed)
 
 * New `data/ransomware.json` and `schema/ransomware.schema.json`.
