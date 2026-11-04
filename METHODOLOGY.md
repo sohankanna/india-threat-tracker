@@ -9,7 +9,7 @@ know the bar they're meeting.
 
 ## What this is
 
-A curated, machine-readable feed of threats **relevant to India**, in three
+A curated, machine-readable feed of threats **relevant to India**, in four
 parts, plus a monthly analyst assessment on top:
 
 | Feed | Source of truth | Cadence |
@@ -17,6 +17,7 @@ parts, plus a monthly analyst assessment on top:
 | `data/exploited-cve.json` / `watchlist.json` | CISA KEV + FIRST EPSS, auto-enriched | Twice daily (GitHub Action) |
 | `data/smishing-apk.json` | Hand-curated from public reporting & busts | On new, credible reporting |
 | `data/apt-campaigns.json` | Hand-curated from vendor/CERT reporting | On new, credible reporting |
+| `data/hacktivist.json` | Hand-curated from vendor, CERT and police reporting; claims recorded with their verification status | On new, credible reporting |
 | `data/assessment.json` | Analyst judgement over the above | Monthly |
 | `data/iocs.txt` / `iocs.csv` | Derived from the campaign feed | Rebuilt with every update |
 
@@ -195,6 +196,36 @@ cleanly onto governments. Two things are kept deliberately separate:
 
 The global actor map is context for *who operates and
 who they target* — it is not a live attack map, and it is not a courtroom claim.
+
+### Which actors are included
+
+An actor is added only when public reporting names **Indian targets**: a
+campaign against Indian organisations or people, or India in a documented
+victim list. Being active, dangerous or in the news is not enough. Actors
+assessed as India-nexus are not "threats to India" and are not added; SideWinder
+is the one exception, kept and labelled as regional context. Patchwork and
+Bitter were researched and left out on that basis. OilRig, Charming Kitten and
+CyberAv3ngers were left out because no reporting found names Indian targets.
+
+Each actor carries a `timeline` of dated milestones, each tied to a source. The
+date keeps the precision the source gives; a year stays a year.
+
+## Hacktivists
+
+`data/hacktivist.json` covers hacktivist groups, alliances and claim waves aimed
+at India. Hacktivists publicise what they claim, and most claims about India
+have turned out to be overstated, recycled or invented, so the feed treats a
+claim as a claim:
+
+- Each notable claim carries a **`verification`** value taken from the cited
+  source: `confirmed`, `partly-true`, `overstated`, `recycled`, `false` or
+  `unverified`. The tracker does not upgrade a claim on its own say-so.
+- **`confidence`** rates the reporting about the group's activity against India,
+  not the group's own claims.
+- `claimed_origin` is what the group says or the source reports, not a verified
+  location.
+- Named tools (for example a public DDoS tool) are context. Nothing in this feed
+  becomes an indicator, and no claimed victim data is collected or linked.
 
 ---
 

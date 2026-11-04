@@ -8,7 +8,7 @@
   "data_guide": "https://github.com/sohankanna/india-threat-tracker/blob/main/DATA-GUIDE.md",
   "methodology": "https://github.com/sohankanna/india-threat-tracker/blob/main/METHODOLOGY.md",
   "license": "MIT (code) / CC-BY-4.0 (data)",
-  "updated_at": "2026-10-20",
+  "updated_at": "2026-11-04",
   "resources": {
     "watchlist": {
       "file": "data/watchlist.json",
@@ -35,7 +35,7 @@
       "schema": "schema/smishing-apk.schema.json",
       "updated_by": "curated",
       "cadence": "as-observed",
-      "description": "Fake-APK and smishing campaigns affecting Indian users"
+      "description": "Fake-APK, smishing and social-engineering fraud campaigns affecting Indian users"
     },
     "apt-campaigns": {
       "file": "data/apt-campaigns.json",
@@ -45,6 +45,15 @@
       "updated_by": "curated",
       "cadence": "as-observed",
       "description": "State-nexus actors targeting India, plus regional context"
+    },
+    "hacktivist": {
+      "file": "data/hacktivist.json",
+      "kind": "feed",
+      "format": "json",
+      "schema": "schema/hacktivist.schema.json",
+      "updated_by": "curated",
+      "cadence": "as-observed",
+      "description": "Hacktivist groups, alliances and claim waves aimed at Indian targets, with each notable claim's verification status"
     },
     "assessment": {
       "file": "data/assessment.json",

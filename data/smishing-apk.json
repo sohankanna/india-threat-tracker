@@ -1,7 +1,7 @@
 {
   "feed": "smishing-apk",
-  "generated_at": "2026-10-20",
-  "count": 7,
+  "generated_at": "2026-11-04",
+  "count": 11,
   "items": [
     {
       "id": "sm-2025-001",
@@ -75,7 +75,7 @@
         }
       ],
       "key_findings": [
-        "A fake ₹1 \"ownership verification\" UPI screen captures the UPI PIN and sends it to a Firebase endpoint.",
+        "A fake \u20b91 \"ownership verification\" UPI screen captures the UPI PIN and sends it to a Firebase endpoint.",
         "Banking SMS is exfiltrated and incoming SMS can be forwarded to an attacker number, which hands the operators OTPs and UPI device binding.",
         "Payloads are pulled from GitHub; droppers use ZIP-header manipulation and native packers, and terminate on x86 emulators.",
         "Device registration runs through a Telegram bot; some variants also run a cryptominer."
@@ -193,7 +193,7 @@
       "key_findings": [
         "A loader shows a fake \"App Update Available\" prompt and installs a second APK with the same name and icon.",
         "The payload's activity is categorised as INFO rather than LAUNCHER, so it never appears in the app drawer.",
-        "Fake e-Challan and ₹1 \"verification\" screens collect Aadhaar, PAN, full card data, ATM PIN, net-banking credentials and UPI PIN; the UPI payment is rigged to fail.",
+        "Fake e-Challan and \u20b91 \"verification\" screens collect Aadhaar, PAN, full card data, ATM PIN, net-banking credentials and UPI PIN; the UPI payment is rigged to fail.",
         "Incoming SMS is rebuilt at PDU level and forwarded for OTP theft; C2 is HTTP POST to jsonserv domains with base64-chunked URLs."
       ],
       "recommended_actions": [
@@ -555,6 +555,333 @@
         }
       ],
       "references_blog": "deconstructing-a-stealthy-android-trojan-a-case-study-in-phishing-and-evasion"
+    },
+    {
+      "id": "sm-2025-004",
+      "title": "Wedding-invitation APK - SpyMax RAT on WhatsApp",
+      "category": "Android RAT",
+      "summary": "A fake digital wedding invitation, sent on WhatsApp from a known contact, that is really an Android app. Once installed it walks the victim through granting SMS, notification and 'full control' access, then runs the SpyMax remote-access trojan to read bank OTPs, WhatsApp messages and keystrokes. Maharashtra Cyber Police warned about the lure in December 2024, and K7 Labs and Broadcom analysed samples in June 2025.",
+      "status": "active",
+      "attribution": "Unattributed, financially motivated",
+      "first_seen": "2024-12",
+      "date_added": "2026-11-04",
+      "last_updated": "2026-11-04",
+      "last_verified": "2026-11-04",
+      "confidence": "high",
+      "targets": [
+        "Indian Android users",
+        "Mobile-banking and UPI customers"
+      ],
+      "lure_themes": [
+        "wedding-invitation"
+      ],
+      "impersonates": [
+        "Wedding invitation from a contact",
+        "Google Play services"
+      ],
+      "capabilities": [
+        "otp-interception",
+        "notification-theft",
+        "keylogging",
+        "sms-theft",
+        "clipboard-theft",
+        "contact-theft",
+        "icon-hiding",
+        "telegram-c2"
+      ],
+      "attack": [
+        {
+          "id": "T1660",
+          "name": "Phishing"
+        },
+        {
+          "id": "T1655.001",
+          "name": "Masquerading: Match Legitimate Name or Location"
+        },
+        {
+          "id": "T1517",
+          "name": "Access Notifications"
+        },
+        {
+          "id": "T1417.001",
+          "name": "Input Capture: Keylogging"
+        },
+        {
+          "id": "T1636.004",
+          "name": "Protected User Data: SMS Messages"
+        },
+        {
+          "id": "T1636.003",
+          "name": "Protected User Data: Contact List"
+        },
+        {
+          "id": "T1414",
+          "name": "Clipboard Data"
+        },
+        {
+          "id": "T1418",
+          "name": "Software Discovery"
+        },
+        {
+          "id": "T1628.001",
+          "name": "Hide Artifacts: Suppress Application Icon"
+        },
+        {
+          "id": "T1532",
+          "name": "Archive Collected Data"
+        },
+        {
+          "id": "T1646",
+          "name": "Exfiltration Over C2 Channel"
+        }
+      ],
+      "key_findings": [
+        "The file arrives as 'Wedding Invitation.apk'. It asks for SMS and contacts access, to be the default home app, and for 'Install unknown apps', then shows a fake Google Play services page asking for 'full control of your device' (K7 Labs).",
+        "It installs a second package and intercepts notifications, which hands the operators bank OTPs, WhatsApp messages and 2FA codes. It also logs keystrokes, collects SMS and clipboard data, and checks for installed mobile security products.",
+        "Stolen data is gzip-compressed before it is sent. K7 reported a C2 at 104.234.167[.]145 on port 7860; Broadcom saw exfiltration mainly through Telegram bots, with C2 servers as fallback.",
+        "The second package's manifest references Airtel, Jio and BSNL, consistent with Indian targeting.",
+        "Maharashtra Cyber Police warned citizens about fake wedding-invitation APKs in December 2024."
+      ],
+      "recommended_actions": [
+        "Users: an invitation is a picture or a PDF, never an app. Do not install an .apk from a chat, even from someone you know.",
+        "Keep 'Install unknown apps' off for WhatsApp and browsers, and never grant accessibility, notification access or device admin to an app you did not choose from the Play Store.",
+        "Banks: treat OTPs as readable by malware on the same phone; flag new-device logins followed by quick transfers.",
+        "If someone installed it: switch the phone to airplane mode, uninstall the app (removing device admin first if needed), change banking and email passwords from another device, and report on 1930."
+      ],
+      "iocs": {
+        "package_names": [
+          "com.cristal.bristral.tristal.mistral",
+          "com.android.pictach"
+        ]
+      },
+      "infrastructure": {
+        "abused_platforms": [
+          "WhatsApp (delivery)"
+        ],
+        "c2_technology": [
+          "Telegram Bot API"
+        ]
+      },
+      "india_relevance": "high",
+      "tags": [
+        "android",
+        "rat",
+        "whatsapp",
+        "otp",
+        "wedding-invite"
+      ],
+      "sources": [
+        {
+          "title": "K7 Labs - SpyMax: a fake wedding invitation app targeting Indian mobile users (20 Jun 2025)",
+          "url": "https://labs.k7computing.com/index.php/spymax-a-fake-wedding-invitation-app-targeting-indian-mobile-users/"
+        },
+        {
+          "title": "Cyber Security News - Beware of weaponized wedding invite scams (Broadcom research, 25 Jun 2025)",
+          "url": "https://cybersecuritynews.com/beware-of-weaponized-wedding-invite-scams/"
+        },
+        {
+          "title": "Free Press Journal - Maharashtra Cyber Police warn citizens of wedding invitation scam (24 Dec 2024)",
+          "url": "https://www.freepressjournal.in/mumbai/maharashtra-cyber-police-warn-citizens-of-wedding-invitation-scam-leading-to-malware-financial-losses-check-details"
+        }
+      ]
+    },
+    {
+      "id": "sm-2024-001",
+      "title": "'Digital arrest' extortion",
+      "category": "Fraud scheme: impersonation and extortion",
+      "summary": "Callers posing as police, CBI, narcotics, customs, RBI or ED officers tell the victim a parcel in their name held drugs or fake passports, or that their account is tied to money laundering, then keep them on a video call under 'digital arrest' until they transfer their savings for 'verification'. I4C data shows cases rising from 39,925 in 2022 to 1,23,672 in 2024, with losses of Rs 1,918 crore that year, before falling in 2025. Much of it is run from scam compounds in Southeast Asia.",
+      "status": "active",
+      "attribution": "Organised scam networks, largely operating from Southeast Asia (I4C/MHA)",
+      "first_seen": "2022",
+      "date_added": "2026-11-04",
+      "last_updated": "2026-11-04",
+      "last_verified": "2026-11-04",
+      "confidence": "high",
+      "targets": [
+        "Indian citizens"
+      ],
+      "lure_themes": [
+        "parcel-with-contraband",
+        "money-laundering-case",
+        "mobile-number-disconnection",
+        "arrest-warrant"
+      ],
+      "impersonates": [
+        "Police",
+        "CBI",
+        "Narcotics officials",
+        "RBI",
+        "Enforcement Directorate",
+        "Customs",
+        "Judges"
+      ],
+      "key_findings": [
+        "I4C figures compiled by ThePrint: 39,925 cases and Rs 91 crore lost in 2022; 60,676 and Rs 339 crore in 2023; 1,23,672 and Rs 1,918 crore in 2024; then 17,264 cases and Rs 644 crore in 2025.",
+        "The scripts rely on fear and isolation: a fake parcel or case, a 'senior officer' on video, uniforms and studio sets made to look like police stations, and instructions not to tell anyone or end the call.",
+        "In May 2024, I4C and Microsoft blocked more than 1,000 Skype IDs used for these calls. By November 2024, more than 6.69 lakh SIM cards, 1.32 lakh IMEIs and 17,000 WhatsApp accounts linked to Cambodia, Laos, Thailand and Myanmar had been blocked.",
+        "On 1 December 2025, the Supreme Court directed the CBI to investigate digital-arrest cases nationwide, including the role of bank staff in opening mule accounts, and asked the RBI how it detects them.",
+        "Money moves through mule accounts; the share of defrauded money blocked in time rose from 6% in 2021 to 19% by 2026."
+      ],
+      "recommended_actions": [
+        "No Indian agency arrests or questions anyone over a video call, and none asks for money to be moved for 'verification'. Hang up.",
+        "Report at once on 1930 or cybercrime.gov.in: the first hour decides whether the money can still be frozen.",
+        "Banks: flag elderly customers making large first-time transfers or breaking fixed deposits while on a call, and slow them down with a call-back.",
+        "Families: talk to older relatives about this script specifically; recognising it is the main defence."
+      ],
+      "india_relevance": "high",
+      "tags": [
+        "social-engineering",
+        "impersonation",
+        "extortion",
+        "video-call",
+        "mule-accounts"
+      ],
+      "sources": [
+        {
+          "title": "ThePrint - After 465% spike in 2024, MHA data shows digital arrest scams are on a decline",
+          "url": "https://theprint.in/india/governance/after-465-spike-in-2024-mha-data-shows-digital-arrest-scams-are-on-a-decline-in-india/2857002/"
+        },
+        {
+          "title": "MediaNama - Over 1,000 Skype IDs blocked over digital arrests (15 May 2024)",
+          "url": "https://www.medianama.com/2024/05/223-skype-ids-blocked-digital-arrests-cyber-fraud/"
+        },
+        {
+          "title": "The Tribune - Over 6.69 lakh SIM cards and 1.32 lakh IMEIs blocked (28 Nov 2024)",
+          "url": "https://tribuneindia.com/news/india-cracks-down-on-digital-arrest-scam-over-6-69-lakh-sim-cards-and-1-32-lakh-imeis-blocked"
+        },
+        {
+          "title": "Onmanorama - Supreme Court orders CBI probe into digital arrest scams (1 Dec 2025)",
+          "url": "https://www.onmanorama.com/news/india/2025/12/01/digital-arrest-scams-cbi-investigation-sc-order.html"
+        }
+      ]
+    },
+    {
+      "id": "sm-2025-005",
+      "title": "Fake stock-tip groups and trading apps",
+      "category": "Fraud scheme: investment",
+      "summary": "Social media ads and messages pull victims into WhatsApp or Telegram 'investment' groups run by people posing as market experts, brokers or SEBI-registered advisers. Members are coached into a fake trading app or website that shows growing profits, keep depositing, and find they cannot withdraw. I4C counted more than 30,000 victims and over Rs 1,500 crore lost in six months to October 2025.",
+      "status": "active",
+      "attribution": "Organised fraud networks, often tied to foreign syndicates (I4C)",
+      "first_seen": "2024",
+      "date_added": "2026-11-04",
+      "last_updated": "2026-11-04",
+      "last_verified": "2026-11-04",
+      "confidence": "high",
+      "targets": [
+        "Retail investors",
+        "Salaried professionals aged 30-60"
+      ],
+      "lure_themes": [
+        "stock-tips",
+        "guaranteed-returns",
+        "trading-training"
+      ],
+      "impersonates": [
+        "SEBI-registered advisers",
+        "Brokerages",
+        "Well-known investors"
+      ],
+      "key_findings": [
+        "I4C (October 2025): more than 30,000 victims and over Rs 1,500 crore lost in six months. Bengaluru, Delhi-NCR and Hyderabad account for nearly 65% of cases, and 76% of victims are aged 30 to 60.",
+        "CloudSEK (July 2024) counted over 29,000 malicious investment ads on Facebook and over 81,000 fake investment WhatsApp groups since January 2024, across India, Malaysia, the US, Thailand and Vietnam.",
+        "Groups are run by teams with set roles, including impersonators, hype-makers and affiliates, and show scripted 'live training' and fake proof of gains.",
+        "The trading apps imitate real platforms, display fabricated profits to draw bigger deposits, and then block withdrawals.",
+        "Victim data such as phone numbers of known traders is bought from brokers who source it from underground forums."
+      ],
+      "recommended_actions": [
+        "Check any adviser on SEBI's register and only trade through a registered broker's official app from the Play Store or App Store.",
+        "Treat being added to a stock-tip group by a stranger as a scam signal, especially when it promises fixed or guaranteed returns.",
+        "Being asked to pay a 'tax' or 'fee' before a withdrawal means the money is already gone: stop, and report on 1930.",
+        "Banks: watch for repeated transfers from one customer to many newly opened current accounts with unrelated names."
+      ],
+      "infrastructure": {
+        "abused_platforms": [
+          "WhatsApp groups",
+          "Telegram channels",
+          "Facebook ads"
+        ]
+      },
+      "india_relevance": "high",
+      "tags": [
+        "investment-fraud",
+        "whatsapp",
+        "telegram",
+        "fake-trading-app"
+      ],
+      "sources": [
+        {
+          "title": "Business Today - Over 30,000 Indians duped in investment scams (I4C, 25 Oct 2025)",
+          "url": "https://www.businesstoday.in/india/story/over-30000-indians-duped-in-investment-scams-bengaluru-delhi-ncr-hyderabad-worst-hit-499542-2025-10-25"
+        },
+        {
+          "title": "ITVoice - CloudSEK uncovers investment scam network targeting India and beyond (3 Jul 2024)",
+          "url": "https://www.itvoice.in/inside-the-world-of-investment-scams-cloudsek-uncovers-sophisticated-scam-network-targeting-india-and-beyond"
+        }
+      ]
+    },
+    {
+      "id": "sm-2023-001",
+      "title": "Task-based 'part-time job' scams",
+      "category": "Fraud scheme: job and task",
+      "summary": "Ads and messages offering work from home ('ghar baithe job') lead to an agent on WhatsApp or Telegram who pays small commissions for liking videos or rating places, then moves the victim to 'prepaid' task sets that need ever larger deposits until the money is frozen. In 2023 the government blocked more than 100 such websites, and Hyderabad police traced one network to Rs 712 crore taken from about 15,000 people.",
+      "status": "active",
+      "attribution": "Overseas-run networks using Indian mule accounts (MHA; Hyderabad Police)",
+      "first_seen": "2023",
+      "date_added": "2026-11-04",
+      "last_updated": "2026-11-04",
+      "last_verified": "2026-11-04",
+      "confidence": "high",
+      "targets": [
+        "Unemployed youth",
+        "Women seeking home-based work",
+        "Retired employees"
+      ],
+      "lure_themes": [
+        "work-from-home",
+        "like-and-subscribe-tasks",
+        "map-reviews",
+        "rate-and-review"
+      ],
+      "impersonates": [
+        "Recruiters",
+        "Marketing agencies"
+      ],
+      "key_findings": [
+        "In December 2023, MeitY blocked more than 100 websites running task-based job and investment fraud, on the recommendation of I4C's National Cybercrime Threat Analytics Unit. The ads ran on Google and Meta in several languages.",
+        "MHA said the sites were run by overseas actors, with proceeds moved out through card networks, cryptocurrency, overseas ATM withdrawals and international fintech companies.",
+        "Hyderabad Police (July 2023): a 'rate and review' scheme on Telegram took about Rs 712 crore from some 15,000 people. Money ran through 33 shell companies and 61 bank accounts to Dubai and was converted to cryptocurrency; police said part of it reached a wallet labelled as linked to a terror group. Nine people were arrested.",
+        "The hook is the early payout: real small commissions build trust before the 'prepaid' tasks start."
+      ],
+      "recommended_actions": [
+        "No genuine job asks you to pay money to unlock tasks or withdraw earnings.",
+        "Check the name your UPI app shows for the recipient: a random individual's name usually means a mule account.",
+        "Report the number or handle on cybercrime.gov.in or 1930 even if you lost nothing; it helps get the network blocked.",
+        "Banks: newly opened accounts that receive many small credits from unrelated people and pass them on quickly are typical mules."
+      ],
+      "infrastructure": {
+        "abused_platforms": [
+          "Telegram",
+          "WhatsApp",
+          "Google and Meta ads"
+        ]
+      },
+      "india_relevance": "high",
+      "tags": [
+        "job-fraud",
+        "task-scam",
+        "telegram",
+        "mule-accounts"
+      ],
+      "sources": [
+        {
+          "title": "ThePrint - Over 100 job-fraud websites blocked (6 Dec 2023)",
+          "url": "https://theprint.in/india/over-100-job-fraud-websites-promising-quick-money-for-work-from-home-blocked-for-laundering-money/1874090"
+        },
+        {
+          "title": "The News Minute - Hyderabad police bust Rs 712-crore investment fraud, nine arrested (23 Jul 2023)",
+          "url": "https://thenewsminute.com/article/hyderabad-police-bust-rs-712-cr-chinese-investment-fraud-nine-arrested-180094"
+        }
+      ]
     }
   ]
 }

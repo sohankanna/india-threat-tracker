@@ -19,6 +19,7 @@ https://raw.githubusercontent.com/sohankanna/india-threat-tracker/main/data/
 | `exploited-cve.json` | Every CISA KEV entry, with EPSS and an India-relevance tier | Twice daily, automated | [`exploited-cve.schema.json`](schema/exploited-cve.schema.json) |
 | `smishing-apk.json` | Fake-APK and smishing campaigns | When new reporting appears | [`smishing-apk.schema.json`](schema/smishing-apk.schema.json) |
 | `apt-campaigns.json` | State-nexus actors targeting India | When new reporting appears | [`apt-campaign.schema.json`](schema/apt-campaign.schema.json) |
+| `hacktivist.json` | Hacktivist groups, alliances and claim waves aimed at India | When new reporting appears | [`hacktivist.schema.json`](schema/hacktivist.schema.json) |
 | `iocs.csv` / `iocs.txt` | Defanged campaign indicators (CSV adds provenance per row) | Rebuilt by every automated update (twice daily); CI rejects a change that leaves them stale | — |
 | `assessment.json` | The monthly ranked analyst assessment | Monthly | [`assessment.schema.json`](schema/assessment.schema.json) |
 | `relevance-overrides.json` | Hand-reviewed India-relevance decisions the pipeline applies | When an entry is reviewed | [`relevance-overrides.schema.json`](schema/relevance-overrides.schema.json) |
@@ -89,6 +90,33 @@ Same pattern: `actor`, `aliases`, `suspected_origin` (reported attribution),
 rating of the evidence, kept separate from attribution), `targets`,
 `known_tools`, `typical_vectors`, `attack`, `key_findings`,
 `recommended_actions`, `last_verified`, `sources`.
+
+`timeline` lists dated milestones relevant to India, oldest first. Each has a
+`date` at the precision the source gives (`YYYY`, `YYYY-MM` or `YYYY-MM-DD`), an
+`event`, and the `source` URL that supports it.
+
+The feed also carries fraud schemes that involve no malware (digital arrest,
+investment and task scams). Their `category` starts with "Fraud scheme" and they
+have no `iocs`.
+
+### `hacktivist.json`
+
+| Field | Meaning |
+|-------|---------|
+| `id`, `name`, `aliases` | Who it is |
+| `kind` | `group`, `alliance` (an umbrella of groups) or `campaign` (a dated wave by many groups, with a `period`) |
+| `claimed_origin`, `alignment` | Where the group says it is from or the source places it, and its stated cause. Not verified |
+| `active_since`, `status` | `active`, or `historical` when there has been no new reporting for 12 months |
+| `activity` | `ddos`, `defacement`, `data-leak-claims`, `intrusion-claims`, `broadcast-hijack`, `ddos-for-hire`, `propaganda` |
+| `india_targets`, `tools`, `affiliations` | What it hits, the public tools or services tied to it (context, not indicators), and allied groups |
+| `notable_claims` | Each claim with `date`, `claim`, `verification` and a `note` and `source` |
+| `confidence` | The tracker's rating of the reporting about the group's activity against India, **not** of the group's own claims |
+| `attack`, `key_findings`, `recommended_actions`, `sources` | As in the other feeds |
+
+`verification` records what the cited source concluded: `confirmed`,
+`partly-true`, `overstated`, `recycled` (old data presented as new), `false`, or
+`unverified` when nobody has checked. Most hacktivist claims about India are not
+`confirmed`; treat the claim itself as propaganda until a source says otherwise.
 
 ### `iocs.csv`
 

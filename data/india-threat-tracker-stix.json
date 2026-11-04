@@ -1,5 +1,5 @@
 {
-  "id": "bundle--7cc9a3db-951b-495f-b833-3e2bec362571",
+  "id": "bundle--cb82b001-2e11-4949-8dc8-97fa8e1333fd",
   "objects": [
     {
       "created": "2026-11-04T00:00:00.000Z",
@@ -40,6 +40,63 @@
       "type": "attack-pattern"
     },
     {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "external_references": [
+        {
+          "external_id": "T1016",
+          "source_name": "mitre-attack",
+          "url": "https://attack.mitre.org/techniques/T1016/"
+        }
+      ],
+      "id": "attack-pattern--0c20b7ae-7114-4d84-a2e7-79991dd0651e",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "name": "System Network Configuration Discovery",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "attack-pattern"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "external_references": [
+        {
+          "external_id": "T1217",
+          "source_name": "mitre-attack",
+          "url": "https://attack.mitre.org/techniques/T1217/"
+        }
+      ],
+      "id": "attack-pattern--0dfd6379-23a2-4d0f-b962-1ecd4e99363c",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "name": "Browser Information Discovery",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "attack-pattern"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "external_references": [
+        {
+          "external_id": "T1532",
+          "source_name": "mitre-attack",
+          "url": "https://attack.mitre.org/techniques/T1532/"
+        }
+      ],
+      "id": "attack-pattern--0e8dedce-781f-4abe-846c-067e56acc47c",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "name": "Archive Collected Data",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "attack-pattern"
+    },
+    {
       "created": "2026-10-15T00:00:00.000Z",
       "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
       "external_references": [
@@ -52,6 +109,25 @@
       "id": "attack-pattern--0f7d0fc3-cf8a-40ca-b077-6898bffcc9e6",
       "modified": "2026-10-16T00:00:00.001Z",
       "name": "Masquerading: Match Legitimate Name or Location",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "attack-pattern"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "external_references": [
+        {
+          "external_id": "T1036",
+          "source_name": "mitre-attack",
+          "url": "https://attack.mitre.org/techniques/T1036/"
+        }
+      ],
+      "id": "attack-pattern--16b0aa5a-88de-4a48-b28e-58477ca5221a",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "name": "Masquerading",
       "object_marking_refs": [
         "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
       ],
@@ -78,6 +154,25 @@
       "type": "attack-pattern"
     },
     {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "external_references": [
+        {
+          "external_id": "T1057",
+          "source_name": "mitre-attack",
+          "url": "https://attack.mitre.org/techniques/T1057/"
+        }
+      ],
+      "id": "attack-pattern--190bd062-3d1c-47dc-a3b0-d3913b3c4ece",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "name": "Process Discovery",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "attack-pattern"
+    },
+    {
       "created": "2026-10-15T00:00:00.000Z",
       "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
       "external_references": [
@@ -97,6 +192,25 @@
       "type": "attack-pattern"
     },
     {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "external_references": [
+        {
+          "external_id": "T1418",
+          "source_name": "mitre-attack",
+          "url": "https://attack.mitre.org/techniques/T1418/"
+        }
+      ],
+      "id": "attack-pattern--2462edda-805f-4772-a4ea-477a736eb552",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "name": "Software Discovery",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "attack-pattern"
+    },
+    {
       "created": "2026-10-15T00:00:00.000Z",
       "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
       "external_references": [
@@ -109,6 +223,63 @@
       "id": "attack-pattern--29a1901f-4a85-4dec-b2da-3229d81128ea",
       "modified": "2026-10-15T00:00:00.000Z",
       "name": "Command and Scripting Interpreter: Visual Basic",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "attack-pattern"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "external_references": [
+        {
+          "external_id": "T1588.001",
+          "source_name": "mitre-attack",
+          "url": "https://attack.mitre.org/techniques/T1588/001/"
+        }
+      ],
+      "id": "attack-pattern--2eb9b9ee-5ffd-4837-95eb-141cd52b982b",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "name": "Obtain Capabilities: Malware",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "attack-pattern"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "external_references": [
+        {
+          "external_id": "T1567.002",
+          "source_name": "mitre-attack",
+          "url": "https://attack.mitre.org/techniques/T1567/002/"
+        }
+      ],
+      "id": "attack-pattern--300a305f-1a48-46a9-9dd4-fe97e8ab8cfe",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "name": "Exfiltration Over Web Service: Exfiltration to Cloud Storage",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "attack-pattern"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "external_references": [
+        {
+          "external_id": "T1583.001",
+          "source_name": "mitre-attack",
+          "url": "https://attack.mitre.org/techniques/T1583/001/"
+        }
+      ],
+      "id": "attack-pattern--3174492c-96e2-4dfa-9386-690efb00fcb3",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "name": "Acquire Infrastructure: Domains",
       "object_marking_refs": [
         "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
       ],
@@ -196,6 +367,25 @@
       "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
       "external_references": [
         {
+          "external_id": "T1636.003",
+          "source_name": "mitre-attack",
+          "url": "https://attack.mitre.org/techniques/T1636/003/"
+        }
+      ],
+      "id": "attack-pattern--50cd88e7-8f7d-4613-aafb-f2923e4d135f",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "name": "Protected User Data: Contact List",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "attack-pattern"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "external_references": [
+        {
           "external_id": "T1113",
           "source_name": "mitre-attack",
           "url": "https://attack.mitre.org/techniques/T1113/"
@@ -249,6 +439,25 @@
       "type": "attack-pattern"
     },
     {
+      "created": "2026-10-16T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "external_references": [
+        {
+          "external_id": "T1071.001",
+          "source_name": "mitre-attack",
+          "url": "https://attack.mitre.org/techniques/T1071/001/"
+        }
+      ],
+      "id": "attack-pattern--538bfcfe-819a-4564-9f49-4f747c5e5348",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "name": "Application Layer Protocol: Web Protocols",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "attack-pattern"
+    },
+    {
       "created": "2026-11-04T00:00:00.000Z",
       "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
       "external_references": [
@@ -261,6 +470,25 @@
       "id": "attack-pattern--5745789a-00b4-4c9a-89cc-98e14f538705",
       "modified": "2026-11-04T00:00:00.000Z",
       "name": "Phishing: Spearphishing Link",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "attack-pattern"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "external_references": [
+        {
+          "external_id": "T1059.007",
+          "source_name": "mitre-attack",
+          "url": "https://attack.mitre.org/techniques/T1059/007/"
+        }
+      ],
+      "id": "attack-pattern--5b1544f3-8efc-4572-9a68-1090b205ce3a",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "name": "Command and Scripting Interpreter: JavaScript",
       "object_marking_refs": [
         "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
       ],
@@ -306,6 +534,82 @@
       "type": "attack-pattern"
     },
     {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "external_references": [
+        {
+          "external_id": "T1491.002",
+          "source_name": "mitre-attack",
+          "url": "https://attack.mitre.org/techniques/T1491/002/"
+        }
+      ],
+      "id": "attack-pattern--64f3533c-c223-40aa-b141-b137bf9941e3",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "name": "Defacement: External Defacement",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "attack-pattern"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "external_references": [
+        {
+          "external_id": "T1105",
+          "source_name": "mitre-attack",
+          "url": "https://attack.mitre.org/techniques/T1105/"
+        }
+      ],
+      "id": "attack-pattern--67e0583b-5b24-4d27-a3b7-f0a803e0628c",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "name": "Ingress Tool Transfer",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "attack-pattern"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "external_references": [
+        {
+          "external_id": "T1056.001",
+          "source_name": "mitre-attack",
+          "url": "https://attack.mitre.org/techniques/T1056/001/"
+        }
+      ],
+      "id": "attack-pattern--7172f12b-0b22-4f66-8d20-b707bbe3e9cd",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "name": "Input Capture: Keylogging",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "attack-pattern"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "external_references": [
+        {
+          "external_id": "T1657",
+          "source_name": "mitre-attack",
+          "url": "https://attack.mitre.org/techniques/T1657/"
+        }
+      ],
+      "id": "attack-pattern--728fc790-f1db-4903-9c61-c2671143d5a3",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "name": "Financial Theft",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "attack-pattern"
+    },
+    {
       "created": "2026-10-15T00:00:00.000Z",
       "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
       "external_references": [
@@ -318,6 +622,25 @@
       "id": "attack-pattern--7795b806-d5f0-4db1-9883-c464ffd5bfb6",
       "modified": "2026-10-16T00:00:00.001Z",
       "name": "Compromise Infrastructure",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "attack-pattern"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "external_references": [
+        {
+          "external_id": "T1190",
+          "source_name": "mitre-attack",
+          "url": "https://attack.mitre.org/techniques/T1190/"
+        }
+      ],
+      "id": "attack-pattern--790e97d9-1949-4e63-8c5c-98664ece2d3c",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "name": "Exploit Public-Facing Application",
       "object_marking_refs": [
         "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
       ],
@@ -401,6 +724,25 @@
       "type": "attack-pattern"
     },
     {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "external_references": [
+        {
+          "external_id": "T1498",
+          "source_name": "mitre-attack",
+          "url": "https://attack.mitre.org/techniques/T1498/"
+        }
+      ],
+      "id": "attack-pattern--7c12c4bd-73cc-49a1-90e1-c5c20effe1a5",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "name": "Network Denial of Service",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "attack-pattern"
+    },
+    {
       "created": "2026-10-15T00:00:00.000Z",
       "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
       "external_references": [
@@ -432,6 +774,25 @@
       "id": "attack-pattern--89c97501-4d62-41be-9840-4f043adb1ef7",
       "modified": "2026-11-04T00:00:00.000Z",
       "name": "Compromise Accounts: Email Accounts",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "attack-pattern"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "external_references": [
+        {
+          "external_id": "T1417.001",
+          "source_name": "mitre-attack",
+          "url": "https://attack.mitre.org/techniques/T1417/001/"
+        }
+      ],
+      "id": "attack-pattern--8b409027-91a6-4cdb-9c8d-3133541b9ad8",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "name": "Input Capture: Keylogging",
       "object_marking_refs": [
         "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
       ],
@@ -515,6 +876,25 @@
       "type": "attack-pattern"
     },
     {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "external_references": [
+        {
+          "external_id": "T1218.001",
+          "source_name": "mitre-attack",
+          "url": "https://attack.mitre.org/techniques/T1218/001/"
+        }
+      ],
+      "id": "attack-pattern--9d1c39ad-c584-416e-b0db-3e8e33f4ca00",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "name": "System Binary Proxy Execution: Compiled HTML File",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "attack-pattern"
+    },
+    {
       "created": "2026-10-15T00:00:00.000Z",
       "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
       "external_references": [
@@ -534,6 +914,25 @@
       "type": "attack-pattern"
     },
     {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "external_references": [
+        {
+          "external_id": "T1102.002",
+          "source_name": "mitre-attack",
+          "url": "https://attack.mitre.org/techniques/T1102/002/"
+        }
+      ],
+      "id": "attack-pattern--a167be87-2ebd-4e67-b07a-27e9065b3b24",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "name": "Web Service: Bidirectional Communication",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "attack-pattern"
+    },
+    {
       "created": "2026-10-16T00:00:00.000Z",
       "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
       "external_references": [
@@ -546,6 +945,25 @@
       "id": "attack-pattern--a4bed644-351f-4d7f-9dcf-69934351619c",
       "modified": "2026-10-16T00:00:00.001Z",
       "name": "Virtualization/Sandbox Evasion",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "attack-pattern"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "external_references": [
+        {
+          "external_id": "T1414",
+          "source_name": "mitre-attack",
+          "url": "https://attack.mitre.org/techniques/T1414/"
+        }
+      ],
+      "id": "attack-pattern--aa881b4c-2e77-47c2-a047-8224882483e5",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "name": "Clipboard Data",
       "object_marking_refs": [
         "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
       ],
@@ -610,6 +1028,25 @@
       "type": "attack-pattern"
     },
     {
+      "created": "2026-10-16T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "external_references": [
+        {
+          "external_id": "T1584.005",
+          "source_name": "mitre-attack",
+          "url": "https://attack.mitre.org/techniques/T1584/005/"
+        }
+      ],
+      "id": "attack-pattern--b6a030db-0f69-47a3-a987-3d968b13769f",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "name": "Compromise Infrastructure: Botnet",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "attack-pattern"
+    },
+    {
       "created": "2026-10-15T00:00:00.000Z",
       "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
       "external_references": [
@@ -622,6 +1059,44 @@
       "id": "attack-pattern--c153fa2c-9988-46a6-8a35-3d1c432ad3a0",
       "modified": "2026-10-16T00:00:00.001Z",
       "name": "Phishing: Spearphishing Attachment",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "attack-pattern"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "external_references": [
+        {
+          "external_id": "T1646",
+          "source_name": "mitre-attack",
+          "url": "https://attack.mitre.org/techniques/T1646/"
+        }
+      ],
+      "id": "attack-pattern--c23af4a6-a163-41b3-8d6f-36d1d3698c4f",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "name": "Exfiltration Over C2 Channel",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "attack-pattern"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "external_references": [
+        {
+          "external_id": "T1049",
+          "source_name": "mitre-attack",
+          "url": "https://attack.mitre.org/techniques/T1049/"
+        }
+      ],
+      "id": "attack-pattern--effb4eea-4dd1-4a7a-b799-ccc608740eba",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "name": "System Network Connections Discovery",
       "object_marking_refs": [
         "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
       ],
@@ -648,6 +1123,44 @@
       "type": "attack-pattern"
     },
     {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "external_references": [
+        {
+          "external_id": "T1499.002",
+          "source_name": "mitre-attack",
+          "url": "https://attack.mitre.org/techniques/T1499/002/"
+        }
+      ],
+      "id": "attack-pattern--f3c94e1c-ffbe-4aa8-9861-738c3914abd1",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "name": "Endpoint Denial of Service: Service Exhaustion Flood",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "attack-pattern"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "external_references": [
+        {
+          "external_id": "T1517",
+          "source_name": "mitre-attack",
+          "url": "https://attack.mitre.org/techniques/T1517/"
+        }
+      ],
+      "id": "attack-pattern--f4761d37-9783-4e23-aa7b-3ce90a456d89",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "name": "Access Notifications",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "attack-pattern"
+    },
+    {
       "created": "2026-10-15T00:00:00.000Z",
       "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
       "external_references": [
@@ -660,6 +1173,44 @@
       "id": "attack-pattern--f8a165c5-a41d-4575-84a0-0b95fbd92605",
       "modified": "2026-10-15T00:00:00.001Z",
       "name": "Web Service",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "attack-pattern"
+    },
+    {
+      "created": "2026-10-16T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "external_references": [
+        {
+          "external_id": "T1572",
+          "source_name": "mitre-attack",
+          "url": "https://attack.mitre.org/techniques/T1572/"
+        }
+      ],
+      "id": "attack-pattern--fadfa898-7fa4-4f87-bf93-239048e8ea6a",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "name": "Protocol Tunneling",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "attack-pattern"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "external_references": [
+        {
+          "external_id": "T1568",
+          "source_name": "mitre-attack",
+          "url": "https://attack.mitre.org/techniques/T1568/"
+        }
+      ],
+      "id": "attack-pattern--febe1f2b-0836-47d5-b882-fccfcec465e8",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "name": "Dynamic Resolution",
       "object_marking_refs": [
         "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
       ],
@@ -692,6 +1243,121 @@
       "type": "campaign"
     },
     {
+      "confidence": 85,
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "description": "Ads and messages offering work from home ('ghar baithe job') lead to an agent on WhatsApp or Telegram who pays small commissions for liking videos or rating places, then moves the victim to 'prepaid' task sets that need ever larger deposits until the money is frozen. In 2023 the government blocked more than 100 such websites, and Hyderabad police traced one network to Rs 712 crore taken from about 15,000 people.\n\nStatus in the tracker: active (describes the reporting, not whether infrastructure is live).\n\nFirst reported: 2023 (precision as given by the source).\n\nAttribution as reported: Overseas-run networks using Indian mule accounts (MHA; Hyderabad Police).\n\nInfrastructure context, not indicators (legitimate or shared services the campaign abused; do not block): Telegram; WhatsApp; Google and Meta ads.\n\nKey findings: In December 2023, MeitY blocked more than 100 websites running task-based job and investment fraud, on the recommendation of I4C's National Cybercrime Threat Analytics Unit. The ads ran on Google and Meta in several languages. MHA said the sites were run by overseas actors, with proceeds moved out through card networks, cryptocurrency, overseas ATM withdrawals and international fintech companies. Hyderabad Police (July 2023): a 'rate and review' scheme on Telegram took about Rs 712 crore from some 15,000 people. Money ran through 33 shell companies and 61 bank accounts to Dubai and was converted to cryptocurrency; police said part of it reached a wallet labelled as linked to a terror group. Nine people were arrested. The hook is the early payout: real small commissions build trust before the 'prepaid' tasks start.",
+      "external_references": [
+        {
+          "external_id": "sm-2023-001",
+          "source_name": "india-threat-tracker",
+          "url": "https://www.sohankanna.com/tracker#campaign-sm-2023-001"
+        },
+        {
+          "source_name": "ThePrint - Over 100 job-fraud websites blocked (6 Dec 2023)",
+          "url": "https://theprint.in/india/over-100-job-fraud-websites-promising-quick-money-for-work-from-home-blocked-for-laundering-money/1874090"
+        },
+        {
+          "source_name": "The News Minute - Hyderabad police bust Rs 712-crore investment fraud, nine arrested (23 Jul 2023)",
+          "url": "https://thenewsminute.com/article/hyderabad-police-bust-rs-712-cr-chinese-investment-fraud-nine-arrested-180094"
+        }
+      ],
+      "id": "campaign--50f3e90d-deb7-4207-b7ac-e740f15866e3",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "name": "Task-based 'part-time job' scams",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "campaign"
+    },
+    {
+      "confidence": 85,
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "description": "Callers posing as police, CBI, narcotics, customs, RBI or ED officers tell the victim a parcel in their name held drugs or fake passports, or that their account is tied to money laundering, then keep them on a video call under 'digital arrest' until they transfer their savings for 'verification'. I4C data shows cases rising from 39,925 in 2022 to 1,23,672 in 2024, with losses of Rs 1,918 crore that year, before falling in 2025. Much of it is run from scam compounds in Southeast Asia.\n\nStatus in the tracker: active (describes the reporting, not whether infrastructure is live).\n\nFirst reported: 2022 (precision as given by the source).\n\nAttribution as reported: Organised scam networks, largely operating from Southeast Asia (I4C/MHA).\n\nKey findings: I4C figures compiled by ThePrint: 39,925 cases and Rs 91 crore lost in 2022; 60,676 and Rs 339 crore in 2023; 1,23,672 and Rs 1,918 crore in 2024; then 17,264 cases and Rs 644 crore in 2025. The scripts rely on fear and isolation: a fake parcel or case, a 'senior officer' on video, uniforms and studio sets made to look like police stations, and instructions not to tell anyone or end the call. In May 2024, I4C and Microsoft blocked more than 1,000 Skype IDs used for these calls. By November 2024, more than 6.69 lakh SIM cards, 1.32 lakh IMEIs and 17,000 WhatsApp accounts linked to Cambodia, Laos, Thailand and Myanmar had been blocked. On 1 December 2025, the Supreme Court directed the CBI to investigate digital-arrest cases nationwide, including the role of bank staff in opening mule accounts, and asked the RBI how it detects them. Money moves through mule accounts; the share of defrauded money blocked in time rose from 6% in 2021 to 19% by 2026.",
+      "external_references": [
+        {
+          "external_id": "sm-2024-001",
+          "source_name": "india-threat-tracker",
+          "url": "https://www.sohankanna.com/tracker#campaign-sm-2024-001"
+        },
+        {
+          "source_name": "ThePrint - After 465% spike in 2024, MHA data shows digital arrest scams are on a decline",
+          "url": "https://theprint.in/india/governance/after-465-spike-in-2024-mha-data-shows-digital-arrest-scams-are-on-a-decline-in-india/2857002/"
+        },
+        {
+          "source_name": "MediaNama - Over 1,000 Skype IDs blocked over digital arrests (15 May 2024)",
+          "url": "https://www.medianama.com/2024/05/223-skype-ids-blocked-digital-arrests-cyber-fraud/"
+        },
+        {
+          "source_name": "The Tribune - Over 6.69 lakh SIM cards and 1.32 lakh IMEIs blocked (28 Nov 2024)",
+          "url": "https://tribuneindia.com/news/india-cracks-down-on-digital-arrest-scam-over-6-69-lakh-sim-cards-and-1-32-lakh-imeis-blocked"
+        },
+        {
+          "source_name": "Onmanorama - Supreme Court orders CBI probe into digital arrest scams (1 Dec 2025)",
+          "url": "https://www.onmanorama.com/news/india/2025/12/01/digital-arrest-scams-cbi-investigation-sc-order.html"
+        }
+      ],
+      "id": "campaign--6598c258-eb1f-4aec-bb91-8b238cf9d93c",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "name": "'Digital arrest' extortion",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "campaign"
+    },
+    {
+      "confidence": 85,
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "description": "After the Pahalgam attack on 22 April 2025 and India's Operation Sindoor strikes on 7 May, dozens of hacktivist groups from Pakistan, Bangladesh, Southeast Asia, the Middle East and North Africa rallied under #OpIndia. Maharashtra Cyber counted about 15 lakh attacks on Indian sites, of which 150 succeeded. Analysts who checked the headline claims found brief DDoS outages, a handful of defacements and leak claims that were mostly overstated, recycled or fabricated. The serious threat in the same weeks was APT36's targeted phishing.\n\nPeriod: 2025-04-22 to 2025-06.\n\nClaims, with the verification status the cited source reached: 2025-05: SYLHET GANG-SG and DieNet claim 247 GB stolen from the National Informatics Centre. [overstated: The 1.5 GB sample was public marketing material and media files.] 2025-05-08: Team Azrael claims more than a million Election Commission records. [recycled: The data had leaked in 2023; it does contain genuine personal data.] 2025-05: SYLHET GANG-SG claims a million case records from the Andhra Pradesh High Court. [partly-true: Mostly public case metadata, but some password hashes were exposed.] 2025-05-07: Team Azrael claims a leak of Indian Army personnel data. [false: Names, emails and phone numbers did not match; likely fabricated or misattributed.] 2025-05-07: DDoS on the PMO, the President's site and several ministries. [overstated: Downtime was likely under five minutes.] 2025-05-08: Vulture and Electronic Army Special Forces claim to have taken down CERT-In and the NTA. [false: Both sites stayed up with no observable outage.] 2025-05: KAL EGY 319 claims about 40 education and healthcare defacements. [overstated: The named sites were working normally when checked.] 2025-05: Claims of attacks on the power grid, statewide blackouts, satellite jamming, Northern Command and a BrahMos storage site. [false: Listed by Maharashtra Cyber among false claims circulated during the conflict.] 2025-05: Defacement of the Kulgaon Badlapur Municipal Council and the Defence Nursing College, Jalandhar websites. [confirmed: Reported by Maharashtra Cyber.]\n\nKey findings: Maharashtra Cyber's 'Road of Sindoor' report counted about 15 lakh attacks on Indian critical-infrastructure websites from seven groups, including APT36, Pakistan Cyber Force, Team Insane PK, Mysterious Bangladesh and HOAX1337. Only 150 succeeded. It traced origins to Pakistan, Bangladesh, the Middle East, Indonesia and Morocco. Seqrite logged more than 650 confirmed DDoS and defacement events from over 35 groups, seven of them new, between 7 and 10 May, including attempted breaches at AIIMS and DRDO hospitals and probes against Jio and BSNL. Cyble tracked more than 40 groups. Just over half of known attacks were DDoS and about 36% defacements. NSFOCUS saw attacks on India rise about 500% after 22 April. Radware counted 256 claimed DDoS attacks on 100 Indian organisations from 26 groups in 2025 up to 8 May, peaking at seven claims an hour on the evening of 7 May. Government bodies drew over 75% of claims on 6-7 May. CloudSEK found most outages lasted under five minutes and most leak claims were exaggerated, recycled or fake. Their impact was psychological: X accounts amplified unverified claims for propaganda. CERT-In issued advisories to the financial sector, and the BSE and NSE temporarily restricted access from overseas IP addresses. India-aligned groups such as Indian Cyber Force hit back at Pakistani targets in the same period.",
+      "external_references": [
+        {
+          "external_id": "hk-opindia-2025",
+          "source_name": "india-threat-tracker",
+          "url": "https://www.sohankanna.com/tracker#hacktivist-hk-opindia-2025"
+        },
+        {
+          "source_name": "ThePrint (PTI) - Pakistan-allied hackers launched 15 lakh cyber attacks on Indian websites, only 150 successful (12 May 2025)",
+          "url": "https://theprint.in/india/pakistan-allied-hackers-launched-15-lakh-cyber-attacks-on-indian-websites-only-150-successful/2623696"
+        },
+        {
+          "source_name": "Seqrite - Operation Sindoor: anatomy of a digital siege (23 May 2025)",
+          "url": "https://www.seqrite.com/blog/operation-sindoor-anatomy-of-a-digital-siege/"
+        },
+        {
+          "source_name": "CloudSEK - Brief disruptions, bold claims: the India-Pakistan hacktivist surge (11 May 2025)",
+          "url": "https://www.cloudsek.com/blog/brief-disruptions-bold-claims-the-tactical-reality-behind-the-india-pakistan-hacktivist-surge"
+        },
+        {
+          "source_name": "Radware - Escalating hacktivist attacks amidst India-Pakistan tensions (8 May 2025)",
+          "url": "https://www.radware.com/security/threat-advisories-and-attack-reports/escalating-hacktivist-attacks-amidst-india-pakistan-tensions/"
+        },
+        {
+          "source_name": "Dark Reading - After Pahalgam attack, hacktivists unite under #OpIndia (May 2025)",
+          "url": "https://www.darkreading.com/cyberattacks-data-breaches/pahalgam-attack-hacktivists-unite-opindia"
+        },
+        {
+          "source_name": "Silobreaker - Hacktivism in the India-Pakistan conflict: analysis of recent campaigns (25 Jun 2025)",
+          "url": "https://www.silobreaker.com/blog/geopolitical/hacktivism-in-the-india-pakistan-conflict-analysis-of-recent-campaigns/"
+        },
+        {
+          "source_name": "ThaiCERT - CERT-In issues urgent warning as hacktivists launch cyber onslaught against Indian systems (13 May 2025)",
+          "url": "https://www.thaicert.or.th/en/2025/05/13/cert-in-issues-urgent-warning-as-hacktivists-launch-cyber-onslaught-against-indian-systems/"
+        }
+      ],
+      "id": "campaign--6d75dc3c-010f-4a31-80aa-08ccfca05786",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "name": "#OpIndia wave after Pahalgam and Operation Sindoor",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "campaign"
+    },
+    {
       "confidence": 50,
       "created": "2026-10-15T00:00:00.000Z",
       "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
@@ -710,6 +1376,39 @@
       "id": "campaign--6f698b73-0327-4f3c-a262-9fdfcaadc0da",
       "modified": "2026-10-15T00:00:00.000Z",
       "name": "Ahmedabad APK fraud network (Telegram storefront)",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "campaign"
+    },
+    {
+      "confidence": 85,
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "description": "A fake digital wedding invitation, sent on WhatsApp from a known contact, that is really an Android app. Once installed it walks the victim through granting SMS, notification and 'full control' access, then runs the SpyMax remote-access trojan to read bank OTPs, WhatsApp messages and keystrokes. Maharashtra Cyber Police warned about the lure in December 2024, and K7 Labs and Broadcom analysed samples in June 2025.\n\nStatus in the tracker: active (describes the reporting, not whether infrastructure is live).\n\nFirst reported: 2024-12 (precision as given by the source).\n\nAttribution as reported: Unattributed, financially motivated.\n\nAlso reported, not expressed as STIX patterns: Android package com.cristal.bristral.tristal.mistral; Android package com.android.pictach.\n\nInfrastructure context, not indicators (legitimate or shared services the campaign abused; do not block): WhatsApp (delivery); Telegram Bot API.\n\nKey findings: The file arrives as 'Wedding Invitation.apk'. It asks for SMS and contacts access, to be the default home app, and for 'Install unknown apps', then shows a fake Google Play services page asking for 'full control of your device' (K7 Labs). It installs a second package and intercepts notifications, which hands the operators bank OTPs, WhatsApp messages and 2FA codes. It also logs keystrokes, collects SMS and clipboard data, and checks for installed mobile security products. Stolen data is gzip-compressed before it is sent. K7 reported a C2 at 104.234.167[.]145 on port 7860; Broadcom saw exfiltration mainly through Telegram bots, with C2 servers as fallback. The second package's manifest references Airtel, Jio and BSNL, consistent with Indian targeting. Maharashtra Cyber Police warned citizens about fake wedding-invitation APKs in December 2024.",
+      "external_references": [
+        {
+          "external_id": "sm-2025-004",
+          "source_name": "india-threat-tracker",
+          "url": "https://www.sohankanna.com/tracker#campaign-sm-2025-004"
+        },
+        {
+          "source_name": "K7 Labs - SpyMax: a fake wedding invitation app targeting Indian mobile users (20 Jun 2025)",
+          "url": "https://labs.k7computing.com/index.php/spymax-a-fake-wedding-invitation-app-targeting-indian-mobile-users/"
+        },
+        {
+          "source_name": "Cyber Security News - Beware of weaponized wedding invite scams (Broadcom research, 25 Jun 2025)",
+          "url": "https://cybersecuritynews.com/beware-of-weaponized-wedding-invite-scams/"
+        },
+        {
+          "source_name": "Free Press Journal - Maharashtra Cyber Police warn citizens of wedding invitation scam (24 Dec 2024)",
+          "url": "https://www.freepressjournal.in/mumbai/maharashtra-cyber-police-warn-citizens-of-wedding-invitation-scam-leading-to-malware-financial-losses-check-details"
+        }
+      ],
+      "id": "campaign--6fd3dce2-dff4-4435-bfda-0e87325943cf",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "name": "Wedding-invitation APK - SpyMax RAT on WhatsApp",
       "object_marking_refs": [
         "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
       ],
@@ -785,6 +1484,35 @@
       "id": "campaign--d563f634-ffd2-4229-a82d-b06ae927989b",
       "modified": "2026-10-15T00:00:00.000Z",
       "name": "Pune fake RTO e-challan APK scam",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "campaign"
+    },
+    {
+      "confidence": 85,
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "description": "Social media ads and messages pull victims into WhatsApp or Telegram 'investment' groups run by people posing as market experts, brokers or SEBI-registered advisers. Members are coached into a fake trading app or website that shows growing profits, keep depositing, and find they cannot withdraw. I4C counted more than 30,000 victims and over Rs 1,500 crore lost in six months to October 2025.\n\nStatus in the tracker: active (describes the reporting, not whether infrastructure is live).\n\nFirst reported: 2024 (precision as given by the source).\n\nAttribution as reported: Organised fraud networks, often tied to foreign syndicates (I4C).\n\nInfrastructure context, not indicators (legitimate or shared services the campaign abused; do not block): WhatsApp groups; Telegram channels; Facebook ads.\n\nKey findings: I4C (October 2025): more than 30,000 victims and over Rs 1,500 crore lost in six months. Bengaluru, Delhi-NCR and Hyderabad account for nearly 65% of cases, and 76% of victims are aged 30 to 60. CloudSEK (July 2024) counted over 29,000 malicious investment ads on Facebook and over 81,000 fake investment WhatsApp groups since January 2024, across India, Malaysia, the US, Thailand and Vietnam. Groups are run by teams with set roles, including impersonators, hype-makers and affiliates, and show scripted 'live training' and fake proof of gains. The trading apps imitate real platforms, display fabricated profits to draw bigger deposits, and then block withdrawals. Victim data such as phone numbers of known traders is bought from brokers who source it from underground forums.",
+      "external_references": [
+        {
+          "external_id": "sm-2025-005",
+          "source_name": "india-threat-tracker",
+          "url": "https://www.sohankanna.com/tracker#campaign-sm-2025-005"
+        },
+        {
+          "source_name": "Business Today - Over 30,000 Indians duped in investment scams (I4C, 25 Oct 2025)",
+          "url": "https://www.businesstoday.in/india/story/over-30000-indians-duped-in-investment-scams-bengaluru-delhi-ncr-hyderabad-worst-hit-499542-2025-10-25"
+        },
+        {
+          "source_name": "ITVoice - CloudSEK uncovers investment scam network targeting India and beyond (3 Jul 2024)",
+          "url": "https://www.itvoice.in/inside-the-world-of-investment-scams-cloudsek-uncovers-sophisticated-scam-network-targeting-india-and-beyond"
+        }
+      ],
+      "id": "campaign--d8f10db9-1b72-414f-9906-5b05739fb62c",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "name": "Fake stock-tip groups and trading apps",
       "object_marking_refs": [
         "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
       ],
@@ -974,7 +1702,7 @@
       "confidence": 85,
       "created": "2026-10-16T00:00:00.000Z",
       "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
-      "description": "Regional context: one of South Asia's most active APTs, assessed as India-nexus, historically targeting Pakistan, Nepal, China and Afghanistan and more recently expanding to maritime, nuclear and IT sectors across Asia, the Middle East and Africa. Primarily spear-phishing with weaponised documents exploiting known Office flaws. Included here for regional awareness; its targets are largely outside India.\n\nReported attribution: India-nexus (attributed). Assessed as India-nexus in vendor reporting. Included for regional awareness only; its targets are largely outside India.\n\nKey findings: Kaspersky's March 2025 research: a DOCX uses remote template injection to fetch an RTF that exploits CVE-2017-11882 and delivers Backdoor Loader and StealerBot. Primarily spear-phishing with weaponised documents that exploit known Office flaws. Has expanded from Pakistan, Nepal, China and Afghanistan to maritime, nuclear and IT sectors across Asia, the Middle East and Africa.",
+      "description": "Regional context: one of South Asia's most active APTs, assessed as India-nexus, historically targeting Pakistan, Nepal, China and Afghanistan and more recently expanding to maritime, nuclear and IT sectors across Asia, the Middle East and Africa. Primarily spear-phishing with weaponised documents exploiting known Office flaws. Included here for regional awareness; its targets are largely outside India.\n\nReported attribution: India-nexus (attributed). Assessed as India-nexus in vendor reporting. Included for regional awareness only; its targets are largely outside India.\n\nKey findings: Kaspersky's March 2025 research: a DOCX uses remote template injection to fetch an RTF that exploits CVE-2017-11882 and delivers Backdoor Loader and StealerBot. Primarily spear-phishing with weaponised documents that exploit known Office flaws. Has expanded from Pakistan, Nepal, China and Afghanistan to maritime, nuclear and IT sectors across Asia, the Middle East and Africa.\n\nTimeline: 2024-10: Kaspersky reports SideWinder expanding into the Middle East and Africa with StealerBot, a modular in-memory espionage implant. 2025-03: Kaspersky reports a shift to maritime and nuclear targets across Asia, the Middle East and Africa.",
       "external_references": [
         {
           "external_id": "apt-sidewinder",
@@ -991,12 +1719,16 @@
           "url": "https://www.theregister.com/2025/03/10/sidewinder_tactics_shift/"
         },
         {
+          "source_name": "Kaspersky - SideWinder APT expanding attacks with new espionage tool (15 Oct 2024)",
+          "url": "https://www.kaspersky.com/about/press-releases/kaspersky-identifies-sidewinder-apt-expanding-attacks-with-new-espionage-tool"
+        },
+        {
           "source_name": "MITRE ATT&CK - Sidewinder (G0121)",
           "url": "https://attack.mitre.org/groups/G0121/"
         }
       ],
       "id": "intrusion-set--07c01184-bc4d-4db1-b040-84b422c5b5f7",
-      "modified": "2026-10-16T00:00:00.000Z",
+      "modified": "2026-11-04T00:00:00.000Z",
       "name": "SideWinder (India-nexus)",
       "object_marking_refs": [
         "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
@@ -1008,7 +1740,7 @@
       "confidence": 85,
       "created": "2026-10-15T00:00:00.000Z",
       "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
-      "description": "A Pakistan-nexus espionage actor that mimics the SideWinder group's TTPs (hence the name) and is widely assessed to overlap with Transparent Tribe/APT36 infrastructure. It targets Indian government, defence and increasingly academic and research institutions. Typical delivery is a ZIP archive embedding an LNK or decoy document that leads to RATs such as ActionRAT, AllaKore and AuTo Stealer, hosted on compromised domains.\n\nReported attribution: Pakistan-nexus. Linked to the Pakistan-nexus cluster through infrastructure and tooling overlap with Transparent Tribe; the group deliberately mimics SideWinder's TTPs to mislead attribution.\n\nKey findings: The signature chain is a ZIP archive containing an LNK or decoy document that starts a multi-stage infection. Next stages are usually pulled from compromised legitimate websites rather than attacker-registered infrastructure. Payloads rotate between ActionRAT, AllaKore RAT, ReverseRAT and AuTo Stealer, which collects Office files, PDFs, databases and images. Has exploited the WinRAR flaw CVE-2023-38831, where opening a decoy file inside a crafted archive runs the payload, and fielded a Linux variant of Ares RAT (Seqrite, Nov 2023).",
+      "description": "A Pakistan-nexus espionage actor that mimics the SideWinder group's TTPs (hence the name) and is widely assessed to overlap with Transparent Tribe/APT36 infrastructure. It targets Indian government, defence and increasingly academic and research institutions. Typical delivery is a ZIP archive embedding an LNK or decoy document that leads to RATs such as ActionRAT, AllaKore and AuTo Stealer, hosted on compromised domains.\n\nReported attribution: Pakistan-nexus. Linked to the Pakistan-nexus cluster through infrastructure and tooling overlap with Transparent Tribe; the group deliberately mimics SideWinder's TTPs to mislead attribution.\n\nKey findings: The signature chain is a ZIP archive containing an LNK or decoy document that starts a multi-stage infection. Next stages are usually pulled from compromised legitimate websites rather than attacker-registered infrastructure. Payloads rotate between ActionRAT, AllaKore RAT, ReverseRAT and AuTo Stealer, which collects Office files, PDFs, databases and images. Has exploited the WinRAR flaw CVE-2023-38831, where opening a decoy file inside a crafted archive runs the payload, and fielded a Linux variant of Ares RAT (Seqrite, Nov 2023). The first public report (Seqrite, September 2020) already showed the hallmarks still seen today: LNK files with double extensions such as 'Defence-Production-Policy-2020.docx.lnk', HTA stages run through mshta, and DLL side-loading through a legitimate Windows binary.\n\nTimeline: 2020-09: Quick Heal's Seqrite discloses 'Operation SideCopy', active since at least 2019 against Indian defence units: LNK files run HTA stages through mshta, credwiz.exe side-loads a malicious DUser.dll, and an AllaKore-based RAT or Crimson RAT follows. It assesses a Pakistani origin, likely linked to Transparent Tribe. 2023-11: Seqrite reports SideCopy exploiting the WinRAR flaw CVE-2023-38831 and fielding a Linux variant of Ares RAT. 2025-05: During Operation Sindoor, Seqrite attributes part of the Pahalgam-themed phishing against Indian defence and government to APT36 and SideCopy and ships SideCopy-specific detections.",
       "external_references": [
         {
           "external_id": "apt-sidecopy",
@@ -1029,12 +1761,20 @@
           "url": "https://www.bankinfosecurity.com/sidecopy-apt-targets-indias-premier-defense-research-agency-a-21512"
         },
         {
+          "source_name": "The Hacker News - Researchers uncover cyber espionage operation aimed at Indian Army (Operation SideCopy, 28 Sep 2020)",
+          "url": "https://thehackernews.com/2020/09/cyberattack-indian-army.html"
+        },
+        {
+          "source_name": "Seqrite - Operation Sindoor: anatomy of a digital siege (23 May 2025)",
+          "url": "https://www.seqrite.com/blog/operation-sindoor-anatomy-of-a-digital-siege/"
+        },
+        {
           "source_name": "MITRE ATT&CK - SideCopy (G1008)",
           "url": "https://attack.mitre.org/groups/G1008/"
         }
       ],
       "id": "intrusion-set--47ce2ecf-959f-4774-ad62-968712e65fe3",
-      "modified": "2026-10-15T00:00:00.000Z",
+      "modified": "2026-11-04T00:00:00.000Z",
       "name": "SideCopy",
       "object_marking_refs": [
         "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
@@ -1052,7 +1792,7 @@
       "confidence": 85,
       "created": "2026-10-15T00:00:00.000Z",
       "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
-      "description": "A long-running espionage actor that primarily targets Indian government, defence and education sectors. Typical tradecraft is spear-phishing with weaponised documents and LNK files, and fake or trojanised apps, delivering RATs such as Crimson RAT, CapraRAT (Android) and Poseidon. 2026 reporting describes new RAT activity, LNK-based delivery chains, and expansion toward India's startup ecosystem.\n\nReported attribution: Pakistan-nexus. Pakistan-nexus is the consensus of vendor reporting and MITRE ATT&CK. The tracker's confidence rates the evidence for the activity described here, not the attribution.\n\nKey findings: January 2026 campaigns sent a ZIP with an LNK disguised as a PDF; the LNK runs a remote HTA through mshta, which loads the RAT in memory and opens a decoy PDF. February 2026: Acronis TRU attributed, with high confidence, a Crimson RAT campaign against Indian startups, particularly OSINT and cybersecurity firms, delivered as an ISO containing an LNK disguised as an Excel file. Crimson RAT, a .NET RAT delivered through macro documents, remains the workhorse: file theft, screenshots, keylogging and command execution. CapraRAT extends operations to Android through trojanised or fake apps. Delivery has moved from macro documents to OLE and LNK-based chains, with repeated experiments targeting Linux desktops used in Indian government.",
+      "description": "A long-running espionage actor that primarily targets Indian government, defence and education sectors. Typical tradecraft is spear-phishing with weaponised documents and LNK files, and fake or trojanised apps, delivering RATs such as Crimson RAT, CapraRAT (Android) and Poseidon. 2026 reporting describes new RAT activity, LNK-based delivery chains, and expansion toward India's startup ecosystem.\n\nReported attribution: Pakistan-nexus. Pakistan-nexus is the consensus of vendor reporting and MITRE ATT&CK. The tracker's confidence rates the evidence for the activity described here, not the attribution.\n\nKey findings: January 2026 campaigns sent a ZIP with an LNK disguised as a PDF; the LNK runs a remote HTA through mshta, which loads the RAT in memory and opens a decoy PDF. February 2026: Acronis TRU attributed, with high confidence, a Crimson RAT campaign against Indian startups, particularly OSINT and cybersecurity firms, delivered as an ISO containing an LNK disguised as an Excel file. Crimson RAT, a .NET RAT delivered through macro documents, remains the workhorse: file theft, screenshots, keylogging and command execution. CapraRAT extends operations to Android through trojanised or fake apps. Delivery has moved from macro documents to OLE and LNK-based chains, with repeated experiments targeting Linux desktops used in Indian government. During the April-May 2025 India-Pakistan crisis, CloudSEK and Seqrite separated this group's phishing from the hacktivist noise: Pahalgam-themed .ppam, .xlam, .lnk and .msi lures, spoofed Indian defence domains, and Crimson RAT or Ares payloads aimed at government and defence users. CloudSEK rated it the more serious threat of the period.\n\nTimeline: 2016-03: Proofpoint publishes 'Operation Transparent Tribe': RTF documents exploiting CVE-2012-0158, watering holes and fake India-focused news sites deliver MSIL/Crimson to Indian diplomats in Saudi Arabia and Kazakhstan and to military personnel. 2023-04: SentinelLabs documents a push into Indian education: 'assignment'-themed Office documents from July to September 2022 drop Crimson RAT, with OLE embedding added alongside macros. 2025-04: Within days of the 22 April Pahalgam attack, Pahalgam-themed PowerPoint add-ins and PDFs target Indian government and defence staff, with lookalike Indian Air Force and J&K Police domains and Crimson RAT. 2026-01: LNK files disguised as PDFs inside ZIP archives run a remote HTA through mshta and load the RAT in memory. 2026-02: Acronis attributes a Crimson RAT campaign against Indian startups, especially OSINT and cybersecurity firms, to the group with high confidence.",
       "external_references": [
         {
           "external_id": "apt-transparent-tribe",
@@ -1077,12 +1817,28 @@
           "url": "https://www.acronis.com/en/tru/posts/new-year-new-sector-transparent-tribe-targets-indias-startup-ecosystem/"
         },
         {
+          "source_name": "Security Affairs - Operation Transparent Tribe targets Indian diplomats and military (Proofpoint, 6 Mar 2016)",
+          "url": "https://securityaffairs.com/45093/cyber-warfare-2/operation-transparent-tribe.html"
+        },
+        {
+          "source_name": "SentinelLabs - Transparent Tribe expands interest in Indian education sector (13 Apr 2023)",
+          "url": "https://www.sentinelone.com/labs/transparent-tribe-apt36-pakistan-aligned-threat-actor-expands-interest-in-indian-education-sector/"
+        },
+        {
+          "source_name": "CloudSEK - Brief disruptions, bold claims: the India-Pakistan hacktivist surge (11 May 2025)",
+          "url": "https://www.cloudsek.com/blog/brief-disruptions-bold-claims-the-tactical-reality-behind-the-india-pakistan-hacktivist-surge"
+        },
+        {
+          "source_name": "Seqrite - Operation Sindoor: anatomy of a digital siege (23 May 2025)",
+          "url": "https://www.seqrite.com/blog/operation-sindoor-anatomy-of-a-digital-siege/"
+        },
+        {
           "source_name": "MITRE ATT&CK - Transparent Tribe (G0134)",
           "url": "https://attack.mitre.org/groups/G0134/"
         }
       ],
       "id": "intrusion-set--49e9134d-1c01-4851-a9db-000725c7d845",
-      "modified": "2026-10-15T00:00:00.000Z",
+      "modified": "2026-11-04T00:00:00.000Z",
       "name": "Transparent Tribe",
       "object_marking_refs": [
         "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
@@ -1103,7 +1859,7 @@
       "confidence": 50,
       "created": "2026-11-04T00:00:00.000Z",
       "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
-      "description": "A long-running Iranian espionage actor whose main focus is the Middle East, with India named repeatedly among its secondary targets: in its first documented campaigns in 2017, and in a 2023–2024 campaign that sent small businesses in India phishing links to legitimate remote-access software. It is still active in 2026, and DSCI's March 2026 advisory lists it among the Iranian state actors Indian organisations should watch after the Iran war began. No India-specific campaign has been publicly reported; India appears in multi-country target lists.\n\nReported attribution: Iran-nexus. US Cyber Command (January 2022) and a joint US/UK advisory (February 2022) describe MuddyWater as a subordinate element of Iran's Ministry of Intelligence and Security (MOIS); MITRE ATT&CK and vendor reporting agree. The tracker's confidence rates the evidence for activity against India, not the attribution.\n\nKey findings: Palo Alto Unit 42's first public report on the group (November 2017) lists India among the countries targeted or suspected to be targeted from February to October 2017, alongside Saudi Arabia, Iraq, Israel, the UAE, Georgia, Pakistan, Turkey and the US. Delivery was macro-enabled Word documents dropping the POWERSTATS PowerShell backdoor. HarfangLab (April 2024) documented an October 2023 to April 2024 campaign against small businesses in Israel, India, Algeria, Turkey, Italy and Egypt, across sectors including airlines, IT, telecommunications, pharmaceuticals, logistics and travel. Spear-phishing emails linked to free file-hosting services (Egnyte, Onehub, filetransfer.io) that served the legitimate Atera Agent remote-management tool. The Atera agents were registered with compromised business and personal email accounts, and in one case lures were sent from a victim's own compromised mailbox to its contacts. Using signed, legitimate remote-management software gives the group a foothold that most antivirus will not flag. In 2025, Group-IB reported a campaign against more than 100 government entities in the Middle East and North Africa using a compromised mailbox, macro documents and the Phoenix backdoor. India was not named. In 2026, Symantec and Carbon Black reported intrusions at nine organisations in nine countries using DLL side-loading through legitimately signed binaries, a Node.js implant chain, browser credential theft (ChromElevator), SAM hive theft and SOCKS5 tunnelling. The named victim was in South Korea; India was not named. DSCI's March 2026 advisory on the Middle East conflict lists MuddyWater, with APT33, APT34, Handala and CyberAv3ngers, among the Iranian actors posing risk to Indian organisations, especially IT/ITeS firms with Gulf, Israeli or Western clients. It does not report a specific MuddyWater intrusion in India.",
+      "description": "A long-running Iranian espionage actor whose main focus is the Middle East, with India named repeatedly among its secondary targets: in its first documented campaigns in 2017, and in a 2023–2024 campaign that sent small businesses in India phishing links to legitimate remote-access software. It is still active in 2026, and DSCI's March 2026 advisory lists it among the Iranian state actors Indian organisations should watch after the Iran war began. No India-specific campaign has been publicly reported; India appears in multi-country target lists.\n\nReported attribution: Iran-nexus. US Cyber Command (January 2022) and a joint US/UK advisory (February 2022) describe MuddyWater as a subordinate element of Iran's Ministry of Intelligence and Security (MOIS); MITRE ATT&CK and vendor reporting agree. The tracker's confidence rates the evidence for activity against India, not the attribution.\n\nKey findings: Palo Alto Unit 42's first public report on the group (November 2017) lists India among the countries targeted or suspected to be targeted from February to October 2017, alongside Saudi Arabia, Iraq, Israel, the UAE, Georgia, Pakistan, Turkey and the US. Delivery was macro-enabled Word documents dropping the POWERSTATS PowerShell backdoor. HarfangLab (April 2024) documented an October 2023 to April 2024 campaign against small businesses in Israel, India, Algeria, Turkey, Italy and Egypt, across sectors including airlines, IT, telecommunications, pharmaceuticals, logistics and travel. Spear-phishing emails linked to free file-hosting services (Egnyte, Onehub, filetransfer.io) that served the legitimate Atera Agent remote-management tool. The Atera agents were registered with compromised business and personal email accounts, and in one case lures were sent from a victim's own compromised mailbox to its contacts. Using signed, legitimate remote-management software gives the group a foothold that most antivirus will not flag. In 2025, Group-IB reported a campaign against more than 100 government entities in the Middle East and North Africa using a compromised mailbox, macro documents and the Phoenix backdoor. India was not named. In 2026, Symantec and Carbon Black reported intrusions at nine organisations in nine countries using DLL side-loading through legitimately signed binaries, a Node.js implant chain, browser credential theft (ChromElevator), SAM hive theft and SOCKS5 tunnelling. The named victim was in South Korea; India was not named. DSCI's March 2026 advisory on the Middle East conflict lists MuddyWater, with APT33, APT34, Handala and CyberAv3ngers, among the Iranian actors posing risk to Indian organisations, especially IT/ITeS firms with Gulf, Israeli or Western clients. It does not report a specific MuddyWater intrusion in India.\n\nTimeline: 2017-11: Unit 42's first report on the group lists India among the countries targeted from February to October 2017. 2023-10: Start of a six-month campaign, reported by HarfangLab, that sends small businesses in India and five other countries links to the Atera remote-management agent. 2026-03: DSCI lists MuddyWater among the Iranian actors Indian organisations should watch after the Iran war began. 2026-05: Symantec and Carbon Black report DLL side-loading intrusions in nine countries; India is not named.",
       "external_references": [
         {
           "external_id": "apt-muddywater",
@@ -1145,7 +1901,7 @@
         }
       ],
       "id": "intrusion-set--4eee7166-dd04-464d-a13f-e0121c5d24ba",
-      "modified": "2026-11-04T00:00:00.000Z",
+      "modified": "2026-11-04T00:00:00.001Z",
       "name": "MuddyWater",
       "object_marking_refs": [
         "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
@@ -1154,14 +1910,39 @@
       "type": "intrusion-set"
     },
     {
-      "aliases": [
-        "RedEcho",
-        "TAG-38"
+      "confidence": 50,
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "description": "A Chinese military-linked espionage group that Recorded Future tracked back to 2014 across India and Central Asia. In the six months before its June 2021 report, the focus was India: multiple aerospace and defence contractors and telecommunications companies. Its toolkit (ShadowPad, PlugX, Poison Ivy, IceFog, PCShare and the Royal Road document builder) is shared across Chinese groups. There has been no public reporting on it since 2021.\n\nReported attribution: China-nexus (PLA Unit 69010, as reported). Recorded Future linked RedFoxtrot to PLA Unit 69010 in Urumqi, Xinjiang, after one operator's lax operational security exposed his location, his interest in hacking and a suspected past affiliation with the PLA's former Communications Command Academy in Wuhan. This is single-vendor attribution.\n\nKey findings: Recorded Future (16 June 2021) tracked RedFoxtrot activity back to 2014 against targets in India, Afghanistan, Kazakhstan, Kyrgyzstan, Pakistan, Tajikistan and Uzbekistan. In the six months before the report, it focused on India: multiple aerospace and defence contractors, and telecommunications companies. Tools: IceFog, ShadowPad, Royal Road, PCShare, PlugX and Poison Ivy, plus web servers used to host payloads and collect stolen data. Royal Road builds documents that exploit old Microsoft Office flaws. Attribution came from the operator's online footprint, not from the malware, which is shared widely among Chinese groups.\n\nTimeline: 2014: Earliest RedFoxtrot activity Recorded Future identified. 2021-06-16: Recorded Future discloses RedFoxtrot and its recent focus on Indian aerospace, defence and telecom.",
+      "external_references": [
+        {
+          "external_id": "apt-redfoxtrot",
+          "source_name": "india-threat-tracker",
+          "url": "https://www.sohankanna.com/tracker#actor-apt-redfoxtrot"
+        },
+        {
+          "source_name": "Recorded Future - China's PLA Unit 69010 targets bordering Asian countries (RedFoxtrot, Jun 2021)",
+          "url": "https://recordedfuture.com/research/redfoxtrot-china-pla-targets-bordering-asian-countries"
+        },
+        {
+          "source_name": "The Record - Sprawling cyber espionage campaign linked to Chinese military unit (16 Jun 2021)",
+          "url": "https://therecord.media/sprawling-cyber-espionage-campaign-linked-to-chinese-military-unit/"
+        }
       ],
+      "id": "intrusion-set--5ccbcba4-7c2e-4d07-ae86-178fc9f4ff97",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "name": "RedFoxtrot",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "intrusion-set"
+    },
+    {
       "confidence": 50,
       "created": "2026-10-16T00:00:00.000Z",
       "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
-      "description": "China-nexus intrusion sets that have repeatedly targeted India's power sector and critical infrastructure. Recorded Future documented RedEcho targeting Indian electricity load-dispatch centres, and later TAG-38 activity against grid infrastructure in Ladakh using the ShadowPad backdoor and compromised internet-facing DVR/IoT devices for C2. A reminder that the threat to India isn't only fraud and Pakistan-nexus espionage.\n\nReported attribution: China-nexus. China-nexus per Recorded Future's RedEcho and TAG-38 reporting. Confidence is medium because the public record rests largely on one vendor's analysis.\n\nKey findings: RedEcho (disclosed February 2021) targeted Indian power-sector organisations, including regional load-dispatch centres, using the ShadowPad backdoor. TAG-38 (disclosed April 2022) targeted grid infrastructure in Ladakh, using compromised internet-facing DVR/IoT devices in its command-and-control path. Activity has coincided with periods of India-China border tension, consistent with collection and pre-positioning.",
+      "description": "China-nexus intrusions against India's power grid. Recorded Future disclosed RedEcho in February 2021 after it targeted ten Indian power-sector organisations, including four of the five Regional Load Despatch Centres, and two seaports with the ShadowPad backdoor. In April 2022 it reported a separate cluster, TAG-38, inside at least seven State Load Despatch Centres near Ladakh, using hacked DVR and IP cameras as command-and-control relays. Both periods followed India-China border tension.\n\nReported attribution: China-nexus. Recorded Future assesses RedEcho as China-linked and notes overlaps with APT41 and Tonto Team infrastructure, but says the evidence is not enough to attribute it firmly to either; MITRE ATT&CK tracks it as G1042. TAG-38 is a different cluster that Recorded Future could not link to RedEcho; it is kept in this entry because it targeted the same assets. China denied both.\n\nKey findings: RedEcho (Recorded Future, February 2021): 21 IP addresses at ten Indian power generation and transmission organisations, including four of the five Regional Load Despatch Centres, a high-voltage substation and a coal-fired thermal plant, plus two seaports, communicated with ShadowPad infrastructure Recorded Future tracks as AXIOMATICASYMPTOTE. The activity rose after the India-China border clashes of May 2020. Three of the targeted Indian IP addresses had been hit in a November 2020 APT41 campaign against Indian oil and gas organisations. Maharashtra's cyber cell linked the October 2020 Mumbai blackout to malware at a State Load Despatch Centre. Recorded Future called the link to that outage unsubstantiated, so the tracker does not treat the outage as a confirmed cyber attack. TAG-38 (Recorded Future, April 2022): at least seven State Load Despatch Centres near the Ladakh border, a national emergency response system and the Indian subsidiary of a multinational logistics company. ShadowPad was controlled through likely compromised internet-facing DVR and IP camera devices, with the open-source FastReverseProxy. India's Power Minister said two attempts on load despatch centres near Ladakh were 'not successful'.\n\nTimeline: 2020-05: Targeting of the Indian power sector rises after the India-China border clashes. 2020-10: Mumbai blackout. Maharashtra's cyber cell points to malware at a load despatch centre; the link to RedEcho is not substantiated. 2021-02: Recorded Future discloses RedEcho: ten power-sector organisations and two seaports. 2022-04: Recorded Future reports TAG-38 inside at least seven State Load Despatch Centres near Ladakh; India says the attempts failed.",
       "external_references": [
         {
           "external_id": "apt-redecho",
@@ -1169,22 +1950,232 @@
           "url": "https://www.sohankanna.com/tracker#actor-apt-redecho"
         },
         {
-          "source_name": "Recorded Future - RedEcho: China-linked group targets Indian power sector",
-          "url": "https://www.recordedfuture.com/redecho-targeting-indian-power-sector"
+          "external_id": "G1042",
+          "source_name": "mitre-attack",
+          "url": "https://attack.mitre.org/groups/G1042/"
         },
         {
-          "source_name": "Recorded Future - Continued targeting of Indian power grid (TAG-38)",
-          "url": "https://www.recordedfuture.com/continued-targeting-of-indian-power-grid-assets"
+          "source_name": "Recorded Future - China-linked group RedEcho targets the Indian power sector (Feb 2021)",
+          "url": "https://www.recordedfuture.com/research/redecho-targeting-indian-power-sector"
+        },
+        {
+          "source_name": "The Hacker News - Chinese hackers targeted India's power grid amid border tensions (1 Mar 2021)",
+          "url": "https://thehackernews.com/2021/03/chinese-hackers-targeted-indias-power.html"
+        },
+        {
+          "source_name": "Security Affairs - Alleged China-linked APT41 group targets Indian critical infrastructures (2 Mar 2021)",
+          "url": "https://securityaffairs.com/115156/apt/china-apt41-india.html"
+        },
+        {
+          "source_name": "Recorded Future - Continued targeting of Indian power grid assets (TAG-38, Apr 2022)",
+          "url": "https://www.recordedfuture.com/research/continued-targeting-of-indian-power-grid-assets"
+        },
+        {
+          "source_name": "The Record - Suspected China-backed hackers target 7 Indian electricity grid centers (8 Apr 2022)",
+          "url": "https://therecord.media/suspected-china-backed-hackers-target-7-indian-electricity-grid-centers"
+        },
+        {
+          "source_name": "MITRE ATT&CK - RedEcho (G1042)",
+          "url": "https://attack.mitre.org/groups/G1042/"
         }
       ],
       "id": "intrusion-set--6f442db0-d02d-412d-bd34-ae81cd300f7a",
-      "modified": "2026-10-16T00:00:00.000Z",
+      "modified": "2026-11-04T00:00:00.000Z",
       "name": "RedEcho / TAG-38 (China-nexus)",
       "object_marking_refs": [
         "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
       ],
       "spec_version": "2.1",
       "type": "intrusion-set"
+    },
+    {
+      "aliases": [
+        "Wicked Panda",
+        "Brass Typhoon",
+        "BARIUM"
+      ],
+      "confidence": 50,
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "description": "A prolific Chinese group that mixes espionage with crime. India appears in its reporting three times: among about 20 countries hit in a fast 2020 exploitation campaign against Citrix and Zoho ManageEngine; in a November 2020 campaign against Indian oil and gas organisations; and in 2021 phishing aimed at Indian nationals with fake tax and COVID-19 notices. There has been no India-specific public reporting since 2021, but the group remains active worldwide.\n\nReported attribution: China-nexus. MITRE ATT&CK describes APT41 as a Chinese state-sponsored espionage group that also runs financially motivated operations. BlackBerry's 2021 attribution of the India-themed phishing rests on overlapping Cobalt Strike configurations and infrastructure.\n\nKey findings: FireEye (March 2020): between 20 January and 11 March 2020, APT41 exploited Citrix ADC and Gateway (CVE-2019-19781) and Zoho ManageEngine Desktop Central (CVE-2020-10189) at organisations in about 20 countries, India among them. Recorded Future noted a November 2020 APT41 campaign against Indian oil and gas organisations, three of whose IP addresses later appeared in RedEcho's targeting. BlackBerry (October 2021): three phishing schemes aimed at Indian nationals, with PDFs posing as government tax and COVID-19 notices. Payloads arrived as embedded PowerShell, a self-extracting archive or a ZIP, and loaded Cobalt Strike Beacon with a custom malleable C2 profile and lookalike Microsoft domains.\n\nTimeline: 2020-01: Start of the Citrix and Zoho exploitation wave that reached India (to 11 March 2020). 2020-11: Campaign against Indian oil and gas organisations. 2021-10: BlackBerry reports tax- and COVID-themed phishing of Indian nationals.",
+      "external_references": [
+        {
+          "external_id": "apt-apt41",
+          "source_name": "india-threat-tracker",
+          "url": "https://www.sohankanna.com/tracker#actor-apt-apt41"
+        },
+        {
+          "external_id": "G0096",
+          "source_name": "mitre-attack",
+          "url": "https://attack.mitre.org/groups/G0096/"
+        },
+        {
+          "source_name": "Dark Reading - China-based threat group launches widespread malicious campaign (FireEye, Mar 2020)",
+          "url": "https://www.darkreading.com/cyberattacks-data-breaches/china-based-threat-group-launches-widespread-malicious-campaign"
+        },
+        {
+          "source_name": "Security Affairs - Alleged China-linked APT41 group targets Indian critical infrastructures (2 Mar 2021)",
+          "url": "https://securityaffairs.com/115156/apt/china-apt41-india.html"
+        },
+        {
+          "source_name": "The Register - APT41 phishing schemes target Indian nationals (BlackBerry, 7 Oct 2021)",
+          "url": "https://www.theregister.com/2021/10/07/apt_41_phishing_schemes_indian_nationals/"
+        },
+        {
+          "source_name": "MITRE ATT&CK - APT41 (G0096)",
+          "url": "https://attack.mitre.org/groups/G0096/"
+        }
+      ],
+      "id": "intrusion-set--878dc823-6947-4070-92fd-a5a35fb0718f",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "name": "APT41",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "intrusion-set"
+    },
+    {
+      "aliases": [
+        "HIDDEN COBRA",
+        "Labyrinth Chollima",
+        "ZINC",
+        "NICKEL ACADEMY",
+        "Guardians of Peace"
+      ],
+      "confidence": 85,
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "description": "North Korea's state hacking apparatus, which steals money for the regime and spies for strategic intelligence. India has seen both sides. The DTrack spyware and its ATM-focused sibling ATMDtrack were found in Indian banks and research centres in 2018 and 2019, and DTrack was confirmed on the administrative network of the Kudankulam nuclear power plant in 2019. In July 2024, US$235 million was drained from the Indian exchange WazirX, a theft the US, Japan and South Korea attribute to North Korea.\n\nReported attribution: DPRK-nexus (North Korea). The US, Japan and South Korea attribute the July 2024 WazirX theft to North Korea in a joint statement of 14 January 2025, which names the Lazarus Group among the DPRK actors the three countries have designated. The DTrack findings (Kaspersky) and the Cosmos Bank attribution (Securonix) come from vendors. Public reporting uses 'Lazarus' loosely for several DPRK clusters; MITRE ATT&CK tracks APT38 and Andariel separately.\n\nKey findings: Kaspersky (September 2019): ATMDtrack, found in 2018, was built to get into Indian ATMs and steal card data. Code overlaps led to more than 180 samples of DTrack, a remote-access spy tool used against Indian financial institutions and research centres: keylogging, browser history, process and network listing, and file upload and download. It shares code with the 2013 DarkSeoul campaign attributed to Lazarus. Kaspersky (October 2019) found DTrack samples across 18 Indian states, led by Maharashtra (24%), Karnataka (18.5%) and Telangana (12%). Kudankulam: CERT-In notified NPCIL on 4 September 2019. After first denying any infection, NPCIL confirmed on 30 October that malware was found on the plant's administrative network, which it said is isolated from the plant systems. The malware was DTrack. Cosmos Bank, Pune (10-13 August 2018): about Rs 94 crore stolen, roughly US$11.5 million through some 14,800 ATM withdrawals in 28 countries with cloned cards approved by a malicious proxy switch, plus about US$2 million in three SWIFT transfers to a Hong Kong account. Securonix attributed it to Lazarus; there is no government attribution. WazirX (18 July 2024): about US$235 million was drained from a multisig wallet held with Liminal Custody after the attackers altered the wallet's controlling contract while signers approved transactions. WazirX and Liminal dispute where the compromise happened. Elliptic tied it to North Korea the same day. WazirX resumed trading on 24 October 2025 under a Singapore court-sanctioned scheme that returned about 85% of users' balances.\n\nTimeline: 2018-08: Cosmos Bank, Pune, loses about Rs 94 crore through ATM cash-outs in 28 countries and SWIFT transfers; Securonix attributes it to Lazarus. 2019-09: Kaspersky publishes DTrack and ATMDtrack, found in Indian banks and research centres. 2019-09-04: CERT-In notifies NPCIL of malware linked to Kudankulam. 2019-10-30: NPCIL confirms DTrack on Kudankulam's administrative network. 2024-07-18: About US$235 million drained from WazirX. 2025-01-14: The US, Japan and South Korea attribute the WazirX theft to North Korea. 2025-10-24: WazirX resumes operations after its restructuring.",
+      "external_references": [
+        {
+          "external_id": "apt-lazarus",
+          "source_name": "india-threat-tracker",
+          "url": "https://www.sohankanna.com/tracker#actor-apt-lazarus"
+        },
+        {
+          "external_id": "G0032",
+          "source_name": "mitre-attack",
+          "url": "https://attack.mitre.org/groups/G0032/"
+        },
+        {
+          "source_name": "Kaspersky - DTrack: previously unknown spy tool hits financial institutions and research centers (23 Sep 2019)",
+          "url": "https://www.kaspersky.com/about/press-releases/dtrack-previously-unknown-spy-tool-hits-financial-institutions-and-research-centers"
+        },
+        {
+          "source_name": "Kaspersky India - Top 3 states detected with DTrack samples (18 Oct 2019)",
+          "url": "https://www.kaspersky.co.in/about/press-releases/top-3-states-detected-with-dtrack-samples-maharashtra-karnataka-and-telangana"
+        },
+        {
+          "source_name": "Security Affairs - Administrative network at Kudankulam Nuclear Power Plant was infected with DTrack (30 Oct 2019)",
+          "url": "https://securityaffairs.com/93183/security/kudankulam-nuclear-power-plant-infection.html"
+        },
+        {
+          "source_name": "Security Affairs - Security firm attributes Cosmos Bank cyberheist to Lazarus APT (28 Aug 2018)",
+          "url": "https://securityaffairs.com/wordpress/75703/hacking/cosmos-bank-lazarus-apt.html"
+        },
+        {
+          "source_name": "The Record - WazirX confirms $230 million stolen during cyberattack (18 Jul 2024)",
+          "url": "https://therecord.media/wazirx-crypto-platform-confirms-230-million-heist"
+        },
+        {
+          "source_name": "Joint statement by the US, Japan and Republic of Korea on DPRK cryptocurrency thefts (14 Jan 2025), text via The World and Japan database",
+          "url": "https://worldjpn.net/documents/texts/JPKR/20250114.D1E.html"
+        },
+        {
+          "source_name": "Wikipedia - 2024 WazirX hack",
+          "url": "https://en.wikipedia.org/wiki/2024_WazirX_hack"
+        },
+        {
+          "source_name": "MITRE ATT&CK - Lazarus Group (G0032)",
+          "url": "https://attack.mitre.org/groups/G0032/"
+        }
+      ],
+      "id": "intrusion-set--a5c5e6c4-45d5-4f51-8205-6dec08d90473",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "name": "Lazarus Group",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "intrusion-set"
+    },
+    {
+      "aliases": [
+        "TA416",
+        "RedDelta",
+        "BRONZE PRESIDENT",
+        "Stately Taurus",
+        "FIREANT"
+      ],
+      "confidence": 85,
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "description": "A China-based espionage group that turned on India in 2026. From March it sent Indian banks help-file attachments posing as HDFC Bank support tickets that installed the LOTUSLITE backdoor. In June it got into Indian government networks, including machines used by senior administrative staff, with lures about hydropower cooperation and an India-Taiwan memorandum of understanding, using Zoho WorkDrive as its command channel. Acronis, which reported both campaigns, worked with CERT-In on notification and clean-up.\n\nReported attribution: China-nexus. Acronis attributes the June 2026 government and energy campaign to Mustang Panda with high confidence, citing code shared with the group's TONESHELL backdoor, command servers in a network block IBM X-Force tied to the group, and a reused side-loading chain. The April 2026 banking activity rests on shared code and infrastructure. MITRE ATT&CK describes Mustang Panda as a China-based espionage actor active since at least 2012.\n\nKey findings: Banking (Acronis, April 2026): a compiled help file, 'Request for Support.chm', bundles a legitimate executable, a rogue DLL and a page with a pop-up referencing HDFC Bank Limited. Clicking 'Yes' fetches JavaScript from cosmosmusic[.]com, which side-loads the updated LOTUSLITE (dnx.onecore.dll) through a Microsoft-signed binary. HDFC Bank is the impersonated brand, not a reported victim. LOTUSLITE talks HTTPS to a dynamic-DNS server, editor.gleeze[.]com, and gives the operators a remote shell, file operations and session management. The new build changes the traffic 'magic value' from 0x8899AABB to 0xB2EBCFDF but keeps old internal names such as KugouMain and DataImporterMain. The same build reached South Korean and US policy circles through a spoofed Gmail account impersonating Victor Cha and Google Drive links. Acronis had earlier tied LOTUSLITE to Venezuela-themed spear-phishing of US government targets in January 2026, at medium confidence. Government and energy (Acronis, June 2026): two parallel campaigns used ZIP archives with hidden DLLs and lures about a hydropower cooperation proposal and an India-Taiwan institutional MoU. SHARDLOADER side-loads through signed Solid PDF Creator and Citrix Receiver binaries, then deploys MINIRECON, a reworked TONESHELL that beacons over WebSocket inside HTTPS, or ZOHOMURK. ZOHOMURK carries hardcoded Zoho OAuth credentials and uses an attacker-owned WorkDrive account as a dead drop: it reads commands from one folder and writes stolen data to another, so its traffic looks like normal cloud use. Beacons were active from 12 to 22 June 2026. Persistence was through Run keys and a scheduled task named SolidPDFPcl2Bmp, with a reported C2 domain couldinstallup[.]com. A recurring typo, 'RunOnece', appears across several implants.\n\nTimeline: 2026-01: Acronis ties LOTUSLITE to Venezuela-themed spear-phishing of US government targets. 2026-03: The LOTUSLITE campaign against India's banking sector begins. 2026-04-22: Acronis publishes the banking and South Korea findings. 2026-06-12: MINIRECON and ZOHOMURK implants begin beaconing from Indian government networks (until 22 June). 2026-06-29: Acronis reports the government and energy campaign, coordinated with CERT-In.",
+      "external_references": [
+        {
+          "external_id": "apt-mustang-panda",
+          "source_name": "india-threat-tracker",
+          "url": "https://www.sohankanna.com/tracker#actor-apt-mustang-panda"
+        },
+        {
+          "external_id": "G0129",
+          "source_name": "mitre-attack",
+          "url": "https://attack.mitre.org/groups/G0129/"
+        },
+        {
+          "source_name": "The Hacker News - Mustang Panda's new LOTUSLITE variant targets India banks, South Korea policy circles (22 Apr 2026)",
+          "url": "https://thehackernews.com/2026/04/mustang-pandas-new-lotuslite-variant.html"
+        },
+        {
+          "source_name": "Hackread - Mustang Panda hits India and S. Korea with updated LOTUSLITE backdoor (22 Apr 2026)",
+          "url": "https://hackread.com/mustang-panda-india-s-korea-lotuslite-backdoor/"
+        },
+        {
+          "source_name": "Dark Reading - Chinese APT targets Indian banks, Korean policy circles (Apr 2026)",
+          "url": "https://www.darkreading.com/cyberattacks-data-breaches/chinese-apt-indian-banks-korean-policy"
+        },
+        {
+          "source_name": "The Hacker News - Mustang Panda uses Zoho WorkDrive as C2 against India's government and energy sectors (29 Jun 2026)",
+          "url": "https://thehackernews.com/2026/06/mustang-panda-uses-zoho-workdrive-as.html"
+        },
+        {
+          "source_name": "SOC Prime - Mustang Panda uses ZOHOMURK and MINIRECON against India's government and energy sectors (6 Jul 2026)",
+          "url": "https://socprime.com/active-threats/mustang-panda-uses-zohomurk-and-minirecon-against-indias-government-and-energy-sectors/"
+        },
+        {
+          "source_name": "MITRE ATT&CK - Mustang Panda (G0129)",
+          "url": "https://attack.mitre.org/groups/G0129/"
+        }
+      ],
+      "id": "intrusion-set--c94859f5-3593-4b09-94e4-93454f32f3db",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "name": "Mustang Panda",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "intrusion-set"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "external_references": [
+        {
+          "external_id": "S0567",
+          "source_name": "mitre-attack",
+          "url": "https://attack.mitre.org/software/S0567/"
+        }
+      ],
+      "id": "malware--0253fad2-f15a-41fb-9e85-e69e7f1c3b3f",
+      "is_family": true,
+      "modified": "2026-11-04T00:00:00.000Z",
+      "name": "Dtrack",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "malware"
     },
     {
       "created": "2026-11-04T00:00:00.000Z",
@@ -1235,9 +2226,16 @@
     {
       "created": "2026-10-16T00:00:00.000Z",
       "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "external_references": [
+        {
+          "external_id": "S0013",
+          "source_name": "mitre-attack",
+          "url": "https://attack.mitre.org/software/S0013/"
+        }
+      ],
       "id": "malware--414541f3-8ebd-4b01-a824-83b60c6cdbbe",
       "is_family": true,
-      "modified": "2026-10-16T00:00:00.000Z",
+      "modified": "2026-11-04T00:00:00.000Z",
       "name": "PlugX",
       "object_marking_refs": [
         "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
@@ -1272,6 +2270,32 @@
       "type": "malware"
     },
     {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "malware--60f81756-635c-4d25-901f-d559996ae37f",
+      "is_family": true,
+      "modified": "2026-11-04T00:00:00.000Z",
+      "name": "LOTUSLITE",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "malware"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "malware--660ad5a5-cd8b-45ce-a5bb-df7a9159de27",
+      "is_family": true,
+      "modified": "2026-11-04T00:00:00.000Z",
+      "name": "MINIRECON",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "malware"
+    },
+    {
       "created": "2026-10-15T00:00:00.000Z",
       "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
       "id": "malware--78e1e348-a0d2-4466-acea-87fc62424c7f",
@@ -1291,6 +2315,19 @@
       "is_family": true,
       "modified": "2026-11-04T00:00:00.000Z",
       "name": "Phoenix",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "malware"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "malware--831bf96b-91c2-4372-9c94-d1862be3aab2",
+      "is_family": true,
+      "modified": "2026-11-04T00:00:00.000Z",
+      "name": "ATMDtrack",
       "object_marking_refs": [
         "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
       ],
@@ -1357,6 +2394,19 @@
       "type": "malware"
     },
     {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "malware--bde79f41-f2d4-4bbd-9ec6-016c45d33162",
+      "is_family": true,
+      "modified": "2026-11-04T00:00:00.000Z",
+      "name": "IceFog",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "malware"
+    },
+    {
       "created": "2026-10-15T00:00:00.000Z",
       "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
       "id": "malware--bf664cc5-6ce7-428c-8cc8-97433c40bb66",
@@ -1376,6 +2426,72 @@
       "is_family": true,
       "modified": "2026-11-04T00:00:00.000Z",
       "name": "BugSleep",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "malware"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "external_references": [
+        {
+          "external_id": "S0012",
+          "source_name": "mitre-attack",
+          "url": "https://attack.mitre.org/software/S0012/"
+        }
+      ],
+      "id": "malware--c03956f8-9cec-4be4-ade2-8ad298a52e18",
+      "is_family": true,
+      "modified": "2026-11-04T00:00:00.000Z",
+      "name": "PoisonIvy",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "malware"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "malware--d0b62e39-4c03-48bb-836e-80703c723d84",
+      "is_family": true,
+      "modified": "2026-11-04T00:00:00.000Z",
+      "name": "SHARDLOADER",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "malware"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "malware--d23e69d0-c947-4e29-a307-ab742e0110dc",
+      "is_family": true,
+      "modified": "2026-11-04T00:00:00.000Z",
+      "name": "ZOHOMURK",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "type": "malware"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "external_references": [
+        {
+          "external_id": "S1050",
+          "source_name": "mitre-attack",
+          "url": "https://attack.mitre.org/software/S1050/"
+        }
+      ],
+      "id": "malware--e237f30b-9f1f-4e17-bab1-5670c3bc4ead",
+      "is_family": true,
+      "modified": "2026-11-04T00:00:00.000Z",
+      "name": "PcShare",
       "object_marking_refs": [
         "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
       ],
@@ -1453,6 +2569,20 @@
       "type": "marking-definition"
     },
     {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--04581547-6ae2-48f3-85c1-352cc12e62bd",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--5ccbcba4-7c2e-4d07-ae86-178fc9f4ff97",
+      "spec_version": "2.1",
+      "target_ref": "malware--ed09119b-5426-41b9-92c1-452a64abeddf",
+      "type": "relationship"
+    },
+    {
       "created": "2026-10-15T00:00:00.000Z",
       "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
       "id": "relationship--057bcfbc-06be-4c14-bd58-8abd3375240f",
@@ -1464,6 +2594,34 @@
       "source_ref": "campaign--c154e3ce-bced-4cda-8dc5-6ea753025e9f",
       "spec_version": "2.1",
       "target_ref": "attack-pattern--0f7d0fc3-cf8a-40ca-b077-6898bffcc9e6",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--084617c0-055b-414e-9ed7-731f00a68aad",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "threat-actor--7393348c-17a6-4d5c-a9ea-f775de3e3304",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--f3c94e1c-ffbe-4aa8-9861-738c3914abd1",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--08bd294f-e137-43d1-8e8b-a4ba023ea5f3",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--a5c5e6c4-45d5-4f51-8205-6dec08d90473",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--effb4eea-4dd1-4a7a-b799-ccc608740eba",
       "type": "relationship"
     },
     {
@@ -1539,6 +2697,34 @@
     {
       "created": "2026-11-04T00:00:00.000Z",
       "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--0f7ef5f4-e6fb-40b5-baae-0bf8cd006e7f",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--c94859f5-3593-4b09-94e4-93454f32f3db",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--c153fa2c-9988-46a6-8a35-3d1c432ad3a0",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--110d4a4f-c877-405a-b642-2fe8049c6a9e",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "threat-actor--85711163-6c80-4fb8-a54c-2f7b4023806d",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--7c12c4bd-73cc-49a1-90e1-c5c20effe1a5",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
       "id": "relationship--11cbbe81-2bff-4a99-8b7a-a2b2308148de",
       "modified": "2026-11-04T00:00:00.000Z",
       "object_marking_refs": [
@@ -1548,6 +2734,34 @@
       "source_ref": "intrusion-set--4eee7166-dd04-464d-a13f-e0121c5d24ba",
       "spec_version": "2.1",
       "target_ref": "attack-pattern--526ee8bc-29ed-480c-b303-c3e2608b9daf",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--1402f6a7-d02b-4611-8d66-ad50345f3cb4",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--a5c5e6c4-45d5-4f51-8205-6dec08d90473",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--0dfd6379-23a2-4d0f-b962-1ecd4e99363c",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--147dacd3-5f50-43d5-9186-98ccac6c0b4b",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--c94859f5-3593-4b09-94e4-93454f32f3db",
+      "spec_version": "2.1",
+      "target_ref": "malware--d23e69d0-c947-4e29-a307-ab742e0110dc",
       "type": "relationship"
     },
     {
@@ -1579,6 +2793,20 @@
       "type": "relationship"
     },
     {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--17b3f11a-217f-4233-a058-4e6f084ea2e4",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--c94859f5-3593-4b09-94e4-93454f32f3db",
+      "spec_version": "2.1",
+      "target_ref": "malware--d0b62e39-4c03-48bb-836e-80703c723d84",
+      "type": "relationship"
+    },
+    {
       "created": "2026-10-15T00:00:00.000Z",
       "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
       "id": "relationship--18c4c91d-bd6f-4899-84e8-347e584d9acb",
@@ -1604,6 +2832,20 @@
       "source_ref": "intrusion-set--47ce2ecf-959f-4774-ad62-968712e65fe3",
       "spec_version": "2.1",
       "target_ref": "attack-pattern--c153fa2c-9988-46a6-8a35-3d1c432ad3a0",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--1a8a12a8-624d-424b-a269-8183539bf466",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "campaign--6fd3dce2-dff4-4435-bfda-0e87325943cf",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--aa881b4c-2e77-47c2-a047-8224882483e5",
       "type": "relationship"
     },
     {
@@ -1677,6 +2919,34 @@
       "type": "relationship"
     },
     {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--2340853f-d2d1-4ace-acae-be23d69afd81",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--878dc823-6947-4070-92fd-a5a35fb0718f",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--3174492c-96e2-4dfa-9386-690efb00fcb3",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--243615d9-8c7e-46b5-95d5-27234e72ec37",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--878dc823-6947-4070-92fd-a5a35fb0718f",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--790e97d9-1949-4e63-8c5c-98664ece2d3c",
+      "type": "relationship"
+    },
+    {
       "created": "2026-10-15T00:00:00.000Z",
       "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
       "id": "relationship--26750c8e-ce30-4635-882a-a38d65bb0d4f",
@@ -1691,6 +2961,104 @@
       "type": "relationship"
     },
     {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--26f774db-f484-4b59-ba76-ab7f75f6c96e",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "campaign--6fd3dce2-dff4-4435-bfda-0e87325943cf",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--2462edda-805f-4772-a4ea-477a736eb552",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--2960b022-dcfa-498c-8108-750290abe0e0",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "campaign--6fd3dce2-dff4-4435-bfda-0e87325943cf",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--0e8dedce-781f-4abe-846c-067e56acc47c",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--2a24d11c-9dbe-4222-a8b3-06e0f9129a3e",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--c94859f5-3593-4b09-94e4-93454f32f3db",
+      "spec_version": "2.1",
+      "target_ref": "malware--60f81756-635c-4d25-901f-d559996ae37f",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--3466e738-09f3-4bbd-8f31-5d7f33fc0edc",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--878dc823-6947-4070-92fd-a5a35fb0718f",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--8cffba75-bffa-492c-96b9-125fe8651397",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--346a3c44-ad02-45f8-8074-afed710d26d7",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "threat-actor--470a4efe-00c9-4a01-b311-fb6befbdfc7d",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--f3c94e1c-ffbe-4aa8-9861-738c3914abd1",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--359e70cf-ebcc-4349-acce-799058a8c072",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--c94859f5-3593-4b09-94e4-93454f32f3db",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--5b1544f3-8efc-4572-9a68-1090b205ce3a",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--37376ee3-3e08-4bfc-af45-847102311aef",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "threat-actor--5baec2a2-a108-4314-928f-634761b72880",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--7c12c4bd-73cc-49a1-90e1-c5c20effe1a5",
+      "type": "relationship"
+    },
+    {
       "created": "2026-10-15T00:00:00.000Z",
       "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
       "id": "relationship--37dbf255-2b42-4ff1-9950-2ef7d5e29a72",
@@ -1702,6 +3070,20 @@
       "source_ref": "indicator--d6ed9463-34e3-4ed7-87d5-5846400c9627",
       "spec_version": "2.1",
       "target_ref": "campaign--c154e3ce-bced-4cda-8dc5-6ea753025e9f",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--3934e3dc-0980-4e53-88bc-791fb22531b0",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "threat-actor--e63e5857-823d-4ada-ad70-a77692e28621",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--f3c94e1c-ffbe-4aa8-9861-738c3914abd1",
       "type": "relationship"
     },
     {
@@ -1733,6 +3115,34 @@
       "type": "relationship"
     },
     {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--3c3f9cc0-e60c-4c85-a68c-fdcfc50e3106",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--a5c5e6c4-45d5-4f51-8205-6dec08d90473",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--190bd062-3d1c-47dc-a3b0-d3913b3c4ece",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--3dd5a726-5031-4cc3-b4bc-00514ddd042e",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "threat-actor--3eca6a32-8ce4-48e7-b633-a6311c299603",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--7c12c4bd-73cc-49a1-90e1-c5c20effe1a5",
+      "type": "relationship"
+    },
+    {
       "created": "2026-10-15T00:00:00.000Z",
       "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
       "id": "relationship--3eb8ee26-3e92-485a-8e16-7d3e2a25fef0",
@@ -1744,6 +3154,20 @@
       "source_ref": "campaign--c154e3ce-bced-4cda-8dc5-6ea753025e9f",
       "spec_version": "2.1",
       "target_ref": "attack-pattern--51e02f3d-0d0e-476e-94e9-c1cda18c2df1",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--4518e087-505a-4e81-aa4c-86714503fcdc",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "campaign--6fd3dce2-dff4-4435-bfda-0e87325943cf",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--8b409027-91a6-4cdb-9c8d-3133541b9ad8",
       "type": "relationship"
     },
     {
@@ -1789,6 +3213,20 @@
       "type": "relationship"
     },
     {
+      "created": "2026-10-16T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--479c213b-373e-4b83-80c9-3f16ab6da3e0",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--6f442db0-d02d-412d-bd34-ae81cd300f7a",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--8f5e6e3e-d642-46c6-a881-050a448e9a7c",
+      "type": "relationship"
+    },
+    {
       "created": "2026-10-15T00:00:00.000Z",
       "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
       "id": "relationship--47c3d0a0-a6dd-4d0e-89f9-7a0c4fc41dd3",
@@ -1819,6 +3257,20 @@
     {
       "created": "2026-11-04T00:00:00.000Z",
       "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--4b9ad818-92f1-4977-8570-ac8b075537ff",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--5ccbcba4-7c2e-4d07-ae86-178fc9f4ff97",
+      "spec_version": "2.1",
+      "target_ref": "malware--e237f30b-9f1f-4e17-bab1-5670c3bc4ead",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
       "id": "relationship--4e93a8d3-42ba-43ce-9951-f24bac27ff09",
       "modified": "2026-11-04T00:00:00.000Z",
       "object_marking_refs": [
@@ -1828,6 +3280,62 @@
       "source_ref": "intrusion-set--4eee7166-dd04-464d-a13f-e0121c5d24ba",
       "spec_version": "2.1",
       "target_ref": "malware--a8f13ad5-c675-4f7e-89f9-2a2c5db51ce3",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--4f0ae8f3-eab6-404f-8149-4cc9d72a3a27",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "threat-actor--85711163-6c80-4fb8-a54c-2f7b4023806d",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--64f3533c-c223-40aa-b141-b137bf9941e3",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--4fc109dd-8dde-42b7-9b77-224bd84beeaa",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--5ccbcba4-7c2e-4d07-ae86-178fc9f4ff97",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--2eb9b9ee-5ffd-4837-95eb-141cd52b982b",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--56972958-b664-4a2d-9c4c-fe0216b1b35d",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "campaign--6d75dc3c-010f-4a31-80aa-08ccfca05786",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--64f3533c-c223-40aa-b141-b137bf9941e3",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--56b95aba-6b4e-40b1-bb8d-c8bc7cb1f9d7",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--c94859f5-3593-4b09-94e4-93454f32f3db",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--7b7f9d69-d261-47ad-94dd-f53979b18200",
       "type": "relationship"
     },
     {
@@ -1856,6 +3364,20 @@
       "source_ref": "campaign--b668f0b2-ce34-4be1-93f0-2f743dabb861",
       "spec_version": "2.1",
       "target_ref": "attack-pattern--0913d310-67ad-4e4b-b722-fda118039cc0",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--604770e2-3d54-449c-9df7-9f1fc5ec38b6",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--c94859f5-3593-4b09-94e4-93454f32f3db",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--8cffba75-bffa-492c-96b9-125fe8651397",
       "type": "relationship"
     },
     {
@@ -1915,17 +3437,31 @@
       "type": "relationship"
     },
     {
-      "created": "2026-10-16T00:00:00.000Z",
+      "created": "2026-11-04T00:00:00.000Z",
       "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
-      "id": "relationship--66a0599e-5cd6-40b2-ab75-8cd327bc6c73",
-      "modified": "2026-10-16T00:00:00.000Z",
+      "id": "relationship--661c4ceb-a8a4-48de-a0ae-ceaa1ae8825b",
+      "modified": "2026-11-04T00:00:00.000Z",
       "object_marking_refs": [
         "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
       ],
       "relationship_type": "uses",
-      "source_ref": "intrusion-set--6f442db0-d02d-412d-bd34-ae81cd300f7a",
+      "source_ref": "intrusion-set--5ccbcba4-7c2e-4d07-ae86-178fc9f4ff97",
       "spec_version": "2.1",
-      "target_ref": "attack-pattern--7795b806-d5f0-4db1-9883-c464ffd5bfb6",
+      "target_ref": "malware--414541f3-8ebd-4b01-a824-83b60c6cdbbe",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--68552972-c6bf-4127-a9f6-440759212a56",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--c94859f5-3593-4b09-94e4-93454f32f3db",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--538bfcfe-819a-4564-9f49-4f747c5e5348",
       "type": "relationship"
     },
     {
@@ -1940,6 +3476,20 @@
       "source_ref": "intrusion-set--07c01184-bc4d-4db1-b040-84b422c5b5f7",
       "spec_version": "2.1",
       "target_ref": "attack-pattern--f1ac4987-8331-4df3-a1d8-8b707ccef87a",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--6c941d9e-41dc-4933-98ed-824a84ed16bf",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--a5c5e6c4-45d5-4f51-8205-6dec08d90473",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--63410064-783d-4ff4-9f42-97e10cde30a9",
       "type": "relationship"
     },
     {
@@ -1971,6 +3521,20 @@
       "type": "relationship"
     },
     {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--6ea70ed9-8970-4d92-8f1c-d58957f58036",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "threat-actor--e63e5857-823d-4ada-ad70-a77692e28621",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--7c12c4bd-73cc-49a1-90e1-c5c20effe1a5",
+      "type": "relationship"
+    },
+    {
       "created": "2026-10-15T00:00:00.000Z",
       "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
       "id": "relationship--6eb7eca5-bb1b-4905-9d9c-23ac38420607",
@@ -1996,6 +3560,48 @@
       "source_ref": "campaign--b668f0b2-ce34-4be1-93f0-2f743dabb861",
       "spec_version": "2.1",
       "target_ref": "attack-pattern--0f7d0fc3-cf8a-40ca-b077-6898bffcc9e6",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--78da3ddb-f4eb-4d90-96d1-3aaf8d3c3dea",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "threat-actor--3eca6a32-8ce4-48e7-b633-a6311c299603",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--f3c94e1c-ffbe-4aa8-9861-738c3914abd1",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--7c3e1ee8-9730-4554-bef6-af8b04549746",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--c94859f5-3593-4b09-94e4-93454f32f3db",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--5ebe841d-3756-46d0-8505-700bbb28981e",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--7df8476e-0194-4ea7-9a03-51fbc48f1571",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "campaign--6fd3dce2-dff4-4435-bfda-0e87325943cf",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--21db97fd-c814-4fd7-bf0d-5286044b79bf",
       "type": "relationship"
     },
     {
@@ -2057,6 +3663,62 @@
     {
       "created": "2026-11-04T00:00:00.000Z",
       "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--8a0fc7ea-2934-4209-86da-9bd2c3b83a13",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "campaign--6fd3dce2-dff4-4435-bfda-0e87325943cf",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--c23af4a6-a163-41b3-8d6f-36d1d3698c4f",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--8d90b2e7-af20-451c-9b95-dc389f67a6ed",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--a5c5e6c4-45d5-4f51-8205-6dec08d90473",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--0c20b7ae-7114-4d84-a2e7-79991dd0651e",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--8e2f3dc1-ce0e-4d9d-be5a-768c7c8bbd0a",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "threat-actor--8292d980-e395-4cec-8eec-7a42e6adaa56",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--f3c94e1c-ffbe-4aa8-9861-738c3914abd1",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--8fe948c6-8b8b-45b4-8c48-0d554ed66148",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--c94859f5-3593-4b09-94e4-93454f32f3db",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--300a305f-1a48-46a9-9dd4-fe97e8ab8cfe",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
       "id": "relationship--9175d997-3b96-481c-9db7-8f46c11fd3d9",
       "modified": "2026-11-04T00:00:00.000Z",
       "object_marking_refs": [
@@ -2080,6 +3742,34 @@
       "source_ref": "intrusion-set--07c01184-bc4d-4db1-b040-84b422c5b5f7",
       "spec_version": "2.1",
       "target_ref": "malware--3379378c-46da-4b0e-b708-d49dbd6e3003",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--9400a0be-5bd2-41ee-8a6b-12ccbcd01c82",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "threat-actor--27c1116e-3382-46c4-9263-b050526bf252",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--64f3533c-c223-40aa-b141-b137bf9941e3",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--94fcc527-199d-4fe1-aa85-dd79eead3738",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--878dc823-6947-4070-92fd-a5a35fb0718f",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--c153fa2c-9988-46a6-8a35-3d1c432ad3a0",
       "type": "relationship"
     },
     {
@@ -2111,6 +3801,20 @@
       "type": "relationship"
     },
     {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--976a7333-63d0-4951-9380-92a50fe285fe",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--c94859f5-3593-4b09-94e4-93454f32f3db",
+      "spec_version": "2.1",
+      "target_ref": "malware--660ad5a5-cd8b-45ce-a5bb-df7a9159de27",
+      "type": "relationship"
+    },
+    {
       "created": "2026-10-16T00:00:00.000Z",
       "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
       "id": "relationship--97ab2673-207a-4dd4-b4e5-d7b0f53b9e69",
@@ -2122,6 +3826,34 @@
       "source_ref": "campaign--b668f0b2-ce34-4be1-93f0-2f743dabb861",
       "spec_version": "2.1",
       "target_ref": "attack-pattern--a4bed644-351f-4d7f-9dcf-69934351619c",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--98986e2b-f5b5-4ab8-9d17-0249c2a496e9",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "campaign--6fd3dce2-dff4-4435-bfda-0e87325943cf",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--3488806d-5f2e-4859-a3ee-5d0f34b6f775",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-10-16T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--993e278b-e726-4bfa-881f-c709805f87fa",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--6f442db0-d02d-412d-bd34-ae81cd300f7a",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--538bfcfe-819a-4564-9f49-4f747c5e5348",
       "type": "relationship"
     },
     {
@@ -2139,6 +3871,48 @@
       "type": "relationship"
     },
     {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--9be5cefc-0d23-4ed8-83fa-0034593680a9",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--a5c5e6c4-45d5-4f51-8205-6dec08d90473",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--67e0583b-5b24-4d27-a3b7-f0a803e0628c",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--9bf8dfca-4938-479d-8ab2-d217735c3e4a",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "threat-actor--5baec2a2-a108-4314-928f-634761b72880",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--f3c94e1c-ffbe-4aa8-9861-738c3914abd1",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--9dc17136-ff3c-439a-8172-00bb66b514d4",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--a5c5e6c4-45d5-4f51-8205-6dec08d90473",
+      "spec_version": "2.1",
+      "target_ref": "malware--0253fad2-f15a-41fb-9e85-e69e7f1c3b3f",
+      "type": "relationship"
+    },
+    {
       "created": "2026-10-15T00:00:00.000Z",
       "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
       "id": "relationship--9e9b0abf-9cae-4543-b3c1-f40daa016945",
@@ -2150,6 +3924,20 @@
       "source_ref": "intrusion-set--47ce2ecf-959f-4774-ad62-968712e65fe3",
       "spec_version": "2.1",
       "target_ref": "malware--94f8a132-9887-4eba-9c43-ed446e4e3c6b",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--9f7596f4-bc34-4306-8ea7-a30624d55f5c",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--a5c5e6c4-45d5-4f51-8205-6dec08d90473",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--7172f12b-0b22-4f66-8d20-b707bbe3e9cd",
       "type": "relationship"
     },
     {
@@ -2169,6 +3957,34 @@
     {
       "created": "2026-11-04T00:00:00.000Z",
       "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--a0ffc948-68e3-4e0f-b0a1-14dc8a581954",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "campaign--6d75dc3c-010f-4a31-80aa-08ccfca05786",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--f3c94e1c-ffbe-4aa8-9861-738c3914abd1",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--a214c2f9-51db-4338-bc8e-3567bc8afe9b",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--878dc823-6947-4070-92fd-a5a35fb0718f",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--538bfcfe-819a-4564-9f49-4f747c5e5348",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
       "id": "relationship--a25a3730-0617-4559-a2e0-d016a541e680",
       "modified": "2026-11-04T00:00:00.000Z",
       "object_marking_refs": [
@@ -2178,6 +3994,34 @@
       "source_ref": "intrusion-set--4eee7166-dd04-464d-a13f-e0121c5d24ba",
       "spec_version": "2.1",
       "target_ref": "attack-pattern--4170b60f-8572-495d-ba12-9e83542234e0",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--a4c3a4b5-1ace-4f21-b52e-0898f5c6fa38",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "campaign--6fd3dce2-dff4-4435-bfda-0e87325943cf",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--0f7d0fc3-cf8a-40ca-b077-6898bffcc9e6",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--a4f9d64e-37f5-419e-9272-c2cfb7203bee",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--5ccbcba4-7c2e-4d07-ae86-178fc9f4ff97",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--79cf3a57-29b8-4dc1-9f6b-a00934f5c04b",
       "type": "relationship"
     },
     {
@@ -2192,6 +4036,20 @@
       "source_ref": "campaign--45f641b4-6869-4d37-bfc8-bd80f6140eac",
       "spec_version": "2.1",
       "target_ref": "attack-pattern--7b35c62f-9c84-4602-9400-627e0fa84c46",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--a64c9e4d-ce6a-4a7e-a40a-b1695465d19a",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "campaign--6fd3dce2-dff4-4435-bfda-0e87325943cf",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--50cd88e7-8f7d-4613-aafb-f2923e4d135f",
       "type": "relationship"
     },
     {
@@ -2225,6 +4083,20 @@
     {
       "created": "2026-11-04T00:00:00.000Z",
       "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--a8b951d7-cc0a-426c-86ac-01b555545068",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--c94859f5-3593-4b09-94e4-93454f32f3db",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--a167be87-2ebd-4e67-b07a-27e9065b3b24",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
       "id": "relationship--aa6ead8c-7e08-4447-8e97-c4caf2f57bd4",
       "modified": "2026-11-04T00:00:00.000Z",
       "object_marking_refs": [
@@ -2239,6 +4111,20 @@
     {
       "created": "2026-10-16T00:00:00.000Z",
       "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--ace9b453-eceb-46de-ac8a-15f55669c1a7",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--6f442db0-d02d-412d-bd34-ae81cd300f7a",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--fadfa898-7fa4-4f87-bf93-239048e8ea6a",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-10-16T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
       "id": "relationship--aee273d7-ac75-404c-96cb-e2b29c9a20da",
       "modified": "2026-10-16T00:00:00.000Z",
       "object_marking_refs": [
@@ -2248,6 +4134,20 @@
       "source_ref": "campaign--b668f0b2-ce34-4be1-93f0-2f743dabb861",
       "spec_version": "2.1",
       "target_ref": "attack-pattern--21db97fd-c814-4fd7-bf0d-5286044b79bf",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--b12c2a42-5abe-46d6-be00-0a698c29f6c2",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--c94859f5-3593-4b09-94e4-93454f32f3db",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--b14be129-ef4b-49f3-b08b-adc429d19aa8",
       "type": "relationship"
     },
     {
@@ -2281,6 +4181,20 @@
     {
       "created": "2026-11-04T00:00:00.000Z",
       "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--b4f05485-a85b-4898-bbd6-401975e19073",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "campaign--6fd3dce2-dff4-4435-bfda-0e87325943cf",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--b3b37337-457e-49d3-88fe-c3153a2cf3dd",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
       "id": "relationship--b81dd36b-aae6-4cb3-aa70-2ea350ad7a7f",
       "modified": "2026-11-04T00:00:00.000Z",
       "object_marking_refs": [
@@ -2304,6 +4218,34 @@
       "source_ref": "intrusion-set--47ce2ecf-959f-4774-ad62-968712e65fe3",
       "spec_version": "2.1",
       "target_ref": "malware--78e1e348-a0d2-4466-acea-87fc62424c7f",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--b9129a27-6b27-485d-883a-5e3f8c1af947",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "campaign--6d75dc3c-010f-4a31-80aa-08ccfca05786",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--7c12c4bd-73cc-49a1-90e1-c5c20effe1a5",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--b92b2164-b1e0-4c18-8594-6c20813aa83b",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--a5c5e6c4-45d5-4f51-8205-6dec08d90473",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--728fc790-f1db-4903-9c61-c2671143d5a3",
       "type": "relationship"
     },
     {
@@ -2337,6 +4279,34 @@
     {
       "created": "2026-11-04T00:00:00.000Z",
       "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--c5590c3b-fc60-4eed-b824-4b527ea20640",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--5ccbcba4-7c2e-4d07-ae86-178fc9f4ff97",
+      "spec_version": "2.1",
+      "target_ref": "malware--bde79f41-f2d4-4bbd-9ec6-016c45d33162",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--c55a0631-582c-4a7b-9bda-779bb6b3d763",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "threat-actor--e63e5857-823d-4ada-ad70-a77692e28621",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--64f3533c-c223-40aa-b141-b137bf9941e3",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
       "id": "relationship--c90910ba-cd39-4478-a5bd-5f9026492845",
       "modified": "2026-11-04T00:00:00.000Z",
       "object_marking_refs": [
@@ -2360,6 +4330,20 @@
       "source_ref": "intrusion-set--47ce2ecf-959f-4774-ad62-968712e65fe3",
       "spec_version": "2.1",
       "target_ref": "malware--96db75f6-51ab-4a9e-8d90-0c689d0ac617",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--cbf59f9a-2511-4409-9f86-045320b57589",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "threat-actor--8292d980-e395-4cec-8eec-7a42e6adaa56",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--7c12c4bd-73cc-49a1-90e1-c5c20effe1a5",
       "type": "relationship"
     },
     {
@@ -2419,6 +4403,48 @@
       "type": "relationship"
     },
     {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--d7ee42a5-3795-42cc-859f-a3a479ec4990",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--c94859f5-3593-4b09-94e4-93454f32f3db",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--9d1c39ad-c584-416e-b0db-3e8e33f4ca00",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--d81f7ac6-4139-46f0-861c-d6bca0979256",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--c94859f5-3593-4b09-94e4-93454f32f3db",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--16b0aa5a-88de-4a48-b28e-58477ca5221a",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--d93edded-efc4-46fc-b74a-31f4260951a1",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "threat-actor--470a4efe-00c9-4a01-b311-fb6befbdfc7d",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--7c12c4bd-73cc-49a1-90e1-c5c20effe1a5",
+      "type": "relationship"
+    },
+    {
       "created": "2026-10-15T00:00:00.000Z",
       "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
       "id": "relationship--de47c098-565f-46f8-bf77-fd96d6ba15c5",
@@ -2430,6 +4456,48 @@
       "source_ref": "indicator--5e49141d-969e-4614-a4b7-7c0f5ec3dca0",
       "spec_version": "2.1",
       "target_ref": "campaign--c154e3ce-bced-4cda-8dc5-6ea753025e9f",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--dea3a374-975e-4cb6-b950-1b6ecd41557a",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "threat-actor--7393348c-17a6-4d5c-a9ea-f775de3e3304",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--7c12c4bd-73cc-49a1-90e1-c5c20effe1a5",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--dfa094a8-71c1-4d59-af69-853ac3914eb1",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--878dc823-6947-4070-92fd-a5a35fb0718f",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--526ee8bc-29ed-480c-b303-c3e2608b9daf",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--e0a0edda-fd7a-4ab1-84f5-8bd161a3b5f0",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "campaign--6fd3dce2-dff4-4435-bfda-0e87325943cf",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--f4761d37-9783-4e23-aa7b-3ce90a456d89",
       "type": "relationship"
     },
     {
@@ -2449,6 +4517,20 @@
     {
       "created": "2026-11-04T00:00:00.000Z",
       "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--e4519fe9-5939-4a43-be6b-da258ffba6f4",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "threat-actor--8292d980-e395-4cec-8eec-7a42e6adaa56",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--8f5e6e3e-d642-46c6-a881-050a448e9a7c",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
       "id": "relationship--e6625d4b-03d1-4c03-a264-aefbd43a89ac",
       "modified": "2026-11-04T00:00:00.000Z",
       "object_marking_refs": [
@@ -2458,6 +4540,48 @@
       "source_ref": "intrusion-set--4eee7166-dd04-464d-a13f-e0121c5d24ba",
       "spec_version": "2.1",
       "target_ref": "attack-pattern--c153fa2c-9988-46a6-8a35-3d1c432ad3a0",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--e999a530-68fe-45f5-b3b3-e813932f0a21",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "threat-actor--e63e5857-823d-4ada-ad70-a77692e28621",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--790e97d9-1949-4e63-8c5c-98664ece2d3c",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-10-16T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--eb69fd2e-4c81-4209-a9ec-c97f2cb7148f",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--6f442db0-d02d-412d-bd34-ae81cd300f7a",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--b6a030db-0f69-47a3-a987-3d968b13769f",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--ec5a2ee3-aba6-4c33-a670-277ff9d1be9d",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "threat-actor--85711163-6c80-4fb8-a54c-2f7b4023806d",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--f3c94e1c-ffbe-4aa8-9861-738c3914abd1",
       "type": "relationship"
     },
     {
@@ -2505,6 +4629,20 @@
     {
       "created": "2026-11-04T00:00:00.000Z",
       "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--f1124107-58b0-442d-ac9d-49c9b269c4bd",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--c94859f5-3593-4b09-94e4-93454f32f3db",
+      "spec_version": "2.1",
+      "target_ref": "attack-pattern--febe1f2b-0836-47d5-b882-fccfcec465e8",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
       "id": "relationship--f49fd339-24a7-492e-b006-412d8da75e5b",
       "modified": "2026-11-04T00:00:00.000Z",
       "object_marking_refs": [
@@ -2514,6 +4652,20 @@
       "source_ref": "intrusion-set--4eee7166-dd04-464d-a13f-e0121c5d24ba",
       "spec_version": "2.1",
       "target_ref": "attack-pattern--01839fdb-0f8f-4025-82d2-acbc9311d7a1",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--fc06529f-e98d-4f67-be91-4368f42b6ba9",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--5ccbcba4-7c2e-4d07-ae86-178fc9f4ff97",
+      "spec_version": "2.1",
+      "target_ref": "malware--c03956f8-9cec-4be4-ade2-8ad298a52e18",
       "type": "relationship"
     },
     {
@@ -2528,6 +4680,20 @@
       "source_ref": "intrusion-set--49e9134d-1c01-4851-a9db-000725c7d845",
       "spec_version": "2.1",
       "target_ref": "attack-pattern--b14be129-ef4b-49f3-b08b-adc429d19aa8",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "id": "relationship--ff5f910c-b235-4e92-8b42-2ea261b0a966",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--a5c5e6c4-45d5-4f51-8205-6dec08d90473",
+      "spec_version": "2.1",
+      "target_ref": "malware--831bf96b-91c2-4372-9c94-d1862be3aab2",
       "type": "relationship"
     },
     {
@@ -2635,6 +4801,312 @@
       ],
       "spec_version": "2.1",
       "type": "report"
+    },
+    {
+      "aliases": [
+        "P@kistanCyberForce"
+      ],
+      "confidence": 50,
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "description": "A pro-Pakistan group, and a set of X accounts using the name, that defaced Indian websites and amplified unverified breach claims during Operation Sindoor. On 2 March 2026, a day after Pakistani news channels were hijacked, it claimed to have hacked India's ABP News to show Pakistan Army content.\n\nOrigin as claimed or reported: Pakistan.\n\nAlignment: pro-Pakistan.\n\nClaims, with the verification status the cited source reached: 2025-05: Amplified breach claims tied to 'Operation Bunyan al Marsoos'. [unverified: Silobreaker and CloudSEK found X accounts using the name pushed unverified claims.] 2026-03-02: Hacked ABP News to air speeches by Pakistan's Field Marshal Asim Munir and pro-Pakistan slogans. [unverified: Reported by Radio Pakistan and Arab News; the report does not make clear whether the website or the broadcast was affected.]\n\nKey findings: Maharashtra Cyber named Pakistan Cyber Force among the seven groups behind attacks during Operation Sindoor; Silobreaker lists it among the pro-Pakistan groups defacing Indian sites. The ABP News claim came during the opening days of the 2026 Iran war, the day after Geo News, ARY News and SAMAA in Pakistan were hijacked with messages critical of Pakistan's military.",
+      "external_references": [
+        {
+          "external_id": "hk-pakistan-cyber-force",
+          "source_name": "india-threat-tracker",
+          "url": "https://www.sohankanna.com/tracker#hacktivist-hk-pakistan-cyber-force"
+        },
+        {
+          "source_name": "ThePrint (PTI) - Pakistan-allied hackers launched 15 lakh cyber attacks on Indian websites, only 150 successful (12 May 2025)",
+          "url": "https://theprint.in/india/pakistan-allied-hackers-launched-15-lakh-cyber-attacks-on-indian-websites-only-150-successful/2623696"
+        },
+        {
+          "source_name": "Silobreaker - Hacktivism in the India-Pakistan conflict: analysis of recent campaigns (25 Jun 2025)",
+          "url": "https://www.silobreaker.com/blog/geopolitical/hacktivism-in-the-india-pakistan-conflict-analysis-of-recent-campaigns/"
+        },
+        {
+          "source_name": "CloudSEK - Brief disruptions, bold claims: the India-Pakistan hacktivist surge (11 May 2025)",
+          "url": "https://www.cloudsek.com/blog/brief-disruptions-bold-claims-the-tactical-reality-behind-the-india-pakistan-hacktivist-surge"
+        },
+        {
+          "source_name": "Arab News Pakistan - 'Pakistan Cyber Force' group hacks India's ABP News (2 Mar 2026)",
+          "url": "https://www.arabnews.pk/node/2634979"
+        }
+      ],
+      "id": "threat-actor--27c1116e-3382-46c4-9263-b050526bf252",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "name": "Pakistan Cyber Force",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "threat_actor_types": [
+        "activist"
+      ],
+      "type": "threat-actor"
+    },
+    {
+      "confidence": 50,
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "description": "A self-described North African hacktivist collective that claimed over 700 DDoS attacks in 2025 and made about a tenth of all DDoS claims against India in early 2025, including on Indian telecom providers. Radware has found evidence it runs, or is closely tied to, the EliteStress DDoS-for-hire service, which blurs the line between activism and business.\n\nOrigin as claimed or reported: North Africa (self-described).\n\nAlignment: aligned with #OpIndia.\n\nTools and services (context, not indicators): EliteStress (DDoS-for-hire panel, as reported).\n\nClaims, with the verification status the cited source reached: 2026-03: Announced large-scale operations against Israel and India with Babayo Error System. [unverified: CloudSEK found limited technical substantiation.]\n\nKey findings: Radware: activity began in late 2023 and grew to more than 700 claimed attacks in 2025 across Europe, North Africa, the Middle East and Asia, with India's telecom sector among its targets. Keymous+ made up about 10% of DDoS claims against India in 2025 up to May, and was among the most active groups on 6-7 May. EliteStress sells attacks from EUR 5 a day to EUR 600 a month, including DNS amplification, UDP floods and HTTP/2 attacks, with a Telegram bot interface.",
+      "external_references": [
+        {
+          "external_id": "hk-keymous-plus",
+          "source_name": "india-threat-tracker",
+          "url": "https://www.sohankanna.com/tracker#hacktivist-hk-keymous-plus"
+        },
+        {
+          "source_name": "Radware - Keymous+: a new hacktivist collective or a DDoS-as-a-service brand in disguise? (2 Jul 2025)",
+          "url": "https://www.radware.com/blog/threat-intelligence/keymous-plus-a-new-hacktivist-collective-or-a-ddos-as-a-service-brand/"
+        },
+        {
+          "source_name": "Radware - Escalating hacktivist attacks amidst India-Pakistan tensions (8 May 2025)",
+          "url": "https://www.radware.com/security/threat-advisories-and-attack-reports/escalating-hacktivist-attacks-amidst-india-pakistan-tensions/"
+        },
+        {
+          "source_name": "CloudSEK - Situation report: Middle East escalation (27 Feb - 1 Mar 2026)",
+          "url": "https://www.cloudsek.com/blog/middle-east-escalation-israel-iran-us-cyber-war-2026"
+        }
+      ],
+      "id": "threat-actor--3eca6a32-8ce4-48e7-b633-a6311c299603",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "name": "Keymous+",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "threat_actor_types": [
+        "activist"
+      ],
+      "type": "threat-actor"
+    },
+    {
+      "confidence": 50,
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "description": "A hacktivist collective responsible for about 17% of DDoS claims against India in 2025, and among the most active groups when Operation Sindoor began. DSCI's March 2026 advisory lists it as a continuing risk.\n\nClaims, with the verification status the cited source reached: 2025-05-07: DDoS on 20 Indian websites in defence, finance, aviation, urban development and state portals. [unverified]\n\nKey findings: Radware: 16.8% of claimed DDoS attacks against India in 2025 up to 8 May, second only to RipperSec, and among the most active groups on 6-7 May. DSCI cites its attacks on more than 20 critical websites in May 2025 and groups it with RipperSec and the Holy League as coalitions willing to target India.",
+      "external_references": [
+        {
+          "external_id": "hk-anonsec",
+          "source_name": "india-threat-tracker",
+          "url": "https://www.sohankanna.com/tracker#hacktivist-hk-anonsec"
+        },
+        {
+          "source_name": "Radware - Escalating hacktivist attacks amidst India-Pakistan tensions (8 May 2025)",
+          "url": "https://www.radware.com/security/threat-advisories-and-attack-reports/escalating-hacktivist-attacks-amidst-india-pakistan-tensions/"
+        },
+        {
+          "source_name": "Silobreaker - Hacktivism in the India-Pakistan conflict: analysis of recent campaigns (25 Jun 2025)",
+          "url": "https://www.silobreaker.com/blog/geopolitical/hacktivism-in-the-india-pakistan-conflict-analysis-of-recent-campaigns/"
+        },
+        {
+          "source_name": "DSCI - Cyber threat advisory: Middle East conflict, February 2026 escalation (Mar 2026)",
+          "url": "https://www.dsci.in/files/content/advisory/2026/cyber_threat_advisory-middle_east_conflict.pdf"
+        }
+      ],
+      "id": "threat-actor--470a4efe-00c9-4a01-b311-fb6befbdfc7d",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "name": "AnonSec",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "threat_actor_types": [
+        "activist"
+      ],
+      "type": "threat-actor"
+    },
+    {
+      "confidence": 50,
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "description": "A hacktivist group that backed Pakistan in May 2025, accounting for about 9% of DDoS claims against India that year. Its two headline leak claims, the National Informatics Centre and the Andhra Pradesh High Court, turned out to be largely public data, though the court sample did include password hashes.\n\nAlignment: pro-Pakistan.\n\nClaims, with the verification status the cited source reached: 2025-05: 247 GB stolen from the National Informatics Centre (with DieNet). [overstated: About 1.5 GB of public media files.] 2025-05: A million case records from the Andhra Pradesh High Court. [partly-true: Mostly public metadata; some password hashes exposed.]\n\nKey findings: Radware: about 9% of claimed DDoS attacks against India in 2025, and among the groups that publicly backed Pakistan after Operation Sindoor. CloudSEK counted 19 claims by the group against government portals, education and news media during the crisis. The tracker has found no public reporting on its activity against India after mid-2025.",
+      "external_references": [
+        {
+          "external_id": "hk-sylhet-gang",
+          "source_name": "india-threat-tracker",
+          "url": "https://www.sohankanna.com/tracker#hacktivist-hk-sylhet-gang"
+        },
+        {
+          "source_name": "Radware - Escalating hacktivist attacks amidst India-Pakistan tensions (8 May 2025)",
+          "url": "https://www.radware.com/security/threat-advisories-and-attack-reports/escalating-hacktivist-attacks-amidst-india-pakistan-tensions/"
+        },
+        {
+          "source_name": "CloudSEK - Brief disruptions, bold claims: the India-Pakistan hacktivist surge (11 May 2025)",
+          "url": "https://www.cloudsek.com/blog/brief-disruptions-bold-claims-the-tactical-reality-behind-the-india-pakistan-hacktivist-surge"
+        },
+        {
+          "source_name": "Silobreaker - Hacktivism in the India-Pakistan conflict: analysis of recent campaigns (25 Jun 2025)",
+          "url": "https://www.silobreaker.com/blog/geopolitical/hacktivism-in-the-india-pakistan-conflict-analysis-of-recent-campaigns/"
+        }
+      ],
+      "id": "threat-actor--5baec2a2-a108-4314-928f-634761b72880",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "name": "SYLHET GANG-SG",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "threat_actor_types": [
+        "activist"
+      ],
+      "type": "threat-actor"
+    },
+    {
+      "confidence": 50,
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "description": "An umbrella alliance formed in July 2024 from two earlier coalitions, claiming more than 80 member groups including NoName057(16) and RipperSec. It names Western nations, India and backers of Ukraine and Israel as its targets, and many #OpIndia attackers in May 2025 were believed to operate under its banner.\n\nAlignment: pro-Russian, pro-Palestine and pan-Islamic groups.\n\nKey findings: Radware (December 2024): formed in July 2024 by merging the High Society and 7 October Union alliances; it claims more than 80 groups, of which Radware's appendix lists 63. Its stated targets are Western nations, India and countries backing Ukraine and Israel. Radware's report gives no specific India incidents. ThaiCERT's summary of the May 2025 CERT-In warning says many of the more than 40 groups were believed to operate under the Holy League banner, while noting this was an assumption. DSCI's March 2026 advisory names Holy League, RipperSec and AnonSec as cross-border coalitions that have shown a willingness to target India.",
+      "external_references": [
+        {
+          "external_id": "hk-holy-league",
+          "source_name": "india-threat-tracker",
+          "url": "https://www.sohankanna.com/tracker#hacktivist-hk-holy-league"
+        },
+        {
+          "source_name": "Radware - Holy League: a unified threat against Western nations, NATO, India and Israel (16 Dec 2024)",
+          "url": "https://www.radware.com/security/threat-advisories-and-attack-reports/holy-league-a-unified-threat-against-western-nations/"
+        },
+        {
+          "source_name": "ThaiCERT - CERT-In issues urgent warning as hacktivists launch cyber onslaught against Indian systems (13 May 2025)",
+          "url": "https://www.thaicert.or.th/en/2025/05/13/cert-in-issues-urgent-warning-as-hacktivists-launch-cyber-onslaught-against-indian-systems/"
+        },
+        {
+          "source_name": "Dark Reading - After Pahalgam attack, hacktivists unite under #OpIndia (May 2025)",
+          "url": "https://www.darkreading.com/cyberattacks-data-breaches/pahalgam-attack-hacktivists-unite-opindia"
+        },
+        {
+          "source_name": "DSCI - Cyber threat advisory: Middle East conflict, February 2026 escalation (Mar 2026)",
+          "url": "https://www.dsci.in/files/content/advisory/2026/cyber_threat_advisory-middle_east_conflict.pdf"
+        }
+      ],
+      "id": "threat-actor--7393348c-17a6-4d5c-a9ea-f775de3e3304",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "name": "Holy League",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "threat_actor_types": [
+        "activist"
+      ],
+      "type": "threat-actor"
+    },
+    {
+      "confidence": 85,
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "description": "A Malaysian hacktivist group and the most prolific DDoS claimant against India in early 2025, with over 30% of claims. It maintains MegaMedusa, a public Node.js tool for application-layer floods, and belongs to the Holy League alliance.\n\nOrigin as claimed or reported: Malaysia.\n\nAlignment: pro-Palestine, pro-Muslim.\n\nTools and services (context, not indicators): MegaMedusa (public Node.js layer-7 DDoS tool).\n\nKey findings: Radware: RipperSec claimed 196 DDoS attacks between 1 January and 8 August 2024. Almost a third targeted Israel; India was among its other significant targets. Across all countries, government and education sites were hit most. In 2025 it accounted for over 30% of DDoS claims against India, and more than half of its India claims hit government institutions. It publicly pledged action after Operation Sindoor. MegaMedusa is open on GitHub, installs in a few commands and randomises headers, paths, cookies, TLS and HTTP/2 settings and proxies. Radware believes core members use more capable private versions. DSCI's March 2026 advisory names RipperSec among the hacktivists that pose a DDoS risk to India.",
+      "external_references": [
+        {
+          "external_id": "hk-rippersec",
+          "source_name": "india-threat-tracker",
+          "url": "https://www.sohankanna.com/tracker#hacktivist-hk-rippersec"
+        },
+        {
+          "source_name": "Radware - MegaMedusa, RipperSec's public web DDoS attack tool (19 Aug 2024, updated)",
+          "url": "https://www.radware.com/blog/posts/blog-security-2024-08-megamedusa-rippersec-public/"
+        },
+        {
+          "source_name": "Radware - Escalating hacktivist attacks amidst India-Pakistan tensions (8 May 2025)",
+          "url": "https://www.radware.com/security/threat-advisories-and-attack-reports/escalating-hacktivist-attacks-amidst-india-pakistan-tensions/"
+        },
+        {
+          "source_name": "Dark Reading - After Pahalgam attack, hacktivists unite under #OpIndia (May 2025)",
+          "url": "https://www.darkreading.com/cyberattacks-data-breaches/pahalgam-attack-hacktivists-unite-opindia"
+        },
+        {
+          "source_name": "DSCI - Cyber threat advisory: Middle East conflict, February 2026 escalation (Mar 2026)",
+          "url": "https://www.dsci.in/files/content/advisory/2026/cyber_threat_advisory-middle_east_conflict.pdf"
+        }
+      ],
+      "id": "threat-actor--8292d980-e395-4cec-8eec-7a42e6adaa56",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "name": "RipperSec",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "threat_actor_types": [
+        "activist"
+      ],
+      "type": "threat-actor"
+    },
+    {
+      "aliases": [
+        "Team Insane Pakistan"
+      ],
+      "confidence": 50,
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "description": "A Pakistan-based religious hacktivist group that has targeted Indian government and business websites since 2023, mainly with DDoS. It ran #OpIndia attacks around the G20 summit in Delhi in September 2023, when the Delhi and Mumbai Police sites went down briefly, and defaced Indian sites during Operation Sindoor.\n\nOrigin as claimed or reported: Pakistan.\n\nAlignment: pro-Pakistan, religious.\n\nClaims, with the verification status the cited source reached: 2023-09: #OpIndia attacks on the eve of the G20 summit, about 2,450 targets. [partly-true: The Delhi and Mumbai Police websites went down briefly.] 2025-05: Defacement of the Armoured Vehicles Nigam Limited website. [unverified]\n\nKey findings: Radware: active since early 2023 against Indian government and business sites, with DDoS making up over half of the roughly 2,450 attacks in its G20-era #OpIndia campaign. It also claimed to have taken down 23 Indian police websites. Maharashtra Cyber named it among the seven groups behind attacks during Operation Sindoor.",
+      "external_references": [
+        {
+          "external_id": "hk-team-insane-pk",
+          "source_name": "india-threat-tracker",
+          "url": "https://www.sohankanna.com/tracker#hacktivist-hk-team-insane-pk"
+        },
+        {
+          "source_name": "Radware Cyberpedia - Hacktivist group: Team Insane PK",
+          "url": "https://www.radware.com/cyberpedia/ddos-attacks/hacktivist-group-team-insane-pk/"
+        },
+        {
+          "source_name": "ThePrint (PTI) - Pakistan-allied hackers launched 15 lakh cyber attacks on Indian websites, only 150 successful (12 May 2025)",
+          "url": "https://theprint.in/india/pakistan-allied-hackers-launched-15-lakh-cyber-attacks-on-indian-websites-only-150-successful/2623696"
+        },
+        {
+          "source_name": "Silobreaker - Hacktivism in the India-Pakistan conflict: analysis of recent campaigns (25 Jun 2025)",
+          "url": "https://www.silobreaker.com/blog/geopolitical/hacktivism-in-the-india-pakistan-conflict-analysis-of-recent-campaigns/"
+        }
+      ],
+      "id": "threat-actor--85711163-6c80-4fb8-a54c-2f7b4023806d",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "name": "Team Insane PK",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "threat_actor_types": [
+        "activist"
+      ],
+      "type": "threat-actor"
+    },
+    {
+      "confidence": 85,
+      "created": "2026-11-04T00:00:00.000Z",
+      "created_by_ref": "identity--a1421dc5-4b70-4876-949c-dd25d331dbde",
+      "description": "A Bangladeshi hacktivist group for which India is the main target. Group-IB counted more than 750 DDoS attacks and 78 website defacements between June 2022 and mid-2023, mostly in India and against government, financial and logistics organisations, using open-source DDoS tools and old WordPress and phpMyAdmin flaws.\n\nOrigin as claimed or reported: Bangladesh.\n\nAlignment: religious and political.\n\nTools and services (context, not indicators): Raven-Storm; Xerxes; Hulk; 404FOUND.MY.\n\nKey findings: Group-IB (August 2023): more than 750 DDoS attacks and 78 defacements from June 2022, with the majority in India and Israel as the other main focus. Motives were religious and political. Attacks ran at layers 3, 4 and 7, sometimes after short 'test' bursts. Defacements likely exploited outdated WordPress and phpMyAdmin installs or default admin passwords. Its tools are public: Raven-Storm, Xerxes, Hulk and the 404FOUND.MY utility first built by DragonForce Malaysia. Maharashtra Cyber named it among the groups behind attacks during Operation Sindoor in May 2025, and DSCI's March 2026 advisory lists it among pro-Palestinian hacktivists that targeted Indian critical infrastructure.",
+      "external_references": [
+        {
+          "external_id": "hk-mysterious-team-bangladesh",
+          "source_name": "india-threat-tracker",
+          "url": "https://www.sohankanna.com/tracker#hacktivist-hk-mysterious-team-bangladesh"
+        },
+        {
+          "source_name": "Group-IB - Mysterious Team Bangladesh (3 Aug 2023)",
+          "url": "https://www.group-ib.com/blog/mysterious-team-bangladesh/"
+        },
+        {
+          "source_name": "ThePrint (PTI) - Pakistan-allied hackers launched 15 lakh cyber attacks on Indian websites, only 150 successful (12 May 2025)",
+          "url": "https://theprint.in/india/pakistan-allied-hackers-launched-15-lakh-cyber-attacks-on-indian-websites-only-150-successful/2623696"
+        },
+        {
+          "source_name": "DSCI - Cyber threat advisory: Middle East conflict, February 2026 escalation (Mar 2026)",
+          "url": "https://www.dsci.in/files/content/advisory/2026/cyber_threat_advisory-middle_east_conflict.pdf"
+        }
+      ],
+      "id": "threat-actor--e63e5857-823d-4ada-ad70-a77692e28621",
+      "modified": "2026-11-04T00:00:00.000Z",
+      "name": "Mysterious Team Bangladesh",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ],
+      "spec_version": "2.1",
+      "threat_actor_types": [
+        "activist"
+      ],
+      "type": "threat-actor"
     },
     {
       "created": "2026-10-20T00:00:00.000Z",

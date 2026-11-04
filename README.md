@@ -7,8 +7,9 @@
 
 Open, machine-readable threat intelligence for defenders and researchers in
 India: actively exploited vulnerabilities prioritised for Indian organisations,
-the fake-APK and UPI fraud campaigns hitting Indian users, the state-nexus
-actors behind targeted intrusions, and detection rules for all of it.
+the fake-APK, UPI and social-engineering fraud hitting Indian users, the
+state-nexus actors behind targeted intrusions, the hacktivist groups targeting
+Indian sites (with every claim checked), and detection rules for all of it.
 
 **Browse it:** [sohankanna.com/tracker](https://www.sohankanna.com/tracker) ·
 **Use the data:** [DATA-GUIDE.md](DATA-GUIDE.md) ·
@@ -25,8 +26,9 @@ actors behind targeted intrusions, and detection rules for all of it.
 |------|----------|---------|
 | [`data/watchlist.json`](data/watchlist.json) | KEV entries that are India-relevant and recent or ransomware-linked, with EPSS and the reason for each relevance tag | Twice daily, automated |
 | [`data/exploited-cve.json`](data/exploited-cve.json) | Every CISA KEV entry, enriched with FIRST EPSS and an India-relevance tag | Twice daily, automated |
-| [`data/smishing-apk.json`](data/smishing-apk.json) | Fake-APK / smishing campaigns: sources, confidence, ATT&CK mapping, key findings, defensive actions, indicators and separate infrastructure context | Curated |
-| [`data/apt-campaigns.json`](data/apt-campaigns.json) | State-nexus actors targeting India, with reported attribution kept apart from the tracker's confidence | Curated |
+| [`data/smishing-apk.json`](data/smishing-apk.json) | Fake-APK, smishing and social-engineering fraud campaigns (digital arrest, investment and task scams): sources, confidence, ATT&CK mapping, key findings, defensive actions, indicators and separate infrastructure context | Curated |
+| [`data/apt-campaigns.json`](data/apt-campaigns.json) | State-nexus actors targeting India, with reported attribution kept apart from the tracker's confidence and a dated, sourced timeline per actor | Curated |
+| [`data/hacktivist.json`](data/hacktivist.json) | Hacktivist groups, alliances and claim waves aimed at India, with the verification status of each notable claim | Curated |
 | [`data/iocs.txt`](data/iocs.txt) · [`data/iocs.csv`](data/iocs.csv) | Defanged campaign indicators; the CSV adds campaign, source, confidence and status per row | Rebuilt with every update |
 | [`data/assessment.json`](data/assessment.json) | The monthly ranked analyst assessment | Monthly |
 | [`data/relevance-overrides.json`](data/relevance-overrides.json) | Hand-reviewed India-relevance decisions; the pipeline reads them and never overwrites them | When reviewed |

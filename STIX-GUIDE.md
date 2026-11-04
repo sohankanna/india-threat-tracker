@@ -17,7 +17,9 @@ CC BY 4.0; credit Sohan Kanna / India Threat Tracker.
 |---|---|---|
 | `identity` (1) | — | "India Threat Tracker", the `created_by_ref` of every object |
 | `campaign` | `smishing-apk.json` records | Reference records (category "Reference: …") are not campaigns and are not exported |
-| `intrusion-set` | `apt-campaigns.json` records | Never `threat-actor`; reported attribution stays in the description (see below) |
+| `intrusion-set` | `apt-campaigns.json` records | Never `threat-actor`; reported attribution stays in the description (see below). The timeline is appended to the description |
+| `threat-actor` | `hacktivist.json` groups and alliances | `threat_actor_types: ["activist"]`; claims stay in the description with their verification status |
+| `campaign` | `hacktivist.json` claim waves (`kind: campaign`) | The period is stated in the description |
 | `indicator` | campaign `iocs.domains`, `iocs.urls`, `iocs.sha256` | Only types with an unambiguous standard pattern |
 | `malware` | named families: campaign records naming one, actor `known_tools` | Generic capability names (e.g. "Backdoor loaders") are excluded; `is_family: true` |
 | `attack-pattern` | ATT&CK techniques on campaigns and actors | `external_references` carries the technique id (`source_name: mitre-attack`) |
@@ -35,6 +37,7 @@ Relationships, and only these:
 | campaign | `uses` | malware | The campaign record names the malware family |
 | intrusion-set | `uses` | attack-pattern | As above, for actors |
 | intrusion-set | `uses` | malware | The actor's tools as named in vendor and MITRE reporting |
+| threat-actor / campaign | `uses` | attack-pattern | Techniques mapped from the reported hacktivist activity |
 
 No `attributed-to` relationships are asserted. Campaign and actor records are
 kept separate because the sources do not link them.

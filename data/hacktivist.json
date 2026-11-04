@@ -1,0 +1,821 @@
+{
+  "feed": "hacktivist",
+  "generated_at": "2026-11-04",
+  "count": 9,
+  "items": [
+    {
+      "date_added": "2026-11-04",
+      "last_updated": "2026-11-04",
+      "last_verified": "2026-11-04",
+      "id": "hk-opindia-2025",
+      "name": "#OpIndia wave after Pahalgam and Operation Sindoor",
+      "kind": "campaign",
+      "period": {
+        "start": "2025-04-22",
+        "end": "2025-06"
+      },
+      "status": "historical",
+      "summary": "After the Pahalgam attack on 22 April 2025 and India's Operation Sindoor strikes on 7 May, dozens of hacktivist groups from Pakistan, Bangladesh, Southeast Asia, the Middle East and North Africa rallied under #OpIndia. Maharashtra Cyber counted about 15 lakh attacks on Indian sites, of which 150 succeeded. Analysts who checked the headline claims found brief DDoS outages, a handful of defacements and leak claims that were mostly overstated, recycled or fabricated. The serious threat in the same weeks was APT36's targeted phishing.",
+      "activity": [
+        "ddos",
+        "defacement",
+        "data-leak-claims",
+        "intrusion-claims",
+        "propaganda"
+      ],
+      "india_targets": [
+        "central and state government portals",
+        "defence",
+        "finance",
+        "telecom",
+        "courts",
+        "education",
+        "healthcare",
+        "municipal websites"
+      ],
+      "notable_claims": [
+        {
+          "date": "2025-05",
+          "claim": "SYLHET GANG-SG and DieNet claim 247 GB stolen from the National Informatics Centre.",
+          "verification": "overstated",
+          "note": "The 1.5 GB sample was public marketing material and media files.",
+          "source": "https://www.cloudsek.com/blog/brief-disruptions-bold-claims-the-tactical-reality-behind-the-india-pakistan-hacktivist-surge"
+        },
+        {
+          "date": "2025-05-08",
+          "claim": "Team Azrael claims more than a million Election Commission records.",
+          "verification": "recycled",
+          "note": "The data had leaked in 2023; it does contain genuine personal data.",
+          "source": "https://www.cloudsek.com/blog/brief-disruptions-bold-claims-the-tactical-reality-behind-the-india-pakistan-hacktivist-surge"
+        },
+        {
+          "date": "2025-05",
+          "claim": "SYLHET GANG-SG claims a million case records from the Andhra Pradesh High Court.",
+          "verification": "partly-true",
+          "note": "Mostly public case metadata, but some password hashes were exposed.",
+          "source": "https://www.cloudsek.com/blog/brief-disruptions-bold-claims-the-tactical-reality-behind-the-india-pakistan-hacktivist-surge"
+        },
+        {
+          "date": "2025-05-07",
+          "claim": "Team Azrael claims a leak of Indian Army personnel data.",
+          "verification": "false",
+          "note": "Names, emails and phone numbers did not match; likely fabricated or misattributed.",
+          "source": "https://www.cloudsek.com/blog/brief-disruptions-bold-claims-the-tactical-reality-behind-the-india-pakistan-hacktivist-surge"
+        },
+        {
+          "date": "2025-05-07",
+          "claim": "DDoS on the PMO, the President's site and several ministries.",
+          "verification": "overstated",
+          "note": "Downtime was likely under five minutes.",
+          "source": "https://www.cloudsek.com/blog/brief-disruptions-bold-claims-the-tactical-reality-behind-the-india-pakistan-hacktivist-surge"
+        },
+        {
+          "date": "2025-05-08",
+          "claim": "Vulture and Electronic Army Special Forces claim to have taken down CERT-In and the NTA.",
+          "verification": "false",
+          "note": "Both sites stayed up with no observable outage.",
+          "source": "https://www.cloudsek.com/blog/brief-disruptions-bold-claims-the-tactical-reality-behind-the-india-pakistan-hacktivist-surge"
+        },
+        {
+          "date": "2025-05",
+          "claim": "KAL EGY 319 claims about 40 education and healthcare defacements.",
+          "verification": "overstated",
+          "note": "The named sites were working normally when checked.",
+          "source": "https://www.cloudsek.com/blog/brief-disruptions-bold-claims-the-tactical-reality-behind-the-india-pakistan-hacktivist-surge"
+        },
+        {
+          "date": "2025-05",
+          "claim": "Claims of attacks on the power grid, statewide blackouts, satellite jamming, Northern Command and a BrahMos storage site.",
+          "verification": "false",
+          "note": "Listed by Maharashtra Cyber among false claims circulated during the conflict.",
+          "source": "https://theprint.in/india/pakistan-allied-hackers-launched-15-lakh-cyber-attacks-on-indian-websites-only-150-successful/2623696"
+        },
+        {
+          "date": "2025-05",
+          "claim": "Defacement of the Kulgaon Badlapur Municipal Council and the Defence Nursing College, Jalandhar websites.",
+          "verification": "confirmed",
+          "note": "Reported by Maharashtra Cyber.",
+          "source": "https://theprint.in/india/pakistan-allied-hackers-launched-15-lakh-cyber-attacks-on-indian-websites-only-150-successful/2623696"
+        }
+      ],
+      "key_findings": [
+        "Maharashtra Cyber's 'Road of Sindoor' report counted about 15 lakh attacks on Indian critical-infrastructure websites from seven groups, including APT36, Pakistan Cyber Force, Team Insane PK, Mysterious Bangladesh and HOAX1337. Only 150 succeeded. It traced origins to Pakistan, Bangladesh, the Middle East, Indonesia and Morocco.",
+        "Seqrite logged more than 650 confirmed DDoS and defacement events from over 35 groups, seven of them new, between 7 and 10 May, including attempted breaches at AIIMS and DRDO hospitals and probes against Jio and BSNL.",
+        "Cyble tracked more than 40 groups. Just over half of known attacks were DDoS and about 36% defacements. NSFOCUS saw attacks on India rise about 500% after 22 April.",
+        "Radware counted 256 claimed DDoS attacks on 100 Indian organisations from 26 groups in 2025 up to 8 May, peaking at seven claims an hour on the evening of 7 May. Government bodies drew over 75% of claims on 6-7 May.",
+        "CloudSEK found most outages lasted under five minutes and most leak claims were exaggerated, recycled or fake. Their impact was psychological: X accounts amplified unverified claims for propaganda.",
+        "CERT-In issued advisories to the financial sector, and the BSE and NSE temporarily restricted access from overseas IP addresses.",
+        "India-aligned groups such as Indian Cyber Force hit back at Pakistani targets in the same period."
+      ],
+      "recommended_actions": [
+        "Put public websites and APIs behind always-on DDoS protection that covers the application layer, and make sure the origin only accepts traffic from the CDN or scrubbing provider.",
+        "Rate-limit expensive endpoints such as search, login and form submission, and cache everything that can be cached.",
+        "Expect attacks around political flashpoints and on Friday evenings and weekends, when staffing is thin.",
+        "Before reacting to a leak claim, check the sample: in this wave it was usually old or public data.",
+        "Rotate credentials and force password resets for any portal whose data, even metadata, appears in a dump: the Andhra Pradesh High Court sample included password hashes.",
+        "Keep the real priority in view: watch for Pahalgam- or crisis-themed phishing at government and defence users."
+      ],
+      "attack": [
+        {
+          "id": "T1498",
+          "name": "Network Denial of Service"
+        },
+        {
+          "id": "T1499.002",
+          "name": "Endpoint Denial of Service: Service Exhaustion Flood"
+        },
+        {
+          "id": "T1491.002",
+          "name": "Defacement: External Defacement"
+        }
+      ],
+      "confidence": "high",
+      "india_relevance": "high",
+      "tags": [
+        "hacktivism",
+        "ddos",
+        "defacement",
+        "india-pakistan",
+        "operation-sindoor"
+      ],
+      "sources": [
+        {
+          "title": "ThePrint (PTI) - Pakistan-allied hackers launched 15 lakh cyber attacks on Indian websites, only 150 successful (12 May 2025)",
+          "url": "https://theprint.in/india/pakistan-allied-hackers-launched-15-lakh-cyber-attacks-on-indian-websites-only-150-successful/2623696"
+        },
+        {
+          "title": "Seqrite - Operation Sindoor: anatomy of a digital siege (23 May 2025)",
+          "url": "https://www.seqrite.com/blog/operation-sindoor-anatomy-of-a-digital-siege/"
+        },
+        {
+          "title": "CloudSEK - Brief disruptions, bold claims: the India-Pakistan hacktivist surge (11 May 2025)",
+          "url": "https://www.cloudsek.com/blog/brief-disruptions-bold-claims-the-tactical-reality-behind-the-india-pakistan-hacktivist-surge"
+        },
+        {
+          "title": "Radware - Escalating hacktivist attacks amidst India-Pakistan tensions (8 May 2025)",
+          "url": "https://www.radware.com/security/threat-advisories-and-attack-reports/escalating-hacktivist-attacks-amidst-india-pakistan-tensions/"
+        },
+        {
+          "title": "Dark Reading - After Pahalgam attack, hacktivists unite under #OpIndia (May 2025)",
+          "url": "https://www.darkreading.com/cyberattacks-data-breaches/pahalgam-attack-hacktivists-unite-opindia"
+        },
+        {
+          "title": "Silobreaker - Hacktivism in the India-Pakistan conflict: analysis of recent campaigns (25 Jun 2025)",
+          "url": "https://www.silobreaker.com/blog/geopolitical/hacktivism-in-the-india-pakistan-conflict-analysis-of-recent-campaigns/"
+        },
+        {
+          "title": "ThaiCERT - CERT-In issues urgent warning as hacktivists launch cyber onslaught against Indian systems (13 May 2025)",
+          "url": "https://www.thaicert.or.th/en/2025/05/13/cert-in-issues-urgent-warning-as-hacktivists-launch-cyber-onslaught-against-indian-systems/"
+        }
+      ]
+    },
+    {
+      "date_added": "2026-11-04",
+      "last_updated": "2026-11-04",
+      "last_verified": "2026-11-04",
+      "id": "hk-rippersec",
+      "name": "RipperSec",
+      "kind": "group",
+      "claimed_origin": "Malaysia",
+      "alignment": "pro-Palestine, pro-Muslim",
+      "active_since": "2023-06",
+      "status": "active",
+      "summary": "A Malaysian hacktivist group and the most prolific DDoS claimant against India in early 2025, with over 30% of claims. It maintains MegaMedusa, a public Node.js tool for application-layer floods, and belongs to the Holy League alliance.",
+      "activity": [
+        "ddos"
+      ],
+      "india_targets": [
+        "government",
+        "education"
+      ],
+      "tools": [
+        "MegaMedusa (public Node.js layer-7 DDoS tool)"
+      ],
+      "affiliations": [
+        "Holy League",
+        "Tengkorak Cyber Crew",
+        "Eagle Cyber Crew",
+        "Khalifah Cyber Crew",
+        "Team Cyber Ababil",
+        "Moroccan Cyber Black Army"
+      ],
+      "key_findings": [
+        "Radware: RipperSec claimed 196 DDoS attacks between 1 January and 8 August 2024. Almost a third targeted Israel; India was among its other significant targets. Across all countries, government and education sites were hit most.",
+        "In 2025 it accounted for over 30% of DDoS claims against India, and more than half of its India claims hit government institutions. It publicly pledged action after Operation Sindoor.",
+        "MegaMedusa is open on GitHub, installs in a few commands and randomises headers, paths, cookies, TLS and HTTP/2 settings and proxies. Radware believes core members use more capable private versions.",
+        "DSCI's March 2026 advisory names RipperSec among the hacktivists that pose a DDoS risk to India."
+      ],
+      "recommended_actions": [
+        "Put public websites and APIs behind always-on DDoS protection that covers the application layer, and make sure the origin only accepts traffic from the CDN or scrubbing provider.",
+        "Rate-limit expensive endpoints such as search, login and form submission, and cache everything that can be cached.",
+        "Expect attacks around political flashpoints and on Friday evenings and weekends, when staffing is thin.",
+        "Do not rely on country or IP blocking: MegaMedusa traffic arrives through open proxies. Use behavioural and TLS-fingerprint detection instead."
+      ],
+      "attack": [
+        {
+          "id": "T1498",
+          "name": "Network Denial of Service"
+        },
+        {
+          "id": "T1499.002",
+          "name": "Endpoint Denial of Service: Service Exhaustion Flood"
+        },
+        {
+          "id": "T1090",
+          "name": "Proxy"
+        }
+      ],
+      "confidence": "high",
+      "india_relevance": "high",
+      "tags": [
+        "hacktivism",
+        "ddos",
+        "malaysia"
+      ],
+      "sources": [
+        {
+          "title": "Radware - MegaMedusa, RipperSec's public web DDoS attack tool (19 Aug 2024, updated)",
+          "url": "https://www.radware.com/blog/posts/blog-security-2024-08-megamedusa-rippersec-public/"
+        },
+        {
+          "title": "Radware - Escalating hacktivist attacks amidst India-Pakistan tensions (8 May 2025)",
+          "url": "https://www.radware.com/security/threat-advisories-and-attack-reports/escalating-hacktivist-attacks-amidst-india-pakistan-tensions/"
+        },
+        {
+          "title": "Dark Reading - After Pahalgam attack, hacktivists unite under #OpIndia (May 2025)",
+          "url": "https://www.darkreading.com/cyberattacks-data-breaches/pahalgam-attack-hacktivists-unite-opindia"
+        },
+        {
+          "title": "DSCI - Cyber threat advisory: Middle East conflict, February 2026 escalation (Mar 2026)",
+          "url": "https://www.dsci.in/files/content/advisory/2026/cyber_threat_advisory-middle_east_conflict.pdf"
+        }
+      ]
+    },
+    {
+      "date_added": "2026-11-04",
+      "last_updated": "2026-11-04",
+      "last_verified": "2026-11-04",
+      "id": "hk-mysterious-team-bangladesh",
+      "name": "Mysterious Team Bangladesh",
+      "kind": "group",
+      "claimed_origin": "Bangladesh",
+      "alignment": "religious and political",
+      "active_since": "2022-06",
+      "status": "active",
+      "summary": "A Bangladeshi hacktivist group for which India is the main target. Group-IB counted more than 750 DDoS attacks and 78 website defacements between June 2022 and mid-2023, mostly in India and against government, financial and logistics organisations, using open-source DDoS tools and old WordPress and phpMyAdmin flaws.",
+      "activity": [
+        "ddos",
+        "defacement",
+        "data-leak-claims"
+      ],
+      "india_targets": [
+        "government",
+        "finance",
+        "transport and logistics"
+      ],
+      "tools": [
+        "Raven-Storm",
+        "Xerxes",
+        "Hulk",
+        "404FOUND.MY"
+      ],
+      "affiliations": [
+        "DragonForce Malaysia",
+        "Khalifah Cyber Crew",
+        "AnonGhost",
+        "Hacktivist Indonesia"
+      ],
+      "key_findings": [
+        "Group-IB (August 2023): more than 750 DDoS attacks and 78 defacements from June 2022, with the majority in India and Israel as the other main focus. Motives were religious and political.",
+        "Attacks ran at layers 3, 4 and 7, sometimes after short 'test' bursts. Defacements likely exploited outdated WordPress and phpMyAdmin installs or default admin passwords.",
+        "Its tools are public: Raven-Storm, Xerxes, Hulk and the 404FOUND.MY utility first built by DragonForce Malaysia.",
+        "Maharashtra Cyber named it among the groups behind attacks during Operation Sindoor in May 2025, and DSCI's March 2026 advisory lists it among pro-Palestinian hacktivists that targeted Indian critical infrastructure."
+      ],
+      "recommended_actions": [
+        "Put public websites and APIs behind always-on DDoS protection that covers the application layer, and make sure the origin only accepts traffic from the CDN or scrubbing provider.",
+        "Rate-limit expensive endpoints such as search, login and form submission, and cache everything that can be cached.",
+        "Expect attacks around political flashpoints and on Friday evenings and weekends, when staffing is thin.",
+        "Patch or remove internet-facing WordPress and phpMyAdmin, and change default admin passwords: that is how most of its defacements got in."
+      ],
+      "attack": [
+        {
+          "id": "T1498",
+          "name": "Network Denial of Service"
+        },
+        {
+          "id": "T1499.002",
+          "name": "Endpoint Denial of Service: Service Exhaustion Flood"
+        },
+        {
+          "id": "T1491.002",
+          "name": "Defacement: External Defacement"
+        },
+        {
+          "id": "T1190",
+          "name": "Exploit Public-Facing Application"
+        }
+      ],
+      "confidence": "high",
+      "india_relevance": "high",
+      "tags": [
+        "hacktivism",
+        "ddos",
+        "defacement",
+        "bangladesh"
+      ],
+      "sources": [
+        {
+          "title": "Group-IB - Mysterious Team Bangladesh (3 Aug 2023)",
+          "url": "https://www.group-ib.com/blog/mysterious-team-bangladesh/"
+        },
+        {
+          "title": "ThePrint (PTI) - Pakistan-allied hackers launched 15 lakh cyber attacks on Indian websites, only 150 successful (12 May 2025)",
+          "url": "https://theprint.in/india/pakistan-allied-hackers-launched-15-lakh-cyber-attacks-on-indian-websites-only-150-successful/2623696"
+        },
+        {
+          "title": "DSCI - Cyber threat advisory: Middle East conflict, February 2026 escalation (Mar 2026)",
+          "url": "https://www.dsci.in/files/content/advisory/2026/cyber_threat_advisory-middle_east_conflict.pdf"
+        }
+      ]
+    },
+    {
+      "date_added": "2026-11-04",
+      "last_updated": "2026-11-04",
+      "last_verified": "2026-11-04",
+      "id": "hk-sylhet-gang",
+      "name": "SYLHET GANG-SG",
+      "kind": "group",
+      "alignment": "pro-Pakistan",
+      "status": "historical",
+      "summary": "A hacktivist group that backed Pakistan in May 2025, accounting for about 9% of DDoS claims against India that year. Its two headline leak claims, the National Informatics Centre and the Andhra Pradesh High Court, turned out to be largely public data, though the court sample did include password hashes.",
+      "activity": [
+        "ddos",
+        "data-leak-claims"
+      ],
+      "india_targets": [
+        "government portals",
+        "courts",
+        "education",
+        "news media"
+      ],
+      "affiliations": [
+        "DieNet (joint NIC claim)",
+        "Team Insane Pakistan"
+      ],
+      "notable_claims": [
+        {
+          "date": "2025-05",
+          "claim": "247 GB stolen from the National Informatics Centre (with DieNet).",
+          "verification": "overstated",
+          "note": "About 1.5 GB of public media files.",
+          "source": "https://www.cloudsek.com/blog/brief-disruptions-bold-claims-the-tactical-reality-behind-the-india-pakistan-hacktivist-surge"
+        },
+        {
+          "date": "2025-05",
+          "claim": "A million case records from the Andhra Pradesh High Court.",
+          "verification": "partly-true",
+          "note": "Mostly public metadata; some password hashes exposed.",
+          "source": "https://www.cloudsek.com/blog/brief-disruptions-bold-claims-the-tactical-reality-behind-the-india-pakistan-hacktivist-surge"
+        }
+      ],
+      "key_findings": [
+        "Radware: about 9% of claimed DDoS attacks against India in 2025, and among the groups that publicly backed Pakistan after Operation Sindoor.",
+        "CloudSEK counted 19 claims by the group against government portals, education and news media during the crisis.",
+        "The tracker has found no public reporting on its activity against India after mid-2025."
+      ],
+      "recommended_actions": [
+        "Put public websites and APIs behind always-on DDoS protection that covers the application layer, and make sure the origin only accepts traffic from the CDN or scrubbing provider.",
+        "Rate-limit expensive endpoints such as search, login and form submission, and cache everything that can be cached.",
+        "Expect attacks around political flashpoints and on Friday evenings and weekends, when staffing is thin."
+      ],
+      "attack": [
+        {
+          "id": "T1498",
+          "name": "Network Denial of Service"
+        },
+        {
+          "id": "T1499.002",
+          "name": "Endpoint Denial of Service: Service Exhaustion Flood"
+        }
+      ],
+      "confidence": "medium",
+      "india_relevance": "high",
+      "tags": [
+        "hacktivism",
+        "ddos",
+        "leak-claims"
+      ],
+      "sources": [
+        {
+          "title": "Radware - Escalating hacktivist attacks amidst India-Pakistan tensions (8 May 2025)",
+          "url": "https://www.radware.com/security/threat-advisories-and-attack-reports/escalating-hacktivist-attacks-amidst-india-pakistan-tensions/"
+        },
+        {
+          "title": "CloudSEK - Brief disruptions, bold claims: the India-Pakistan hacktivist surge (11 May 2025)",
+          "url": "https://www.cloudsek.com/blog/brief-disruptions-bold-claims-the-tactical-reality-behind-the-india-pakistan-hacktivist-surge"
+        },
+        {
+          "title": "Silobreaker - Hacktivism in the India-Pakistan conflict: analysis of recent campaigns (25 Jun 2025)",
+          "url": "https://www.silobreaker.com/blog/geopolitical/hacktivism-in-the-india-pakistan-conflict-analysis-of-recent-campaigns/"
+        }
+      ]
+    },
+    {
+      "date_added": "2026-11-04",
+      "last_updated": "2026-11-04",
+      "last_verified": "2026-11-04",
+      "id": "hk-team-insane-pk",
+      "name": "Team Insane PK",
+      "kind": "group",
+      "aliases": [
+        "Team Insane Pakistan"
+      ],
+      "claimed_origin": "Pakistan",
+      "alignment": "pro-Pakistan, religious",
+      "active_since": "2023",
+      "status": "historical",
+      "summary": "A Pakistan-based religious hacktivist group that has targeted Indian government and business websites since 2023, mainly with DDoS. It ran #OpIndia attacks around the G20 summit in Delhi in September 2023, when the Delhi and Mumbai Police sites went down briefly, and defaced Indian sites during Operation Sindoor.",
+      "activity": [
+        "ddos",
+        "defacement",
+        "data-leak-claims"
+      ],
+      "india_targets": [
+        "police",
+        "government",
+        "education",
+        "telecom",
+        "finance",
+        "energy"
+      ],
+      "notable_claims": [
+        {
+          "date": "2023-09",
+          "claim": "#OpIndia attacks on the eve of the G20 summit, about 2,450 targets.",
+          "verification": "partly-true",
+          "note": "The Delhi and Mumbai Police websites went down briefly.",
+          "source": "https://www.radware.com/cyberpedia/ddos-attacks/hacktivist-group-team-insane-pk/"
+        },
+        {
+          "date": "2025-05",
+          "claim": "Defacement of the Armoured Vehicles Nigam Limited website.",
+          "verification": "unverified",
+          "source": "https://www.silobreaker.com/blog/geopolitical/hacktivism-in-the-india-pakistan-conflict-analysis-of-recent-campaigns/"
+        }
+      ],
+      "key_findings": [
+        "Radware: active since early 2023 against Indian government and business sites, with DDoS making up over half of the roughly 2,450 attacks in its G20-era #OpIndia campaign. It also claimed to have taken down 23 Indian police websites.",
+        "Maharashtra Cyber named it among the seven groups behind attacks during Operation Sindoor."
+      ],
+      "recommended_actions": [
+        "Put public websites and APIs behind always-on DDoS protection that covers the application layer, and make sure the origin only accepts traffic from the CDN or scrubbing provider.",
+        "Rate-limit expensive endpoints such as search, login and form submission, and cache everything that can be cached.",
+        "Expect attacks around political flashpoints and on Friday evenings and weekends, when staffing is thin."
+      ],
+      "attack": [
+        {
+          "id": "T1498",
+          "name": "Network Denial of Service"
+        },
+        {
+          "id": "T1499.002",
+          "name": "Endpoint Denial of Service: Service Exhaustion Flood"
+        },
+        {
+          "id": "T1491.002",
+          "name": "Defacement: External Defacement"
+        }
+      ],
+      "confidence": "medium",
+      "india_relevance": "high",
+      "tags": [
+        "hacktivism",
+        "ddos",
+        "defacement",
+        "pakistan"
+      ],
+      "sources": [
+        {
+          "title": "Radware Cyberpedia - Hacktivist group: Team Insane PK",
+          "url": "https://www.radware.com/cyberpedia/ddos-attacks/hacktivist-group-team-insane-pk/"
+        },
+        {
+          "title": "ThePrint (PTI) - Pakistan-allied hackers launched 15 lakh cyber attacks on Indian websites, only 150 successful (12 May 2025)",
+          "url": "https://theprint.in/india/pakistan-allied-hackers-launched-15-lakh-cyber-attacks-on-indian-websites-only-150-successful/2623696"
+        },
+        {
+          "title": "Silobreaker - Hacktivism in the India-Pakistan conflict: analysis of recent campaigns (25 Jun 2025)",
+          "url": "https://www.silobreaker.com/blog/geopolitical/hacktivism-in-the-india-pakistan-conflict-analysis-of-recent-campaigns/"
+        }
+      ]
+    },
+    {
+      "date_added": "2026-11-04",
+      "last_updated": "2026-11-04",
+      "last_verified": "2026-11-04",
+      "id": "hk-pakistan-cyber-force",
+      "name": "Pakistan Cyber Force",
+      "kind": "group",
+      "aliases": [
+        "P@kistanCyberForce"
+      ],
+      "claimed_origin": "Pakistan",
+      "alignment": "pro-Pakistan",
+      "status": "active",
+      "summary": "A pro-Pakistan group, and a set of X accounts using the name, that defaced Indian websites and amplified unverified breach claims during Operation Sindoor. On 2 March 2026, a day after Pakistani news channels were hijacked, it claimed to have hacked India's ABP News to show Pakistan Army content.",
+      "activity": [
+        "defacement",
+        "data-leak-claims",
+        "broadcast-hijack",
+        "propaganda"
+      ],
+      "india_targets": [
+        "media",
+        "government",
+        "defence"
+      ],
+      "notable_claims": [
+        {
+          "date": "2025-05",
+          "claim": "Amplified breach claims tied to 'Operation Bunyan al Marsoos'.",
+          "verification": "unverified",
+          "note": "Silobreaker and CloudSEK found X accounts using the name pushed unverified claims.",
+          "source": "https://www.silobreaker.com/blog/geopolitical/hacktivism-in-the-india-pakistan-conflict-analysis-of-recent-campaigns/"
+        },
+        {
+          "date": "2026-03-02",
+          "claim": "Hacked ABP News to air speeches by Pakistan's Field Marshal Asim Munir and pro-Pakistan slogans.",
+          "verification": "unverified",
+          "note": "Reported by Radio Pakistan and Arab News; the report does not make clear whether the website or the broadcast was affected.",
+          "source": "https://www.arabnews.pk/node/2634979"
+        }
+      ],
+      "key_findings": [
+        "Maharashtra Cyber named Pakistan Cyber Force among the seven groups behind attacks during Operation Sindoor; Silobreaker lists it among the pro-Pakistan groups defacing Indian sites.",
+        "The ABP News claim came during the opening days of the 2026 Iran war, the day after Geo News, ARY News and SAMAA in Pakistan were hijacked with messages critical of Pakistan's military."
+      ],
+      "recommended_actions": [
+        "Broadcasters: protect playout and streaming systems and the accounts that publish to websites and YouTube with phishing-resistant MFA, and keep a tested procedure to cut a hijacked feed.",
+        "Patch content management systems and remove unused admin accounts on public websites to reduce defacements."
+      ],
+      "attack": [
+        {
+          "id": "T1491.002",
+          "name": "Defacement: External Defacement"
+        }
+      ],
+      "confidence": "medium",
+      "india_relevance": "high",
+      "tags": [
+        "hacktivism",
+        "defacement",
+        "pakistan",
+        "media"
+      ],
+      "sources": [
+        {
+          "title": "ThePrint (PTI) - Pakistan-allied hackers launched 15 lakh cyber attacks on Indian websites, only 150 successful (12 May 2025)",
+          "url": "https://theprint.in/india/pakistan-allied-hackers-launched-15-lakh-cyber-attacks-on-indian-websites-only-150-successful/2623696"
+        },
+        {
+          "title": "Silobreaker - Hacktivism in the India-Pakistan conflict: analysis of recent campaigns (25 Jun 2025)",
+          "url": "https://www.silobreaker.com/blog/geopolitical/hacktivism-in-the-india-pakistan-conflict-analysis-of-recent-campaigns/"
+        },
+        {
+          "title": "CloudSEK - Brief disruptions, bold claims: the India-Pakistan hacktivist surge (11 May 2025)",
+          "url": "https://www.cloudsek.com/blog/brief-disruptions-bold-claims-the-tactical-reality-behind-the-india-pakistan-hacktivist-surge"
+        },
+        {
+          "title": "Arab News Pakistan - 'Pakistan Cyber Force' group hacks India's ABP News (2 Mar 2026)",
+          "url": "https://www.arabnews.pk/node/2634979"
+        }
+      ]
+    },
+    {
+      "date_added": "2026-11-04",
+      "last_updated": "2026-11-04",
+      "last_verified": "2026-11-04",
+      "id": "hk-keymous-plus",
+      "name": "Keymous+",
+      "kind": "group",
+      "claimed_origin": "North Africa (self-described)",
+      "alignment": "aligned with #OpIndia",
+      "active_since": "2023",
+      "status": "active",
+      "summary": "A self-described North African hacktivist collective that claimed over 700 DDoS attacks in 2025 and made about a tenth of all DDoS claims against India in early 2025, including on Indian telecom providers. Radware has found evidence it runs, or is closely tied to, the EliteStress DDoS-for-hire service, which blurs the line between activism and business.",
+      "activity": [
+        "ddos",
+        "ddos-for-hire"
+      ],
+      "india_targets": [
+        "telecom",
+        "government"
+      ],
+      "tools": [
+        "EliteStress (DDoS-for-hire panel, as reported)"
+      ],
+      "affiliations": [
+        "NoName057(16)",
+        "Mr Hamza",
+        "AnonSec",
+        "Rabbit Cyber Team"
+      ],
+      "notable_claims": [
+        {
+          "date": "2026-03",
+          "claim": "Announced large-scale operations against Israel and India with Babayo Error System.",
+          "verification": "unverified",
+          "note": "CloudSEK found limited technical substantiation.",
+          "source": "https://www.cloudsek.com/blog/middle-east-escalation-israel-iran-us-cyber-war-2026"
+        }
+      ],
+      "key_findings": [
+        "Radware: activity began in late 2023 and grew to more than 700 claimed attacks in 2025 across Europe, North Africa, the Middle East and Asia, with India's telecom sector among its targets.",
+        "Keymous+ made up about 10% of DDoS claims against India in 2025 up to May, and was among the most active groups on 6-7 May.",
+        "EliteStress sells attacks from EUR 5 a day to EUR 600 a month, including DNS amplification, UDP floods and HTTP/2 attacks, with a Telegram bot interface."
+      ],
+      "recommended_actions": [
+        "Put public websites and APIs behind always-on DDoS protection that covers the application layer, and make sure the origin only accepts traffic from the CDN or scrubbing provider.",
+        "Rate-limit expensive endpoints such as search, login and form submission, and cache everything that can be cached.",
+        "Expect attacks around political flashpoints and on Friday evenings and weekends, when staffing is thin.",
+        "Telecom operators: make sure upstream scrubbing covers DNS amplification and HTTP/2 floods, not just volumetric UDP."
+      ],
+      "attack": [
+        {
+          "id": "T1498",
+          "name": "Network Denial of Service"
+        },
+        {
+          "id": "T1499.002",
+          "name": "Endpoint Denial of Service: Service Exhaustion Flood"
+        }
+      ],
+      "confidence": "medium",
+      "india_relevance": "medium",
+      "tags": [
+        "hacktivism",
+        "ddos",
+        "ddos-for-hire"
+      ],
+      "sources": [
+        {
+          "title": "Radware - Keymous+: a new hacktivist collective or a DDoS-as-a-service brand in disguise? (2 Jul 2025)",
+          "url": "https://www.radware.com/blog/threat-intelligence/keymous-plus-a-new-hacktivist-collective-or-a-ddos-as-a-service-brand/"
+        },
+        {
+          "title": "Radware - Escalating hacktivist attacks amidst India-Pakistan tensions (8 May 2025)",
+          "url": "https://www.radware.com/security/threat-advisories-and-attack-reports/escalating-hacktivist-attacks-amidst-india-pakistan-tensions/"
+        },
+        {
+          "title": "CloudSEK - Situation report: Middle East escalation (27 Feb - 1 Mar 2026)",
+          "url": "https://www.cloudsek.com/blog/middle-east-escalation-israel-iran-us-cyber-war-2026"
+        }
+      ]
+    },
+    {
+      "date_added": "2026-11-04",
+      "last_updated": "2026-11-04",
+      "last_verified": "2026-11-04",
+      "id": "hk-anonsec",
+      "name": "AnonSec",
+      "kind": "group",
+      "status": "active",
+      "summary": "A hacktivist collective responsible for about 17% of DDoS claims against India in 2025, and among the most active groups when Operation Sindoor began. DSCI's March 2026 advisory lists it as a continuing risk.",
+      "activity": [
+        "ddos"
+      ],
+      "india_targets": [
+        "defence",
+        "finance",
+        "aviation",
+        "urban development",
+        "state portals"
+      ],
+      "affiliations": [
+        "Keymous+"
+      ],
+      "notable_claims": [
+        {
+          "date": "2025-05-07",
+          "claim": "DDoS on 20 Indian websites in defence, finance, aviation, urban development and state portals.",
+          "verification": "unverified",
+          "source": "https://www.silobreaker.com/blog/geopolitical/hacktivism-in-the-india-pakistan-conflict-analysis-of-recent-campaigns/"
+        }
+      ],
+      "key_findings": [
+        "Radware: 16.8% of claimed DDoS attacks against India in 2025 up to 8 May, second only to RipperSec, and among the most active groups on 6-7 May.",
+        "DSCI cites its attacks on more than 20 critical websites in May 2025 and groups it with RipperSec and the Holy League as coalitions willing to target India."
+      ],
+      "recommended_actions": [
+        "Put public websites and APIs behind always-on DDoS protection that covers the application layer, and make sure the origin only accepts traffic from the CDN or scrubbing provider.",
+        "Rate-limit expensive endpoints such as search, login and form submission, and cache everything that can be cached.",
+        "Expect attacks around political flashpoints and on Friday evenings and weekends, when staffing is thin."
+      ],
+      "attack": [
+        {
+          "id": "T1498",
+          "name": "Network Denial of Service"
+        },
+        {
+          "id": "T1499.002",
+          "name": "Endpoint Denial of Service: Service Exhaustion Flood"
+        }
+      ],
+      "confidence": "medium",
+      "india_relevance": "high",
+      "tags": [
+        "hacktivism",
+        "ddos"
+      ],
+      "sources": [
+        {
+          "title": "Radware - Escalating hacktivist attacks amidst India-Pakistan tensions (8 May 2025)",
+          "url": "https://www.radware.com/security/threat-advisories-and-attack-reports/escalating-hacktivist-attacks-amidst-india-pakistan-tensions/"
+        },
+        {
+          "title": "Silobreaker - Hacktivism in the India-Pakistan conflict: analysis of recent campaigns (25 Jun 2025)",
+          "url": "https://www.silobreaker.com/blog/geopolitical/hacktivism-in-the-india-pakistan-conflict-analysis-of-recent-campaigns/"
+        },
+        {
+          "title": "DSCI - Cyber threat advisory: Middle East conflict, February 2026 escalation (Mar 2026)",
+          "url": "https://www.dsci.in/files/content/advisory/2026/cyber_threat_advisory-middle_east_conflict.pdf"
+        }
+      ]
+    },
+    {
+      "date_added": "2026-11-04",
+      "last_updated": "2026-11-04",
+      "last_verified": "2026-11-04",
+      "id": "hk-holy-league",
+      "name": "Holy League",
+      "kind": "alliance",
+      "alignment": "pro-Russian, pro-Palestine and pan-Islamic groups",
+      "active_since": "2024-07",
+      "status": "active",
+      "summary": "An umbrella alliance formed in July 2024 from two earlier coalitions, claiming more than 80 member groups including NoName057(16) and RipperSec. It names Western nations, India and backers of Ukraine and Israel as its targets, and many #OpIndia attackers in May 2025 were believed to operate under its banner.",
+      "activity": [
+        "ddos",
+        "defacement",
+        "data-leak-claims",
+        "propaganda"
+      ],
+      "india_targets": [
+        "government",
+        "finance",
+        "telecom"
+      ],
+      "affiliations": [
+        "High Society",
+        "7 October Union",
+        "NoName057(16)",
+        "RipperSec"
+      ],
+      "key_findings": [
+        "Radware (December 2024): formed in July 2024 by merging the High Society and 7 October Union alliances; it claims more than 80 groups, of which Radware's appendix lists 63.",
+        "Its stated targets are Western nations, India and countries backing Ukraine and Israel. Radware's report gives no specific India incidents.",
+        "ThaiCERT's summary of the May 2025 CERT-In warning says many of the more than 40 groups were believed to operate under the Holy League banner, while noting this was an assumption.",
+        "DSCI's March 2026 advisory names Holy League, RipperSec and AnonSec as cross-border coalitions that have shown a willingness to target India."
+      ],
+      "recommended_actions": [
+        "Put public websites and APIs behind always-on DDoS protection that covers the application layer, and make sure the origin only accepts traffic from the CDN or scrubbing provider.",
+        "Rate-limit expensive endpoints such as search, login and form submission, and cache everything that can be cached.",
+        "Expect attacks around political flashpoints and on Friday evenings and weekends, when staffing is thin."
+      ],
+      "attack": [
+        {
+          "id": "T1498",
+          "name": "Network Denial of Service"
+        },
+        {
+          "id": "T1499.002",
+          "name": "Endpoint Denial of Service: Service Exhaustion Flood"
+        }
+      ],
+      "confidence": "medium",
+      "india_relevance": "medium",
+      "tags": [
+        "hacktivism",
+        "alliance",
+        "ddos"
+      ],
+      "sources": [
+        {
+          "title": "Radware - Holy League: a unified threat against Western nations, NATO, India and Israel (16 Dec 2024)",
+          "url": "https://www.radware.com/security/threat-advisories-and-attack-reports/holy-league-a-unified-threat-against-western-nations/"
+        },
+        {
+          "title": "ThaiCERT - CERT-In issues urgent warning as hacktivists launch cyber onslaught against Indian systems (13 May 2025)",
+          "url": "https://www.thaicert.or.th/en/2025/05/13/cert-in-issues-urgent-warning-as-hacktivists-launch-cyber-onslaught-against-indian-systems/"
+        },
+        {
+          "title": "Dark Reading - After Pahalgam attack, hacktivists unite under #OpIndia (May 2025)",
+          "url": "https://www.darkreading.com/cyberattacks-data-breaches/pahalgam-attack-hacktivists-unite-opindia"
+        },
+        {
+          "title": "DSCI - Cyber threat advisory: Middle East conflict, February 2026 escalation (Mar 2026)",
+          "url": "https://www.dsci.in/files/content/advisory/2026/cyber_threat_advisory-middle_east_conflict.pdf"
+        }
+      ]
+    }
+  ]
+}

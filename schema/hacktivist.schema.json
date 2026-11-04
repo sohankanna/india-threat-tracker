@@ -1,0 +1,257 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "hacktivist feed",
+  "description": "Hacktivist groups, alliances and claim waves aimed at Indian targets. Claims are recorded as claims: each notable claim carries the verification status the cited source reached, and most are unverified or overstated.",
+  "type": "object",
+  "required": [
+    "feed",
+    "generated_at",
+    "count",
+    "items"
+  ],
+  "properties": {
+    "feed": {
+      "const": "hacktivist"
+    },
+    "generated_at": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "count": {
+      "type": "integer"
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "kind",
+          "date_added",
+          "confidence",
+          "india_relevance",
+          "sources"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^hk-[a-z0-9-]+$"
+          },
+          "name": {
+            "type": "string"
+          },
+          "kind": {
+            "enum": [
+              "group",
+              "alliance",
+              "campaign"
+            ],
+            "description": "group: a single named collective; alliance: an umbrella of groups; campaign: a dated wave of activity by many groups"
+          },
+          "aliases": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "claimed_origin": {
+            "type": "string",
+            "description": "Where the group says it is from, or where the cited source places it. Self-descriptions are not verified."
+          },
+          "alignment": {
+            "type": "string",
+            "description": "Stated cause or alignment, e.g. 'pro-Pakistan' or 'pro-Palestine, pan-Islamic'"
+          },
+          "active_since": {
+            "type": "string",
+            "pattern": "^[0-9]{4}(-[0-9]{2}(-[0-9]{2})?)?$"
+          },
+          "period": {
+            "type": "object",
+            "description": "For kind=campaign: the window of activity",
+            "additionalProperties": false,
+            "required": [
+              "start"
+            ],
+            "properties": {
+              "start": {
+                "type": "string",
+                "pattern": "^[0-9]{4}(-[0-9]{2}(-[0-9]{2})?)?$"
+              },
+              "end": {
+                "type": "string",
+                "pattern": "^[0-9]{4}(-[0-9]{2}(-[0-9]{2})?)?$"
+              }
+            }
+          },
+          "status": {
+            "enum": [
+              "active",
+              "historical"
+            ]
+          },
+          "summary": {
+            "type": "string"
+          },
+          "activity": {
+            "type": "array",
+            "items": {
+              "enum": [
+                "ddos",
+                "defacement",
+                "data-leak-claims",
+                "intrusion-claims",
+                "broadcast-hijack",
+                "ddos-for-hire",
+                "propaganda"
+              ]
+            }
+          },
+          "india_targets": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "tools": {
+            "type": "array",
+            "description": "Named tools or services the sources tie to the group. Context, not indicators.",
+            "items": {
+              "type": "string"
+            }
+          },
+          "affiliations": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "notable_claims": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "date",
+                "claim",
+                "verification"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "date": {
+                  "type": "string",
+                  "pattern": "^[0-9]{4}(-[0-9]{2}(-[0-9]{2})?)?$"
+                },
+                "claim": {
+                  "type": "string"
+                },
+                "verification": {
+                  "enum": [
+                    "confirmed",
+                    "partly-true",
+                    "overstated",
+                    "recycled",
+                    "false",
+                    "unverified"
+                  ],
+                  "description": "What the cited source concluded about the claim"
+                },
+                "note": {
+                  "type": "string"
+                },
+                "source": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "key_findings": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "recommended_actions": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "attack": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id",
+                "name"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "pattern": "^T[0-9]{4}(\\.[0-9]{3})?$"
+                },
+                "name": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "confidence": {
+            "enum": [
+              "high",
+              "medium",
+              "low"
+            ],
+            "description": "The tracker's confidence in the reporting about the group's activity against India, not in the group's own claims"
+          },
+          "india_relevance": {
+            "enum": [
+              "high",
+              "medium",
+              "global"
+            ]
+          },
+          "date_added": {
+            "type": "string"
+          },
+          "last_updated": {
+            "type": "string"
+          },
+          "last_verified": {
+            "type": "string"
+          },
+          "tags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "sources": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "required": [
+                "title",
+                "url"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "title": {
+                  "type": "string"
+                },
+                "url": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -5,6 +5,60 @@ not listed here.
 
 ## Unreleased
 
+### Phase 3: deeper actors, hacktivists and fraud
+
+Every new entry was researched against vendor, CERT, police and court
+reporting; only sources that were read are cited.
+
+**Threat actors (4 new, all 9 deepened)**
+
+* Added **Mustang Panda** (China-nexus, MITRE G0129): LOTUSLITE against Indian
+  banks through HDFC-themed CHM files (Acronis, April 2026), and SHARDLOADER,
+  MINIRECON and ZOHOMURK against Indian government and hydropower targets with
+  Zoho WorkDrive as C2 (Acronis with CERT-In, June 2026). Confidence high.
+* Added **Lazarus Group** (DPRK, G0032): DTrack and ATMDtrack in Indian banks and
+  research centres (Kaspersky, 2019), DTrack on Kudankulam's administrative
+  network (confirmed by NPCIL, October 2019), the Cosmos Bank heist (2018,
+  vendor attribution) and the US$235 million WazirX theft (2024, attributed by
+  the US, Japan and South Korea). Confidence high.
+* Added **APT41** (China-nexus, G0096): India in the 2020 Citrix/Zoho exploitation
+  wave, a November 2020 campaign against Indian oil and gas, and 2021 tax- and
+  COVID-themed phishing of Indian nationals (BlackBerry). Confidence medium.
+* Added **RedFoxtrot** (PLA Unit 69010, as reported by Recorded Future): Indian
+  aerospace, defence and telecom targeting to 2021. Status historical.
+* New `timeline` field: every actor now has dated, sourced milestones.
+* **RedEcho**: added MITRE G1042, ATT&CK techniques, the full Recorded Future
+  findings, and a correction: TAG-38 is a separate cluster that Recorded Future
+  could not link to RedEcho, so it is no longer listed as an alias. The October
+  2020 Mumbai outage is recorded as unsubstantiated.
+* **Transparent Tribe** and **SideCopy**: first public reports (2016, 2020) and
+  Operation Sindoor-era phishing added.
+* Researched and **not added**: Patchwork and Bitter, which are assessed as
+  India-nexus actors targeting Pakistan, China, Bangladesh and others, not
+  threats to India; North Korea's Contagious Interview campaign (no Indian
+  victims named in reporting).
+
+**Hacktivists (new feed)**
+
+* New `data/hacktivist.json` and `schema/hacktivist.schema.json`: 9 entries.
+  The #OpIndia wave after Pahalgam and Operation Sindoor, RipperSec, Mysterious
+  Team Bangladesh, SYLHET GANG-SG, Team Insane PK, Pakistan Cyber Force (including
+  the March 2026 ABP News claim), Keymous+, AnonSec and the Holy League alliance.
+* Each notable claim records the verification status the source reached
+  (confirmed, partly-true, overstated, recycled, false, unverified).
+* Exported to STIX as `threat-actor` (activist) and `campaign` objects; no claim
+  becomes an indicator.
+
+**Fraud (4 new entries)**
+
+* SpyMax RAT spread as a WhatsApp wedding-invitation APK, with two package-name
+  indicators (K7 Labs, Broadcom, Maharashtra Cyber).
+* "Digital arrest" extortion: I4C figures 2022-2025, Skype/SIM/IMEI blocking and
+  the Supreme Court's December 2025 order for a CBI probe.
+* Fake stock-tip groups and trading apps (I4C, CloudSEK).
+* Task-based part-time job scams (MeitY blocking order, the Rs 712 crore
+  Hyderabad case).
+
 ### Threat actors
 
 * Added **MuddyWater** (Iran-nexus, MOIS), the tracker's first Iranian actor.

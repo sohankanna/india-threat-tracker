@@ -29,6 +29,9 @@ What is deliberately not exported
   month-precision "first reported" dates stay in the description.
 * Attribution relationships: intrusion sets carry reported attribution in
   their description; no attributed-to relationships are asserted.
+* Hacktivist claims: groups become threat-actor objects and claim waves become
+  campaigns, but each claim stays in the description with the verification
+  status its source reached. No claim becomes an indicator or a sighting.
 """
 import hashlib
 import json
@@ -189,9 +192,10 @@ class Builder:
         }, created, updated)
 
 
-def build_objects(smishing, apt, assessment, kev):
+def build_objects(smishing, apt, assessment, kev, hacktivist=None):
     b = Builder()
     first = min(day(i["date_added"]) for i in smishing["items"] + apt["items"])
+    hacktivist = hacktivist or {"items": []}
 
     identity = b.add({
         "type": "identity",
@@ -295,6 +299,8 @@ def build_objects(smishing, apt, assessment, kev):
             desc.append(f"Reported attribution: {a['suspected_origin']}. {a.get('attribution_note', '')}".strip())
         if a.get("key_findings"):
             desc.append("Key findings: " + " ".join(a["key_findings"]))
+        if a.get("timeline"):
+            desc.append("Timeline: " + " ".join(f"{t['date']}: {t['event']}" for t in a["timeline"]))
         refs = [{"source_name": "india-threat-tracker", "external_id": a["id"],
                  "url": f"https://www.sohankanna.com/tracker#actor-{a['id']}"}]
         if a.get("mitre_group"):
@@ -320,6 +326,43 @@ def build_objects(smishing, apt, assessment, kev):
                 continue
             m = malware(name, created, updated, mitre_sw.get(name.lower()))
             b.relate(iset, "uses", m, created, updated)
+
+    # ── Hacktivists: groups and alliances as threat actors, waves as campaigns ──
+    # Their claims stay in the description with the verification status the
+    # source reached; none of them becomes an indicator or a sighting.
+    for h in hacktivist["items"]:
+        created, updated = day(h["date_added"]), day(h.get("last_updated") or h["date_added"])
+        desc = [h.get("summary", "")]
+        if h.get("claimed_origin"):
+            desc.append(f"Origin as claimed or reported: {h['claimed_origin']}.")
+        if h.get("alignment"):
+            desc.append(f"Alignment: {h['alignment']}.")
+        if h.get("tools"):
+            desc.append("Tools and services (context, not indicators): " + "; ".join(h["tools"]) + ".")
+        if h.get("notable_claims"):
+            desc.append("Claims, with the verification status the cited source reached: " + " ".join(
+                f"{c['date']}: {c['claim']} [{c['verification']}{': ' + c['note'] if c.get('note') else ''}]"
+                for c in h["notable_claims"]))
+        if h.get("key_findings"):
+            desc.append("Key findings: " + " ".join(h["key_findings"]))
+        refs = [{"source_name": "india-threat-tracker", "external_id": h["id"],
+                 "url": f"https://www.sohankanna.com/tracker#hacktivist-{h['id']}"}] + sources_refs(h.get("sources"))
+        if h["kind"] == "campaign":
+            obj = {"type": "campaign", "id": sid("campaign", h["id"]), "name": h["name"]}
+            if h.get("period"):
+                desc.insert(1, f"Period: {h['period']['start']} to {h['period'].get('end', 'ongoing')}.")
+        else:
+            obj = {"type": "threat-actor", "id": sid("threat-actor", h["id"]), "name": h["name"],
+                   "threat_actor_types": ["activist"]}
+            if h.get("aliases"):
+                obj["aliases"] = list(h["aliases"])
+        obj.update({"description": "\n\n".join(x for x in desc if x),
+                    "confidence": CONFIDENCE[h["confidence"]],
+                    "external_references": refs})
+        hid = b.add(obj, created, updated)
+        record_ids[("hacktivist", h["id"])] = hid
+        for t in h.get("attack") or []:
+            b.relate(hid, "uses", attack_pattern(t, created, updated), created, updated)
 
     # ── Vulnerabilities referenced by the assessment ──
     kev_by_id = {i["cve"]: i for i in kev["items"]}
@@ -429,8 +472,8 @@ def build(previous=None, registry=None, data=None):
     """Build the bundle. `data` overrides the feeds (tests); `registry` the ids."""
     global IDS
     IDS = registry if registry is not None else IdRegistry.load()
-    d = data or {n: load(f"{n}.json") for n in ("smishing-apk", "apt-campaigns", "assessment", "exploited-cve")}
-    b = build_objects(d["smishing-apk"], d["apt-campaigns"], d["assessment"], d["exploited-cve"])
+    d = data or {n: load(f"{n}.json") for n in ("smishing-apk", "apt-campaigns", "hacktivist", "assessment", "exploited-cve")}
+    b = build_objects(d["smishing-apk"], d["apt-campaigns"], d["assessment"], d["exploited-cve"], d.get("hacktivist"))
     return finalise(b, previous)
 
 

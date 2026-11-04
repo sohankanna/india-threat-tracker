@@ -9,7 +9,7 @@
 # hosting providers, C2 technology). Do not block shared services.
 # Listing is not proof an indicator is still active - last-seen dates are
 # not tracked.
-# Data as of 2026-10-20 - 7 indicators - https://github.com/sohankanna/india-threat-tracker
+# Data as of 2026-11-04 - 9 indicators - https://github.com/sohankanna/india-threat-tracker
 
 ## Domains
 # sm-2025-002: RTO Challan fraud - two-stage dropper (jsonserv C2)
@@ -26,6 +26,9 @@ jsonserv[.]biz
 ## Android package names
 # sm-2025-003: Android banking trojan - MITM + anti-analysis (case study)
 com.iudxmm.android
+# sm-2025-004: Wedding-invitation APK - SpyMax RAT on WhatsApp
+com.cristal.bristral.tristal.mistral
+com.android.pictach
 
 ## Telegram bot handles
 # sm-2025-001: GhostBat RAT - RTO/mParivahan-themed Android campaign
