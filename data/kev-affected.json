@@ -1,10 +1,10 @@
 {
  "coverage": {
   "fetch_failures_this_run": 0,
-  "kev_cves": 1766,
-  "records_published": 1766,
+  "kev_cves": 1767,
+  "records_published": 1767,
   "unavailable": 0,
-  "with_version_entries": 1766
+  "with_version_entries": 1767
  },
  "description": "Affected products and versions for every CISA KEV CVE, as written by the CVE Numbering Authority (and ADPs such as CISA vulnrichment) in the official CVE records. Not interpreted: see EXPOSURE-MATCHER.md for how versions are compared.",
  "feed": "kev-affected",
@@ -221599,7 +221599,777 @@
     },
     {
      "default_status": "unknown",
+     "product": "AX4",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "CADRA",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Capital",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Designcenter",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Designcenter X",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "DFMExpress",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "HyperLynx",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Insights Hub",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Opcenter Connect Electronics",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Opcenter Connect MOM",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Opcenter Execution Core",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Opcenter Execution Foundation",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Opcenter Execution Pharma",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Opcenter Intelligence",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Opcenter Intra Plant Logistics",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Opcenter Quality",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Opcenter RDnL",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Opcenter X",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "PADS Pro Essentials",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "PADS Pro Student Edition",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "PADS Professional",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "PADS Professional - XCR",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "PADS Standard - XCR",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "PADS Standard & Standard Plus",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Polarion",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "QuadView",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
      "product": "RUGGEDCOM APE1808",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Simcenter Flomaster",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Simcenter Flux",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Simcenter Simlab",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Solid Edge",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Solid Edge",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Supply Chain Suite",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Teamcenter",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Teamcenter Product Cost Management",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Teamcenter Visualization",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Tecnomatix Plant Simulation",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "TestWay",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Valor NPI",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Xcargo",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Xpedition Designer",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Xpedition Enterprise",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Xpedition Enterprise XCR",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Xpedition IC Packaging",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Xpedition Layout Browser",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "AMIS TS",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "blueplanet 360 NX3 M6 WM OD IISX",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "blueplanet 360 NX3 M6 WM OD IISX - S",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Energy Engage V2.0SP9",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Energy Engage V3.1SP1",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Spectrum Power 3",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Spectrum Power 4",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Spectrum Power 4",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Spectrum Power 4",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Spectrum Power 7",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Spectrum Power TG",
      "source": "adp:siemens-SADP",
      "vendor": "Siemens",
      "versions": [
@@ -221613,7 +222383,7 @@
     }
    ],
    "record_state": "PUBLISHED",
-   "record_updated": "2026-10-28T03:55:47.838Z"
+   "record_updated": "2026-10-30T18:31:36.959Z"
   },
   {
    "cve": "CVE-2026-110447",
@@ -221789,6 +222559,171 @@
    ],
    "record_state": "PUBLISHED",
    "record_updated": "2026-11-03T15:32:56.011Z"
+  },
+  {
+   "cve": "CVE-2026-119977",
+   "products": [
+    {
+     "default_status": "unaffected",
+     "product": "WordPress",
+     "source": "cna",
+     "vendor": "WordPress Foundation",
+     "versions": [
+      {
+       "less_than_or_equal": "4.7.38",
+       "status": "affected",
+       "version": "4.7.0",
+       "version_type": "semver"
+      },
+      {
+       "less_than_or_equal": "4.8.33",
+       "status": "affected",
+       "version": "4.8.0",
+       "version_type": "semver"
+      },
+      {
+       "less_than_or_equal": "4.9.34",
+       "status": "affected",
+       "version": "4.9.0",
+       "version_type": "semver"
+      },
+      {
+       "less_than_or_equal": "5.0.30",
+       "status": "affected",
+       "version": "5.0.0",
+       "version_type": "semver"
+      },
+      {
+       "less_than_or_equal": "5.1.27",
+       "status": "affected",
+       "version": "5.1.0",
+       "version_type": "semver"
+      },
+      {
+       "less_than_or_equal": "5.2.29",
+       "status": "affected",
+       "version": "5.2.0",
+       "version_type": "semver"
+      },
+      {
+       "less_than_or_equal": "5.3.26",
+       "status": "affected",
+       "version": "5.3.0",
+       "version_type": "semver"
+      },
+      {
+       "less_than_or_equal": "5.4.24",
+       "status": "affected",
+       "version": "5.4.0",
+       "version_type": "semver"
+      },
+      {
+       "less_than_or_equal": "5.5.23",
+       "status": "affected",
+       "version": "5.5.0",
+       "version_type": "semver"
+      },
+      {
+       "less_than_or_equal": "5.6.22",
+       "status": "affected",
+       "version": "5.6.0",
+       "version_type": "semver"
+      },
+      {
+       "less_than_or_equal": "5.7.20",
+       "status": "affected",
+       "version": "5.7.0",
+       "version_type": "semver"
+      },
+      {
+       "less_than_or_equal": "5.8.18",
+       "status": "affected",
+       "version": "5.8.0",
+       "version_type": "semver"
+      },
+      {
+       "less_than_or_equal": "5.9.19",
+       "status": "affected",
+       "version": "5.9.0",
+       "version_type": "semver"
+      },
+      {
+       "less_than_or_equal": "6.0.17",
+       "status": "affected",
+       "version": "6.0.0",
+       "version_type": "semver"
+      },
+      {
+       "less_than_or_equal": "6.1.15",
+       "status": "affected",
+       "version": "6.1.0",
+       "version_type": "semver"
+      },
+      {
+       "less_than_or_equal": "6.2.14",
+       "status": "affected",
+       "version": "6.2.0",
+       "version_type": "semver"
+      },
+      {
+       "less_than_or_equal": "6.3.13",
+       "status": "affected",
+       "version": "6.3.0",
+       "version_type": "semver"
+      },
+      {
+       "less_than_or_equal": "6.4.13",
+       "status": "affected",
+       "version": "6.4.0",
+       "version_type": "semver"
+      },
+      {
+       "less_than_or_equal": "6.5.13",
+       "status": "affected",
+       "version": "6.5.0",
+       "version_type": "semver"
+      },
+      {
+       "less_than_or_equal": "6.6.10",
+       "status": "affected",
+       "version": "6.6.0",
+       "version_type": "semver"
+      },
+      {
+       "less_than_or_equal": "6.7.10",
+       "status": "affected",
+       "version": "6.7.0",
+       "version_type": "semver"
+      },
+      {
+       "less_than_or_equal": "6.8.11",
+       "status": "affected",
+       "version": "6.8.0",
+       "version_type": "semver"
+      },
+      {
+       "less_than_or_equal": "6.9.10",
+       "status": "affected",
+       "version": "6.9.0",
+       "version_type": "semver"
+      },
+      {
+       "less_than_or_equal": "7.0.7",
+       "status": "affected",
+       "version": "7.0.0",
+       "version_type": "semver"
+      },
+      {
+       "less_than_or_equal": "7.1.3",
+       "status": "affected",
+       "version": "7.1.0",
+       "version_type": "semver"
+      }
+     ]
+    }
+   ],
+   "record_state": "PUBLISHED",
+   "record_updated": "2026-11-04T04:56:31.158Z"
   },
   {
    "cve": "CVE-2026-12569",
@@ -251802,7 +252737,7 @@
     }
    ],
    "record_state": "PUBLISHED",
-   "record_updated": "2026-10-14T23:09:31.608Z"
+   "record_updated": "2026-10-31T16:13:02.178Z"
   },
   {
    "cve": "CVE-2026-86060",
@@ -252918,9 +253853,9 @@
     }
    ],
    "record_state": "PUBLISHED",
-   "record_updated": "2026-10-14T10:51:05.616Z"
+   "record_updated": "2026-10-30T23:18:16.598Z"
   }
  ],
- "kev_generated_at": "2026-11-03T20:33:53Z",
+ "kev_generated_at": "2026-11-04T09:44:28Z",
  "source": "CVE Project cvelistV5 (https://github.com/CVEProject/cvelistV5)"
 }
