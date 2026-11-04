@@ -7,6 +7,11 @@ not listed here.
 
 ### Detections
 
+* New rule `chm_help_file_spawns_script_or_lolbin`: the HTML Help viewer
+  (hh.exe) starting a script host, shell or download-capable binary. It covers
+  the help-file delivery Mustang Panda used against Indian banks in 2026
+  (LOTUSLITE). Shipped as Sigma, Splunk, Elastic EQL and Wazuh rule 100213, with
+  fixtures; the process lists are checked to be identical in every backend.
 * Fixed CI after pySigma 2.x: the DNS-change rule's regex no longer uses a
   `(?!...)` lookahead, which RE2 rejects. The new pattern lists every first and
   second octet outside RFC1918 and matches exactly the same inputs (checked on

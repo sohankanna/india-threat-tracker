@@ -1,0 +1,11 @@
+# Compiled HTML Help (hh.exe) Spawning a Script Host or LOLBin  (Mustang Panda / LOTUSLITE delivery)
+# Source rule: ../sigma/chm_help_file_spawns_script_or_lolbin.yml
+# Context:     https://www.sohankanna.com/tracker#actor-apt-mustang-panda
+#
+# Requires: Sysmon + Splunk Add-on for Sysmon. Process create = Event ID 1.
+
+sourcetype="XmlWinEventLog:Microsoft-Windows-Sysmon/Operational" EventCode=1
+    ParentImage="*\\hh.exe"
+    (Image="*\\wscript.exe" OR Image="*\\cscript.exe" OR Image="*\\powershell.exe" OR Image="*\\pwsh.exe" OR Image="*\\mshta.exe" OR Image="*\\cmd.exe" OR Image="*\\rundll32.exe" OR Image="*\\regsvr32.exe" OR Image="*\\curl.exe" OR Image="*\\certutil.exe" OR Image="*\\bitsadmin.exe")
+| table _time, host, user, ParentImage, ParentCommandLine, Image, CommandLine
+| sort - _time

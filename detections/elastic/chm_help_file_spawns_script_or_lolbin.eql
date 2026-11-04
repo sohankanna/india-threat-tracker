@@ -1,0 +1,10 @@
+// Compiled HTML Help (hh.exe) Spawning a Script Host or LOLBin  (Mustang Panda / LOTUSLITE delivery)
+// Source rule: ../sigma/chm_help_file_spawns_script_or_lolbin.yml
+// SCHEMA: ECS / Elastic Defend (Elastic Agent). Fields are ECS (process.name,
+//   process.parent.name). The raw Winlogbeat Sysmon path (winlog.event_data.*)
+//   is NOT covered - it needs its own field mapping.
+// Rule type: EQL | Index: logs-endpoint.events.process-*
+
+process where event.type == "start"
+  and process.parent.name : ("hh.exe")
+  and process.name : ("wscript.exe", "cscript.exe", "powershell.exe", "pwsh.exe", "mshta.exe", "cmd.exe", "rundll32.exe", "regsvr32.exe", "curl.exe", "certutil.exe", "bitsadmin.exe")

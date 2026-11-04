@@ -1,0 +1,44 @@
+title: Compiled HTML Help (hh.exe) Spawning a Script Host or LOLBin
+id: 74bf9513-e997-44da-a5c4-70be3343f792
+status: experimental
+description: >
+  Detects the Windows HTML Help viewer (hh.exe) starting a script host,
+  shell or download-capable system binary. Opening a .chm file runs hh.exe, and a
+  malicious help file can use it to launch code. Mustang Panda used help-file
+  attachments posing as HDFC Bank support tickets to deliver the LOTUSLITE
+  backdoor to Indian banks in 2026 (Acronis). Acronis did not publish the exact
+  child process, so this rule covers the common ways a help file runs code
+  rather than a confirmed LOTUSLITE signature.
+references:
+  - https://www.sohankanna.com/tracker#actor-apt-mustang-panda
+  - https://thehackernews.com/2026/04/mustang-pandas-new-lotuslite-variant.html
+author: Sohan Kanna (@sohankanna)
+date: 2026-11-04
+tags:
+  - attack.defense-evasion
+  - attack.execution
+  - attack.t1218.001
+  - attack.t1204.002
+logsource:
+  product: windows
+  category: process_creation
+detection:
+  selection:
+    ParentImage|endswith:
+      - '\hh.exe'
+    Image|endswith:
+      - '\wscript.exe'
+      - '\cscript.exe'
+      - '\powershell.exe'
+      - '\pwsh.exe'
+      - '\mshta.exe'
+      - '\cmd.exe'
+      - '\rundll32.exe'
+      - '\regsvr32.exe'
+      - '\curl.exe'
+      - '\certutil.exe'
+      - '\bitsadmin.exe'
+  condition: selection
+falsepositives:
+  - Legacy internal help files that open a command prompt or script by design (rare)
+level: high

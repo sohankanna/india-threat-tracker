@@ -34,6 +34,7 @@ RULES = {
     "office_document_spawns_script_interpreter": ("sysmon", "100210"),
     "office_archive_lnk_spawns_lolbin": ("sysmon", "100211"),
     "windows_suspicious_dns_server_change": ("sysmon", "100212"),
+    "chm_help_file_spawns_script_or_lolbin": ("sysmon", "100213"),
     "pan_os_mgmt_auth_from_unexpected_source": ("paloalto", "100220"),
     "entra_aitm_risky_signin_token_replay": ("graph", "100230"),
 }
@@ -232,7 +233,8 @@ def wazuh_list(rule_id, field):
 class Equivalence(unittest.TestCase):
     def test_process_lists_identical_in_every_backend(self):
         for stem, rule_id in (("office_document_spawns_script_interpreter", "100210"),
-                              ("office_archive_lnk_spawns_lolbin", "100211")):
+                              ("office_archive_lnk_spawns_lolbin", "100211"),
+                              ("chm_help_file_spawns_script_or_lolbin", "100213")):
             for sigma_key, spl, ecs, wz in (("ParentImage|endswith", "ParentImage", "process.parent.name", "win.eventdata.parentImage"),
                                             ("Image|endswith", "Image", "process.name", "win.eventdata.image")):
                 with self.subTest(rule=stem, field=spl):

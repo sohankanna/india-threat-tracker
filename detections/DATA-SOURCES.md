@@ -30,6 +30,7 @@ at the fidelity these need.
 |------|-----------|-------------------|
 | `office_document_spawns_script_interpreter` | `ParentImage` (winword/excel/powerpnt), `Image` (wscript/cscript/powershell/mshta/cmd) | Atomic Red Team **T1059** / **T1204.002**; or open a test macro-enabled doc whose macro runs `cmd /c whoami`. Rule should alert on `winword.exe → cmd.exe` |
 | `office_archive_lnk_spawns_lolbin` | `ParentImage` (explorer/7zFM/WinRAR/Winzip), `Image` (mshta/powershell/pwsh/rundll32/cmd) | Extract a ZIP in Explorer containing a benign `.lnk` that launches `powershell -c exit`. Rule should alert on the `explorer.exe/7zFM.exe → powershell.exe` parentage. **Scope:** this is the archive/Explorer → LOLBin parent-child only; it does not prove the full ZIP→LNK→payload chain (that needs event correlation). `.lnk` in the command line is investigation context, not a match condition. |
+| `chm_help_file_spawns_script_or_lolbin` | `ParentImage` (hh.exe), `Image` (wscript/cscript/powershell/pwsh/mshta/cmd/rundll32/regsvr32/curl/certutil/bitsadmin) | Atomic Red Team **T1218.001** (it builds a test .chm that runs a command); or open a benign test help file whose shortcut object starts `cmd /c whoami`. Rule should alert on `hh.exe → cmd.exe` |
 | `windows_suspicious_dns_server_change` | `TargetObject` ends `NameServer`/`DhcpNameServer`, `Details` (the new value; it can hold several resolvers, comma- or space-separated) | See the required cases below. |
 
 > **How the DNS rule decides (read this):** the value can list several
