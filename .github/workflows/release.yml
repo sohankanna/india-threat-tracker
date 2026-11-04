@@ -1,0 +1,52 @@
+name: Release
+
+# Push a tag like v1.0.0 to publish a GitHub release with the rule pack and the
+# data bundle as zips. The release notes come from docs/releases/<tag>.md, which
+# must exist (write it before tagging). Everything is validated first.
+#
+#   git tag v1.0.0 && git push origin v1.0.0
+
+on:
+  push:
+    tags: ["v*.*.*"]
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install deps
+        run: pip install -r requirements.txt -r requirements-ci.txt
+
+      - name: Release notes exist
+        run: test -f "docs/releases/${GITHUB_REF_NAME}.md" || { echo "::error::Write docs/releases/${GITHUB_REF_NAME}.md first"; exit 1; }
+
+      - name: Validate and test
+        run: |
+          python scripts/validate.py
+          python scripts/build_iocs.py --check
+          python scripts/build_stix.py --check
+          python scripts/build_misp_feed.py --check
+          python scripts/check_inventory.py
+          python -m unittest discover -s tests
+
+      - name: Build assets
+        run: python scripts/build_release.py "$GITHUB_REF_NAME"
+
+      - name: Publish
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "$GITHUB_REF_NAME" dist/*.zip dist/SHA256SUMS \
+            --verify-tag \
+            --title "India Threat Tracker ${GITHUB_REF_NAME}" \
+            --notes-file "docs/releases/${GITHUB_REF_NAME}.md"

@@ -8,3 +8,6 @@ venv/
 
 # Staging folder for workflow updates (moved into .github/workflows by hand)
 .workflow-update/
+
+# Release assets (scripts/build_release.py)
+dist/

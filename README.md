@@ -13,8 +13,10 @@ Indian sites (with every claim checked), the ransomware groups hitting Indian
 organisations, and detection rules for all of it.
 
 **Browse it:** [sohankanna.com/tracker](https://www.sohankanna.com/tracker) ·
+**Use it in your SOC:** [docs/USING.md](docs/USING.md) ·
 **Use the data:** [DATA-GUIDE.md](DATA-GUIDE.md) ·
-**How it's scored:** [METHODOLOGY.md](METHODOLOGY.md)
+**How it's scored:** [METHODOLOGY.md](METHODOLOGY.md) ·
+**Releases:** [rule pack + data zips](https://github.com/sohankanna/india-threat-tracker/releases)
 
 > Defensive and research use only. Indicators only — no malware samples are
 > hosted here, ever.
@@ -37,6 +39,7 @@ organisations, and detection rules for all of it.
 | [`data/india-threat-tracker-stix.json`](data/india-threat-tracker-stix.json) | STIX 2.1 Bundle of the campaigns, actors, indicators, techniques and assessment: see [STIX-GUIDE.md](STIX-GUIDE.md) | Twice daily, automated |
 | [`data/kev-affected.json`](data/kev-affected.json) | Affected products and versions for every KEV CVE, from the official CVE records; feeds the [Exposure Matcher](EXPOSURE-MATCHER.md) | Twice daily, automated |
 | [`data/meta.json`](data/meta.json) | Manifest of every data file, with its schema and cadence | When files change |
+| [`misp-feed/`](misp-feed/) | The campaigns' indicators and the high-relevance KEV CVEs as a native MISP feed: subscribe a MISP instance to the URL in [misp-feed/README.md](misp-feed/README.md) | Rebuilt with every update |
 
 Every JSON feed is validated against a schema in [`schema/`](schema/) on every
 change.
@@ -111,6 +114,7 @@ Full details: [METHODOLOGY.md](METHODOLOGY.md).
 ```
 scripts/fetch_exploited.py   CISA KEV + FIRST EPSS -> exploited-cve.json + watchlist.json
 scripts/build_iocs.py        campaign feed         -> iocs.txt + iocs.csv
+scripts/build_misp_feed.py   campaigns + watchlist -> misp-feed/ (native MISP feed)
 scripts/validate.py          every JSON feed       -> checked against schema/
 scripts/check_inventory.py   detection pack        -> every rule has all formats + a test
 scripts/make_tweet_draft.py  today's KEV adds      -> drafts/<date>.md (a draft, not post-ready)
