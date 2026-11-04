@@ -1,0 +1,10 @@
+// Zoho WorkDrive API Lookup From an Unexpected Process  (Mustang Panda / ZOHOMURK)
+// Source rule: ../sigma/zoho_workdrive_api_from_unexpected_process.yml
+// SCHEMA: ECS / Elastic Defend (Elastic Agent) DNS events. Fields are ECS
+//   (dns.question.name, process.name, process.executable).
+// Rule type: EQL | Index: logs-endpoint.events.network-*
+
+network where event.action == "lookup_requested"
+  and dns.question.name : ("*zohoapis.com", "*zohoapis.in", "*workdrive.zoho.com", "*workdrive.zoho.in")
+  and not process.name : ("chrome.exe", "msedge.exe", "firefox.exe", "brave.exe", "opera.exe", "iexplore.exe")
+  and not process.executable : "*\\Zoho\\*"

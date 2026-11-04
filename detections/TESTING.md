@@ -102,6 +102,12 @@ own telemetry, in your own SIEM, against a real baseline.
 - **Silent:** `GptTmpl.inf` in a GPO (ordinary settings); an `.exe` in a user's Downloads; `Groups.xml` (a different preferences file)
 - **Known false positives:** administrators publishing logon scripts, startup scripts, software or scheduled tasks through Group Policy
 
+### `zoho_workdrive_api_from_unexpected_process`
+- **Fields:** `QueryName`, `Image` (Sysmon Event 22 / ECS `dns.question.name`, `process.name`, `process.executable`)
+- **Alerts:** a binary in ProgramData resolving `www.zohoapis.com`; `rundll32.exe` resolving `workdrive.zoho.in`
+- **Silent:** Chrome resolving `www.zohoapis.com`; a client under `Program Files\Zoho\`; any process resolving `www.zoho.com` (the website, not the API)
+- **Known false positives:** Zoho clients installed elsewhere and internal integrations that call the Zoho API. Baseline before alerting; Zoho is widely used in India
+
 ### `windows_suspicious_dns_server_change`
 - **Fields:** `TargetObject` (ends `NameServer` / `DhcpNameServer`), `Details` (the new value, which can hold several resolvers)
 - **Logic:** alert if **any** resolver in the value is outside the trusted-resolver policy (RFC1918 by default)

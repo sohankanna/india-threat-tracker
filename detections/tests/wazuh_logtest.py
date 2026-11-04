@@ -47,6 +47,7 @@ RULES = {
     "windows_suspicious_dns_server_change": ("sysmon", "100212"),
     "chm_help_file_spawns_script_or_lolbin": ("sysmon", "100213"),
     "sysvol_payload_or_gpo_scheduled_task_written": ("sysmon", "100214"),
+    "zoho_workdrive_api_from_unexpected_process": ("sysmon", "100215"),
     "pan_os_mgmt_auth_from_unexpected_source": ("paloalto", "100220"),
     "entra_aitm_risky_signin_token_replay": ("graph", "100230"),
 }

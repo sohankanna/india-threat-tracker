@@ -148,7 +148,7 @@ def decode_raw(kind, raw):
         if (ev.get("win.system.channel") != wazuh_logs.SYSMON_CHANNEL
                 or ev.get("win.system.severityValue") != "INFORMATION"):
             return None, ev
-        return {"1": "61603", "11": "61613", "13": "61615"}.get(ev.get("win.system.eventID")), ev
+        return {"1": "61603", "11": "61613", "13": "61615", "22": "61650"}.get(ev.get("win.system.eventID")), ev
     if kind == "graph":
         ev = flatten(json.loads(raw))
         return ("87802" if ev.get("azure_tag") == "azure-ad-graph" else None), ev

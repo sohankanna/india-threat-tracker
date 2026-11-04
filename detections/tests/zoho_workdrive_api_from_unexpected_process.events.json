@@ -1,0 +1,37 @@
+{
+ "_note": "Synthetic sample events for rule testing. Not real telemetry. Fields shown in Sysmon/ECS style.",
+ "should_match": [
+  {
+   "EventID": 22,
+   "Image": "C:\\ProgramData\\SolidDocuments\\pdfcreator.exe",
+   "QueryName": "www.zohoapis.com",
+   "_case": "A side-loaded binary in ProgramData calling the Zoho API"
+  },
+  {
+   "EventID": 22,
+   "Image": "C:\\Windows\\System32\\rundll32.exe",
+   "QueryName": "workdrive.zoho.in",
+   "_why": "rundll32 resolving the India WorkDrive host"
+  }
+ ],
+ "should_not_match": [
+  {
+   "EventID": 22,
+   "Image": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+   "QueryName": "www.zohoapis.com",
+   "_why": "a browser using Zoho"
+  },
+  {
+   "EventID": 22,
+   "Image": "C:\\Program Files\\Zoho\\WorkDrive\\workdrive.exe",
+   "QueryName": "workdrive.zoho.com",
+   "_why": "a client installed under a Zoho folder (tune to your real clients)"
+  },
+  {
+   "EventID": 22,
+   "Image": "C:\\Windows\\System32\\rundll32.exe",
+   "QueryName": "www.zoho.com",
+   "_why": "Zoho's website, not the API or WorkDrive hosts"
+  }
+ ]
+}

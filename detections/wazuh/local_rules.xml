@@ -4,14 +4,14 @@
   Drop into /var/ossec/etc/rules/local_rules.xml (or a file alongside it) and restart wazuh-manager.
 
   Field names and parent rule IDs are taken from the Wazuh 4.14 ruleset:
-    61603 / 61613 / 61615  Sysmon Event 1 / 11 / 13   (0595-win-sysmon_rules.xml, fields win.eventdata.*)
+    61603 / 61613 / 61615 / 61650  Sysmon Event 1 / 11 / 13 / 22   (0595-win-sysmon_rules.xml, fields win.eventdata.*)
     64500          Palo Alto base rule          (0700-paloalto_rules.xml; SYSTEM decoder fields:
                                                  type, content_threat_type, event_id, description)
     87802          Microsoft Graph via azure-logs, azure_tag azure-ad-graph (0555-azure_rules.xml);
                    sign-ins pulled with <query>auditLogs/signIns</query> keep Graph's field names
 
   Requirements by rule:
-    100210-100214  Windows + Sysmon (wazuh-agent, Sysmon channel collected).
+    100210-100215  Windows + Sysmon (wazuh-agent, Sysmon channel collected).
     100220         PAN-OS SYSTEM logs forwarded to Wazuh (built-in Palo Alto decoder).
     100230/100231  Entra ID sign-ins via the azure-logs Graph integration.
 
@@ -75,6 +75,18 @@
     <field name="win.eventdata.targetFilename" type="pcre2">(?i)\\+SYSVOL\\+.*(\.(exe|dll|bat|cmd|ps1|vbs|js|hta|msi)|\\+ScheduledTasks\.xml)$</field>
     <description>Payload or GPO scheduled task written to SYSVOL: $(win.eventdata.targetFilename) - check for domain-wide deployment</description>
     <mitre><id>T1484.001</id><id>T1570</id></mitre>
+  </rule>
+
+  <!-- Zoho API / WorkDrive DNS lookup from a process that is not a browser or a
+       Zoho client (Mustang Panda ZOHOMURK uses WorkDrive as a dead drop).
+       Sysmon Event 22 (DNS query) is rule 61650. The image condition is a
+       negative lookahead; TUNE it with your approved Zoho clients. -->
+  <rule id="100215" level="8">
+    <if_sid>61650</if_sid>
+    <field name="win.eventdata.queryName" type="pcre2">(?i)(zohoapis\.(com|in)|workdrive\.zoho\.(com|in))$</field>
+    <field name="win.eventdata.image" type="pcre2">(?i)^(?!.*\\+(chrome|msedge|firefox|brave|opera|iexplore)\.exe$)(?!.*\\+Zoho\\+).+</field>
+    <description>Zoho WorkDrive API lookup by $(win.eventdata.image) - check for cloud dead-drop C2 (Mustang Panda)</description>
+    <mitre><id>T1102.002</id><id>T1567.002</id></mitre>
   </rule>
 
 </group>
