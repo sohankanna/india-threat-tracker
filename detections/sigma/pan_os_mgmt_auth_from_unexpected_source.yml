@@ -13,11 +13,11 @@ references:
   - https://security.paloaltonetworks.com/CVE-2026-0322
 author: Sohan Kanna (@sohankanna)
 date: 2026-10-16
-modified: 2026-10-20
+modified: 2026-11-04
 tags:
-  - attack.initial_access
+  - attack.initial-access
   - attack.t1133
-  - attack.credential_access
+  - attack.credential-access
 logsource:
   product: pan_os
 detection:

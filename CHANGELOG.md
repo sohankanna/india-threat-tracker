@@ -5,6 +5,18 @@ not listed here.
 
 ## Unreleased
 
+### Detections
+
+* Fixed CI after pySigma 2.x: the DNS-change rule's regex no longer uses a
+  `(?!...)` lookahead, which RE2 rejects. The new pattern lists every first and
+  second octet outside RFC1918 and matches exactly the same inputs (checked on
+  37,000 single and multi-resolver values). Approved public resolvers now go in
+  a separate filter instead of inside the pattern.
+* ATT&CK tactic tags use the hyphenated form pySigma 2.x expects
+  (`attack.credential-access`, `attack.initial-access`,
+  `attack.command-and-control`).
+* Sigma tooling pinned to its current major versions.
+
 ### Phase 3: deeper actors, hacktivists and fraud
 
 Every new entry was researched against vendor, CERT, police and court

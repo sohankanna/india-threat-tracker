@@ -14,9 +14,9 @@ references:
   - https://www.sohankanna.com/research/frostarmada-how-apt28-turned-old-home-routers-into-a-microsoft-365-interception-network
 author: Sohan Kanna (@sohankanna)
 date: 2026-10-16
-modified: 2026-10-20
+modified: 2026-11-04
 tags:
-  - attack.command_and_control
+  - attack.command-and-control
   - attack.t1565.001
   - attack.t1071.004
 logsource:
@@ -34,11 +34,18 @@ detection:
   # it matches an IPv4 address at the start or after a separator that does NOT
   # begin with a trusted prefix.
   # Trusted-resolver policy = RFC1918 (10/8, 172.16/12, 192.168/16), identical in
-  # every backend. RFC1918 is private space, not automatically trusted. TUNE: to
-  # approve a public resolver, add it inside the (?!...) group, e.g. |1\.1\.1\.1(?!\d)
+  # every backend. RFC1918 is private space, not automatically trusted.
+  # The pattern spells out every first and second octet outside RFC1918 instead
+  # of using a (?!...) lookahead, because Sigma regexes must be RE2-compatible
+  # (pySigma 2.x rejects lookaheads). TUNE: to approve a public resolver, add it
+  # to filter_approved_resolvers below rather than editing the pattern.
   untrusted_resolver:
-    Details|re: '(?:^|[,; ])(?!(?:10\.|172\.(?:1[6-9]|2[0-9]|3[01])\.|192\.168\.))\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}'
-  condition: selection and untrusted_resolver
+    Details|re: '(?:^|[,; ])(?:(?:0|[1-9]|1[1-9]|[2-9][0-9]|1[0-6][0-9]|17[013-9]|18[0-9]|19[013-9]|2[0-9][0-9]|[3-9][0-9]{2})\.[0-9]{1,3}|172\.(?:[0-9]|1[0-5]|3[2-9]|[4-9][0-9]|[0-9]{3})|192\.(?:[0-9]{1,2}|1[0-5][0-9]|16[0-7]|169|1[7-9][0-9]|2[0-9][0-9]|[3-9][0-9]{2}))\.[0-9]{1,3}\.[0-9]{1,3}'
+  filter_approved_resolvers:
+    # TUNE: approved public resolvers, e.g. '1.1.1.1'. Note this excludes the
+    # whole event when the value contains one, so list only resolvers you trust.
+    Details: 'APPROVED-RESOLVER-PLACEHOLDER'
+  condition: selection and untrusted_resolver and not filter_approved_resolvers
 falsepositives:
   - Approved public resolver not yet allowlisted (e.g. an ISP or corporate DNS)
   - VPN clients or legitimate network changes setting a public resolver

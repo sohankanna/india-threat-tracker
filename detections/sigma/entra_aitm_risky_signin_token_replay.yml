@@ -19,9 +19,9 @@ references:
   - https://www.microsoft.com/en-us/security/blog/2026/04/07/soho-router-compromise-leads-to-dns-hijacking-and-adversary-in-the-middle-attacks
 author: Sohan Kanna (@sohankanna)
 date: 2026-10-16
-modified: 2026-10-20
+modified: 2026-11-04
 tags:
-  - attack.credential_access
+  - attack.credential-access
   - attack.t1557
   - attack.t1550.001
 logsource:
