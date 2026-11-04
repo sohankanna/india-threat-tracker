@@ -4,9 +4,14 @@ Thanks for helping keep this accurate.
 
 ## Adding an entry
 
+Not ready to edit JSON? [Open an issue](https://github.com/sohankanna/india-threat-tracker/issues/new/choose)
+with the "Suggest a new entry" or "Correct an entry" form instead.
+
 1. Pick the right file in `data/`:
    - `smishing-apk.json` — fake-APK / smishing campaigns
    - `apt-campaigns.json` — India-focused APT actors / campaigns
+   - `hacktivist.json` — hacktivist groups, alliances and claim waves; record each
+     claim with the `verification` its source reached, never your own guess
    - `relevance-overrides.json` — to correct an India-relevance tier. Add the CVE
      with `tier`, a `reason` (why, in a sentence) and the `reviewed` date. Never
      edit `exploited-cve.json` or `watchlist.json`: they are regenerated twice a day.
@@ -17,8 +22,9 @@ Thanks for helping keep this accurate.
    pip install -r requirements.txt
    python scripts/validate.py
    ```
-   If you changed `smishing-apk.json`, also run `python scripts/build_iocs.py`
-   so the IOC exports match; CI fails a PR whose exports are stale. CI re-runs
+   If you changed any feed, run `python scripts/build_stix.py` so the STIX
+   bundle matches. If you changed `smishing-apk.json`, also run
+   `python scripts/build_iocs.py` so the IOC exports match; CI fails a PR whose exports are stale. CI re-runs
    everything on every PR (schemas, IOC exports, the detection inventory, the
    test suite, Sigma validation and a conversion test), so a PR that breaks a
    feed or a rule fails automatically before review. Domains and URLs must be

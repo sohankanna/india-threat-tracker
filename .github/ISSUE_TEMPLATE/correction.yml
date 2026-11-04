@@ -1,0 +1,25 @@
+name: Correct an entry
+description: Something in a feed is wrong, outdated or overstated.
+title: "[Correction]: "
+body:
+  - type: input
+    id: entry
+    attributes:
+      label: Entry id
+      description: For example apt-redecho, sm-2025-004, hk-rippersec or a CVE id.
+    validations:
+      required: true
+  - type: textarea
+    id: wrong
+    attributes:
+      label: What is wrong?
+      description: Quote the field or sentence and say what it should be.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Links to the source that supports the correction.
+    validations:
+      required: true

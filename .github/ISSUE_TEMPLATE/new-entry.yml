@@ -1,0 +1,59 @@
+name: Suggest a new entry
+description: A fraud campaign, threat actor, hacktivist claim or vulnerability that should be tracked for India.
+title: "[New entry]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping. Every entry needs public, verifiable sources and evidence that Indian
+        users or organisations are affected. Indicators only: never paste malware samples or live
+        payload links, and defang domains and URLs (`example[.]com`, `hxxps://`).
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What kind of entry is it?
+      options:
+        - Fraud or malware campaign (smishing-apk.json)
+        - Threat actor (apt-campaigns.json)
+        - Hacktivist group or claim (hacktivist.json)
+        - India-relevance correction for a CVE (relevance-overrides.json)
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What is happening?
+      description: Two or three sentences. Who is targeted, how, and since when.
+    validations:
+      required: true
+  - type: textarea
+    id: india
+    attributes:
+      label: Evidence it affects India
+      description: Quote or summarise the part of the source that names Indian targets, victims or lures.
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Sources
+      description: One link per line. Vendor research, CERT-In or other CERT advisories, police statements or court records.
+      placeholder: |
+        https://...
+    validations:
+      required: true
+  - type: textarea
+    id: indicators
+    attributes:
+      label: Indicators (optional, defanged)
+      description: Domains, URLs, SHA-256 hashes, Android package names. Only indicators the source reports for this campaign.
+      render: text
+  - type: checkboxes
+    id: rules
+    attributes:
+      label: Ground rules
+      options:
+        - label: The sources are public, and I have read them.
+          required: true
+        - label: I have not included malware samples, live payload links or personal data of private individuals.
+          required: true
