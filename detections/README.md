@@ -36,6 +36,11 @@ Every rule links back to the write-up on [sohankanna.com](https://www.sohankanna
 | `office_document_spawns_script_interpreter` | Malicious-macro execution (Crimson RAT / APT36) |
 | `chm_help_file_spawns_script_or_lolbin` | Help-file (.chm) delivery running code through hh.exe (Mustang Panda / LOTUSLITE) |
 | `sysvol_payload_or_gpo_scheduled_task_written` | Payload or Group Policy scheduled task staged in SYSVOL/NETLOGON for domain-wide deployment (The Gentlemen) |
+<<<<<<< ours
+=======
+| `zoho_workdrive_api_from_unexpected_process` | Cloud dead-drop C2 over Zoho WorkDrive (Mustang Panda ZOHOMURK) |
+| `ad_bitlocker_recovery_information_read` | BitLocker recovery keys read from AD by a user account (Event 4662) |
+>>>>>>> theirs
 
 Convert to your SIEM with [`sigma`](https://github.com/SigmaHQ/sigma-cli):
 

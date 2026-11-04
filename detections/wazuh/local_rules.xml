@@ -14,6 +14,7 @@
     100210-100214  Windows + Sysmon (wazuh-agent, Sysmon channel collected).
     100220         PAN-OS SYSTEM logs forwarded to Wazuh (built-in Palo Alto decoder).
     100230/100231  Entra ID sign-ins via the azure-logs Graph integration.
+    100240         Windows Security log from domain controllers (Event 4662, rule 60103).
 
   All rules are experimental. Expect to tune. Defensive use only.
 -->
@@ -77,6 +78,22 @@
     <mitre><id>T1484.001</id><id>T1570</id></mitre>
   </rule>
 
+</group>
+
+<!-- BitLocker recovery information read from Active Directory (Event 4662).
+     Windows Security audit-success events are rule 60103 (0580-win-security_rules.xml);
+     no built-in rule handles 4662. Needs "Audit Directory Service Access" success and a
+     SACL on msFVE-RecoveryInformation objects. TUNE: exclude approved helpdesk accounts. -->
+<group name="india_threat_tracker,windows,security,">
+  <rule id="100240" level="10">
+    <if_sid>60103</if_sid>
+    <field name="win.system.eventID">^4662$</field>
+    <field name="win.eventdata.objectType" type="pcre2">(?i)ea715d30-8f53-40d0-bd1e-6109186d782c</field>
+    <field name="win.eventdata.accessMask" type="pcre2">^0x(10|100)$</field>
+    <field name="win.eventdata.subjectUserName" type="pcre2">[^$]$</field>
+    <description>BitLocker recovery information read from AD by $(win.eventdata.subjectUserName)</description>
+    <mitre><id>T1552</id><id>T1087.002</id></mitre>
+  </rule>
 </group>
 
 <!-- PAN-OS management auth from an unexpected source (CVE-2026-0322).

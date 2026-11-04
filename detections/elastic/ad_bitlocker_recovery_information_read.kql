@@ -1,0 +1,7 @@
+// BitLocker Recovery Information Read From Active Directory
+// Source rule: ../sigma/ad_bitlocker_recovery_information_read.yml
+// SCHEMA: Elastic Windows integration (Security channel), fields under winlog.event_data.*.
+// Rule type: KQL query | Index: logs-system.security-* or winlogbeat-*
+// TUNE: add approved helpdesk/MBAM accounts with another "and not" clause.
+
+event.code:"4662" and winlog.event_data.ObjectType:*ea715d30-8f53-40d0-bd1e-6109186d782c* and winlog.event_data.AccessMask:("0x10" or "0x100") and not winlog.event_data.SubjectUserName:*$

@@ -71,7 +71,11 @@ What changed in each release, with validation levels: [CHANGELOG.md](CHANGELOG.m
 
 ## Detections
 
+<<<<<<< ours
 [`detections/`](detections/) holds seven rules, each shipped as **Sigma**,
+=======
+[`detections/`](detections/) holds nine rules, each shipped as **Sigma**,
+>>>>>>> theirs
 **Splunk SPL**, **Elastic** (EQL/KQL, ECS) and **Wazuh**, plus payments-fraud
 logic for the UPI kill chain:
 
@@ -84,6 +88,11 @@ logic for the UPI kill chain:
 | `entra_aitm_risky_signin_token_replay` | High-risk Entra ID sign-in that succeeded | FrostArmada AiTM token theft |
 | `chm_help_file_spawns_script_or_lolbin` | HTML Help (hh.exe) spawning a script host or LOLBin | Mustang Panda CHM delivery to Indian banks (LOTUSLITE) |
 | `sysvol_payload_or_gpo_scheduled_task_written` | Executable, script or GPO scheduled task written to SYSVOL | The Gentlemen ransomware's Group Policy deployment |
+<<<<<<< ours
+=======
+| `zoho_workdrive_api_from_unexpected_process` | Zoho API or WorkDrive lookup by a process that is not a browser or Zoho client | Mustang Panda's ZOHOMURK cloud dead drop |
+| `ad_bitlocker_recovery_information_read` | A user account reading BitLocker recovery keys from Active Directory | Credential theft after an edge compromise (UTA0576, Ivanti chain) |
+>>>>>>> theirs
 
 Read [**DATA-SOURCES.md**](detections/DATA-SOURCES.md) for the telemetry each
 rule needs and [**TESTING.md**](detections/TESTING.md) for a matching and a

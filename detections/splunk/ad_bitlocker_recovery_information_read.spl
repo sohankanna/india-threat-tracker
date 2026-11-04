@@ -1,0 +1,14 @@
+# BitLocker Recovery Information Read From Active Directory  (credential theft after edge compromise)
+# Source rule: ../sigma/ad_bitlocker_recovery_information_read.yml
+# Context:     UTA0576 searched for BitLocker recovery keys after the Ivanti Connect Secure chain (Oct 2026)
+#
+# Requires: Windows Security log from domain controllers (Splunk Add-on for Windows),
+# "Audit Directory Service Access" success, and a SACL on msFVE-RecoveryInformation.
+# TUNE: add approved helpdesk/MBAM accounts to the NOT clause.
+
+source="XmlWinEventLog:Security" EventCode=4662
+    ObjectType="*ea715d30-8f53-40d0-bd1e-6109186d782c*"
+    (AccessMask="0x10" OR AccessMask="0x100")
+    NOT SubjectUserName="*$"
+| table _time, host, SubjectDomainName, SubjectUserName, ObjectName, AccessMask, Properties
+| sort - _time

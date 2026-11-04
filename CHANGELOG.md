@@ -7,6 +7,18 @@ not listed here.
 
 ### Detections (Phase 5)
 
+<<<<<<< ours
+=======
+* New rule `ad_bitlocker_recovery_information_read` (Wazuh 100240): a user
+  account reading BitLocker recovery information from Active Directory, which
+  UTA0576 went after following the Ivanti Connect Secure chain. The first rule on
+  the Windows Security log; the Wazuh emulator and the real-manager replay now
+  handle Security audit events.
+* New rule `zoho_workdrive_api_from_unexpected_process` (Wazuh 100215): a DNS
+  lookup of the Zoho API or WorkDrive hosts by a process that is not a browser
+  or a Zoho client, the cloud dead drop Mustang Panda's ZOHOMURK used against
+  Indian government networks.
+>>>>>>> theirs
 * New rule `sysvol_payload_or_gpo_scheduled_task_written` (Wazuh 100214): an
   executable, script or Group Policy scheduled-task file created under SYSVOL on a
   domain controller, the staging step The Gentlemen use to deploy ransomware
