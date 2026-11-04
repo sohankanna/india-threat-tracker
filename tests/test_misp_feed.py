@@ -62,12 +62,6 @@ class MispFeed(unittest.TestCase):
                     if isinstance(v, str):
                         self.assertNotIn(feed.refang(v).lower(), values, (c["id"], v))
 
-<<<<<<< ours
-    def test_only_blockable_types_are_marked_for_ids(self):
-        for e in self.events.values():
-            for a in e["Attribute"]:
-                self.assertEqual(a["to_ids"], a["type"] in ("domain", "url", "sha256"), a)
-=======
     def test_only_blockable_campaign_indicators_are_marked_for_ids(self):
         for e in self.events.values():
             campaign = any(t["name"].startswith('india-threat-tracker:id="sm-') for t in e["Tag"])
@@ -87,7 +81,6 @@ class MispFeed(unittest.TestCase):
         self.assertFalse(events[0]["Attribute"][0]["to_ids"])
         self.assertIn("first TLS certificate 2026-11-02", events[0]["Attribute"][0]["comment"])
         self.assertEqual(feed.lookalike_event({"generated_at": "2026-11-04", "items": []}), [])
->>>>>>> theirs
 
     def test_uuids_are_unique(self):
         uuids = [a["uuid"] for e in self.events.values() for a in e["Attribute"]] + list(self.events)

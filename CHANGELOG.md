@@ -5,10 +5,6 @@ not listed here.
 
 ## Unreleased
 
-<<<<<<< ours
-<<<<<<< ours
-=======
-=======
 ### ATT&CK layers and coverage (Phase 6)
 
 * New `layers/`: ATT&CK Navigator layers for the techniques of the actors
@@ -44,7 +40,6 @@ not listed here.
   "No note" is never claimed until the scan is complete. See METHODOLOGY.md.
 * Tweet drafts now say when a CERT-In note covers a CVE.
 
->>>>>>> theirs
 ### Distribution (Phase 6)
 
 * New `misp-feed/`: the tracker as a native MISP feed (one event per fraud
@@ -75,10 +70,6 @@ not listed here.
   and administrator passwords; the source does not say keys were taken. The
   earlier wording said they were stolen.
 
-<<<<<<< ours
->>>>>>> theirs
-=======
->>>>>>> theirs
 ### Detections (Phase 5)
 
 * New rule `ad_bitlocker_recovery_information_read` (Wazuh 100240): a user

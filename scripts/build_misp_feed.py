@@ -17,13 +17,9 @@ Events:
     only the campaign's own `iocs` are exported, never `infrastructure`
     context (same rule as data/iocs.txt);
   * one for the India-relevant KEV watchlist (high relevance): vulnerability
-<<<<<<< ours
-    attributes, not for blocking (to_ids false).
-=======
     attributes, not for blocking (to_ids false);
   * one for new lookalike-domain leads (data/lookalike-domains.json, last 30
     days): domain attributes with to_ids false, because they are unverified.
->>>>>>> theirs
 
 Values are re-fanged, as in the STIX bundle: MISP has to correlate real
 values. The human-readable exports (data/iocs.txt, iocs.csv) stay defanged.
@@ -187,10 +183,6 @@ def watchlist_event(watchlist):
                        "(CISA KEV + EPSS)", latest, ts, "2", tags, attrs)]
 
 
-<<<<<<< ours
-def build():
-    events = campaign_events(load("smishing-apk.json")) + watchlist_event(load("watchlist.json"))
-=======
 def lookalike_event(feed):
     """New lookalike-domain leads (last 30 days, still registered). Context only: to_ids off."""
     if not feed or not feed.get("items"):
@@ -219,7 +211,6 @@ def build():
         lookalikes = load("lookalike-domains.json")
     events = (campaign_events(load("smishing-apk.json")) + watchlist_event(load("watchlist.json"))
               + lookalike_event(lookalikes))
->>>>>>> theirs
     files = {}
     manifest = {}
     hashes = []

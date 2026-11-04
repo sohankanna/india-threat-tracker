@@ -42,10 +42,7 @@ organisations, and detection rules for all of it.
 | [`data/lookalike-domains.json`](data/lookalike-domains.json) | Registered lookalike domains of Indian banks, payment apps and government sites (typos, `sbi-kyc`-style dictionary variants, TLD swaps), defanged, with the first TLS certificate for new ones. **Leads, not verdicts** | Daily, automated |
 | [`data/kev-affected.json`](data/kev-affected.json) | Affected products and versions for every KEV CVE, from the official CVE records; feeds the [Exposure Matcher](EXPOSURE-MATCHER.md) | Twice daily, automated |
 | [`data/meta.json`](data/meta.json) | Manifest of every data file, with its schema and cadence | When files change |
-<<<<<<< ours
-=======
 | [`layers/`](layers/) · [`data/attack-coverage.json`](data/attack-coverage.json) | ATT&CK Navigator layers: techniques of the actors targeting India, detection coverage (green/amber/red) and the Mobile techniques of the fraud campaigns; the coverage also as data | Rebuilt with every update |
->>>>>>> theirs
 | [`misp-feed/`](misp-feed/) | The campaigns' indicators and the high-relevance KEV CVEs as a native MISP feed: subscribe a MISP instance to the URL in [misp-feed/README.md](misp-feed/README.md) | Rebuilt with every update |
 
 Every JSON feed is validated against a schema in [`schema/`](schema/) on every
@@ -123,15 +120,11 @@ Full details: [METHODOLOGY.md](METHODOLOGY.md).
 ```
 scripts/fetch_exploited.py   CISA KEV + FIRST EPSS -> exploited-cve.json + watchlist.json
 scripts/build_iocs.py        campaign feed         -> iocs.txt + iocs.csv
-<<<<<<< ours
-scripts/build_misp_feed.py   campaigns + watchlist -> misp-feed/ (native MISP feed)
-=======
 scripts/fetch_certin.py      CERT-In notes         -> certin-notes.json (rate-limited batch per run)
 scripts/build_certin_gap.py  notes + KEV           -> certin-gap.json
 scripts/scan_lookalikes.py   brand list + DNS + CT -> lookalike-domains.json (daily, lookalikes.yml)
 scripts/build_misp_feed.py   campaigns + watchlist -> misp-feed/ (native MISP feed)
 scripts/build_layers.py      ATT&CK mappings + rules -> layers/ + attack-coverage.json (ids checked)
->>>>>>> theirs
 scripts/validate.py          every JSON feed       -> checked against schema/
 scripts/check_inventory.py   detection pack        -> every rule has all formats + a test
 scripts/make_tweet_draft.py  new India-relevant KEV adds -> drafts/<date>.md, and drafts/week-*.md on Mondays

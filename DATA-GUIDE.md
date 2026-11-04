@@ -26,13 +26,10 @@ https://raw.githubusercontent.com/sohankanna/india-threat-tracker/main/data/
 | `relevance-overrides.json` | Hand-reviewed India-relevance decisions the pipeline applies | When an entry is reviewed | [`relevance-overrides.schema.json`](schema/relevance-overrides.schema.json) |
 | `india-threat-tracker-stix.json` | STIX 2.1 Bundle for CTI platforms; mapping, validation and limitations in [STIX-GUIDE.md](STIX-GUIDE.md) | Rebuilt by every automated update; CI rejects a stale bundle | OASIS STIX 2.1 |
 | `misp-feed/` (repo root) | Native MISP feed (manifest, hashes, one file per event): campaign indicators re-fanged, high-relevance KEV CVEs; see [misp-feed/README.md](misp-feed/README.md) | Rebuilt by every automated update; CI rejects a stale feed | MISP feed format |
-<<<<<<< ours
-=======
 | `certin-notes.json` | CERT-In vulnerability notes (CIVN) and how much of each year has been checked | Twice daily, automated (a batch per run) | [`certin-notes.schema.json`](schema/certin-notes.schema.json) |
 | `certin-gap.json` | India-relevant KEV entries matched against CERT-In notes, with lag in days | Rebuilt by every automated update; CI rejects a stale file | [`certin-gap.schema.json`](schema/certin-gap.schema.json) |
 | `lookalike-domains.json` | Lookalike domains of Indian banks, payment apps and government sites. Leads, not verdicts | Daily, automated (`lookalikes.yml`) | [`lookalike-domains.schema.json`](schema/lookalike-domains.schema.json) |
 | `attack-coverage.json` | ATT&CK techniques of the tracked actors and whether a rule covers each (also as Navigator layers in `layers/`) | Rebuilt by every automated update; CI rejects a stale file or an unknown technique id | [`attack-coverage.schema.json`](schema/attack-coverage.schema.json) |
->>>>>>> theirs
 | `kev-affected.json` | Affected products and versions for every KEV CVE, from the official CVE records, not interpreted; used by the [Exposure Matcher](EXPOSURE-MATCHER.md) | Twice daily, automated | [`kev-affected.schema.json`](schema/kev-affected.schema.json) |
 | `meta.json` | Manifest of every data file: kind, format, schema, who updates it and how often | When a file is added or its cadence changes | [`meta.schema.json`](schema/meta.schema.json) |
 

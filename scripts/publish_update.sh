@@ -53,14 +53,9 @@ generate() {
   "$PY" scripts/build_iocs.py
   "$PY" scripts/build_stix.py
   "$PY" scripts/build_misp_feed.py
-<<<<<<< ours
-  "$PY" scripts/validate.py
-  "$PY" -m unittest tests.test_pipeline tests.test_iocs tests.test_stix tests.test_exposure tests.test_misp_feed
-=======
   "$PY" scripts/build_layers.py
   "$PY" scripts/validate.py
   "$PY" -m unittest tests.test_pipeline tests.test_iocs tests.test_stix tests.test_exposure tests.test_misp_feed tests.test_certin
->>>>>>> theirs
   (cd scripts && "$PY" make_tweet_draft.py)
 }
 
@@ -69,20 +64,12 @@ for attempt in $(seq 1 "$ATTEMPTS"); do
     echo "::notice::$BRANCH moved while the update ran. Rebuilding on top of it (attempt $attempt)."
     git fetch --quiet "$REMOTE" "$BRANCH"
     git reset --quiet --hard "$REMOTE/$BRANCH"
-<<<<<<< ours
-    git clean --quiet -fd -- data drafts stix misp-feed
-=======
     git clean --quiet -fd -- data drafts stix misp-feed layers
->>>>>>> theirs
   fi
 
   generate "$attempt"
 
-<<<<<<< ours
-  git add data/ drafts/ stix/ misp-feed/
-=======
   git add data/ drafts/ stix/ misp-feed/ layers/
->>>>>>> theirs
   if git diff --cached --quiet; then
     echo "No changes."
     exit 0
