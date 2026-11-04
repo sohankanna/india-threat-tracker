@@ -35,6 +35,8 @@ organisations, and detection rules for all of it.
 | [`data/assessment.json`](data/assessment.json) | The monthly ranked analyst assessment | Monthly |
 | [`data/relevance-overrides.json`](data/relevance-overrides.json) | Hand-reviewed India-relevance decisions; the pipeline reads them and never overwrites them | When reviewed |
 | [`data/india-threat-tracker-stix.json`](data/india-threat-tracker-stix.json) | STIX 2.1 Bundle of the campaigns, actors, indicators, techniques and assessment: see [STIX-GUIDE.md](STIX-GUIDE.md) | Twice daily, automated |
+| [`data/certin-notes.json`](data/certin-notes.json) | CERT-In vulnerability notes (code, date, severity, CVEs, affected software), collected a small batch at a time | Twice daily, automated |
+| [`data/certin-gap.json`](data/certin-gap.json) | Every India-relevant KEV entry since the start of last year matched against CERT-In's notes: covered (and how many days before or after KEV), no note, or pending until the scan is complete | Twice daily, automated |
 | [`data/kev-affected.json`](data/kev-affected.json) | Affected products and versions for every KEV CVE, from the official CVE records; feeds the [Exposure Matcher](EXPOSURE-MATCHER.md) | Twice daily, automated |
 | [`data/meta.json`](data/meta.json) | Manifest of every data file, with its schema and cadence | When files change |
 
@@ -111,6 +113,12 @@ Full details: [METHODOLOGY.md](METHODOLOGY.md).
 ```
 scripts/fetch_exploited.py   CISA KEV + FIRST EPSS -> exploited-cve.json + watchlist.json
 scripts/build_iocs.py        campaign feed         -> iocs.txt + iocs.csv
+<<<<<<< ours
+=======
+scripts/fetch_certin.py      CERT-In notes         -> certin-notes.json (rate-limited batch per run)
+scripts/build_certin_gap.py  notes + KEV           -> certin-gap.json
+scripts/build_misp_feed.py   campaigns + watchlist -> misp-feed/ (native MISP feed)
+>>>>>>> theirs
 scripts/validate.py          every JSON feed       -> checked against schema/
 scripts/check_inventory.py   detection pack        -> every rule has all formats + a test
 scripts/make_tweet_draft.py  today's KEV adds      -> drafts/<date>.md (a draft, not post-ready)

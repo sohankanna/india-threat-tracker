@@ -5,6 +5,50 @@ not listed here.
 
 ## Unreleased
 
+<<<<<<< ours
+=======
+### CERT-In coverage (Phase 6)
+
+* New `data/certin-notes.json`: CERT-In vulnerability notes (code, date,
+  severity, CVEs, affected software), collected by `scripts/fetch_certin.py` in
+  rate-limited batches by the update job, so the first days backfill this year
+  and last. Seeded with five notes checked by hand.
+* New `data/certin-gap.json`: every India-relevant KEV entry since the start of
+  last year matched against those notes, with the lag between CERT-In and KEV.
+  "No note" is never claimed until the scan is complete. See METHODOLOGY.md.
+* Tweet drafts now say when a CERT-In note covers a CVE.
+
+### Distribution (Phase 6)
+
+* New `misp-feed/`: the tracker as a native MISP feed (one event per fraud
+  campaign with indicators, one with the high-relevance KEV CVEs). A MISP
+  instance can subscribe to the raw GitHub URL. Rebuilt by the update job,
+  checked in CI, and `interop-misp.yml` now subscribes a real MISP to it.
+* New release workflow: pushing a `v*` tag publishes the rule pack and the data
+  bundle as reproducible zips with SHA256SUMS (`scripts/build_release.py`).
+* New [docs/USING.md](docs/USING.md): recipes for MISP, Wazuh, Splunk, Elastic,
+  OpenCTI and fraud teams, each marked tested or untested.
+* `CITATION.cff` so the dataset can be cited.
+
+### Automation
+
+* `scripts/make_tweet_draft.py` now drafts India-relevant KEV additions from
+  the last three days (high relevance, or medium with ransomware use or EPSS of
+  10% or more), never drafts the same CVE twice, notes where the tracker already
+  covers a CVE, and writes a rough post that fits 280 characters with a link to
+  the tracker. On Mondays it also writes a weekly draft. Drafts are never posted.
+* New `scripts/ransomware_counts.py` and monthly `ransomware-counts.yml`: counts
+  ransomware leak-site claims against India from ransomware.live, by month and
+  group, into the run summary. Victim names are never read or stored, nothing is
+  committed, and an API failure is a warning, not a failed run.
+
+### Corrections
+
+* November assessment, item 2: UTA0576 *searched for* BitLocker recovery keys
+  and administrator passwords; the source does not say keys were taken. The
+  earlier wording said they were stolen.
+
+>>>>>>> theirs
 ### Detections (Phase 5)
 
 * New rule `sysvol_payload_or_gpo_scheduled_task_written` (Wazuh 100214): an

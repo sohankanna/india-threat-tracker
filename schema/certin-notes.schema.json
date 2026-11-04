@@ -1,0 +1,137 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "CERT-In vulnerability notes",
+  "description": "CERT-In vulnerability notes (CIVN) collected by scripts/fetch_certin.py, with the scan state that says how much of each year has been checked.",
+  "type": "object",
+  "required": [
+    "feed",
+    "generated_at",
+    "source",
+    "scan",
+    "count",
+    "items"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "feed": {
+      "const": "certin-notes"
+    },
+    "generated_at": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "note": {
+      "type": "string"
+    },
+    "source": {
+      "type": "object",
+      "required": [
+        "title",
+        "url"
+      ],
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string",
+          "pattern": "^https://www\\.cert-in\\.org\\.in/"
+        }
+      }
+    },
+    "scan": {
+      "type": "object",
+      "patternProperties": {
+        "^\\d{4}$": {
+          "type": "object",
+          "required": [
+            "next",
+            "highest_listed",
+            "complete"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "next": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "highest_listed": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "complete": {
+              "type": "boolean"
+            },
+            "stalled": {
+              "type": "string",
+              "description": "Where the scan stopped on a note it could not read, and why"
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "code",
+          "title",
+          "issued",
+          "severity",
+          "cves",
+          "software",
+          "url"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "code": {
+            "type": "string",
+            "pattern": "^CIVN-\\d{4}-\\d{4}$"
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "issued": {
+            "type": "string",
+            "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+          },
+          "severity": {
+            "enum": [
+              "CRITICAL",
+              "HIGH",
+              "MEDIUM",
+              "LOW",
+              "UNKNOWN"
+            ]
+          },
+          "cves": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^CVE-\\d{4}-\\d{4,}$"
+            },
+            "uniqueItems": true
+          },
+          "software": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "maxItems": 20
+          },
+          "url": {
+            "type": "string",
+            "pattern": "^https://www\\.cert-in\\.org\\.in/"
+          }
+        }
+      }
+    }
+  }
+}

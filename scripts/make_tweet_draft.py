@@ -11,8 +11,81 @@ import os
 
 ROOT = os.path.join(os.path.dirname(__file__), "..")
 DATA = os.path.join(ROOT, "data", "exploited-cve.json")
+<<<<<<< ours
 DRAFTS = os.path.join(ROOT, "drafts")
 
+=======
+ASSESSMENT = os.path.join(ROOT, "data", "assessment.json")
+RANSOMWARE = os.path.join(ROOT, "data", "ransomware.json")
+CERTIN = os.path.join(ROOT, "data", "certin-notes.json")
+DRAFTS = os.path.join(ROOT, "drafts")
+
+TRACKER_URL = "https://www.sohankanna.com/tracker#vulnerabilities"
+HASHTAGS = "#CyberSecurity #India"
+LOOKBACK = 3
+MEDIUM_EPSS = 0.1
+TWEET_LIMIT = 280
+URL_WEIGHT = 23  # X counts every link as 23 characters
+CVE_RE = re.compile(r"CVE-\d{4}-\d{4,}")
+
+
+def load(path, default=None):
+    try:
+        with open(path, encoding="utf-8") as f:
+            return json.load(f)
+    except FileNotFoundError:
+        return default
+
+
+def relevant(item):
+    rel = item.get("india_relevance")
+    if rel == "high":
+        return True
+    if rel == "medium":
+        return bool(item.get("known_ransomware")) or (item.get("epss") or 0) >= MEDIUM_EPSS
+    return False
+
+
+def tweet_length(text):
+    """Length roughly as X counts it: a URL is 23, an emoji or CJK character is 2."""
+    text = re.sub(r"https?://\S+", "x" * URL_WEIGHT, text)
+    return sum(2 if ord(c) > 0x10FF else 1 for c in text)
+
+
+def fmt_epss(epss):
+    if epss is None:
+        return "no EPSS score yet"
+    pct = epss * 100
+    return f"EPSS {int(pct)}%" if pct >= 10 else f"EPSS {pct:.1f}%"
+
+
+def product_label(item):
+    vendor, product = item["vendor"].strip(), item["product"].strip()
+    # "WordPress WordPress Core" -> "WordPress Core"
+    first = product.split()[0].lower() if product else ""
+    # "PHP Group PHP" -> "PHP"
+    label = product if first and first in vendor.lower().split() else f"{vendor} {product}"
+    # "Cisco Secure Firewall ASA Software and Cisco Secure FTD Software" -> "Cisco Secure Firewall ASA"
+    if len(label) > 28 and " and " in label:
+        label = label.split(" and ")[0]
+    return re.sub(r" Software$", "", label)
+
+
+def tracker_context():
+    """CVE -> short note on where the tracker already mentions it."""
+    notes = {}
+    for g in (load(RANSOMWARE, {}) or {}).get("items", []):
+        for cve in CVE_RE.findall(json.dumps(g.get("kev", []))):
+            notes.setdefault(cve, []).append(f"linked to {g['name']} in the tracker")
+    for n in (load(CERTIN, {}) or {}).get("items", []):
+        for cve in n.get("cves", []):
+            notes.setdefault(cve, []).append(f"CERT-In {n['code']} ({n['issued']})")
+    assessment = load(ASSESSMENT, {}) or {}
+    for cve in set(CVE_RE.findall(json.dumps(assessment))):
+        notes.setdefault(cve, []).append(f"in the {assessment.get('period', 'current')} assessment")
+    return notes
+
+>>>>>>> theirs
 
 def main():
     with open(DATA) as f:

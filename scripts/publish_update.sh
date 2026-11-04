@@ -34,6 +34,14 @@ generate() {
   else
     "$PY" scripts/fetch_exploited.py --cache "$CACHE"
   fi
+  # CERT-In vulnerability notes: a small, rate-limited batch per run, saved to the
+  # cache so a retry re-applies the same fetch. Never fails the job.
+  if [[ -n "${UPDATE_FROM_CACHE:-}" || "$attempt" -gt 1 ]]; then
+    "$PY" scripts/fetch_certin.py --from-cache "$CACHE"
+  else
+    "$PY" scripts/fetch_certin.py --cache "$CACHE" || echo "::warning::CERT-In fetch failed; keeping the stored notes"
+  fi
+  "$PY" scripts/build_certin_gap.py
   # Affected versions for the Exposure Matcher. Best-effort network fetch on the
   # first attempt; a retry (or a test run) re-syncs with the KEV feed offline.
   if [[ -n "${UPDATE_FROM_CACHE:-}" || "$attempt" -gt 1 ]]; then
@@ -44,7 +52,11 @@ generate() {
   "$PY" scripts/build_iocs.py
   "$PY" scripts/build_stix.py
   "$PY" scripts/validate.py
+<<<<<<< ours
   "$PY" -m unittest tests.test_pipeline tests.test_iocs tests.test_stix tests.test_exposure
+=======
+  "$PY" -m unittest tests.test_pipeline tests.test_iocs tests.test_stix tests.test_exposure tests.test_misp_feed tests.test_certin
+>>>>>>> theirs
   (cd scripts && "$PY" make_tweet_draft.py)
 }
 
