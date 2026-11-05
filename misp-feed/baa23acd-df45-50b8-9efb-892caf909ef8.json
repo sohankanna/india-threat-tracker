@@ -2590,7 +2590,7 @@
     "category": "External analysis",
     "value": "CVE-2026-88771",
     "to_ids": false,
-    "comment": "Citrix NetScaler; KEV 2026-09-27; EPSS 0.832",
+    "comment": "Citrix NetScaler; KEV 2026-09-27; EPSS 0.819",
     "timestamp": "1790467200",
     "distribution": "5",
     "disable_correlation": false
@@ -2601,7 +2601,7 @@
     "category": "External analysis",
     "value": "CVE-2026-88772",
     "to_ids": false,
-    "comment": "Citrix NetScaler; KEV 2026-09-27; EPSS 0.782",
+    "comment": "Citrix NetScaler; KEV 2026-09-27; EPSS 0.766",
     "timestamp": "1790467200",
     "distribution": "5",
     "disable_correlation": false
