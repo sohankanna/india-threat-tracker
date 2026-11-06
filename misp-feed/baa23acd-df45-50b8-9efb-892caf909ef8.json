@@ -2,11 +2,11 @@
  "Event": {
   "uuid": "baa23acd-df45-50b8-9efb-892caf909ef8",
   "info": "India Threat Tracker: actively exploited vulnerabilities, high India relevance (CISA KEV + EPSS)",
-  "date": "2026-10-30",
+  "date": "2026-11-06",
   "threat_level_id": "2",
   "analysis": "2",
-  "timestamp": "1793318400",
-  "publish_timestamp": "1793318400",
+  "timestamp": "1793923200",
+  "publish_timestamp": "1793923200",
   "published": true,
   "Orgc": {
    "name": "India Threat Tracker",
@@ -2557,7 +2557,7 @@
     "category": "External analysis",
     "value": "CVE-2026-76461",
     "to_ids": false,
-    "comment": "Cisco Secure Email Gateway; KEV 2026-09-14; EPSS 0.295",
+    "comment": "Cisco Secure Email Gateway; KEV 2026-09-14; EPSS 0.402",
     "timestamp": "1789344000",
     "distribution": "5",
     "disable_correlation": false
@@ -2678,7 +2678,7 @@
     "category": "External analysis",
     "value": "CVE-2026-76519",
     "to_ids": false,
-    "comment": "Cisco Secure Email Gateway; KEV 2026-10-14; EPSS 0.022",
+    "comment": "Cisco Secure Email Gateway; KEV 2026-10-14; EPSS 0.062",
     "timestamp": "1791936000",
     "distribution": "5",
     "disable_correlation": false
@@ -2757,6 +2757,17 @@
     "to_ids": false,
     "comment": "Ivanti Connect Secure; KEV 2026-10-30; EPSS 0.008",
     "timestamp": "1793318400",
+    "distribution": "5",
+    "disable_correlation": false
+   },
+   {
+    "uuid": "931379cf-225c-5f6e-85b3-c532dd45a788",
+    "type": "vulnerability",
+    "category": "External analysis",
+    "value": "CVE-2026-19868",
+    "to_ids": false,
+    "comment": "SonicWall SonicOS SSLVPN; KEV 2026-11-06",
+    "timestamp": "1793923200",
     "distribution": "5",
     "disable_correlation": false
    }

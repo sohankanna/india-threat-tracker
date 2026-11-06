@@ -11,18 +11,30 @@
   },
   "method": "India-relevant (high/medium) CISA KEV entries added since window_start, matched by CVE ID against CERT-In vulnerability notes (CIVN). lag_days = first CERT-In note date minus KEV date; negative means CERT-In published first. 'no-note' is only used once every note in the window has been checked.",
   "summary": {
-    "kev_considered": 152,
+    "kev_considered": 153,
     "covered": 1,
     "no_note": 0,
-    "pending": 151,
+    "pending": 152,
     "certin_first": 0,
     "same_day": 0,
     "kev_first": 1,
     "median_lag_days": 1,
     "high_relevance_without_note": 0
   },
-  "count": 152,
+  "count": 153,
   "items": [
+    {
+      "cve": "CVE-2026-19868",
+      "vendor": "SonicWall",
+      "product": "SonicOS SSLVPN",
+      "india_relevance": "high",
+      "kev_added": "2026-11-06",
+      "known_ransomware": false,
+      "epss": null,
+      "status": "pending",
+      "certin": [],
+      "lag_days": null
+    },
     {
       "cve": "CVE-2024-27834",
       "vendor": "Apple",
@@ -30,7 +42,7 @@
       "india_relevance": "medium",
       "kev_added": "2026-11-04",
       "known_ransomware": false,
-      "epss": 0.01414,
+      "epss": 0.01502,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -205,7 +217,7 @@
       "india_relevance": "high",
       "kev_added": "2026-10-14",
       "known_ransomware": false,
-      "epss": 0.02152,
+      "epss": 0.06227,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -457,7 +469,7 @@
       "india_relevance": "high",
       "kev_added": "2026-09-14",
       "known_ransomware": false,
-      "epss": 0.29543,
+      "epss": 0.4016,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -1681,7 +1693,7 @@
       "india_relevance": "medium",
       "kev_added": "2026-02-10",
       "known_ransomware": false,
-      "epss": 0.04182,
+      "epss": 0.04335,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -1693,7 +1705,7 @@
       "india_relevance": "medium",
       "kev_added": "2026-02-10",
       "known_ransomware": false,
-      "epss": 0.04865,
+      "epss": 0.05041,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -1705,7 +1717,7 @@
       "india_relevance": "medium",
       "kev_added": "2026-02-10",
       "known_ransomware": false,
-      "epss": 0.02477,
+      "epss": 0.02567,
       "status": "pending",
       "certin": [],
       "lag_days": null
