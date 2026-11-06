@@ -1,0 +1,37 @@
+{
+ "Event": {
+  "uuid": "74a9a066-45d6-5733-b74d-7e6f4cf77e8b",
+  "info": "India Threat Tracker: new lookalike domains of Indian banks, payment apps and government sites (leads, not verified)",
+  "date": "2026-11-06",
+  "threat_level_id": "3",
+  "analysis": "2",
+  "timestamp": "1793923200",
+  "publish_timestamp": "1793923200",
+  "published": true,
+  "Orgc": {
+   "name": "India Threat Tracker",
+   "uuid": "873cc557-a214-58ab-a27d-344165d68378"
+  },
+  "Tag": [
+   {
+    "name": "tlp:clear"
+   },
+   {
+    "name": "india-threat-tracker:id=\"lookalike-leads\""
+   }
+  ],
+  "Attribute": [
+   {
+    "uuid": "c931776c-eebd-561a-b1b2-488d47683248",
+    "type": "domain",
+    "category": "Network activity",
+    "value": "incometax.cc",
+    "to_ids": false,
+    "comment": "Lookalike of Income Tax Department (tld-swap), first seen 2026-11-06. Lead, not verified.",
+    "timestamp": "1793923200",
+    "distribution": "5",
+    "disable_correlation": false
+   }
+  ]
+ }
+}

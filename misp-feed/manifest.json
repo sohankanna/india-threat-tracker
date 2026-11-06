@@ -34,6 +34,26 @@
   "threat_level_id": "2",
   "timestamp": "1792454400"
  },
+ "74a9a066-45d6-5733-b74d-7e6f4cf77e8b": {
+  "Orgc": {
+   "name": "India Threat Tracker",
+   "uuid": "873cc557-a214-58ab-a27d-344165d68378"
+  },
+  "Tag": [
+   {
+    "name": "tlp:clear"
+   },
+   {
+    "name": "india-threat-tracker:id=\"lookalike-leads\""
+   }
+  ],
+  "analysis": "2",
+  "date": "2026-11-06",
+  "info": "India Threat Tracker: new lookalike domains of Indian banks, payment apps and government sites (leads, not verified)",
+  "publish_timestamp": "1793923200",
+  "threat_level_id": "3",
+  "timestamp": "1793923200"
+ },
  "8c2cc098-eb1e-5fae-8b9c-a9bf6bc091a7": {
   "Orgc": {
    "name": "India Threat Tracker",
