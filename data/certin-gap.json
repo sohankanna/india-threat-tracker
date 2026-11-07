@@ -6,7 +6,7 @@
   "scanned": {
     "2026": {
       "checked_through": 0,
-      "highest_listed": 541
+      "highest_listed": 542
     }
   },
   "method": "India-relevant (high/medium) CISA KEV entries added since window_start, matched by CVE ID against CERT-In vulnerability notes (CIVN). lag_days = first CERT-In note date minus KEV date; negative means CERT-In published first. 'no-note' is only used once every note in the window has been checked.",
@@ -30,7 +30,7 @@
       "india_relevance": "high",
       "kev_added": "2026-11-06",
       "known_ransomware": false,
-      "epss": null,
+      "epss": 0.00621,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -385,7 +385,7 @@
       "india_relevance": "high",
       "kev_added": "2026-09-25",
       "known_ransomware": false,
-      "epss": 0.08189,
+      "epss": 0.09852,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -589,7 +589,7 @@
       "india_relevance": "medium",
       "kev_added": "2026-09-08",
       "known_ransomware": false,
-      "epss": 0.34741,
+      "epss": 0.99376,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -709,7 +709,7 @@
       "india_relevance": "high",
       "kev_added": "2026-08-18",
       "known_ransomware": true,
-      "epss": 0.02565,
+      "epss": 0.61668,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -1537,7 +1537,7 @@
       "india_relevance": "medium",
       "kev_added": "2026-03-13",
       "known_ransomware": false,
-      "epss": 0.02693,
+      "epss": 0.02682,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -1549,7 +1549,7 @@
       "india_relevance": "medium",
       "kev_added": "2026-03-13",
       "known_ransomware": false,
-      "epss": 0.02342,
+      "epss": 0.02331,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -1681,7 +1681,7 @@
       "india_relevance": "medium",
       "kev_added": "2026-02-12",
       "known_ransomware": false,
-      "epss": 0.01679,
+      "epss": 0.01654,
       "status": "pending",
       "certin": [],
       "lag_days": null

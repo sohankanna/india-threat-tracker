@@ -203,7 +203,7 @@
     "category": "External analysis",
     "value": "CVE-2020-12271",
     "to_ids": false,
-    "comment": "Sophos SFOS; KEV 2021-11-03; EPSS 0.424; known ransomware use",
+    "comment": "Sophos SFOS; KEV 2021-11-03; EPSS 0.433; known ransomware use",
     "timestamp": "1635897600",
     "distribution": "5",
     "disable_correlation": false
@@ -346,7 +346,7 @@
     "category": "External analysis",
     "value": "CVE-2021-22893",
     "to_ids": false,
-    "comment": "Ivanti Pulse Connect Secure; KEV 2021-11-03; EPSS 0.472; known ransomware use",
+    "comment": "Ivanti Pulse Connect Secure; KEV 2021-11-03; EPSS 0.475; known ransomware use",
     "timestamp": "1635897600",
     "distribution": "5",
     "disable_correlation": false
@@ -1842,7 +1842,7 @@
     "category": "External analysis",
     "value": "CVE-2025-41244",
     "to_ids": false,
-    "comment": "Broadcom VMware Aria Operations and VMware Tools; KEV 2025-10-30; EPSS 0.086",
+    "comment": "Broadcom VMware Aria Operations and VMware Tools; KEV 2025-10-30; EPSS 0.158",
     "timestamp": "1761782400",
     "distribution": "5",
     "disable_correlation": false
@@ -2447,7 +2447,7 @@
     "category": "External analysis",
     "value": "CVE-2026-59310",
     "to_ids": false,
-    "comment": "Broadcom VMware vCenter; KEV 2026-08-18; EPSS 0.026; known ransomware use",
+    "comment": "Broadcom VMware vCenter; KEV 2026-08-18; EPSS 0.617; known ransomware use",
     "timestamp": "1787011200",
     "distribution": "5",
     "disable_correlation": false
@@ -2579,7 +2579,7 @@
     "category": "External analysis",
     "value": "CVE-2026-65660",
     "to_ids": false,
-    "comment": "Microsoft SharePoint; KEV 2026-09-25; EPSS 0.082",
+    "comment": "Microsoft SharePoint; KEV 2026-09-25; EPSS 0.099",
     "timestamp": "1790294400",
     "distribution": "5",
     "disable_correlation": false
@@ -2766,7 +2766,7 @@
     "category": "External analysis",
     "value": "CVE-2026-19868",
     "to_ids": false,
-    "comment": "SonicWall SonicOS SSLVPN; KEV 2026-11-06",
+    "comment": "SonicWall SonicOS SSLVPN; KEV 2026-11-06; EPSS 0.006",
     "timestamp": "1793923200",
     "distribution": "5",
     "disable_correlation": false
