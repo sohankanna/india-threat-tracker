@@ -1199,17 +1199,6 @@
     "disable_correlation": false
    },
    {
-    "uuid": "2788093e-5883-5529-8ec8-93c88bb6ea52",
-    "type": "vulnerability",
-    "category": "External analysis",
-    "value": "CVE-2024-5910",
-    "to_ids": false,
-    "comment": "Palo Alto Networks Expedition; KEV 2024-11-07; EPSS 0.917",
-    "timestamp": "1730937600",
-    "distribution": "5",
-    "disable_correlation": false
-   },
-   {
     "uuid": "d679e74e-8f9d-5026-91f0-09cf0aaebb9f",
     "type": "vulnerability",
     "category": "External analysis",
