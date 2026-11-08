@@ -1831,7 +1831,7 @@
     "category": "External analysis",
     "value": "CVE-2025-41244",
     "to_ids": false,
-    "comment": "Broadcom VMware Aria Operations and VMware Tools; KEV 2025-10-30; EPSS 0.158",
+    "comment": "Broadcom VMware Aria Operations and VMware Tools; KEV 2025-10-30; EPSS 0.164",
     "timestamp": "1761782400",
     "distribution": "5",
     "disable_correlation": false
@@ -1908,7 +1908,7 @@
     "category": "External analysis",
     "value": "CVE-2025-68645",
     "to_ids": false,
-    "comment": "Synacor  Zimbra Collaboration Suite (ZCS); KEV 2026-01-22; EPSS 0.489",
+    "comment": "Synacor  Zimbra Collaboration Suite (ZCS); KEV 2026-01-22; EPSS 0.506",
     "timestamp": "1769040000",
     "distribution": "5",
     "disable_correlation": false
@@ -2447,7 +2447,7 @@
     "category": "External analysis",
     "value": "CVE-2026-73570",
     "to_ids": false,
-    "comment": "Synacor Zimbra Collaboration Suite (ZCS); KEV 2026-08-21; EPSS 0.717",
+    "comment": "Synacor Zimbra Collaboration Suite (ZCS); KEV 2026-08-21; EPSS 0.766",
     "timestamp": "1787270400",
     "distribution": "5",
     "disable_correlation": false
@@ -2513,7 +2513,7 @@
     "category": "External analysis",
     "value": "CVE-2026-19490",
     "to_ids": false,
-    "comment": "Citrix NetScaler; KEV 2026-09-09; EPSS 0.327",
+    "comment": "Citrix NetScaler; KEV 2026-09-09; EPSS 0.333",
     "timestamp": "1788912000",
     "distribution": "5",
     "disable_correlation": false
