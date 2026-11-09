@@ -54,7 +54,7 @@
       "india_relevance": "medium",
       "kev_added": "2026-11-03",
       "known_ransomware": false,
-      "epss": 0.01157,
+      "epss": 0.01199,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -397,7 +397,7 @@
       "india_relevance": "medium",
       "kev_added": "2026-09-24",
       "known_ransomware": false,
-      "epss": 0.90491,
+      "epss": 0.91677,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -1645,7 +1645,7 @@
       "india_relevance": "medium",
       "kev_added": "2026-02-17",
       "known_ransomware": false,
-      "epss": 0.54957,
+      "epss": 0.54461,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -1801,7 +1801,7 @@
       "india_relevance": "medium",
       "kev_added": "2026-01-26",
       "known_ransomware": false,
-      "epss": 0.70795,
+      "epss": 0.70823,
       "status": "pending",
       "certin": [],
       "lag_days": null

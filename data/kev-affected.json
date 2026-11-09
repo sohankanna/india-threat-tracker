@@ -1,10 +1,10 @@
 {
  "coverage": {
   "fetch_failures_this_run": 0,
-  "kev_cves": 1769,
-  "records_published": 1769,
+  "kev_cves": 1773,
+  "records_published": 1773,
   "unavailable": 0,
-  "with_version_entries": 1769
+  "with_version_entries": 1773
  },
  "description": "Affected products and versions for every CISA KEV CVE, as written by the CVE Numbering Authority (and ADPs such as CISA vulnrichment) in the official CVE records. Not interpreted: see EXPOSURE-MATCHER.md for how versions are compared.",
  "feed": "kev-affected",
@@ -219625,6 +219625,25 @@
    "record_updated": "2026-10-17T03:55:27.214Z"
   },
   {
+   "cve": "CVE-2026-102895",
+   "products": [
+    {
+     "default_status": "unknown",
+     "product": "gpustack",
+     "source": "cna",
+     "vendor": "gpustack",
+     "versions": [
+      {
+       "status": "affected",
+       "version": "< 2.2.0"
+      }
+     ]
+    }
+   ],
+   "record_state": "PUBLISHED",
+   "record_updated": "2026-11-09T20:58:23.736Z"
+  },
+  {
    "cve": "CVE-2026-104286",
    "products": [
     {
@@ -223741,6 +223760,25 @@
    "record_updated": "2026-06-10T03:58:04.682Z"
   },
   {
+   "cve": "CVE-2026-116779",
+   "products": [
+    {
+     "default_status": "unknown",
+     "product": "freeswitch",
+     "source": "cna",
+     "vendor": "signalwire",
+     "versions": [
+      {
+       "status": "affected",
+       "version": "< 1.11.3"
+      }
+     ]
+    }
+   ],
+   "record_state": "PUBLISHED",
+   "record_updated": "2026-11-09T20:58:24.393Z"
+  },
+  {
    "cve": "CVE-2026-118527",
    "products": [
     {
@@ -223927,6 +223965,51 @@
    ],
    "record_state": "PUBLISHED",
    "record_updated": "2026-11-04T04:56:31.158Z"
+  },
+  {
+   "cve": "CVE-2026-123158",
+   "products": [
+    {
+     "default_status": "unaffected",
+     "platforms": [
+      "Linux"
+     ],
+     "product": "OpenSSH",
+     "source": "cna",
+     "vendor": "OpenBSD",
+     "versions": [
+      {
+       "less_than": "10.6p2",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    }
+   ],
+   "record_state": "PUBLISHED",
+   "record_updated": "2026-11-09T20:58:24.060Z"
+  },
+  {
+   "cve": "CVE-2026-123218",
+   "products": [
+    {
+     "default_status": "unaffected",
+     "product": "Aspera Faspex",
+     "source": "cna",
+     "vendor": "IBM",
+     "versions": [
+      {
+       "less_than_or_equal": "5.0.19",
+       "status": "affected",
+       "version": "5.0.0",
+       "version_type": "semver"
+      }
+     ]
+    }
+   ],
+   "record_state": "PUBLISHED",
+   "record_updated": "2026-11-09T20:58:24.700Z"
   },
   {
    "cve": "CVE-2026-12569",
@@ -255086,6 +255169,6 @@
    "record_updated": "2026-10-30T23:18:16.598Z"
   }
  ],
- "kev_generated_at": "2026-11-09T10:10:25Z",
+ "kev_generated_at": "2026-11-09T23:30:08Z",
  "source": "CVE Project cvelistV5 (https://github.com/CVEProject/cvelistV5)"
 }

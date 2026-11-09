@@ -500,7 +500,7 @@
     "category": "External analysis",
     "value": "CVE-2018-13383",
     "to_ids": false,
-    "comment": "Fortinet FortiOS and FortiProxy; KEV 2022-01-10; EPSS 0.325; known ransomware use",
+    "comment": "Fortinet FortiOS and FortiProxy; KEV 2022-01-10; EPSS 0.307; known ransomware use",
     "timestamp": "1641772800",
     "distribution": "5",
     "disable_correlation": false
@@ -885,7 +885,7 @@
     "category": "External analysis",
     "value": "CVE-2023-27997",
     "to_ids": false,
-    "comment": "Fortinet FortiOS and FortiProxy SSL-VPN; KEV 2023-06-13; EPSS 0.857; known ransomware use",
+    "comment": "Fortinet FortiOS and FortiProxy SSL-VPN; KEV 2023-06-13; EPSS 0.868; known ransomware use",
     "timestamp": "1686614400",
     "distribution": "5",
     "disable_correlation": false
@@ -1303,7 +1303,7 @@
     "category": "External analysis",
     "value": "CVE-2024-3393",
     "to_ids": false,
-    "comment": "Palo Alto Networks PAN-OS; KEV 2024-12-30; EPSS 0.291",
+    "comment": "Palo Alto Networks PAN-OS; KEV 2024-12-30; EPSS 0.302",
     "timestamp": "1735516800",
     "distribution": "5",
     "disable_correlation": false
@@ -1875,7 +1875,7 @@
     "category": "External analysis",
     "value": "CVE-2025-59718",
     "to_ids": false,
-    "comment": "Fortinet Multiple Products; KEV 2025-12-16; EPSS 0.683",
+    "comment": "Fortinet Multiple Products; KEV 2025-12-16; EPSS 0.681",
     "timestamp": "1765843200",
     "distribution": "5",
     "disable_correlation": false
