@@ -6,23 +6,47 @@
   "scanned": {
     "2026": {
       "checked_through": 0,
-      "highest_listed": 543
+      "highest_listed": 545
     }
   },
   "method": "India-relevant (high/medium) CISA KEV entries added since window_start, matched by CVE ID against CERT-In vulnerability notes (CIVN). lag_days = first CERT-In note date minus KEV date; negative means CERT-In published first. 'no-note' is only used once every note in the window has been checked.",
   "summary": {
-    "kev_considered": 153,
+    "kev_considered": 155,
     "covered": 1,
     "no_note": 0,
-    "pending": 152,
+    "pending": 154,
     "certin_first": 0,
     "same_day": 0,
     "kev_first": 1,
     "median_lag_days": 1,
     "high_relevance_without_note": 0
   },
-  "count": 153,
+  "count": 155,
   "items": [
+    {
+      "cve": "CVE-2026-125350",
+      "vendor": "Google",
+      "product": "Chromium",
+      "india_relevance": "medium",
+      "kev_added": "2026-11-10",
+      "known_ransomware": false,
+      "epss": null,
+      "status": "pending",
+      "certin": [],
+      "lag_days": null
+    },
+    {
+      "cve": "CVE-2026-124194",
+      "vendor": "Microsoft",
+      "product": "Office",
+      "india_relevance": "medium",
+      "kev_added": "2026-11-10",
+      "known_ransomware": false,
+      "epss": null,
+      "status": "pending",
+      "certin": [],
+      "lag_days": null
+    },
     {
       "cve": "CVE-2026-19868",
       "vendor": "SonicWall",
@@ -30,7 +54,7 @@
       "india_relevance": "high",
       "kev_added": "2026-11-06",
       "known_ransomware": false,
-      "epss": 0.00621,
+      "epss": 0.00532,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -277,7 +301,7 @@
       "india_relevance": "high",
       "kev_added": "2026-10-08",
       "known_ransomware": false,
-      "epss": 0.96525,
+      "epss": 0.96916,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -697,7 +721,7 @@
       "india_relevance": "medium",
       "kev_added": "2026-08-18",
       "known_ransomware": false,
-      "epss": 0.01723,
+      "epss": 0.18057,
       "status": "pending",
       "certin": [],
       "lag_days": null

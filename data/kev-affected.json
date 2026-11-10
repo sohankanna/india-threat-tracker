@@ -1,10 +1,10 @@
 {
  "coverage": {
   "fetch_failures_this_run": 0,
-  "kev_cves": 1773,
-  "records_published": 1773,
+  "kev_cves": 1779,
+  "records_published": 1779,
   "unavailable": 0,
-  "with_version_entries": 1773
+  "with_version_entries": 1779
  },
  "description": "Affected products and versions for every CISA KEV CVE, as written by the CVE Numbering Authority (and ADPs such as CISA vulnrichment) in the official CVE records. Not interpreted: see EXPOSURE-MATCHER.md for how versions are compared.",
  "feed": "kev-affected",
@@ -223703,6 +223703,121 @@
    "record_updated": "2026-11-04T17:47:42.136Z"
   },
   {
+   "cve": "CVE-2026-111560",
+   "products": [
+    {
+     "default_status": "unaffected",
+     "product": "Barracuda Email Security Gateway (ESG)",
+     "source": "cna",
+     "vendor": "Barracuda Networks",
+     "versions": [
+      {
+       "less_than_or_equal": "9.4.0.27",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unaffected",
+     "product": "Barracuda Load Balancer Application Delivery Controller (ADC)",
+     "source": "cna",
+     "vendor": "Barracuda Networks",
+     "versions": [
+      {
+       "less_than_or_equal": "6.4.0",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unaffected",
+     "product": "Barracuda Web Application Firewall (WAF)",
+     "source": "cna",
+     "vendor": "Barracuda Networks",
+     "versions": [
+      {
+       "less_than_or_equal": "11.0.1",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unaffected",
+     "product": "Barracuda Web Security Gateway (WSG)",
+     "source": "cna",
+     "vendor": "Barracuda Networks",
+     "versions": [
+      {
+       "less_than_or_equal": "16.1.100.100",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unaffected",
+     "product": "Barracuda Message Archiver (BMA)",
+     "source": "cna",
+     "vendor": "Barracuda Networks",
+     "versions": [
+      {
+       "less_than_or_equal": "5.5.4.0",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unaffected",
+     "product": "Barracuda WAF Control Center (WCC)",
+     "source": "cna",
+     "vendor": "Barracuda Networks",
+     "versions": [
+      {
+       "less_than_or_equal": "2.2.1",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    }
+   ],
+   "record_state": "PUBLISHED",
+   "record_updated": "2026-11-10T19:59:09.313Z"
+  },
+  {
+   "cve": "CVE-2026-111793",
+   "products": [
+    {
+     "default_status": "unaffected",
+     "platforms": [
+      "Linux"
+     ],
+     "product": "Webtop Media Transcoder",
+     "source": "cna",
+     "vendor": "Openwave Messaging (Ireland) Limited",
+     "versions": [
+      {
+       "less_than": "1.1.22.0",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    }
+   ],
+   "record_state": "PUBLISHED",
+   "record_updated": "2026-11-10T19:59:08.777Z"
+  },
+  {
    "cve": "CVE-2026-114625",
    "products": [
     {
@@ -223758,6 +223873,27 @@
    ],
    "record_state": "PUBLISHED",
    "record_updated": "2026-06-10T03:58:04.682Z"
+  },
+  {
+   "cve": "CVE-2026-116606",
+   "products": [
+    {
+     "default_status": "unaffected",
+     "product": "Barracuda Email Security Gateway (ESG)",
+     "source": "cna",
+     "vendor": "Barracuda Networks",
+     "versions": [
+      {
+       "less_than": "9.4.0.030",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    }
+   ],
+   "record_state": "PUBLISHED",
+   "record_updated": "2026-11-10T19:59:09.670Z"
   },
   {
    "cve": "CVE-2026-116779",
@@ -224010,6 +224146,88 @@
    ],
    "record_state": "PUBLISHED",
    "record_updated": "2026-11-09T20:58:24.700Z"
+  },
+  {
+   "cve": "CVE-2026-124194",
+   "products": [
+    {
+     "default_status": "unknown",
+     "platforms": [
+      "32-bit Systems",
+      "x64-based Systems"
+     ],
+     "product": "Microsoft 365 Apps for Enterprise",
+     "source": "cna",
+     "vendor": "Microsoft",
+     "versions": [
+      {
+       "less_than": "https://aka.ms/OfficeSecurityReleases",
+       "status": "affected",
+       "version": "16.0.1",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "platforms": [
+      "32-bit Systems",
+      "x64-based Systems"
+     ],
+     "product": "Microsoft Office LTSC 2021",
+     "source": "cna",
+     "vendor": "Microsoft",
+     "versions": [
+      {
+       "less_than": "16.0.14334.21048",
+       "status": "affected",
+       "version": "16.0.1",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "platforms": [
+      "32-bit Systems",
+      "x64-based Systems"
+     ],
+     "product": "Microsoft Office LTSC 2024",
+     "source": "cna",
+     "vendor": "Microsoft",
+     "versions": [
+      {
+       "less_than": "16.0.17932.21140",
+       "status": "affected",
+       "version": "16.0.0",
+       "version_type": "custom"
+      }
+     ]
+    }
+   ],
+   "record_state": "PUBLISHED",
+   "record_updated": "2026-11-10T19:59:08.417Z"
+  },
+  {
+   "cve": "CVE-2026-125350",
+   "products": [
+    {
+     "default_status": "unknown",
+     "product": "Chrome",
+     "source": "cna",
+     "vendor": "Google",
+     "versions": [
+      {
+       "less_than": "157.0.8103.50",
+       "status": "affected",
+       "version": "157.0.8103.50",
+       "version_type": "custom"
+      }
+     ]
+    }
+   ],
+   "record_state": "PUBLISHED",
+   "record_updated": "2026-11-10T19:59:09.854Z"
   },
   {
    "cve": "CVE-2026-12569",
@@ -234031,6 +234249,25 @@
    ],
    "record_state": "PUBLISHED",
    "record_updated": "2026-09-16T20:14:18.851Z"
+  },
+  {
+   "cve": "CVE-2026-20320",
+   "products": [
+    {
+     "default_status": "unknown",
+     "product": "Cisco BroadWorks",
+     "source": "cna",
+     "vendor": "Cisco",
+     "versions": [
+      {
+       "status": "affected",
+       "version": "N/A"
+      }
+     ]
+    }
+   ],
+   "record_state": "PUBLISHED",
+   "record_updated": "2026-11-10T19:59:09.147Z"
   },
   {
    "cve": "CVE-2026-20349",
@@ -255169,6 +255406,6 @@
    "record_updated": "2026-10-30T23:18:16.598Z"
   }
  ],
- "kev_generated_at": "2026-11-10T10:16:18Z",
+ "kev_generated_at": "2026-11-10T20:56:48Z",
  "source": "CVE Project cvelistV5 (https://github.com/CVEProject/cvelistV5)"
 }

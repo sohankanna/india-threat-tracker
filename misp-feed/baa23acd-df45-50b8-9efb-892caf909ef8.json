@@ -2634,7 +2634,7 @@
     "category": "External analysis",
     "value": "CVE-2016-3081",
     "to_ids": false,
-    "comment": "Apache Struts; KEV 2026-10-08; EPSS 0.965",
+    "comment": "Apache Struts; KEV 2026-10-08; EPSS 0.969",
     "timestamp": "1791417600",
     "distribution": "5",
     "disable_correlation": false
@@ -2755,7 +2755,7 @@
     "category": "External analysis",
     "value": "CVE-2026-19868",
     "to_ids": false,
-    "comment": "SonicWall SonicOS SSLVPN; KEV 2026-11-06; EPSS 0.006",
+    "comment": "SonicWall SonicOS SSLVPN; KEV 2026-11-06; EPSS 0.005",
     "timestamp": "1793923200",
     "distribution": "5",
     "disable_correlation": false
