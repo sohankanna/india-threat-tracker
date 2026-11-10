@@ -2,11 +2,11 @@
  "Event": {
   "uuid": "74a9a066-45d6-5733-b74d-7e6f4cf77e8b",
   "info": "India Threat Tracker: new lookalike domains of Indian banks, payment apps and government sites (leads, not verified)",
-  "date": "2026-11-09",
+  "date": "2026-11-10",
   "threat_level_id": "3",
   "analysis": "2",
-  "timestamp": "1794182400",
-  "publish_timestamp": "1794182400",
+  "timestamp": "1794268800",
+  "publish_timestamp": "1794268800",
   "published": true,
   "Orgc": {
    "name": "India Threat Tracker",
@@ -33,17 +33,6 @@
     "disable_correlation": false
    },
    {
-    "uuid": "2df06e1b-0bd8-5b39-b936-a15ce0ed38d4",
-    "type": "domain",
-    "category": "Network activity",
-    "value": "onlinesbi.com",
-    "to_ids": false,
-    "comment": "Lookalike of State Bank of India (vowel-swap), first seen 2026-11-07. Lead, not verified.",
-    "timestamp": "1794009600",
-    "distribution": "5",
-    "disable_correlation": false
-   },
-   {
     "uuid": "2b60ddee-6c91-5cac-9ebd-455f4a7c5974",
     "type": "domain",
     "category": "Network activity",
@@ -51,6 +40,17 @@
     "to_ids": false,
     "comment": "Lookalike of UIDAI / Aadhaar (transposition), first seen 2026-11-09. Lead, not verified.",
     "timestamp": "1794182400",
+    "distribution": "5",
+    "disable_correlation": false
+   },
+   {
+    "uuid": "9351275e-b2a7-51be-9eb2-8f58c262a30f",
+    "type": "domain",
+    "category": "Network activity",
+    "value": "axisbank.org",
+    "to_ids": false,
+    "comment": "Lookalike of Axis Bank (tld-swap), first seen 2026-11-10, first TLS certificate 2023-03-14. Lead, not verified.",
+    "timestamp": "1794268800",
     "distribution": "5",
     "disable_correlation": false
    }
