@@ -2,11 +2,11 @@
  "Event": {
   "uuid": "74a9a066-45d6-5733-b74d-7e6f4cf77e8b",
   "info": "India Threat Tracker: new lookalike domains of Indian banks, payment apps and government sites (leads, not verified)",
-  "date": "2026-11-10",
+  "date": "2026-11-11",
   "threat_level_id": "3",
   "analysis": "2",
-  "timestamp": "1794268800",
-  "publish_timestamp": "1794268800",
+  "timestamp": "1794355200",
+  "publish_timestamp": "1794355200",
   "published": true,
   "Orgc": {
    "name": "India Threat Tracker",
@@ -51,6 +51,17 @@
     "to_ids": false,
     "comment": "Lookalike of Axis Bank (tld-swap), first seen 2026-11-10, first TLS certificate 2023-03-14. Lead, not verified.",
     "timestamp": "1794268800",
+    "distribution": "5",
+    "disable_correlation": false
+   },
+   {
+    "uuid": "e5db76ba-4740-55a0-919f-e0ae0e6dff4a",
+    "type": "domain",
+    "category": "Network activity",
+    "value": "phonepe-in.com",
+    "to_ids": false,
+    "comment": "Lookalike of PhonePe (various), first seen 2026-11-11. Lead, not verified.",
+    "timestamp": "1794355200",
     "distribution": "5",
     "disable_correlation": false
    }
