@@ -172803,7 +172803,7 @@
     }
    ],
    "record_state": "PUBLISHED",
-   "record_updated": "2026-08-11T03:55:27.853Z"
+   "record_updated": "2026-11-08T14:00:04.906Z"
   },
   {
    "cve": "CVE-2024-23897",
@@ -224120,6 +224120,160 @@
     },
     {
      "default_status": "unknown",
+     "product": "Calibre",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Calibre ICE",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Capital",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Cloud Connector Configurator",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "V1.24.3",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Common Configurator (CC on IEM)",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Common Configurator on Device (CC on Edge)",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "COMOS Walkinside",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Data Flow Monitoring",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "V3.0.18",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Databus Configurator",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "V4.0.1",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "DataXess Configurator",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "V1.5.7",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Designcenter X Essentials",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
      "product": "Desigo CC family V8",
      "source": "adp:siemens-SADP",
      "vendor": "Siemens",
@@ -224140,6 +224294,76 @@
      "versions": [
       {
        "less_than": "*",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Edge OPC UA Server Configurator",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "V2.3.10",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Flow Creator Configurator",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "V1.15.1",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "gDAP (gPROMS Digital Application Platform)",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Gridscale X DSA",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "V5.4",
+       "status": "affected",
+       "version": "V5.3",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Gridscale X PSS®E",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "V36.8.0",
        "status": "affected",
        "version": "0",
        "version_type": "custom"
@@ -224169,6 +224393,356 @@
       {
        "less_than": "*",
        "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "HyperLynx",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Industrial Edge Hub",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Industrial Edge Management Cloud",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Innexis Architecture Native Acceleration 2026",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Insights Hub",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Opcenter Connect Electronics",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Opcenter Connect MOM",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Opcenter Execution Core",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Opcenter Execution Discrete",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Opcenter Execution Foundation",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Opcenter Execution Pharma",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Opcenter Execution Process",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Opcenter Intelligence",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Opcenter Intra Plant Logistics",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Opcenter Quality",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Opcenter RDnL",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Opcenter X",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "PADS Pro Essentials",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "PADS Pro Student Edition",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "PADS Professional",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Pathway to Learning Engineering",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "PAVE360 Automotive 2026",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Polarion",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Process Preparation X",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Project Server Web Administration Tool",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "affected",
        "version": "0",
        "version_type": "custom"
       }
@@ -224232,6 +224806,300 @@
     },
     {
      "default_status": "unknown",
+     "product": "SIMATIC BRAUMAT",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "V8.2 Update 5",
+       "status": "affected",
+       "version": "V8.2 Update 1",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "SIMATIC Profiling Tool",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "SIMATIC SISTAR",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "V8.2 Update 5",
+       "status": "affected",
+       "version": "V8.2 Update 1",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "SIMATIC WinCC Companion",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "SIMATIC WinCC OA V3.20",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "V3.20 P17.1",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "SIMATIC WinCC OA V3.21",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "SIMATIC WinCC Runtime Professional",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "SIMATIC WinCC Unified for Industrial Edge",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "SIMATIC WinCC Unified PC Runtime",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "SIMATIC WinCC Unified SIQENCE",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "SIMATIC WinCC V7/V8",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Simcenter Executable Digital Twin",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Simcenter Studio",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Solid Edge",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Teamcenter Share",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Teamcenter V2412",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Teamcenter V2506",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Teamcenter V2512",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Teamcenter V2606",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "TIA Administrator",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "User Management Component (UMC)",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
      "product": "VersiCharge AC Series",
      "source": "adp:siemens-SADP",
      "vendor": "Siemens",
@@ -224260,7 +225128,7 @@
     },
     {
      "default_status": "unknown",
-     "product": "Cloud Connector Configurator",
+     "product": "Xpedition Designer",
      "source": "adp:siemens-SADP",
      "vendor": "Siemens",
      "versions": [
@@ -224274,105 +225142,7 @@
     },
     {
      "default_status": "unknown",
-     "product": "Common Configurator (CC on IEM)",
-     "source": "adp:siemens-SADP",
-     "vendor": "Siemens",
-     "versions": [
-      {
-       "less_than": "*",
-       "status": "affected",
-       "version": "0",
-       "version_type": "custom"
-      }
-     ]
-    },
-    {
-     "default_status": "unknown",
-     "product": "Common Configurator on Device (CC on Edge)",
-     "source": "adp:siemens-SADP",
-     "vendor": "Siemens",
-     "versions": [
-      {
-       "less_than": "*",
-       "status": "affected",
-       "version": "0",
-       "version_type": "custom"
-      }
-     ]
-    },
-    {
-     "default_status": "unknown",
-     "product": "Data Flow Monitoring",
-     "source": "adp:siemens-SADP",
-     "vendor": "Siemens",
-     "versions": [
-      {
-       "less_than": "*",
-       "status": "affected",
-       "version": "0",
-       "version_type": "custom"
-      }
-     ]
-    },
-    {
-     "default_status": "unknown",
-     "product": "Databus Configurator",
-     "source": "adp:siemens-SADP",
-     "vendor": "Siemens",
-     "versions": [
-      {
-       "less_than": "*",
-       "status": "affected",
-       "version": "0",
-       "version_type": "custom"
-      }
-     ]
-    },
-    {
-     "default_status": "unknown",
-     "product": "Edge OPC UA Server Configurator",
-     "source": "adp:siemens-SADP",
-     "vendor": "Siemens",
-     "versions": [
-      {
-       "less_than": "*",
-       "status": "affected",
-       "version": "0",
-       "version_type": "custom"
-      }
-     ]
-    },
-    {
-     "default_status": "unknown",
-     "product": "Flow Creator Configurator",
-     "source": "adp:siemens-SADP",
-     "vendor": "Siemens",
-     "versions": [
-      {
-       "less_than": "*",
-       "status": "affected",
-       "version": "0",
-       "version_type": "custom"
-      }
-     ]
-    },
-    {
-     "default_status": "unknown",
-     "product": "Industrial Edge Hub",
-     "source": "adp:siemens-SADP",
-     "vendor": "Siemens",
-     "versions": [
-      {
-       "less_than": "*",
-       "status": "affected",
-       "version": "0",
-       "version_type": "custom"
-      }
-     ]
-    },
-    {
-     "default_status": "unknown",
-     "product": "Industrial Edge Management Cloud",
+     "product": "Xpedition Enterprise",
      "source": "adp:siemens-SADP",
      "vendor": "Siemens",
      "versions": [
@@ -224400,7 +225170,7 @@
     }
    ],
    "record_state": "PUBLISHED",
-   "record_updated": "2026-11-04T17:47:42.136Z"
+   "record_updated": "2026-11-10T12:50:00.309Z"
   },
   {
    "cve": "CVE-2026-111560",
@@ -224515,7 +225285,7 @@
     }
    ],
    "record_state": "PUBLISHED",
-   "record_updated": "2026-11-10T19:59:08.777Z"
+   "record_updated": "2026-11-11T04:55:54.627Z"
   },
   {
    "cve": "CVE-2026-114625",
@@ -224612,7 +225382,7 @@
     }
    ],
    "record_state": "PUBLISHED",
-   "record_updated": "2026-11-09T20:58:24.393Z"
+   "record_updated": "2026-11-10T04:55:57.375Z"
   },
   {
    "cve": "CVE-2026-118527",
@@ -224906,7 +225676,7 @@
     }
    ],
    "record_state": "PUBLISHED",
-   "record_updated": "2026-11-10T19:59:08.417Z"
+   "record_updated": "2026-11-11T17:17:53.786Z"
   },
   {
    "cve": "CVE-2026-125350",
@@ -256106,6 +256876,6 @@
    "record_updated": "2026-10-30T23:18:16.598Z"
   }
  ],
- "kev_generated_at": "2026-11-11T21:29:52Z",
+ "kev_generated_at": "2026-11-12T10:08:36Z",
  "source": "CVE Project cvelistV5 (https://github.com/CVEProject/cvelistV5)"
 }
