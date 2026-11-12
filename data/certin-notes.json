@@ -1,6 +1,6 @@
 {
   "feed": "certin-notes",
-  "generated_at": "2026-11-10",
+  "generated_at": "2026-11-12",
   "source": {
     "title": "CERT-In Vulnerability Notes",
     "url": "https://www.cert-in.org.in/s2cMainServlet?pageid=VLNLIST"
@@ -9,7 +9,7 @@
   "scan": {
     "2026": {
       "next": 1,
-      "highest_listed": 545,
+      "highest_listed": 547,
       "complete": false
     }
   },

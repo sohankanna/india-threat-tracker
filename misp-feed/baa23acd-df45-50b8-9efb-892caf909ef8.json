@@ -1732,7 +1732,7 @@
     "category": "External analysis",
     "value": "CVE-2025-49706",
     "to_ids": false,
-    "comment": "Microsoft SharePoint; KEV 2025-07-22; EPSS 0.991; known ransomware use",
+    "comment": "Microsoft SharePoint; KEV 2025-07-22; EPSS 0.999; known ransomware use",
     "timestamp": "1753142400",
     "distribution": "5",
     "disable_correlation": false
@@ -2117,7 +2117,7 @@
     "category": "External analysis",
     "value": "CVE-2026-32201",
     "to_ids": false,
-    "comment": "Microsoft SharePoint Server; KEV 2026-04-14; EPSS 0.434",
+    "comment": "Microsoft SharePoint Server; KEV 2026-04-14; EPSS 0.440",
     "timestamp": "1776124800",
     "distribution": "5",
     "disable_correlation": false
@@ -2205,7 +2205,7 @@
     "category": "External analysis",
     "value": "CVE-2026-20182",
     "to_ids": false,
-    "comment": "Cisco Catalyst SD-WAN; KEV 2026-05-14; EPSS 0.918",
+    "comment": "Cisco Catalyst SD-WAN; KEV 2026-05-14; EPSS 0.911",
     "timestamp": "1778716800",
     "distribution": "5",
     "disable_correlation": false
@@ -2304,7 +2304,7 @@
     "category": "External analysis",
     "value": "CVE-2026-56164",
     "to_ids": false,
-    "comment": "Microsoft SharePoint Server; KEV 2026-07-14; EPSS 0.010",
+    "comment": "Microsoft SharePoint Server; KEV 2026-07-14; EPSS 0.273",
     "timestamp": "1783987200",
     "distribution": "5",
     "disable_correlation": false
@@ -2656,7 +2656,7 @@
     "category": "External analysis",
     "value": "CVE-2026-0322",
     "to_ids": false,
-    "comment": "Palo Alto Networks PAN-OS; KEV 2026-10-14; EPSS 0.017",
+    "comment": "Palo Alto Networks PAN-OS; KEV 2026-10-14; EPSS 0.021",
     "timestamp": "1791936000",
     "distribution": "5",
     "disable_correlation": false
@@ -2689,7 +2689,7 @@
     "category": "External analysis",
     "value": "CVE-2025-61624",
     "to_ids": false,
-    "comment": "Fortinet Multiple Products; KEV 2026-10-16; EPSS 0.013",
+    "comment": "Fortinet Multiple Products; KEV 2026-10-16; EPSS 0.014",
     "timestamp": "1792108800",
     "distribution": "5",
     "disable_correlation": false
@@ -2722,7 +2722,7 @@
     "category": "External analysis",
     "value": "CVE-2026-97229",
     "to_ids": false,
-    "comment": "GitLab Community Edition and Enterprise Edition; KEV 2026-10-29; EPSS 0.652",
+    "comment": "GitLab Community Edition and Enterprise Edition; KEV 2026-10-29; EPSS 0.693",
     "timestamp": "1793232000",
     "distribution": "5",
     "disable_correlation": false

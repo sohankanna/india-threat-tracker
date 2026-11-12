@@ -6,7 +6,7 @@
   "scanned": {
     "2026": {
       "checked_through": 0,
-      "highest_listed": 545
+      "highest_listed": 547
     }
   },
   "method": "India-relevant (high/medium) CISA KEV entries added since window_start, matched by CVE ID against CERT-In vulnerability notes (CIVN). lag_days = first CERT-In note date minus KEV date; negative means CERT-In published first. 'no-note' is only used once every note in the window has been checked.",
@@ -30,7 +30,7 @@
       "india_relevance": "medium",
       "kev_added": "2026-11-10",
       "known_ransomware": false,
-      "epss": null,
+      "epss": 0.00962,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -42,7 +42,7 @@
       "india_relevance": "medium",
       "kev_added": "2026-11-10",
       "known_ransomware": false,
-      "epss": null,
+      "epss": 0.0162,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -114,7 +114,7 @@
       "india_relevance": "high",
       "kev_added": "2026-10-29",
       "known_ransomware": false,
-      "epss": 0.6522,
+      "epss": 0.69289,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -217,7 +217,7 @@
       "india_relevance": "high",
       "kev_added": "2026-10-16",
       "known_ransomware": false,
-      "epss": 0.01343,
+      "epss": 0.01395,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -253,7 +253,7 @@
       "india_relevance": "high",
       "kev_added": "2026-10-14",
       "known_ransomware": false,
-      "epss": 0.0174,
+      "epss": 0.02147,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -601,7 +601,7 @@
       "india_relevance": "medium",
       "kev_added": "2026-09-08",
       "known_ransomware": false,
-      "epss": 0.00393,
+      "epss": 0.07115,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -925,7 +925,7 @@
       "india_relevance": "high",
       "kev_added": "2026-07-14",
       "known_ransomware": false,
-      "epss": 0.01011,
+      "epss": 0.2733,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -1189,7 +1189,7 @@
       "india_relevance": "high",
       "kev_added": "2026-05-14",
       "known_ransomware": false,
-      "epss": 0.91817,
+      "epss": 0.91091,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -1249,7 +1249,7 @@
       "india_relevance": "medium",
       "kev_added": "2026-04-28",
       "known_ransomware": false,
-      "epss": 0.70902,
+      "epss": 0.71324,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -1333,7 +1333,7 @@
       "india_relevance": "high",
       "kev_added": "2026-04-14",
       "known_ransomware": false,
-      "epss": 0.43378,
+      "epss": 0.43954,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -1489,7 +1489,7 @@
       "india_relevance": "medium",
       "kev_added": "2026-03-20",
       "known_ransomware": false,
-      "epss": 0.00425,
+      "epss": 0.00441,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -1501,7 +1501,7 @@
       "india_relevance": "medium",
       "kev_added": "2026-03-20",
       "known_ransomware": false,
-      "epss": 0.00355,
+      "epss": 0.00369,
       "status": "pending",
       "certin": [],
       "lag_days": null
