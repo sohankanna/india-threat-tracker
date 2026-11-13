@@ -1,12 +1,12 @@
 {
   "feed": "certin-gap",
-  "generated_at": "2026-11-12",
+  "generated_at": "2026-11-13",
   "window_start": "2026-01-01",
   "scan_complete": false,
   "scanned": {
     "2026": {
       "checked_through": 0,
-      "highest_listed": 547
+      "highest_listed": 549
     }
   },
   "method": "India-relevant (high/medium) CISA KEV entries added since window_start, matched by CVE ID against CERT-In vulnerability notes (CIVN). lag_days = first CERT-In note date minus KEV date; negative means CERT-In published first. 'no-note' is only used once every note in the window has been checked.",

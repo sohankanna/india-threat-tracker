@@ -1199,28 +1199,6 @@
     "disable_correlation": false
    },
    {
-    "uuid": "d679e74e-8f9d-5026-91f0-09cf0aaebb9f",
-    "type": "vulnerability",
-    "category": "External analysis",
-    "value": "CVE-2014-2120",
-    "to_ids": false,
-    "comment": "Cisco Adaptive Security Appliance (ASA); KEV 2024-11-12; EPSS 0.226",
-    "timestamp": "1731369600",
-    "distribution": "5",
-    "disable_correlation": false
-   },
-   {
-    "uuid": "780a423e-002e-599c-9391-2aa219d541fc",
-    "type": "vulnerability",
-    "category": "External analysis",
-    "value": "CVE-2021-26086",
-    "to_ids": false,
-    "comment": "Atlassian Jira Server and Data Center; KEV 2024-11-12; EPSS 1.000",
-    "timestamp": "1731369600",
-    "distribution": "5",
-    "disable_correlation": false
-   },
-   {
     "uuid": "f526469e-00f6-592b-be0d-722f959f9822",
     "type": "vulnerability",
     "category": "External analysis",
