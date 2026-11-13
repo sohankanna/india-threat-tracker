@@ -1666,7 +1666,7 @@
     "category": "External analysis",
     "value": "CVE-2025-5777",
     "to_ids": false,
-    "comment": "Citrix NetScaler ADC and Gateway; KEV 2025-07-10; EPSS 1.000; known ransomware use",
+    "comment": "Citrix NetScaler ADC and Gateway; KEV 2025-07-10; EPSS 0.999; known ransomware use",
     "timestamp": "1752105600",
     "distribution": "5",
     "disable_correlation": false
@@ -1886,7 +1886,7 @@
     "category": "External analysis",
     "value": "CVE-2025-68645",
     "to_ids": false,
-    "comment": "Synacor  Zimbra Collaboration Suite (ZCS); KEV 2026-01-22; EPSS 0.506",
+    "comment": "Synacor Zimbra Collaboration Suite (ZCS); KEV 2026-01-22; EPSS 0.506",
     "timestamp": "1769040000",
     "distribution": "5",
     "disable_correlation": false
@@ -1985,7 +1985,7 @@
     "category": "External analysis",
     "value": "CVE-2026-1603",
     "to_ids": false,
-    "comment": "Ivanti  Endpoint Manager (EPM); KEV 2026-03-09; EPSS 0.883",
+    "comment": "Ivanti Endpoint Manager (EPM); KEV 2026-03-09; EPSS 0.883",
     "timestamp": "1773014400",
     "distribution": "5",
     "disable_correlation": false
@@ -2392,7 +2392,7 @@
     "category": "External analysis",
     "value": "CVE-2026-20349",
     "to_ids": false,
-    "comment": "Cisco Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD) ; KEV 2026-08-11; EPSS 0.010",
+    "comment": "Cisco Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD); KEV 2026-08-11; EPSS 0.010",
     "timestamp": "1786406400",
     "distribution": "5",
     "disable_correlation": false

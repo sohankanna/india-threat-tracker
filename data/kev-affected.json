@@ -1,10 +1,10 @@
 {
  "coverage": {
   "fetch_failures_this_run": 0,
-  "kev_cves": 1779,
-  "records_published": 1779,
+  "kev_cves": 1781,
+  "records_published": 1781,
   "unavailable": 0,
-  "with_version_entries": 1779
+  "with_version_entries": 1781
  },
  "description": "Affected products and versions for every CISA KEV CVE, as written by the CVE Numbering Authority (and ADPs such as CISA vulnrichment) in the official CVE records. Not interpreted: see EXPOSURE-MATCHER.md for how versions are compared.",
  "feed": "kev-affected",
@@ -225324,6 +225324,30 @@
    "record_updated": "2026-10-24T03:55:14.884Z"
   },
   {
+   "cve": "CVE-2026-114713",
+   "products": [
+    {
+     "default_status": "unaffected",
+     "modules": [
+      "labeled-response"
+     ],
+     "product": "UnrealIRCd",
+     "source": "cna",
+     "vendor": "UnrealIRCd",
+     "versions": [
+      {
+       "less_than": "6.2.7.1",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    }
+   ],
+   "record_state": "PUBLISHED",
+   "record_updated": "2026-11-13T19:25:14.456Z"
+  },
+  {
    "cve": "CVE-2026-11645",
    "products": [
     {
@@ -225571,6 +225595,61 @@
    ],
    "record_state": "PUBLISHED",
    "record_updated": "2026-11-04T04:56:31.158Z"
+  },
+  {
+   "cve": "CVE-2026-123039",
+   "products": [
+    {
+     "default_status": "unknown",
+     "product": "Quantum Security Gateway",
+     "source": "cna",
+     "vendor": "checkpoint",
+     "versions": [
+      {
+       "status": "affected",
+       "version": "R82.10 with Jumbo Hotfix Take 50 or below"
+      },
+      {
+       "status": "affected",
+       "version": "R82.20 with Jumbo Hotfix Take 10 or below"
+      },
+      {
+       "status": "affected",
+       "version": "R82 with Jumbo Hotfix Take 130 or below"
+      },
+      {
+       "status": "affected",
+       "version": "R81.20 with Jumbo Hotfix Take 173 or below"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Quantum Security Management",
+     "source": "cna",
+     "vendor": "checkpoint",
+     "versions": [
+      {
+       "status": "affected",
+       "version": "R82.10 with Jumbo Hotfix Take 50 or below"
+      },
+      {
+       "status": "affected",
+       "version": "R82.20 with Jumbo Hotfix Take 10 or below"
+      },
+      {
+       "status": "affected",
+       "version": "R82 with Jumbo Hotfix Take 130 or below"
+      },
+      {
+       "status": "affected",
+       "version": "R81.20 with Jumbo Hotfix Take 173 or below"
+      }
+     ]
+    }
+   ],
+   "record_state": "PUBLISHED",
+   "record_updated": "2026-11-13T19:25:14.608Z"
   },
   {
    "cve": "CVE-2026-123158",
@@ -256876,6 +256955,6 @@
    "record_updated": "2026-10-30T23:18:16.598Z"
   }
  ],
- "kev_generated_at": "2026-11-13T09:53:39Z",
+ "kev_generated_at": "2026-11-13T20:56:57Z",
  "source": "CVE Project cvelistV5 (https://github.com/CVEProject/cvelistV5)"
 }
