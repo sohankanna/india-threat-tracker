@@ -1081,7 +1081,7 @@
       "india_relevance": "medium",
       "kev_added": "2026-06-02",
       "known_ransomware": false,
-      "epss": 0.01947,
+      "epss": 0.01995,
       "status": "pending",
       "certin": [],
       "lag_days": null
