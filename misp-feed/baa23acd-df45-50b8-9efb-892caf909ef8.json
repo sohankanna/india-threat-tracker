@@ -203,7 +203,7 @@
     "category": "External analysis",
     "value": "CVE-2020-12271",
     "to_ids": false,
-    "comment": "Sophos SFOS; KEV 2021-11-03; EPSS 0.433; known ransomware use",
+    "comment": "Sophos SFOS; KEV 2021-11-03; EPSS 0.431; known ransomware use",
     "timestamp": "1635897600",
     "distribution": "5",
     "disable_correlation": false
@@ -1314,7 +1314,7 @@
     "category": "External analysis",
     "value": "CVE-2020-15069",
     "to_ids": false,
-    "comment": "Sophos XG Firewall; KEV 2025-02-06; EPSS 0.107",
+    "comment": "Sophos XG Firewall; KEV 2025-02-06; EPSS 0.104",
     "timestamp": "1738800000",
     "distribution": "5",
     "disable_correlation": false

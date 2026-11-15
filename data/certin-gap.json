@@ -1069,7 +1069,7 @@
       "india_relevance": "medium",
       "kev_added": "2026-06-09",
       "known_ransomware": false,
-      "epss": 0.0244,
+      "epss": 0.02481,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -1393,7 +1393,7 @@
       "india_relevance": "medium",
       "kev_added": "2026-04-13",
       "known_ransomware": false,
-      "epss": 0.12087,
+      "epss": 0.12156,
       "status": "pending",
       "certin": [],
       "lag_days": null
