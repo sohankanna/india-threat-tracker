@@ -1199,28 +1199,6 @@
     "disable_correlation": false
    },
    {
-    "uuid": "f526469e-00f6-592b-be0d-722f959f9822",
-    "type": "vulnerability",
-    "category": "External analysis",
-    "value": "CVE-2024-9463",
-    "to_ids": false,
-    "comment": "Palo Alto Networks Expedition; KEV 2024-11-14; EPSS 0.985",
-    "timestamp": "1731542400",
-    "distribution": "5",
-    "disable_correlation": false
-   },
-   {
-    "uuid": "3fe186f0-647e-58e5-8880-31006cd313d0",
-    "type": "vulnerability",
-    "category": "External analysis",
-    "value": "CVE-2024-9465",
-    "to_ids": false,
-    "comment": "Palo Alto Networks Expedition; KEV 2024-11-14; EPSS 0.996",
-    "timestamp": "1731542400",
-    "distribution": "5",
-    "disable_correlation": false
-   },
-   {
     "uuid": "0a4cfb1e-0fbb-5141-b411-35a2362cb5cc",
     "type": "vulnerability",
     "category": "External analysis",

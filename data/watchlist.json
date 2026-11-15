@@ -1,9 +1,9 @@
 {
   "feed": "exploited-cve-watchlist",
-  "generated_at": "2026-11-14T19:22:22Z",
+  "generated_at": "2026-11-15T09:48:00Z",
   "source": "CISA KEV + FIRST EPSS",
   "total_kev": 1781,
-  "count": 505,
+  "count": 503,
   "enrichment": {
     "epss_available": 1781,
     "epss_missing": 0,
@@ -9259,68 +9259,6 @@
         {
           "title": "NVD - CVE-2024-0012",
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-0012"
-        }
-      ]
-    },
-    {
-      "cve": "CVE-2024-9465",
-      "vendor": "Palo Alto Networks",
-      "product": "Expedition",
-      "name": "Palo Alto Networks Expedition SQL Injection Vulnerability",
-      "description": "Palo Alto Networks Expedition contains a SQL injection vulnerability that allows an unauthenticated attacker to reveal Expedition database contents, such as password hashes, usernames, device configurations, and device API keys. With this, attackers can also create and read arbitrary files on the Expedition system.",
-      "date_added": "2024-11-14",
-      "due_date": "2024-12-05",
-      "required_action": "Apply mitigations per vendor instructions or discontinue use of the product if mitigations are unavailable.",
-      "known_ransomware": false,
-      "cwes": [
-        "CWE-89"
-      ],
-      "epss": 0.99626,
-      "epss_percentile": 0.99948,
-      "epss_date": "2026-11-14",
-      "india_relevance": "high",
-      "relevance_match": "palo alto",
-      "watchlist": true,
-      "tags": [],
-      "sources": [
-        {
-          "title": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "title": "NVD - CVE-2024-9465",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-9465"
-        }
-      ]
-    },
-    {
-      "cve": "CVE-2024-9463",
-      "vendor": "Palo Alto Networks",
-      "product": "Expedition",
-      "name": "Palo Alto Networks Expedition OS Command Injection Vulnerability",
-      "description": "Palo Alto Networks Expedition contains an OS command injection vulnerability that allows an unauthenticated attacker to run arbitrary OS commands as root in Expedition, resulting in disclosure of usernames, cleartext passwords, device configurations, and device API keys of PAN-OS firewalls.",
-      "date_added": "2024-11-14",
-      "due_date": "2024-12-05",
-      "required_action": "Apply mitigations per vendor instructions or discontinue use of the product if mitigations are unavailable.",
-      "known_ransomware": false,
-      "cwes": [
-        "CWE-78"
-      ],
-      "epss": 0.98546,
-      "epss_percentile": 0.99923,
-      "epss_date": "2026-11-14",
-      "india_relevance": "high",
-      "relevance_match": "palo alto",
-      "watchlist": true,
-      "tags": [],
-      "sources": [
-        {
-          "title": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "title": "NVD - CVE-2024-9463",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-9463"
         }
       ]
     },

@@ -225345,7 +225345,7 @@
     }
    ],
    "record_state": "PUBLISHED",
-   "record_updated": "2026-11-13T19:25:14.456Z"
+   "record_updated": "2026-11-14T04:56:44.537Z"
   },
   {
    "cve": "CVE-2026-11645",
@@ -225694,7 +225694,7 @@
     }
    ],
    "record_state": "PUBLISHED",
-   "record_updated": "2026-11-09T20:58:24.700Z"
+   "record_updated": "2026-11-10T04:56:17.187Z"
   },
   {
    "cve": "CVE-2026-124194",
@@ -235816,7 +235816,7 @@
     }
    ],
    "record_state": "PUBLISHED",
-   "record_updated": "2026-11-10T19:59:09.147Z"
+   "record_updated": "2026-11-13T20:49:01.482Z"
   },
   {
    "cve": "CVE-2026-20349",
@@ -250388,7 +250388,7 @@
     }
    ],
    "record_state": "PUBLISHED",
-   "record_updated": "2026-11-01T17:36:32.366Z"
+   "record_updated": "2026-11-10T22:39:34.284Z"
   },
   {
    "cve": "CVE-2026-55255",
@@ -255268,7 +255268,7 @@
     }
    ],
    "record_state": "PUBLISHED",
-   "record_updated": "2026-10-31T16:17:44.501Z"
+   "record_updated": "2026-11-10T21:38:14.835Z"
   },
   {
    "cve": "CVE-2026-82078",
@@ -255419,7 +255419,7 @@
      "vendor": "AVB Disc Soft",
      "versions": [
       {
-       "less_than": "2.6.0.*",
+       "less_than": "12.6.0.*",
        "status": "affected",
        "version": "12.5.0.2421",
        "version_type": "semver"
@@ -255428,7 +255428,7 @@
     }
    ],
    "record_state": "PUBLISHED",
-   "record_updated": "2026-05-28T03:55:20.809Z"
+   "record_updated": "2026-11-11T15:28:05.468Z"
   },
   {
    "cve": "CVE-2026-8452",
@@ -256916,7 +256916,7 @@
     }
    ],
    "record_state": "PUBLISHED",
-   "record_updated": "2026-10-31T18:11:44.034Z"
+   "record_updated": "2026-11-10T20:45:19.210Z"
   },
   {
    "cve": "CVE-2026-97229",
@@ -256955,6 +256955,6 @@
    "record_updated": "2026-10-30T23:18:16.598Z"
   }
  ],
- "kev_generated_at": "2026-11-14T19:22:22Z",
+ "kev_generated_at": "2026-11-15T09:48:00Z",
  "source": "CVE Project cvelistV5 (https://github.com/CVEProject/cvelistV5)"
 }
