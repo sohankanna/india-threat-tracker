@@ -1721,7 +1721,7 @@
     "category": "External analysis",
     "value": "CVE-2025-7775",
     "to_ids": false,
-    "comment": "Citrix NetScaler; KEV 2025-08-26; EPSS 0.207",
+    "comment": "Citrix NetScaler; KEV 2025-08-26; EPSS 0.211",
     "timestamp": "1756166400",
     "distribution": "5",
     "disable_correlation": false
@@ -2304,7 +2304,7 @@
     "category": "External analysis",
     "value": "CVE-2026-50522",
     "to_ids": false,
-    "comment": "Microsoft SharePoint; KEV 2026-07-22; EPSS 0.030",
+    "comment": "Microsoft SharePoint; KEV 2026-07-22; EPSS 0.819",
     "timestamp": "1784678400",
     "distribution": "5",
     "disable_correlation": false
