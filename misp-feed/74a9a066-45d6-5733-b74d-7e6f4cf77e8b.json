@@ -2,11 +2,11 @@
  "Event": {
   "uuid": "74a9a066-45d6-5733-b74d-7e6f4cf77e8b",
   "info": "India Threat Tracker: new lookalike domains of Indian banks, payment apps and government sites (leads, not verified)",
-  "date": "2026-11-14",
+  "date": "2026-11-17",
   "threat_level_id": "3",
   "analysis": "2",
-  "timestamp": "1794614400",
-  "publish_timestamp": "1794614400",
+  "timestamp": "1794873600",
+  "publish_timestamp": "1794873600",
   "published": true,
   "Orgc": {
    "name": "India Threat Tracker",
@@ -62,6 +62,17 @@
     "to_ids": false,
     "comment": "Lookalike of State Bank of India (dictionary), first seen 2026-11-14. Lead, not verified.",
     "timestamp": "1794614400",
+    "distribution": "5",
+    "disable_correlation": false
+   },
+   {
+    "uuid": "9dd5aa49-9299-5619-a421-9a87e49c07fe",
+    "type": "domain",
+    "category": "Network activity",
+    "value": "bankofbaroda-in.com",
+    "to_ids": false,
+    "comment": "Lookalike of Bank of Baroda (various), first seen 2026-11-17. Lead, not verified.",
+    "timestamp": "1794873600",
     "distribution": "5",
     "disable_correlation": false
    }
