@@ -1,10 +1,10 @@
 {
  "coverage": {
   "fetch_failures_this_run": 0,
-  "kev_cves": 1781,
-  "records_published": 1781,
+  "kev_cves": 1782,
+  "records_published": 1782,
   "unavailable": 0,
-  "with_version_entries": 1781
+  "with_version_entries": 1782
  },
  "description": "Affected products and versions for every CISA KEV CVE, as written by the CVE Numbering Authority (and ADPs such as CISA vulnrichment) in the official CVE records. Not interpreted: see EXPOSURE-MATCHER.md for how versions are compared.",
  "feed": "kev-affected",
@@ -225362,6 +225362,51 @@
    "record_updated": "2026-11-14T04:56:44.537Z"
   },
   {
+   "cve": "CVE-2026-115731",
+   "products": [
+    {
+     "default_status": "affected",
+     "product": "Puppet Enterprise",
+     "source": "cna",
+     "vendor": "Perforce",
+     "versions": [
+      {
+       "less_than": "2023.8.13",
+       "status": "affected",
+       "version": "2023.8.0",
+       "version_type": "custom"
+      },
+      {
+       "less_than": "2025.12.1",
+       "status": "affected",
+       "version": "2025.0.0",
+       "version_type": "custom"
+      },
+      {
+       "less_than": "2026.0.1",
+       "status": "affected",
+       "version": "2026.0.0",
+       "version_type": "custom"
+      },
+      {
+       "status": "unaffected",
+       "version": "2023.8.13"
+      },
+      {
+       "status": "unaffected",
+       "version": "2025.12.1"
+      },
+      {
+       "status": "unaffected",
+       "version": "2026.0.1"
+      }
+     ]
+    }
+   ],
+   "record_state": "PUBLISHED",
+   "record_updated": "2026-11-17T20:58:23.848Z"
+  },
+  {
    "cve": "CVE-2026-11645",
    "products": [
     {
@@ -256969,6 +257014,6 @@
    "record_updated": "2026-10-30T23:18:16.598Z"
   }
  ],
- "kev_generated_at": "2026-11-17T11:00:35Z",
+ "kev_generated_at": "2026-11-17T22:32:30Z",
  "source": "CVE Project cvelistV5 (https://github.com/CVEProject/cvelistV5)"
 }

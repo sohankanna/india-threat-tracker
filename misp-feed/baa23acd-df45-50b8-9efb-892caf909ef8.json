@@ -1798,7 +1798,7 @@
     "category": "External analysis",
     "value": "CVE-2025-9242",
     "to_ids": false,
-    "comment": "WatchGuard Firebox; KEV 2025-11-12; EPSS 0.922",
+    "comment": "WatchGuard Firebox; KEV 2025-11-12; EPSS 0.925",
     "timestamp": "1762905600",
     "distribution": "5",
     "disable_correlation": false
