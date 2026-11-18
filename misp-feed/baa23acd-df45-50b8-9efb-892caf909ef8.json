@@ -654,7 +654,7 @@
     "category": "External analysis",
     "value": "CVE-2021-26085",
     "to_ids": false,
-    "comment": "Atlassian Confluence Server; KEV 2022-03-28; EPSS 0.999; known ransomware use",
+    "comment": "Atlassian Confluence Server; KEV 2022-03-28; EPSS 1.000; known ransomware use",
     "timestamp": "1648425600",
     "distribution": "5",
     "disable_correlation": false
@@ -2018,7 +2018,7 @@
     "category": "External analysis",
     "value": "CVE-2026-3055",
     "to_ids": false,
-    "comment": "Citrix NetScaler; KEV 2026-03-30; EPSS 0.915",
+    "comment": "Citrix NetScaler; KEV 2026-03-30; EPSS 0.917",
     "timestamp": "1774828800",
     "distribution": "5",
     "disable_correlation": false
