@@ -223955,6 +223955,34 @@
     },
     {
      "default_status": "unknown",
+     "product": "WTV676-HB6035 Firmware",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "WTV776-HB6035 Firmware",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
      "product": "Xcargo",
      "source": "adp:siemens-SADP",
      "vendor": "Siemens",
@@ -224039,7 +224067,7 @@
     }
    ],
    "record_state": "PUBLISHED",
-   "record_updated": "2026-11-05T18:17:39.997Z"
+   "record_updated": "2026-11-16T15:18:24.606Z"
   },
   {
    "cve": "CVE-2026-110447",
@@ -225708,7 +225736,7 @@
     }
    ],
    "record_state": "PUBLISHED",
-   "record_updated": "2026-11-13T19:25:14.608Z"
+   "record_updated": "2026-11-14T04:56:46.064Z"
   },
   {
    "cve": "CVE-2026-123158",
@@ -257014,6 +257042,6 @@
    "record_updated": "2026-10-30T23:18:16.598Z"
   }
  ],
- "kev_generated_at": "2026-11-17T22:32:30Z",
+ "kev_generated_at": "2026-11-18T10:34:55Z",
  "source": "CVE Project cvelistV5 (https://github.com/CVEProject/cvelistV5)"
 }
