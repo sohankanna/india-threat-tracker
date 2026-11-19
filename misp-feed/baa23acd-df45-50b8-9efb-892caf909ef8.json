@@ -852,7 +852,7 @@
     "category": "External analysis",
     "value": "CVE-2022-41080",
     "to_ids": false,
-    "comment": "Microsoft Exchange Server; KEV 2023-01-10; EPSS 0.773; known ransomware use",
+    "comment": "Microsoft Exchange Server; KEV 2023-01-10; EPSS 0.769; known ransomware use",
     "timestamp": "1673308800",
     "distribution": "5",
     "disable_correlation": false
@@ -1336,7 +1336,7 @@
     "category": "External analysis",
     "value": "CVE-2025-0108",
     "to_ids": false,
-    "comment": "Palo Alto Networks PAN-OS; KEV 2025-02-18; EPSS 0.985",
+    "comment": "Palo Alto Networks PAN-OS; KEV 2025-02-18; EPSS 0.986",
     "timestamp": "1739836800",
     "distribution": "5",
     "disable_correlation": false
@@ -1842,7 +1842,7 @@
     "category": "External analysis",
     "value": "CVE-2025-14733",
     "to_ids": false,
-    "comment": "WatchGuard Firebox; KEV 2025-12-19; EPSS 0.294; known ransomware use",
+    "comment": "WatchGuard Firebox; KEV 2025-12-19; EPSS 0.295; known ransomware use",
     "timestamp": "1766102400",
     "distribution": "5",
     "disable_correlation": false

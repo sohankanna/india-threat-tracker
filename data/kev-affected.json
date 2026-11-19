@@ -225941,7 +225941,7 @@
     }
    ],
    "record_state": "PUBLISHED",
-   "record_updated": "2026-11-18T19:31:13.191Z"
+   "record_updated": "2026-11-19T15:55:10.488Z"
   },
   {
    "cve": "CVE-2026-125350",
@@ -257301,6 +257301,6 @@
    "record_updated": "2026-10-30T23:18:16.598Z"
   }
  ],
- "kev_generated_at": "2026-11-19T10:40:38Z",
+ "kev_generated_at": "2026-11-19T22:21:29Z",
  "source": "CVE Project cvelistV5 (https://github.com/CVEProject/cvelistV5)"
 }

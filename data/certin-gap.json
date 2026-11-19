@@ -6,7 +6,7 @@
   "scanned": {
     "2026": {
       "checked_through": 0,
-      "highest_listed": 562
+      "highest_listed": 563
     }
   },
   "method": "India-relevant (high/medium) CISA KEV entries added since window_start, matched by CVE ID against CERT-In vulnerability notes (CIVN). lag_days = first CERT-In note date minus KEV date; negative means CERT-In published first. 'no-note' is only used once every note in the window has been checked.",
@@ -174,7 +174,7 @@
       "india_relevance": "medium",
       "kev_added": "2026-10-27",
       "known_ransomware": false,
-      "epss": 0.82641,
+      "epss": 0.8237,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -1249,7 +1249,7 @@
       "india_relevance": "medium",
       "kev_added": "2026-04-28",
       "known_ransomware": false,
-      "epss": 0.71324,
+      "epss": 0.68629,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -1309,7 +1309,7 @@
       "india_relevance": "high",
       "kev_added": "2026-04-20",
       "known_ransomware": false,
-      "epss": 0.01713,
+      "epss": 0.01722,
       "status": "pending",
       "certin": [],
       "lag_days": null
