@@ -1,9 +1,9 @@
 {
   "feed": "exploited-cve-watchlist",
-  "generated_at": "2026-11-18T22:12:50Z",
+  "generated_at": "2026-11-19T10:40:38Z",
   "source": "CISA KEV + FIRST EPSS",
   "total_kev": 1786,
-  "count": 503,
+  "count": 502,
   "enrichment": {
     "epss_available": 1786,
     "epss_missing": 0,
@@ -9197,37 +9197,6 @@
         {
           "title": "NVD - CVE-2024-9474",
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-9474"
-        }
-      ]
-    },
-    {
-      "cve": "CVE-2024-1212",
-      "vendor": "Progress",
-      "product": "Kemp LoadMaster",
-      "name": "Progress Kemp LoadMaster OS Command Injection Vulnerability",
-      "description": "Progress Kemp LoadMaster contains an OS command injection vulnerability that allows an unauthenticated, remote attacker to access the system through the LoadMaster management interface, enabling arbitrary system command execution.",
-      "date_added": "2024-11-18",
-      "due_date": "2024-12-09",
-      "required_action": "Apply mitigations per vendor instructions or discontinue use of the product if mitigations are unavailable.",
-      "known_ransomware": false,
-      "cwes": [
-        "CWE-78"
-      ],
-      "epss": 0.95388,
-      "epss_percentile": 0.99869,
-      "epss_date": "2026-11-18",
-      "india_relevance": "high",
-      "relevance_match": "progress",
-      "watchlist": true,
-      "tags": [],
-      "sources": [
-        {
-          "title": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "title": "NVD - CVE-2024-1212",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-1212"
         }
       ]
     },

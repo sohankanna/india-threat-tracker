@@ -1210,17 +1210,6 @@
     "disable_correlation": false
    },
    {
-    "uuid": "8c2069ed-d082-5460-8b42-0764382db989",
-    "type": "vulnerability",
-    "category": "External analysis",
-    "value": "CVE-2024-1212",
-    "to_ids": false,
-    "comment": "Progress Kemp LoadMaster; KEV 2024-11-18; EPSS 0.954",
-    "timestamp": "1731888000",
-    "distribution": "5",
-    "disable_correlation": false
-   },
-   {
     "uuid": "7659c2ab-deec-527f-a11f-c7f53b3a989a",
     "type": "vulnerability",
     "category": "External analysis",
