@@ -2,11 +2,11 @@
  "Event": {
   "uuid": "74a9a066-45d6-5733-b74d-7e6f4cf77e8b",
   "info": "India Threat Tracker: new lookalike domains of Indian banks, payment apps and government sites (leads, not verified)",
-  "date": "2026-11-18",
+  "date": "2026-11-20",
   "threat_level_id": "3",
   "analysis": "2",
-  "timestamp": "1794960000",
-  "publish_timestamp": "1794960000",
+  "timestamp": "1795132800",
+  "publish_timestamp": "1795132800",
   "published": true,
   "Orgc": {
    "name": "India Threat Tracker",
@@ -21,28 +21,6 @@
    }
   ],
   "Attribute": [
-   {
-    "uuid": "c931776c-eebd-561a-b1b2-488d47683248",
-    "type": "domain",
-    "category": "Network activity",
-    "value": "incometax.cc",
-    "to_ids": false,
-    "comment": "Lookalike of Income Tax Department (tld-swap), first seen 2026-11-06. Lead, not verified.",
-    "timestamp": "1793923200",
-    "distribution": "5",
-    "disable_correlation": false
-   },
-   {
-    "uuid": "2df06e1b-0bd8-5b39-b936-a15ce0ed38d4",
-    "type": "domain",
-    "category": "Network activity",
-    "value": "onlinesbi.com",
-    "to_ids": false,
-    "comment": "Lookalike of State Bank of India (vowel-swap), first seen 2026-11-07. Lead, not verified.",
-    "timestamp": "1794009600",
-    "distribution": "5",
-    "disable_correlation": false
-   },
    {
     "uuid": "2b60ddee-6c91-5cac-9ebd-455f4a7c5974",
     "type": "domain",
@@ -99,13 +77,13 @@
     "disable_correlation": false
    },
    {
-    "uuid": "b71d884a-387b-5434-b53f-44856cdf25ba",
+    "uuid": "4ece3d25-9d0b-51f6-afad-7d4f94d498e0",
     "type": "domain",
     "category": "Network activity",
-    "value": "bhim-upi.in",
+    "value": "hdfcbank.app",
     "to_ids": false,
-    "comment": "Lookalike of NPCI / UPI / BHIM (hyphenation), first seen 2026-11-18. Lead, not verified.",
-    "timestamp": "1794960000",
+    "comment": "Lookalike of HDFC Bank (tld-swap), first seen 2026-11-20. Lead, not verified.",
+    "timestamp": "1795132800",
     "distribution": "5",
     "disable_correlation": false
    }
