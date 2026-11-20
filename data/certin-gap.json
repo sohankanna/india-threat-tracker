@@ -6,23 +6,47 @@
   "scanned": {
     "2026": {
       "checked_through": 0,
-      "highest_listed": 563
+      "highest_listed": 568
     }
   },
   "method": "India-relevant (high/medium) CISA KEV entries added since window_start, matched by CVE ID against CERT-In vulnerability notes (CIVN). lag_days = first CERT-In note date minus KEV date; negative means CERT-In published first. 'no-note' is only used once every note in the window has been checked.",
   "summary": {
-    "kev_considered": 155,
+    "kev_considered": 157,
     "covered": 1,
     "no_note": 0,
-    "pending": 154,
+    "pending": 156,
     "certin_first": 0,
     "same_day": 0,
     "kev_first": 1,
     "median_lag_days": 1,
     "high_relevance_without_note": 0
   },
-  "count": 155,
+  "count": 157,
   "items": [
+    {
+      "cve": "CVE-2026-123890",
+      "vendor": "Broadcom",
+      "product": "VMware vCenter",
+      "india_relevance": "high",
+      "kev_added": "2026-11-20",
+      "known_ransomware": false,
+      "epss": 0.00843,
+      "status": "pending",
+      "certin": [],
+      "lag_days": null
+    },
+    {
+      "cve": "CVE-2025-42884",
+      "vendor": "SAP",
+      "product": "NetWeaver",
+      "india_relevance": "high",
+      "kev_added": "2026-11-20",
+      "known_ransomware": false,
+      "epss": 0.00276,
+      "status": "pending",
+      "certin": [],
+      "lag_days": null
+    },
     {
       "cve": "CVE-2026-125350",
       "vendor": "Google",
@@ -229,7 +253,7 @@
       "india_relevance": "high",
       "kev_added": "2026-10-15",
       "known_ransomware": false,
-      "epss": 0.99664,
+      "epss": 0.90952,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -661,7 +685,7 @@
       "india_relevance": "medium",
       "kev_added": "2026-08-27",
       "known_ransomware": false,
-      "epss": 0.00709,
+      "epss": 0.0134,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -673,7 +697,7 @@
       "india_relevance": "high",
       "kev_added": "2026-08-26",
       "known_ransomware": false,
-      "epss": 0.01011,
+      "epss": 0.03579,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -793,7 +817,7 @@
       "india_relevance": "high",
       "kev_added": "2026-08-05",
       "known_ransomware": true,
-      "epss": 0.94887,
+      "epss": 0.93936,
       "status": "pending",
       "certin": [],
       "lag_days": null

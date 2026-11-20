@@ -2,11 +2,11 @@
  "Event": {
   "uuid": "baa23acd-df45-50b8-9efb-892caf909ef8",
   "info": "India Threat Tracker: actively exploited vulnerabilities, high India relevance (CISA KEV + EPSS)",
-  "date": "2026-11-06",
+  "date": "2026-11-20",
   "threat_level_id": "2",
   "analysis": "2",
-  "timestamp": "1793923200",
-  "publish_timestamp": "1793923200",
+  "timestamp": "1795132800",
+  "publish_timestamp": "1795132800",
   "published": true,
   "Orgc": {
    "name": "India Threat Tracker",
@@ -2337,7 +2337,7 @@
     "category": "External analysis",
     "value": "CVE-2026-63077",
     "to_ids": false,
-    "comment": "JetBrains TeamCity; KEV 2026-08-05; EPSS 0.949; known ransomware use",
+    "comment": "JetBrains TeamCity; KEV 2026-08-05; EPSS 0.939; known ransomware use",
     "timestamp": "1785888000",
     "distribution": "5",
     "disable_correlation": false
@@ -2414,7 +2414,7 @@
     "category": "External analysis",
     "value": "CVE-2026-8452",
     "to_ids": false,
-    "comment": "Citrix NetScaler ADC and NetScaler Gateway; KEV 2026-08-26; EPSS 0.010",
+    "comment": "Citrix NetScaler ADC and NetScaler Gateway; KEV 2026-08-26; EPSS 0.036",
     "timestamp": "1787702400",
     "distribution": "5",
     "disable_correlation": false
@@ -2623,7 +2623,7 @@
     "category": "External analysis",
     "value": "CVE-2026-21589",
     "to_ids": false,
-    "comment": "Atlassian Multiple Products; KEV 2026-10-15; EPSS 0.997",
+    "comment": "Atlassian Multiple Products; KEV 2026-10-15; EPSS 0.910",
     "timestamp": "1792022400",
     "distribution": "5",
     "disable_correlation": false
@@ -2702,6 +2702,28 @@
     "to_ids": false,
     "comment": "SonicWall SonicOS SSLVPN; KEV 2026-11-06; EPSS 0.005",
     "timestamp": "1793923200",
+    "distribution": "5",
+    "disable_correlation": false
+   },
+   {
+    "uuid": "0342f4e2-0b64-5136-94c8-a7bdb0b47f77",
+    "type": "vulnerability",
+    "category": "External analysis",
+    "value": "CVE-2025-42884",
+    "to_ids": false,
+    "comment": "SAP NetWeaver; KEV 2026-11-20; EPSS 0.003",
+    "timestamp": "1795132800",
+    "distribution": "5",
+    "disable_correlation": false
+   },
+   {
+    "uuid": "863d390f-f190-5c4a-9620-d99411d7ad3f",
+    "type": "vulnerability",
+    "category": "External analysis",
+    "value": "CVE-2026-123890",
+    "to_ids": false,
+    "comment": "Broadcom VMware vCenter; KEV 2026-11-20; EPSS 0.008",
+    "timestamp": "1795132800",
     "distribution": "5",
     "disable_correlation": false
    }

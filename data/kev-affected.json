@@ -1,10 +1,10 @@
 {
  "coverage": {
   "fetch_failures_this_run": 0,
-  "kev_cves": 1786,
-  "records_published": 1786,
+  "kev_cves": 1790,
+  "records_published": 1790,
   "unavailable": 0,
-  "with_version_entries": 1786
+  "with_version_entries": 1790
  },
  "description": "Affected products and versions for every CISA KEV CVE, as written by the CVE Numbering Authority (and ADPs such as CISA vulnrichment) in the official CVE records. Not interpreted: see EXPOSURE-MATCHER.md for how versions are compared.",
  "feed": "kev-affected",
@@ -213910,6 +213910,29 @@
    "record_updated": "2026-02-26T18:28:10.158Z"
   },
   {
+   "cve": "CVE-2025-42884",
+   "products": [
+    {
+     "default_status": "unaffected",
+     "product": "SAP NetWeaver Enterprise Portal",
+     "source": "cna",
+     "vendor": "SAP_SE",
+     "versions": [
+      {
+       "status": "affected",
+       "version": "EP-BASIS 7.50"
+      },
+      {
+       "status": "affected",
+       "version": "EP-RUNTIME 7.50"
+      }
+     ]
+    }
+   ],
+   "record_state": "PUBLISHED",
+   "record_updated": "2026-11-20T20:58:24.180Z"
+  },
+  {
    "cve": "CVE-2025-42999",
    "products": [
     {
@@ -225883,6 +225906,91 @@
    "record_updated": "2026-11-10T04:56:17.187Z"
   },
   {
+   "cve": "CVE-2026-123890",
+   "products": [
+    {
+     "default_status": "unaffected",
+     "product": "VMware vCenter",
+     "source": "cna",
+     "vendor": "VMware",
+     "versions": [
+      {
+       "less_than": "9.1.1.0200",
+       "status": "affected",
+       "version": "9.1.x",
+       "version_type": "custom"
+      },
+      {
+       "less_than": "9.0.2.0200",
+       "status": "affected",
+       "version": "9.0.x",
+       "version_type": "custom"
+      },
+      {
+       "less_than": "8.0 U3m",
+       "status": "affected",
+       "version": "8.0",
+       "version_type": "custom"
+      },
+      {
+       "less_than": "5.2.5",
+       "status": "affected",
+       "version": "5.x",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unaffected",
+     "product": "Telco Cloud Platform",
+     "source": "cna",
+     "vendor": "VMware",
+     "versions": [
+      {
+       "status": "affected",
+       "version": "3.0",
+       "version_type": "custom"
+      },
+      {
+       "status": "affected",
+       "version": "4.x",
+       "version_type": "custom"
+      },
+      {
+       "status": "affected",
+       "version": "5.0.x",
+       "version_type": "custom"
+      },
+      {
+       "status": "affected",
+       "version": "5.1.x",
+       "version_type": "custom"
+      },
+      {
+       "status": "affected",
+       "version": "5.2",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unaffected",
+     "product": "Telco Cloud Infrastructure",
+     "source": "cna",
+     "vendor": "VMware",
+     "versions": [
+      {
+       "status": "affected",
+       "version": "3.0",
+       "version_type": "custom"
+      }
+     ]
+    }
+   ],
+   "record_state": "PUBLISHED",
+   "record_updated": "2026-11-20T20:58:23.854Z"
+  },
+  {
    "cve": "CVE-2026-124194",
    "products": [
     {
@@ -226091,6 +226199,30 @@
    ],
    "record_state": "PUBLISHED",
    "record_updated": "2026-10-07T18:00:12.330Z"
+  },
+  {
+   "cve": "CVE-2026-129448",
+   "products": [
+    {
+     "cpes": [
+      "cpe:2.3:a:apache:roller:*:*:*:*:*:*:*:*"
+     ],
+     "default_status": "unknown",
+     "product": "Apache Roller",
+     "source": "cna",
+     "vendor": "Apache Software Foundation",
+     "versions": [
+      {
+       "less_than": "6.1.5",
+       "status": "affected",
+       "version": "4.0.0",
+       "version_type": "semver"
+      }
+     ]
+    }
+   ],
+   "record_state": "PUBLISHED",
+   "record_updated": "2026-11-20T20:58:23.527Z"
   },
   {
    "cve": "CVE-2026-1340",
@@ -253518,6 +253650,397 @@
    "record_updated": "2026-09-18T12:10:27.392Z"
   },
   {
+   "cve": "CVE-2026-76466",
+   "products": [
+    {
+     "default_status": "unknown",
+     "product": "Cisco TelePresence Video Communication Server (VCS) Expressway",
+     "source": "cna",
+     "vendor": "Cisco",
+     "versions": [
+      {
+       "status": "affected",
+       "version": "X8.11.2"
+      },
+      {
+       "status": "affected",
+       "version": "X8.6"
+      },
+      {
+       "status": "affected",
+       "version": "X8.11.3"
+      },
+      {
+       "status": "affected",
+       "version": "X8.2.2"
+      },
+      {
+       "status": "affected",
+       "version": "X8.8.3"
+      },
+      {
+       "status": "affected",
+       "version": "X8.11.0"
+      },
+      {
+       "status": "affected",
+       "version": "X12.5.2"
+      },
+      {
+       "status": "affected",
+       "version": "X8.1.1"
+      },
+      {
+       "status": "affected",
+       "version": "X8.9"
+      },
+      {
+       "status": "affected",
+       "version": "X12.5.1"
+      },
+      {
+       "status": "affected",
+       "version": "X12.5.6"
+      },
+      {
+       "status": "affected",
+       "version": "X8.7.3"
+      },
+      {
+       "status": "affected",
+       "version": "X12.6.0"
+      },
+      {
+       "status": "affected",
+       "version": "X8.11.1"
+      },
+      {
+       "status": "affected",
+       "version": "X8.5"
+      },
+      {
+       "status": "affected",
+       "version": "X8.9.1"
+      },
+      {
+       "status": "affected",
+       "version": "X8.10.2"
+      },
+      {
+       "status": "affected",
+       "version": "X8.8.2"
+      },
+      {
+       "status": "affected",
+       "version": "X8.5.3"
+      },
+      {
+       "status": "affected",
+       "version": "X8.1"
+      },
+      {
+       "status": "affected",
+       "version": "X8.9.2"
+      },
+      {
+       "status": "affected",
+       "version": "X8.11.4"
+      },
+      {
+       "status": "affected",
+       "version": "X12.5.4"
+      },
+      {
+       "status": "affected",
+       "version": "X8.8.1"
+      },
+      {
+       "status": "affected",
+       "version": "X8.2.1"
+      },
+      {
+       "status": "affected",
+       "version": "X8.5.1"
+      },
+      {
+       "status": "affected",
+       "version": "X8.6.1"
+      },
+      {
+       "status": "affected",
+       "version": "X8.1.2"
+      },
+      {
+       "status": "affected",
+       "version": "X8.8"
+      },
+      {
+       "status": "affected",
+       "version": "X8.10.0"
+      },
+      {
+       "status": "affected",
+       "version": "X12.5.3"
+      },
+      {
+       "status": "affected",
+       "version": "X8.10.1"
+      },
+      {
+       "status": "affected",
+       "version": "X12.5.7"
+      },
+      {
+       "status": "affected",
+       "version": "X8.10.3"
+      },
+      {
+       "status": "affected",
+       "version": "X8.7.1"
+      },
+      {
+       "status": "affected",
+       "version": "X8.2"
+      },
+      {
+       "status": "affected",
+       "version": "X12.5.8"
+      },
+      {
+       "status": "affected",
+       "version": "X8.7"
+      },
+      {
+       "status": "affected",
+       "version": "X8.5.2"
+      },
+      {
+       "status": "affected",
+       "version": "X12.5.9"
+      },
+      {
+       "status": "affected",
+       "version": "X12.5.0"
+      },
+      {
+       "status": "affected",
+       "version": "X8.10.4"
+      },
+      {
+       "status": "affected",
+       "version": "X8.7.2"
+      },
+      {
+       "status": "affected",
+       "version": "X12.5.5"
+      },
+      {
+       "status": "affected",
+       "version": "X12.6.1"
+      },
+      {
+       "status": "affected",
+       "version": "X12.6.2"
+      },
+      {
+       "status": "affected",
+       "version": "X12.6.3"
+      },
+      {
+       "status": "affected",
+       "version": "X12.6.4"
+      },
+      {
+       "status": "affected",
+       "version": "X12.7.0"
+      },
+      {
+       "status": "affected",
+       "version": "X12.7.1"
+      },
+      {
+       "status": "affected",
+       "version": "X14.0.0"
+      },
+      {
+       "status": "affected",
+       "version": "X14.0.1"
+      },
+      {
+       "status": "affected",
+       "version": "X14.0.2"
+      },
+      {
+       "status": "affected",
+       "version": "X14.0.3"
+      },
+      {
+       "status": "affected",
+       "version": "X14.0.4"
+      },
+      {
+       "status": "affected",
+       "version": "X14.0.5"
+      },
+      {
+       "status": "affected",
+       "version": "X14.0.6"
+      },
+      {
+       "status": "affected",
+       "version": "X14.0.7"
+      },
+      {
+       "status": "affected",
+       "version": "X14.0.8"
+      },
+      {
+       "status": "affected",
+       "version": "X14.2.0"
+      },
+      {
+       "status": "affected",
+       "version": "X14.0.9"
+      },
+      {
+       "status": "affected",
+       "version": "X14.2.1"
+      },
+      {
+       "status": "affected",
+       "version": "X14.2.2"
+      },
+      {
+       "status": "affected",
+       "version": "X14.0.11"
+      },
+      {
+       "status": "affected",
+       "version": "X14.2.5"
+      },
+      {
+       "status": "affected",
+       "version": "X14.0.10"
+      },
+      {
+       "status": "affected",
+       "version": "X14.2.6"
+      },
+      {
+       "status": "affected",
+       "version": "X14.2.7"
+      },
+      {
+       "status": "affected",
+       "version": "X14.3.0"
+      },
+      {
+       "status": "affected",
+       "version": "X14.3.1"
+      },
+      {
+       "status": "affected",
+       "version": "X14.3.2"
+      },
+      {
+       "status": "affected",
+       "version": "X14.3.3"
+      },
+      {
+       "status": "affected",
+       "version": "X15.0.0"
+      },
+      {
+       "status": "affected",
+       "version": "X14.3.4"
+      },
+      {
+       "status": "affected",
+       "version": "X14.3.5"
+      },
+      {
+       "status": "affected",
+       "version": "X15.0.1"
+      },
+      {
+       "status": "affected",
+       "version": "X15.0.2"
+      },
+      {
+       "status": "affected",
+       "version": "X15.0.3"
+      },
+      {
+       "status": "affected",
+       "version": "X14.3.6"
+      },
+      {
+       "status": "affected",
+       "version": "X15.2.0"
+      },
+      {
+       "status": "affected",
+       "version": "X15.2.1"
+      },
+      {
+       "status": "affected",
+       "version": "X15.2.2"
+      },
+      {
+       "status": "affected",
+       "version": "X15.2.3"
+      },
+      {
+       "status": "affected",
+       "version": "X14.3.7"
+      },
+      {
+       "status": "affected",
+       "version": "X15.2.4."
+      },
+      {
+       "status": "affected",
+       "version": "X15.2.4"
+      },
+      {
+       "status": "affected",
+       "version": "X15.3.0"
+      },
+      {
+       "status": "affected",
+       "version": "X15.3.1"
+      },
+      {
+       "status": "affected",
+       "version": "X15.3.2"
+      },
+      {
+       "status": "affected",
+       "version": "X15.4.0"
+      },
+      {
+       "status": "affected",
+       "version": "X15.5.0"
+      },
+      {
+       "status": "affected",
+       "version": "X15.5.1"
+      },
+      {
+       "status": "affected",
+       "version": "X15.5.2"
+      },
+      {
+       "status": "affected",
+       "version": "X15.5.3"
+      }
+     ]
+    }
+   ],
+   "record_state": "PUBLISHED",
+   "record_updated": "2026-11-20T20:58:24.508Z"
+  },
+  {
    "cve": "CVE-2026-76504",
    "products": [
     {
@@ -257301,6 +257824,6 @@
    "record_updated": "2026-10-30T23:18:16.598Z"
   }
  ],
- "kev_generated_at": "2026-11-20T10:21:29Z",
+ "kev_generated_at": "2026-11-20T21:54:37Z",
  "source": "CVE Project cvelistV5 (https://github.com/CVEProject/cvelistV5)"
 }
