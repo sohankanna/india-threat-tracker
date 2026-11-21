@@ -1221,28 +1221,6 @@
     "disable_correlation": false
    },
    {
-    "uuid": "b09e7b8f-daa6-54bc-b6d9-616f98e6f34c",
-    "type": "vulnerability",
-    "category": "External analysis",
-    "value": "CVE-2024-38812",
-    "to_ids": false,
-    "comment": "VMware vCenter Server; KEV 2024-11-20; EPSS 0.546",
-    "timestamp": "1732060800",
-    "distribution": "5",
-    "disable_correlation": false
-   },
-   {
-    "uuid": "8b82f7c9-329f-59da-aa4a-672db89031dc",
-    "type": "vulnerability",
-    "category": "External analysis",
-    "value": "CVE-2024-38813",
-    "to_ids": false,
-    "comment": "VMware vCenter Server; KEV 2024-11-20; EPSS 0.174",
-    "timestamp": "1732060800",
-    "distribution": "5",
-    "disable_correlation": false
-   },
-   {
     "uuid": "dca8adce-c1b8-544f-a795-5382f50cb0ef",
     "type": "vulnerability",
     "category": "External analysis",

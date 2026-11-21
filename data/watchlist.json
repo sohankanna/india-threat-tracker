@@ -1,9 +1,9 @@
 {
   "feed": "exploited-cve-watchlist",
-  "generated_at": "2026-11-20T21:54:37Z",
+  "generated_at": "2026-11-21T10:05:59Z",
   "source": "CISA KEV + FIRST EPSS",
   "total_kev": 1790,
-  "count": 504,
+  "count": 502,
   "enrichment": {
     "epss_available": 1790,
     "epss_missing": 0,
@@ -9165,69 +9165,6 @@
         {
           "title": "NVD - CVE-2024-21287",
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-21287"
-        }
-      ]
-    },
-    {
-      "cve": "CVE-2024-38813",
-      "vendor": "VMware",
-      "product": "vCenter Server",
-      "name": "VMware vCenter Server Privilege Escalation Vulnerability",
-      "description": "VMware vCenter contains an improper check for dropped privileges vulnerability. This vulnerability could allow an attacker with network access to the vCenter Server to escalate privileges to root by sending a specially crafted packet.",
-      "date_added": "2024-11-20",
-      "due_date": "2024-12-11",
-      "required_action": "Apply mitigations per vendor instructions or discontinue use of the product if mitigations are unavailable.",
-      "known_ransomware": false,
-      "cwes": [
-        "CWE-250",
-        "CWE-273"
-      ],
-      "epss": 0.17355,
-      "epss_percentile": 0.97186,
-      "epss_date": "2026-11-20",
-      "india_relevance": "high",
-      "relevance_match": "vmware",
-      "watchlist": true,
-      "tags": [],
-      "sources": [
-        {
-          "title": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "title": "NVD - CVE-2024-38813",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-38813"
-        }
-      ]
-    },
-    {
-      "cve": "CVE-2024-38812",
-      "vendor": "VMware",
-      "product": "vCenter Server",
-      "name": "VMware vCenter Server Heap-Based Buffer Overflow Vulnerability",
-      "description": "VMware vCenter Server contains a heap-based buffer overflow vulnerability in the implementation of the DCERPC protocol. This vulnerability could allow an attacker with network access to the vCenter Server to execute remote code by sending a specially crafted packet.",
-      "date_added": "2024-11-20",
-      "due_date": "2024-12-11",
-      "required_action": "Apply mitigations per vendor instructions or discontinue use of the product if mitigations are unavailable.",
-      "known_ransomware": false,
-      "cwes": [
-        "CWE-122"
-      ],
-      "epss": 0.54571,
-      "epss_percentile": 0.99041,
-      "epss_date": "2026-11-20",
-      "india_relevance": "high",
-      "relevance_match": "vmware",
-      "watchlist": true,
-      "tags": [],
-      "sources": [
-        {
-          "title": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "title": "NVD - CVE-2024-38812",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-38812"
         }
       ]
     },
