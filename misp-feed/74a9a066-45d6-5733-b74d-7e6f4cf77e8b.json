@@ -2,11 +2,11 @@
  "Event": {
   "uuid": "74a9a066-45d6-5733-b74d-7e6f4cf77e8b",
   "info": "India Threat Tracker: new lookalike domains of Indian banks, payment apps and government sites (leads, not verified)",
-  "date": "2026-11-20",
+  "date": "2026-11-22",
   "threat_level_id": "3",
   "analysis": "2",
-  "timestamp": "1795132800",
-  "publish_timestamp": "1795132800",
+  "timestamp": "1795305600",
+  "publish_timestamp": "1795305600",
   "published": true,
   "Orgc": {
    "name": "India Threat Tracker",
@@ -95,6 +95,28 @@
     "to_ids": false,
     "comment": "Lookalike of HDFC Bank (tld-swap), first seen 2026-11-20. Lead, not verified.",
     "timestamp": "1795132800",
+    "distribution": "5",
+    "disable_correlation": false
+   },
+   {
+    "uuid": "4f247eb7-a9a6-561d-86e7-f3224ab4b9c1",
+    "type": "domain",
+    "category": "Network activity",
+    "value": "achallan.com",
+    "to_ids": false,
+    "comment": "Lookalike of Parivahan / e-Challan (vowel-swap), first seen 2026-11-22. Lead, not verified.",
+    "timestamp": "1795305600",
+    "distribution": "5",
+    "disable_correlation": false
+   },
+   {
+    "uuid": "dd5e3a94-729c-503a-8bab-b015473377fd",
+    "type": "domain",
+    "category": "Network activity",
+    "value": "bhimupiapp.in",
+    "to_ids": false,
+    "comment": "Lookalike of NPCI / UPI / BHIM (dictionary), first seen 2026-11-22. Lead, not verified.",
+    "timestamp": "1795305600",
     "distribution": "5",
     "disable_correlation": false
    }
