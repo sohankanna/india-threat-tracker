@@ -1,9 +1,9 @@
 {
   "feed": "exploited-cve-watchlist",
-  "generated_at": "2026-11-21T20:37:22Z",
+  "generated_at": "2026-11-22T10:09:20Z",
   "source": "CISA KEV + FIRST EPSS",
   "total_kev": 1790,
-  "count": 502,
+  "count": 499,
   "enrichment": {
     "epss_available": 1790,
     "epss_missing": 0,
@@ -9074,97 +9074,6 @@
         {
           "title": "NVD - CVE-2024-49138",
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-49138"
-        }
-      ]
-    },
-    {
-      "cve": "CVE-2024-44309",
-      "vendor": "Apple",
-      "product": "Multiple Products",
-      "name": "Apple Multiple Products Cross-Site Scripting (XSS) Vulnerability",
-      "description": "Apple iOS, macOS, and other Apple products contain an unspecified vulnerability when processing maliciously crafted web content that may lead to a cross-site scripting (XSS) attack.",
-      "date_added": "2024-11-21",
-      "due_date": "2024-12-12",
-      "required_action": "Apply mitigations per vendor instructions or discontinue use of the product if mitigations are unavailable.",
-      "known_ransomware": false,
-      "cwes": [
-        "CWE-79"
-      ],
-      "epss": 0.21948,
-      "epss_percentile": 0.97712,
-      "epss_date": "2026-11-21",
-      "india_relevance": "medium",
-      "relevance_match": "apple",
-      "watchlist": true,
-      "tags": [],
-      "sources": [
-        {
-          "title": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "title": "NVD - CVE-2024-44309",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-44309"
-        }
-      ]
-    },
-    {
-      "cve": "CVE-2024-44308",
-      "vendor": "Apple",
-      "product": "Multiple Products",
-      "name": "Apple Multiple Products Code Execution Vulnerability",
-      "description": "Apple iOS, macOS, and other Apple products contain an unspecified vulnerability when processing maliciously crafted web content that may lead to arbitrary code execution.",
-      "date_added": "2024-11-21",
-      "due_date": "2024-12-12",
-      "required_action": "Apply mitigations per vendor instructions or discontinue use of the product if mitigations are unavailable.",
-      "known_ransomware": false,
-      "cwes": [],
-      "epss": 0.09852,
-      "epss_percentile": 0.95677,
-      "epss_date": "2026-11-21",
-      "india_relevance": "medium",
-      "relevance_match": "apple",
-      "watchlist": true,
-      "tags": [],
-      "sources": [
-        {
-          "title": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "title": "NVD - CVE-2024-44308",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-44308"
-        }
-      ]
-    },
-    {
-      "cve": "CVE-2024-21287",
-      "vendor": "Oracle",
-      "product": "Agile Product Lifecycle Management (PLM)",
-      "name": "Oracle Agile Product Lifecycle Management (PLM) Incorrect Authorization Vulnerability",
-      "description": "Oracle Agile Product Lifecycle Management (PLM) contains an incorrect authorization vulnerability in the Process Extension component of the Software Development Kit. Successful exploitation of this vulnerability may result in unauthenticated file disclosure.",
-      "date_added": "2024-11-21",
-      "due_date": "2024-12-12",
-      "required_action": "Apply mitigations per vendor instructions or discontinue use of the product if mitigations are unavailable.",
-      "known_ransomware": false,
-      "cwes": [
-        "CWE-863"
-      ],
-      "epss": 0.01723,
-      "epss_percentile": 0.78084,
-      "epss_date": "2026-11-21",
-      "india_relevance": "medium",
-      "relevance_match": "oracle",
-      "watchlist": true,
-      "tags": [],
-      "sources": [
-        {
-          "title": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "title": "NVD - CVE-2024-21287",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-21287"
         }
       ]
     },
