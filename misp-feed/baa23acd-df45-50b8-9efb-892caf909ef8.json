@@ -1831,7 +1831,7 @@
     "category": "External analysis",
     "value": "CVE-2025-68645",
     "to_ids": false,
-    "comment": "Synacor Zimbra Collaboration Suite (ZCS); KEV 2026-01-22; EPSS 0.506",
+    "comment": "Synacor Zimbra Collaboration Suite (ZCS); KEV 2026-01-22; EPSS 0.514",
     "timestamp": "1769040000",
     "distribution": "5",
     "disable_correlation": false
@@ -2590,7 +2590,7 @@
     "category": "External analysis",
     "value": "CVE-2026-76519",
     "to_ids": false,
-    "comment": "Cisco Secure Email Gateway; KEV 2026-10-14; EPSS 0.062",
+    "comment": "Cisco Secure Email Gateway; KEV 2026-10-14; EPSS 0.057",
     "timestamp": "1791936000",
     "distribution": "5",
     "disable_correlation": false
@@ -2700,7 +2700,7 @@
     "category": "External analysis",
     "value": "CVE-2026-123890",
     "to_ids": false,
-    "comment": "Broadcom VMware vCenter; KEV 2026-11-20; EPSS 0.030",
+    "comment": "Broadcom VMware vCenter; KEV 2026-11-20; EPSS 0.035",
     "timestamp": "1795132800",
     "distribution": "5",
     "disable_correlation": false
