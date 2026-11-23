@@ -120302,7 +120302,7 @@
     }
    ],
    "record_state": "PUBLISHED",
-   "record_updated": "2026-11-18T20:58:23.675Z"
+   "record_updated": "2026-11-21T04:55:19.999Z"
   },
   {
    "cve": "CVE-2024-1086",
@@ -227150,7 +227150,7 @@
     }
    ],
    "record_state": "PUBLISHED",
-   "record_updated": "2026-11-17T20:58:23.848Z"
+   "record_updated": "2026-11-18T04:55:49.142Z"
   },
   {
    "cve": "CVE-2026-11645",
@@ -252625,7 +252625,7 @@
     }
    ],
    "record_state": "PUBLISHED",
-   "record_updated": "2026-11-10T22:35:43.186Z"
+   "record_updated": "2026-11-19T22:16:12.292Z"
   },
   {
    "cve": "CVE-2026-56164",
@@ -252779,7 +252779,7 @@
     }
    ],
    "record_state": "PUBLISHED",
-   "record_updated": "2026-11-10T22:36:11.083Z"
+   "record_updated": "2026-11-19T22:16:30.866Z"
   },
   {
    "cve": "CVE-2026-58704",
@@ -258679,7 +258679,7 @@
     }
    ],
    "record_state": "PUBLISHED",
-   "record_updated": "2026-11-18T20:58:24.278Z"
+   "record_updated": "2026-11-19T16:45:03.576Z"
   },
   {
    "cve": "CVE-2026-9082",
@@ -259420,6 +259420,6 @@
    "record_updated": "2026-10-30T23:18:16.598Z"
   }
  ],
- "kev_generated_at": "2026-11-22T20:47:17Z",
+ "kev_generated_at": "2026-11-23T11:06:43Z",
  "source": "CVE Project cvelistV5 (https://github.com/CVEProject/cvelistV5)"
 }
