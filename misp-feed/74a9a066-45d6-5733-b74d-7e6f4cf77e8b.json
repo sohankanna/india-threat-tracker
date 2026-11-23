@@ -33,6 +33,17 @@
     "disable_correlation": false
    },
    {
+    "uuid": "2df06e1b-0bd8-5b39-b936-a15ce0ed38d4",
+    "type": "domain",
+    "category": "Network activity",
+    "value": "onlinesbi.com",
+    "to_ids": false,
+    "comment": "Lookalike of State Bank of India (vowel-swap), first seen 2026-11-07. Lead, not verified.",
+    "timestamp": "1794009600",
+    "distribution": "5",
+    "disable_correlation": false
+   },
+   {
     "uuid": "2b60ddee-6c91-5cac-9ebd-455f4a7c5974",
     "type": "domain",
     "category": "Network activity",
