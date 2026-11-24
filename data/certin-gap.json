@@ -1,6 +1,6 @@
 {
   "feed": "certin-gap",
-  "generated_at": "2026-11-23",
+  "generated_at": "2026-11-24",
   "window_start": "2026-01-01",
   "scan_complete": false,
   "scanned": {
@@ -42,7 +42,7 @@
       "india_relevance": "high",
       "kev_added": "2026-11-20",
       "known_ransomware": false,
-      "epss": 0.00714,
+      "epss": 0.00902,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -66,7 +66,7 @@
       "india_relevance": "medium",
       "kev_added": "2026-11-10",
       "known_ransomware": false,
-      "epss": 0.01939,
+      "epss": 0.24894,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -1501,7 +1501,7 @@
       "india_relevance": "high",
       "kev_added": "2026-03-27",
       "known_ransomware": false,
-      "epss": 0.02295,
+      "epss": 0.02231,
       "status": "pending",
       "certin": [],
       "lag_days": null

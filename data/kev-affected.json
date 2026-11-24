@@ -1,10 +1,10 @@
 {
  "coverage": {
   "fetch_failures_this_run": 0,
-  "kev_cves": 1790,
-  "records_published": 1790,
+  "kev_cves": 1792,
+  "records_published": 1792,
   "unavailable": 0,
-  "with_version_entries": 1790
+  "with_version_entries": 1792
  },
  "description": "Affected products and versions for every CISA KEV CVE, as written by the CVE Numbering Authority (and ADPs such as CISA vulnrichment) in the official CVE records. Not interpreted: see EXPOSURE-MATCHER.md for how versions are compared.",
  "feed": "kev-affected",
@@ -213930,7 +213930,7 @@
     }
    ],
    "record_state": "PUBLISHED",
-   "record_updated": "2026-11-20T20:58:24.180Z"
+   "record_updated": "2026-11-21T04:55:22.428Z"
   },
   {
    "cve": "CVE-2025-42999",
@@ -227818,7 +227818,28 @@
     }
    ],
    "record_state": "PUBLISHED",
-   "record_updated": "2026-11-20T20:58:23.527Z"
+   "record_updated": "2026-11-21T04:55:18.815Z"
+  },
+  {
+   "cve": "CVE-2026-133968",
+   "products": [
+    {
+     "default_status": "unaffected",
+     "product": "MONAI Label",
+     "source": "cna",
+     "vendor": "Project-MONIA",
+     "versions": [
+      {
+       "less_than": "0.8.6",
+       "status": "affected",
+       "version": "0",
+       "version_type": "semver"
+      }
+     ]
+    }
+   ],
+   "record_state": "PUBLISHED",
+   "record_updated": "2026-11-23T21:59:27.122Z"
   },
   {
    "cve": "CVE-2026-1340",
@@ -227844,6 +227865,27 @@
    ],
    "record_state": "PUBLISHED",
    "record_updated": "2026-04-09T03:55:54.081Z"
+  },
+  {
+   "cve": "CVE-2026-134624",
+   "products": [
+    {
+     "default_status": "unaffected",
+     "product": "MailAssure",
+     "source": "cna",
+     "vendor": "N-able",
+     "versions": [
+      {
+       "less_than": "20261121.1943",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    }
+   ],
+   "record_state": "PUBLISHED",
+   "record_updated": "2026-11-23T21:58:57.084Z"
   },
   {
    "cve": "CVE-2026-15409",
@@ -259420,6 +259462,6 @@
    "record_updated": "2026-10-30T23:18:16.598Z"
   }
  ],
- "kev_generated_at": "2026-11-23T11:06:43Z",
+ "kev_generated_at": "2026-11-24T01:46:50Z",
  "source": "CVE Project cvelistV5 (https://github.com/CVEProject/cvelistV5)"
 }

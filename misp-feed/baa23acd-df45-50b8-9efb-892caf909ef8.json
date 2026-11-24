@@ -1171,7 +1171,7 @@
     "category": "External analysis",
     "value": "CVE-2024-40766",
     "to_ids": false,
-    "comment": "SonicWall SonicOS; KEV 2024-09-09; EPSS 0.184; known ransomware use",
+    "comment": "SonicWall SonicOS; KEV 2024-09-09; EPSS 0.220; known ransomware use",
     "timestamp": "1725840000",
     "distribution": "5",
     "disable_correlation": false
@@ -1974,7 +1974,7 @@
     "category": "External analysis",
     "value": "CVE-2025-53521",
     "to_ids": false,
-    "comment": "F5 BIG-IP; KEV 2026-03-27; EPSS 0.023",
+    "comment": "F5 BIG-IP; KEV 2026-03-27; EPSS 0.022",
     "timestamp": "1774569600",
     "distribution": "5",
     "disable_correlation": false
@@ -2689,7 +2689,7 @@
     "category": "External analysis",
     "value": "CVE-2025-42884",
     "to_ids": false,
-    "comment": "SAP NetWeaver; KEV 2026-11-20; EPSS 0.007",
+    "comment": "SAP NetWeaver; KEV 2026-11-20; EPSS 0.009",
     "timestamp": "1795132800",
     "distribution": "5",
     "disable_correlation": false
