@@ -227839,7 +227839,7 @@
     }
    ],
    "record_state": "PUBLISHED",
-   "record_updated": "2026-11-23T21:59:27.122Z"
+   "record_updated": "2026-11-24T04:55:22.516Z"
   },
   {
    "cve": "CVE-2026-1340",
@@ -259462,6 +259462,6 @@
    "record_updated": "2026-10-30T23:18:16.598Z"
   }
  ],
- "kev_generated_at": "2026-11-24T01:46:50Z",
+ "kev_generated_at": "2026-11-24T12:50:50Z",
  "source": "CVE Project cvelistV5 (https://github.com/CVEProject/cvelistV5)"
 }
