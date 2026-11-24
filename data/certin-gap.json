@@ -11,18 +11,30 @@
   },
   "method": "India-relevant (high/medium) CISA KEV entries added since window_start, matched by CVE ID against CERT-In vulnerability notes (CIVN). lag_days = first CERT-In note date minus KEV date; negative means CERT-In published first. 'no-note' is only used once every note in the window has been checked.",
   "summary": {
-    "kev_considered": 157,
+    "kev_considered": 158,
     "covered": 1,
     "no_note": 0,
-    "pending": 156,
+    "pending": 157,
     "certin_first": 0,
     "same_day": 0,
     "kev_first": 1,
     "median_lag_days": 1,
     "high_relevance_without_note": 0
   },
-  "count": 157,
+  "count": 158,
   "items": [
+    {
+      "cve": "CVE-2026-132165",
+      "vendor": "Drupal",
+      "product": "Core",
+      "india_relevance": "medium",
+      "kev_added": "2026-11-24",
+      "known_ransomware": false,
+      "epss": null,
+      "status": "pending",
+      "certin": [],
+      "lag_days": null
+    },
     {
       "cve": "CVE-2026-123890",
       "vendor": "Broadcom",
@@ -198,7 +210,7 @@
       "india_relevance": "medium",
       "kev_added": "2026-10-27",
       "known_ransomware": false,
-      "epss": 0.99931,
+      "epss": 0.99987,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -757,7 +769,7 @@
       "india_relevance": "high",
       "kev_added": "2026-08-18",
       "known_ransomware": true,
-      "epss": 0.61668,
+      "epss": 0.88458,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -865,7 +877,7 @@
       "india_relevance": "high",
       "kev_added": "2026-07-22",
       "known_ransomware": false,
-      "epss": 0.8187,
+      "epss": 0.98811,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -985,7 +997,7 @@
       "india_relevance": "medium",
       "kev_added": "2026-07-13",
       "known_ransomware": false,
-      "epss": 0.33871,
+      "epss": 0.35238,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -1093,7 +1105,7 @@
       "india_relevance": "medium",
       "kev_added": "2026-06-09",
       "known_ransomware": false,
-      "epss": 0.0244,
+      "epss": 0.02481,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -1249,7 +1261,7 @@
       "india_relevance": "medium",
       "kev_added": "2026-05-01",
       "known_ransomware": false,
-      "epss": 0.98114,
+      "epss": 0.99999,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -1357,7 +1369,7 @@
       "india_relevance": "high",
       "kev_added": "2026-04-14",
       "known_ransomware": false,
-      "epss": 0.38825,
+      "epss": 0.81249,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -1549,7 +1561,7 @@
       "india_relevance": "high",
       "kev_added": "2026-03-19",
       "known_ransomware": true,
-      "epss": 0.44431,
+      "epss": 0.90968,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -1561,7 +1573,7 @@
       "india_relevance": "high",
       "kev_added": "2026-03-18",
       "known_ransomware": false,
-      "epss": 0.29201,
+      "epss": 0.78414,
       "status": "pending",
       "certin": [],
       "lag_days": null

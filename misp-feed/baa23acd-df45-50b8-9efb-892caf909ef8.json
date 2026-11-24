@@ -49,7 +49,7 @@
     "category": "External analysis",
     "value": "CVE-2018-2380",
     "to_ids": false,
-    "comment": "SAP Customer Relationship Management (CRM); KEV 2021-11-03; EPSS 0.289; known ransomware use",
+    "comment": "SAP Customer Relationship Management (CRM); KEV 2021-11-03; EPSS 0.296; known ransomware use",
     "timestamp": "1635897600",
     "distribution": "5",
     "disable_correlation": false
@@ -346,7 +346,7 @@
     "category": "External analysis",
     "value": "CVE-2021-22893",
     "to_ids": false,
-    "comment": "Ivanti Pulse Connect Secure; KEV 2021-11-03; EPSS 0.475; known ransomware use",
+    "comment": "Ivanti Pulse Connect Secure; KEV 2021-11-03; EPSS 0.888; known ransomware use",
     "timestamp": "1635897600",
     "distribution": "5",
     "disable_correlation": false
@@ -577,7 +577,7 @@
     "category": "External analysis",
     "value": "CVE-2018-8581",
     "to_ids": false,
-    "comment": "Microsoft Exchange Server; KEV 2022-03-03; EPSS 0.276; known ransomware use",
+    "comment": "Microsoft Exchange Server; KEV 2022-03-03; EPSS 0.727; known ransomware use",
     "timestamp": "1646265600",
     "distribution": "5",
     "disable_correlation": false
@@ -951,7 +951,7 @@
     "category": "External analysis",
     "value": "CVE-2023-22515",
     "to_ids": false,
-    "comment": "Atlassian Confluence Data Center and Server; KEV 2023-10-05; EPSS 0.992; known ransomware use",
+    "comment": "Atlassian Confluence Data Center and Server; KEV 2023-10-05; EPSS 1.000; known ransomware use",
     "timestamp": "1696464000",
     "distribution": "5",
     "disable_correlation": false
@@ -1721,7 +1721,7 @@
     "category": "External analysis",
     "value": "CVE-2025-20352",
     "to_ids": false,
-    "comment": "Cisco IOS and IOS XE; KEV 2025-09-29; EPSS 0.406",
+    "comment": "Cisco IOS and IOS XE; KEV 2025-09-29; EPSS 0.432",
     "timestamp": "1759104000",
     "distribution": "5",
     "disable_correlation": false
@@ -1952,7 +1952,7 @@
     "category": "External analysis",
     "value": "CVE-2026-20963",
     "to_ids": false,
-    "comment": "Microsoft SharePoint; KEV 2026-03-18; EPSS 0.292",
+    "comment": "Microsoft SharePoint; KEV 2026-03-18; EPSS 0.784",
     "timestamp": "1773792000",
     "distribution": "5",
     "disable_correlation": false
@@ -1963,7 +1963,7 @@
     "category": "External analysis",
     "value": "CVE-2026-20131",
     "to_ids": false,
-    "comment": "Cisco Secure Firewall Management Center (FMC); KEV 2026-03-19; EPSS 0.444; known ransomware use",
+    "comment": "Cisco Secure Firewall Management Center (FMC); KEV 2026-03-19; EPSS 0.910; known ransomware use",
     "timestamp": "1773878400",
     "distribution": "5",
     "disable_correlation": false
@@ -2040,7 +2040,7 @@
     "category": "External analysis",
     "value": "CVE-2026-32201",
     "to_ids": false,
-    "comment": "Microsoft SharePoint Server; KEV 2026-04-14; EPSS 0.388",
+    "comment": "Microsoft SharePoint Server; KEV 2026-04-14; EPSS 0.812",
     "timestamp": "1776124800",
     "distribution": "5",
     "disable_correlation": false
@@ -2271,7 +2271,7 @@
     "category": "External analysis",
     "value": "CVE-2026-50522",
     "to_ids": false,
-    "comment": "Microsoft SharePoint; KEV 2026-07-22; EPSS 0.819",
+    "comment": "Microsoft SharePoint; KEV 2026-07-22; EPSS 0.988",
     "timestamp": "1784678400",
     "distribution": "5",
     "disable_correlation": false
@@ -2359,7 +2359,7 @@
     "category": "External analysis",
     "value": "CVE-2026-59310",
     "to_ids": false,
-    "comment": "Broadcom VMware vCenter; KEV 2026-08-18; EPSS 0.617; known ransomware use",
+    "comment": "Broadcom VMware vCenter; KEV 2026-08-18; EPSS 0.885; known ransomware use",
     "timestamp": "1787011200",
     "distribution": "5",
     "disable_correlation": false
