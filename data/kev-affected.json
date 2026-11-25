@@ -1,10 +1,10 @@
 {
  "coverage": {
   "fetch_failures_this_run": 1,
-  "kev_cves": 1795,
-  "records_published": 1794,
+  "kev_cves": 1805,
+  "records_published": 1804,
   "unavailable": 1,
-  "with_version_entries": 1794
+  "with_version_entries": 1804
  },
  "description": "Affected products and versions for every CISA KEV CVE, as written by the CVE Numbering Authority (and ADPs such as CISA vulnrichment) in the official CVE records. Not interpreted: see EXPOSURE-MATCHER.md for how versions are compared.",
  "feed": "kev-affected",
@@ -94017,6 +94017,44 @@
    ],
    "record_state": "PUBLISHED",
    "record_updated": "2025-10-21T23:15:27.057Z"
+  },
+  {
+   "cve": "CVE-2023-25914",
+   "products": [
+    {
+     "default_status": "unaffected",
+     "product": "AK-SM800A",
+     "source": "cna",
+     "vendor": "Danfoss",
+     "versions": [
+      {
+       "status": "affected",
+       "version": "< 3.3"
+      }
+     ]
+    }
+   ],
+   "record_state": "PUBLISHED",
+   "record_updated": "2026-11-25T20:17:26.859Z"
+  },
+  {
+   "cve": "CVE-2023-25915",
+   "products": [
+    {
+     "default_status": "unaffected",
+     "product": "AK-SM800A",
+     "source": "cna",
+     "vendor": "Danfoss",
+     "versions": [
+      {
+       "status": "affected",
+       "version": "< 3.3"
+      }
+     ]
+    }
+   ],
+   "record_state": "PUBLISHED",
+   "record_updated": "2026-11-25T20:17:30.743Z"
   },
   {
    "cve": "CVE-2023-26083",
@@ -213891,6 +213929,27 @@
    "record_updated": "2026-02-26T17:47:52.174Z"
   },
   {
+   "cve": "CVE-2025-41450",
+   "products": [
+    {
+     "default_status": "unaffected",
+     "product": "AK-SM 8xxA Series",
+     "source": "cna",
+     "vendor": "Danfoss",
+     "versions": [
+      {
+       "less_than": "4.2",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    }
+   ],
+   "record_state": "PUBLISHED",
+   "record_updated": "2026-11-25T20:17:18.902Z"
+  },
+  {
    "cve": "CVE-2025-42599",
    "products": [
     {
@@ -219750,6 +219809,39 @@
    ],
    "record_state": "PUBLISHED",
    "record_updated": "2026-11-10T04:55:56.196Z"
+  },
+  {
+   "cve": "CVE-2026-103406",
+   "products": [
+    {
+     "default_status": "unaffected",
+     "product": "Session Smart Conductor",
+     "source": "cna",
+     "vendor": "Juniper Networks",
+     "versions": [
+      {
+       "less_than": "7.0.5",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      },
+      {
+       "less_than": "7.1.7",
+       "status": "affected",
+       "version": "7.1.0",
+       "version_type": "custom"
+      },
+      {
+       "less_than": "7.2.3",
+       "status": "affected",
+       "version": "7.2.0",
+       "version_type": "custom"
+      }
+     ]
+    }
+   ],
+   "record_state": "PUBLISHED",
+   "record_updated": "2026-11-25T17:32:56.503Z"
   },
   {
    "cve": "CVE-2026-104286",
@@ -229455,6 +229547,150 @@
    ],
    "record_state": "PUBLISHED",
    "record_updated": "2026-11-24T20:58:23.952Z"
+  },
+  {
+   "cve": "CVE-2026-133275",
+   "products": [
+    {
+     "default_status": "unknown",
+     "product": "MiCollab",
+     "source": "cna",
+     "vendor": "Mitel",
+     "versions": [
+      {
+       "less_than_or_equal": "10.3 (10.3.0.18)",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    }
+   ],
+   "record_state": "PUBLISHED",
+   "record_updated": "2026-11-25T20:17:40.976Z"
+  },
+  {
+   "cve": "CVE-2026-133303",
+   "products": [
+    {
+     "default_status": "unknown",
+     "product": "MiCollab",
+     "source": "cna",
+     "vendor": "Mitel",
+     "versions": [
+      {
+       "less_than_or_equal": "10.3 (10.3.0.18)",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    }
+   ],
+   "record_state": "PUBLISHED",
+   "record_updated": "2026-11-25T20:17:49.498Z"
+  },
+  {
+   "cve": "CVE-2026-133311",
+   "products": [
+    {
+     "default_status": "unknown",
+     "product": "MiCollab",
+     "source": "cna",
+     "vendor": "Mitel",
+     "versions": [
+      {
+       "less_than_or_equal": "10.3 (10.3.0.18)",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    }
+   ],
+   "record_state": "PUBLISHED",
+   "record_updated": "2026-11-25T20:17:45.615Z"
+  },
+  {
+   "cve": "CVE-2026-133323",
+   "products": [
+    {
+     "default_status": "unknown",
+     "product": "MiCollab",
+     "source": "cna",
+     "vendor": "Mitel",
+     "versions": [
+      {
+       "less_than_or_equal": "10.3 (10.3.0.18)",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    }
+   ],
+   "record_state": "PUBLISHED",
+   "record_updated": "2026-11-25T20:17:54.352Z"
+  },
+  {
+   "cve": "CVE-2026-133324",
+   "products": [
+    {
+     "default_status": "unknown",
+     "product": "MiCollab",
+     "source": "cna",
+     "vendor": "Mitel",
+     "versions": [
+      {
+       "less_than_or_equal": "10.3 (10.3.0.18)",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    }
+   ],
+   "record_state": "PUBLISHED",
+   "record_updated": "2026-11-25T20:17:36.076Z"
+  },
+  {
+   "cve": "CVE-2026-133469",
+   "products": [
+    {
+     "default_status": "unknown",
+     "product": "xen-orchestra",
+     "source": "cna",
+     "vendor": "vatesfr",
+     "versions": [
+      {
+       "status": "affected",
+       "version": "< 6.9.2"
+      },
+      {
+       "status": "affected",
+       "version": ">= 6.10.0, < 6.10.1"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "xo-server",
+     "source": "cna",
+     "vendor": "xen-orchestra",
+     "versions": [
+      {
+       "status": "affected",
+       "version": "< 5.211.2"
+      },
+      {
+       "status": "affected",
+       "version": ">= 5.213.0, < 5.213.1"
+      }
+     ]
+    }
+   ],
+   "record_state": "PUBLISHED",
+   "record_updated": "2026-11-25T20:17:23.054Z"
   },
   {
    "cve": "CVE-2026-133968",
@@ -261098,6 +261334,6 @@
    "record_updated": "2026-10-30T23:18:16.598Z"
   }
  ],
- "kev_generated_at": "2026-11-25T11:38:05Z",
+ "kev_generated_at": "2026-11-25T23:12:09Z",
  "source": "CVE Project cvelistV5 (https://github.com/CVEProject/cvelistV5)"
 }

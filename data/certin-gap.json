@@ -6,7 +6,7 @@
   "scanned": {
     "2026": {
       "checked_through": 0,
-      "highest_listed": 571
+      "highest_listed": 572
     }
   },
   "method": "India-relevant (high/medium) CISA KEV entries added since window_start, matched by CVE ID against CERT-In vulnerability notes (CIVN). lag_days = first CERT-In note date minus KEV date; negative means CERT-In published first. 'no-note' is only used once every note in the window has been checked.",
@@ -42,7 +42,7 @@
       "india_relevance": "high",
       "kev_added": "2026-11-20",
       "known_ransomware": false,
-      "epss": 0.03526,
+      "epss": 0.05009,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -54,7 +54,7 @@
       "india_relevance": "high",
       "kev_added": "2026-11-20",
       "known_ransomware": false,
-      "epss": 0.00902,
+      "epss": 0.01102,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -78,7 +78,7 @@
       "india_relevance": "medium",
       "kev_added": "2026-11-10",
       "known_ransomware": false,
-      "epss": 0.24894,
+      "epss": 0.01042,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -90,7 +90,7 @@
       "india_relevance": "high",
       "kev_added": "2026-11-06",
       "known_ransomware": false,
-      "epss": 0.0804,
+      "epss": 0.0054,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -102,7 +102,7 @@
       "india_relevance": "medium",
       "kev_added": "2026-11-04",
       "known_ransomware": false,
-      "epss": 0.01558,
+      "epss": 0.00789,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -114,7 +114,7 @@
       "india_relevance": "medium",
       "kev_added": "2026-11-03",
       "known_ransomware": false,
-      "epss": 0.08054,
+      "epss": 0.02147,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -126,7 +126,7 @@
       "india_relevance": "high",
       "kev_added": "2026-10-30",
       "known_ransomware": false,
-      "epss": 0.00991,
+      "epss": 0.00835,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -138,7 +138,7 @@
       "india_relevance": "high",
       "kev_added": "2026-10-30",
       "known_ransomware": false,
-      "epss": 0.00803,
+      "epss": 0.00559,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -150,7 +150,7 @@
       "india_relevance": "high",
       "kev_added": "2026-10-29",
       "known_ransomware": false,
-      "epss": 0.74315,
+      "epss": 0.1184,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -162,7 +162,7 @@
       "india_relevance": "high",
       "kev_added": "2026-10-29",
       "known_ransomware": false,
-      "epss": 0.08547,
+      "epss": 0.00992,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -174,7 +174,7 @@
       "india_relevance": "medium",
       "kev_added": "2026-10-28",
       "known_ransomware": false,
-      "epss": 0.17203,
+      "epss": 0.02959,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -186,7 +186,7 @@
       "india_relevance": "high",
       "kev_added": "2026-10-28",
       "known_ransomware": false,
-      "epss": 0.00901,
+      "epss": 0.00467,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -198,7 +198,7 @@
       "india_relevance": "medium",
       "kev_added": "2026-10-27",
       "known_ransomware": false,
-      "epss": 0.81624,
+      "epss": 0.07854,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -210,7 +210,7 @@
       "india_relevance": "medium",
       "kev_added": "2026-10-27",
       "known_ransomware": false,
-      "epss": 0.99987,
+      "epss": 0.32976,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -222,7 +222,7 @@
       "india_relevance": "medium",
       "kev_added": "2026-10-26",
       "known_ransomware": false,
-      "epss": 0.99999,
+      "epss": 0.20754,
       "status": "covered",
       "certin": [
         {
@@ -241,7 +241,7 @@
       "india_relevance": "medium",
       "kev_added": "2026-10-26",
       "known_ransomware": false,
-      "epss": 0.99999,
+      "epss": 0.45083,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -253,7 +253,7 @@
       "india_relevance": "high",
       "kev_added": "2026-10-16",
       "known_ransomware": false,
-      "epss": 0.01395,
+      "epss": 0.00826,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -265,7 +265,7 @@
       "india_relevance": "high",
       "kev_added": "2026-10-15",
       "known_ransomware": false,
-      "epss": 0.90952,
+      "epss": 0.04275,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -277,7 +277,7 @@
       "india_relevance": "high",
       "kev_added": "2026-10-14",
       "known_ransomware": false,
-      "epss": 0.05715,
+      "epss": 0.02724,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -289,7 +289,7 @@
       "india_relevance": "high",
       "kev_added": "2026-10-14",
       "known_ransomware": false,
-      "epss": 0.02147,
+      "epss": 0.01969,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -301,7 +301,7 @@
       "india_relevance": "medium",
       "kev_added": "2026-10-13",
       "known_ransomware": false,
-      "epss": 0.09813,
+      "epss": 0.00976,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -313,7 +313,7 @@
       "india_relevance": "high",
       "kev_added": "2026-10-13",
       "known_ransomware": false,
-      "epss": 0.93096,
+      "epss": 0.24503,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -325,7 +325,7 @@
       "india_relevance": "medium",
       "kev_added": "2026-10-08",
       "known_ransomware": false,
-      "epss": 0.88139,
+      "epss": 0.88598,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -349,7 +349,7 @@
       "india_relevance": "high",
       "kev_added": "2026-10-04",
       "known_ransomware": false,
-      "epss": 0.11388,
+      "epss": 0.01199,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -361,7 +361,7 @@
       "india_relevance": "high",
       "kev_added": "2026-10-01",
       "known_ransomware": false,
-      "epss": 0.04573,
+      "epss": 0.01473,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -373,7 +373,7 @@
       "india_relevance": "high",
       "kev_added": "2026-09-30",
       "known_ransomware": false,
-      "epss": 0.38928,
+      "epss": 0.01279,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -385,7 +385,7 @@
       "india_relevance": "medium",
       "kev_added": "2026-09-29",
       "known_ransomware": false,
-      "epss": 0.27372,
+      "epss": 0.00953,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -397,7 +397,7 @@
       "india_relevance": "high",
       "kev_added": "2026-09-27",
       "known_ransomware": false,
-      "epss": 0.76566,
+      "epss": 0.01447,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -409,7 +409,7 @@
       "india_relevance": "high",
       "kev_added": "2026-09-27",
       "known_ransomware": false,
-      "epss": 0.81894,
+      "epss": 0.02182,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -421,7 +421,7 @@
       "india_relevance": "medium",
       "kev_added": "2026-09-25",
       "known_ransomware": false,
-      "epss": 0.95769,
+      "epss": 0.2674,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -433,7 +433,7 @@
       "india_relevance": "medium",
       "kev_added": "2026-09-25",
       "known_ransomware": false,
-      "epss": 0.02277,
+      "epss": 0.06471,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -445,7 +445,7 @@
       "india_relevance": "high",
       "kev_added": "2026-09-25",
       "known_ransomware": false,
-      "epss": 0.09852,
+      "epss": 0.02543,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -457,7 +457,7 @@
       "india_relevance": "medium",
       "kev_added": "2026-09-24",
       "known_ransomware": false,
-      "epss": 0.91677,
+      "epss": 0.24011,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -469,7 +469,7 @@
       "india_relevance": "high",
       "kev_added": "2026-09-22",
       "known_ransomware": false,
-      "epss": 0.2655,
+      "epss": 0.01293,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -481,7 +481,7 @@
       "india_relevance": "medium",
       "kev_added": "2026-09-18",
       "known_ransomware": false,
-      "epss": 0.00934,
+      "epss": 0.00518,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -493,7 +493,7 @@
       "india_relevance": "medium",
       "kev_added": "2026-09-18",
       "known_ransomware": false,
-      "epss": 0.01607,
+      "epss": 0.00581,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -505,7 +505,7 @@
       "india_relevance": "medium",
       "kev_added": "2026-09-18",
       "known_ransomware": false,
-      "epss": 0.03312,
+      "epss": 0.02067,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -517,7 +517,7 @@
       "india_relevance": "medium",
       "kev_added": "2026-09-16",
       "known_ransomware": false,
-      "epss": 0.00625,
+      "epss": 0.00308,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -529,7 +529,7 @@
       "india_relevance": "high",
       "kev_added": "2026-09-14",
       "known_ransomware": false,
-      "epss": 0.4016,
+      "epss": 0.03285,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -541,7 +541,7 @@
       "india_relevance": "high",
       "kev_added": "2026-09-11",
       "known_ransomware": false,
-      "epss": 0.97355,
+      "epss": 0.08686,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -553,7 +553,7 @@
       "india_relevance": "medium",
       "kev_added": "2026-09-10",
       "known_ransomware": false,
-      "epss": 0.06392,
+      "epss": 0.3552,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -577,7 +577,7 @@
       "india_relevance": "medium",
       "kev_added": "2026-09-09",
       "known_ransomware": false,
-      "epss": 0.03507,
+      "epss": 0.00974,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -589,7 +589,7 @@
       "india_relevance": "high",
       "kev_added": "2026-09-09",
       "known_ransomware": false,
-      "epss": 0.88658,
+      "epss": 0.12474,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -601,7 +601,7 @@
       "india_relevance": "high",
       "kev_added": "2026-09-09",
       "known_ransomware": false,
-      "epss": 0.33262,
+      "epss": 0.00953,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -613,7 +613,7 @@
       "india_relevance": "high",
       "kev_added": "2026-09-09",
       "known_ransomware": false,
-      "epss": 0.03742,
+      "epss": 0.02298,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -637,7 +637,7 @@
       "india_relevance": "medium",
       "kev_added": "2026-09-08",
       "known_ransomware": false,
-      "epss": 0.07115,
+      "epss": 0.00393,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -649,7 +649,7 @@
       "india_relevance": "medium",
       "kev_added": "2026-09-08",
       "known_ransomware": false,
-      "epss": 0.99376,
+      "epss": 0.34741,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -697,7 +697,7 @@
       "india_relevance": "medium",
       "kev_added": "2026-08-27",
       "known_ransomware": false,
-      "epss": 0.0134,
+      "epss": 0.00398,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -709,7 +709,7 @@
       "india_relevance": "high",
       "kev_added": "2026-08-26",
       "known_ransomware": false,
-      "epss": 0.03579,
+      "epss": 0.01011,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -721,7 +721,7 @@
       "india_relevance": "medium",
       "kev_added": "2026-08-26",
       "known_ransomware": false,
-      "epss": 0.08859,
+      "epss": 0.05171,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -733,7 +733,7 @@
       "india_relevance": "high",
       "kev_added": "2026-08-24",
       "known_ransomware": false,
-      "epss": 0.73192,
+      "epss": 0.01303,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -745,7 +745,7 @@
       "india_relevance": "high",
       "kev_added": "2026-08-21",
       "known_ransomware": false,
-      "epss": 0.76619,
+      "epss": 0.11946,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -757,7 +757,7 @@
       "india_relevance": "medium",
       "kev_added": "2026-08-18",
       "known_ransomware": false,
-      "epss": 0.18057,
+      "epss": 0.01723,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -781,7 +781,7 @@
       "india_relevance": "high",
       "kev_added": "2026-08-18",
       "known_ransomware": false,
-      "epss": 0.69536,
+      "epss": 0.17535,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -793,7 +793,7 @@
       "india_relevance": "medium",
       "kev_added": "2026-08-11",
       "known_ransomware": false,
-      "epss": 0.08567,
+      "epss": 0.00332,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -817,7 +817,7 @@
       "india_relevance": "high",
       "kev_added": "2026-08-07",
       "known_ransomware": false,
-      "epss": 0.99794,
+      "epss": 0.70016,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -829,7 +829,7 @@
       "india_relevance": "high",
       "kev_added": "2026-08-05",
       "known_ransomware": true,
-      "epss": 0.93936,
+      "epss": 0.09939,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -841,7 +841,7 @@
       "india_relevance": "high",
       "kev_added": "2026-08-04",
       "known_ransomware": false,
-      "epss": 0.98503,
+      "epss": 0.06561,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -853,7 +853,7 @@
       "india_relevance": "high",
       "kev_added": "2026-07-29",
       "known_ransomware": true,
-      "epss": 0.35096,
+      "epss": 0.00615,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -865,7 +865,7 @@
       "india_relevance": "high",
       "kev_added": "2026-07-27",
       "known_ransomware": false,
-      "epss": 0.29499,
+      "epss": 0.00962,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -877,7 +877,7 @@
       "india_relevance": "high",
       "kev_added": "2026-07-22",
       "known_ransomware": false,
-      "epss": 0.98811,
+      "epss": 0.21638,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -925,7 +925,7 @@
       "india_relevance": "high",
       "kev_added": "2026-07-16",
       "known_ransomware": false,
-      "epss": 0.93189,
+      "epss": 0.47362,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -937,7 +937,7 @@
       "india_relevance": "high",
       "kev_added": "2026-07-16",
       "known_ransomware": false,
-      "epss": 0.76112,
+      "epss": 0.04072,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -949,7 +949,7 @@
       "india_relevance": "medium",
       "kev_added": "2026-07-15",
       "known_ransomware": false,
-      "epss": 0.12313,
+      "epss": 0.00814,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -961,7 +961,7 @@
       "india_relevance": "high",
       "kev_added": "2026-07-14",
       "known_ransomware": false,
-      "epss": 0.2733,
+      "epss": 0.01011,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -1033,7 +1033,7 @@
       "india_relevance": "high",
       "kev_added": "2026-07-01",
       "known_ransomware": true,
-      "epss": 0.80242,
+      "epss": 0.02704,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -1045,7 +1045,7 @@
       "india_relevance": "medium",
       "kev_added": "2026-06-16",
       "known_ransomware": false,
-      "epss": 0.85439,
+      "epss": 0.1619,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -1057,7 +1057,7 @@
       "india_relevance": "high",
       "kev_added": "2026-06-15",
       "known_ransomware": false,
-      "epss": 0.29116,
+      "epss": 0.0089,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -1069,7 +1069,7 @@
       "india_relevance": "medium",
       "kev_added": "2026-06-12",
       "known_ransomware": true,
-      "epss": 0.96678,
+      "epss": 0.09444,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -1081,7 +1081,7 @@
       "india_relevance": "high",
       "kev_added": "2026-06-11",
       "known_ransomware": false,
-      "epss": 0.99916,
+      "epss": 0.61045,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -1093,7 +1093,7 @@
       "india_relevance": "high",
       "kev_added": "2026-06-09",
       "known_ransomware": false,
-      "epss": 0.25323,
+      "epss": 0.01208,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -1105,7 +1105,7 @@
       "india_relevance": "medium",
       "kev_added": "2026-06-09",
       "known_ransomware": false,
-      "epss": 0.02481,
+      "epss": 0.01077,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -1117,7 +1117,7 @@
       "india_relevance": "medium",
       "kev_added": "2026-06-02",
       "known_ransomware": false,
-      "epss": 0.01995,
+      "epss": 0.00178,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -1129,7 +1129,7 @@
       "india_relevance": "medium",
       "kev_added": "2026-06-02",
       "known_ransomware": false,
-      "epss": 0.05528,
+      "epss": 0.03209,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -1141,7 +1141,7 @@
       "india_relevance": "high",
       "kev_added": "2026-06-01",
       "known_ransomware": false,
-      "epss": 0.74162,
+      "epss": 0.04117,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -1153,7 +1153,7 @@
       "india_relevance": "high",
       "kev_added": "2026-05-29",
       "known_ransomware": true,
-      "epss": 0.96119,
+      "epss": 0.13394,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -1165,7 +1165,7 @@
       "india_relevance": "medium",
       "kev_added": "2026-05-22",
       "known_ransomware": false,
-      "epss": 0.89381,
+      "epss": 0.15701,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -1225,7 +1225,7 @@
       "india_relevance": "high",
       "kev_added": "2026-05-14",
       "known_ransomware": false,
-      "epss": 0.91091,
+      "epss": 0.08265,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -1237,7 +1237,7 @@
       "india_relevance": "high",
       "kev_added": "2026-05-07",
       "known_ransomware": false,
-      "epss": 0.34454,
+      "epss": 0.02537,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -1249,7 +1249,7 @@
       "india_relevance": "high",
       "kev_added": "2026-05-06",
       "known_ransomware": false,
-      "epss": 0.41714,
+      "epss": 0.02167,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -1261,7 +1261,7 @@
       "india_relevance": "medium",
       "kev_added": "2026-05-01",
       "known_ransomware": false,
-      "epss": 0.99999,
+      "epss": 0.16673,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -1273,7 +1273,7 @@
       "india_relevance": "medium",
       "kev_added": "2026-04-30",
       "known_ransomware": true,
-      "epss": 0.98527,
+      "epss": 0.21178,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -1285,7 +1285,7 @@
       "india_relevance": "medium",
       "kev_added": "2026-04-28",
       "known_ransomware": false,
-      "epss": 0.68629,
+      "epss": 0.0509,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -1297,7 +1297,7 @@
       "india_relevance": "medium",
       "kev_added": "2026-04-24",
       "known_ransomware": false,
-      "epss": 0.87944,
+      "epss": 0.82296,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -1309,7 +1309,7 @@
       "india_relevance": "high",
       "kev_added": "2026-04-20",
       "known_ransomware": false,
-      "epss": 0.34857,
+      "epss": 0.00896,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -1321,7 +1321,7 @@
       "india_relevance": "high",
       "kev_added": "2026-04-20",
       "known_ransomware": false,
-      "epss": 0.08349,
+      "epss": 0.0054,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -1333,7 +1333,7 @@
       "india_relevance": "high",
       "kev_added": "2026-04-20",
       "known_ransomware": false,
-      "epss": 0.25459,
+      "epss": 0.00499,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -1345,7 +1345,7 @@
       "india_relevance": "high",
       "kev_added": "2026-04-20",
       "known_ransomware": false,
-      "epss": 0.01722,
+      "epss": 0.00914,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -1357,7 +1357,7 @@
       "india_relevance": "high",
       "kev_added": "2026-04-20",
       "known_ransomware": true,
-      "epss": 0.99991,
+      "epss": 0.46148,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -1369,7 +1369,7 @@
       "india_relevance": "high",
       "kev_added": "2026-04-14",
       "known_ransomware": false,
-      "epss": 0.81249,
+      "epss": 0.061,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -1393,7 +1393,7 @@
       "india_relevance": "medium",
       "kev_added": "2026-04-13",
       "known_ransomware": false,
-      "epss": 0.0734,
+      "epss": 0.02432,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -1405,7 +1405,7 @@
       "india_relevance": "high",
       "kev_added": "2026-04-13",
       "known_ransomware": false,
-      "epss": 0.97735,
+      "epss": 0.20454,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -1417,7 +1417,7 @@
       "india_relevance": "medium",
       "kev_added": "2026-04-13",
       "known_ransomware": true,
-      "epss": 0.04614,
+      "epss": 0.00729,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -1429,7 +1429,7 @@
       "india_relevance": "medium",
       "kev_added": "2026-04-13",
       "known_ransomware": false,
-      "epss": 0.12156,
+      "epss": 0.01556,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -1441,7 +1441,7 @@
       "india_relevance": "high",
       "kev_added": "2026-04-13",
       "known_ransomware": true,
-      "epss": 0.59294,
+      "epss": 0.06327,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -1465,7 +1465,7 @@
       "india_relevance": "high",
       "kev_added": "2026-04-08",
       "known_ransomware": false,
-      "epss": 0.98639,
+      "epss": 0.30597,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -1477,7 +1477,7 @@
       "india_relevance": "high",
       "kev_added": "2026-04-06",
       "known_ransomware": false,
-      "epss": 0.93983,
+      "epss": 0.09294,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -1489,7 +1489,7 @@
       "india_relevance": "medium",
       "kev_added": "2026-04-01",
       "known_ransomware": false,
-      "epss": 0.13743,
+      "epss": 0.0073,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -1501,7 +1501,7 @@
       "india_relevance": "high",
       "kev_added": "2026-03-30",
       "known_ransomware": false,
-      "epss": 0.9166,
+      "epss": 0.04513,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -1513,7 +1513,7 @@
       "india_relevance": "high",
       "kev_added": "2026-03-27",
       "known_ransomware": false,
-      "epss": 0.02231,
+      "epss": 0.01641,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -1525,7 +1525,7 @@
       "india_relevance": "medium",
       "kev_added": "2026-03-20",
       "known_ransomware": false,
-      "epss": 0.00441,
+      "epss": 0.00382,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -1537,7 +1537,7 @@
       "india_relevance": "medium",
       "kev_added": "2026-03-20",
       "known_ransomware": false,
-      "epss": 0.00369,
+      "epss": 0.00335,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -1549,7 +1549,7 @@
       "india_relevance": "medium",
       "kev_added": "2026-03-20",
       "known_ransomware": false,
-      "epss": 0.01678,
+      "epss": 0.01182,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -1561,7 +1561,7 @@
       "india_relevance": "high",
       "kev_added": "2026-03-19",
       "known_ransomware": true,
-      "epss": 0.90968,
+      "epss": 0.19055,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -1573,7 +1573,7 @@
       "india_relevance": "high",
       "kev_added": "2026-03-18",
       "known_ransomware": false,
-      "epss": 0.78414,
+      "epss": 0.22742,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -1585,7 +1585,7 @@
       "india_relevance": "high",
       "kev_added": "2026-03-18",
       "known_ransomware": false,
-      "epss": 0.20227,
+      "epss": 0.00717,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -1597,7 +1597,7 @@
       "india_relevance": "medium",
       "kev_added": "2026-03-13",
       "known_ransomware": false,
-      "epss": 0.02997,
+      "epss": 0.01184,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -1609,7 +1609,7 @@
       "india_relevance": "medium",
       "kev_added": "2026-03-13",
       "known_ransomware": false,
-      "epss": 0.02331,
+      "epss": 0.00806,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -1621,7 +1621,7 @@
       "india_relevance": "high",
       "kev_added": "2026-03-09",
       "known_ransomware": false,
-      "epss": 0.88335,
+      "epss": 0.30001,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -1633,7 +1633,7 @@
       "india_relevance": "medium",
       "kev_added": "2026-03-05",
       "known_ransomware": false,
-      "epss": 0.04042,
+      "epss": 0.01688,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -1645,7 +1645,7 @@
       "india_relevance": "medium",
       "kev_added": "2026-03-05",
       "known_ransomware": false,
-      "epss": 0.01955,
+      "epss": 0.00533,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -1669,7 +1669,7 @@
       "india_relevance": "high",
       "kev_added": "2026-03-03",
       "known_ransomware": false,
-      "epss": 0.18069,
+      "epss": 0.04329,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -1681,7 +1681,7 @@
       "india_relevance": "high",
       "kev_added": "2026-02-25",
       "known_ransomware": false,
-      "epss": 0.91789,
+      "epss": 0.02307,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -1705,7 +1705,7 @@
       "india_relevance": "medium",
       "kev_added": "2026-02-17",
       "known_ransomware": false,
-      "epss": 0.54461,
+      "epss": 0.04714,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -1741,7 +1741,7 @@
       "india_relevance": "medium",
       "kev_added": "2026-02-12",
       "known_ransomware": false,
-      "epss": 0.01654,
+      "epss": 0.00313,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -1753,7 +1753,7 @@
       "india_relevance": "medium",
       "kev_added": "2026-02-10",
       "known_ransomware": false,
-      "epss": 0.04335,
+      "epss": 0.00572,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -1765,7 +1765,7 @@
       "india_relevance": "medium",
       "kev_added": "2026-02-10",
       "known_ransomware": false,
-      "epss": 0.05041,
+      "epss": 0.00838,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -1777,7 +1777,7 @@
       "india_relevance": "medium",
       "kev_added": "2026-02-10",
       "known_ransomware": false,
-      "epss": 0.02567,
+      "epss": 0.00479,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -1789,7 +1789,7 @@
       "india_relevance": "medium",
       "kev_added": "2026-02-10",
       "known_ransomware": false,
-      "epss": 0.01587,
+      "epss": 0.00769,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -1801,7 +1801,7 @@
       "india_relevance": "medium",
       "kev_added": "2026-02-10",
       "known_ransomware": false,
-      "epss": 0.15852,
+      "epss": 0.0208,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -1813,7 +1813,7 @@
       "india_relevance": "medium",
       "kev_added": "2026-02-10",
       "known_ransomware": false,
-      "epss": 0.61238,
+      "epss": 0.01176,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -1837,7 +1837,7 @@
       "india_relevance": "high",
       "kev_added": "2026-01-29",
       "known_ransomware": false,
-      "epss": 0.98688,
+      "epss": 0.3146,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -1849,7 +1849,7 @@
       "india_relevance": "high",
       "kev_added": "2026-01-27",
       "known_ransomware": false,
-      "epss": 0.86592,
+      "epss": 0.01536,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -1861,7 +1861,7 @@
       "india_relevance": "medium",
       "kev_added": "2026-01-26",
       "known_ransomware": false,
-      "epss": 0.70823,
+      "epss": 0.01074,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -1885,7 +1885,7 @@
       "india_relevance": "high",
       "kev_added": "2026-01-23",
       "known_ransomware": false,
-      "epss": 0.22377,
+      "epss": 0.02769,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -1897,7 +1897,7 @@
       "india_relevance": "high",
       "kev_added": "2026-01-22",
       "known_ransomware": false,
-      "epss": 0.51424,
+      "epss": 0.04195,
       "status": "pending",
       "certin": [],
       "lag_days": null
@@ -1909,7 +1909,7 @@
       "india_relevance": "medium",
       "kev_added": "2026-01-13",
       "known_ransomware": false,
-      "epss": 0.07463,
+      "epss": 0.00688,
       "status": "pending",
       "certin": [],
       "lag_days": null

@@ -1,11 +1,11 @@
 {
   "feed": "exploited-cve-watchlist",
-  "generated_at": "2026-11-25T11:38:05Z",
+  "generated_at": "2026-11-25T23:12:09Z",
   "source": "CISA KEV + FIRST EPSS",
-  "total_kev": 1795,
+  "total_kev": 1805,
   "count": 500,
   "enrichment": {
-    "epss_available": 1794,
+    "epss_available": 1804,
     "epss_missing": 1,
     "epss_coverage": 0.9994,
     "epss_failed_requests": 0,
@@ -58,9 +58,9 @@
       "cwes": [
         "CWE-288"
       ],
-      "epss": 0.03526,
-      "epss_percentile": 0.89444,
-      "epss_date": "2026-11-24",
+      "epss": 0.05009,
+      "epss_percentile": 0.93012,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "vmware",
       "watchlist": true,
@@ -89,9 +89,9 @@
       "cwes": [
         "CWE-943"
       ],
-      "epss": 0.00902,
-      "epss_percentile": 0.60474,
-      "epss_date": "2026-11-24",
+      "epss": 0.01102,
+      "epss_percentile": 0.65286,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "sap",
       "watchlist": true,
@@ -121,8 +121,8 @@
         "CWE-416"
       ],
       "epss": 0.068,
-      "epss_percentile": 0.94086,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.9476,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "chromium",
       "watchlist": true,
@@ -151,9 +151,9 @@
       "cwes": [
         "CWE-356"
       ],
-      "epss": 0.24894,
-      "epss_percentile": 0.97943,
-      "epss_date": "2026-11-24",
+      "epss": 0.01042,
+      "epss_percentile": 0.6332,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "microsoft office",
       "watchlist": true,
@@ -182,9 +182,9 @@
       "cwes": [
         "CWE-308"
       ],
-      "epss": 0.0804,
-      "epss_percentile": 0.94865,
-      "epss_date": "2026-11-24",
+      "epss": 0.0054,
+      "epss_percentile": 0.3892,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "sonicwall",
       "watchlist": true,
@@ -213,9 +213,9 @@
       "cwes": [
         "CWE-287"
       ],
-      "epss": 0.01558,
-      "epss_percentile": 0.75724,
-      "epss_date": "2026-11-24",
+      "epss": 0.00789,
+      "epss_percentile": 0.52767,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "apple",
       "watchlist": true,
@@ -244,9 +244,9 @@
       "cwes": [
         "CWE-367"
       ],
-      "epss": 0.08054,
-      "epss_percentile": 0.94871,
-      "epss_date": "2026-11-24",
+      "epss": 0.02147,
+      "epss_percentile": 0.8277,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "wordpress",
       "watchlist": true,
@@ -275,9 +275,9 @@
       "cwes": [
         "CWE-340"
       ],
-      "epss": 0.00991,
-      "epss_percentile": 0.63249,
-      "epss_date": "2026-11-24",
+      "epss": 0.00835,
+      "epss_percentile": 0.54943,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "ivanti",
       "watchlist": true,
@@ -308,9 +308,9 @@
         "CWE-862",
         "CWE-345"
       ],
-      "epss": 0.00803,
-      "epss_percentile": 0.57468,
-      "epss_date": "2026-11-24",
+      "epss": 0.00559,
+      "epss_percentile": 0.40218,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "ivanti",
       "watchlist": true,
@@ -339,9 +339,9 @@
       "cwes": [
         "CWE-190"
       ],
-      "epss": 0.74315,
-      "epss_percentile": 0.99494,
-      "epss_date": "2026-11-24",
+      "epss": 0.1184,
+      "epss_percentile": 0.96789,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "gitlab",
       "watchlist": true,
@@ -370,9 +370,9 @@
       "cwes": [
         "CWE-690"
       ],
-      "epss": 0.08547,
-      "epss_percentile": 0.9514,
-      "epss_date": "2026-11-24",
+      "epss": 0.00992,
+      "epss_percentile": 0.61421,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "cisco secure",
       "watchlist": true,
@@ -401,9 +401,9 @@
       "cwes": [
         "CWE-456"
       ],
-      "epss": 0.17203,
-      "epss_percentile": 0.97151,
-      "epss_date": "2026-11-24",
+      "epss": 0.02959,
+      "epss_percentile": 0.8793,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "linux kernel",
       "watchlist": true,
@@ -432,9 +432,9 @@
       "cwes": [
         "CWE-778"
       ],
-      "epss": 0.00901,
-      "epss_percentile": 0.60419,
-      "epss_date": "2026-11-24",
+      "epss": 0.00467,
+      "epss_percentile": 0.32491,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "vmware",
       "watchlist": true,
@@ -463,9 +463,9 @@
       "cwes": [
         "CWE-434"
       ],
-      "epss": 0.81624,
-      "epss_percentile": 0.99648,
-      "epss_date": "2026-11-24",
+      "epss": 0.07854,
+      "epss_percentile": 0.95447,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "adobe",
       "watchlist": true,
@@ -495,9 +495,9 @@
         "CWE-252",
         "CWE-787"
       ],
-      "epss": 0.99987,
-      "epss_percentile": 0.99983,
-      "epss_date": "2026-11-24",
+      "epss": 0.32976,
+      "epss_percentile": 0.98749,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "google",
       "watchlist": true,
@@ -530,9 +530,9 @@
         "CWE-1325",
         "CWE-1419"
       ],
-      "epss": 0.99999,
-      "epss_percentile": 1.0,
-      "epss_date": "2026-11-24",
+      "epss": 0.20754,
+      "epss_percentile": 0.98073,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "php",
       "watchlist": true,
@@ -565,9 +565,9 @@
         "CWE-1325",
         "CWE-1419"
       ],
-      "epss": 0.99999,
-      "epss_percentile": 0.99999,
-      "epss_date": "2026-11-24",
+      "epss": 0.45083,
+      "epss_percentile": 0.99081,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "php",
       "watchlist": true,
@@ -596,9 +596,9 @@
       "cwes": [
         "CWE-22"
       ],
-      "epss": 0.01395,
-      "epss_percentile": 0.72959,
-      "epss_date": "2026-11-24",
+      "epss": 0.00826,
+      "epss_percentile": 0.54551,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "fortinet",
       "watchlist": true,
@@ -627,9 +627,9 @@
       "cwes": [
         "CWE-552"
       ],
-      "epss": 0.90952,
-      "epss_percentile": 0.99807,
-      "epss_date": "2026-11-24",
+      "epss": 0.04275,
+      "epss_percentile": 0.9186,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "atlassian",
       "watchlist": true,
@@ -658,9 +658,9 @@
       "cwes": [
         "CWE-23"
       ],
-      "epss": 0.05715,
-      "epss_percentile": 0.9314,
-      "epss_date": "2026-11-24",
+      "epss": 0.02724,
+      "epss_percentile": 0.86777,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "cisco secure",
       "watchlist": true,
@@ -689,9 +689,9 @@
       "cwes": [
         "CWE-94"
       ],
-      "epss": 0.02147,
-      "epss_percentile": 0.82452,
-      "epss_date": "2026-11-24",
+      "epss": 0.01969,
+      "epss_percentile": 0.81035,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "pan-os",
       "watchlist": true,
@@ -720,9 +720,9 @@
       "cwes": [
         "CWE-77"
       ],
-      "epss": 0.09813,
-      "epss_percentile": 0.95623,
-      "epss_date": "2026-11-24",
+      "epss": 0.00976,
+      "epss_percentile": 0.60851,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "microsoft windows",
       "watchlist": true,
@@ -751,9 +751,9 @@
       "cwes": [
         "CWE-290"
       ],
-      "epss": 0.93096,
-      "epss_percentile": 0.99835,
-      "epss_date": "2026-11-24",
+      "epss": 0.24503,
+      "epss_percentile": 0.98354,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "ivanti",
       "watchlist": true,
@@ -782,9 +782,9 @@
       "cwes": [
         "CWE-22"
       ],
-      "epss": 0.88139,
-      "epss_percentile": 0.99767,
-      "epss_date": "2026-11-24",
+      "epss": 0.88598,
+      "epss_percentile": 0.99851,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "office",
       "watchlist": true,
@@ -814,8 +814,8 @@
         "CWE-77"
       ],
       "epss": 0.96916,
-      "epss_percentile": 0.99887,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99932,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "struts",
       "watchlist": true,
@@ -844,9 +844,9 @@
       "cwes": [
         "CWE-119"
       ],
-      "epss": 0.11388,
-      "epss_percentile": 0.96068,
-      "epss_date": "2026-11-24",
+      "epss": 0.01199,
+      "epss_percentile": 0.68033,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "netscaler",
       "watchlist": true,
@@ -876,9 +876,9 @@
         "CWE-22",
         "CWE-158"
       ],
-      "epss": 0.04573,
-      "epss_percentile": 0.91752,
-      "epss_date": "2026-11-24",
+      "epss": 0.01473,
+      "epss_percentile": 0.74042,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "fortinet",
       "watchlist": true,
@@ -907,9 +907,9 @@
       "cwes": [
         "CWE-177"
       ],
-      "epss": 0.38928,
-      "epss_percentile": 0.98612,
-      "epss_date": "2026-11-24",
+      "epss": 0.01279,
+      "epss_percentile": 0.7001,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "catalyst",
       "watchlist": true,
@@ -938,9 +938,9 @@
       "cwes": [
         "CWE-787"
       ],
-      "epss": 0.27372,
-      "epss_percentile": 0.98092,
-      "epss_date": "2026-11-24",
+      "epss": 0.00953,
+      "epss_percentile": 0.59882,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "apple",
       "watchlist": true,
@@ -969,9 +969,9 @@
       "cwes": [
         "CWE-119"
       ],
-      "epss": 0.76566,
-      "epss_percentile": 0.99547,
-      "epss_date": "2026-11-24",
+      "epss": 0.01447,
+      "epss_percentile": 0.73553,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "netscaler",
       "watchlist": true,
@@ -1000,9 +1000,9 @@
       "cwes": [
         "CWE-119"
       ],
-      "epss": 0.81894,
-      "epss_percentile": 0.99656,
-      "epss_date": "2026-11-24",
+      "epss": 0.02182,
+      "epss_percentile": 0.83048,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "netscaler",
       "watchlist": true,
@@ -1031,9 +1031,9 @@
       "cwes": [
         "CWE-98"
       ],
-      "epss": 0.95769,
-      "epss_percentile": 0.99871,
-      "epss_date": "2026-11-24",
+      "epss": 0.2674,
+      "epss_percentile": 0.98478,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "wordpress",
       "watchlist": true,
@@ -1062,9 +1062,9 @@
       "cwes": [
         "CWE-841"
       ],
-      "epss": 0.02277,
-      "epss_percentile": 0.83445,
-      "epss_date": "2026-11-24",
+      "epss": 0.06471,
+      "epss_percentile": 0.94518,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "mikrotik",
       "watchlist": true,
@@ -1093,9 +1093,9 @@
       "cwes": [
         "CWE-94"
       ],
-      "epss": 0.09852,
-      "epss_percentile": 0.95635,
-      "epss_date": "2026-11-24",
+      "epss": 0.02543,
+      "epss_percentile": 0.85708,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "sharepoint",
       "watchlist": true,
@@ -1124,9 +1124,9 @@
       "cwes": [
         "CWE-863"
       ],
-      "epss": 0.91677,
-      "epss_percentile": 0.99815,
-      "epss_date": "2026-11-24",
+      "epss": 0.24011,
+      "epss_percentile": 0.98323,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "adobe",
       "watchlist": true,
@@ -1155,9 +1155,9 @@
       "cwes": [
         "CWE-122"
       ],
-      "epss": 0.2655,
-      "epss_percentile": 0.98045,
-      "epss_date": "2026-11-24",
+      "epss": 0.01293,
+      "epss_percentile": 0.70333,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "f5",
       "watchlist": true,
@@ -1186,9 +1186,9 @@
       "cwes": [
         "CWE-787"
       ],
-      "epss": 0.00934,
-      "epss_percentile": 0.61502,
-      "epss_date": "2026-11-24",
+      "epss": 0.00518,
+      "epss_percentile": 0.37356,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "linux kernel",
       "watchlist": true,
@@ -1217,9 +1217,9 @@
       "cwes": [
         "CWE-362"
       ],
-      "epss": 0.01607,
-      "epss_percentile": 0.76395,
-      "epss_date": "2026-11-24",
+      "epss": 0.00581,
+      "epss_percentile": 0.41686,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "linux kernel",
       "watchlist": true,
@@ -1248,9 +1248,9 @@
       "cwes": [
         "CWE-754"
       ],
-      "epss": 0.03312,
-      "epss_percentile": 0.8878,
-      "epss_date": "2026-11-24",
+      "epss": 0.02067,
+      "epss_percentile": 0.82039,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "linux kernel",
       "watchlist": true,
@@ -1279,9 +1279,9 @@
       "cwes": [
         "CWE-693"
       ],
-      "epss": 0.00625,
-      "epss_percentile": 0.50695,
-      "epss_date": "2026-11-24",
+      "epss": 0.00308,
+      "epss_percentile": 0.16137,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "google",
       "watchlist": true,
@@ -1310,9 +1310,9 @@
       "cwes": [
         "CWE-89"
       ],
-      "epss": 0.4016,
-      "epss_percentile": 0.98658,
-      "epss_date": "2026-11-24",
+      "epss": 0.03285,
+      "epss_percentile": 0.89219,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "cisco secure",
       "watchlist": true,
@@ -1341,9 +1341,9 @@
       "cwes": [
         "CWE-35"
       ],
-      "epss": 0.97355,
-      "epss_percentile": 0.99897,
-      "epss_date": "2026-11-24",
+      "epss": 0.08686,
+      "epss_percentile": 0.95873,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "gitlab",
       "watchlist": true,
@@ -1372,9 +1372,9 @@
       "cwes": [
         "CWE-88"
       ],
-      "epss": 0.06392,
-      "epss_percentile": 0.93765,
-      "epss_date": "2026-11-24",
+      "epss": 0.3552,
+      "epss_percentile": 0.98827,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "mikrotik",
       "watchlist": true,
@@ -1404,8 +1404,8 @@
         "CWE-306"
       ],
       "epss": 0.0156,
-      "epss_percentile": 0.75753,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.75537,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "mikrotik",
       "watchlist": true,
@@ -1434,9 +1434,9 @@
       "cwes": [
         "CWE-787"
       ],
-      "epss": 0.03507,
-      "epss_percentile": 0.8939,
-      "epss_date": "2026-11-24",
+      "epss": 0.00974,
+      "epss_percentile": 0.6076,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "chromium",
       "watchlist": true,
@@ -1465,9 +1465,9 @@
       "cwes": [
         "CWE-288"
       ],
-      "epss": 0.88658,
-      "epss_percentile": 0.99775,
-      "epss_date": "2026-11-24",
+      "epss": 0.12474,
+      "epss_percentile": 0.96909,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "cisco secure",
       "watchlist": true,
@@ -1496,9 +1496,9 @@
       "cwes": [
         "CWE-288"
       ],
-      "epss": 0.33262,
-      "epss_percentile": 0.98394,
-      "epss_date": "2026-11-24",
+      "epss": 0.00953,
+      "epss_percentile": 0.59886,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "netscaler",
       "watchlist": true,
@@ -1528,9 +1528,9 @@
         "CWE-122",
         "CWE-787"
       ],
-      "epss": 0.03742,
-      "epss_percentile": 0.90044,
-      "epss_date": "2026-11-24",
+      "epss": 0.02298,
+      "epss_percentile": 0.83987,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "fortinet",
       "watchlist": true,
@@ -1561,8 +1561,8 @@
         "CWE-908"
       ],
       "epss": 0.00387,
-      "epss_percentile": 0.33293,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.24523,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "microsoft windows",
       "watchlist": true,
@@ -1592,9 +1592,9 @@
         "CWE-59",
         "CWE-284"
       ],
-      "epss": 0.07115,
-      "epss_percentile": 0.9433,
-      "epss_date": "2026-11-24",
+      "epss": 0.00393,
+      "epss_percentile": 0.25136,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "microsoft windows",
       "watchlist": true,
@@ -1623,9 +1623,9 @@
       "cwes": [
         "CWE-1336"
       ],
-      "epss": 0.99376,
-      "epss_percentile": 0.9994,
-      "epss_date": "2026-11-24",
+      "epss": 0.34741,
+      "epss_percentile": 0.98803,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "adobe",
       "watchlist": true,
@@ -1655,8 +1655,8 @@
         "CWE-843"
       ],
       "epss": 0.01806,
-      "epss_percentile": 0.79008,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.79069,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "chromium",
       "watchlist": true,
@@ -1686,8 +1686,8 @@
         "CWE-78"
       ],
       "epss": 0.09889,
-      "epss_percentile": 0.95647,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.96299,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "sonicwall",
       "watchlist": true,
@@ -1718,8 +1718,8 @@
         "CWE-441"
       ],
       "epss": 0.08043,
-      "epss_percentile": 0.94867,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.95544,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "sonicwall",
       "watchlist": true,
@@ -1746,9 +1746,9 @@
       "required_action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage Requirements\u201d (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
       "known_ransomware": false,
       "cwes": [],
-      "epss": 0.0134,
-      "epss_percentile": 0.71906,
-      "epss_date": "2026-11-24",
+      "epss": 0.00398,
+      "epss_percentile": 0.25567,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "linux kernel",
       "watchlist": true,
@@ -1777,9 +1777,9 @@
       "cwes": [
         "CWE-119"
       ],
-      "epss": 0.03579,
-      "epss_percentile": 0.89602,
-      "epss_date": "2026-11-24",
+      "epss": 0.01011,
+      "epss_percentile": 0.62182,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "netscaler",
       "watchlist": true,
@@ -1808,9 +1808,9 @@
       "cwes": [
         "CWE-787"
       ],
-      "epss": 0.08859,
-      "epss_percentile": 0.95285,
-      "epss_date": "2026-11-24",
+      "epss": 0.05171,
+      "epss_percentile": 0.93216,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "linux kernel",
       "watchlist": true,
@@ -1839,9 +1839,9 @@
       "cwes": [
         "CWE-284"
       ],
-      "epss": 0.73192,
-      "epss_percentile": 0.99464,
-      "epss_date": "2026-11-24",
+      "epss": 0.01303,
+      "epss_percentile": 0.70553,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "weblogic",
       "watchlist": true,
@@ -1870,9 +1870,9 @@
       "cwes": [
         "CWE-78"
       ],
-      "epss": 0.76619,
-      "epss_percentile": 0.99548,
-      "epss_date": "2026-11-24",
+      "epss": 0.11946,
+      "epss_percentile": 0.96815,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "zimbra",
       "watchlist": true,
@@ -1901,9 +1901,9 @@
       "cwes": [
         "CWE-287"
       ],
-      "epss": 0.18057,
-      "epss_percentile": 0.97248,
-      "epss_date": "2026-11-24",
+      "epss": 0.01723,
+      "epss_percentile": 0.77946,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "apple",
       "watchlist": true,
@@ -1933,8 +1933,8 @@
         "CWE-22"
       ],
       "epss": 0.88458,
-      "epss_percentile": 0.99772,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99849,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "vmware",
       "watchlist": true,
@@ -1963,9 +1963,9 @@
       "cwes": [
         "CWE-1390"
       ],
-      "epss": 0.69536,
-      "epss_percentile": 0.99372,
-      "epss_date": "2026-11-24",
+      "epss": 0.17535,
+      "epss_percentile": 0.9773,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "sharepoint",
       "watchlist": true,
@@ -1994,9 +1994,9 @@
       "cwes": [
         "CWE-416"
       ],
-      "epss": 0.08567,
-      "epss_percentile": 0.9515,
-      "epss_date": "2026-11-24",
+      "epss": 0.00332,
+      "epss_percentile": 0.18864,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "microsoft windows",
       "watchlist": true,
@@ -2026,8 +2026,8 @@
         "CWE-244"
       ],
       "epss": 0.0101,
-      "epss_percentile": 0.63847,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.62149,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "adaptive security",
       "watchlist": true,
@@ -2056,9 +2056,9 @@
       "cwes": [
         "CWE-77"
       ],
-      "epss": 0.99794,
-      "epss_percentile": 0.99957,
-      "epss_date": "2026-11-24",
+      "epss": 0.70016,
+      "epss_percentile": 0.99552,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "progress",
       "watchlist": true,
@@ -2087,9 +2087,9 @@
       "cwes": [
         "CWE-502"
       ],
-      "epss": 0.93936,
-      "epss_percentile": 0.99845,
-      "epss_date": "2026-11-24",
+      "epss": 0.09939,
+      "epss_percentile": 0.9632,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "jetbrains teamcity",
       "watchlist": true,
@@ -2118,9 +2118,9 @@
       "cwes": [
         "CWE-311"
       ],
-      "epss": 0.98503,
-      "epss_percentile": 0.99919,
-      "epss_date": "2026-11-24",
+      "epss": 0.06561,
+      "epss_percentile": 0.94586,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "apache tomcat",
       "watchlist": true,
@@ -2149,9 +2149,9 @@
       "cwes": [
         "CWE-259"
       ],
-      "epss": 0.35096,
-      "epss_percentile": 0.98464,
-      "epss_date": "2026-11-24",
+      "epss": 0.00615,
+      "epss_percentile": 0.43689,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "cisco secure",
       "watchlist": true,
@@ -2180,9 +2180,9 @@
       "cwes": [
         "CWE-200"
       ],
-      "epss": 0.29499,
-      "epss_percentile": 0.98214,
-      "epss_date": "2026-11-24",
+      "epss": 0.00962,
+      "epss_percentile": 0.60251,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "fortinet",
       "watchlist": true,
@@ -2211,9 +2211,9 @@
       "cwes": [
         "CWE-502"
       ],
-      "epss": 0.98811,
-      "epss_percentile": 0.99927,
-      "epss_date": "2026-11-24",
+      "epss": 0.21638,
+      "epss_percentile": 0.98151,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "sharepoint",
       "watchlist": true,
@@ -2243,8 +2243,8 @@
         "CWE-436"
       ],
       "epss": 0.10649,
-      "epss_percentile": 0.95878,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.96524,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "wordpress",
       "watchlist": true,
@@ -2274,8 +2274,8 @@
         "CWE-89"
       ],
       "epss": 0.05323,
-      "epss_percentile": 0.92724,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.93374,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "wordpress",
       "watchlist": true,
@@ -2305,8 +2305,8 @@
         "CWE-502"
       ],
       "epss": 0.15873,
-      "epss_percentile": 0.96944,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.9751,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "sharepoint",
       "watchlist": true,
@@ -2335,9 +2335,9 @@
       "cwes": [
         "CWE-78"
       ],
-      "epss": 0.93189,
-      "epss_percentile": 0.99835,
-      "epss_date": "2026-11-24",
+      "epss": 0.47362,
+      "epss_percentile": 0.99125,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "fortinet",
       "watchlist": true,
@@ -2366,9 +2366,9 @@
       "cwes": [
         "CWE-78"
       ],
-      "epss": 0.76112,
-      "epss_percentile": 0.99537,
-      "epss_date": "2026-11-24",
+      "epss": 0.04072,
+      "epss_percentile": 0.91447,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "fortinet",
       "watchlist": true,
@@ -2399,9 +2399,9 @@
         "CWE-287",
         "CWE-306"
       ],
-      "epss": 0.12313,
-      "epss_percentile": 0.96262,
-      "epss_date": "2026-11-24",
+      "epss": 0.00814,
+      "epss_percentile": 0.53976,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "oracle",
       "watchlist": true,
@@ -2430,9 +2430,9 @@
       "cwes": [
         "CWE-306"
       ],
-      "epss": 0.2733,
-      "epss_percentile": 0.98091,
-      "epss_date": "2026-11-24",
+      "epss": 0.01011,
+      "epss_percentile": 0.62176,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "sharepoint",
       "watchlist": true,
@@ -2462,8 +2462,8 @@
         "CWE-94"
       ],
       "epss": 0.11791,
-      "epss_percentile": 0.96155,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.9678,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "sonicwall",
       "watchlist": true,
@@ -2493,8 +2493,8 @@
         "CWE-918"
       ],
       "epss": 0.06795,
-      "epss_percentile": 0.94082,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.94756,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "sonicwall",
       "watchlist": true,
@@ -2524,8 +2524,8 @@
         "CWE-352"
       ],
       "epss": 0.35238,
-      "epss_percentile": 0.98468,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.98819,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "ios",
       "watchlist": true,
@@ -2555,8 +2555,8 @@
         "CWE-284"
       ],
       "epss": 0.30866,
-      "epss_percentile": 0.98279,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.98661,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "joomla",
       "watchlist": true,
@@ -2586,8 +2586,8 @@
         "CWE-22"
       ],
       "epss": 0.42388,
-      "epss_percentile": 0.98723,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.9902,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "adobe",
       "watchlist": true,
@@ -2616,9 +2616,9 @@
       "cwes": [
         "CWE-502"
       ],
-      "epss": 0.80242,
-      "epss_percentile": 0.99623,
-      "epss_date": "2026-11-24",
+      "epss": 0.02704,
+      "epss_percentile": 0.86675,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "sharepoint",
       "watchlist": true,
@@ -2647,9 +2647,9 @@
       "cwes": [
         "CWE-284"
       ],
-      "epss": 0.85439,
-      "epss_percentile": 0.99724,
-      "epss_date": "2026-11-24",
+      "epss": 0.1619,
+      "epss_percentile": 0.9756,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "joomla",
       "watchlist": true,
@@ -2678,9 +2678,9 @@
       "cwes": [
         "CWE-22"
       ],
-      "epss": 0.29116,
-      "epss_percentile": 0.98195,
-      "epss_date": "2026-11-24",
+      "epss": 0.0089,
+      "epss_percentile": 0.5723,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "catalyst",
       "watchlist": true,
@@ -2709,9 +2709,9 @@
       "cwes": [
         "CWE-306"
       ],
-      "epss": 0.96678,
-      "epss_percentile": 0.99882,
-      "epss_date": "2026-11-24",
+      "epss": 0.09444,
+      "epss_percentile": 0.96154,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "oracle",
       "watchlist": true,
@@ -2740,9 +2740,9 @@
       "cwes": [
         "CWE-78"
       ],
-      "epss": 0.99916,
-      "epss_percentile": 0.99968,
-      "epss_date": "2026-11-24",
+      "epss": 0.61045,
+      "epss_percentile": 0.99374,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "ivanti",
       "watchlist": true,
@@ -2771,9 +2771,9 @@
       "cwes": [
         "CWE-116"
       ],
-      "epss": 0.25323,
-      "epss_percentile": 0.97973,
-      "epss_date": "2026-11-24",
+      "epss": 0.01208,
+      "epss_percentile": 0.68258,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "catalyst",
       "watchlist": true,
@@ -2803,9 +2803,9 @@
         "CWE-787",
         "CWE-125"
       ],
-      "epss": 0.02481,
-      "epss_percentile": 0.84885,
-      "epss_date": "2026-11-24",
+      "epss": 0.01077,
+      "epss_percentile": 0.64554,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "chromium",
       "watchlist": true,
@@ -2834,9 +2834,9 @@
       "cwes": [
         "CWE-190"
       ],
-      "epss": 0.01995,
-      "epss_percentile": 0.8111,
-      "epss_date": "2026-11-24",
+      "epss": 0.00178,
+      "epss_percentile": 0.04351,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "android",
       "watchlist": true,
@@ -2866,9 +2866,9 @@
         "CWE-287",
         "CWE-862"
       ],
-      "epss": 0.05528,
-      "epss_percentile": 0.92931,
-      "epss_date": "2026-11-24",
+      "epss": 0.03209,
+      "epss_percentile": 0.8892,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "linux kernel",
       "watchlist": true,
@@ -2895,9 +2895,9 @@
       "required_action": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
       "known_ransomware": false,
       "cwes": [],
-      "epss": 0.74162,
-      "epss_percentile": 0.9949,
-      "epss_date": "2026-11-24",
+      "epss": 0.04117,
+      "epss_percentile": 0.91548,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "weblogic",
       "watchlist": true,
@@ -2926,9 +2926,9 @@
       "cwes": [
         "CWE-565"
       ],
-      "epss": 0.96119,
-      "epss_percentile": 0.99876,
-      "epss_date": "2026-11-24",
+      "epss": 0.13394,
+      "epss_percentile": 0.97098,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "pan-os",
       "watchlist": true,
@@ -2957,9 +2957,9 @@
       "cwes": [
         "CWE-89"
       ],
-      "epss": 0.89381,
-      "epss_percentile": 0.99785,
-      "epss_date": "2026-11-24",
+      "epss": 0.15701,
+      "epss_percentile": 0.97483,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "drupal",
       "watchlist": true,
@@ -2989,8 +2989,8 @@
         "CWE-399"
       ],
       "epss": 0.82115,
-      "epss_percentile": 0.99661,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99767,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "internet explorer",
       "watchlist": true,
@@ -3020,8 +3020,8 @@
         "CWE-416"
       ],
       "epss": 0.91939,
-      "epss_percentile": 0.99819,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99884,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "internet explorer",
       "watchlist": true,
@@ -3051,8 +3051,8 @@
         "CWE-119"
       ],
       "epss": 0.86531,
-      "epss_percentile": 0.9974,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99825,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "adobe",
       "watchlist": true,
@@ -3082,8 +3082,8 @@
         "CWE-94"
       ],
       "epss": 0.98751,
-      "epss_percentile": 0.99925,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99957,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "microsoft windows",
       "watchlist": true,
@@ -3112,9 +3112,9 @@
       "cwes": [
         "CWE-287"
       ],
-      "epss": 0.91091,
-      "epss_percentile": 0.99809,
-      "epss_date": "2026-11-24",
+      "epss": 0.08265,
+      "epss_percentile": 0.95667,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "catalyst",
       "watchlist": true,
@@ -3143,9 +3143,9 @@
       "cwes": [
         "CWE-20"
       ],
-      "epss": 0.34454,
-      "epss_percentile": 0.9844,
-      "epss_date": "2026-11-24",
+      "epss": 0.02537,
+      "epss_percentile": 0.85662,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "ivanti",
       "watchlist": true,
@@ -3174,9 +3174,9 @@
       "cwes": [
         "CWE-787"
       ],
-      "epss": 0.41714,
-      "epss_percentile": 0.98704,
-      "epss_date": "2026-11-24",
+      "epss": 0.02167,
+      "epss_percentile": 0.82924,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "pan-os",
       "watchlist": true,
@@ -3205,9 +3205,9 @@
       "cwes": [
         "CWE-669"
       ],
-      "epss": 0.99999,
-      "epss_percentile": 0.99996,
-      "epss_date": "2026-11-24",
+      "epss": 0.16673,
+      "epss_percentile": 0.97637,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "linux kernel",
       "watchlist": true,
@@ -3236,9 +3236,9 @@
       "cwes": [
         "CWE-306"
       ],
-      "epss": 0.98527,
-      "epss_percentile": 0.9992,
-      "epss_date": "2026-11-24",
+      "epss": 0.21178,
+      "epss_percentile": 0.98116,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "wordpress",
       "watchlist": true,
@@ -3267,9 +3267,9 @@
       "cwes": [
         "CWE-693"
       ],
-      "epss": 0.68629,
-      "epss_percentile": 0.99349,
-      "epss_date": "2026-11-24",
+      "epss": 0.0509,
+      "epss_percentile": 0.93124,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "microsoft windows",
       "watchlist": true,
@@ -3298,9 +3298,9 @@
       "cwes": [
         "CWE-77"
       ],
-      "epss": 0.87944,
-      "epss_percentile": 0.99764,
-      "epss_date": "2026-11-24",
+      "epss": 0.82296,
+      "epss_percentile": 0.9977,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "d-link",
       "watchlist": true,
@@ -3329,9 +3329,9 @@
       "cwes": [
         "CWE-200"
       ],
-      "epss": 0.34857,
-      "epss_percentile": 0.98456,
-      "epss_date": "2026-11-24",
+      "epss": 0.00896,
+      "epss_percentile": 0.57518,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "catalyst",
       "watchlist": true,
@@ -3360,9 +3360,9 @@
       "cwes": [
         "CWE-257"
       ],
-      "epss": 0.08349,
-      "epss_percentile": 0.95037,
-      "epss_date": "2026-11-24",
+      "epss": 0.0054,
+      "epss_percentile": 0.38954,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "catalyst",
       "watchlist": true,
@@ -3391,9 +3391,9 @@
       "cwes": [
         "CWE-648"
       ],
-      "epss": 0.25459,
-      "epss_percentile": 0.97981,
-      "epss_date": "2026-11-24",
+      "epss": 0.00499,
+      "epss_percentile": 0.35696,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "catalyst",
       "watchlist": true,
@@ -3422,9 +3422,9 @@
       "cwes": [
         "CWE-79"
       ],
-      "epss": 0.01722,
-      "epss_percentile": 0.77972,
-      "epss_date": "2026-11-24",
+      "epss": 0.00914,
+      "epss_percentile": 0.58292,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "zimbra",
       "watchlist": true,
@@ -3453,9 +3453,9 @@
       "cwes": [
         "CWE-23"
       ],
-      "epss": 0.99991,
-      "epss_percentile": 0.99985,
-      "epss_date": "2026-11-24",
+      "epss": 0.46148,
+      "epss_percentile": 0.99105,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "jetbrains teamcity",
       "watchlist": true,
@@ -3484,9 +3484,9 @@
       "cwes": [
         "CWE-20"
       ],
-      "epss": 0.81249,
-      "epss_percentile": 0.99642,
-      "epss_date": "2026-11-24",
+      "epss": 0.061,
+      "epss_percentile": 0.94197,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "sharepoint",
       "watchlist": true,
@@ -3516,8 +3516,8 @@
         "CWE-94"
       ],
       "epss": 0.42941,
-      "epss_percentile": 0.98738,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99031,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "microsoft office",
       "watchlist": true,
@@ -3546,9 +3546,9 @@
       "cwes": [
         "CWE-1321"
       ],
-      "epss": 0.0734,
-      "epss_percentile": 0.94478,
-      "epss_date": "2026-11-24",
+      "epss": 0.02432,
+      "epss_percentile": 0.84964,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "adobe",
       "watchlist": true,
@@ -3577,9 +3577,9 @@
       "cwes": [
         "CWE-89"
       ],
-      "epss": 0.97735,
-      "epss_percentile": 0.99903,
-      "epss_date": "2026-11-24",
+      "epss": 0.20454,
+      "epss_percentile": 0.98041,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "fortinet",
       "watchlist": true,
@@ -3608,9 +3608,9 @@
       "cwes": [
         "CWE-59"
       ],
-      "epss": 0.04614,
-      "epss_percentile": 0.91821,
-      "epss_date": "2026-11-24",
+      "epss": 0.00729,
+      "epss_percentile": 0.50148,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "microsoft windows",
       "watchlist": true,
@@ -3639,9 +3639,9 @@
       "cwes": [
         "CWE-125"
       ],
-      "epss": 0.12156,
-      "epss_percentile": 0.96231,
-      "epss_date": "2026-11-24",
+      "epss": 0.01556,
+      "epss_percentile": 0.75482,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "microsoft windows",
       "watchlist": true,
@@ -3670,9 +3670,9 @@
       "cwes": [
         "CWE-502"
       ],
-      "epss": 0.59294,
-      "epss_percentile": 0.99133,
-      "epss_date": "2026-11-24",
+      "epss": 0.06327,
+      "epss_percentile": 0.94396,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "exchange server",
       "watchlist": true,
@@ -3702,8 +3702,8 @@
         "CWE-416"
       ],
       "epss": 0.33256,
-      "epss_percentile": 0.98393,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.98758,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "adobe",
       "watchlist": true,
@@ -3732,9 +3732,9 @@
       "cwes": [
         "CWE-94"
       ],
-      "epss": 0.98639,
-      "epss_percentile": 0.99923,
-      "epss_date": "2026-11-24",
+      "epss": 0.30597,
+      "epss_percentile": 0.9865,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "ivanti",
       "watchlist": true,
@@ -3763,9 +3763,9 @@
       "cwes": [
         "CWE-284"
       ],
-      "epss": 0.93983,
-      "epss_percentile": 0.99846,
-      "epss_date": "2026-11-24",
+      "epss": 0.09294,
+      "epss_percentile": 0.96104,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "fortinet",
       "watchlist": true,
@@ -3794,9 +3794,9 @@
       "cwes": [
         "CWE-416"
       ],
-      "epss": 0.13743,
-      "epss_percentile": 0.96576,
-      "epss_date": "2026-11-24",
+      "epss": 0.0073,
+      "epss_percentile": 0.50209,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "google",
       "watchlist": true,
@@ -3825,9 +3825,9 @@
       "cwes": [
         "CWE-125"
       ],
-      "epss": 0.9166,
-      "epss_percentile": 0.99815,
-      "epss_date": "2026-11-24",
+      "epss": 0.04513,
+      "epss_percentile": 0.92289,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "netscaler",
       "watchlist": true,
@@ -3856,9 +3856,9 @@
       "cwes": [
         "CWE-121"
       ],
-      "epss": 0.02231,
-      "epss_percentile": 0.831,
-      "epss_date": "2026-11-24",
+      "epss": 0.01641,
+      "epss_percentile": 0.76783,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "f5",
       "watchlist": true,
@@ -3887,9 +3887,9 @@
       "cwes": [
         "CWE-120"
       ],
-      "epss": 0.00441,
-      "epss_percentile": 0.38841,
-      "epss_date": "2026-11-24",
+      "epss": 0.00382,
+      "epss_percentile": 0.24021,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "apple",
       "watchlist": true,
@@ -3918,9 +3918,9 @@
       "cwes": [
         "CWE-667"
       ],
-      "epss": 0.00369,
-      "epss_percentile": 0.31121,
-      "epss_date": "2026-11-24",
+      "epss": 0.00335,
+      "epss_percentile": 0.19394,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "apple",
       "watchlist": true,
@@ -3949,9 +3949,9 @@
       "cwes": [
         "CWE-119"
       ],
-      "epss": 0.01678,
-      "epss_percentile": 0.77391,
-      "epss_date": "2026-11-24",
+      "epss": 0.01182,
+      "epss_percentile": 0.67583,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "apple",
       "watchlist": true,
@@ -3980,9 +3980,9 @@
       "cwes": [
         "CWE-502"
       ],
-      "epss": 0.90968,
-      "epss_percentile": 0.99807,
-      "epss_date": "2026-11-24",
+      "epss": 0.19055,
+      "epss_percentile": 0.97877,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "cisco secure",
       "watchlist": true,
@@ -4011,9 +4011,9 @@
       "cwes": [
         "CWE-502"
       ],
-      "epss": 0.78414,
-      "epss_percentile": 0.99587,
-      "epss_date": "2026-11-24",
+      "epss": 0.22742,
+      "epss_percentile": 0.98232,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "sharepoint",
       "watchlist": true,
@@ -4042,9 +4042,9 @@
       "cwes": [
         "CWE-79"
       ],
-      "epss": 0.20227,
-      "epss_percentile": 0.97513,
-      "epss_date": "2026-11-24",
+      "epss": 0.00717,
+      "epss_percentile": 0.49545,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "zimbra",
       "watchlist": true,
@@ -4073,9 +4073,9 @@
       "cwes": [
         "CWE-119"
       ],
-      "epss": 0.02997,
-      "epss_percentile": 0.87594,
-      "epss_date": "2026-11-24",
+      "epss": 0.01184,
+      "epss_percentile": 0.6765,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "chromium",
       "watchlist": true,
@@ -4104,9 +4104,9 @@
       "cwes": [
         "CWE-787"
       ],
-      "epss": 0.02331,
-      "epss_percentile": 0.83862,
-      "epss_date": "2026-11-24",
+      "epss": 0.00806,
+      "epss_percentile": 0.53633,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "google",
       "watchlist": true,
@@ -4135,9 +4135,9 @@
       "cwes": [
         "CWE-288"
       ],
-      "epss": 0.88335,
-      "epss_percentile": 0.99771,
-      "epss_date": "2026-11-24",
+      "epss": 0.30001,
+      "epss_percentile": 0.98623,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "ivanti",
       "watchlist": true,
@@ -4166,9 +4166,9 @@
       "cwes": [
         "CWE-416"
       ],
-      "epss": 0.04042,
-      "epss_percentile": 0.90786,
-      "epss_date": "2026-11-24",
+      "epss": 0.01688,
+      "epss_percentile": 0.77443,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "apple",
       "watchlist": true,
@@ -4197,9 +4197,9 @@
       "cwes": [
         "CWE-416"
       ],
-      "epss": 0.01955,
-      "epss_percentile": 0.80697,
-      "epss_date": "2026-11-24",
+      "epss": 0.00533,
+      "epss_percentile": 0.38488,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "apple",
       "watchlist": true,
@@ -4229,8 +4229,8 @@
         "CWE-190"
       ],
       "epss": 0.06964,
-      "epss_percentile": 0.94208,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.94884,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "apple",
       "watchlist": true,
@@ -4259,9 +4259,9 @@
       "cwes": [
         "CWE-77"
       ],
-      "epss": 0.18069,
-      "epss_percentile": 0.97249,
-      "epss_date": "2026-11-24",
+      "epss": 0.04329,
+      "epss_percentile": 0.91953,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "vmware",
       "watchlist": true,
@@ -4290,9 +4290,9 @@
       "cwes": [
         "CWE-287"
       ],
-      "epss": 0.91789,
-      "epss_percentile": 0.99816,
-      "epss_date": "2026-11-24",
+      "epss": 0.02307,
+      "epss_percentile": 0.84065,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "catalyst",
       "watchlist": true,
@@ -4322,8 +4322,8 @@
         "CWE-918"
       ],
       "epss": 0.53372,
-      "epss_percentile": 0.99001,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99237,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "gitlab",
       "watchlist": true,
@@ -4352,9 +4352,9 @@
       "cwes": [
         "CWE-416"
       ],
-      "epss": 0.54461,
-      "epss_percentile": 0.99028,
-      "epss_date": "2026-11-24",
+      "epss": 0.04714,
+      "epss_percentile": 0.92592,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "chromium",
       "watchlist": true,
@@ -4384,8 +4384,8 @@
         "CWE-918"
       ],
       "epss": 0.93592,
-      "epss_percentile": 0.99841,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99899,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "zimbra",
       "watchlist": true,
@@ -4413,8 +4413,8 @@
       "known_ransomware": false,
       "cwes": [],
       "epss": 0.76576,
-      "epss_percentile": 0.99547,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.9968,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "microsoft windows",
       "watchlist": true,
@@ -4443,9 +4443,9 @@
       "cwes": [
         "CWE-119"
       ],
-      "epss": 0.01654,
-      "epss_percentile": 0.77073,
-      "epss_date": "2026-11-24",
+      "epss": 0.00313,
+      "epss_percentile": 0.16675,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "apple",
       "watchlist": true,
@@ -4474,9 +4474,9 @@
       "cwes": [
         "CWE-269"
       ],
-      "epss": 0.04335,
-      "epss_percentile": 0.91345,
-      "epss_date": "2026-11-24",
+      "epss": 0.00572,
+      "epss_percentile": 0.41159,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "microsoft windows",
       "watchlist": true,
@@ -4505,9 +4505,9 @@
       "cwes": [
         "CWE-476"
       ],
-      "epss": 0.05041,
-      "epss_percentile": 0.92412,
-      "epss_date": "2026-11-24",
+      "epss": 0.00838,
+      "epss_percentile": 0.55088,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "microsoft windows",
       "watchlist": true,
@@ -4536,9 +4536,9 @@
       "cwes": [
         "CWE-843"
       ],
-      "epss": 0.02567,
-      "epss_percentile": 0.85435,
-      "epss_date": "2026-11-24",
+      "epss": 0.00479,
+      "epss_percentile": 0.3379,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "microsoft windows",
       "watchlist": true,
@@ -4567,9 +4567,9 @@
       "cwes": [
         "CWE-807"
       ],
-      "epss": 0.01587,
-      "epss_percentile": 0.76116,
-      "epss_date": "2026-11-24",
+      "epss": 0.00769,
+      "epss_percentile": 0.51968,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "microsoft office",
       "watchlist": true,
@@ -4598,9 +4598,9 @@
       "cwes": [
         "CWE-693"
       ],
-      "epss": 0.15852,
-      "epss_percentile": 0.9694,
-      "epss_date": "2026-11-24",
+      "epss": 0.0208,
+      "epss_percentile": 0.82166,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "microsoft windows",
       "watchlist": true,
@@ -4629,9 +4629,9 @@
       "cwes": [
         "CWE-693"
       ],
-      "epss": 0.61238,
-      "epss_percentile": 0.99174,
-      "epss_date": "2026-11-24",
+      "epss": 0.01176,
+      "epss_percentile": 0.67398,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "microsoft windows",
       "watchlist": true,
@@ -4661,8 +4661,8 @@
         "CWE-918"
       ],
       "epss": 0.3614,
-      "epss_percentile": 0.98502,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.98847,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "gitlab",
       "watchlist": true,
@@ -4691,9 +4691,9 @@
       "cwes": [
         "CWE-94"
       ],
-      "epss": 0.98688,
-      "epss_percentile": 0.99924,
-      "epss_date": "2026-11-24",
+      "epss": 0.3146,
+      "epss_percentile": 0.98686,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "ivanti",
       "watchlist": true,
@@ -4722,9 +4722,9 @@
       "cwes": [
         "CWE-288"
       ],
-      "epss": 0.86592,
-      "epss_percentile": 0.99741,
-      "epss_date": "2026-11-24",
+      "epss": 0.01536,
+      "epss_percentile": 0.75149,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "fortinet",
       "watchlist": true,
@@ -4753,9 +4753,9 @@
       "cwes": [
         "CWE-807"
       ],
-      "epss": 0.70823,
-      "epss_percentile": 0.99407,
-      "epss_date": "2026-11-24",
+      "epss": 0.01074,
+      "epss_percentile": 0.64423,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "microsoft office",
       "watchlist": true,
@@ -4785,8 +4785,8 @@
         "CWE-190"
       ],
       "epss": 0.14689,
-      "epss_percentile": 0.96732,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.97314,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "linux kernel",
       "watchlist": true,
@@ -4815,9 +4815,9 @@
       "cwes": [
         "CWE-787"
       ],
-      "epss": 0.22377,
-      "epss_percentile": 0.97735,
-      "epss_date": "2026-11-24",
+      "epss": 0.02769,
+      "epss_percentile": 0.87035,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "vmware",
       "watchlist": true,
@@ -4846,9 +4846,9 @@
       "cwes": [
         "CWE-98"
       ],
-      "epss": 0.51424,
-      "epss_percentile": 0.98958,
-      "epss_date": "2026-11-24",
+      "epss": 0.04195,
+      "epss_percentile": 0.91709,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "zimbra",
       "watchlist": true,
@@ -4877,9 +4877,9 @@
       "cwes": [
         "CWE-200"
       ],
-      "epss": 0.07463,
-      "epss_percentile": 0.94545,
-      "epss_date": "2026-11-24",
+      "epss": 0.00688,
+      "epss_percentile": 0.48006,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "microsoft windows",
       "watchlist": true,
@@ -4909,8 +4909,8 @@
         "CWE-94"
       ],
       "epss": 0.67312,
-      "epss_percentile": 0.99314,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99492,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "microsoft office",
       "watchlist": true,
@@ -4939,9 +4939,9 @@
       "cwes": [
         "CWE-787"
       ],
-      "epss": 0.29517,
-      "epss_percentile": 0.98214,
-      "epss_date": "2026-11-24",
+      "epss": 0.02264,
+      "epss_percentile": 0.83688,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "watchguard",
       "watchlist": true,
@@ -4971,9 +4971,9 @@
         "CWE-862",
         "CWE-250"
       ],
-      "epss": 0.02766,
-      "epss_percentile": 0.86561,
-      "epss_date": "2026-11-24",
+      "epss": 0.0077,
+      "epss_percentile": 0.52001,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "sonicwall",
       "watchlist": true,
@@ -5002,9 +5002,9 @@
       "cwes": [
         "CWE-347"
       ],
-      "epss": 0.68087,
-      "epss_percentile": 0.99335,
-      "epss_date": "2026-11-24",
+      "epss": 0.01133,
+      "epss_percentile": 0.66167,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "fortinet",
       "watchlist": true,
@@ -5033,9 +5033,9 @@
       "cwes": [
         "CWE-416"
       ],
-      "epss": 0.17614,
-      "epss_percentile": 0.97202,
-      "epss_date": "2026-11-24",
+      "epss": 0.00957,
+      "epss_percentile": 0.60001,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "apple",
       "watchlist": true,
@@ -5062,9 +5062,9 @@
       "required_action": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
       "known_ransomware": false,
       "cwes": [],
-      "epss": 0.43263,
-      "epss_percentile": 0.98747,
-      "epss_date": "2026-11-24",
+      "epss": 0.04721,
+      "epss_percentile": 0.92603,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "chromium",
       "watchlist": true,
@@ -5093,9 +5093,9 @@
       "cwes": [
         "CWE-416"
       ],
-      "epss": 0.03384,
-      "epss_percentile": 0.89005,
-      "epss_date": "2026-11-24",
+      "epss": 0.00514,
+      "epss_percentile": 0.37056,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "microsoft windows",
       "watchlist": true,
@@ -5124,9 +5124,9 @@
       "cwes": [
         "CWE-120"
       ],
-      "epss": 0.5741,
-      "epss_percentile": 0.99091,
-      "epss_date": "2026-11-24",
+      "epss": 0.07177,
+      "epss_percentile": 0.95049,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "d-link",
       "watchlist": true,
@@ -5153,9 +5153,9 @@
       "required_action": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
       "known_ransomware": false,
       "cwes": [],
-      "epss": 0.00255,
-      "epss_percentile": 0.17077,
-      "epss_date": "2026-11-24",
+      "epss": 0.00213,
+      "epss_percentile": 0.06629,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "android",
       "watchlist": true,
@@ -5182,9 +5182,9 @@
       "required_action": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
       "known_ransomware": false,
       "cwes": [],
-      "epss": 0.00273,
-      "epss_percentile": 0.19736,
-      "epss_date": "2026-11-24",
+      "epss": 0.00236,
+      "epss_percentile": 0.08769,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "android",
       "watchlist": true,
@@ -5213,9 +5213,9 @@
       "cwes": [
         "CWE-306"
       ],
-      "epss": 0.88647,
-      "epss_percentile": 0.99774,
-      "epss_date": "2026-11-24",
+      "epss": 0.13191,
+      "epss_percentile": 0.97051,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "oracle",
       "watchlist": true,
@@ -5244,9 +5244,9 @@
       "cwes": [
         "CWE-843"
       ],
-      "epss": 0.049,
-      "epss_percentile": 0.92222,
-      "epss_date": "2026-11-24",
+      "epss": 0.01001,
+      "epss_percentile": 0.61751,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "chromium",
       "watchlist": true,
@@ -5275,9 +5275,9 @@
       "cwes": [
         "CWE-78"
       ],
-      "epss": 0.54724,
-      "epss_percentile": 0.99035,
-      "epss_date": "2026-11-24",
+      "epss": 0.05668,
+      "epss_percentile": 0.93744,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "fortinet",
       "watchlist": true,
@@ -5306,9 +5306,9 @@
       "cwes": [
         "CWE-23"
       ],
-      "epss": 0.91078,
-      "epss_percentile": 0.99808,
-      "epss_date": "2026-11-24",
+      "epss": 0.49186,
+      "epss_percentile": 0.99161,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "fortinet",
       "watchlist": true,
@@ -5337,9 +5337,9 @@
       "cwes": [
         "CWE-787"
       ],
-      "epss": 0.92455,
-      "epss_percentile": 0.99826,
-      "epss_date": "2026-11-24",
+      "epss": 0.29149,
+      "epss_percentile": 0.9859,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "watchguard",
       "watchlist": true,
@@ -5368,9 +5368,9 @@
       "cwes": [
         "CWE-362"
       ],
-      "epss": 0.04464,
-      "epss_percentile": 0.91582,
-      "epss_date": "2026-11-24",
+      "epss": 0.00981,
+      "epss_percentile": 0.61016,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "microsoft windows",
       "watchlist": true,
@@ -5399,9 +5399,9 @@
       "cwes": [
         "CWE-267"
       ],
-      "epss": 0.16377,
-      "epss_percentile": 0.97028,
-      "epss_date": "2026-11-24",
+      "epss": 0.00445,
+      "epss_percentile": 0.30612,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "vmware",
       "watchlist": true,
@@ -5430,9 +5430,9 @@
       "cwes": [
         "CWE-502"
       ],
-      "epss": 0.99997,
-      "epss_percentile": 0.99989,
-      "epss_date": "2026-11-24",
+      "epss": 0.28304,
+      "epss_percentile": 0.98552,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "microsoft windows",
       "watchlist": true,
@@ -5461,9 +5461,9 @@
       "cwes": [
         "CWE-20"
       ],
-      "epss": 0.95534,
-      "epss_percentile": 0.99868,
-      "epss_date": "2026-11-24",
+      "epss": 0.27841,
+      "epss_percentile": 0.98533,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "adobe",
       "watchlist": true,
@@ -5492,9 +5492,9 @@
       "cwes": [
         "CWE-918"
       ],
-      "epss": 0.964,
-      "epss_percentile": 0.99878,
-      "epss_date": "2026-11-24",
+      "epss": 0.18862,
+      "epss_percentile": 0.9786,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "oracle",
       "watchlist": true,
@@ -5523,9 +5523,9 @@
       "cwes": [
         "CWE-284"
       ],
-      "epss": 0.83933,
-      "epss_percentile": 0.99695,
-      "epss_date": "2026-11-24",
+      "epss": 0.08538,
+      "epss_percentile": 0.95803,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "microsoft windows",
       "watchlist": true,
@@ -5552,9 +5552,9 @@
       "required_action": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
       "known_ransomware": false,
       "cwes": [],
-      "epss": 0.03213,
-      "epss_percentile": 0.88414,
-      "epss_date": "2026-11-24",
+      "epss": 0.01896,
+      "epss_percentile": 0.80195,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "apple",
       "watchlist": true,
@@ -5581,9 +5581,9 @@
       "required_action": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
       "known_ransomware": false,
       "cwes": [],
-      "epss": 0.80848,
-      "epss_percentile": 0.99634,
-      "epss_date": "2026-11-24",
+      "epss": 0.07852,
+      "epss_percentile": 0.95445,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "adobe",
       "watchlist": true,
@@ -5612,9 +5612,9 @@
       "cwes": [
         "CWE-284"
       ],
-      "epss": 0.02976,
-      "epss_percentile": 0.87508,
-      "epss_date": "2026-11-24",
+      "epss": 0.00628,
+      "epss_percentile": 0.44456,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "microsoft windows",
       "watchlist": true,
@@ -5643,9 +5643,9 @@
       "cwes": [
         "CWE-822"
       ],
-      "epss": 0.09794,
-      "epss_percentile": 0.95617,
-      "epss_date": "2026-11-24",
+      "epss": 0.00702,
+      "epss_percentile": 0.48779,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "microsoft windows",
       "watchlist": true,
@@ -5674,9 +5674,9 @@
       "cwes": [
         "CWE-79"
       ],
-      "epss": 0.04064,
-      "epss_percentile": 0.90832,
-      "epss_date": "2026-11-24",
+      "epss": 0.0205,
+      "epss_percentile": 0.81872,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "zimbra",
       "watchlist": true,
@@ -5703,9 +5703,9 @@
       "required_action": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
       "known_ransomware": true,
       "cwes": [],
-      "epss": 0.9976,
-      "epss_percentile": 0.99954,
-      "epss_date": "2026-11-24",
+      "epss": 0.1217,
+      "epss_percentile": 0.96856,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "oracle",
       "watchlist": true,
@@ -5733,8 +5733,8 @@
       "known_ransomware": true,
       "cwes": [],
       "epss": 0.03275,
-      "epss_percentile": 0.88643,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.89178,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "microsoft windows",
       "watchlist": true,
@@ -5764,8 +5764,8 @@
         "CWE-787"
       ],
       "epss": 0.78684,
-      "epss_percentile": 0.99593,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99714,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "linux kernel",
       "watchlist": true,
@@ -5793,8 +5793,8 @@
       "known_ransomware": false,
       "cwes": [],
       "epss": 0.73872,
-      "epss_percentile": 0.99482,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99632,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "microsoft windows",
       "watchlist": true,
@@ -5822,8 +5822,8 @@
       "known_ransomware": false,
       "cwes": [],
       "epss": 0.7928,
-      "epss_percentile": 0.99605,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99725,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "microsoft windows",
       "watchlist": true,
@@ -5851,8 +5851,8 @@
       "known_ransomware": false,
       "cwes": [],
       "epss": 0.96831,
-      "epss_percentile": 0.99886,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99931,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "internet explorer",
       "watchlist": true,
@@ -5880,8 +5880,8 @@
       "known_ransomware": false,
       "cwes": [],
       "epss": 0.83156,
-      "epss_percentile": 0.99679,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99782,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "mozilla",
       "watchlist": true,
@@ -5909,8 +5909,8 @@
       "known_ransomware": false,
       "cwes": [],
       "epss": 0.99679,
-      "epss_percentile": 0.99949,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99972,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "jenkins",
       "watchlist": true,
@@ -5939,9 +5939,9 @@
       "cwes": [
         "CWE-121"
       ],
-      "epss": 0.43162,
-      "epss_percentile": 0.98744,
-      "epss_date": "2026-11-24",
+      "epss": 0.01494,
+      "epss_percentile": 0.74412,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "ios xe",
       "watchlist": true,
@@ -5970,9 +5970,9 @@
       "cwes": [
         "CWE-862"
       ],
-      "epss": 0.86688,
-      "epss_percentile": 0.99742,
-      "epss_date": "2026-11-24",
+      "epss": 0.08238,
+      "epss_percentile": 0.95653,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "adaptive security",
       "watchlist": true,
@@ -6001,9 +6001,9 @@
       "cwes": [
         "CWE-120"
       ],
-      "epss": 0.72037,
-      "epss_percentile": 0.99437,
-      "epss_date": "2026-11-24",
+      "epss": 0.02319,
+      "epss_percentile": 0.84159,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "adaptive security",
       "watchlist": true,
@@ -6032,9 +6032,9 @@
       "cwes": [
         "CWE-843"
       ],
-      "epss": 0.08974,
-      "epss_percentile": 0.95338,
-      "epss_date": "2026-11-24",
+      "epss": 0.01015,
+      "epss_percentile": 0.62294,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "chromium",
       "watchlist": true,
@@ -6061,9 +6061,9 @@
       "required_action": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
       "known_ransomware": false,
       "cwes": [],
-      "epss": 0.00656,
-      "epss_percentile": 0.52152,
-      "epss_date": "2026-11-24",
+      "epss": 0.00282,
+      "epss_percentile": 0.13293,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "android",
       "watchlist": true,
@@ -6092,9 +6092,9 @@
       "cwes": [
         "CWE-367"
       ],
-      "epss": 0.01357,
-      "epss_percentile": 0.72239,
-      "epss_date": "2026-11-24",
+      "epss": 0.00667,
+      "epss_percentile": 0.4685,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "linux kernel",
       "watchlist": true,
@@ -6123,9 +6123,9 @@
       "cwes": [
         "CWE-78"
       ],
-      "epss": 0.38783,
-      "epss_percentile": 0.98608,
-      "epss_date": "2026-11-24",
+      "epss": 0.03033,
+      "epss_percentile": 0.88217,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "tp-link",
       "watchlist": true,
@@ -6154,9 +6154,9 @@
       "cwes": [
         "CWE-290"
       ],
-      "epss": 0.20021,
-      "epss_percentile": 0.97487,
-      "epss_date": "2026-11-24",
+      "epss": 0.0087,
+      "epss_percentile": 0.56438,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "tp-link",
       "watchlist": true,
@@ -6185,9 +6185,9 @@
       "cwes": [
         "CWE-306"
       ],
-      "epss": 0.22187,
-      "epss_percentile": 0.97718,
-      "epss_date": "2026-11-24",
+      "epss": 0.2406,
+      "epss_percentile": 0.98326,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "tp-link",
       "watchlist": true,
@@ -6216,9 +6216,9 @@
       "cwes": [
         "CWE-119"
       ],
-      "epss": 0.21073,
-      "epss_percentile": 0.9762,
-      "epss_date": "2026-11-24",
+      "epss": 0.01929,
+      "epss_percentile": 0.80567,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "netscaler",
       "watchlist": true,
@@ -6247,9 +6247,9 @@
       "cwes": [
         "CWE-502"
       ],
-      "epss": 0.18194,
-      "epss_percentile": 0.97263,
-      "epss_date": "2026-11-24",
+      "epss": 0.03202,
+      "epss_percentile": 0.88883,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "citrix",
       "watchlist": true,
@@ -6278,9 +6278,9 @@
       "cwes": [
         "CWE-269"
       ],
-      "epss": 0.03481,
-      "epss_percentile": 0.8931,
-      "epss_date": "2026-11-24",
+      "epss": 0.01014,
+      "epss_percentile": 0.62282,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "citrix",
       "watchlist": true,
@@ -6309,9 +6309,9 @@
       "cwes": [
         "CWE-787"
       ],
-      "epss": 0.65624,
-      "epss_percentile": 0.99276,
-      "epss_date": "2026-11-24",
+      "epss": 0.04113,
+      "epss_percentile": 0.91538,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "apple",
       "watchlist": true,
@@ -6341,8 +6341,8 @@
         "CWE-399"
       ],
       "epss": 0.87639,
-      "epss_percentile": 0.9976,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.9984,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "internet explorer",
       "watchlist": true,
@@ -6370,8 +6370,8 @@
       "known_ransomware": false,
       "cwes": [],
       "epss": 0.43825,
-      "epss_percentile": 0.98767,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99054,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "microsoft office",
       "watchlist": true,
@@ -6400,9 +6400,9 @@
       "cwes": [
         "CWE-494"
       ],
-      "epss": 0.3365,
-      "epss_percentile": 0.9841,
-      "epss_date": "2026-11-24",
+      "epss": 0.03299,
+      "epss_percentile": 0.89269,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "d-link",
       "watchlist": true,
@@ -6432,8 +6432,8 @@
         "CWE-77"
       ],
       "epss": 0.54007,
-      "epss_percentile": 0.99018,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.9925,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "d-link",
       "watchlist": true,
@@ -6461,8 +6461,8 @@
       "known_ransomware": false,
       "cwes": [],
       "epss": 0.97511,
-      "epss_percentile": 0.999,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99939,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "d-link",
       "watchlist": true,
@@ -6491,9 +6491,9 @@
       "cwes": [
         "CWE-20"
       ],
-      "epss": 0.10927,
-      "epss_percentile": 0.95953,
-      "epss_date": "2026-11-24",
+      "epss": 0.01889,
+      "epss_percentile": 0.80092,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "chromium",
       "watchlist": true,
@@ -6522,9 +6522,9 @@
       "cwes": [
         "CWE-287"
       ],
-      "epss": 0.99863,
-      "epss_percentile": 0.99961,
-      "epss_date": "2026-11-24",
+      "epss": 0.03404,
+      "epss_percentile": 0.8963,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "sharepoint",
       "watchlist": true,
@@ -6553,9 +6553,9 @@
       "cwes": [
         "CWE-94"
       ],
-      "epss": 0.99996,
-      "epss_percentile": 0.99988,
-      "epss_date": "2026-11-24",
+      "epss": 0.09335,
+      "epss_percentile": 0.9612,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "sharepoint",
       "watchlist": true,
@@ -6584,9 +6584,9 @@
       "cwes": [
         "CWE-502"
       ],
-      "epss": 0.99999,
-      "epss_percentile": 0.99991,
-      "epss_date": "2026-11-24",
+      "epss": 0.86527,
+      "epss_percentile": 0.99825,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "sharepoint",
       "watchlist": true,
@@ -6615,9 +6615,9 @@
       "cwes": [
         "CWE-89"
       ],
-      "epss": 0.99921,
-      "epss_percentile": 0.99968,
-      "epss_date": "2026-11-24",
+      "epss": 0.5088,
+      "epss_percentile": 0.99192,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "fortinet",
       "watchlist": true,
@@ -6646,9 +6646,9 @@
       "cwes": [
         "CWE-125"
       ],
-      "epss": 0.99939,
-      "epss_percentile": 0.99971,
-      "epss_date": "2026-11-24",
+      "epss": 0.99922,
+      "epss_percentile": 0.99984,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "netscaler",
       "watchlist": true,
@@ -6679,8 +6679,8 @@
         "CWE-807"
       ],
       "epss": 0.81037,
-      "epss_percentile": 0.99638,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.9975,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "zimbra",
       "watchlist": true,
@@ -6711,8 +6711,8 @@
         "CWE-88"
       ],
       "epss": 0.99714,
-      "epss_percentile": 0.99951,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99974,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "php",
       "watchlist": true,
@@ -6741,9 +6741,9 @@
       "cwes": [
         "CWE-843"
       ],
-      "epss": 0.14142,
-      "epss_percentile": 0.96642,
-      "epss_date": "2026-11-24",
+      "epss": 0.00864,
+      "epss_percentile": 0.56184,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "chromium",
       "watchlist": true,
@@ -6772,9 +6772,9 @@
       "cwes": [
         "CWE-119"
       ],
-      "epss": 0.09576,
-      "epss_percentile": 0.95549,
-      "epss_date": "2026-11-24",
+      "epss": 0.01445,
+      "epss_percentile": 0.73525,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "netscaler",
       "watchlist": true,
@@ -6803,9 +6803,9 @@
       "cwes": [
         "CWE-22"
       ],
-      "epss": 0.82714,
-      "epss_percentile": 0.99672,
-      "epss_date": "2026-11-24",
+      "epss": 0.19283,
+      "epss_percentile": 0.97905,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "d-link",
       "watchlist": true,
@@ -6834,9 +6834,9 @@
       "cwes": [
         "CWE-798"
       ],
-      "epss": 0.0664,
-      "epss_percentile": 0.93962,
-      "epss_date": "2026-11-24",
+      "epss": 0.08269,
+      "epss_percentile": 0.95669,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "fortinet",
       "watchlist": true,
@@ -6865,9 +6865,9 @@
       "cwes": [
         "CWE-282"
       ],
-      "epss": 0.0788,
-      "epss_percentile": 0.94788,
-      "epss_date": "2026-11-24",
+      "epss": 0.03337,
+      "epss_percentile": 0.89396,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "linux kernel",
       "watchlist": true,
@@ -6894,9 +6894,9 @@
       "required_action": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
       "known_ransomware": false,
       "cwes": [],
-      "epss": 0.00999,
-      "epss_percentile": 0.63466,
-      "epss_date": "2026-11-24",
+      "epss": 0.0074,
+      "epss_percentile": 0.5063,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "apple",
       "watchlist": true,
@@ -6925,9 +6925,9 @@
       "cwes": [
         "CWE-77"
       ],
-      "epss": 0.41874,
-      "epss_percentile": 0.98709,
-      "epss_date": "2026-11-24",
+      "epss": 0.40739,
+      "epss_percentile": 0.98982,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "tp-link",
       "watchlist": true,
@@ -6956,9 +6956,9 @@
       "cwes": [
         "CWE-73"
       ],
-      "epss": 0.84528,
-      "epss_percentile": 0.99706,
-      "epss_date": "2026-11-24",
+      "epss": 0.33924,
+      "epss_percentile": 0.98779,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "microsoft windows",
       "watchlist": true,
@@ -6988,9 +6988,9 @@
         "CWE-125",
         "CWE-787"
       ],
-      "epss": 0.07553,
-      "epss_percentile": 0.946,
-      "epss_date": "2026-11-24",
+      "epss": 0.04492,
+      "epss_percentile": 0.92252,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "chromium",
       "watchlist": true,
@@ -7019,9 +7019,9 @@
       "cwes": [
         "CWE-94"
       ],
-      "epss": 0.88003,
-      "epss_percentile": 0.99765,
-      "epss_date": "2026-11-24",
+      "epss": 0.10833,
+      "epss_percentile": 0.96573,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "ivanti",
       "watchlist": true,
@@ -7050,9 +7050,9 @@
       "cwes": [
         "CWE-288"
       ],
-      "epss": 0.99927,
-      "epss_percentile": 0.99969,
-      "epss_date": "2026-11-24",
+      "epss": 0.69186,
+      "epss_percentile": 0.99534,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "ivanti",
       "watchlist": true,
@@ -7081,9 +7081,9 @@
       "cwes": [
         "CWE-79"
       ],
-      "epss": 0.24606,
-      "epss_percentile": 0.97917,
-      "epss_date": "2026-11-24",
+      "epss": 0.02184,
+      "epss_percentile": 0.8307,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "zimbra",
       "watchlist": true,
@@ -7112,9 +7112,9 @@
       "cwes": [
         "CWE-502"
       ],
-      "epss": 0.12854,
-      "epss_percentile": 0.96369,
-      "epss_date": "2026-11-24",
+      "epss": 0.02698,
+      "epss_percentile": 0.86648,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "sap",
       "watchlist": true,
@@ -7143,9 +7143,9 @@
       "cwes": [
         "CWE-78"
       ],
-      "epss": 0.98223,
-      "epss_percentile": 0.99914,
-      "epss_date": "2026-11-24",
+      "epss": 0.77031,
+      "epss_percentile": 0.99686,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "draytek vigor",
       "watchlist": true,
@@ -7174,9 +7174,9 @@
       "cwes": [
         "CWE-124"
       ],
-      "epss": 0.30944,
-      "epss_percentile": 0.98285,
-      "epss_date": "2026-11-24",
+      "epss": 0.02376,
+      "epss_percentile": 0.84585,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "fortinet",
       "watchlist": true,
@@ -7205,9 +7205,9 @@
       "cwes": [
         "CWE-416"
       ],
-      "epss": 0.01818,
-      "epss_percentile": 0.79151,
-      "epss_date": "2026-11-24",
+      "epss": 0.00651,
+      "epss_percentile": 0.4588,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "microsoft windows",
       "watchlist": true,
@@ -7236,9 +7236,9 @@
       "cwes": [
         "CWE-122"
       ],
-      "epss": 0.02333,
-      "epss_percentile": 0.83875,
-      "epss_date": "2026-11-24",
+      "epss": 0.00935,
+      "epss_percentile": 0.59096,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "microsoft windows",
       "watchlist": true,
@@ -7267,9 +7267,9 @@
       "cwes": [
         "CWE-416"
       ],
-      "epss": 0.01416,
-      "epss_percentile": 0.73314,
-      "epss_date": "2026-11-24",
+      "epss": 0.00651,
+      "epss_percentile": 0.45881,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "microsoft windows",
       "watchlist": true,
@@ -7298,9 +7298,9 @@
       "cwes": [
         "CWE-416"
       ],
-      "epss": 0.01933,
-      "epss_percentile": 0.80448,
-      "epss_date": "2026-11-24",
+      "epss": 0.00651,
+      "epss_percentile": 0.4588,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "microsoft windows",
       "watchlist": true,
@@ -7329,9 +7329,9 @@
       "cwes": [
         "CWE-843"
       ],
-      "epss": 0.27465,
-      "epss_percentile": 0.98099,
-      "epss_date": "2026-11-24",
+      "epss": 0.09552,
+      "epss_percentile": 0.96195,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "microsoft windows",
       "watchlist": true,
@@ -7360,9 +7360,9 @@
       "cwes": [
         "CWE-116"
       ],
-      "epss": 0.99957,
-      "epss_percentile": 0.99974,
-      "epss_date": "2026-11-24",
+      "epss": 0.77942,
+      "epss_percentile": 0.99703,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "apache http",
       "watchlist": true,
@@ -7391,9 +7391,9 @@
       "cwes": [
         "CWE-78"
       ],
-      "epss": 0.7625,
-      "epss_percentile": 0.99541,
-      "epss_date": "2026-11-24",
+      "epss": 0.23065,
+      "epss_percentile": 0.98254,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "sonicwall",
       "watchlist": true,
@@ -7422,9 +7422,9 @@
       "cwes": [
         "CWE-434"
       ],
-      "epss": 0.99486,
-      "epss_percentile": 0.99943,
-      "epss_date": "2026-11-24",
+      "epss": 0.22853,
+      "epss_percentile": 0.98241,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "sap",
       "watchlist": true,
@@ -7451,9 +7451,9 @@
       "required_action": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
       "known_ransomware": false,
       "cwes": [],
-      "epss": 0.13973,
-      "epss_percentile": 0.96617,
-      "epss_date": "2026-11-24",
+      "epss": 0.02718,
+      "epss_percentile": 0.86746,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "apple",
       "watchlist": true,
@@ -7480,9 +7480,9 @@
       "required_action": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
       "known_ransomware": false,
       "cwes": [],
-      "epss": 0.20898,
-      "epss_percentile": 0.97602,
-      "epss_date": "2026-11-24",
+      "epss": 0.05477,
+      "epss_percentile": 0.93531,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "apple",
       "watchlist": true,
@@ -7511,9 +7511,9 @@
       "cwes": [
         "CWE-73"
       ],
-      "epss": 0.6227,
-      "epss_percentile": 0.99197,
-      "epss_date": "2026-11-24",
+      "epss": 0.08394,
+      "epss_percentile": 0.95734,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "microsoft windows",
       "watchlist": true,
@@ -7543,8 +7543,8 @@
         "CWE-78"
       ],
       "epss": 0.04406,
-      "epss_percentile": 0.91474,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.92098,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "sonicwall",
       "watchlist": true,
@@ -7573,9 +7573,9 @@
       "cwes": [
         "CWE-787"
       ],
-      "epss": 0.04117,
-      "epss_percentile": 0.90946,
-      "epss_date": "2026-11-24",
+      "epss": 0.00796,
+      "epss_percentile": 0.53075,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "linux kernel",
       "watchlist": true,
@@ -7604,9 +7604,9 @@
       "cwes": [
         "CWE-125"
       ],
-      "epss": 0.01354,
-      "epss_percentile": 0.72167,
-      "epss_date": "2026-11-24",
+      "epss": 0.00773,
+      "epss_percentile": 0.52095,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "linux kernel",
       "watchlist": true,
@@ -7635,9 +7635,9 @@
       "cwes": [
         "CWE-416"
       ],
-      "epss": 0.19254,
-      "epss_percentile": 0.97387,
-      "epss_date": "2026-11-24",
+      "epss": 0.00953,
+      "epss_percentile": 0.59897,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "microsoft windows",
       "watchlist": true,
@@ -7666,9 +7666,9 @@
       "cwes": [
         "CWE-121"
       ],
-      "epss": 0.99981,
-      "epss_percentile": 0.9998,
-      "epss_date": "2026-11-24",
+      "epss": 0.41019,
+      "epss_percentile": 0.98989,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "ivanti",
       "watchlist": true,
@@ -7698,9 +7698,9 @@
         "CWE-44",
         "CWE-502"
       ],
-      "epss": 0.99942,
-      "epss_percentile": 0.99972,
-      "epss_date": "2026-11-24",
+      "epss": 0.91089,
+      "epss_percentile": 0.99876,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "apache tomcat",
       "watchlist": true,
@@ -7727,9 +7727,9 @@
       "required_action": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
       "known_ransomware": false,
       "cwes": [],
-      "epss": 0.09238,
-      "epss_percentile": 0.9543,
-      "epss_date": "2026-11-24",
+      "epss": 0.04323,
+      "epss_percentile": 0.91944,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "chromium",
       "watchlist": true,
@@ -7759,8 +7759,8 @@
         "CWE-22"
       ],
       "epss": 0.95111,
-      "epss_percentile": 0.99862,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99914,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "sap",
       "watchlist": true,
@@ -7789,9 +7789,9 @@
       "cwes": [
         "CWE-288"
       ],
-      "epss": 0.07188,
-      "epss_percentile": 0.94386,
-      "epss_date": "2026-11-24",
+      "epss": 0.01406,
+      "epss_percentile": 0.72759,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "fortinet",
       "watchlist": true,
@@ -7820,9 +7820,9 @@
       "cwes": [
         "CWE-787"
       ],
-      "epss": 0.03879,
-      "epss_percentile": 0.90389,
-      "epss_date": "2026-11-24",
+      "epss": 0.01694,
+      "epss_percentile": 0.77522,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "apple",
       "watchlist": true,
@@ -7851,9 +7851,9 @@
       "cwes": [
         "CWE-707"
       ],
-      "epss": 0.30391,
-      "epss_percentile": 0.98259,
-      "epss_date": "2026-11-24",
+      "epss": 0.04356,
+      "epss_percentile": 0.92005,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "microsoft windows",
       "watchlist": true,
@@ -7882,9 +7882,9 @@
       "cwes": [
         "CWE-122"
       ],
-      "epss": 0.02216,
-      "epss_percentile": 0.82978,
-      "epss_date": "2026-11-24",
+      "epss": 0.01016,
+      "epss_percentile": 0.62336,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "microsoft windows",
       "watchlist": true,
@@ -7913,9 +7913,9 @@
       "cwes": [
         "CWE-125"
       ],
-      "epss": 0.02018,
-      "epss_percentile": 0.81326,
-      "epss_date": "2026-11-24",
+      "epss": 0.01252,
+      "epss_percentile": 0.69398,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "microsoft windows",
       "watchlist": true,
@@ -7945,9 +7945,9 @@
         "CWE-190",
         "CWE-122"
       ],
-      "epss": 0.0389,
-      "epss_percentile": 0.90415,
-      "epss_date": "2026-11-24",
+      "epss": 0.01526,
+      "epss_percentile": 0.74971,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "microsoft windows",
       "watchlist": true,
@@ -7976,9 +7976,9 @@
       "cwes": [
         "CWE-532"
       ],
-      "epss": 0.01994,
-      "epss_percentile": 0.811,
-      "epss_date": "2026-11-24",
+      "epss": 0.01039,
+      "epss_percentile": 0.63185,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "microsoft windows",
       "watchlist": true,
@@ -8007,9 +8007,9 @@
       "cwes": [
         "CWE-416"
       ],
-      "epss": 0.02391,
-      "epss_percentile": 0.84281,
-      "epss_date": "2026-11-24",
+      "epss": 0.00569,
+      "epss_percentile": 0.40922,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "microsoft windows",
       "watchlist": true,
@@ -8038,9 +8038,9 @@
       "cwes": [
         "CWE-36"
       ],
-      "epss": 0.89809,
-      "epss_percentile": 0.9979,
-      "epss_date": "2026-11-24",
+      "epss": 0.49558,
+      "epss_percentile": 0.99165,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "ivanti",
       "watchlist": true,
@@ -8069,9 +8069,9 @@
       "cwes": [
         "CWE-36"
       ],
-      "epss": 0.90985,
-      "epss_percentile": 0.99807,
-      "epss_date": "2026-11-24",
+      "epss": 0.52716,
+      "epss_percentile": 0.99224,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "ivanti",
       "watchlist": true,
@@ -8100,9 +8100,9 @@
       "cwes": [
         "CWE-36"
       ],
-      "epss": 0.99993,
-      "epss_percentile": 0.99986,
-      "epss_date": "2026-11-24",
+      "epss": 0.89777,
+      "epss_percentile": 0.99863,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "ivanti",
       "watchlist": true,
@@ -8131,9 +8131,9 @@
       "cwes": [
         "CWE-125"
       ],
-      "epss": 0.01633,
-      "epss_percentile": 0.7678,
-      "epss_date": "2026-11-24",
+      "epss": 0.00453,
+      "epss_percentile": 0.3126,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "vmware",
       "watchlist": true,
@@ -8162,9 +8162,9 @@
       "cwes": [
         "CWE-123"
       ],
-      "epss": 0.01016,
-      "epss_percentile": 0.64004,
-      "epss_date": "2026-11-24",
+      "epss": 0.00459,
+      "epss_percentile": 0.31723,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "vmware",
       "watchlist": true,
@@ -8193,9 +8193,9 @@
       "cwes": [
         "CWE-367"
       ],
-      "epss": 0.01561,
-      "epss_percentile": 0.75757,
-      "epss_date": "2026-11-24",
+      "epss": 0.00721,
+      "epss_percentile": 0.49755,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "vmware",
       "watchlist": true,
@@ -8224,9 +8224,9 @@
       "cwes": [
         "CWE-908"
       ],
-      "epss": 0.00811,
-      "epss_percentile": 0.57691,
-      "epss_date": "2026-11-24",
+      "epss": 0.00661,
+      "epss_percentile": 0.46452,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "linux kernel",
       "watchlist": true,
@@ -8255,9 +8255,9 @@
       "cwes": [
         "CWE-22"
       ],
-      "epss": 0.99288,
-      "epss_percentile": 0.99937,
-      "epss_date": "2026-11-24",
+      "epss": 0.49481,
+      "epss_percentile": 0.99164,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "progress",
       "watchlist": true,
@@ -8286,9 +8286,9 @@
       "cwes": [
         "CWE-77"
       ],
-      "epss": 0.54107,
-      "epss_percentile": 0.99021,
-      "epss_date": "2026-11-24",
+      "epss": 0.02154,
+      "epss_percentile": 0.82823,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "cisco small business",
       "watchlist": true,
@@ -8318,8 +8318,8 @@
         "CWE-404"
       ],
       "epss": 0.22349,
-      "epss_percentile": 0.97733,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.98203,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "microsoft windows",
       "watchlist": true,
@@ -8348,9 +8348,9 @@
       "cwes": [
         "CWE-79"
       ],
-      "epss": 0.77266,
-      "epss_percentile": 0.99561,
-      "epss_date": "2026-11-24",
+      "epss": 0.08537,
+      "epss_percentile": 0.95802,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "zimbra",
       "watchlist": true,
@@ -8379,9 +8379,9 @@
       "cwes": [
         "CWE-502"
       ],
-      "epss": 0.03934,
-      "epss_percentile": 0.90552,
-      "epss_date": "2026-11-24",
+      "epss": 0.02389,
+      "epss_percentile": 0.8468,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "oracle",
       "watchlist": true,
@@ -8411,8 +8411,8 @@
         "CWE-502"
       ],
       "epss": 0.90597,
-      "epss_percentile": 0.99802,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99871,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "adobe",
       "watchlist": true,
@@ -8441,9 +8441,9 @@
       "cwes": [
         "CWE-73"
       ],
-      "epss": 0.01957,
-      "epss_percentile": 0.80717,
-      "epss_date": "2026-11-24",
+      "epss": 0.01197,
+      "epss_percentile": 0.68005,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "pan-os",
       "watchlist": true,
@@ -8472,9 +8472,9 @@
       "cwes": [
         "CWE-306"
       ],
-      "epss": 0.98598,
-      "epss_percentile": 0.99922,
-      "epss_date": "2026-11-24",
+      "epss": 0.59037,
+      "epss_percentile": 0.99337,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "pan-os",
       "watchlist": true,
@@ -8503,9 +8503,9 @@
       "cwes": [
         "CWE-287"
       ],
-      "epss": 0.95314,
-      "epss_percentile": 0.99865,
-      "epss_date": "2026-11-24",
+      "epss": 0.53403,
+      "epss_percentile": 0.99238,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "sonicwall",
       "watchlist": true,
@@ -8534,9 +8534,9 @@
       "cwes": [
         "CWE-863"
       ],
-      "epss": 0.04496,
-      "epss_percentile": 0.91632,
-      "epss_date": "2026-11-24",
+      "epss": 0.02265,
+      "epss_percentile": 0.83696,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "apple",
       "watchlist": true,
@@ -8565,9 +8565,9 @@
       "cwes": [
         "CWE-122"
       ],
-      "epss": 0.02149,
-      "epss_percentile": 0.82464,
-      "epss_date": "2026-11-24",
+      "epss": 0.00796,
+      "epss_percentile": 0.53103,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "microsoft windows",
       "watchlist": true,
@@ -8596,9 +8596,9 @@
       "cwes": [
         "CWE-59"
       ],
-      "epss": 0.02322,
-      "epss_percentile": 0.83786,
-      "epss_date": "2026-11-24",
+      "epss": 0.01087,
+      "epss_percentile": 0.64873,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "microsoft windows",
       "watchlist": true,
@@ -8627,9 +8627,9 @@
       "cwes": [
         "CWE-20"
       ],
-      "epss": 0.9466,
-      "epss_percentile": 0.99856,
-      "epss_date": "2026-11-24",
+      "epss": 0.22087,
+      "epss_percentile": 0.98183,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "microsoft office",
       "watchlist": true,
@@ -8659,8 +8659,8 @@
         "CWE-89"
       ],
       "epss": 0.04696,
-      "epss_percentile": 0.91934,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.92565,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "sophos",
       "watchlist": true,
@@ -8690,8 +8690,8 @@
         "CWE-120"
       ],
       "epss": 0.10392,
-      "epss_percentile": 0.95806,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.96455,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "sophos",
       "watchlist": true,
@@ -8720,9 +8720,9 @@
       "cwes": [
         "CWE-787"
       ],
-      "epss": 0.03395,
-      "epss_percentile": 0.89038,
-      "epss_date": "2026-11-24",
+      "epss": 0.01048,
+      "epss_percentile": 0.63513,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "linux kernel",
       "watchlist": true,
@@ -8751,9 +8751,9 @@
       "cwes": [
         "CWE-416"
       ],
-      "epss": 0.17537,
-      "epss_percentile": 0.97191,
-      "epss_date": "2026-11-24",
+      "epss": 0.09701,
+      "epss_percentile": 0.96243,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "apple",
       "watchlist": true,
@@ -8782,9 +8782,9 @@
       "cwes": [
         "CWE-502"
       ],
-      "epss": 0.26561,
-      "epss_percentile": 0.98047,
-      "epss_date": "2026-11-24",
+      "epss": 0.02406,
+      "epss_percentile": 0.84786,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "sonicwall",
       "watchlist": true,
@@ -8813,9 +8813,9 @@
       "cwes": [
         "CWE-416"
       ],
-      "epss": 0.01413,
-      "epss_percentile": 0.73272,
-      "epss_date": "2026-11-24",
+      "epss": 0.00837,
+      "epss_percentile": 0.55052,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "microsoft windows",
       "watchlist": true,
@@ -8844,9 +8844,9 @@
       "cwes": [
         "CWE-416"
       ],
-      "epss": 0.01573,
-      "epss_percentile": 0.75931,
-      "epss_date": "2026-11-24",
+      "epss": 0.00837,
+      "epss_percentile": 0.55052,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "microsoft windows",
       "watchlist": true,
@@ -8875,9 +8875,9 @@
       "cwes": [
         "CWE-122"
       ],
-      "epss": 0.10066,
-      "epss_percentile": 0.95704,
-      "epss_date": "2026-11-24",
+      "epss": 0.05422,
+      "epss_percentile": 0.93471,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "microsoft windows",
       "watchlist": true,
@@ -8906,9 +8906,9 @@
       "cwes": [
         "CWE-288"
       ],
-      "epss": 0.9435,
-      "epss_percentile": 0.99851,
-      "epss_date": "2026-11-24",
+      "epss": 0.4545,
+      "epss_percentile": 0.99087,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "fortinet",
       "watchlist": true,
@@ -8937,9 +8937,9 @@
       "cwes": [
         "CWE-121"
       ],
-      "epss": 0.9998,
-      "epss_percentile": 0.99979,
-      "epss_date": "2026-11-24",
+      "epss": 0.91831,
+      "epss_percentile": 0.99883,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "ivanti",
       "watchlist": true,
@@ -8967,8 +8967,8 @@
       "known_ransomware": false,
       "cwes": [],
       "epss": 0.94582,
-      "epss_percentile": 0.99855,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99908,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "weblogic",
       "watchlist": true,
@@ -8997,9 +8997,9 @@
       "cwes": [
         "CWE-754"
       ],
-      "epss": 0.30218,
-      "epss_percentile": 0.98249,
-      "epss_date": "2026-11-24",
+      "epss": 0.06056,
+      "epss_percentile": 0.9415,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "pan-os",
       "watchlist": true,
@@ -9028,9 +9028,9 @@
       "cwes": [
         "CWE-822"
       ],
-      "epss": 0.25222,
-      "epss_percentile": 0.97968,
-      "epss_date": "2026-11-24",
+      "epss": 0.0671,
+      "epss_percentile": 0.94687,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "microsoft windows",
       "watchlist": true,
@@ -9059,9 +9059,9 @@
       "cwes": [
         "CWE-284"
       ],
-      "epss": 0.98514,
-      "epss_percentile": 0.9992,
-      "epss_date": "2026-11-24",
+      "epss": 0.85884,
+      "epss_percentile": 0.99816,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "adobe",
       "watchlist": true,
@@ -9090,9 +9090,9 @@
       "cwes": [
         "CWE-122"
       ],
-      "epss": 0.26215,
-      "epss_percentile": 0.98026,
-      "epss_date": "2026-11-24",
+      "epss": 0.04723,
+      "epss_percentile": 0.92606,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "microsoft windows",
       "watchlist": true,
@@ -9121,9 +9121,9 @@
       "cwes": [
         "CWE-77"
       ],
-      "epss": 0.93767,
-      "epss_percentile": 0.99842,
-      "epss_date": "2026-11-24",
+      "epss": 0.56781,
+      "epss_percentile": 0.99298,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "pan-os",
       "watchlist": true,
@@ -9152,9 +9152,9 @@
       "cwes": [
         "CWE-306"
       ],
-      "epss": 0.99783,
-      "epss_percentile": 0.99955,
-      "epss_date": "2026-11-24",
+      "epss": 0.62201,
+      "epss_percentile": 0.99394,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "pan-os",
       "watchlist": true,
@@ -9183,9 +9183,9 @@
       "cwes": [
         "CWE-287"
       ],
-      "epss": 0.16871,
-      "epss_percentile": 0.97107,
-      "epss_date": "2026-11-24",
+      "epss": 0.01788,
+      "epss_percentile": 0.78831,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "microsoft windows",
       "watchlist": true,
@@ -9214,9 +9214,9 @@
       "cwes": [
         "CWE-502"
       ],
-      "epss": 0.50892,
-      "epss_percentile": 0.98943,
-      "epss_date": "2026-11-24",
+      "epss": 0.06274,
+      "epss_percentile": 0.94355,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "sharepoint",
       "watchlist": true,
@@ -9245,9 +9245,9 @@
       "cwes": [
         "CWE-416"
       ],
-      "epss": 0.23184,
-      "epss_percentile": 0.97803,
-      "epss_date": "2026-11-24",
+      "epss": 0.06709,
+      "epss_percentile": 0.94687,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "mozilla",
       "watchlist": true,
@@ -9276,9 +9276,9 @@
       "cwes": [
         "CWE-367"
       ],
-      "epss": 0.68202,
-      "epss_percentile": 0.99338,
-      "epss_date": "2026-11-24",
+      "epss": 0.16078,
+      "epss_percentile": 0.97543,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "microsoft windows",
       "watchlist": true,
@@ -9307,9 +9307,9 @@
       "cwes": [
         "CWE-89"
       ],
-      "epss": 0.92907,
-      "epss_percentile": 0.99832,
-      "epss_date": "2026-11-24",
+      "epss": 0.66699,
+      "epss_percentile": 0.9948,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "progress",
       "watchlist": true,
@@ -9338,9 +9338,9 @@
       "cwes": [
         "CWE-284"
       ],
-      "epss": 0.2201,
-      "epss_percentile": 0.97704,
-      "epss_date": "2026-11-24",
+      "epss": 0.01846,
+      "epss_percentile": 0.79566,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "sonicwall",
       "watchlist": true,
@@ -9370,8 +9370,8 @@
         "CWE-119"
       ],
       "epss": 0.10695,
-      "epss_percentile": 0.95893,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.96537,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "linux kernel",
       "watchlist": true,
@@ -9400,9 +9400,9 @@
       "cwes": [
         "CWE-27"
       ],
-      "epss": 0.99999,
-      "epss_percentile": 0.99995,
-      "epss_date": "2026-11-24",
+      "epss": 0.92395,
+      "epss_percentile": 0.99889,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "jenkins",
       "watchlist": true,
@@ -9431,9 +9431,9 @@
       "cwes": [
         "CWE-305"
       ],
-      "epss": 0.2677,
-      "epss_percentile": 0.9806,
-      "epss_date": "2026-11-24",
+      "epss": 0.03349,
+      "epss_percentile": 0.89433,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "vmware",
       "watchlist": true,
@@ -9462,9 +9462,9 @@
       "cwes": [
         "CWE-269"
       ],
-      "epss": 0.04014,
-      "epss_percentile": 0.90732,
-      "epss_date": "2026-11-24",
+      "epss": 0.00856,
+      "epss_percentile": 0.55862,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "microsoft windows",
       "watchlist": true,
@@ -9493,9 +9493,9 @@
       "cwes": [
         "CWE-78"
       ],
-      "epss": 0.99985,
-      "epss_percentile": 0.99982,
-      "epss_date": "2026-11-24",
+      "epss": 0.94815,
+      "epss_percentile": 0.99911,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "php",
       "watchlist": true,
@@ -9524,9 +9524,9 @@
       "cwes": [
         "CWE-416"
       ],
-      "epss": 0.28058,
-      "epss_percentile": 0.98136,
-      "epss_date": "2026-11-24",
+      "epss": 0.02438,
+      "epss_percentile": 0.84998,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "linux kernel",
       "watchlist": true,
@@ -9556,9 +9556,9 @@
         "CWE-20",
         "CWE-77"
       ],
-      "epss": 0.99999,
-      "epss_percentile": 1.0,
-      "epss_date": "2026-11-24",
+      "epss": 0.93034,
+      "epss_percentile": 0.99893,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "pan-os",
       "watchlist": true,
@@ -9587,9 +9587,9 @@
       "cwes": [
         "CWE-94"
       ],
-      "epss": 0.84974,
-      "epss_percentile": 0.99715,
-      "epss_date": "2026-11-24",
+      "epss": 0.18668,
+      "epss_percentile": 0.97842,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "sharepoint",
       "watchlist": true,
@@ -9618,9 +9618,9 @@
       "cwes": [
         "CWE-89"
       ],
-      "epss": 0.98446,
-      "epss_percentile": 0.99917,
-      "epss_date": "2026-11-24",
+      "epss": 0.59162,
+      "epss_percentile": 0.99338,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "fortinet",
       "watchlist": true,
@@ -9650,8 +9650,8 @@
         "CWE-94"
       ],
       "epss": 0.99105,
-      "epss_percentile": 0.99933,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99963,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "ivanti",
       "watchlist": true,
@@ -9680,9 +9680,9 @@
       "cwes": [
         "CWE-288"
       ],
-      "epss": 0.99938,
-      "epss_percentile": 0.9997,
-      "epss_date": "2026-11-24",
+      "epss": 0.81897,
+      "epss_percentile": 0.99764,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "jetbrains teamcity",
       "watchlist": true,
@@ -9711,9 +9711,9 @@
       "cwes": [
         "CWE-822"
       ],
-      "epss": 0.62209,
-      "epss_percentile": 0.99195,
-      "epss_date": "2026-11-24",
+      "epss": 0.07672,
+      "epss_percentile": 0.95341,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "microsoft windows",
       "watchlist": true,
@@ -9743,8 +9743,8 @@
         "CWE-200"
       ],
       "epss": 0.715,
-      "epss_percentile": 0.99423,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99585,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "adaptive security",
       "watchlist": true,
@@ -9773,9 +9773,9 @@
       "cwes": [
         "CWE-693"
       ],
-      "epss": 0.9941,
-      "epss_percentile": 0.99941,
-      "epss_date": "2026-11-24",
+      "epss": 0.07398,
+      "epss_percentile": 0.95179,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "microsoft windows",
       "watchlist": true,
@@ -9804,9 +9804,9 @@
       "cwes": [
         "CWE-787"
       ],
-      "epss": 0.84589,
-      "epss_percentile": 0.99708,
-      "epss_date": "2026-11-24",
+      "epss": 0.10232,
+      "epss_percentile": 0.96406,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "fortinet",
       "watchlist": true,
@@ -9836,8 +9836,8 @@
         "CWE-918"
       ],
       "epss": 0.99999,
-      "epss_percentile": 0.99999,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 1.0,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "ivanti",
       "watchlist": true,
@@ -9866,9 +9866,9 @@
       "cwes": [
         "CWE-74"
       ],
-      "epss": 0.99999,
-      "epss_percentile": 0.99994,
-      "epss_date": "2026-11-24",
+      "epss": 0.8376,
+      "epss_percentile": 0.9979,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "confluence",
       "watchlist": true,
@@ -9897,9 +9897,9 @@
       "cwes": [
         "CWE-287"
       ],
-      "epss": 0.99999,
-      "epss_percentile": 0.99995,
-      "epss_date": "2026-11-24",
+      "epss": 0.90324,
+      "epss_percentile": 0.99868,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "ivanti",
       "watchlist": true,
@@ -9928,9 +9928,9 @@
       "cwes": [
         "CWE-77"
       ],
-      "epss": 0.99999,
-      "epss_percentile": 0.99999,
-      "epss_date": "2026-11-24",
+      "epss": 0.90785,
+      "epss_percentile": 0.99873,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "ivanti",
       "watchlist": true,
@@ -9959,9 +9959,9 @@
       "cwes": [
         "CWE-287"
       ],
-      "epss": 0.99984,
-      "epss_percentile": 0.99981,
-      "epss_date": "2026-11-24",
+      "epss": 0.81212,
+      "epss_percentile": 0.99752,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "ivanti",
       "watchlist": true,
@@ -9990,9 +9990,9 @@
       "cwes": [
         "CWE-303"
       ],
-      "epss": 0.99984,
-      "epss_percentile": 0.99982,
-      "epss_date": "2026-11-24",
+      "epss": 0.65696,
+      "epss_percentile": 0.99458,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "sharepoint",
       "watchlist": true,
@@ -10021,9 +10021,9 @@
       "cwes": [
         "CWE-502"
       ],
-      "epss": 0.97074,
-      "epss_percentile": 0.9989,
-      "epss_date": "2026-11-24",
+      "epss": 0.86624,
+      "epss_percentile": 0.99826,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "adobe",
       "watchlist": true,
@@ -10052,9 +10052,9 @@
       "cwes": [
         "CWE-502"
       ],
-      "epss": 0.99991,
-      "epss_percentile": 0.99984,
-      "epss_date": "2026-11-24",
+      "epss": 0.9186,
+      "epss_percentile": 0.99883,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "adobe",
       "watchlist": true,
@@ -10083,9 +10083,9 @@
       "cwes": [
         "CWE-863"
       ],
-      "epss": 0.99999,
-      "epss_percentile": 0.99996,
-      "epss_date": "2026-11-24",
+      "epss": 0.66014,
+      "epss_percentile": 0.99463,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "confluence",
       "watchlist": true,
@@ -10114,9 +10114,9 @@
       "cwes": [
         "CWE-288"
       ],
-      "epss": 0.96715,
-      "epss_percentile": 0.99883,
-      "epss_date": "2026-11-24",
+      "epss": 0.78237,
+      "epss_percentile": 0.99707,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "f5",
       "watchlist": true,
@@ -10145,9 +10145,9 @@
       "cwes": [
         "CWE-119"
       ],
-      "epss": 0.99999,
-      "epss_percentile": 0.99997,
-      "epss_date": "2026-11-24",
+      "epss": 0.72378,
+      "epss_percentile": 0.99603,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "netscaler",
       "watchlist": true,
@@ -10176,9 +10176,9 @@
       "cwes": [
         "CWE-502"
       ],
-      "epss": 0.90355,
-      "epss_percentile": 0.99799,
-      "epss_date": "2026-11-24",
+      "epss": 0.70368,
+      "epss_percentile": 0.99561,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "progress",
       "watchlist": true,
@@ -10205,9 +10205,9 @@
       "required_action": "Apply mitigations per vendor instructions or discontinue use of the product if mitigations are unavailable. Check all affected Confluence instances for evidence of compromise per vendor instructions and report any positive findings to CISA.",
       "known_ransomware": true,
       "cwes": [],
-      "epss": 0.99994,
-      "epss_percentile": 0.99987,
-      "epss_date": "2026-11-24",
+      "epss": 0.79155,
+      "epss_percentile": 0.99724,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "confluence",
       "watchlist": true,
@@ -10236,9 +10236,9 @@
       "cwes": [
         "CWE-288"
       ],
-      "epss": 0.99987,
-      "epss_percentile": 0.99983,
-      "epss_date": "2026-11-24",
+      "epss": 0.85985,
+      "epss_percentile": 0.99818,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "jetbrains teamcity",
       "watchlist": true,
@@ -10267,9 +10267,9 @@
       "cwes": [
         "CWE-288"
       ],
-      "epss": 0.26623,
-      "epss_percentile": 0.98051,
-      "epss_date": "2026-11-24",
+      "epss": 0.01288,
+      "epss_percentile": 0.70234,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "adaptive security",
       "watchlist": true,
@@ -10298,9 +10298,9 @@
       "cwes": [
         "CWE-863"
       ],
-      "epss": 0.9995,
-      "epss_percentile": 0.99973,
-      "epss_date": "2026-11-24",
+      "epss": 0.91578,
+      "epss_percentile": 0.99881,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "ivanti",
       "watchlist": true,
@@ -10329,9 +10329,9 @@
       "cwes": [
         "CWE-287"
       ],
-      "epss": 0.99999,
-      "epss_percentile": 0.99998,
-      "epss_date": "2026-11-24",
+      "epss": 0.85276,
+      "epss_percentile": 0.99808,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "ivanti",
       "watchlist": true,
@@ -10360,9 +10360,9 @@
       "cwes": [
         "CWE-94"
       ],
-      "epss": 0.99749,
-      "epss_percentile": 0.99954,
-      "epss_date": "2026-11-24",
+      "epss": 0.84638,
+      "epss_percentile": 0.998,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "netscaler",
       "watchlist": true,
@@ -10391,9 +10391,9 @@
       "cwes": [
         "CWE-362"
       ],
-      "epss": 0.99439,
-      "epss_percentile": 0.99942,
-      "epss_date": "2026-11-24",
+      "epss": 0.10417,
+      "epss_percentile": 0.9646,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "microsoft windows",
       "watchlist": true,
@@ -10422,9 +10422,9 @@
       "cwes": [
         "CWE-122"
       ],
-      "epss": 0.8675,
-      "epss_percentile": 0.99743,
-      "epss_date": "2026-11-24",
+      "epss": 0.13781,
+      "epss_percentile": 0.97177,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "fortinet",
       "watchlist": true,
@@ -10453,9 +10453,9 @@
       "cwes": [
         "CWE-89"
       ],
-      "epss": 0.99934,
-      "epss_percentile": 0.9997,
-      "epss_date": "2026-11-24",
+      "epss": 0.80879,
+      "epss_percentile": 0.99748,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "moveit",
       "watchlist": true,
@@ -10484,9 +10484,9 @@
       "cwes": [
         "CWE-122"
       ],
-      "epss": 0.48892,
-      "epss_percentile": 0.98899,
-      "epss_date": "2026-11-24",
+      "epss": 0.07764,
+      "epss_percentile": 0.95392,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "microsoft windows",
       "watchlist": true,
@@ -10516,8 +10516,8 @@
         "CWE-269"
       ],
       "epss": 0.08589,
-      "epss_percentile": 0.95158,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.95826,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "microsoft windows",
       "watchlist": true,
@@ -10547,8 +10547,8 @@
         "CWE-94"
       ],
       "epss": 0.99448,
-      "epss_percentile": 0.99942,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99968,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "samba",
       "watchlist": true,
@@ -10577,9 +10577,9 @@
       "cwes": [
         "CWE-863"
       ],
-      "epss": 0.84129,
-      "epss_percentile": 0.99698,
-      "epss_date": "2026-11-24",
+      "epss": 0.01246,
+      "epss_percentile": 0.69256,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "microsoft windows",
       "watchlist": true,
@@ -10608,9 +10608,9 @@
       "cwes": [
         "CWE-122"
       ],
-      "epss": 0.10766,
-      "epss_percentile": 0.9591,
-      "epss_date": "2026-11-24",
+      "epss": 0.00987,
+      "epss_percentile": 0.61235,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "microsoft windows",
       "watchlist": true,
@@ -10640,8 +10640,8 @@
         "CWE-20"
       ],
       "epss": 0.15685,
-      "epss_percentile": 0.96912,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.9748,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "windows",
       "watchlist": true,
@@ -10670,9 +10670,9 @@
       "cwes": [
         "CWE-306"
       ],
-      "epss": 0.98342,
-      "epss_percentile": 0.99916,
-      "epss_date": "2026-11-24",
+      "epss": 0.8035,
+      "epss_percentile": 0.9974,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "oracle",
       "watchlist": true,
@@ -10699,9 +10699,9 @@
       "required_action": "Apply updates per vendor instructions.",
       "known_ransomware": true,
       "cwes": [],
-      "epss": 0.99753,
-      "epss_percentile": 0.99954,
-      "epss_date": "2026-11-24",
+      "epss": 0.95351,
+      "epss_percentile": 0.99917,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "manageengine",
       "watchlist": true,
@@ -10728,9 +10728,9 @@
       "required_action": "Apply updates per vendor instructions.",
       "known_ransomware": true,
       "cwes": [],
-      "epss": 0.76937,
-      "epss_percentile": 0.99555,
-      "epss_date": "2026-11-24",
+      "epss": 0.10175,
+      "epss_percentile": 0.96392,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "exchange server",
       "watchlist": true,
@@ -10759,9 +10759,9 @@
       "cwes": [
         "CWE-197"
       ],
-      "epss": 0.99474,
-      "epss_percentile": 0.99942,
-      "epss_date": "2026-11-24",
+      "epss": 0.61813,
+      "epss_percentile": 0.99386,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "fortinet",
       "watchlist": true,
@@ -10790,9 +10790,9 @@
       "cwes": [
         "CWE-863"
       ],
-      "epss": 0.02254,
-      "epss_percentile": 0.83271,
-      "epss_date": "2026-11-24",
+      "epss": 0.01589,
+      "epss_percentile": 0.7596,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "microsoft windows",
       "watchlist": true,
@@ -10821,9 +10821,9 @@
       "cwes": [
         "CWE-787"
       ],
-      "epss": 0.02627,
-      "epss_percentile": 0.85778,
-      "epss_date": "2026-11-24",
+      "epss": 0.01267,
+      "epss_percentile": 0.69757,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "microsoft windows",
       "watchlist": true,
@@ -10853,8 +10853,8 @@
         "CWE-427"
       ],
       "epss": 0.10049,
-      "epss_percentile": 0.95697,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.96351,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "connect secure",
       "watchlist": true,
@@ -10884,8 +10884,8 @@
         "CWE-427"
       ],
       "epss": 0.28515,
-      "epss_percentile": 0.9816,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.98562,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "connect secure",
       "watchlist": true,
@@ -10914,9 +10914,9 @@
       "cwes": [
         "CWE-22"
       ],
-      "epss": 0.95478,
-      "epss_percentile": 0.99868,
-      "epss_date": "2026-11-24",
+      "epss": 0.75943,
+      "epss_percentile": 0.9967,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "zimbra",
       "watchlist": true,
@@ -10945,9 +10945,9 @@
       "cwes": [
         "CWE-288"
       ],
-      "epss": 0.99984,
-      "epss_percentile": 0.99982,
-      "epss_date": "2026-11-24",
+      "epss": 0.98893,
+      "epss_percentile": 0.99959,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "fortinet",
       "watchlist": true,
@@ -10976,9 +10976,9 @@
       "cwes": [
         "CWE-502"
       ],
-      "epss": 0.9997,
-      "epss_percentile": 0.99977,
-      "epss_date": "2026-11-24",
+      "epss": 0.7262,
+      "epss_percentile": 0.99606,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "exchange server",
       "watchlist": true,
@@ -11007,9 +11007,9 @@
       "cwes": [
         "CWE-918"
       ],
-      "epss": 0.99956,
-      "epss_percentile": 0.99974,
-      "epss_date": "2026-11-24",
+      "epss": 0.62273,
+      "epss_percentile": 0.99396,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "exchange server",
       "watchlist": true,
@@ -11039,9 +11039,9 @@
         "CWE-20",
         "CWE-787"
       ],
-      "epss": 0.28483,
-      "epss_percentile": 0.98157,
-      "epss_date": "2026-11-24",
+      "epss": 0.01703,
+      "epss_percentile": 0.7766,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "microsoft windows",
       "watchlist": true,
@@ -11070,9 +11070,9 @@
       "cwes": [
         "CWE-610"
       ],
-      "epss": 0.87908,
-      "epss_percentile": 0.99763,
-      "epss_date": "2026-11-24",
+      "epss": 0.28076,
+      "epss_percentile": 0.98543,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "qnap",
       "watchlist": true,
@@ -11102,8 +11102,8 @@
         "CWE-78"
       ],
       "epss": 0.96682,
-      "epss_percentile": 0.99883,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99928,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "d-link",
       "watchlist": true,
@@ -11133,8 +11133,8 @@
         "CWE-732"
       ],
       "epss": 0.38088,
-      "epss_percentile": 0.9858,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.98906,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "fortinet",
       "watchlist": true,
@@ -11163,9 +11163,9 @@
       "cwes": [
         "CWE-23"
       ],
-      "epss": 0.92072,
-      "epss_percentile": 0.99821,
-      "epss_date": "2026-11-24",
+      "epss": 0.84769,
+      "epss_percentile": 0.99802,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "zimbra",
       "watchlist": true,
@@ -11194,9 +11194,9 @@
       "cwes": [
         "CWE-22"
       ],
-      "epss": 0.98676,
-      "epss_percentile": 0.99924,
-      "epss_date": "2026-11-24",
+      "epss": 0.72686,
+      "epss_percentile": 0.99608,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "zimbra",
       "watchlist": true,
@@ -11225,9 +11225,9 @@
       "cwes": [
         "CWE-93"
       ],
-      "epss": 0.93908,
-      "epss_percentile": 0.99844,
-      "epss_date": "2026-11-24",
+      "epss": 0.28511,
+      "epss_percentile": 0.98562,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "zimbra",
       "watchlist": true,
@@ -11256,9 +11256,9 @@
       "cwes": [
         "CWE-610"
       ],
-      "epss": 0.98494,
-      "epss_percentile": 0.99919,
-      "epss_date": "2026-11-24",
+      "epss": 0.51841,
+      "epss_percentile": 0.9921,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "microsoft windows",
       "watchlist": true,
@@ -11288,8 +11288,8 @@
         "CWE-22"
       ],
       "epss": 0.96294,
-      "epss_percentile": 0.99877,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99923,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "qnap",
       "watchlist": true,
@@ -11319,8 +11319,8 @@
         "CWE-22"
       ],
       "epss": 0.94394,
-      "epss_percentile": 0.99851,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99905,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "qnap",
       "watchlist": true,
@@ -11350,8 +11350,8 @@
         "CWE-20"
       ],
       "epss": 0.44714,
-      "epss_percentile": 0.98793,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99072,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "qnap",
       "watchlist": true,
@@ -11381,8 +11381,8 @@
         "CWE-863"
       ],
       "epss": 0.96711,
-      "epss_percentile": 0.99883,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99928,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "qnap",
       "watchlist": true,
@@ -11411,9 +11411,9 @@
       "cwes": [
         "CWE-917"
       ],
-      "epss": 0.99999,
-      "epss_percentile": 0.99994,
-      "epss_date": "2026-11-24",
+      "epss": 0.96542,
+      "epss_percentile": 0.99926,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "confluence",
       "watchlist": true,
@@ -11441,8 +11441,8 @@
       "known_ransomware": true,
       "cwes": [],
       "epss": 0.9015,
-      "epss_percentile": 0.99797,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99867,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "oracle",
       "watchlist": true,
@@ -11472,8 +11472,8 @@
         "CWE-264"
       ],
       "epss": 0.9708,
-      "epss_percentile": 0.9989,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99933,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "oracle",
       "watchlist": true,
@@ -11501,8 +11501,8 @@
       "known_ransomware": true,
       "cwes": [],
       "epss": 0.07826,
-      "epss_percentile": 0.94755,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.95431,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "oracle",
       "watchlist": true,
@@ -11532,8 +11532,8 @@
         "CWE-264"
       ],
       "epss": 0.52934,
-      "epss_percentile": 0.98991,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99229,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "jboss",
       "watchlist": true,
@@ -11563,8 +11563,8 @@
         "CWE-264"
       ],
       "epss": 0.73815,
-      "epss_percentile": 0.9948,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99629,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "jboss",
       "watchlist": true,
@@ -11595,8 +11595,8 @@
         "CWE-80"
       ],
       "epss": 0.30527,
-      "epss_percentile": 0.98265,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.98647,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "qnap",
       "watchlist": true,
@@ -11628,8 +11628,8 @@
         "CWE-78"
       ],
       "epss": 0.3016,
-      "epss_percentile": 0.98245,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.98632,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "qnap",
       "watchlist": true,
@@ -11660,8 +11660,8 @@
         "CWE-80"
       ],
       "epss": 0.22682,
-      "epss_percentile": 0.9776,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.98228,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "qnap",
       "watchlist": true,
@@ -11691,8 +11691,8 @@
         "CWE-200"
       ],
       "epss": 0.26483,
-      "epss_percentile": 0.98042,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.98463,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "internet explorer",
       "watchlist": true,
@@ -11722,8 +11722,8 @@
         "CWE-59"
       ],
       "epss": 0.07019,
-      "epss_percentile": 0.94256,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.9493,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "microsoft windows",
       "watchlist": true,
@@ -11753,8 +11753,8 @@
         "CWE-59"
       ],
       "epss": 0.01719,
-      "epss_percentile": 0.77943,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.77887,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "microsoft windows",
       "watchlist": true,
@@ -11783,9 +11783,9 @@
       "cwes": [
         "CWE-306"
       ],
-      "epss": 0.99954,
-      "epss_percentile": 0.99973,
-      "epss_date": "2026-11-24",
+      "epss": 0.95141,
+      "epss_percentile": 0.99914,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "f5",
       "watchlist": true,
@@ -11815,8 +11815,8 @@
         "CWE-79"
       ],
       "epss": 0.29761,
-      "epss_percentile": 0.98227,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.98614,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "zimbra",
       "watchlist": true,
@@ -11846,8 +11846,8 @@
         "CWE-78"
       ],
       "epss": 0.86491,
-      "epss_percentile": 0.9974,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99824,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "d-link",
       "watchlist": true,
@@ -11876,9 +11876,9 @@
       "cwes": [
         "CWE-94"
       ],
-      "epss": 0.99998,
-      "epss_percentile": 0.99989,
-      "epss_date": "2026-11-24",
+      "epss": 0.90312,
+      "epss_percentile": 0.99868,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "vmware",
       "watchlist": true,
@@ -11908,9 +11908,9 @@
         "CWE-787",
         "CWE-1285"
       ],
-      "epss": 0.07134,
-      "epss_percentile": 0.94346,
-      "epss_date": "2026-11-24",
+      "epss": 0.01193,
+      "epss_percentile": 0.67878,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "microsoft windows",
       "watchlist": true,
@@ -11937,9 +11937,9 @@
       "required_action": "Apply updates per vendor instructions.",
       "known_ransomware": true,
       "cwes": [],
-      "epss": 0.99172,
-      "epss_percentile": 0.99933,
-      "epss_date": "2026-11-24",
+      "epss": 0.99138,
+      "epss_percentile": 0.99964,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "drupal",
       "watchlist": true,
@@ -11968,9 +11968,9 @@
       "cwes": [
         "CWE-285"
       ],
-      "epss": 0.78395,
-      "epss_percentile": 0.99587,
-      "epss_date": "2026-11-24",
+      "epss": 0.78008,
+      "epss_percentile": 0.99704,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "qnap",
       "watchlist": true,
@@ -11998,8 +11998,8 @@
       "known_ransomware": true,
       "cwes": [],
       "epss": 0.07987,
-      "epss_percentile": 0.94837,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.95513,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "microsoft office",
       "watchlist": true,
@@ -12029,8 +12029,8 @@
         "CWE-425"
       ],
       "epss": 0.99965,
-      "epss_percentile": 0.99975,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99988,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "confluence",
       "watchlist": true,
@@ -12060,8 +12060,8 @@
         "CWE-89"
       ],
       "epss": 0.30084,
-      "epss_percentile": 0.98241,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.98628,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "sonicwall",
       "watchlist": true,
@@ -12089,8 +12089,8 @@
       "known_ransomware": true,
       "cwes": [],
       "epss": 0.1853,
-      "epss_percentile": 0.97306,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.97828,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "microsoft windows",
       "watchlist": true,
@@ -12118,8 +12118,8 @@
       "known_ransomware": true,
       "cwes": [],
       "epss": 0.84258,
-      "epss_percentile": 0.997,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99795,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "microsoft windows",
       "watchlist": true,
@@ -12148,9 +12148,9 @@
       "cwes": [
         "CWE-119"
       ],
-      "epss": 0.94062,
-      "epss_percentile": 0.99847,
-      "epss_date": "2026-11-24",
+      "epss": 0.93799,
+      "epss_percentile": 0.99901,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "internet explorer",
       "watchlist": true,
@@ -12180,8 +12180,8 @@
         "CWE-416"
       ],
       "epss": 0.74096,
-      "epss_percentile": 0.99489,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99637,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "internet explorer",
       "watchlist": true,
@@ -12209,8 +12209,8 @@
       "known_ransomware": true,
       "cwes": [],
       "epss": 0.98773,
-      "epss_percentile": 0.99926,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99958,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "oracle",
       "watchlist": true,
@@ -12240,9 +12240,9 @@
         "CWE-40",
         "CWE-1386"
       ],
-      "epss": 0.41007,
-      "epss_percentile": 0.98681,
-      "epss_date": "2026-11-24",
+      "epss": 0.07993,
+      "epss_percentile": 0.95517,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "microsoft windows",
       "watchlist": true,
@@ -12272,8 +12272,8 @@
         "CWE-284"
       ],
       "epss": 0.53585,
-      "epss_percentile": 0.99007,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99241,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "citrix",
       "watchlist": true,
@@ -12303,8 +12303,8 @@
         "CWE-347"
       ],
       "epss": 0.04362,
-      "epss_percentile": 0.91393,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.92017,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "pan-os",
       "watchlist": true,
@@ -12334,8 +12334,8 @@
         "CWE-120"
       ],
       "epss": 0.99783,
-      "epss_percentile": 0.99955,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99976,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "php",
       "watchlist": true,
@@ -12365,8 +12365,8 @@
         "CWE-94"
       ],
       "epss": 0.96956,
-      "epss_percentile": 0.99888,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99932,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "vmware",
       "watchlist": true,
@@ -12396,8 +12396,8 @@
         "CWE-434"
       ],
       "epss": 0.99707,
-      "epss_percentile": 0.99951,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99973,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "apache tomcat",
       "watchlist": true,
@@ -12427,8 +12427,8 @@
         "CWE-20"
       ],
       "epss": 0.89862,
-      "epss_percentile": 0.99791,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99864,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "microsoft windows",
       "watchlist": true,
@@ -12458,8 +12458,8 @@
         "CWE-22"
       ],
       "epss": 0.99747,
-      "epss_percentile": 0.99953,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99975,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "adobe",
       "watchlist": true,
@@ -12489,8 +12489,8 @@
         "CWE-120"
       ],
       "epss": 0.26869,
-      "epss_percentile": 0.98065,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.98484,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "sonicwall",
       "watchlist": true,
@@ -12518,8 +12518,8 @@
       "known_ransomware": true,
       "cwes": [],
       "epss": 0.30168,
-      "epss_percentile": 0.98246,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.98632,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "microsoft windows",
       "watchlist": true,
@@ -12547,8 +12547,8 @@
       "known_ransomware": true,
       "cwes": [],
       "epss": 0.18843,
-      "epss_percentile": 0.97342,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.97858,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "microsoft windows",
       "watchlist": true,
@@ -12578,8 +12578,8 @@
         "CWE-59"
       ],
       "epss": 0.03478,
-      "epss_percentile": 0.893,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.89856,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "microsoft windows",
       "watchlist": true,
@@ -12609,8 +12609,8 @@
         "CWE-59"
       ],
       "epss": 0.11616,
-      "epss_percentile": 0.96119,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.96746,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "microsoft windows",
       "watchlist": true,
@@ -12640,8 +12640,8 @@
         "CWE-59"
       ],
       "epss": 0.01782,
-      "epss_percentile": 0.78726,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.78745,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "microsoft windows",
       "watchlist": true,
@@ -12671,8 +12671,8 @@
         "CWE-59"
       ],
       "epss": 0.06886,
-      "epss_percentile": 0.94151,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.94824,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "microsoft windows",
       "watchlist": true,
@@ -12702,8 +12702,8 @@
         "CWE-59"
       ],
       "epss": 0.414,
-      "epss_percentile": 0.98694,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.98998,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "microsoft windows",
       "watchlist": true,
@@ -12733,8 +12733,8 @@
         "CWE-287"
       ],
       "epss": 0.04679,
-      "epss_percentile": 0.91911,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.92541,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "microsoft windows",
       "watchlist": true,
@@ -12764,8 +12764,8 @@
         "CWE-119"
       ],
       "epss": 0.57482,
-      "epss_percentile": 0.99093,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.9931,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "microsoft windows",
       "watchlist": true,
@@ -12795,8 +12795,8 @@
         "CWE-264"
       ],
       "epss": 0.20467,
-      "epss_percentile": 0.97551,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.98046,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "microsoft windows",
       "watchlist": true,
@@ -12824,8 +12824,8 @@
       "known_ransomware": true,
       "cwes": [],
       "epss": 0.90118,
-      "epss_percentile": 0.99796,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99866,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "adobe",
       "watchlist": true,
@@ -12855,8 +12855,8 @@
         "CWE-1386"
       ],
       "epss": 0.19452,
-      "epss_percentile": 0.97418,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.97929,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "microsoft windows",
       "watchlist": true,
@@ -12884,8 +12884,8 @@
       "known_ransomware": true,
       "cwes": [],
       "epss": 0.72708,
-      "epss_percentile": 0.99454,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99609,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "exchange server",
       "watchlist": true,
@@ -12913,8 +12913,8 @@
       "known_ransomware": true,
       "cwes": [],
       "epss": 0.94271,
-      "epss_percentile": 0.9985,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99905,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "adobe",
       "watchlist": true,
@@ -12942,8 +12942,8 @@
       "known_ransomware": true,
       "cwes": [],
       "epss": 0.22316,
-      "epss_percentile": 0.9773,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.98201,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "adobe",
       "watchlist": true,
@@ -12973,8 +12973,8 @@
         "CWE-264"
       ],
       "epss": 0.37045,
-      "epss_percentile": 0.98538,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.98876,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "microsoft windows",
       "watchlist": true,
@@ -13002,8 +13002,8 @@
       "known_ransomware": true,
       "cwes": [],
       "epss": 0.65339,
-      "epss_percentile": 0.9927,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99451,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "adobe",
       "watchlist": true,
@@ -13031,8 +13031,8 @@
       "known_ransomware": true,
       "cwes": [],
       "epss": 0.98536,
-      "epss_percentile": 0.9992,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99955,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "oracle",
       "watchlist": true,
@@ -13060,8 +13060,8 @@
       "known_ransomware": true,
       "cwes": [],
       "epss": 0.93566,
-      "epss_percentile": 0.99841,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99899,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "oracle",
       "watchlist": true,
@@ -13089,8 +13089,8 @@
       "known_ransomware": true,
       "cwes": [],
       "epss": 0.98189,
-      "epss_percentile": 0.99913,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.9995,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "oracle",
       "watchlist": true,
@@ -13120,8 +13120,8 @@
         "CWE-94"
       ],
       "epss": 0.88135,
-      "epss_percentile": 0.99767,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99845,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "adobe",
       "watchlist": true,
@@ -13151,8 +13151,8 @@
         "CWE-119"
       ],
       "epss": 0.99787,
-      "epss_percentile": 0.99956,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99976,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "adobe",
       "watchlist": true,
@@ -13182,9 +13182,9 @@
         "CWE-79",
         "CWE-116"
       ],
-      "epss": 0.30931,
-      "epss_percentile": 0.98284,
-      "epss_date": "2026-11-24",
+      "epss": 0.08697,
+      "epss_percentile": 0.95877,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "zimbra",
       "watchlist": true,
@@ -13214,8 +13214,8 @@
         "CWE-843"
       ],
       "epss": 0.81679,
-      "epss_percentile": 0.99649,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99759,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "internet explorer",
       "watchlist": true,
@@ -13245,8 +13245,8 @@
         "CWE-787"
       ],
       "epss": 0.88243,
-      "epss_percentile": 0.99769,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99847,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "microsoft windows",
       "watchlist": true,
@@ -13276,8 +13276,8 @@
         "CWE-416"
       ],
       "epss": 0.89581,
-      "epss_percentile": 0.99788,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99861,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "adobe",
       "watchlist": true,
@@ -13305,8 +13305,8 @@
       "known_ransomware": true,
       "cwes": [],
       "epss": 0.99994,
-      "epss_percentile": 0.99987,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99993,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "weblogic",
       "watchlist": true,
@@ -13336,8 +13336,8 @@
         "CWE-121"
       ],
       "epss": 0.99912,
-      "epss_percentile": 0.99967,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99983,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "sonicwall",
       "watchlist": true,
@@ -13368,8 +13368,8 @@
         "CWE-59"
       ],
       "epss": 0.42524,
-      "epss_percentile": 0.98726,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99022,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "microsoft windows",
       "watchlist": true,
@@ -13399,8 +13399,8 @@
         "CWE-918"
       ],
       "epss": 0.78001,
-      "epss_percentile": 0.99578,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99704,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "vmware",
       "watchlist": true,
@@ -13430,8 +13430,8 @@
         "CWE-74"
       ],
       "epss": 0.99977,
-      "epss_percentile": 0.99978,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99989,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "weblogic",
       "watchlist": true,
@@ -13461,8 +13461,8 @@
         "CWE-134"
       ],
       "epss": 0.44159,
-      "epss_percentile": 0.98775,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99059,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "pan-os",
       "watchlist": true,
@@ -13492,8 +13492,8 @@
         "CWE-787"
       ],
       "epss": 0.3067,
-      "epss_percentile": 0.98272,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.98655,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "fortinet",
       "watchlist": true,
@@ -13523,8 +13523,8 @@
         "CWE-285"
       ],
       "epss": 0.81691,
-      "epss_percentile": 0.9965,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99759,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "fortinet",
       "watchlist": true,
@@ -13552,8 +13552,8 @@
       "known_ransomware": true,
       "cwes": [],
       "epss": 0.11294,
-      "epss_percentile": 0.96046,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.96678,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "microsoft windows",
       "watchlist": true,
@@ -13583,8 +13583,8 @@
         "CWE-502"
       ],
       "epss": 0.90713,
-      "epss_percentile": 0.99804,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99872,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "jboss",
       "watchlist": true,
@@ -13615,8 +13615,8 @@
         "CWE-502"
       ],
       "epss": 0.91737,
-      "epss_percentile": 0.99816,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99881,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "microsoft exchange",
       "watchlist": true,
@@ -13646,8 +13646,8 @@
         "CWE-416"
       ],
       "epss": 0.81936,
-      "epss_percentile": 0.99657,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99764,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "microsoft windows",
       "watchlist": true,
@@ -13677,8 +13677,8 @@
         "CWE-22"
       ],
       "epss": 0.99964,
-      "epss_percentile": 0.99975,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99987,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "apache http",
       "watchlist": true,
@@ -13708,8 +13708,8 @@
         "CWE-22"
       ],
       "epss": 0.99992,
-      "epss_percentile": 0.99985,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99992,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "apache http",
       "watchlist": true,
@@ -13739,8 +13739,8 @@
         "CWE-55"
       ],
       "epss": 0.9896,
-      "epss_percentile": 0.99929,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.9996,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "manageengine",
       "watchlist": true,
@@ -13768,8 +13768,8 @@
       "known_ransomware": true,
       "cwes": [],
       "epss": 0.04071,
-      "epss_percentile": 0.90849,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.91445,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "microsoft windows",
       "watchlist": true,
@@ -13799,8 +13799,8 @@
         "CWE-749"
       ],
       "epss": 0.66023,
-      "epss_percentile": 0.99284,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99464,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "microsoft windows",
       "watchlist": true,
@@ -13830,8 +13830,8 @@
         "CWE-269"
       ],
       "epss": 0.99792,
-      "epss_percentile": 0.99956,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99977,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "microsoft windows",
       "watchlist": true,
@@ -13861,8 +13861,8 @@
         "CWE-287"
       ],
       "epss": 0.9999,
-      "epss_percentile": 0.99984,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99992,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "exchange server",
       "watchlist": true,
@@ -13892,8 +13892,8 @@
         "CWE-918"
       ],
       "epss": 0.99999,
-      "epss_percentile": 0.99996,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99998,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "exchange server",
       "watchlist": true,
@@ -13924,8 +13924,8 @@
         "CWE-434"
       ],
       "epss": 0.99782,
-      "epss_percentile": 0.99955,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99976,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "exchange server",
       "watchlist": true,
@@ -13955,8 +13955,8 @@
         "CWE-39"
       ],
       "epss": 0.99876,
-      "epss_percentile": 0.99963,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.9998,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "exchange server",
       "watchlist": true,
@@ -13984,8 +13984,8 @@
       "known_ransomware": true,
       "cwes": [],
       "epss": 0.93651,
-      "epss_percentile": 0.99842,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.999,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "exchange server",
       "watchlist": true,
@@ -14015,8 +14015,8 @@
         "CWE-502"
       ],
       "epss": 0.95762,
-      "epss_percentile": 0.9987,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.9992,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "exchange server",
       "watchlist": true,
@@ -14046,8 +14046,8 @@
         "CWE-918"
       ],
       "epss": 0.99996,
-      "epss_percentile": 0.99988,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99993,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "exchange server",
       "watchlist": true,
@@ -14077,8 +14077,8 @@
         "CWE-416"
       ],
       "epss": 0.81667,
-      "epss_percentile": 0.99649,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99758,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "internet explorer",
       "watchlist": true,
@@ -14108,8 +14108,8 @@
         "CWE-917"
       ],
       "epss": 0.99999,
-      "epss_percentile": 0.99993,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99997,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "confluence",
       "watchlist": true,
@@ -14139,8 +14139,8 @@
         "CWE-863"
       ],
       "epss": 0.99898,
-      "epss_percentile": 0.99965,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99981,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "f5",
       "watchlist": true,
@@ -14170,8 +14170,8 @@
         "CWE-287"
       ],
       "epss": 0.88819,
-      "epss_percentile": 0.99777,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99853,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "ivanti",
       "watchlist": true,
@@ -14202,8 +14202,8 @@
         "CWE-95"
       ],
       "epss": 0.99731,
-      "epss_percentile": 0.99952,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99974,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "gitlab",
       "watchlist": true,
@@ -14233,8 +14233,8 @@
         "CWE-23"
       ],
       "epss": 0.99999,
-      "epss_percentile": 0.99998,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99999,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "vmware",
       "watchlist": true,
@@ -14266,8 +14266,8 @@
         "CWE-918"
       ],
       "epss": 0.99999,
-      "epss_percentile": 0.99992,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99996,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "vmware",
       "watchlist": true,
@@ -14297,8 +14297,8 @@
         "CWE-23"
       ],
       "epss": 0.99865,
-      "epss_percentile": 0.99962,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99979,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "vmware",
       "watchlist": true,
@@ -14328,8 +14328,8 @@
         "CWE-22"
       ],
       "epss": 0.51689,
-      "epss_percentile": 0.98964,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99207,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "sonicwall",
       "watchlist": true,
@@ -14359,8 +14359,8 @@
         "CWE-434"
       ],
       "epss": 0.16639,
-      "epss_percentile": 0.97077,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.97633,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "sonicwall",
       "watchlist": true,
@@ -14390,8 +14390,8 @@
         "CWE-306"
       ],
       "epss": 0.8878,
-      "epss_percentile": 0.99777,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99852,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "sonicwall",
       "watchlist": true,
@@ -14421,8 +14421,8 @@
         "CWE-89"
       ],
       "epss": 0.40038,
-      "epss_percentile": 0.98652,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.98965,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "sonicwall",
       "watchlist": true,
@@ -14452,8 +14452,8 @@
         "CWE-285"
       ],
       "epss": 0.85305,
-      "epss_percentile": 0.9972,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99808,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "microsoft windows",
       "watchlist": true,
@@ -14484,7 +14484,7 @@
       ],
       "epss": 0.99999,
       "epss_percentile": 1.0,
-      "epss_date": "2026-11-24",
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "f5",
       "watchlist": true,
@@ -14514,8 +14514,8 @@
         "CWE-416"
       ],
       "epss": 0.83015,
-      "epss_percentile": 0.99677,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99781,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "vmware",
       "watchlist": true,
@@ -14545,8 +14545,8 @@
         "CWE-79"
       ],
       "epss": 0.85575,
-      "epss_percentile": 0.99726,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99813,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "adaptive security",
       "watchlist": true,
@@ -14577,8 +14577,8 @@
         "CWE-287"
       ],
       "epss": 0.45379,
-      "epss_percentile": 0.98811,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99086,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "fortinet",
       "watchlist": true,
@@ -14608,8 +14608,8 @@
         "CWE-89"
       ],
       "epss": 0.43062,
-      "epss_percentile": 0.98742,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99034,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "sophos",
       "watchlist": true,
@@ -14639,8 +14639,8 @@
         "CWE-787"
       ],
       "epss": 0.30676,
-      "epss_percentile": 0.98273,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.98656,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "internet explorer",
       "watchlist": true,
@@ -14670,8 +14670,8 @@
         "CWE-787"
       ],
       "epss": 0.02696,
-      "epss_percentile": 0.86183,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.86642,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "internet explorer",
       "watchlist": true,
@@ -14701,8 +14701,8 @@
         "CWE-287"
       ],
       "epss": 0.99955,
-      "epss_percentile": 0.99974,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99986,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "exchange server",
       "watchlist": true,
@@ -14732,8 +14732,8 @@
         "CWE-89"
       ],
       "epss": 0.99906,
-      "epss_percentile": 0.99966,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99982,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "sonicwall",
       "watchlist": true,
@@ -14763,8 +14763,8 @@
         "CWE-306"
       ],
       "epss": 0.18566,
-      "epss_percentile": 0.97309,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.97831,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "fortinet",
       "watchlist": true,
@@ -14794,8 +14794,8 @@
         "CWE-787"
       ],
       "epss": 0.98129,
-      "epss_percentile": 0.99911,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99948,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "vmware",
       "watchlist": true,
@@ -14825,8 +14825,8 @@
         "CWE-22"
       ],
       "epss": 0.99913,
-      "epss_percentile": 0.99967,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99983,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "confluence",
       "watchlist": true,
@@ -14856,8 +14856,8 @@
         "CWE-22"
       ],
       "epss": 0.99999,
-      "epss_percentile": 0.99997,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99999,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "citrix",
       "watchlist": true,
@@ -14887,8 +14887,8 @@
         "CWE-502"
       ],
       "epss": 0.99737,
-      "epss_percentile": 0.99952,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99975,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "progress",
       "watchlist": true,
@@ -14918,8 +14918,8 @@
         "CWE-787"
       ],
       "epss": 0.52449,
-      "epss_percentile": 0.9898,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.9922,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "internet explorer",
       "watchlist": true,
@@ -14949,8 +14949,8 @@
         "CWE-611"
       ],
       "epss": 0.30041,
-      "epss_percentile": 0.98237,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.98624,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "citrix",
       "watchlist": true,
@@ -14978,8 +14978,8 @@
       "known_ransomware": true,
       "cwes": [],
       "epss": 0.19254,
-      "epss_percentile": 0.97387,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.979,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "microsoft windows",
       "watchlist": true,
@@ -15007,8 +15007,8 @@
       "known_ransomware": true,
       "cwes": [],
       "epss": 0.08091,
-      "epss_percentile": 0.94896,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.9557,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "citrix",
       "watchlist": true,
@@ -15036,8 +15036,8 @@
       "known_ransomware": true,
       "cwes": [],
       "epss": 0.95355,
-      "epss_percentile": 0.99866,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99917,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "atlassian",
       "watchlist": true,
@@ -15067,8 +15067,8 @@
         "CWE-78"
       ],
       "epss": 0.98544,
-      "epss_percentile": 0.99921,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99955,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "ivanti",
       "watchlist": true,
@@ -15098,8 +15098,8 @@
         "CWE-22"
       ],
       "epss": 0.99999,
-      "epss_percentile": 0.99995,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99998,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "ivanti",
       "watchlist": true,
@@ -15129,8 +15129,8 @@
         "CWE-20"
       ],
       "epss": 0.99913,
-      "epss_percentile": 0.99967,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99984,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "sharepoint",
       "watchlist": true,
@@ -15160,8 +15160,8 @@
         "CWE-20"
       ],
       "epss": 0.99991,
-      "epss_percentile": 0.99984,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99992,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "drupal",
       "watchlist": true,
@@ -15191,8 +15191,8 @@
         "CWE-416"
       ],
       "epss": 0.9028,
-      "epss_percentile": 0.99798,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99868,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "adobe",
       "watchlist": true,
@@ -15222,8 +15222,8 @@
         "CWE-22"
       ],
       "epss": 0.29643,
-      "epss_percentile": 0.98221,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.9861,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "sap",
       "watchlist": true,
@@ -15253,8 +15253,8 @@
         "CWE-22"
       ],
       "epss": 0.99999,
-      "epss_percentile": 0.99994,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99997,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "fortinet",
       "watchlist": true,
@@ -15284,8 +15284,8 @@
         "CWE-787"
       ],
       "epss": 0.93289,
-      "epss_percentile": 0.99837,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99897,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "microsoft office",
       "watchlist": true,
@@ -15315,8 +15315,8 @@
         "CWE-20"
       ],
       "epss": 0.99999,
-      "epss_percentile": 0.99994,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99997,
+      "epss_date": "2026-11-25",
       "india_relevance": "high",
       "relevance_match": "struts",
       "watchlist": true,
@@ -15346,8 +15346,8 @@
         "CWE-119"
       ],
       "epss": 0.99945,
-      "epss_percentile": 0.99972,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99986,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "microsoft office",
       "watchlist": true,
@@ -15375,8 +15375,8 @@
       "known_ransomware": true,
       "cwes": [],
       "epss": 0.99497,
-      "epss_percentile": 0.99944,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99969,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "microsoft office",
       "watchlist": true,
@@ -15406,8 +15406,8 @@
         "CWE-20"
       ],
       "epss": 0.93307,
-      "epss_percentile": 0.99837,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99897,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "microsoft windows",
       "watchlist": true,
@@ -15437,8 +15437,8 @@
         "CWE-255"
       ],
       "epss": 0.65117,
-      "epss_percentile": 0.99265,
-      "epss_date": "2026-11-24",
+      "epss_percentile": 0.99447,
+      "epss_date": "2026-11-25",
       "india_relevance": "medium",
       "relevance_match": "microsoft windows",
       "watchlist": true,
