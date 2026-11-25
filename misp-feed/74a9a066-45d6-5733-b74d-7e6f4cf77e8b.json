@@ -2,11 +2,11 @@
  "Event": {
   "uuid": "74a9a066-45d6-5733-b74d-7e6f4cf77e8b",
   "info": "India Threat Tracker: new lookalike domains of Indian banks, payment apps and government sites (leads, not verified)",
-  "date": "2026-11-22",
+  "date": "2026-11-25",
   "threat_level_id": "3",
   "analysis": "2",
-  "timestamp": "1795305600",
-  "publish_timestamp": "1795305600",
+  "timestamp": "1795564800",
+  "publish_timestamp": "1795564800",
   "published": true,
   "Orgc": {
    "name": "India Threat Tracker",
@@ -21,17 +21,6 @@
    }
   ],
   "Attribute": [
-   {
-    "uuid": "c931776c-eebd-561a-b1b2-488d47683248",
-    "type": "domain",
-    "category": "Network activity",
-    "value": "incometax.cc",
-    "to_ids": false,
-    "comment": "Lookalike of Income Tax Department (tld-swap), first seen 2026-11-06. Lead, not verified.",
-    "timestamp": "1793923200",
-    "distribution": "5",
-    "disable_correlation": false
-   },
    {
     "uuid": "2b60ddee-6c91-5cac-9ebd-455f4a7c5974",
     "type": "domain",
@@ -106,6 +95,28 @@
     "to_ids": false,
     "comment": "Lookalike of NPCI / UPI / BHIM (dictionary), first seen 2026-11-22. Lead, not verified.",
     "timestamp": "1795305600",
+    "distribution": "5",
+    "disable_correlation": false
+   },
+   {
+    "uuid": "3fa5886b-b261-5bbd-8260-9b1543ececcc",
+    "type": "domain",
+    "category": "Network activity",
+    "value": "bankofbarodas.com",
+    "to_ids": false,
+    "comment": "Lookalike of Bank of Baroda (addition), first seen 2026-11-25, first TLS certificate 2021-02-18. Lead, not verified.",
+    "timestamp": "1795564800",
+    "distribution": "5",
+    "disable_correlation": false
+   },
+   {
+    "uuid": "a9615092-6a66-588f-8b9d-368eabb0d9b0",
+    "type": "domain",
+    "category": "Network activity",
+    "value": "phonepe.top",
+    "to_ids": false,
+    "comment": "Lookalike of PhonePe (tld-swap), first seen 2026-11-25, first TLS certificate 2020-08-02. Lead, not verified.",
+    "timestamp": "1795564800",
     "distribution": "5",
     "disable_correlation": false
    }
