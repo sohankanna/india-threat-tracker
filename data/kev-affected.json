@@ -224385,6 +224385,20 @@
     },
     {
      "default_status": "unknown",
+     "product": "CP61850 (6DD7050-0AA80)",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "affected",
+       "version": "V3.5.4",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
      "product": "cRSP",
      "source": "adp:siemens-SADP",
      "vendor": "Siemens",
@@ -224581,6 +224595,20 @@
     },
     {
      "default_status": "unknown",
+     "product": "EDEM BulkSim",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
      "product": "Energy Engage V2.0SP9",
      "source": "adp:siemens-SADP",
      "vendor": "Siemens",
@@ -224651,6 +224679,20 @@
     },
     {
      "default_status": "unknown",
+     "product": "Graph Lakehouse",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
      "product": "Heliox Flex Pro",
      "source": "adp:siemens-SADP",
      "vendor": "Siemens",
@@ -224707,6 +224749,244 @@
     },
     {
      "default_status": "unknown",
+     "product": "HPCWorks Accelerator",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "HPCWorks Accelerator Plus",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "HPCWorks Access",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "HPCWorks Allocator",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "HPCWorks Asset Optimization",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "HPCWorks Breeze",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "HPCWorks Control",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "HPCWorks Desktop Usage Analytics",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "HPCWorks Flowtracer",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "HPCWorks Grid Engine",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "HPCWorks Hero",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "HPCWorks Insight Pro",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "HPCWorks Insight Pro for License Analytics",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "HPCWorks Mistral",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "HPCWorks Monitor",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "HPCWorks Navops",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "HPCWorks PBS Professional",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
      "product": "HyperLynx",
      "source": "adp:siemens-SADP",
      "vendor": "Siemens",
@@ -224722,6 +225002,20 @@
     {
      "default_status": "unknown",
      "product": "Insights Hub",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Knowledge Studio for Apache Spark",
      "source": "adp:siemens-SADP",
      "vendor": "Siemens",
      "versions": [
@@ -224778,6 +225072,20 @@
     {
      "default_status": "unknown",
      "product": "Novigo VANSYS core",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Opcenter APS",
      "source": "adp:siemens-SADP",
      "vendor": "Siemens",
      "versions": [
@@ -225057,6 +225365,20 @@
     },
     {
      "default_status": "unknown",
+     "product": "Panopticon Streams",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
      "product": "Pathway to Learning Engineering",
      "source": "adp:siemens-SADP",
      "vendor": "Siemens",
@@ -225086,6 +225408,146 @@
     {
      "default_status": "unknown",
      "product": "QuadView",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Rapidminer AI Cloud",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Rapidminer AI Hub",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Rapidminer AI Studio",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Rapidminer Analytics Workbench (SLC)",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Rapidminer Graph Studio",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Rapidminer Knowledge Seeker",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Rapidminer Knowledge Studio",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Rapidminer Monarch Classic / Server",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Rapidminer Monarch Data Prep Studio",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Rapidminer Panopticon",
      "source": "adp:siemens-SADP",
      "vendor": "Siemens",
      "versions": [
@@ -225211,7 +225673,329 @@
     },
     {
      "default_status": "unknown",
+     "product": "Simcenter 3D",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Simcenter Acusolve",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Simcenter Amesim",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Simcenter Battery Damage Identifier",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Simcenter Battery Design Studio",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Simcenter Compose",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Simcenter CostAI",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Simcenter Culgi",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Simcenter DesignAI",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Simcenter E-Machine Design",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Simcenter E-Motor Director",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Simcenter e-Motor Platform Optimization",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Simcenter EDEM",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Simcenter Electroflo",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Simcenter Embed",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Simcenter Executable Digital Twin",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Simcenter Feko",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Simcenter Femap",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Simcenter Flightstream",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Simcenter FLOEFD",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
      "product": "Simcenter Flomaster",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Simcenter Flotherm",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Simcenter Flotherm (XT)",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Simcenter Flow Simulator",
      "source": "adp:siemens-SADP",
      "vendor": "Siemens",
      "versions": [
@@ -225239,7 +226023,777 @@
     },
     {
      "default_status": "unknown",
+     "product": "Simcenter Fluxmotor",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Simcenter Genesis",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Simcenter Geomechanics",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Simcenter HEEDS",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Simcenter Hypergraph",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Simcenter Hypermesh",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Simcenter Hypermesh CFD",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Simcenter Hypermesh NVH",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Simcenter Hyperstudy",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Simcenter Hyperview",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Simcenter Inspire",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Simcenter Inspire Mfg",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Simcenter Madymo",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Simcenter MAGNET",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Simcenter Maintenance Aware Design Ecosystem",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Simcenter Material Data Center",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Simcenter Material Modeler",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Simcenter Motionsolve",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Simcenter Motionview",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Simcenter Multi-Disciplinary Optimization Director",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Simcenter Multiscale Designer",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Simcenter Nanofluid",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Simcenter Nastran",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Simcenter OmniV",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Simcenter Optistruct",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Simcenter Part Manager",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Simcenter PhysicsAI",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Simcenter PhysicsAI Studio",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Simcenter PSIM",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Simcenter Pulse Studio",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Simcenter Quality Management",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Simcenter Radioss",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Simcenter Reduced Order Modeling",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Simcenter RomAI",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Simcenter S-Frame",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
      "product": "Simcenter Simlab",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Simcenter Simsolid",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Simcenter Simulation Cloud Suite",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Simcenter SPEED",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Simcenter SPH Flow",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Simcenter STAR-CCM+",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Simcenter STAR-CCM+ Viewer",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Simcenter Studio",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Simcenter System Analyst",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Simcenter System Architect",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Simcenter System Simulation Client for Git",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Simcenter System Simulation Client for Git V2021",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Simcenter Testlab",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Simcenter Testlab Data Management",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Simcenter Tire",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Simcenter Twin Activate",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Simcenter Ultrafluid",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Simcenter Unified Design Environment (UDE)",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Simcenter Weight Analytics",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Simcenter X Mechanical",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Simcenter Zona",
      "source": "adp:siemens-SADP",
      "vendor": "Siemens",
      "versions": [
@@ -225519,6 +227073,20 @@
     },
     {
      "default_status": "unknown",
+     "product": "Teamcenter Simulation",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
      "product": "Teamcenter Visualization",
      "source": "adp:siemens-SADP",
      "vendor": "Siemens",
@@ -225548,6 +227116,20 @@
     {
      "default_status": "unknown",
      "product": "TestWay",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Thea Render",
      "source": "adp:siemens-SADP",
      "vendor": "Siemens",
      "versions": [
@@ -225757,7 +227339,7 @@
     }
    ],
    "record_state": "PUBLISHED",
-   "record_updated": "2026-11-18T18:32:28.496Z"
+   "record_updated": "2026-11-24T11:35:45.829Z"
   },
   {
    "cve": "CVE-2026-110447",
@@ -258311,7 +259893,7 @@
     }
    ],
    "record_state": "PUBLISHED",
-   "record_updated": "2026-11-10T21:33:06.868Z"
+   "record_updated": "2026-11-23T21:48:29.414Z"
   },
   {
    "cve": "CVE-2026-86060",
@@ -259516,6 +261098,6 @@
    "record_updated": "2026-10-30T23:18:16.598Z"
   }
  ],
- "kev_generated_at": "2026-11-24T23:35:04Z",
+ "kev_generated_at": "2026-11-25T11:38:05Z",
  "source": "CVE Project cvelistV5 (https://github.com/CVEProject/cvelistV5)"
 }
