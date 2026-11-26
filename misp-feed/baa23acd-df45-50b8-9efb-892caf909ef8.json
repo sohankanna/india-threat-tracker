@@ -973,7 +973,7 @@
     "category": "External analysis",
     "value": "CVE-2023-4966",
     "to_ids": false,
-    "comment": "Citrix NetScaler ADC and NetScaler Gateway; KEV 2023-10-18; EPSS 0.724; known ransomware use",
+    "comment": "Citrix NetScaler ADC and NetScaler Gateway; KEV 2023-10-18; EPSS 1.000; known ransomware use",
     "timestamp": "1697587200",
     "distribution": "5",
     "disable_correlation": false
@@ -2227,7 +2227,7 @@
     "category": "External analysis",
     "value": "CVE-2026-56164",
     "to_ids": false,
-    "comment": "Microsoft SharePoint Server; KEV 2026-07-14; EPSS 0.010",
+    "comment": "Microsoft SharePoint Server; KEV 2026-07-14; EPSS 0.078",
     "timestamp": "1783987200",
     "distribution": "5",
     "disable_correlation": false
@@ -2645,7 +2645,7 @@
     "category": "External analysis",
     "value": "CVE-2026-97229",
     "to_ids": false,
-    "comment": "GitLab Community Edition and Enterprise Edition; KEV 2026-10-29; EPSS 0.118",
+    "comment": "GitLab Community Edition and Enterprise Edition; KEV 2026-10-29; EPSS 0.743",
     "timestamp": "1793232000",
     "distribution": "5",
     "disable_correlation": false
