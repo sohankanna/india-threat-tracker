@@ -2,11 +2,11 @@
  "Event": {
   "uuid": "74a9a066-45d6-5733-b74d-7e6f4cf77e8b",
   "info": "India Threat Tracker: new lookalike domains of Indian banks, payment apps and government sites (leads, not verified)",
-  "date": "2026-11-25",
+  "date": "2026-11-26",
   "threat_level_id": "3",
   "analysis": "2",
-  "timestamp": "1795564800",
-  "publish_timestamp": "1795564800",
+  "timestamp": "1795651200",
+  "publish_timestamp": "1795651200",
   "published": true,
   "Orgc": {
    "name": "India Threat Tracker",
@@ -21,6 +21,28 @@
    }
   ],
   "Attribute": [
+   {
+    "uuid": "c931776c-eebd-561a-b1b2-488d47683248",
+    "type": "domain",
+    "category": "Network activity",
+    "value": "incometax.cc",
+    "to_ids": false,
+    "comment": "Lookalike of Income Tax Department (tld-swap), first seen 2026-11-06. Lead, not verified.",
+    "timestamp": "1793923200",
+    "distribution": "5",
+    "disable_correlation": false
+   },
+   {
+    "uuid": "2df06e1b-0bd8-5b39-b936-a15ce0ed38d4",
+    "type": "domain",
+    "category": "Network activity",
+    "value": "onlinesbi.com",
+    "to_ids": false,
+    "comment": "Lookalike of State Bank of India (vowel-swap), first seen 2026-11-07. Lead, not verified.",
+    "timestamp": "1794009600",
+    "distribution": "5",
+    "disable_correlation": false
+   },
    {
     "uuid": "2b60ddee-6c91-5cac-9ebd-455f4a7c5974",
     "type": "domain",
@@ -117,6 +139,17 @@
     "to_ids": false,
     "comment": "Lookalike of PhonePe (tld-swap), first seen 2026-11-25, first TLS certificate 2020-08-02. Lead, not verified.",
     "timestamp": "1795564800",
+    "distribution": "5",
+    "disable_correlation": false
+   },
+   {
+    "uuid": "6d3fe9fd-8c48-5a41-a221-9afc57158215",
+    "type": "domain",
+    "category": "Network activity",
+    "value": "incometaxonline.in",
+    "to_ids": false,
+    "comment": "Lookalike of Income Tax Department (dictionary), first seen 2026-11-26. Lead, not verified.",
+    "timestamp": "1795651200",
     "distribution": "5",
     "disable_correlation": false
    }
