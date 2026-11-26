@@ -1,10 +1,10 @@
 {
  "coverage": {
-  "fetch_failures_this_run": 1,
+  "fetch_failures_this_run": 0,
   "kev_cves": 1805,
-  "records_published": 1804,
-  "unavailable": 1,
-  "with_version_entries": 1804
+  "records_published": 1805,
+  "unavailable": 0,
+  "with_version_entries": 1805
  },
  "description": "Affected products and versions for every CISA KEV CVE, as written by the CVE Numbering Authority (and ADPs such as CISA vulnrichment) in the official CVE records. Not interpreted: see EXPOSURE-MATCHER.md for how versions are compared.",
  "feed": "kev-affected",
@@ -227624,6 +227624,20 @@
     },
     {
      "default_status": "unknown",
+     "product": "COMOS Walkinside",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
      "product": "Desigo CC family V8",
      "source": "adp:siemens-SADP",
      "vendor": "Siemens",
@@ -227645,6 +227659,20 @@
       {
        "less_than": "*",
        "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "gDAP (gPROMS Digital Application Platform)",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "unaffected",
        "version": "0",
        "version_type": "custom"
       }
@@ -227709,6 +227737,104 @@
     {
      "default_status": "unknown",
      "product": "Integrated PA Suite Tester",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "INTRALOG WMS Kronos",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "INTRALOG WMS Kronos",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "Project Server Web Administration Tool",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "SCALANCE LPE9403 (6GK5998-3GS00-2AC2)",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "SCALANCE LPE9413 (6GK5998-3GS01-2AC2)",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "SCALANCE LPE9423",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "SCALANCE LPE9433 (6GK5998-3GS11-2AC2)",
      "source": "adp:siemens-SADP",
      "vendor": "Siemens",
      "versions": [
@@ -227827,6 +227953,258 @@
       {
        "less_than": "*",
        "status": "unaffected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "SIMATIC BRAUMAT",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "V8.2 Update 5",
+       "status": "affected",
+       "version": "V8.2 Update 1",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "SIMATIC PCS neo",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "SIMATIC Profiling Tool",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "SIMATIC SISTAR",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "V8.2 Update 5",
+       "status": "affected",
+       "version": "V8.2 Update 1",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "SIMATIC WinCC Companion",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "SIMATIC WinCC OA V3.20",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "V3.20.17.1",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "SIMATIC WinCC OA V3.21",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "V3.21.7",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "SIMATIC WinCC Runtime Professional",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "SIMATIC WinCC Unified for Industrial Edge",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "SIMATIC WinCC Unified PC Runtime",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "SIMATIC WinCC Unified SIQENCE",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "SIMATIC WinCC V7/V8",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "SINEC INS",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "SINEMA Remote Connect Client",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "SINEMA Remote Connect Edge Client",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "SITOP Manager",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "TIA Administrator",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "V3.3.1",
+       "status": "affected",
+       "version": "0",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
+     "product": "User Management Component (UMC)",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "V2.15.4.1",
+       "status": "affected",
        "version": "0",
        "version_type": "custom"
       }
@@ -228391,220 +228769,10 @@
        "version_type": "custom"
       }
      ]
-    },
-    {
-     "default_status": "unknown",
-     "product": "COMOS Walkinside",
-     "source": "adp:siemens-SADP",
-     "vendor": "Siemens",
-     "versions": [
-      {
-       "less_than": "*",
-       "status": "affected",
-       "version": "0",
-       "version_type": "custom"
-      }
-     ]
-    },
-    {
-     "default_status": "unknown",
-     "product": "Project Server Web Administration Tool",
-     "source": "adp:siemens-SADP",
-     "vendor": "Siemens",
-     "versions": [
-      {
-       "less_than": "*",
-       "status": "affected",
-       "version": "0",
-       "version_type": "custom"
-      }
-     ]
-    },
-    {
-     "default_status": "unknown",
-     "product": "SIMATIC BRAUMAT",
-     "source": "adp:siemens-SADP",
-     "vendor": "Siemens",
-     "versions": [
-      {
-       "less_than": "V8.2 Update 5",
-       "status": "affected",
-       "version": "V8.2 Update 1",
-       "version_type": "custom"
-      }
-     ]
-    },
-    {
-     "default_status": "unknown",
-     "product": "SIMATIC Profiling Tool",
-     "source": "adp:siemens-SADP",
-     "vendor": "Siemens",
-     "versions": [
-      {
-       "less_than": "*",
-       "status": "affected",
-       "version": "0",
-       "version_type": "custom"
-      }
-     ]
-    },
-    {
-     "default_status": "unknown",
-     "product": "SIMATIC SISTAR",
-     "source": "adp:siemens-SADP",
-     "vendor": "Siemens",
-     "versions": [
-      {
-       "less_than": "V8.2 Update 5",
-       "status": "affected",
-       "version": "V8.2 Update 1",
-       "version_type": "custom"
-      }
-     ]
-    },
-    {
-     "default_status": "unknown",
-     "product": "SIMATIC WinCC Companion",
-     "source": "adp:siemens-SADP",
-     "vendor": "Siemens",
-     "versions": [
-      {
-       "less_than": "*",
-       "status": "affected",
-       "version": "0",
-       "version_type": "custom"
-      }
-     ]
-    },
-    {
-     "default_status": "unknown",
-     "product": "SIMATIC WinCC OA V3.20",
-     "source": "adp:siemens-SADP",
-     "vendor": "Siemens",
-     "versions": [
-      {
-       "less_than": "V3.20.17.1",
-       "status": "affected",
-       "version": "0",
-       "version_type": "custom"
-      }
-     ]
-    },
-    {
-     "default_status": "unknown",
-     "product": "SIMATIC WinCC OA V3.21",
-     "source": "adp:siemens-SADP",
-     "vendor": "Siemens",
-     "versions": [
-      {
-       "less_than": "V3.21.7",
-       "status": "affected",
-       "version": "0",
-       "version_type": "custom"
-      }
-     ]
-    },
-    {
-     "default_status": "unknown",
-     "product": "SIMATIC WinCC Runtime Professional",
-     "source": "adp:siemens-SADP",
-     "vendor": "Siemens",
-     "versions": [
-      {
-       "less_than": "*",
-       "status": "affected",
-       "version": "0",
-       "version_type": "custom"
-      }
-     ]
-    },
-    {
-     "default_status": "unknown",
-     "product": "SIMATIC WinCC Unified for Industrial Edge",
-     "source": "adp:siemens-SADP",
-     "vendor": "Siemens",
-     "versions": [
-      {
-       "less_than": "*",
-       "status": "affected",
-       "version": "0",
-       "version_type": "custom"
-      }
-     ]
-    },
-    {
-     "default_status": "unknown",
-     "product": "SIMATIC WinCC Unified PC Runtime",
-     "source": "adp:siemens-SADP",
-     "vendor": "Siemens",
-     "versions": [
-      {
-       "less_than": "*",
-       "status": "affected",
-       "version": "0",
-       "version_type": "custom"
-      }
-     ]
-    },
-    {
-     "default_status": "unknown",
-     "product": "SIMATIC WinCC Unified SIQENCE",
-     "source": "adp:siemens-SADP",
-     "vendor": "Siemens",
-     "versions": [
-      {
-       "less_than": "*",
-       "status": "affected",
-       "version": "0",
-       "version_type": "custom"
-      }
-     ]
-    },
-    {
-     "default_status": "unknown",
-     "product": "SIMATIC WinCC V7/V8",
-     "source": "adp:siemens-SADP",
-     "vendor": "Siemens",
-     "versions": [
-      {
-       "less_than": "*",
-       "status": "affected",
-       "version": "0",
-       "version_type": "custom"
-      }
-     ]
-    },
-    {
-     "default_status": "unknown",
-     "product": "TIA Administrator",
-     "source": "adp:siemens-SADP",
-     "vendor": "Siemens",
-     "versions": [
-      {
-       "less_than": "*",
-       "status": "affected",
-       "version": "0",
-       "version_type": "custom"
-      }
-     ]
-    },
-    {
-     "default_status": "unknown",
-     "product": "User Management Component (UMC)",
-     "source": "adp:siemens-SADP",
-     "vendor": "Siemens",
-     "versions": [
-      {
-       "less_than": "V2.15.4.1",
-       "status": "affected",
-       "version": "0",
-       "version_type": "custom"
-      }
-     ]
     }
    ],
    "record_state": "PUBLISHED",
-   "record_updated": "2026-11-18T18:32:29.836Z"
+   "record_updated": "2026-11-24T14:26:40.717Z"
   },
   {
    "cve": "CVE-2026-111560",
@@ -229258,7 +229426,7 @@
     }
    ],
    "record_state": "PUBLISHED",
-   "record_updated": "2026-11-20T20:58:23.854Z"
+   "record_updated": "2026-11-21T04:55:21.214Z"
   },
   {
    "cve": "CVE-2026-124194",
@@ -229319,7 +229487,7 @@
     }
    ],
    "record_state": "PUBLISHED",
-   "record_updated": "2026-11-19T15:55:10.488Z"
+   "record_updated": "2026-11-24T21:16:45.509Z"
   },
   {
    "cve": "CVE-2026-125350",
@@ -229523,9 +229691,36 @@
   },
   {
    "cve": "CVE-2026-132165",
-   "products": [],
-   "record_state": "unavailable",
-   "record_updated": null
+   "products": [
+    {
+     "default_status": "unknown",
+     "product": "Drupal core",
+     "source": "cna",
+     "vendor": "Drupal",
+     "versions": [
+      {
+       "less_than": "10.6.22",
+       "status": "affected",
+       "version": "0.0.0",
+       "version_type": "semver"
+      },
+      {
+       "less_than": "11.3.22",
+       "status": "affected",
+       "version": "11.0.0",
+       "version_type": "semver"
+      },
+      {
+       "less_than": "11.4.13",
+       "status": "affected",
+       "version": "11.4.0",
+       "version_type": "semver"
+      }
+     ]
+    }
+   ],
+   "record_state": "PUBLISHED",
+   "record_updated": "2026-11-26T00:44:41.628Z"
   },
   {
    "cve": "CVE-2026-132224",
@@ -261334,6 +261529,6 @@
    "record_updated": "2026-10-30T23:18:16.598Z"
   }
  ],
- "kev_generated_at": "2026-11-25T23:12:09Z",
+ "kev_generated_at": "2026-11-26T11:23:11Z",
  "source": "CVE Project cvelistV5 (https://github.com/CVEProject/cvelistV5)"
 }
