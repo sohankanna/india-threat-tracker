@@ -1,10 +1,10 @@
 {
  "coverage": {
-  "fetch_failures_this_run": 0,
-  "kev_cves": 1805,
-  "records_published": 1805,
-  "unavailable": 0,
-  "with_version_entries": 1805
+  "fetch_failures_this_run": 2,
+  "kev_cves": 1808,
+  "records_published": 1806,
+  "unavailable": 2,
+  "with_version_entries": 1806
  },
  "description": "Affected products and versions for every CISA KEV CVE, as written by the CVE Numbering Authority (and ADPs such as CISA vulnrichment) in the official CVE records. Not interpreted: see EXPOSURE-MATCHER.md for how versions are compared.",
  "feed": "kev-affected",
@@ -229244,6 +229244,12 @@
    "record_updated": "2026-11-04T04:56:31.158Z"
   },
   {
+   "cve": "CVE-2026-120705",
+   "products": [],
+   "record_state": "unavailable",
+   "record_updated": null
+  },
+  {
    "cve": "CVE-2026-123039",
    "products": [
     {
@@ -229639,6 +229645,12 @@
    "record_updated": "2026-10-07T18:00:12.330Z"
   },
   {
+   "cve": "CVE-2026-129243",
+   "products": [],
+   "record_state": "unavailable",
+   "record_updated": null
+  },
+  {
    "cve": "CVE-2026-129448",
    "products": [
     {
@@ -229953,6 +229965,39 @@
    ],
    "record_state": "PUBLISHED",
    "record_updated": "2026-11-23T21:58:57.084Z"
+  },
+  {
+   "cve": "CVE-2026-136716",
+   "products": [
+    {
+     "default_status": "unknown",
+     "product": "Drupal core",
+     "source": "cna",
+     "vendor": "Drupal",
+     "versions": [
+      {
+       "less_than": "10.6.23",
+       "status": "affected",
+       "version": "0.0.0",
+       "version_type": "semver"
+      },
+      {
+       "less_than": "11.3.23",
+       "status": "affected",
+       "version": "11.0.0",
+       "version_type": "semver"
+      },
+      {
+       "less_than": "11.4.14",
+       "status": "affected",
+       "version": "11.4.0",
+       "version_type": "semver"
+      }
+     ]
+    }
+   ],
+   "record_state": "PUBLISHED",
+   "record_updated": "2026-11-27T21:01:14.977Z"
   },
   {
    "cve": "CVE-2026-15409",
@@ -261529,6 +261574,6 @@
    "record_updated": "2026-10-30T23:18:16.598Z"
   }
  ],
- "kev_generated_at": "2026-11-27T11:16:55Z",
+ "kev_generated_at": "2026-11-27T22:50:36Z",
  "source": "CVE Project cvelistV5 (https://github.com/CVEProject/cvelistV5)"
 }

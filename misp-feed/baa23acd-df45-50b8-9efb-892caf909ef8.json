@@ -1237,7 +1237,7 @@
     "category": "External analysis",
     "value": "CVE-2020-2883",
     "to_ids": false,
-    "comment": "Oracle WebLogic Server; KEV 2025-01-07; EPSS 0.946",
+    "comment": "Oracle WebLogic Server; KEV 2025-01-07; EPSS 0.949",
     "timestamp": "1736208000",
     "distribution": "5",
     "disable_correlation": false
@@ -1688,7 +1688,7 @@
     "category": "External analysis",
     "value": "CVE-2025-7775",
     "to_ids": false,
-    "comment": "Citrix NetScaler; KEV 2025-08-26; EPSS 0.019",
+    "comment": "Citrix NetScaler; KEV 2025-08-26; EPSS 0.021",
     "timestamp": "1756166400",
     "distribution": "5",
     "disable_correlation": false
