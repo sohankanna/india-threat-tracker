@@ -94035,7 +94035,7 @@
     }
    ],
    "record_state": "PUBLISHED",
-   "record_updated": "2026-11-25T20:17:26.859Z"
+   "record_updated": "2026-11-26T04:55:52.508Z"
   },
   {
    "cve": "CVE-2023-25915",
@@ -221302,6 +221302,20 @@
     },
     {
      "default_status": "unknown",
+     "product": "CP61850 (6DD7050-0AA80)",
+     "source": "adp:siemens-SADP",
+     "vendor": "Siemens",
+     "versions": [
+      {
+       "less_than": "*",
+       "status": "affected",
+       "version": "V3.5.4",
+       "version_type": "custom"
+      }
+     ]
+    },
+    {
+     "default_status": "unknown",
      "product": "cRSP",
      "source": "adp:siemens-SADP",
      "vendor": "Siemens",
@@ -224228,7 +224242,7 @@
     }
    ],
    "record_state": "PUBLISHED",
-   "record_updated": "2026-11-20T11:19:17.017Z"
+   "record_updated": "2026-11-24T11:35:44.357Z"
   },
   {
    "cve": "CVE-2026-109619",
@@ -229774,7 +229788,7 @@
     }
    ],
    "record_state": "PUBLISHED",
-   "record_updated": "2026-11-25T20:17:40.976Z"
+   "record_updated": "2026-11-26T04:55:51.407Z"
   },
   {
    "cve": "CVE-2026-133303",
@@ -255300,7 +255314,7 @@
     }
    ],
    "record_state": "PUBLISHED",
-   "record_updated": "2026-11-19T22:17:18.595Z"
+   "record_updated": "2026-11-23T21:47:07.828Z"
   },
   {
    "cve": "CVE-2026-66384",
@@ -255749,7 +255763,7 @@
     }
    ],
    "record_state": "PUBLISHED",
-   "record_updated": "2026-11-19T22:17:34.630Z"
+   "record_updated": "2026-11-23T21:47:25.430Z"
   },
   {
    "cve": "CVE-2026-6973",
@@ -261574,6 +261588,6 @@
    "record_updated": "2026-10-30T23:18:16.598Z"
   }
  ],
- "kev_generated_at": "2026-11-27T22:50:36Z",
+ "kev_generated_at": "2026-11-28T10:46:21Z",
  "source": "CVE Project cvelistV5 (https://github.com/CVEProject/cvelistV5)"
 }
